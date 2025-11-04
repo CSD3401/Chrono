@@ -1,399 +1,299 @@
-[2025-11-04 05:50:55] [I] [:] Session logging enabled - all logs will be written to: logs/session.log
-[2025-11-04 05:50:55] [I] [:] Automatic crash detection enabled
-[2025-11-04 05:50:55] [I] [:] Crash-only logging enabled with automatic detection - logs will be saved to crash_logs/ when crashes occur
-[2025-11-04 05:50:55] [I] [GLContext.cpp:25] OpenGL Version: 
-[2025-11-04 05:50:55] [W] [GLShader.cpp:152] Program linking failed: 
-[2025-11-04 05:50:55] [I] [Application.cpp:47] === NANOEngine Application Started ===
-[2025-11-04 05:50:55] [D] [Application.cpp:48] Initialization in progress...
-[2025-11-04 05:50:55] [I] [Application.cpp:49] Graphics API: OpenGL
-[2025-11-04 05:50:55] [D] [Application.cpp:50] Window creation completed
-[2025-11-04 05:50:55] [I] [Application.cpp:51] ImGui integration active
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:351] AudioSystem::Init() - Starting initialization
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:356] Working directory: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:357] Bank directory: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono/Assets/Bank
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:305] LoadBankAssets - Checking directory: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono/Assets/Bank
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:327] Loaded bank asset: Master
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:327] Loaded bank asset: Master.strings
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:327] Loaded bank asset: UI
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:331] 3 banks loaded successfully
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:215] Loading 3 banks into FMOD...
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:230] Loaded bank: Master
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:230] Loaded bank: Master.strings
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:230] Loaded bank: UI
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:235] Looking for strings bank...
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:244] Loading strings bank: Master.strings
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:252] Strings bank ready: Master.strings
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:259] Extracting events from all banks...
-[2025-11-04 05:51:09] [I] [AudioBank.cpp:101] Found event: event:/ForestBGM -> ForestBGM
-[2025-11-04 05:51:09] [I] [AudioBank.cpp:101] Found event: event:/Stone -> Stone
-[2025-11-04 05:51:09] [I] [AudioBank.cpp:101] Found event: event:/Footstep -> Footstep
-[2025-11-04 05:51:09] [I] [AudioBank.cpp:101] Found event: event:/Jump -> Jump
-[2025-11-04 05:51:09] [I] [AudioBank.cpp:101] Found event: event:/OnClick -> OnClick
-[2025-11-04 05:51:09] [I] [AudioSystem.cpp:363] AudioSystem::Init() - Completed
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:80] ScriptSystem::Init() - Starting initialization
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:88] Loading script DLL: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode.dll
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:126] Loading copy: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:41] Registered script: PlayerScript
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:41] Registered script: TestScript
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:41] Registered script: PhysicsPlayerController
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:41] Registered script: TextureSwitch
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:41] Registered script: LightSwitch
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:419] Successfully loaded and registered scripts from: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:132] Successfully loaded DLL.
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:250] === Scripting Engine Summary ===
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:253] Loaded DLLs (1):
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:259]   - GameCode_hot_0.dll (D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll)
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:265] Registered Scripts (5):
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:271]   - LightSwitch
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:271]   - PhysicsPlayerController
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:271]   - PlayerScript
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:271]   - TestScript
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:271]   - TextureSwitch
-[2025-11-04 05:51:09] [I] [ScriptingEngine.cpp:274] ================================
+[2025-11-04 10:10:08] [I] [:] Session logging enabled - all logs will be written to: logs/session.log
+[2025-11-04 10:10:08] [I] [:] Automatic crash detection enabled
+[2025-11-04 10:10:08] [I] [:] Crash-only logging enabled with automatic detection - logs will be saved to crash_logs/ when crashes occur
+[2025-11-04 10:10:08] [I] [GLContext.cpp:25] OpenGL Version: 
+[2025-11-04 10:10:08] [W] [GLShader.cpp:152] Program linking failed: 
+[2025-11-04 10:10:08] [I] [Application.cpp:47] === NANOEngine Application Started ===
+[2025-11-04 10:10:08] [D] [Application.cpp:48] Initialization in progress...
+[2025-11-04 10:10:08] [I] [Application.cpp:49] Graphics API: OpenGL
+[2025-11-04 10:10:08] [D] [Application.cpp:50] Window creation completed
+[2025-11-04 10:10:08] [I] [Application.cpp:51] ImGui integration active
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:351] AudioSystem::Init() - Starting initialization
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:356] Working directory: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:357] Bank directory: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono/Assets/Bank
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:305] LoadBankAssets - Checking directory: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono/Assets/Bank
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:327] Loaded bank asset: Master
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:327] Loaded bank asset: Master.strings
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:327] Loaded bank asset: UI
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:331] 3 banks loaded successfully
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:215] Loading 3 banks into FMOD...
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:230] Loaded bank: Master
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:230] Loaded bank: Master.strings
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:230] Loaded bank: UI
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:235] Looking for strings bank...
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:244] Loading strings bank: Master.strings
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:252] Strings bank ready: Master.strings
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:259] Extracting events from all banks...
+[2025-11-04 10:10:22] [I] [AudioBank.cpp:101] Found event: event:/ForestBGM -> ForestBGM
+[2025-11-04 10:10:22] [I] [AudioBank.cpp:101] Found event: event:/Stone -> Stone
+[2025-11-04 10:10:22] [I] [AudioBank.cpp:101] Found event: event:/Footstep -> Footstep
+[2025-11-04 10:10:22] [I] [AudioBank.cpp:101] Found event: event:/Jump -> Jump
+[2025-11-04 10:10:22] [I] [AudioBank.cpp:101] Found event: event:/OnClick -> OnClick
+[2025-11-04 10:10:22] [I] [AudioSystem.cpp:363] AudioSystem::Init() - Completed
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:80] ScriptSystem::Init() - Starting initialization
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:88] Loading script DLL: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode.dll
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:126] Loading copy: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:41] Registered script: PlayerScript
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:41] Registered script: TestScript
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:41] Registered script: PhysicsPlayerController
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:41] Registered script: TextureSwitch
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:41] Registered script: LightSwitch
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:41] Registered script: PlayerCamera
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:41] Registered script: Gears
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:419] Successfully loaded and registered scripts from: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:132] Successfully loaded DLL.
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:250] === Scripting Engine Summary ===
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:253] Loaded DLLs (1):
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:259]   - GameCode_hot_0.dll (D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll)
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:265] Registered Scripts (7):
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:271]   - Gears
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:271]   - LightSwitch
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:271]   - PhysicsPlayerController
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:271]   - PlayerCamera
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:271]   - PlayerScript
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:271]   - TestScript
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:271]   - TextureSwitch
+[2025-11-04 10:10:22] [I] [ScriptingEngine.cpp:274] ================================
 
-[2025-11-04 05:51:09] [E] [ScriptSystem.cpp:157] Failed to create file watcher for D:\Users\Irwen Yap\Documents\GameCode\Scripts\: The system cannot find the path specified.
-[2025-11-04 05:51:09] [W] [ScriptSystem.cpp:158] Hot-compile will be disabled.
-[2025-11-04 05:51:09] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:210] Initialized existing script 'TextureSwitch' for entity 1 during ScriptSystem::Init()
-[2025-11-04 05:51:09] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:210] Initialized existing script 'TextureSwitch' for entity 4 during ScriptSystem::Init()
-[2025-11-04 05:51:09] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:210] Initialized existing script 'TextureSwitch' for entity 5 during ScriptSystem::Init()
-[2025-11-04 05:51:09] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:210] Initialized existing script 'PhysicsPlayerController' for entity 19 during ScriptSystem::Init()
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:210] Initialized existing script 'LightSwitch' for entity 23 during ScriptSystem::Init()
-[2025-11-04 05:51:09] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:210] Initialized existing script 'TextureSwitch' for entity 25 during ScriptSystem::Init()
-[2025-11-04 05:51:09] [I] [ScriptSystem.cpp:164] ScriptSystem::Init() - Completed
-[2025-11-04 05:51:09] [I] [Application.cpp:117] === Application initialization complete ===
-[2025-11-04 05:51:09] [D] [Application.cpp:118] All panels loaded successfully
-[2025-11-04 05:51:09] [I] [Application.cpp:119] Ready for user interaction
-[2025-11-04 05:51:14] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:15] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:15] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:15] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:15] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:15] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:15] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:15] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:16] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:51:16] [I] [PhysicsPlayerController.hpp:63] PhysicsPlayerController started for entity 19
-[2025-11-04 05:51:16] [I] [PhysicsPlayerController.hpp:64] Physics gravity disabled - using manual gravity + kinematic grounding
-[2025-11-04 05:51:17] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:17] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:17] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:17] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:51:37] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:51:37] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:39] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:40] [I] [Application.cpp:136] 165
-[2025-11-04 05:51:44] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:45] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:46] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:46] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:46] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:46] [I] [Application.cpp:136] 164
-[2025-11-04 05:51:52] [D] [InspectorPanel.cpp:583] Motion Type changed for entity {}: {} -> {}
-[2025-11-04 05:51:52] [D] [InspectorPanel.cpp:592]   Updated: motionType={}, isStatic={}
-[2025-11-04 05:52:01] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:04] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:04] [I] [PhysicsPlayerController.hpp:63] PhysicsPlayerController started for entity 19
-[2025-11-04 05:52:04] [I] [PhysicsPlayerController.hpp:64] Physics gravity disabled - using manual gravity + kinematic grounding
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:38] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:38] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:40] [I] [Application.cpp:136] 165
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:41] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:46] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:46] [I] [PhysicsPlayerController.hpp:63] PhysicsPlayerController started for entity 19
-[2025-11-04 05:52:46] [I] [PhysicsPlayerController.hpp:64] Physics gravity disabled - using manual gravity + kinematic grounding
-[2025-11-04 05:52:49] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:49] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:49] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:49] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:50] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:50] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:51] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:51] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:54] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:52:54] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:52:55] [I] [Application.cpp:136] 164
-[2025-11-04 05:52:56] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:52:56] [I] [PhysicsPlayerController.hpp:63] PhysicsPlayerController started for entity 19
-[2025-11-04 05:52:56] [I] [PhysicsPlayerController.hpp:64] Physics gravity disabled - using manual gravity + kinematic grounding
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:53:01] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:01] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:53:03] [I] [ScriptSystem.cpp:217] ScriptSystem: Entering Play Mode...
-[2025-11-04 05:53:03] [I] [PhysicsPlayerController.hpp:63] PhysicsPlayerController started for entity 19
-[2025-11-04 05:53:03] [I] [PhysicsPlayerController.hpp:64] Physics gravity disabled - using manual gravity + kinematic grounding
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:245] ScriptSystem: Exiting Play Mode...
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 1
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 4
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 5
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:516] Saved 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:264] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:530] Restored 9 fields for script 'PhysicsPlayerController'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:281] Initialized script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:516] Saved 0 fields for script 'LightSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:264] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:281] Initialized script 'LightSwitch' for entity 23
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:516] Saved 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:264] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:53:05] [D] [ScriptSystem.cpp:530] Restored 2 fields for script 'TextureSwitch'
-[2025-11-04 05:53:05] [I] [ScriptSystem.cpp:281] Initialized script 'TextureSwitch' for entity 25
-[2025-11-04 05:53:09] [I] [AudioSystem.cpp:399] AudioSystem shutdown
-[2025-11-04 05:53:09] [I] [ScriptSystem.cpp:171] File watcher stopped.
-[2025-11-04 05:53:09] [I] [ScriptSystem.cpp:323] Destroyed script 'TextureSwitch' for entity 1
-[2025-11-04 05:53:09] [I] [ScriptSystem.cpp:323] Destroyed script 'TextureSwitch' for entity 4
-[2025-11-04 05:53:09] [I] [ScriptSystem.cpp:323] Destroyed script 'TextureSwitch' for entity 5
-[2025-11-04 05:53:09] [I] [ScriptSystem.cpp:323] Destroyed script 'PhysicsPlayerController' for entity 19
-[2025-11-04 05:53:09] [I] [ScriptSystem.cpp:323] Destroyed script 'LightSwitch' for entity 23
-[2025-11-04 05:53:09] [I] [ScriptSystem.cpp:323] Destroyed script 'TextureSwitch' for entity 25
-[2025-11-04 05:53:09] [I] [ScriptSystem.cpp:177] Script system shutdown complete
+[2025-11-04 10:10:22] [E] [ScriptSystem.cpp:157] Failed to create file watcher for D:\Users\Irwen Yap\Documents\GameCode\Scripts\: The system cannot find the path specified.
+[2025-11-04 10:10:22] [W] [ScriptSystem.cpp:158] Hot-compile will be disabled.
+[2025-11-04 10:10:22] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'TextureSwitch' for entity 1 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'TextureSwitch' for entity 4 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'TextureSwitch' for entity 5 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'Gears' for entity 7 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'Gears' for entity 8 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'Gears' for entity 9 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'Gears' for entity 10 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [D] [ScriptSystem.cpp:526] Restored 9 fields for script 'PhysicsPlayerController'
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'PhysicsPlayerController' for entity 19 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'PlayerCamera' for entity 20 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'LightSwitch' for entity 23 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:206] Initialized existing script 'TextureSwitch' for entity 25 during ScriptSystem::Init()
+[2025-11-04 10:10:22] [I] [ScriptSystem.cpp:164] ScriptSystem::Init() - Completed
+[2025-11-04 10:10:22] [I] [Application.cpp:117] === Application initialization complete ===
+[2025-11-04 10:10:22] [D] [Application.cpp:118] All panels loaded successfully
+[2025-11-04 10:10:22] [I] [Application.cpp:119] Ready for user interaction
+[2025-11-04 10:10:25] [I] [Application.cpp:136] 164
+[2025-11-04 10:10:25] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:25] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:26] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:31] [I] [ScriptSystem.cpp:213] ScriptSystem: Entering Play Mode...
+[2025-11-04 10:10:31] [I] [PhysicsPlayerController.hpp:63] PhysicsPlayerController started for entity 19
+[2025-11-04 10:10:31] [I] [PhysicsPlayerController.hpp:64] Physics gravity disabled - using manual gravity + kinematic grounding
+[2025-11-04 10:10:46] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:47] [I] [Application.cpp:136] 164
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:49] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:52] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:52] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:53] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:54] [I] [Application.cpp:136] 164
+[2025-11-04 10:10:54] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:54] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:54] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:54] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:54] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:54] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:54] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:54] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:55] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:56] [W] [PlayerCamera.hpp:59] Selected Entity: 5
+[2025-11-04 10:10:57] [I] [Application.cpp:136] 164
+[2025-11-04 10:10:58] [I] [Application.cpp:136] 165
+[2025-11-04 10:10:59] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:00] [I] [Application.cpp:136] 165
+[2025-11-04 10:11:02] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:02] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:03] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:03] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:03] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:03] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:03] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:03] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:03] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:03] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:04] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:04] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:05] [I] [Application.cpp:136] 165
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [W] [PlayerCamera.hpp:59] Selected Entity: 6
+[2025-11-04 10:11:06] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:07] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:08] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:15] [I] [Application.cpp:136] 165
+[2025-11-04 10:11:18] [I] [Application.cpp:136] 165
+[2025-11-04 10:11:20] [I] [Application.cpp:136] 165
+[2025-11-04 10:11:21] [I] [Application.cpp:136] 164
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:241] ScriptSystem: Exiting Play Mode...
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 2 fields for script 'TextureSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'TextureSwitch' for entity 1
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'TextureSwitch' for entity 1
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 2 fields for script 'TextureSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'TextureSwitch' for entity 4
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'TextureSwitch' for entity 4
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 2 fields for script 'TextureSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'TextureSwitch' for entity 5
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'TextureSwitch' for entity 5
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'Gears'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'Gears' for entity 7
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'Gears' for entity 7
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'Gears'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'Gears' for entity 8
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'Gears' for entity 8
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'Gears'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'Gears' for entity 9
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'Gears' for entity 9
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'Gears'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'Gears' for entity 10
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'Gears' for entity 10
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 9 fields for script 'PhysicsPlayerController'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'PhysicsPlayerController' for entity 19
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:526] Restored 9 fields for script 'PhysicsPlayerController'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'PhysicsPlayerController' for entity 19
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'PlayerCamera'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'PlayerCamera' for entity 20
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'PlayerCamera' for entity 20
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'LightSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'LightSwitch' for entity 23
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'LightSwitch' for entity 23
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:512] Saved 2 fields for script 'TextureSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:260] Destroyed script 'TextureSwitch' for entity 25
+[2025-11-04 10:11:22] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:11:22] [I] [ScriptSystem.cpp:277] Initialized script 'TextureSwitch' for entity 25
+[2025-11-04 10:12:41] [I] [ScriptSystem.cpp:213] ScriptSystem: Entering Play Mode...
+[2025-11-04 10:12:41] [I] [PhysicsPlayerController.hpp:63] PhysicsPlayerController started for entity 19
+[2025-11-04 10:12:41] [I] [PhysicsPlayerController.hpp:64] Physics gravity disabled - using manual gravity + kinematic grounding
+[2025-11-04 10:12:43] [I] [Application.cpp:136] 165
+[2025-11-04 10:12:43] [I] [Application.cpp:136] 165
+[2025-11-04 10:12:43] [I] [Application.cpp:136] 165
+[2025-11-04 10:12:43] [I] [Application.cpp:136] 165
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:241] ScriptSystem: Exiting Play Mode...
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 2 fields for script 'TextureSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'TextureSwitch' for entity 1
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'TextureSwitch' for entity 1
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 2 fields for script 'TextureSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'TextureSwitch' for entity 4
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'TextureSwitch' for entity 4
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 2 fields for script 'TextureSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'TextureSwitch' for entity 5
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'TextureSwitch' for entity 5
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'Gears'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'Gears' for entity 7
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'Gears' for entity 7
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'Gears'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'Gears' for entity 8
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'Gears' for entity 8
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'Gears'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'Gears' for entity 9
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'Gears' for entity 9
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'Gears'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'Gears' for entity 10
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'Gears' for entity 10
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 9 fields for script 'PhysicsPlayerController'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'PhysicsPlayerController' for entity 19
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:526] Restored 9 fields for script 'PhysicsPlayerController'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'PhysicsPlayerController' for entity 19
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'PlayerCamera'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'PlayerCamera' for entity 20
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'PlayerCamera' for entity 20
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 0 fields for script 'LightSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'LightSwitch' for entity 23
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'LightSwitch' for entity 23
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:512] Saved 2 fields for script 'TextureSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:260] Destroyed script 'TextureSwitch' for entity 25
+[2025-11-04 10:12:49] [D] [ScriptSystem.cpp:526] Restored 2 fields for script 'TextureSwitch'
+[2025-11-04 10:12:49] [I] [ScriptSystem.cpp:277] Initialized script 'TextureSwitch' for entity 25
+[2025-11-04 10:12:56] [I] [AudioSystem.cpp:399] AudioSystem shutdown
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:171] File watcher stopped.
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'TextureSwitch' for entity 1
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'TextureSwitch' for entity 4
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'TextureSwitch' for entity 5
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'Gears' for entity 7
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'Gears' for entity 8
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'Gears' for entity 9
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'Gears' for entity 10
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'PhysicsPlayerController' for entity 19
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'PlayerCamera' for entity 20
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'LightSwitch' for entity 23
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:319] Destroyed script 'TextureSwitch' for entity 25
+[2025-11-04 10:12:56] [I] [ScriptSystem.cpp:177] Script system shutdown complete
