@@ -1,0 +1,80 @@
+=== NANO ENGINE CRASH LOG ===
+Timestamp: 2025-11-14 20:25:44
+Crash Reason: Signal 2 (SIGINT - Interrupt signal)
+
+=== SYSTEM INFORMATION ===
+Total RAM: 32537 MB
+Available RAM: 6984 MB
+Process Memory Usage: 259 MB
+
+=== RECENT LOGS (Last 69 entries) ===
+[20:25:20] [INFO] Backtrace enabled with 100 messages buffer
+[20:25:20] [INFO] Session logging enabled - all logs will be written to: logs/session.log
+[20:25:20] [INFO] Automatic crash detection enabled
+[20:25:20] [INFO] Crash-only logging enabled with automatic detection - logs will be saved to crash_logs/ when crashes occur
+[20:25:20] [INFO] [GLContext.cpp:25] OpenGL Version: 
+[20:25:20] [INFO] [ScriptingEngine.cpp:254] Loading script DLL: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode.dll
+[20:25:23] [INFO] [ScriptingEngine.cpp:315] Loading copy: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: PlayerScript
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: TestScript
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: PhysicsPlayerController
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: TextureSwitch
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: LightSwitch
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: PlayerCamera
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: Gears
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: k1bswitch
+[20:25:23] [INFO] [ScriptingEngine.cpp:80] Registered script: k2bswitch
+[20:25:23] [INFO] [ScriptingEngine.cpp:561] Successfully loaded and registered scripts from: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll
+[20:25:23] [ERROR] [ScriptingEngine.cpp:317] Failed to load script DLL copy: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll
+[20:25:23] [ERROR] [ScriptingEngine.cpp:318] Last Error: 
+[20:25:23] [ERROR] [ScriptingEngine.cpp:343] Failed to create file watcher for D:\Users\Irwen Yap\Documents\GameCode\Scripts\: The system cannot find the path specified.
+[20:25:23] [WARNING] [ScriptingEngine.cpp:344] Hot-compile will be disabled.
+[20:25:23] [INFO] [ScriptingEngine.cpp:348] Initializing ScriptingEngine...
+[20:25:23] [INFO] [ScriptingEngine.cpp:349]   - 1 DLLs loaded
+[20:25:23] [INFO] [ScriptingEngine.cpp:350]   - 9 scripts registered
+[20:25:23] [INFO] [ScriptingEngine.cpp:392] === Scripting Engine Summary ===
+[20:25:23] [INFO] [ScriptingEngine.cpp:395] Loaded DLLs (1):
+[20:25:23] [INFO] [ScriptingEngine.cpp:401]   - GameCode_hot_0.dll (D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\GameCode_hot_0.dll)
+[20:25:23] [INFO] [ScriptingEngine.cpp:407] Registered Scripts (9):
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - Gears
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - LightSwitch
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - PhysicsPlayerController
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - PlayerCamera
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - PlayerScript
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - TestScript
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - TextureSwitch
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - k1bswitch
+[20:25:23] [INFO] [ScriptingEngine.cpp:413]   - k2bswitch
+[20:25:23] [INFO] [ScriptingEngine.cpp:416] ================================
+
+[20:25:23] [INFO] [ScriptingEngine.cpp:355] ScriptingEngine initialization complete.
+[20:25:23] [INFO] [Application.cpp:46] === NANOEngine Application Started ===
+[20:25:23] [DEBUG] [Application.cpp:47] Initialization in progress...
+[20:25:23] [INFO] [Application.cpp:48] Graphics API: OpenGL
+[20:25:23] [DEBUG] [Application.cpp:49] Window creation completed
+[20:25:23] [INFO] [Application.cpp:50] ImGui integration active
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Material.ambient value: 0.3, 0.7, 0.1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Material.diffuse value: 0.8, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Material.specular value: 0.4, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_AmbientColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_BaseColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Emissive value: 0, 0, 0
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_AmbientColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_BaseColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Emissive value: 0, 0, 0
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_AmbientColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_BaseColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Emissive value: 0, 0, 0
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_AmbientColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_BaseColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Emissive value: 0, 0, 0
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_AmbientColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_BaseColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Emissive value: 0, 0, 0
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_AmbientColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_BaseColor value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Emissive value: 0, 0, 0
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_BaseColor value: 0.8, 0.8, 0.7
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Material.ambient value: 0.3, 0.7, 0.1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Material.diffuse value: 1, 1, 1
+[20:25:23] [INFO] [AssetManager.cpp:763] uniform name: u_Material.specular value: 1, 1, 1
