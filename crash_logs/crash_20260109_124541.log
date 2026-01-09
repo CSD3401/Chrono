@@ -1,0 +1,169 @@
+=== NANO ENGINE CRASH LOG ===
+Timestamp: 2026-01-09 12:45:41
+Crash Reason: Signal 11 (SIGSEGV - Segmentation fault)
+
+=== SYSTEM INFORMATION ===
+Total RAM: 32537 MB
+Available RAM: 9460 MB
+Process Memory Usage: 66 MB
+
+=== RECENT LOGS (Last 158 entries) ===
+[12:45:41] [INFO] Backtrace enabled with 100 messages buffer
+[12:45:41] [INFO] Session logging enabled - all logs will be written to: logs/session.log
+[12:45:41] [INFO] Automatic crash detection enabled
+[12:45:41] [INFO] Crash-only logging enabled with automatic detection - logs will be saved to crash_logs/ when crashes occur
+[12:45:41] [INFO] [GLContext.cpp:24] OpenGL Version: 
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[12:45:41] [INFO] [ScriptingEngine.cpp:222] Initializing ScriptingEngine...
+[12:45:41] [INFO] [ScriptingEngine.cpp:227] Script DLL path: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\ChronoGame.dll
+[12:45:41] [INFO] [ScriptingEngine.cpp:231] Script source directory: D:\Users\Irwen Yap\Documents\ChronoGame\Scripts\
+[12:45:41] [INFO] [ScriptingEngine.cpp:248] Build command: ""D:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe" "../../../ChronoGame/ChronoGame.vcxproj" /p:Configuration=Release /p:Platform=x64 /p:BuildProjectReferences=false /p:LanguageStandard=stdcpp20"
+[12:45:41] [INFO] [ScriptingEngine.cpp:260] Created hot-reload copy: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\ChronoGame_hot_0.dll
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: PlayerScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: TestScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: PhysicsPlayerController
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: TextureSwitch
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: LightSwitch
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: PlayerCamera
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: Gears
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: k1bswitch
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: k2bswitch
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: FollowerScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: PlayerController
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: TweenExampleScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: ParentControllerScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: MaterialSequencer
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: RenderSettingsDemo
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: PrefabSpawnerScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: BulletShooterScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: CameraController
+[12:45:41] [INFO] [ScriptingEngine.cpp:77] Registered script: Pickable
+[12:45:41] [INFO] [ScriptingEngine.cpp:171] Successfully loaded and registered scripts from: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\ChronoGame_hot_0.dll
+[12:45:41] [INFO] [ScriptingEngine.cpp:266] Successfully loaded script DLL.
+[12:45:41] [INFO] [ScriptingEngine.cpp:334] === Scripting Engine Summary ===
+[12:45:41] [INFO] [ScriptingEngine.cpp:337] Loaded Script DLL:
+[12:45:41] [INFO] [ScriptingEngine.cpp:338]   - D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\ChronoGame_hot_0.dll
+[12:45:41] [INFO] [ScriptingEngine.cpp:344] Registered Scripts (19):
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - BulletShooterScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - CameraController
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - FollowerScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - Gears
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - LightSwitch
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - MaterialSequencer
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - ParentControllerScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - PhysicsPlayerController
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - Pickable
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - PlayerCamera
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - PlayerController
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - PlayerScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - PrefabSpawnerScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - RenderSettingsDemo
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - TestScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - TextureSwitch
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - TweenExampleScript
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - k1bswitch
+[12:45:41] [INFO] [ScriptingEngine.cpp:349]   - k2bswitch
+[12:45:41] [INFO] [ScriptingEngine.cpp:352] ================================
+
+[12:45:41] [INFO] [ScriptingEngine.cpp:286] File watcher started for: D:\Users\Irwen Yap\Documents\ChronoGame\Scripts\
+[12:45:41] [INFO] [ScriptingEngine.cpp:294] ScriptingEngine initialization complete.
+[12:45:41] [INFO] [ScriptingEngine.cpp:295]   - Script DLL: Loaded
+[12:45:41] [INFO] [ScriptingEngine.cpp:296]   - Registered scripts: 19
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [AssetManager.cpp:171] Failed to parse meta JSON: Assets/Textures\brick.meta
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path
+[12:45:41] [WARNING] [ResourcePaths.hpp:28] Invalid Artifact Path

@@ -1,0 +1,112 @@
+=== NANO ENGINE CRASH LOG ===
+Timestamp: 2026-01-09 00:12:08
+Crash Reason: Signal 2 (SIGINT - Interrupt signal)
+
+=== SYSTEM INFORMATION ===
+Total RAM: 32537 MB
+Available RAM: 17110 MB
+Process Memory Usage: 129 MB
+
+=== RECENT LOGS (Last 101 entries) ===
+[00:11:39] [INFO] Backtrace enabled with 100 messages buffer
+[00:11:39] [INFO] Session logging enabled - all logs will be written to: logs/session.log
+[00:11:39] [INFO] Automatic crash detection enabled
+[00:11:39] [INFO] Crash-only logging enabled with automatic detection - logs will be saved to crash_logs/ when crashes occur
+[00:11:39] [INFO] [GLContext.cpp:24] OpenGL Version: 
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [WARNING] [GLShader.cpp:246] glProgramBinary failed; attempting embedded source fallback.
+[00:11:39] [INFO] [ScriptingEngine.cpp:222] Initializing ScriptingEngine...
+[00:11:39] [INFO] [ScriptingEngine.cpp:227] Script DLL path: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\ChronoGame.dll
+[00:11:39] [INFO] [ScriptingEngine.cpp:231] Script source directory: D:\Users\Irwen Yap\Documents\ChronoGame\Scripts\
+[00:11:39] [INFO] [ScriptingEngine.cpp:248] Build command: ""D:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe" "../../../ChronoGame/ChronoGame.vcxproj" /p:Configuration=Release /p:Platform=x64 /p:BuildProjectReferences=false /p:LanguageStandard=stdcpp20"
+[00:11:39] [INFO] [ScriptingEngine.cpp:260] Created hot-reload copy: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\ChronoGame_hot_0.dll
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: PlayerScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: TestScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: PhysicsPlayerController
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: TextureSwitch
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: LightSwitch
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: PlayerCamera
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: Gears
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: k1bswitch
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: k2bswitch
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: FollowerScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: PlayerController
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: TweenExampleScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: ParentControllerScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: MaterialSequencer
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: RenderSettingsDemo
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: PrefabSpawnerScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: BulletShooterScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: CameraController
+[00:11:39] [INFO] [ScriptingEngine.cpp:77] Registered script: Pickable
+[00:11:39] [INFO] [ScriptingEngine.cpp:171] Successfully loaded and registered scripts from: D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\ChronoGame_hot_0.dll
+[00:11:39] [INFO] [ScriptingEngine.cpp:266] Successfully loaded script DLL.
+[00:11:39] [INFO] [ScriptingEngine.cpp:334] === Scripting Engine Summary ===
+[00:11:39] [INFO] [ScriptingEngine.cpp:337] Loaded Script DLL:
+[00:11:39] [INFO] [ScriptingEngine.cpp:338]   - D:\Users\Irwen Yap\Documents\My Projects\Github\Chrono\ChronoGame_hot_0.dll
+[00:11:39] [INFO] [ScriptingEngine.cpp:344] Registered Scripts (19):
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - BulletShooterScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - CameraController
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - FollowerScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - Gears
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - LightSwitch
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - MaterialSequencer
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - ParentControllerScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - PhysicsPlayerController
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - Pickable
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - PlayerCamera
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - PlayerController
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - PlayerScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - PrefabSpawnerScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - RenderSettingsDemo
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - TestScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - TextureSwitch
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - TweenExampleScript
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - k1bswitch
+[00:11:39] [INFO] [ScriptingEngine.cpp:349]   - k2bswitch
+[00:11:39] [INFO] [ScriptingEngine.cpp:352] ================================
+
+[00:11:39] [INFO] [ScriptingEngine.cpp:286] File watcher started for: D:\Users\Irwen Yap\Documents\ChronoGame\Scripts\
+[00:11:39] [INFO] [ScriptingEngine.cpp:294] ScriptingEngine initialization complete.
+[00:11:39] [INFO] [ScriptingEngine.cpp:295]   - Script DLL: Loaded
+[00:11:39] [INFO] [ScriptingEngine.cpp:296]   - Registered scripts: 19
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_AmbientColor value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Offset value: 0, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Tiling value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_BaseColor value: 0, 0, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Emissive value: 0, 0, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Tiling value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Offset value: 0, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_AmbientColor value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_BaseColor value: 0, 1, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Emissive value: 0, 1, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_BaseColor value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Emissive value: 0.3, 2, 0.8
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Tiling value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Offset value: 0, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_BaseColor value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Emissive value: 2, 0.9, 0.5
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Tiling value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Offset value: 0, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Tiling value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Offset value: 0, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_AmbientColor value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_BaseColor value: 1, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Emissive value: 1, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Tiling value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Offset value: 0, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_AmbientColor value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_BaseColor value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Emissive value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Tiling value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Offset value: 0, 0, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_AmbientColor value: 1, 1, 1
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_BaseColor value: 1, 1, 0
+[00:11:39] [INFO] [MaterialAsset.cpp:66] uniform name: u_Emissive value: 1, 1, 0
