@@ -153,7 +153,8 @@
       <AdditionalDependencies>NANOEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y "$(ProjectDir)..\bin\ChronoGame\$(Configuration)-$(Platform)\ChronoGame.dll" "$(ProjectDir)..\bin\Editor\$(Configuration)-$(Platform)\"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
