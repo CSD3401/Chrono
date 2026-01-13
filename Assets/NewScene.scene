@@ -43,21 +43,21 @@
     "Entities": [
         {
             "EntityMeta": {
-                "name": "Test",
+                "name": "Light",
                 "isActive": 1,
                 "prefabID": "",
                 "prefabLocalID": 0,
                 "isPrefabRoot": 0,
-                "luid": 7308895093663793152
+                "luid": 7308613656041095168
             },
             "Hierarchy": {
-                "luid": 7526193775607152642,
+                "luid": 7526193813038432258,
                 "parentLuid": 0
             },
             "Transform": {
                 "Position": {
-                    "x": -1.2087359428405762,
-                    "y": -1.534064769744873,
+                    "x": 0.0,
+                    "y": 5.137252330780029,
                     "z": 0.0
                 },
                 "Scale": {
@@ -66,18 +66,186 @@
                     "z": 1.0
                 },
                 "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884941493567489
+            },
+            "Light": {
+                "direction": {
+                    "x": 0.0,
+                    "y": -1.0,
+                    "z": 0.0
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "intensity": 1.0,
+                "innerCutoff": 0.9100000262260437,
+                "outerCutoff": 0.8199999928474426,
+                "radius": 10.0,
+                "constant": 1.0,
+                "linear": 0.0,
+                "quadratic": 1.0,
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "EntityMeta": {
+                "name": "Sphere",
+                "isActive": 1,
+                "prefabID": "",
+                "prefabLocalID": 0,
+                "isPrefabRoot": 0,
+                "luid": 7308613656059445255
+            },
+            "Hierarchy": {
+                "luid": 7526193813056782345,
+                "parentLuid": 7526193813038432258
+            },
+            "Transform": {
+                "Position": {
                     "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
                 },
-                "luid": 8390884904062287873
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884941511917576
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "078ba8be-60b1-4057-8ca2-339f202c05ad",
+                "shadowCastMode": 0,
+                "receiveShadows": 0,
+                "luid": 8242829103762112522
+            }
+        },
+        {
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "prefabID": "",
+                "prefabLocalID": 0,
+                "isPrefabRoot": 0,
+                "luid": 7308613656041357315
+            },
+            "Hierarchy": {
+                "luid": 7526193813038694405,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -1.5,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 10.0,
+                    "y": 1.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884941493829636
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
+                "materialUUID": "a057ccd8-51da-496b-994f-a8b21a7a895f",
                 "shadowCastMode": 0,
                 "receiveShadows": 0,
-                "luid": 8242829066467147776
+                "luid": 8242829103744024582
+            }
+        },
+        {
+            "EntityMeta": {
+                "name": "Player",
+                "isActive": 1,
+                "prefabID": "",
+                "prefabLocalID": 0,
+                "isPrefabRoot": 0,
+                "luid": 7308613656064753675
+            },
+            "Hierarchy": {
+                "luid": 7526193813062090765,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884941517225996
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "PlayerController"
+                ]
+            }
+        },
+        {
+            "EntityMeta": {
+                "name": "Capsule",
+                "isActive": 1,
+                "prefabID": "",
+                "prefabLocalID": 0,
+                "isPrefabRoot": 0,
+                "luid": 7308613656065933326
+            },
+            "Hierarchy": {
+                "luid": 7526193813063270416,
+                "parentLuid": 7526193813062090765
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884941518405647
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/capsule",
+                "materialUUID": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                "shadowCastMode": 0,
+                "receiveShadows": 0,
+                "luid": 8242829103768600593
             }
         }
     ]
