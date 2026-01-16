@@ -42,12 +42,10 @@
     },
     "Entities": [
         {
+            "Layer": 0,
             "EntityMeta": {
                 "name": "Light",
                 "isActive": 1,
-                "prefabID": "",
-                "prefabLocalID": 0,
-                "isPrefabRoot": 0,
                 "luid": 7308613656041095168
             },
             "Hierarchy": {
@@ -95,12 +93,10 @@
             }
         },
         {
+            "Layer": 0,
             "EntityMeta": {
                 "name": "Sphere",
                 "isActive": 1,
-                "prefabID": "",
-                "prefabLocalID": 0,
-                "isPrefabRoot": 0,
                 "luid": 7308613656059445255
             },
             "Hierarchy": {
@@ -134,12 +130,10 @@
             }
         },
         {
+            "Layer": 0,
             "EntityMeta": {
-                "name": "Cube",
+                "name": "Platform",
                 "isActive": 1,
-                "prefabID": "",
-                "prefabLocalID": 0,
-                "isPrefabRoot": 0,
                 "luid": 7308613656041357315
             },
             "Hierarchy": {
@@ -173,12 +167,10 @@
             }
         },
         {
+            "Layer": 0,
             "EntityMeta": {
                 "name": "Player",
                 "isActive": 1,
-                "prefabID": "",
-                "prefabLocalID": 0,
-                "isPrefabRoot": 0,
                 "luid": 7308613656064753675
             },
             "Hierarchy": {
@@ -210,12 +202,10 @@
             }
         },
         {
+            "Layer": 0,
             "EntityMeta": {
                 "name": "Capsule",
                 "isActive": 1,
-                "prefabID": "",
-                "prefabLocalID": 0,
-                "isPrefabRoot": 0,
                 "luid": 7308613656065933326
             },
             "Hierarchy": {
@@ -246,6 +236,131 @@
                 "shadowCastMode": 0,
                 "receiveShadows": 0,
                 "luid": 8242829103768600593
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Train",
+                "isActive": 1,
+                "luid": 7308613674120052740
+            },
+            "Hierarchy": {
+                "luid": 7526193831117389830,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884959572525061
+            },
+            "Renderer": {
+                "modelUUID": "698000b4-05bf-4e1d-83b1-200bd8d06fbc",
+                "materialUUID": "84ecf6c0-6573-4c71-ad62-d295a13725c3",
+                "shadowCastMode": 1,
+                "receiveShadows": 0,
+                "luid": 8242829121826390029
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light",
+                "isActive": 1,
+                "luid": 0
+            },
+            "Hierarchy": {
+                "luid": 7526193831122894862,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 2.573394775390625,
+                    "z": 4.488481521606445
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884959578030095
+            },
+            "Light": {
+                "direction": {
+                    "x": 0.0,
+                    "y": -1.0,
+                    "z": 0.0
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "intensity": 10.0,
+                "innerCutoff": 0.9100000262260437,
+                "outerCutoff": 0.8199999928474426,
+                "radius": 10.0,
+                "constant": 1.0,
+                "linear": 0.0,
+                "quadratic": 1.0,
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sphere",
+                "isActive": 1,
+                "luid": 7308613674139058192
+            },
+            "Hierarchy": {
+                "luid": 7526193831136395282,
+                "parentLuid": 7526193831122894862
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884959591530513
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "078ba8be-60b1-4057-8ca2-339f202c05ad",
+                "shadowCastMode": 0,
+                "receiveShadows": 0,
+                "luid": 8242829121841987603
             }
         }
     ]
