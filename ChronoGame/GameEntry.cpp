@@ -2,8 +2,8 @@
 
 // Include the SDK from Engine DLL
 #include "pch.h"
-#include <ScriptSDK/ScriptAPI.h>
-
+//#include <ScriptSDK/ScriptAPI.h>
+#include "include/ScriptSDK/ScriptAPI.h"
 
 // Include headers for all scripts you want to register
 #include "Scripts/PlayerScript.hpp"
@@ -26,6 +26,9 @@
 #include "Scripts/BulletShooterScript.hpp"
 #include "Scripts/CameraController.hpp"
 #include "Scripts/RenderSettingsDemo.hpp"
+
+#include "Scripts/MirrorPuzzleManager.hpp"
+#include "Scripts/MirrorPuzzleCell.hpp"
 
 
 
