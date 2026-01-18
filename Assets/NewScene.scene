@@ -164,6 +164,26 @@
                 "shadowCastMode": 0,
                 "receiveShadows": 1,
                 "luid": 8242829103744024582
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 25.0,
+                            "y": 0.5,
+                            "z": 25.0
+                        }
+                    }
+                },
+                "luid": 7165061449827418138
             }
         },
         {
@@ -180,7 +200,7 @@
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": 0.0,
+                    "y": 0.4155912399291992,
                     "z": 0.0
                 },
                 "Scale": {
@@ -195,8 +215,27 @@
                 },
                 "luid": 8390884941517225996
             },
+            "Collider": {
+                "type": 2,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 2,
+                    "value": {
+                        "radius": 0.5,
+                        "height": 1.0
+                    }
+                },
+                "luid": 7165061449873031216
+            },
             "NativeScript": {
-                "ScriptNames": []
+                "ScriptNames": [
+                    "Player_Controller"
+                ]
             }
         },
         {
@@ -239,56 +278,18 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Camera",
-                "isActive": 1,
-                "luid": 7308613686500261889
-            },
-            "Hierarchy": {
-                "luid": 7526193843497598979,
-                "parentLuid": 7526193813062090765
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.4674674868583679,
-                    "z": 0.2846662402153015
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "luid": 8390884971952734210
-            },
-            "Camera": {
-                "FOV Y": 90.0,
-                "Aspect Ratio": 1.7777777910232544,
-                "Near Plane": 0.10000000149011612,
-                "Far Plane": 1000.0,
-                "Is Main Camera": 1,
-                "Is Active Camera": 1
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
                 "name": "Cube",
                 "isActive": 1,
                 "luid": 7308613686507339780
             },
             "Hierarchy": {
                 "luid": 7526193843504676870,
-                "parentLuid": 7526193843497598979
+                "parentLuid": 7526193813062090765
             },
             "Transform": {
                 "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
+                    "x": 0.2702232003211975,
+                    "y": 0.4674674868583679,
                     "z": 0.0
                 },
                 "Scale": {
@@ -309,6 +310,132 @@
                 "shadowCastMode": 0,
                 "receiveShadows": 0,
                 "luid": 8242829134210007047
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Camera",
+                "isActive": 1,
+                "luid": 7308613686500261889
+            },
+            "Hierarchy": {
+                "luid": 7526193843497598979,
+                "parentLuid": 7526193813062090765
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.2702232003211975,
+                    "y": 0.4674674868583679,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 89.0,
+                    "y": 1468.0,
+                    "z": 0.0
+                },
+                "luid": 8390884971952734210
+            },
+            "Camera": {
+                "FOV Y": 60.0,
+                "Aspect Ratio": 1.7777777910232544,
+                "Near Plane": 0.10000000149011612,
+                "Far Plane": 1000.0,
+                "Is Main Camera": 1,
+                "Is Active Camera": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Ground Check",
+                "isActive": 1,
+                "luid": 7308613687923703809
+            },
+            "Hierarchy": {
+                "luid": 7526193844921040899,
+                "parentLuid": 7526193813062090765
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -1.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884973376176130
+            },
+            "Collider": {
+                "type": 1,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 1,
+                    "value": {
+                        "radius": 0.10000000149011612
+                    }
+                },
+                "luid": 7165061449806643208
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Player_ColliderChecker"
+                ]
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sphere",
+                "isActive": 1,
+                "luid": 7308613687925407748
+            },
+            "Hierarchy": {
+                "luid": 7526193844922744838,
+                "parentLuid": 7526193844921040899
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.20000000298023224,
+                    "y": 0.20000000298023224,
+                    "z": 0.20000000298023224
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884973377880069
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 0,
+                "receiveShadows": 0,
+                "luid": 8242829135628075015
             }
         }
     ]

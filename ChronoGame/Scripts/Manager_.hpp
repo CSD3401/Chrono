@@ -1,4 +1,5 @@
 #pragma once
+#include <memory>
 #include "EngineAPI.hpp"
 /*
 * === WORK IN PROGRESS ===
@@ -9,7 +10,7 @@
 
 class Manager_ : public IScript {
 public:
-	static Manager_* instance;
+	static std::unique_ptr<Manager_> instance;
     Manager_() {
 		SCRIPT_FIELD(highlightMaterial, MaterialRef);
     }
@@ -23,7 +24,7 @@ public:
     // === Lifecycle Methods ===
     void Awake() override {
         if (!instance) {
-            instance = this;
+			instance.reset(this);
         }
         else {
 			LOG_WARNING("Multiple instances of Manager_ detected!");
@@ -32,7 +33,12 @@ public:
     void Initialize(Entity entity) override {}
     void Start() override {}
     void Update(double deltaTime) override {}
-    void OnDestroy() override {}
+
+    void OnDestroy() override {
+        if (instance.get() == this) {
+            instance.release();
+        }
+    }
 
     // === Optional Callbacks ===
     void OnEnable() override {}
