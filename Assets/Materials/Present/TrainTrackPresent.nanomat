@@ -1,15 +1,25 @@
 {
-    "Shader": "50f92895-66cc-459d-ad25-0fd250c91f3c",
+    "Shader": "nelitpbr",
     "DepthTest": true,
     "BlendMode": true,
     "CullMode": 1029,
     "PolygonMode": 6914,
+    "RenderQueueBase": "Geometry",
+    "RenderQueueOffset": 0,
     "Properties": {
-        "u_HasAlbedoMap": 1,
-        "u_HasMetallicMap": 1,
-        "u_HasAmbientOcclusionMap": 0,
-        "u_HasNormalMap": 1,
-        "u_HasRoughnessMap": 1,
+        "h_HasAOMap": 0,
+        "h_HasAlbedoMap": 1,
+        "h_HasMetallicMap": 1,
+        "h_HasNormalMap": 1,
+        "h_HasOpacityMap": 0,
+        "h_HasRoughnessMap": 1,
+        "u_AlphaClip": 0,
+        "h_HasAmbientOcclusionMap": 0,
+        "u_NumShadowMaps": 0,
+        "u_ReceiveShadows": 0,
+        "h_HasShadowMaps": 0,
+        "u_Opacity": 1.0,
+        "u_AlphaCutoff": 0.5,
         "u_Metallic": 0.0,
         "u_Roughness": 0.0,
         "u_BaseColor": [
@@ -34,8 +44,10 @@
         ],
         "u_MetallicMap": "2b7dca2d-8d91-4eb5-bb30-9a649a6eb7bb",
         "u_AlbedoMap": "b2dfaa8d-86d6-47b2-99c2-6a81805de561",
+        "u_ShadowMaps": "",
         "u_AmbientOcclusionMap": "",
         "u_NormalMap": "186550a2-7d4e-451f-87f2-4b3b8e65eb18",
+        "u_OpacityMap": "",
         "u_RoughnessMap": "420be8b2-20c9-4f98-9dd8-3b89420f9a31"
     }
 }
