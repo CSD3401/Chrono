@@ -5,15 +5,15 @@
  * Template - Auto-generated script template
  * Implement your game logic in the lifecycle methods below.
  */
-class Template : public IScript {
+class Example_Template : public IScript {
 public:
-    Template() {
+    Example_Template() {
         // Register any editable fields here
         // Example: SCRIPT_FIELD(speed, float);
         // Example: SCRIPT_FIELD_VECTOR(blingstring, String);;
     }
 
-    ~Template() override = default;
+    ~Example_Template() override = default;
 
     // === Lifecycle Methods ===
 
@@ -52,7 +52,7 @@ public:
     }
 
     const char* GetTypeName() const override {
-        return "Template";
+        return "Example_Template";
     }
 
     // === Collision Callbacks ===

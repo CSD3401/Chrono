@@ -5,7 +5,8 @@
 #include <ScriptSDK/ScriptAPI.h>
 
 // Include headers for all scripts you want to register
-#include "Scripts/Template.hpp"
+#include "Scripts/Example_Template.hpp"
+#include "Scripts/Interactable_.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -19,8 +20,11 @@ extern "C" {
         }
 
         // Register all your game-specific scripts here
-        registrar->RegisterScript("Template", []() -> NE::Scripting::IScript* {
-            return new Template();
+        registrar->RegisterScript("Example_Template", []() -> NE::Scripting::IScript* {
+            return new Example_Template();
+            });
+        registrar->RegisterScript("Interactable_", []() -> NE::Scripting::IScript* {
+            return new Interactable_();
             });
         }
 }
