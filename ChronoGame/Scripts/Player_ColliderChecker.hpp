@@ -33,10 +33,10 @@ public:
     const char* GetTypeName() const override { return "Player_ColliderChecker"; }
 
     // === Collision Callbacks ===
-    void OnCollisionEnter(Entity other) override { LOG_DEBUG("ENTER"); }
-    void OnCollisionExit(Entity other) override { LOG_DEBUG("EXIT"); }
-    void OnTriggerEnter(Entity other) override { LOG_DEBUG("ENTER"); }
-    void OnTriggerExit(Entity other) override { LOG_DEBUG("EXIT"); }
+    void OnCollisionEnter(Entity other) override {}
+    void OnCollisionExit(Entity other) override {}
+    void OnTriggerEnter(Entity other) override {}
+    void OnTriggerExit(Entity other) override {}
 
 private:
     bool isColliding;

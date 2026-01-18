@@ -199,9 +199,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.0,
-                    "y": 0.4155912399291992,
-                    "z": 0.0
+                    "x": -0.0006757007213309407,
+                    "y": -0.006396237760782242,
+                    "z": -0.08104052394628525
                 },
                 "Scale": {
                     "x": 1.0,
@@ -209,14 +209,14 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": 0.0,
+                    "x": 0.5,
                     "y": 0.0,
                     "z": 0.0
                 },
                 "luid": 8390884941517225996
             },
             "Collider": {
-                "type": 2,
+                "type": 0,
                 "isTrigger": 0,
                 "center": {
                     "x": 0.0,
@@ -224,13 +224,30 @@
                     "z": 0.0
                 },
                 "data": {
-                    "index": 2,
+                    "index": 0,
                     "value": {
-                        "radius": 0.5,
-                        "height": 1.0
+                        "halfExtents": {
+                            "x": 0.44999998807907104,
+                            "y": 1.0,
+                            "z": 0.44999998807907104
+                        }
                     }
                 },
                 "luid": 7165061449873031216
+            },
+            "Rigidbody": {
+                "Mass": 1.0,
+                "Linear Damping": 0.0,
+                "Angular Damping": 0.05000000074505806,
+                "Use Gravity": 1,
+                "Is Kinematic": 1,
+                "freezeRotX": 0,
+                "freezeRotY": 0,
+                "freezeRotZ": 0,
+                "freezePosX": 0,
+                "freezePosY": 0,
+                "freezePosZ": 0,
+                "luid": 8242266186254254092
             },
             "NativeScript": {
                 "ScriptNames": [
@@ -335,8 +352,8 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": 89.0,
-                    "y": 1468.0,
+                    "x": -1.0,
+                    "y": -0.5,
                     "z": 0.0
                 },
                 "luid": 8390884971952734210
@@ -436,6 +453,41 @@
                 "shadowCastMode": 0,
                 "receiveShadows": 0,
                 "luid": 8242829135628075015
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Manager",
+                "isActive": 1,
+                "luid": 7308613688463327234
+            },
+            "Hierarchy": {
+                "luid": 7526193845460664324,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884973915799555
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Manager_"
+                ]
             }
         }
     ]

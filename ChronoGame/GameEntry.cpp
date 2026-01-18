@@ -1,3 +1,4 @@
+#pragma once
 // GameEntry.cpp
 
 // Include the SDK from Engine DLL
@@ -8,6 +9,7 @@
 #include "Scripts/Interactable_.hpp"
 #include "Scripts/Player_Controller.hpp"
 #include "Scripts/Player_ColliderChecker.hpp"
+#include "Scripts/Manager_.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -29,6 +31,9 @@ extern "C" {
             });
         registrar->RegisterScript("Player_ColliderChecker", []() -> NE::Scripting::IScript* {
             return new Player_ColliderChecker();
+            });
+        registrar->RegisterScript("Manager_", []() -> NE::Scripting::IScript* {
+            return new Manager_();
             });
         }
 }

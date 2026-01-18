@@ -20,7 +20,7 @@ public:
         if (state) {
 			NE::Renderer::Command::AssignMaterial(
                 GetEntity(),
-                Manager_::instance->GetHighlightMaterial());
+                highlightMaterial);
         }
         else {
             NE::Renderer::Command::AssignMaterial(
@@ -34,6 +34,18 @@ public:
     void Initialize(Entity entity) override {}
 
     void Start() override {
+        // Store highlight material from Manager
+        auto m = GameObject::FindObjectsOfType<Manager_>();
+        if (m.size() == 0) {
+            LOG_ERROR("No managers found!");
+        }
+        else if (m.size() > 1) {
+            LOG_WARNING("Multiple managers found!");
+        }
+        else {
+            highlightMaterial = m.begin()->GetComponent<Manager_>()->GetHighlightMaterial();
+        }
+
         // Store default material from this entity
         // ...
     }
@@ -54,4 +66,5 @@ public:
 
 private:
     MaterialRef defaultMaterial{};
+    MaterialRef highlightMaterial{};
 };
