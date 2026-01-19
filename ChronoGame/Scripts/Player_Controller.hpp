@@ -23,8 +23,7 @@ public:
     // == Custom Methods ==
     void Reset()
     {
-        cameraY = 0.0f;
-        cameraX = 0.0f;
+        cameraRotation = Vec3::Zero();
     }
 
     // === Lifecycle Methods ===
@@ -50,11 +49,11 @@ public:
     void Update(double deltaTime) override {
         // === Camera controls ===
         std::pair<double, double> const& mouseDelta = Input::GetMouseDelta();
-        cameraY -= static_cast<float>(mouseDelta.second) * cameraSensitivity;
-        cameraY = std::clamp(cameraY, -89.0f, 89.0f);
-        cameraX += static_cast<float>(mouseDelta.first) * cameraSensitivity;
-        SetRotation(-cameraX, 0.0f, 0.0f);
-        SetRotation(cameraY, cameraX, 0.0f, playerCameraEntity);
+        cameraRotation.y -= static_cast<float>(mouseDelta.second) * cameraSensitivity;
+        cameraRotation.y = std::clamp(cameraRotation.y, -89.0f, 89.0f);
+        cameraRotation.x += static_cast<float>(mouseDelta.first) * cameraSensitivity;
+        SetRotation(-cameraRotation.x, 0.0f, 0.0f);
+        SetRotation(cameraRotation.y, cameraRotation.x, 0.0f, playerCameraEntity);
 
         // === Movement controls ===
         // Read input
@@ -113,8 +112,7 @@ private:
     // === Camera ===
 	GameObjectRef playerCameraRef;
 	Entity playerCameraEntity;
-    float cameraX;
-    float cameraY;
+    Vec3 cameraRotation;
     float cameraSensitivity;
 
     // === Movement ===
