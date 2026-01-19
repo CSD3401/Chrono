@@ -2,27 +2,43 @@
 #include "EngineAPI.hpp"
 /*
 * By Chan Kuan Fu Ryan (c.kuanfuryan)
-* Player_ColliderChecker checks if this object is colliding with something.
-* If it is, the function IsColliding returns true.
+* Player_ColliderChecker uses SphereCast to check for collision in its vicinity.
+* If there is, the function CheckCollision returns true.
 */
 
 class Player_ColliderChecker : public IScript {
 public:
-    Player_ColliderChecker() {}
+    Player_ColliderChecker() {
+        SCRIPT_FIELD(radius, Float);
+        SCRIPT_FIELD_LAYERREF(targetLayer);
+    }
     ~Player_ColliderChecker() override = default;
 
     // == Custom Methods ==
-    bool IsColliding()
+    bool CheckCollision()
     {
-        return isColliding;
+        Vec3 origin = TF_GetWorldPosition(GetTransformRef(GetEntity()));
+
+        LOG_DEBUG(
+            "Casting from origin {" 
+            << origin.x << ", " << origin.y << ", " << origin.z 
+            << "} with radius of " << radius
+        );
+
+        NE::Scripting::RaycastHit raycastHit = SphereCast(
+            origin, 
+            radius, 
+            { 0.0f, -1.0f, 0.0f },
+            1.0f, 
+            targetLayer.ToMask()
+        );
+        return raycastHit.hasHit;
     }
 
     // === Lifecycle Methods ===
     void Awake() override {}
     void Initialize(Entity entity) override {}
-    void Start() override {
-        isColliding = false;
-    }
+    void Start() override {}
     void Update(double deltaTime) override {}
     void OnDestroy() override {}
 
@@ -39,5 +55,6 @@ public:
     void OnTriggerExit(Entity other) override {}
 
 private:
-    bool isColliding;
+    float radius;
+    LayerRef targetLayer;
 };

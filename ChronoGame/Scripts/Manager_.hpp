@@ -1,6 +1,7 @@
 #pragma once
 #include <memory>
 #include <algorithm>
+#include <numbers>
 #include "EngineAPI.hpp"
 /*
 * === WORK IN PROGRESS ===
@@ -20,9 +21,18 @@ public:
     MaterialRef GetHighlightMaterial() const {
         return highlightMaterial;
 	}
-    float Lerp(float a, float b, float t) {
-        t = std::clamp(t, 0.0f, 1.0f);
-        return a + (b - a) * t;
+    float SnappyLerp(
+        float current, 
+        float target, 
+        float snappiness,
+        float deltaTime)
+    {
+        float factor = 1.0f - std::exp(-snappiness * deltaTime);
+        return current + (target - current) * factor;
+    }
+    float DegreesToRadians(float degrees)
+    {
+        return degrees * (std::numbers::pi_v<float> / 180.0f);
     }
 
     // === Lifecycle Methods ===

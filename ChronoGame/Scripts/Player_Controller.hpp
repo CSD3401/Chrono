@@ -1,8 +1,11 @@
 #pragma once
 #include <algorithm>
+#include <cmath>
 #include "EngineAPI.hpp"
 #include "Player_ColliderChecker.hpp"
 #include "Manager_.hpp"
+
+#define GLFW_KEY_SPACE 32
 /*
 * By Chan Kuan Fu Ryan (c.kuanfuryan)
 * Player_Controller is script which handles player input and movement.
@@ -48,6 +51,7 @@ public:
         rigidbodyRef = GetRigidbodyRef(GetEntity());
         Reset();
     }
+
     void Update(double deltaTime) override {
         // === Camera controls ===
         std::pair<double, double> const& mouseDelta = Input::GetMouseDelta();
@@ -60,22 +64,19 @@ public:
         // === Movement controls ===
         // Input Direction
         Vec3 inputDirection = Vec3::Zero();
-        if (Input::IsKeyDown('W')) { inputDirection.z -= 1.0f; }
-        if (Input::IsKeyDown('S')) { inputDirection.z += 1.0f; }
+        if (Input::IsKeyDown('W')) { inputDirection.z += 1.0f; }
+        if (Input::IsKeyDown('S')) { inputDirection.z -= 1.0f; }
         if (Input::IsKeyDown('A')) { inputDirection.x -= 1.0f; }
         if (Input::IsKeyDown('D')) { inputDirection.x += 1.0f; }
         inputDirection = inputDirection.Normalized();
 
         // Camera-relative direction
-        Vec3 cameraForward = TF_GetForward(playerCameraRef.GetEntity());
-        Vec3 cameraRight = TF_GetRight(playerCameraRef.GetEntity());
-        cameraForward.y = 0.0f;
-        cameraRight.y = 0.0f;
-        cameraForward = cameraForward.Normalized();
-        cameraRight = cameraRight.Normalized();
+        float yaw = manager->DegreesToRadians(-cameraRotation.x);
+        Vec3 cameraForward = { cosf(yaw), 0.0f, -sinf(yaw) };
+        Vec3 cameraRight = { sinf(yaw), 0.0f, cosf(yaw) };
 
         // Movement direction
-        Vec3 moveDirection = cameraRight * inputDirection.x + cameraForward * inputDirection.z;
+        Vec3 moveDirection = (cameraRight * inputDirection.x) + (cameraForward * inputDirection.z);
         moveDirection = moveDirection.Normalized();
 
         // Velocity
@@ -88,21 +89,35 @@ public:
         };
         
         // Lerp velocity
-        float t = snappiness * static_cast<float>(deltaTime);
-        velocity.x = manager->Lerp(velocity.x, targetVelocity.x, t);
-        velocity.z = manager->Lerp(velocity.z, targetVelocity.z, t);
+        velocity.x = manager->SnappyLerp(
+            velocity.x, 
+            targetVelocity.x, 
+            snappiness, 
+            static_cast<float>(deltaTime)
+        );
+        velocity.z = manager->SnappyLerp(
+            velocity.z, 
+            targetVelocity.z, 
+            snappiness, 
+            static_cast<float>(deltaTime)
+        );
 
         // Assign
         SetVelocity(rigidbodyRef, velocity);
         
         // Ground Check
-        if (GameObject(groundCheckRef).GetComponent<Player_ColliderChecker>()->IsColliding())
+
+        // === Jumping ===
+        if (Input::WasKeyPressed(GLFW_KEY_SPACE))
         {
-            // LOG_DEBUG("GROUNDED");
-        }
-        else
-        {
-            // LOG_DEBUG("NOPE");
+            if (GameObject(groundCheckRef).GetComponent<Player_ColliderChecker>()->CheckCollision())
+            {
+                LOG_DEBUG("JUMP!");
+            }
+            else
+            {
+                LOG_DEBUG("NO JUMP!");
+            }
         }
     }
     void OnDestroy() override {}

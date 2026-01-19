@@ -125,7 +125,7 @@
             }
         },
         {
-            "Layer": 0,
+            "Layer": 1,
             "EntityMeta": {
                 "name": "Platform",
                 "isActive": 1,
@@ -191,13 +191,6 @@
             "Hierarchy": {
                 "luid": 7526193813062090765,
                 "parentLuid": 0
-            },
-            "PrefabInstance": {
-                "prefabUUID": "8c3cf11f-e83d-49f1-8934-3544228d96f3"
-            },
-            "PrefabLink": {
-                "prefabUUID": "8c3cf11f-e83d-49f1-8934-3544228d96f3",
-                "localID": 0
             },
             "Transform": {
                 "Position": {
@@ -268,10 +261,6 @@
                 "luid": 7526193813063270416,
                 "parentLuid": 7526193813062090765
             },
-            "PrefabLink": {
-                "prefabUUID": "8c3cf11f-e83d-49f1-8934-3544228d96f3",
-                "localID": 1
-            },
             "Transform": {
                 "Position": {
                     "x": 0.0,
@@ -309,10 +298,6 @@
                 "luid": 7526193843504676870,
                 "parentLuid": 7526193813062090765
             },
-            "PrefabLink": {
-                "prefabUUID": "8c3cf11f-e83d-49f1-8934-3544228d96f3",
-                "localID": 2
-            },
             "Transform": {
                 "Position": {
                     "x": 0.2702232003211975,
@@ -349,10 +334,6 @@
             "Hierarchy": {
                 "luid": 7526193843497598979,
                 "parentLuid": 7526193813062090765
-            },
-            "PrefabLink": {
-                "prefabUUID": "8c3cf11f-e83d-49f1-8934-3544228d96f3",
-                "localID": 3
             },
             "Transform": {
                 "Position": {
@@ -392,10 +373,6 @@
                 "luid": 7526193844921040899,
                 "parentLuid": 7526193813062090765
             },
-            "PrefabLink": {
-                "prefabUUID": "8c3cf11f-e83d-49f1-8934-3544228d96f3",
-                "localID": 4
-            },
             "Transform": {
                 "Position": {
                     "x": 0.0,
@@ -414,67 +391,10 @@
                 },
                 "luid": 8390884973376176130
             },
-            "Collider": {
-                "type": 1,
-                "isTrigger": 1,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 1,
-                    "value": {
-                        "radius": 0.10000000149011612
-                    }
-                },
-                "luid": 7165061449806643208
-            },
             "NativeScript": {
                 "ScriptNames": [
                     "Player_ColliderChecker"
                 ]
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Sphere",
-                "isActive": 1,
-                "luid": 7308613687925407748
-            },
-            "Hierarchy": {
-                "luid": 7526193844922744838,
-                "parentLuid": 7526193844921040899
-            },
-            "PrefabLink": {
-                "prefabUUID": "8c3cf11f-e83d-49f1-8934-3544228d96f3",
-                "localID": 5
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 0.20000000298023224,
-                    "y": 0.20000000298023224,
-                    "z": 0.20000000298023224
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884973377880069
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/sphere",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 0,
-                "receiveShadows": 0,
-                "luid": 8242829135628075015
             }
         },
         {
