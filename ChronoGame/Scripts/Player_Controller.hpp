@@ -32,7 +32,7 @@ public:
     void Start() override {
 		// Get player camera game object
         if (playerCameraRef.IsValid()) {
-			playerCameraEntity = playerCameraRef.GetEntity();
+			playerCameraTransformRef = GetTransformRef(playerCameraRef.GetEntity());
         }
         auto m = GameObject::FindObjectsOfType<Manager_>();
         if (m.size() == 0) {
@@ -44,6 +44,8 @@ public:
         else {
             manager = m.begin()->GetComponent<Manager_>();
         }
+        transformRef = GetTransformRef(GetEntity());
+        rigidbodyRef = GetRigidbodyRef(GetEntity());
         Reset();
     }
     void Update(double deltaTime) override {
@@ -52,34 +54,46 @@ public:
         cameraRotation.y -= static_cast<float>(mouseDelta.second) * cameraSensitivity;
         cameraRotation.y = std::clamp(cameraRotation.y, -89.0f, 89.0f);
         cameraRotation.x += static_cast<float>(mouseDelta.first) * cameraSensitivity;
-        SetRotation(-cameraRotation.x, 0.0f, 0.0f);
-        SetRotation(cameraRotation.y, cameraRotation.x, 0.0f, playerCameraEntity);
+        SetRotation(transformRef, {-cameraRotation.x, 0.0f, 0.0f });
+        SetRotation(playerCameraTransformRef, { cameraRotation.y, cameraRotation.x, 0.0f });
 
         // === Movement controls ===
-        // Read input
+        // Input Direction
         Vec3 inputDirection = Vec3::Zero();
-        if (Input::IsKeyDown('W')) { inputDirection.z -= 1.0f; LOG_DEBUG("W"); }
-        if (Input::IsKeyDown('S')) { inputDirection.z += 1.0f; LOG_DEBUG("S"); }
-        if (Input::IsKeyDown('A')) { inputDirection.x -= 1.0f; LOG_DEBUG("A"); }
-        if (Input::IsKeyDown('D')) { inputDirection.x += 1.0f; LOG_DEBUG("D"); }
+        if (Input::IsKeyDown('W')) { inputDirection.z -= 1.0f; }
+        if (Input::IsKeyDown('S')) { inputDirection.z += 1.0f; }
+        if (Input::IsKeyDown('A')) { inputDirection.x -= 1.0f; }
+        if (Input::IsKeyDown('D')) { inputDirection.x += 1.0f; }
         inputDirection = inputDirection.Normalized();
 
+        // Camera-relative direction
+        Vec3 cameraForward = TF_GetForward(playerCameraRef.GetEntity());
+        Vec3 cameraRight = TF_GetRight(playerCameraRef.GetEntity());
+        cameraForward.y = 0.0f;
+        cameraRight.y = 0.0f;
+        cameraForward = cameraForward.Normalized();
+        cameraRight = cameraRight.Normalized();
+
+        // Movement direction
+        Vec3 moveDirection = cameraRight * inputDirection.x + cameraForward * inputDirection.z;
+        moveDirection = moveDirection.Normalized();
+
         // Velocity
-        Vec3 velocity = GetVelocity(); // Must have Rigidbody
+        Vec3 velocity = GetVelocity(rigidbodyRef); // Must have Rigidbody
         Vec3 targetVelocity
         {
-            inputDirection.x * moveSpeed,
+            moveDirection.x * moveSpeed,
             velocity.y,
-            inputDirection.z * moveSpeed
+            moveDirection.z * moveSpeed
         };
-
+        
         // Lerp velocity
         float t = snappiness * static_cast<float>(deltaTime);
         velocity.x = manager->Lerp(velocity.x, targetVelocity.x, t);
-        velocity.y = manager->Lerp(velocity.y, targetVelocity.y, t);
+        velocity.z = manager->Lerp(velocity.z, targetVelocity.z, t);
 
         // Assign
-        SetVelocity(targetVelocity);
+        SetVelocity(rigidbodyRef, velocity);
         
         // Ground Check
         if (GameObject(groundCheckRef).GetComponent<Player_ColliderChecker>()->IsColliding())
@@ -108,10 +122,12 @@ public:
 private:
     // === Manager ===
     Manager_* manager;
+    TransformRef transformRef;
+    RigidbodyRef rigidbodyRef;
 
     // === Camera ===
 	GameObjectRef playerCameraRef;
-	Entity playerCameraEntity;
+    TransformRef playerCameraTransformRef;
     Vec3 cameraRotation;
     float cameraSensitivity;
 
