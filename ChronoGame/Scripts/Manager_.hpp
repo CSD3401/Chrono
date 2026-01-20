@@ -17,7 +17,7 @@ public:
     }
     ~Manager_() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     MaterialRef GetHighlightMaterial() const {
         return highlightMaterial;
 	}

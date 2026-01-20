@@ -18,7 +18,7 @@ public:
     }
     ~Puzzle_() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     void Solve()
     {
 		Events::Send("PuzzleSolved", (void*)puzzleKey);

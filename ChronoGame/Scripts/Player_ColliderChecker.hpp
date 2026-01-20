@@ -14,10 +14,10 @@ public:
     }
     ~Player_ColliderChecker() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     bool CheckCollision()
     {
-        Vec3 origin = TF_GetWorldPosition(GetTransformRef(GetEntity()));
+        Vec3 origin = TF_GetWorldPosition(GetEntity());
 
         LOG_DEBUG(
             "Casting from origin {" 

@@ -20,13 +20,19 @@ public:
         SCRIPT_GAMEOBJECT_REF(groundCheckRef);
         SCRIPT_FIELD(moveSpeed, Float);
         SCRIPT_FIELD(snappiness, Float);
+        SCRIPT_FIELD(jumpStrength, Float);
     }
     ~Player_Controller() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     void Reset()
     {
         cameraRotation = Vec3::Zero();
+        raycastForward = { 1.0f, 0.0f, 0.0f };
+    }
+    Vec3 GetRaycastForward()
+    {
+        return raycastForward;
     }
 
     // === Lifecycle Methods ===
@@ -37,15 +43,15 @@ public:
         if (playerCameraRef.IsValid()) {
 			playerCameraTransformRef = GetTransformRef(playerCameraRef.GetEntity());
         }
-        auto m = GameObject::FindObjectsOfType<Manager_>();
-        if (m.size() == 0) {
+        auto v = GameObject::FindObjectsOfType<Manager_>();
+        if (v.size() == 0) {
             LOG_ERROR("No managers found!");
         }
-        else if (m.size() > 1) {
+        else if (v.size() > 1) {
             LOG_WARNING("Multiple managers found!");
         }
         else {
-            manager = m.begin()->GetComponent<Manager_>();
+            manager = v.begin()->GetComponent<Manager_>();
         }
         transformRef = GetTransformRef(GetEntity());
         rigidbodyRef = GetRigidbodyRef(GetEntity());
@@ -72,8 +78,15 @@ public:
 
         // Camera-relative direction
         float yaw = manager->DegreesToRadians(-cameraRotation.x);
+        float pitch = manager->DegreesToRadians(-cameraRotation.y);
         Vec3 cameraForward = { cosf(yaw), 0.0f, -sinf(yaw) };
         Vec3 cameraRight = { sinf(yaw), 0.0f, cosf(yaw) };
+        raycastForward = {
+            cosf(pitch) * sinf(yaw),
+            sinf(pitch),
+            cosf(pitch) * cosf(yaw)
+        };
+        raycastForward = raycastForward.Normalized();
 
         // Movement direction
         Vec3 moveDirection = (cameraRight * inputDirection.x) + (cameraForward * inputDirection.z);
@@ -102,23 +115,17 @@ public:
             static_cast<float>(deltaTime)
         );
 
-        // Assign
-        SetVelocity(rigidbodyRef, velocity);
-        
-        // Ground Check
-
         // === Jumping ===
-        if (Input::WasKeyPressed(GLFW_KEY_SPACE))
+        if (Input::IsKeyDown(GLFW_KEY_SPACE))
         {
             if (GameObject(groundCheckRef).GetComponent<Player_ColliderChecker>()->CheckCollision())
             {
-                LOG_DEBUG("JUMP!");
-            }
-            else
-            {
-                LOG_DEBUG("NO JUMP!");
+                velocity.y = jumpStrength;
             }
         }
+
+        // Assign
+        SetVelocity(rigidbodyRef, velocity);
     }
     void OnDestroy() override {}
 
@@ -150,4 +157,8 @@ private:
     GameObjectRef groundCheckRef;
     float moveSpeed;
     float snappiness;
+    float jumpStrength;
+
+    // === Raycast ===
+    Vec3 raycastForward;
 };

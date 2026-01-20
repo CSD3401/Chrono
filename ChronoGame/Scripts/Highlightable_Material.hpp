@@ -14,7 +14,7 @@ public:
     Highlightable_Material() {}
     ~Highlightable_Material() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     void SetHighlight(bool state) override
     {
         if (state) {
