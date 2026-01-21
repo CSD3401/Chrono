@@ -240,40 +240,40 @@ namespace Scripting {
         bool IsPrefabRoot(Entity entity = DEFAULT_ENTITY_PARAM) const;
 
         //=====================================================================
-        // TRANSFORM OPERATIONS (Unity-style)
+        // TRANSFORM OPERATIONS (TF_*)
         // All functions support optional Entity parameter:
         // - If not specified, operates on this script's entity (m_entity)
         // - If specified, operates on the target entity
         //=====================================================================
 
         // Position
-        Vec3 GetPosition(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        Vec3 GetWorldPosition(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        void SetPosition(const Vec3& pos, Entity entity = DEFAULT_ENTITY_PARAM);
-        void SetPosition(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+        Vec3 TF_GetPosition(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        Vec3 TF_GetWorldPosition(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        void TF_SetPosition(const Vec3& pos, Entity entity = DEFAULT_ENTITY_PARAM);
+        void TF_SetPosition(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Rotation (Euler angles in degrees)
-        Vec3 GetRotation(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        void SetRotation(const Vec3& rot, Entity entity = DEFAULT_ENTITY_PARAM);
-        void SetRotation(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+        Vec3 TF_GetRotation(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        void TF_SetRotation(const Vec3& rot, Entity entity = DEFAULT_ENTITY_PARAM);
+        void TF_SetRotation(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Scale
-        Vec3 GetScale(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        void SetScale(const Vec3& scale, Entity entity = DEFAULT_ENTITY_PARAM);
-        void SetScale(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
-        void SetScale(float uniformScale, Entity entity = DEFAULT_ENTITY_PARAM);
+        Vec3 TF_GetScale(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        void TF_SetScale(const Vec3& scale, Entity entity = DEFAULT_ENTITY_PARAM);
+        void TF_SetScale(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+        void TF_SetScale(float uniformScale, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Relative transforms
-        void Translate(const Vec3& translation, Entity entity = DEFAULT_ENTITY_PARAM);
-        void Translate(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+        void TF_Translate(const Vec3& translation, Entity entity = DEFAULT_ENTITY_PARAM);
+        void TF_Translate(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
 
-        void Rotate(const Vec3& rotation, Entity entity = DEFAULT_ENTITY_PARAM);
-        void Rotate(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+        void TF_Rotate(const Vec3& rotation, Entity entity = DEFAULT_ENTITY_PARAM);
+        void TF_Rotate(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Direction vectors (based on rotation)
-        Vec3 GetForward(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        Vec3 GetRight(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        Vec3 GetUp(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        Vec3 TF_GetForward(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        Vec3 TF_GetRight(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        Vec3 TF_GetUp(Entity entity = DEFAULT_ENTITY_PARAM) const;
 
         //=====================================================================
         // HIERARCHY OPERATIONS
@@ -310,39 +310,44 @@ namespace Scripting {
         std::vector<Entity> GetChildren(Entity entity = DEFAULT_ENTITY_PARAM) const;
 
         //=====================================================================
-        // RIGIDBODY PHYSICS (Unity-style)
+        // RIGIDBODY PHYSICS (RB_*)
         // All functions support optional Entity parameter
         //=====================================================================
 
-        bool HasRigidbody(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        bool RB_HasRigidbody(Entity entity = DEFAULT_ENTITY_PARAM) const;
 
         // Mass
-        float GetMass(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        void SetMass(float mass, Entity entity = DEFAULT_ENTITY_PARAM);
+        float RB_GetMass(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        void RB_SetMass(float mass, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Gravity
-        bool GetUseGravity(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        void SetUseGravity(bool use, Entity entity = DEFAULT_ENTITY_PARAM);
+        bool RB_GetUseGravity(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        void RB_SetUseGravity(bool use, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Static/Dynamic
-        bool IsStatic(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        void SetStatic(bool isStatic, Entity entity = DEFAULT_ENTITY_PARAM);
+        bool RB_IsStatic(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        void RB_SetStatic(bool isStatic, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Rotation locking
-        void LockRotation(bool lockX, bool lockY, bool lockZ, Entity entity = DEFAULT_ENTITY_PARAM);
+        void RB_LockRotation(bool lockX, bool lockY, bool lockZ, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Velocity
-        Vec3 GetVelocity(Entity entity = DEFAULT_ENTITY_PARAM) const;
-        void SetVelocity(const Vec3& velocity, Entity entity = DEFAULT_ENTITY_PARAM);
-        void SetVelocity(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+        Vec3 RB_GetVelocity(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        void RB_SetVelocity(const Vec3& velocity, Entity entity = DEFAULT_ENTITY_PARAM);
+        void RB_SetVelocity(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+
+        // Angular Velocity (Rotation)
+        Vec3 RB_GetAngularVelocity(Entity entity = DEFAULT_ENTITY_PARAM) const;
+        void RB_SetAngularVelocity(const Vec3& angularVelocity, Entity entity = DEFAULT_ENTITY_PARAM);
+        void RB_SetAngularVelocity(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Forces
-        void AddForce(const Vec3& force, Entity entity = DEFAULT_ENTITY_PARAM);
-        void AddForce(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+        void RB_AddForce(const Vec3& force, Entity entity = DEFAULT_ENTITY_PARAM);
+        void RB_AddForce(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
 
         // Impulses
-        void AddImpulse(const Vec3& impulse, Entity entity = DEFAULT_ENTITY_PARAM);
-        void AddImpulse(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
+        void RB_AddImpulse(const Vec3& impulse, Entity entity = DEFAULT_ENTITY_PARAM);
+        void RB_AddImpulse(float x, float y, float z, Entity entity = DEFAULT_ENTITY_PARAM);
 
         //=====================================================================
         // PHYSICS RAYCASTING
@@ -357,6 +362,14 @@ namespace Scripting {
 
         std::vector<RaycastHit> RaycastAll(const Vec3& origin, const Vec3& direction,
                                             float maxDistance, uint32_t layerMask = 0xFFFFFFFF) const;
+
+        RaycastHit SphereCast(const Vec3& origin, float radius, const Vec3& direction,
+                              float maxDistance, uint32_t layerMask = 0xFFFFFFFF) const;
+
+        RaycastHit SphereCast(float originX, float originY, float originZ,
+                              float radius,
+                              float dirX, float dirY, float dirZ,
+                              float maxDistance, uint32_t layerMask = 0xFFFFFFFF) const;
 
         //=====================================================================
         // AUDIO SOURCE
@@ -516,6 +529,14 @@ namespace Scripting {
         MaterialRef GetMaterialRef(const std::string& materialUUID) const;
 
         /**
+         * Get the material reference from an entity's renderer component.
+         * Convenience helper that combines GetMaterial() and GetMaterialRef().
+         * @param entity Entity ID to get material from
+         * @return Material reference (check IsValid() before use)
+         */
+        MaterialRef GetEntityMaterial(Entity entity) const;
+
+        /**
          * Get a reference to a prefab asset by UUID.
          * Use this to store references to prefabs that can be instantiated at runtime.
          * @param prefabUUID Prefab asset UUID string
@@ -565,6 +586,10 @@ namespace Scripting {
         void SetVelocity(const RigidbodyRef& ref, const Vec3& velocity);
         void AddForce(const RigidbodyRef& ref, const Vec3& force);
 
+        // Renderer operations on ComponentRef
+        MaterialRef GetMaterialRef(const RendererRef& ref) const;
+        void SetMaterialRef(const RendererRef& ref, const MaterialRef& materialRef);
+
         //=====================================================================
         // FIELD REGISTRATION FOR EDITOR (Protected - use macros in scripts)
         //=====================================================================
@@ -582,6 +607,8 @@ namespace Scripting {
         void RegisterAudioSourceRefField(const std::string& name, AudioSourceRef* memberPtr);
         void RegisterMaterialRefField(const std::string& name, MaterialRef* memberPtr);
         void RegisterPrefabRefField(const std::string& name, PrefabRef* memberPtr);
+        void RegisterGameObjectRefField(const std::string& name, GameObjectRef* memberPtr);
+        void RegisterLayerRefField(const std::string& name, LayerRef* memberPtr);
 
         // Vector field registration (native support - no override boilerplate needed!)
         void RegisterIntVectorField(const std::string& name, std::vector<int>* memberPtr);
@@ -631,6 +658,68 @@ namespace Scripting {
         virtual void RemoveArrayElement(const std::string& fieldName, size_t index);
 
         void MarkFieldAsEntityReference(const std::string& name);
+
+        //=====================================================================
+        // GAME OBJECT ACCESS (Unity-style)
+        //=====================================================================
+
+        /**
+         * Get the GameObject wrapper for this script's entity.
+         * Similar to Unity's gameObject property.
+         *
+         * Example:
+         * @code
+         * // Get another script on the same GameObject
+         * auto otherScript = gameObject.GetComponent<OtherScript>();
+         * @endcode
+         */
+        class GameObject gameObject() const;
+
+        /**
+         * Get a script component by type on this entity.
+         * Shortcut for gameObject.GetComponent<T>().
+         * Similar to Unity's GetComponent<T>() on MonoBehaviour.
+         *
+         * Example:
+         * @code
+         * // In PlayerScript, access TestScript on the same entity
+         * auto testScript = GetComponent<TestScript>();
+         * if (testScript) {
+         *     testScript->ExampleFunction();
+         *     testScript->someValue = 42;
+         * }
+         * @endcode
+         *
+         * @tparam T The script type (must inherit from IScript)
+         * @return Pointer to the script instance, or nullptr if not found
+         */
+        template<typename T>
+        inline T* GetComponent() const {
+            return gameObject().GetComponent<T>();
+        }
+
+        /**
+         * Check if this entity has a specific script type.
+         * Shortcut for gameObject.HasComponent<T>().
+         *
+         * @tparam T The script type to check for
+         * @return true if the script exists on this entity
+         */
+        template<typename T>
+        inline bool HasScript() const {
+            return GetComponent<T>() != nullptr;
+        }
+
+        /**
+         * Get a script by name on this entity.
+         * Shortcut for gameObject.GetScript(name).
+         *
+         * @param scriptName The registered name of the script
+         * @return Pointer to the script instance, or nullptr if not found
+         */
+        inline IScript* GetScript(const std::string& scriptName) const {
+            return gameObject().GetScript(scriptName);
+        }
 
         //=====================================================================
         // INTERNAL ENGINE INTERFACE (Do not call from scripts)
