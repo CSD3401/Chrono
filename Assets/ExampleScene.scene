@@ -1,0 +1,275 @@
+{
+    "RenderSettings": {
+        "envSource": 2,
+        "ambientColour": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        },
+        "ambientIntensity": 0.0,
+        "fogEnabled": 0,
+        "fogMode": 0,
+        "fogColour": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        },
+        "fogStart": 0.0,
+        "fogEnd": 100.0,
+        "fogDensity": 0.10000000149011612
+    },
+    "PostProcessingSettings": {
+        "bloomSettings": {
+            "tint": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "brightThreshold": 1.0,
+            "brightScale": 1.0,
+            "softKnee": 0.20000000298023224,
+            "bloomRadius": 1.0,
+            "bloomIntensity": 0.10000000149011612,
+            "exposure": 1.0
+        },
+        "ssaoSettings": {
+            "enabled": 0,
+            "radius": 0.5,
+            "bias": 0.02500000037252903,
+            "intensity": 1.0,
+            "power": 1.5
+        }
+    },
+    "Entities": [
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Plane",
+                "isActive": 1,
+                "luid": 7308613704544878595
+            },
+            "Hierarchy": {
+                "luid": 7526193861542215685,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884989997350916
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/plane",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 0,
+                "receiveShadows": 0,
+                "luid": 8242829152247545862
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": -0.10000000149011612,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 5.0,
+                            "y": 0.10000000149011612,
+                            "z": 5.0
+                        }
+                    }
+                },
+                "luid": 7165061466422640647
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613704548876296
+            },
+            "Hierarchy": {
+                "luid": 7526193861546213386,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884990001348617
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Player",
+                "isActive": 1,
+                "luid": 0
+            },
+            "Hierarchy": {
+                "luid": 7526193861552242691,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 1.0315526723861694,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.5,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "luid": 8390884990007377924
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/capsule",
+                "materialUUID": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                "shadowCastMode": 0,
+                "receiveShadows": 0,
+                "luid": 8242829152259014675
+            },
+            "Collider": {
+                "type": 2,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 2,
+                    "value": {
+                        "radius": 0.5,
+                        "height": 1.0
+                    }
+                },
+                "luid": 7165061466432471045
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Player_Controller_Example"
+                ]
+            },
+            "CharacterController": {
+                "Max Slope Angle": 45.0,
+                "Max Strength": 1000.0,
+                "Character Padding": 0.019999999552965164,
+                "Penetration Recovery Speed": 1.0,
+                "Predictive Contact Distance": 0.10000000149011612,
+                "Supporting Volume Depth": 1.0,
+                "luid": 7161683766723870721
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 0
+            },
+            "Hierarchy": {
+                "luid": 7526193861552242699,
+                "parentLuid": 7526193861552242691
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.2702232003211975,
+                    "y": 0.4674674868583679,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.6000000238418579,
+                    "y": 0.20000000298023224,
+                    "z": 0.6000000238418579
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884990007377932
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "078ba8be-60b1-4057-8ca2-339f202c05ad",
+                "shadowCastMode": 0,
+                "receiveShadows": 0,
+                "luid": 8242829152257572877
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Camera",
+                "isActive": 1,
+                "luid": 0
+            },
+            "Hierarchy": {
+                "luid": 7526193861552242702,
+                "parentLuid": 7526193861552242691
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.2702232003211975,
+                    "y": 0.4674674868583679,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -1.0,
+                    "y": -0.5,
+                    "z": 0.0
+                },
+                "luid": 8390884990007377935
+            },
+            "Camera": {
+                "FOV Y": 60.0,
+                "Aspect Ratio": 1.7777777910232544,
+                "Near Plane": 0.10000000149011612,
+                "Far Plane": 1000.0,
+                "Is Main Camera": 1,
+                "Is Active Camera": 1
+            }
+        }
+    ]
+}

@@ -1,0 +1,243 @@
+{
+    "Entities": [
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Player",
+                "isActive": 1,
+                "luid": 7308613656064753675
+            },
+            "Hierarchy": {
+                "luid": 7526193813062090765,
+                "parentLuid": 0
+            },
+            "PrefabInstance": {
+                "prefabUUID": "596030cb-1205-4b68-b2e9-5fb28bde4725"
+            },
+            "PrefabLink": {
+                "prefabUUID": "596030cb-1205-4b68-b2e9-5fb28bde4725",
+                "localID": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.5,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "luid": 8390884941517225996
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.44999998807907104,
+                            "y": 1.0,
+                            "z": 0.44999998807907104
+                        }
+                    }
+                },
+                "luid": 7165061449873031216
+            },
+            "Rigidbody": {
+                "Mass": 1.0,
+                "Linear Damping": 0.0,
+                "Angular Damping": 0.05000000074505806,
+                "Use Gravity": 1,
+                "Is Kinematic": 1,
+                "freezeRotX": 0,
+                "freezeRotY": 0,
+                "freezeRotZ": 0,
+                "freezePosX": 0,
+                "freezePosY": 0,
+                "freezePosZ": 0,
+                "luid": 8242266186254254092
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Player_Controller"
+                ]
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Capsule",
+                "isActive": 1,
+                "luid": 7308613656065933326
+            },
+            "Hierarchy": {
+                "luid": 7526193813063270416,
+                "parentLuid": 7526193813062090765
+            },
+            "PrefabLink": {
+                "prefabUUID": "596030cb-1205-4b68-b2e9-5fb28bde4725",
+                "localID": 1
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884941518405647
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/capsule",
+                "materialUUID": "6b112c89-70dc-4207-a07d-bb63e4d0ed87",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "luid": 8242829103768600593
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613686507339780
+            },
+            "Hierarchy": {
+                "luid": 7526193843504676870,
+                "parentLuid": 7526193813062090765
+            },
+            "PrefabLink": {
+                "prefabUUID": "596030cb-1205-4b68-b2e9-5fb28bde4725",
+                "localID": 2
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.2702232003211975,
+                    "y": 0.4674674868583679,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.6000000238418579,
+                    "y": 0.20000000298023224,
+                    "z": 0.6000000238418579
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884971959812101
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "078ba8be-60b1-4057-8ca2-339f202c05ad",
+                "shadowCastMode": 0,
+                "receiveShadows": 0,
+                "luid": 8242829134210007047
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Camera",
+                "isActive": 1,
+                "luid": 7308613686500261889
+            },
+            "Hierarchy": {
+                "luid": 7526193843497598979,
+                "parentLuid": 7526193813062090765
+            },
+            "PrefabLink": {
+                "prefabUUID": "596030cb-1205-4b68-b2e9-5fb28bde4725",
+                "localID": 3
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.2702232003211975,
+                    "y": 0.4674674868583679,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -1.0,
+                    "y": -0.5,
+                    "z": 0.0
+                },
+                "luid": 8390884971952734210
+            },
+            "Camera": {
+                "FOV Y": 60.0,
+                "Aspect Ratio": 1.7777777910232544,
+                "Near Plane": 0.10000000149011612,
+                "Far Plane": 1000.0,
+                "Is Main Camera": 1,
+                "Is Active Camera": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Ground Check",
+                "isActive": 1,
+                "luid": 7308613687923703809
+            },
+            "Hierarchy": {
+                "luid": 7526193844921040899,
+                "parentLuid": 7526193813062090765
+            },
+            "PrefabLink": {
+                "prefabUUID": "596030cb-1205-4b68-b2e9-5fb28bde4725",
+                "localID": 4
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -1.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390884973376176130
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Player_ColliderChecker"
+                ]
+            }
+        }
+    ]
+}

@@ -5,6 +5,8 @@
 #include "pch.h"
 #include <ScriptSDK/ScriptAPI.h>
 
+#include "Scripts/Examples/Player_Controller_Example.hpp"
+
 // Include headers for all scripts you want to register
 #include "Scripts/Interactable_.hpp"
 #include "Scripts/Player_Controller.hpp"
@@ -35,5 +37,12 @@ extern "C" {
         registrar->RegisterScript("Manager_", []() -> NE::Scripting::IScript* {
             return new Manager_();
             });
+
+
+
+        registrar->RegisterScript("Player_Controller_Example", []() -> NE::Scripting::IScript* {
+            return new Player_Controller_Example();
+            });
+
         }
 }
