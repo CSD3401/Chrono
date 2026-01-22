@@ -10,7 +10,6 @@
 #include "Scripts/Player_Controller.hpp"
 #include "Scripts/Player_ColliderChecker.hpp"
 #include "Scripts/Manager_.hpp"
-#include "Scripts/Miscellaneous_ICOSwitcher.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -35,9 +34,6 @@ extern "C" {
             });
         registrar->RegisterScript("Manager_", []() -> NE::Scripting::IScript* {
             return new Manager_();
-            });
-        registrar->RegisterScript("Miscellaneous_ICOSwitcher", []() -> NE::Scripting::IScript* {
-            return new Miscellaneous_ICOSwitcher();
             });
         }
 }
