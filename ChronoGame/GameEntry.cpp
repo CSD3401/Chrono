@@ -11,6 +11,7 @@
 #include "Scripts/Player_ColliderChecker.hpp"
 #include "Scripts/Manager_.hpp"
 #include "Scripts/Puzzle_Wire.hpp"
+#include "Scripts/WireChild.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -38,6 +39,9 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_Wire", []() -> NE::Scripting::IScript* {
             return new Puzzle_Wire();
+            });
+        registrar->RegisterScript("WireChild", []() -> NE::Scripting::IScript* {
+            return new WireChild();
             });
         }
 }

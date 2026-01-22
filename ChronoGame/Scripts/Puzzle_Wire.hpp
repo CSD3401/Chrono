@@ -24,6 +24,7 @@ public:
         SCRIPT_GAMEOBJECT_REF(wireHolderObject);
         SCRIPT_FIELD_VECTOR(wireColours, Int);
         SCRIPT_FIELD_VECTOR(correctColours, Int);
+        SCRIPT_FIELD(index, Int);
 
     }
 
@@ -106,10 +107,11 @@ public:
 
     void InitWireColours()
     {
+
         std::string message = "SetupWirePuzzle" + std::to_string(index);
         for (int i = 0; i < numWires; ++i)
         {
-            Events::Send(message.c_str(), (void*)wireColours[i]);
+            Events::Send(message.c_str(), (void*)(wireColours[i]));
         }
     }
 
@@ -152,8 +154,8 @@ private:
     // Add your private member variables here
     // Example: float speed = 5.0f;
     GameObjectRef wireHolderObject;
-    int numWires;
+    int numWires = 3;
     std::vector<int> wireColours;
     std::vector<int> correctColours;
-    WirePuzzleIndex index;
+    int index;
 };
