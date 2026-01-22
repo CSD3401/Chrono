@@ -24,7 +24,7 @@ public:
         SCRIPT_GAMEOBJECT_REF(wireHolderObject);
         SCRIPT_FIELD_VECTOR(wireColours, Int);
         SCRIPT_FIELD_VECTOR(correctColours, Int);
-        SCRIPT_FIELD(index, Int);
+        SCRIPT_FIELD(wirePuzzleIndex, Int);
 
     }
 
@@ -40,11 +40,20 @@ public:
         // Called to initialize the script with its entity
         // Grab all the children from the entity
         numWires = GetChildren(wireHolderObject).size();
+
+
     }
 
     void Start() override {
         // Called when the script is enabled and play mode starts
+        // Message = "WireButtonPressed" + wire puzzle index
+        // the pressed button sends the wire child index to swap colours
+        std::string listenToMessage = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
+        Events::Listen(listenToMessage.c_str(), [this](void* data) {
+            this->SwapWireColours(data);
+            });
 
+        LOG_DEBUG(listenToMessage.c_str());
         // Tell all the children to change to their respective colour
         InitWireColours();
     }
@@ -97,33 +106,36 @@ public:
     {
         BLUE = 0,
         RED,
+        GREEN,
         YELLOW,
         ORANGE,
         PURPLE,
-        GREEN,
         PINK,
         WHITE // Finished
     };
 
     void InitWireColours()
     {
-
-        std::string message = "SetupWirePuzzle" + std::to_string(index);
-        for (int i = 0; i < numWires; ++i)
+        // Message is UpdateWireColour + WirePuzzleIndex + WireChildIndex
+        std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
+        for (int i = 0; i < wireColours.size(); ++i)
         {
-            Events::Send(message.c_str(), (void*)(wireColours[i]));
+            Events::Send((message + std::to_string(i)).c_str(), &wireColours[i]);
         }
     }
 
-    void SwapWireColours(int leftIndex, int rightIndex)
+    void SwapWireColours(void* indexData)
     {
+        int leftIndex = *reinterpret_cast<int*>(indexData);
+        int rightIndex = leftIndex + 1;
         // Update the colours in the vector
         std::swap(wireColours[leftIndex], wireColours[rightIndex]);
 
         // update the wire gameobjects to their new colour
-        std::string message = "WirePuzzle" + std::to_string(index);
-        Events::Send((message + std::to_string(leftIndex)).c_str(), (void*)((WIRE_COLOUR)wireColours[leftIndex]));
-        Events::Send((message + std::to_string(rightIndex)).c_str(), (void*)((WIRE_COLOUR)wireColours[leftIndex]));
+        std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
+        Events::Send((message + std::to_string(leftIndex)).c_str(), &wireColours[leftIndex]);
+        Events::Send((message + std::to_string(rightIndex)).c_str(), &wireColours[rightIndex]);
+        LOG_DEBUG(message.c_str());
 
         // Check if the puzzle is solved
         if (CheckWireColours())
@@ -157,5 +169,5 @@ private:
     int numWires = 3;
     std::vector<int> wireColours;
     std::vector<int> correctColours;
-    int index;
+    int wirePuzzleIndex;
 };

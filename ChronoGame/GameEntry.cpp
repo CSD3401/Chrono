@@ -12,6 +12,7 @@
 #include "Scripts/Manager_.hpp"
 #include "Scripts/Puzzle_Wire.hpp"
 #include "Scripts/WireChild.hpp"
+#include "Scripts/Interactable_WireButton.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -42,6 +43,9 @@ extern "C" {
             });
         registrar->RegisterScript("WireChild", []() -> NE::Scripting::IScript* {
             return new WireChild();
+            });
+        registrar->RegisterScript("Interactable_WireButton", []() -> NE::Scripting::IScript* {
+            return new Interactable_WireButton();
             });
         }
 }

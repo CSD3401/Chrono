@@ -15,7 +15,8 @@ public:
         // Register any editable fields here
         // Example: SCRIPT_FIELD(speed, float);
         // Example: SCRIPT_FIELD_VECTOR(blingstring, String);
-        SCRIPT_FIELD(index, Int);
+        SCRIPT_FIELD(wireChildIndex, Int);
+        SCRIPT_FIELD(wirePuzzleIndex, Int);
         SCRIPT_COMPONENT_REF(blue, MaterialRef);
         SCRIPT_COMPONENT_REF(red, MaterialRef);
         SCRIPT_COMPONENT_REF(green, MaterialRef);
@@ -40,6 +41,13 @@ public:
 
     void Start() override {
         // Called when the script is enabled and play mode starts
+        std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex) + std::to_string(wireChildIndex);
+        LOG_DEBUG(message.c_str());
+        // listen to event for updating wire colours
+        //Events::Listen(message.c_str(), UpdateWireColour);
+        Events::Listen(message.c_str(), [this](void* data) {
+            this->UpdateWireColour(data);
+            });
     }
 
     void Update(double deltaTime) override {
@@ -86,9 +94,9 @@ public:
         // Called when this entity exits a trigger
     }
 
-    void UpdateWireColour(int colour)
+    void UpdateWireColour(void* colourData)
     {
-        Puzzle_Wire::WIRE_COLOUR c = (Puzzle_Wire::WIRE_COLOUR)colour;
+        Puzzle_Wire::WIRE_COLOUR c = (Puzzle_Wire::WIRE_COLOUR)*reinterpret_cast<int*>(colourData);
         switch (c)
         {
         case Puzzle_Wire::BLUE:
@@ -141,7 +149,8 @@ public:
 private:
     // Add your private member variables here
     // Example: float speed = 5.0f;
-    int index = 0;
+    int wireChildIndex;
+    int wirePuzzleIndex;
     MaterialRef colourMat;
 
     // Colours
