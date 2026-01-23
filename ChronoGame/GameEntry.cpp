@@ -41,7 +41,7 @@ extern "C" {
             return new Watch_Controller();
             });
         registrar->RegisterScript("Mirror_Puzzle", []() -> NE::Scripting::IScript* {
-            return new Watch_Controller();
+            return new MirrorPuzzle();
             });
         }
 }

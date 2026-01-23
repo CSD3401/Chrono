@@ -37,6 +37,8 @@ public:
     };
 
     MirrorPuzzle() {
+        SCRIPT_GAMEOBJECT_REF(goTest);
+
         // Navigator entities
         SCRIPT_COMPONENT_REF(targetTransform, TransformRef);
         SCRIPT_COMPONENT_REF(mirrorTargetTransform, TransformRef);
@@ -182,6 +184,19 @@ public:
     const char* GetTypeName() const override {
         return "MirrorPuzzle";
     }
+
+    void OnDestroy() override {}
+
+    // === Optional Callbacks ===
+    void OnEnable() override {}
+    void OnDisable() override {}
+    void OnValidate() override {}
+
+    // === Collision Callbacks ===
+    void OnCollisionEnter(Entity other) override {}
+    void OnCollisionExit(Entity other) override {}
+    void OnTriggerEnter(Entity other) override {}
+    void OnTriggerExit(Entity other) override {}
 
 private:
     // ========== Helper Functions ==========
@@ -615,6 +630,8 @@ private:
     }
 
     // ========== Fields ==========
+
+    GameObjectRef goTest;
 
     // Navigator transforms
     TransformRef targetTransform;
