@@ -12,6 +12,8 @@ public:
     void Awake() override {}
 
     void Initialize(Entity entity) override {
+        SCRIPT_GAMEOBJECT_REF(playerCameraRef);
+		SCRIPT_FIELD_LAYERREF(raycastLayer, "Raycast Layer");
         SCRIPT_FIELD(simulatedGravity, Float);
         SCRIPT_FIELD(moveSpeed, Float);
     }
@@ -29,12 +31,12 @@ public:
         auto [mdx, mdy] = Input::GetMouseDelta();
         yawDeg += static_cast<float>(mdx) * mouseSens;
         pitchDeg -= static_cast<float>(mdy) * mouseSens;
-
         pitchDeg = std::clamp(pitchDeg, pitchMin, pitchMax);
         
-		LOG_INFO("Pitch: " << pitchDeg << " Yaw: " << yawDeg);
+		//LOG_INFO("Pitch: " << pitchDeg << " Yaw: " << yawDeg);
 
         CC_Rotate(yawDeg);
+        TF_SetRotation(Vec3(pitchDeg, 0.0f, 0.0f), playerCameraRef.GetEntity());
 
         Vec3 inputDir{ 0,0,0 };
         if (Input::IsKeyDown('W')) inputDir.x += 1.0f;
@@ -98,9 +100,11 @@ public:
     void OnTriggerExit(Entity other) override {}
 
 private:
+    GameObjectRef playerCameraRef;
 	float simulatedGravity = -9.81f;
     float moveSpeed = 5.0f;
     Vec3 playerVelocity{ 0.0f, 0.0f, 0.0f };
+    LayerRef raycastLayer;
 
     float mouseSens = 0.12f;
     float yawDeg = 0.0f;
