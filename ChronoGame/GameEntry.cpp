@@ -12,6 +12,9 @@
 #include "Scripts/Player_Controller.hpp"
 #include "Scripts/Player_ColliderChecker.hpp"
 #include "Scripts/Manager_.hpp"
+#include "Scripts/Miscellaneous_ICOSwitcher.hpp"
+#include "Scripts/Puzzle_TwoStateRotater.hpp"
+#include "Scripts/Puzzle_OneWaySwitch.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -38,11 +41,18 @@ extern "C" {
             return new Manager_();
             });
 
-
-
         registrar->RegisterScript("Player_Controller_Example", []() -> NE::Scripting::IScript* {
             return new Player_Controller_Example();
             });
 
+        registrar->RegisterScript("Miscellaneous_ICOSwitcher", []() -> NE::Scripting::IScript* {
+            return new Miscellaneous_ICOSwitcher();
+            });
+        registrar->RegisterScript("Puzzle_TwoStateRotater", []() -> NE::Scripting::IScript* {
+            return new Puzzle_TwoStateRotater();
+            });
+        registrar->RegisterScript("Puzzle_OneWaySwitch", []() -> NE::Scripting::IScript* {
+            return new Puzzle_OneWaySwitch();
+            });
         }
 }
