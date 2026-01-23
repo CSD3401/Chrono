@@ -9,7 +9,7 @@
  * Implement your game logic in the lifecycle methods below.
  */
 
-class WireChild : public Puzzle_ {
+class WireChild : public IScript {
 public:
     WireChild() {
         // Register any editable fields here
@@ -41,13 +41,8 @@ public:
 
     void Start() override {
         // Called when the script is enabled and play mode starts
-        std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex) + std::to_string(wireChildIndex);
-        LOG_DEBUG(message.c_str());
-        // listen to event for updating wire colours
-        //Events::Listen(message.c_str(), UpdateWireColour);
-        Events::Listen(message.c_str(), [this](void* data) {
-            this->UpdateWireColour(data);
-            });
+        std::string log = "EntityID: " + GetEntityName() + "WIRE CHILD INDEX: " + std::to_string(wireChildIndex);
+        LOG_DEBUG(log);
     }
 
     void Update(double deltaTime) override {
@@ -62,6 +57,13 @@ public:
 
     void OnEnable() override {
         // Called when the script is enabled
+        std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex) + std::to_string(wireChildIndex);
+        LOG_DEBUG(message.c_str());
+        // listen to event for updating wire colours
+        //Events::Listen(message.c_str(), UpdateWireColour);
+        Events::Listen(message.c_str(), [this](void* data) {
+            this->UpdateWireColour(data);
+            });
     }
 
     void OnDisable() override {

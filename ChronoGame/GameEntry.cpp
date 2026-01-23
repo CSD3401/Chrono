@@ -13,6 +13,8 @@
 #include "Scripts/Puzzle_Wire.hpp"
 #include "Scripts/WireChild.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
+#include "Scripts/Grabbable.hpp"
+#include "Scripts/Grabber.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -46,6 +48,12 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_WireButton", []() -> NE::Scripting::IScript* {
             return new Interactable_WireButton();
+            });
+        registrar->RegisterScript("Grabbable", []() -> NE::Scripting::IScript* {
+            return new Grabbable();
+            });
+        registrar->RegisterScript("Grabber", []() -> NE::Scripting::IScript* {
+            return new Grabber();
             });
         }
 }

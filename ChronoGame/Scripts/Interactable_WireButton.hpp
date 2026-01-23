@@ -25,20 +25,17 @@ public:
     void Start() override {}
     void Update(double deltaTime) override 
     {
-        if (Input::WasKeyReleased('N'))
-        {
-        }
         if (Input::WasKeyReleased('N') && leftWireIndex == 0)
         {
             std::string message = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
-            LOG_DEBUG("BUTTON PRESSED:" + message);
+            //LOG_DEBUG("BUTTON PRESSED:" + message);
             Events::Send(message.c_str(), &leftWireIndex);
         }
         if (Input::WasKeyReleased('M') && leftWireIndex == 1)
         {
             std::string message = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
             Events::Send(message.c_str(), &leftWireIndex);
-            LOG_DEBUG("BUTTON PRESSED:" + message);
+            //LOG_DEBUG("BUTTON PRESSED:" + message);
 
         }
 

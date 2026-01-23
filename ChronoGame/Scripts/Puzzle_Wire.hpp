@@ -48,18 +48,17 @@ public:
         // Called when the script is enabled and play mode starts
         // Message = "WireButtonPressed" + wire puzzle index
         // the pressed button sends the wire child index to swap colours
-        std::string listenToMessage = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
-        Events::Listen(listenToMessage.c_str(), [this](void* data) {
-            this->SwapWireColours(data);
-            });
-
-        LOG_DEBUG(listenToMessage.c_str());
         // Tell all the children to change to their respective colour
         InitWireColours();
     }
 
     void Update(double deltaTime) override {
         // Called every frame while the script is enabled
+        if (buttonPressed)
+        {
+            buttonPressed = false;
+
+        }
     }
 
     void OnDestroy() override {
@@ -70,6 +69,12 @@ public:
 
     void OnEnable() override {
         // Called when the script is enabled
+        std::string listenToMessage = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
+        Events::Listen(listenToMessage.c_str(), [this](void* data) {
+            this->RecieveIndexData(data);
+            });
+
+        LOG_DEBUG(listenToMessage.c_str());
     }
 
     void OnDisable() override {
@@ -124,9 +129,15 @@ public:
         }
     }
 
-    void SwapWireColours(void* indexData)
+    void RecieveIndexData(void* indexData)
     {
-        int leftIndex = *reinterpret_cast<int*>(indexData);
+        indexToSwap = *reinterpret_cast<int*>(indexData);
+        buttonPressed = true;
+    }
+
+    void SwapWireColours(int lIndex)
+    {
+        int leftIndex = lIndex;
         int rightIndex = leftIndex + 1;
         // Update the colours in the vector
         std::swap(wireColours[leftIndex], wireColours[rightIndex]);
@@ -135,7 +146,7 @@ public:
         std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
         Events::Send((message + std::to_string(leftIndex)).c_str(), &wireColours[leftIndex]);
         Events::Send((message + std::to_string(rightIndex)).c_str(), &wireColours[rightIndex]);
-        LOG_DEBUG(message.c_str());
+        //LOG_DEBUG(message.c_str());
 
         // Check if the puzzle is solved
         if (CheckWireColours())
@@ -170,4 +181,6 @@ private:
     std::vector<int> wireColours;
     std::vector<int> correctColours;
     int wirePuzzleIndex;
+    bool buttonPressed = false;
+    int indexToSwap = 0;
 };
