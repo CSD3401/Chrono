@@ -11,6 +11,7 @@
 #include "Scripts/Player_ColliderChecker.hpp"
 #include "Scripts/Manager_.hpp"
 #include "Scripts/Watch_Controller.hpp"
+#include "Scripts/Mirror_Puzzle.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -37,6 +38,9 @@ extern "C" {
             return new Manager_();
             });
         registrar->RegisterScript("Watch_Controller", []() -> NE::Scripting::IScript* {
+            return new Watch_Controller();
+            });
+        registrar->RegisterScript("Mirror_Puzzle", []() -> NE::Scripting::IScript* {
             return new Watch_Controller();
             });
         }
