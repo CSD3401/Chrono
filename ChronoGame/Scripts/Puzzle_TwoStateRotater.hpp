@@ -61,12 +61,18 @@ public:
     // === Public API (for other scripts or events) ===
     void SwitchState() {
         currentState = !currentState;
+        LOG_INFO("Puzzle_TwoStateRotater: SwitchState -> " << (currentState ? "state1" : "state2"));
         ApplyStateTweened();
     }
 
     void SetState(bool state) {
         currentState = state;
+        LOG_INFO("Puzzle_TwoStateRotater: SetState -> " << (currentState ? "state1" : "state2"));
         ApplyStateTweened();
+    }
+
+    bool GetStartingState() const {
+        return startingState;
     }
 
 private:
