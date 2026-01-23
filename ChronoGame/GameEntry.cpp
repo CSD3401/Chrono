@@ -11,6 +11,7 @@
 #include "Scripts/Player_ColliderChecker.hpp"
 #include "Scripts/Manager_.hpp"
 #include "Scripts/Miscellaneous_ICOSwitcher.hpp"
+#include "Scripts/Puzzle_TwoStateRotater.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -38,6 +39,9 @@ extern "C" {
             });
         registrar->RegisterScript("Miscellaneous_ICOSwitcher", []() -> NE::Scripting::IScript* {
             return new Miscellaneous_ICOSwitcher();
+            });
+        registrar->RegisterScript("Puzzle_TwoStateRotater", []() -> NE::Scripting::IScript* {
+            return new Puzzle_TwoStateRotater();
             });
         }
 }
