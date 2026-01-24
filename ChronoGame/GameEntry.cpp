@@ -15,6 +15,10 @@
 #include "Scripts/Interactable_WireButton.hpp"
 #include "Scripts/Grabbable.hpp"
 #include "Scripts/Grabber.hpp"
+#include "Scripts/Miscellaneous_ICOSwitcher.hpp"
+#include "Scripts/Puzzle_TwoStateRotater.hpp"
+#include "Scripts/Puzzle_OneWaySwitch.hpp"
+#include "Scripts/Puzzle_Sinkhole.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -54,6 +58,17 @@ extern "C" {
             });
         registrar->RegisterScript("Grabber", []() -> NE::Scripting::IScript* {
             return new Grabber();
+        registrar->RegisterScript("Miscellaneous_ICOSwitcher", []() -> NE::Scripting::IScript* {
+            return new Miscellaneous_ICOSwitcher();
+            });
+        registrar->RegisterScript("Puzzle_TwoStateRotater", []() -> NE::Scripting::IScript* {
+            return new Puzzle_TwoStateRotater();
+            });
+        registrar->RegisterScript("Puzzle_OneWaySwitch", []() -> NE::Scripting::IScript* {
+            return new Puzzle_OneWaySwitch();
+            });
+        registrar->RegisterScript("Puzzle_Sinkhole", []() -> NE::Scripting::IScript* {
+            return new Puzzle_Sinkhole();
             });
         }
 }
