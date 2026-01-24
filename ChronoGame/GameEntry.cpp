@@ -58,6 +58,7 @@ extern "C" {
             });
         registrar->RegisterScript("Grabber", []() -> NE::Scripting::IScript* {
             return new Grabber();
+            });
         registrar->RegisterScript("Miscellaneous_ICOSwitcher", []() -> NE::Scripting::IScript* {
             return new Miscellaneous_ICOSwitcher();
             });
