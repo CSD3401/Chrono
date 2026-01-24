@@ -13,7 +13,7 @@ public:
 
     void Initialize(Entity entity) override {
         SCRIPT_GAMEOBJECT_REF(playerCameraRef);
-		SCRIPT_FIELD_LAYERREF(raycastLayer, "Raycast Layer");
+		SCRIPT_FIELD_LAYERREF(raycastLayer);
         SCRIPT_FIELD(simulatedGravity, Float);
         SCRIPT_FIELD(moveSpeed, Float);
     }
@@ -24,15 +24,13 @@ public:
     }
 
     void Update(double deltaTime) override {
-        const float stick = -2.0f;
-
         bool isGrounded = CC_IsGrounded();
 
         auto [mdx, mdy] = Input::GetMouseDelta();
         yawDeg += static_cast<float>(mdx) * mouseSens;
-        pitchDeg -= static_cast<float>(mdy) * mouseSens;
+        pitchDeg += static_cast<float>(mdy) * mouseSens;
         pitchDeg = std::clamp(pitchDeg, pitchMin, pitchMax);
-        
+
 		//LOG_INFO("Pitch: " << pitchDeg << " Yaw: " << yawDeg);
 
         CC_Rotate(yawDeg);
@@ -44,13 +42,16 @@ public:
         if (Input::IsKeyDown('A')) inputDir.z -= 1.0f;
         if (Input::IsKeyDown('D')) inputDir.z += 1.0f;
 
-        float mag = std::sqrt(inputDir.x * inputDir.x + inputDir.z * inputDir.z);
-        if (mag > 0.01f) { inputDir.x /= mag; inputDir.z /= mag; } else { inputDir.x = 0; inputDir.z = 0; }
+        if (inputDir.LengthSquared() > 0.01f) {
+            inputDir.Normalize();
+        }
+
+        //float mag = std::sqrt(inputDir.x * inputDir.x + inputDir.z * inputDir.z);
+        //if (mag > 0.01f) { inputDir.x /= mag; inputDir.z /= mag; } else { inputDir.x = 0; inputDir.z = 0; }
 
         static bool wasJumpKeyDown = false;
         bool isJumpKeyDown = Input::IsKeyDown(' ');
         if (isGrounded && isJumpKeyDown && !wasJumpKeyDown) {
-            const float jumpHeight = 1.5f;
             playerVelocity.y = std::sqrt(jumpHeight * -2.0f * simulatedGravity);
             isGrounded = false;
         }
@@ -62,6 +63,14 @@ public:
             playerVelocity.y += simulatedGravity * (float)deltaTime;
         }
         
+		Vec3 forward = TF_GetForward(playerCameraRef.GetEntity());
+		Vec3 right = TF_GetRight(playerCameraRef.GetEntity());
+
+		Vec3 forwardDir = forward * inputDir.x + right * inputDir.z;
+        if (forwardDir.LengthSquared() > 0.01f) {
+            forwardDir.Normalize();
+		}
+
         //float yawRad = Math::D(yawDeg);
         //Vec3 forward = Vec3(std::cos(yawRad), 0.0f, std::sin(yawRad));
         //Vec3 right = Vec3(-std::sin(yawRad), 0.0f, std::cos(yawRad));
@@ -71,14 +80,13 @@ public:
         //float len = std::sqrt(wishDir.x * wishDir.x + wishDir.z * wishDir.z);
         //if (len > 0.01f) { wishDir.x /= len; wishDir.z /= len; }
 
-        Vec3 horizVel = inputDir * moveSpeed;
-
+        Vec3 horizVel = forwardDir * moveSpeed;
         Vec3 finalVel = horizVel;
 
         if (isGrounded) {
             Vec3 n = CC_GetGroundNormal();
             finalVel = finalVel - n * finalVel.Dot(n);
-            finalVel += n * stick;
+            finalVel += n * groundStickForce;
         } else {
             finalVel.y = playerVelocity.y;
         }
@@ -106,6 +114,8 @@ private:
     Vec3 playerVelocity{ 0.0f, 0.0f, 0.0f };
     LayerRef raycastLayer;
 
+	float jumpHeight = 1.5f;
+	float groundStickForce = -2.0f;
     float mouseSens = 0.12f;
     float yawDeg = 0.0f;
     float pitchDeg = 0.0f;
