@@ -17,14 +17,16 @@ public:
     ~Miscellaneous_ICOSwitcher() override = default;
 
     // === Lifecycle Methods ===
-
     void Awake() override {
         RegisterEventListeners();
         LOG_INFO("Miscellaneous_ICOSwitcher: listeners registered");
     }
 
     void Initialize(Entity entity) override {}
-    void Start() override {}
+    void Start() override {
+        // Addition: Ensure a consistent initial state at play start (running on, idle off).
+        Activate();
+    }
     void Update(double deltaTime) override {}
 
     void OnDestroy() override {
@@ -32,7 +34,6 @@ public:
     }
 
     // === Optional Callbacks ===
-
     void OnEnable() override {
         listeningEnabled = true;
         LOG_INFO("Miscellaneous_ICOSwitcher: enabled");

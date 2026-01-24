@@ -13,6 +13,7 @@
 #include "Scripts/Miscellaneous_ICOSwitcher.hpp"
 #include "Scripts/Puzzle_TwoStateRotater.hpp"
 #include "Scripts/Puzzle_OneWaySwitch.hpp"
+#include "Scripts/Puzzle_Sinkhole.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -46,6 +47,9 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_OneWaySwitch", []() -> NE::Scripting::IScript* {
             return new Puzzle_OneWaySwitch();
+            });
+        registrar->RegisterScript("Puzzle_Sinkhole", []() -> NE::Scripting::IScript* {
+            return new Puzzle_Sinkhole();
             });
         }
 }

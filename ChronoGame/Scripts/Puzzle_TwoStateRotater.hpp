@@ -19,7 +19,6 @@ public:
     ~Puzzle_TwoStateRotater() override = default;
 
     // === Lifecycle Methods ===
-
     void Awake() override {}
 
     void Initialize(Entity entity) override {}
@@ -43,7 +42,6 @@ public:
     void OnDestroy() override {}
 
     // === Optional Callbacks ===
-
     void OnEnable() override {}
     void OnDisable() override {}
     void OnValidate() override {}
