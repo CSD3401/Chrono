@@ -10,16 +10,15 @@
 
 class Puzzle_OneWaySwitch : public Interactable_ {
 public:
-    Puzzle_OneWaySwitch() {
-        SCRIPT_GAMEOBJECT_REF(twoStateRotaterRef);
-    }
+    Puzzle_OneWaySwitch() = default;
 
     ~Puzzle_OneWaySwitch() override = default;
 
     // === Lifecycle Methods ===
-
     void Awake() override {}
-    void Initialize(Entity entity) override {}
+    void Initialize(Entity entity) override {
+        SCRIPT_GAMEOBJECT_REF(twoStateRotaterRef);
+    }
 
     void Start() override {
         CacheRotater();
@@ -36,7 +35,6 @@ public:
     void OnDestroy() override {}
 
     // === Optional Callbacks ===
-    
     void OnEnable() override {}
     void OnDisable() override {}
     void OnValidate() override {}
