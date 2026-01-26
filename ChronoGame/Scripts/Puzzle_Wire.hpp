@@ -57,7 +57,7 @@ public:
         if (buttonPressed)
         {
             buttonPressed = false;
-
+            SwapWireColours(indexToSwap);
         }
     }
 

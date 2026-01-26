@@ -47,6 +47,16 @@ public:
 
     void Update(double deltaTime) override {
         // Called every frame while the script is enabled
+        if (Input::WasKeyReleased('L'))
+        {
+            SetMaterialRef(GetRendererRef(GetEntity()), blue);
+
+        }
+        if (Input::WasKeyReleased('K'))
+        {
+            SetMaterialRef(GetRendererRef(GetEntity()), red);
+
+        }
     }
 
     void OnDestroy() override {
