@@ -25,6 +25,8 @@ public:
         SCRIPT_FIELD_VECTOR(wireColours, Int);
         SCRIPT_FIELD_VECTOR(correctColours, Int);
         SCRIPT_FIELD(wirePuzzleIndex, Int);
+        SCRIPT_COMPONENT_REF(finishedWireColour, MaterialRef);
+        SCRIPT_FIELD(changeTimer, Float);
 
     }
 
@@ -39,8 +41,8 @@ public:
     void Initialize(Entity entity) override {
         // Called to initialize the script with its entity
         // Grab all the children from the entity
-        numWires = GetChildren(wireHolderObject).size();
-
+        numWires = GetChildCount(wireHolderObject.GetEntity());
+        LOG_DEBUG("CHILDREN" + std::to_string(numWires));
 
     }
 
@@ -144,6 +146,7 @@ public:
 
         // update the wire gameobjects to their new colour
         std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
+        LOG_DEBUG(message.c_str());
         Events::Send((message + std::to_string(leftIndex)).c_str(), &wireColours[leftIndex]);
         Events::Send((message + std::to_string(rightIndex)).c_str(), &wireColours[rightIndex]);
         //LOG_DEBUG(message.c_str());
@@ -151,13 +154,11 @@ public:
         // Check if the puzzle is solved
         if (CheckWireColours())
         {
-            // Change all wire colours to white
-            for (int i = 0; i < numWires; ++i)
-            {
-                Events::Send((message + std::to_string(i)).c_str(), (void*)WIRE_COLOUR::WHITE);
-            }
             // Send message that puzzle is solved
-            Solve();
+            //Solve();
+            LOG_DEBUG("PUZZLE SOLVED!");
+            message = "PuzzleSolved1";
+            Events::Send(message.c_str(), &changeTimer);
         }
     }
 
@@ -183,4 +184,6 @@ private:
     int wirePuzzleIndex;
     bool buttonPressed = false;
     int indexToSwap = 0;
+    MaterialRef finishedWireColour;
+    float changeTimer = 0.5f;
 };

@@ -59,6 +59,18 @@ public:
         //    LOG_DEBUG("Pressed K");
 
         //}
+
+        if (puzzleSolved)
+        {
+            if (changeTimer < 0.0f)
+            {
+                SetMaterialRef(GetRendererRef(GetEntity()), white);
+            }
+            else
+            {
+                changeTimer -= deltaTime;
+            }
+        }
     }
 
     void OnDestroy() override {
@@ -75,6 +87,10 @@ public:
         //Events::Listen(message.c_str(), UpdateWireColour);
         Events::Listen(message.c_str(), [this](void* data) {
             this->UpdateWireColour(data);
+            });
+        std::string message2 = "PuzzleSolved1";
+        Events::Listen(message2.c_str(), [this](void* data) {
+            this->PuzzleSolved(data);
             });
     }
 
@@ -160,6 +176,14 @@ public:
         }
     }
 
+    void PuzzleSolved(void* data)
+    {
+        // play sound effect
+        // start countdown
+        puzzleSolved = true;
+        changeTimer = *reinterpret_cast<float*>(data);
+    }
+
 private:
     // Add your private member variables here
     // Example: float speed = 5.0f;
@@ -176,4 +200,8 @@ private:
     MaterialRef red;
     MaterialRef yellow;
     MaterialRef white;
+
+    bool puzzleSolved = false;
+    float changeTimer = 0.5f;
+
 };

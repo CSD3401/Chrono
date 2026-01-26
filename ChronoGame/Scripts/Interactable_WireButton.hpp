@@ -17,7 +17,15 @@ public:
     ~Interactable_WireButton() override = default;
 
     // == Custom Methods ==
-    virtual void Interact() {}
+    virtual void Interact() 
+    {
+        if (puzzleSolved)
+            return;
+
+        //std::string message = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
+        //LOG_DEBUG("BUTTON PRESSED:" + message);
+        //Events::Send(message.c_str(), &leftWireIndex);
+    }
 
     // === Lifecycle Methods ===
     void Awake() override {}
@@ -28,14 +36,14 @@ public:
         if (Input::WasKeyReleased('N') && leftWireIndex == 0)
         {
             std::string message = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
-            //LOG_DEBUG("BUTTON PRESSED:" + message);
+            LOG_DEBUG("BUTTON PRESSED:" + message);
             Events::Send(message.c_str(), &leftWireIndex);
         }
         if (Input::WasKeyReleased('M') && leftWireIndex == 1)
         {
             std::string message = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
+            LOG_DEBUG("BUTTON PRESSED:" + message);
             Events::Send(message.c_str(), &leftWireIndex);
-            //LOG_DEBUG("BUTTON PRESSED:" + message);
 
         }
 
@@ -48,6 +56,11 @@ public:
     void OnValidate() override {}
     const char* GetTypeName() const override { return "Interactable_WireButton"; }
 
+    void PuzzleSolved()
+    {
+        puzzleSolved = true;
+    }
+
     // === Collision Callbacks ===
     void OnCollisionEnter(Entity other) override {}
     void OnCollisionExit(Entity other) override {}
@@ -57,4 +70,5 @@ public:
 private:
     int leftWireIndex = 0;
     int wirePuzzleIndex = 0;
+    bool puzzleSolved = false;
 };
