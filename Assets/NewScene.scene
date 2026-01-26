@@ -255,8 +255,17 @@
                 "ScriptNames": [
                     "Player_Controller"
                 ],
-                "SerializedFields": {},
-                "EntityReferenceFields": [],
+                "SerializedFields": {
+                    "Player_Controller.playerCameraRef": "7308613686500261889",
+                    "Player_Controller.cameraSensitivity": "0.000000",
+                    "Player_Controller.groundCheckRef": "7308613687923703809",
+                    "Player_Controller.moveSpeed": "0.000000",
+                    "Player_Controller.snappiness": "0.000000"
+                },
+                "EntityReferenceFields": [
+                    "playerCameraRef",
+                    "groundCheckRef"
+                ],
                 "luid": 7958820927292964864
             }
         },
@@ -369,7 +378,10 @@
                 "ScriptNames": [
                     "Player_ColliderChecker"
                 ],
-                "SerializedFields": {},
+                "SerializedFields": {
+                    "Player_ColliderChecker.radius": "0.000000",
+                    "Player_ColliderChecker.targetLayer": "0"
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958820927292964865
             }
@@ -407,9 +419,445 @@
                 "ScriptNames": [
                     "Manager_"
                 ],
-                "SerializedFields": {},
+                "SerializedFields": {
+                    "Manager_.highlightMaterial": ""
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958820927292964866
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Test",
+                "isActive": 1,
+                "luid": 7308613731727310848
+            },
+            "Hierarchy": {
+                "luid": 7526193888724647938,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017179783169
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_Sinkhole_TestTrigger"
+                ],
+                "SerializedFields": {
+                    "Puzzle_Sinkhole_TestTrigger.activateKey": "67",
+                    "Puzzle_Sinkhole_TestTrigger.deactivateKey": "86"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820927929581574
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Parent Present",
+                "isActive": 1,
+                "luid": 7308613731727441923
+            },
+            "Hierarchy": {
+                "luid": 7526193888724779013,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.865847110748291,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017179914244
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613731729539080
+            },
+            "Hierarchy": {
+                "luid": 7526193888726876170,
+                "parentLuid": 7526193888724779013
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017182011401
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829179432468491
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Parent Past",
+                "isActive": 1,
+                "luid": 7308613731731243021
+            },
+            "Hierarchy": {
+                "luid": 7526193888728580108,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.865847110748291,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017183715342
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613731731243024
+            },
+            "Hierarchy": {
+                "luid": 7526193888728580111,
+                "parentLuid": 7526193888728580108
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017183715345
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829179433910290
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sinkhole script",
+                "isActive": 1,
+                "luid": 7308613731733536787
+            },
+            "Hierarchy": {
+                "luid": 7526193888730873877,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017186009108
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_Sinkhole"
+                ],
+                "SerializedFields": {
+                    "Puzzle_Sinkhole.icoSwitcherRef": "7308613731742973979"
+                },
+                "EntityReferenceFields": [
+                    "icoSwitcherRef"
+                ],
+                "luid": 7958820927935873046
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Switcher",
+                "isActive": 1,
+                "luid": 7308613731742973979
+            },
+            "Hierarchy": {
+                "luid": 7526193888740311069,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017195446300
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Miscellaneous_ICOSwitcher"
+                ],
+                "SerializedFields": {
+                    "Miscellaneous_ICOSwitcher.objectsIdle": "7308613731727441923",
+                    "Miscellaneous_ICOSwitcher.objectsRunning": "7308613731731243021"
+                },
+                "EntityReferenceFields": [
+                    "objectsIdle",
+                    "objectsRunning"
+                ],
+                "luid": 7958820927945375774
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "One way test trigger",
+                "isActive": 1,
+                "luid": 7308613731786620928
+            },
+            "Hierarchy": {
+                "luid": 7526193888783958018,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017239093249
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_OneWaySwitch_TestTrigger"
+                ],
+                "SerializedFields": {
+                    "Puzzle_OneWaySwitch_TestTrigger.toggleKey": "84",
+                    "Puzzle_OneWaySwitch_TestTrigger.targetSwitch": "7308613731787866116",
+                    "Puzzle_OneWaySwitch_TestTrigger.resetKey": "82"
+                },
+                "EntityReferenceFields": [
+                    "targetSwitch"
+                ],
+                "luid": 7958820927988367363
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613731787866116
+            },
+            "Hierarchy": {
+                "luid": 7526193888785203206,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 6.369487762451172,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017240338437
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829179490795527
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "2 state totater",
+                "isActive": 1,
+                "luid": 7308613731811524616
+            },
+            "Hierarchy": {
+                "luid": 7526193888808861706,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017263996937
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_TwoStateRotater"
+                ],
+                "SerializedFields": {
+                    "Puzzle_TwoStateRotater.startingState": "0",
+                    "Puzzle_TwoStateRotater.rotationX1": "0.000000",
+                    "Puzzle_TwoStateRotater.target": "7308613731787866116",
+                    "Puzzle_TwoStateRotater.rotationX2": "45.000000",
+                    "Puzzle_TwoStateRotater.duration": "1.000000"
+                },
+                "EntityReferenceFields": [
+                    "target"
+                ],
+                "luid": 7958820928013598731
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "2 state rotate test",
+                "isActive": 1,
+                "luid": 7308613731812245516
+            },
+            "Hierarchy": {
+                "luid": 7526193888809582606,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017264717837
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_TwoStateRotater_TestTrigger"
+                ],
+                "SerializedFields": {
+                    "Puzzle_TwoStateRotater_TestTrigger.targetRotater": "7308613731811524616",
+                    "Puzzle_TwoStateRotater_TestTrigger.toggleKey": "84"
+                },
+                "EntityReferenceFields": [
+                    "targetRotater"
+                ],
+                "luid": 7958820928014385167
             }
         }
     ]

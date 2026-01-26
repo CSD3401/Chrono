@@ -14,6 +14,9 @@
 #include "Scripts/Puzzle_TwoStateRotater.hpp"
 #include "Scripts/Puzzle_OneWaySwitch.hpp"
 #include "Scripts/Puzzle_Sinkhole.hpp"
+#include "Scripts/Puzzle_Sinkhole_TestTrigger.hpp"
+#include "Scripts/Puzzle_OneWaySwitch_TestTrigger.hpp"
+#include "Scripts/Puzzle_TwoStateRotater_TestTrigger.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -50,6 +53,15 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_Sinkhole", []() -> NE::Scripting::IScript* {
             return new Puzzle_Sinkhole();
+            });
+        registrar->RegisterScript("Puzzle_Sinkhole_TestTrigger", []() -> NE::Scripting::IScript* {
+            return new Puzzle_Sinkhole_TestTrigger();
+            });
+        registrar->RegisterScript("Puzzle_TwoStateRotater_TestTrigger", []() -> NE::Scripting::IScript* {
+            return new Puzzle_TwoStateRotater_TestTrigger();
+            });
+        registrar->RegisterScript("Puzzle_OneWaySwitch_TestTrigger", []() -> NE::Scripting::IScript* {
+            return new Puzzle_OneWaySwitch_TestTrigger();
             });
         }
 }
