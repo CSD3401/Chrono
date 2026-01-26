@@ -18,6 +18,7 @@ public:
     bool CheckCollision()
     {
         //Vec3 origin = TF_GetWorldPosition(GetTransformRef(GetEntity()));
+        Vec3 origin = TF_GetPosition(GetTransformRef(GetEntity()));
 
         //LOG_DEBUG(
         //    "Casting from origin {" 

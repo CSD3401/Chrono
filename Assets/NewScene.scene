@@ -121,11 +121,12 @@
                 "materialUUID": "078ba8be-60b1-4057-8ca2-339f202c05ad",
                 "shadowCastMode": 0,
                 "receiveShadows": 0,
+                "subMeshIndex": 0,
                 "luid": 8242829103762112522
             }
         },
         {
-            "Layer": 1,
+            "Layer": 0,
             "EntityMeta": {
                 "name": "Platform",
                 "isActive": 1,
@@ -158,6 +159,7 @@
                 "materialUUID": "069a7e39-306f-4d20-a6ff-99e7b956ff76",
                 "shadowCastMode": 0,
                 "receiveShadows": 1,
+                "subMeshIndex": 0,
                 "luid": 8242829103744024582
             },
             "Collider": {
@@ -196,7 +198,7 @@
                 "Position": {
                     "x": 0.0,
                     "y": 0.0,
-                    "z": 0.0
+                    "z": 0.09637677669525146
                 },
                 "Scale": {
                     "x": 1.0,
@@ -210,8 +212,16 @@
                 },
                 "luid": 8390884941517225996
             },
+            "Renderer": {
+                "modelUUID": "builtin:model/capsule",
+                "materialUUID": "6b112c89-70dc-4207-a07d-bb63e4d0ed87",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829178796638208
+            },
             "Collider": {
-                "type": 0,
+                "type": 2,
                 "isTrigger": 0,
                 "center": {
                     "x": 0.0,
@@ -219,13 +229,10 @@
                     "z": 0.0
                 },
                 "data": {
-                    "index": 0,
+                    "index": 2,
                     "value": {
-                        "halfExtents": {
-                            "x": 0.44999998807907104,
-                            "y": 1.0,
-                            "z": 0.44999998807907104
-                        }
+                        "radius": 0.5,
+                        "height": 1.0
                     }
                 },
                 "luid": 7165061449873031216
@@ -247,44 +254,10 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Player_Controller"
-                ]
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Capsule",
-                "isActive": 1,
-                "luid": 7308613656065933326
-            },
-            "Hierarchy": {
-                "luid": 7526193813063270416,
-                "parentLuid": 7526193813062090765
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884941518405647
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/capsule",
-                "materialUUID": "6b112c89-70dc-4207-a07d-bb63e4d0ed87",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "luid": 8242829103768600593
+                ],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958820927292964864
             }
         },
         {
@@ -321,6 +294,7 @@
                 "materialUUID": "078ba8be-60b1-4057-8ca2-339f202c05ad",
                 "shadowCastMode": 0,
                 "receiveShadows": 0,
+                "subMeshIndex": 0,
                 "luid": 8242829134210007047
             }
         },
@@ -394,7 +368,10 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Player_ColliderChecker"
-                ]
+                ],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958820927292964865
             }
         },
         {
@@ -429,7 +406,10 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Manager_"
-                ]
+                ],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958820927292964866
             }
         },
         {
