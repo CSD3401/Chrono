@@ -8,13 +8,13 @@
 */
 
 enum class PuzzleKey {
-    _1_FirstLever,
+    _1_FirstLever
 };
 
 class Puzzle_ : public IScript {
 public:
     Puzzle_() {
-		SCRIPT_FIELD_STRUCT(puzzleKey, PuzzleKey);
+		//SCRIPT_FIELD_STRUCT(puzzleKey, PuzzleKey);
     }
     ~Puzzle_() override = default;
 
