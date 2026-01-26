@@ -206,7 +206,7 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -3.0,
+                    "x": -0.0,
                     "y": 0.0,
                     "z": 0.0
                 },
@@ -255,8 +255,17 @@
                 "ScriptNames": [
                     "Player_Controller"
                 ],
-                "SerializedFields": {},
-                "EntityReferenceFields": [],
+                "SerializedFields": {
+                    "Player_Controller.playerCameraRef": "0",
+                    "Player_Controller.cameraSensitivity": "0.000000",
+                    "Player_Controller.moveSpeed": "0.000000",
+                    "Player_Controller.groundCheckRef": "0",
+                    "Player_Controller.snappiness": "0.000000"
+                },
+                "EntityReferenceFields": [
+                    "playerCameraRef",
+                    "groundCheckRef"
+                ],
                 "luid": 7958820927292964864
             }
         },
@@ -321,8 +330,8 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -4.5,
-                    "y": 3.0,
+                    "x": -1.0,
+                    "y": -0.5,
                     "z": 0.0
                 },
                 "luid": 8390884971952734210
@@ -369,7 +378,10 @@
                 "ScriptNames": [
                     "Player_ColliderChecker"
                 ],
-                "SerializedFields": {},
+                "SerializedFields": {
+                    "Player_ColliderChecker.radius": "0.000000",
+                    "Player_ColliderChecker.targetLayer": "0"
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958820927292964865
             }
@@ -407,7 +419,9 @@
                 "ScriptNames": [
                     "Manager_"
                 ],
-                "SerializedFields": {},
+                "SerializedFields": {
+                    "Manager_.highlightMaterial": ""
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958820927292964866
             }
@@ -415,17 +429,17 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "WirePuzzle01",
+                "name": "Puzzle_Wire_0",
                 "isActive": 1,
-                "luid": 7308613709512572931
+                "luid": 7308613731880206336
             },
             "Hierarchy": {
-                "luid": 7526193866509910021,
+                "luid": 7526193888877543426,
                 "parentLuid": 0
             },
             "Transform": {
                 "Position": {
-                    "x": -1.208709716796875,
+                    "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
                 },
@@ -439,24 +453,34 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390884994965045252
+                "luid": 8390885017332678657
             },
             "NativeScript": {
                 "ScriptNames": [
                     "Puzzle_Wire"
-                ]
+                ],
+                "SerializedFields": {
+                    "Puzzle_Wire.wireColours": "3 0 1 2",
+                    "Puzzle_Wire.wireHolderObject": "7308613731881123843",
+                    "Puzzle_Wire.correctColours": "3 1 2 0",
+                    "Puzzle_Wire.wirePuzzleIndex": "0"
+                },
+                "EntityReferenceFields": [
+                    "wireHolderObject"
+                ],
+                "luid": 7958820928092897305
             }
         },
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "WireHolder",
+                "name": "WireChildHolder",
                 "isActive": 1,
-                "luid": 7308613709514080262
+                "luid": 7308613731881123843
             },
             "Hierarchy": {
-                "luid": 7526193866511417352,
-                "parentLuid": 7526193866509910021
+                "luid": 7526193888878460933,
+                "parentLuid": 7526193888877543426
             },
             "Transform": {
                 "Position": {
@@ -474,25 +498,25 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390884994966552583
+                "luid": 8390885017333596164
             }
         },
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Wire_01",
+                "name": "WireChild_0",
                 "isActive": 1,
-                "luid": 7308613709517160460
+                "luid": 7308613731833675776
             },
             "Hierarchy": {
-                "luid": 7526193866514497550,
-                "parentLuid": 7526193866511417352
+                "luid": 7526193888831012866,
+                "parentLuid": 7526193888878460933
             },
             "Transform": {
                 "Position": {
-                    "x": -1.5,
-                    "y": 0.0,
-                    "z": 0.0
+                    "x": 0.22845417261123657,
+                    "y": 2.134003162384033,
+                    "z": -3.140109062194824
                 },
                 "Scale": {
                     "x": 1.0,
@@ -504,79 +528,52 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390884994969632781
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                "shadowCastMode": 0,
-                "receiveShadows": 0,
-                "luid": 8242829157220745234
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "WireChild"
-                ]
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Wire_02",
-                "isActive": 1,
-                "luid": 0
-            },
-            "Hierarchy": {
-                "luid": 7526193866516135961,
-                "parentLuid": 7526193866511417352
-            },
-            "Transform": {
-                "Position": {
-                    "x": -1.5,
-                    "y": 1.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884994971271194
+                "luid": 8390885017286148097
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cube",
                 "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                "shadowCastMode": 0,
-                "receiveShadows": 0,
-                "luid": 8242829157221466139
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829179536998403
             },
             "NativeScript": {
                 "ScriptNames": [
                     "WireChild"
-                ]
+                ],
+                "SerializedFields": {
+                    "WireChild.wireChildIndex": "0",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.pink": "",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "WireChild.orange": "",
+                    "WireChild.purple": "",
+                    "WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820928036667396
             }
         },
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Wire_03",
+                "name": "WireChild_1",
                 "isActive": 1,
-                "luid": 0
+                "luid": 7308613731884531725
             },
             "Hierarchy": {
-                "luid": 7526193866517119004,
-                "parentLuid": 7526193866511417352
+                "luid": 7526193888881868812,
+                "parentLuid": 7526193888878460933
             },
             "Transform": {
                 "Position": {
-                    "x": -1.5,
-                    "y": 2.0,
-                    "z": 0.0
+                    "x": 0.22845417261123657,
+                    "y": 1.0566316843032837,
+                    "z": -3.140109062194824
                 },
                 "Scale": {
                     "x": 1.0,
@@ -588,37 +585,52 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390884994972254237
+                "luid": 8390885017337004046
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cube",
-                "materialUUID": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                "shadowCastMode": 0,
-                "receiveShadows": 0,
-                "luid": 8242829157222449182
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829179587198991
             },
             "NativeScript": {
                 "ScriptNames": [
                     "WireChild"
-                ]
+                ],
+                "SerializedFields": {
+                    "WireChild.wireChildIndex": "1",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.pink": "",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "WireChild.orange": "",
+                    "WireChild.purple": "",
+                    "WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820928086147088
             }
         },
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Empty Entity",
+                "name": "WireChild_2",
                 "isActive": 1,
-                "luid": 7308613713310711826
+                "luid": 7308613731885842453
             },
             "Hierarchy": {
-                "luid": 7526193870308048916,
-                "parentLuid": 7526193866511417352
+                "luid": 7526193888883179540,
+                "parentLuid": 7526193888878460933
             },
             "Transform": {
                 "Position": {
-                    "x": 1.208709716796875,
+                    "x": 0.22845417261123657,
                     "y": 0.0,
-                    "z": 0.0
+                    "z": -3.140109062194824
                 },
                 "Scale": {
                     "x": 1.0,
@@ -630,54 +642,46 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390884998763184147
+                "luid": 8390885017338314774
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829179588509719
             },
             "NativeScript": {
                 "ScriptNames": [
                     "WireChild"
-                ]
+                ],
+                "SerializedFields": {
+                    "WireChild.wireChildIndex": "2",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.pink": "",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "WireChild.orange": "",
+                    "WireChild.purple": "",
+                    "WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820928087457816
             }
         },
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Buttons",
+                "name": "SwappingButtonHolder",
                 "isActive": 1,
-                "luid": 7308613709729562628
+                "luid": 7308613731883417609
             },
             "Hierarchy": {
-                "luid": 7526193866726899718,
-                "parentLuid": 7526193866509910021
-            },
-            "Transform": {
-                "Position": {
-                    "x": 1.208709716796875,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884995182034949
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Button01",
-                "isActive": 1,
-                "luid": 7308613709730414599
-            },
-            "Hierarchy": {
-                "luid": 7526193866727751689,
-                "parentLuid": 7526193866726899718
+                "luid": 7526193888880754699,
+                "parentLuid": 7526193888877543426
             },
             "Transform": {
                 "Position": {
@@ -695,24 +699,60 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390884995182886920
+                "luid": 8390885017335889930
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "SwappingButton_0",
+                "isActive": 1,
+                "luid": 7308613731881648134
+            },
+            "Hierarchy": {
+                "luid": 7526193888878985224,
+                "parentLuid": 7526193888880754699
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885017334120455
             },
             "NativeScript": {
                 "ScriptNames": [
                     "Interactable_WireButton"
-                ]
+                ],
+                "SerializedFields": {
+                    "Interactable_WireButton.leftWireIndex": "0",
+                    "Interactable_WireButton.wirePuzzleIndex": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820928096370714
             }
         },
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Button02",
+                "name": "SwappingButton_1",
                 "isActive": 1,
-                "luid": 0
+                "luid": 7308613731895672860
             },
             "Hierarchy": {
-                "luid": 7526193866729390093,
-                "parentLuid": 7526193866726899718
+                "luid": 7526193888893009947,
+                "parentLuid": 7526193888880754699
             },
             "Transform": {
                 "Position": {
@@ -730,77 +770,18 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390884995184525326
+                "luid": 8390885017348145181
             },
             "NativeScript": {
                 "ScriptNames": [
                     "Interactable_WireButton"
-                ]
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "WireSolution",
-                "isActive": 1,
-                "luid": 0
-            },
-            "Hierarchy": {
-                "luid": 7526193866512465929,
-                "parentLuid": 7526193866509910021
-            },
-            "Transform": {
-                "Position": {
-                    "x": 2.41741943359375,
-                    "y": 0.0,
-                    "z": 0.0
+                ],
+                "SerializedFields": {
+                    "Interactable_WireButton.leftWireIndex": "1",
+                    "Interactable_WireButton.wirePuzzleIndex": "0"
                 },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884994967601162
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Empty Entity",
-                "isActive": 1,
-                "luid": 7308613713838735370
-            },
-            "Hierarchy": {
-                "luid": 7526193870836072460,
-                "parentLuid": 0
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884999291207691
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Grabbable"
-                ]
+                "EntityReferenceFields": [],
+                "luid": 7958820928097288222
             }
         }
     ]

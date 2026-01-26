@@ -41,22 +41,24 @@ public:
 
     void Start() override {
         // Called when the script is enabled and play mode starts
-        std::string log = "EntityID: " + GetEntityName() + "WIRE CHILD INDEX: " + std::to_string(wireChildIndex);
-        LOG_DEBUG(log);
+        //std::string log = "EntityID: " + GetEntityName() + "WIRE CHILD INDEX: " + std::to_string(wireChildIndex);
+        //LOG_DEBUG(log);
     }
 
     void Update(double deltaTime) override {
         // Called every frame while the script is enabled
-        if (Input::WasKeyReleased('L'))
-        {
-            SetMaterialRef(GetRendererRef(GetEntity()), blue);
+        //if (Input::WasKeyReleased('L'))
+        //{
+        //    SetMaterialRef(GetRendererRef(GetEntity()), blue);
+        //    LOG_DEBUG("Pressed L");
 
-        }
-        if (Input::WasKeyReleased('K'))
-        {
-            SetMaterialRef(GetRendererRef(GetEntity()), red);
+        //}
+        //if (Input::WasKeyReleased('K'))
+        //{
+        //    SetMaterialRef(GetRendererRef(GetEntity()), red);
+        //    LOG_DEBUG("Pressed K");
 
-        }
+        //}
     }
 
     void OnDestroy() override {
