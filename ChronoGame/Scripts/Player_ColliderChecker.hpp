@@ -17,22 +17,24 @@ public:
     // === Custom Methods ===
     bool CheckCollision()
     {
+        //Vec3 origin = TF_GetWorldPosition(GetTransformRef(GetEntity()));
         Vec3 origin = TF_GetPosition(GetTransformRef(GetEntity()));
 
-        LOG_DEBUG(
-            "Casting from origin {" 
-            << origin.x << ", " << origin.y << ", " << origin.z 
-            << "} with radius of " << radius
-        );
+        //LOG_DEBUG(
+        //    "Casting from origin {" 
+        //    << origin.x << ", " << origin.y << ", " << origin.z 
+        //    << "} with radius of " << radius
+        //);
 
-        NE::Scripting::RaycastHit raycastHit = SphereCast(
-            origin, 
-            radius, 
-            { 0.0f, -1.0f, 0.0f },
-            1.0f, 
-            targetLayer.ToMask()
-        );
-        return raycastHit.hasHit;
+        //NE::Scripting::RaycastHit raycastHit = SphereCast(
+        //    origin, 
+        //    radius, 
+        //    { 0.0f, -1.0f, 0.0f },
+        //    1.0f, 
+        //    targetLayer.ToMask()
+        //);
+        //return raycastHit.hasHit;
+        return false;
     }
 
     // === Lifecycle Methods ===

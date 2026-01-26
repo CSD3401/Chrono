@@ -10,6 +10,11 @@
 #include "Scripts/Player_Controller.hpp"
 #include "Scripts/Player_ColliderChecker.hpp"
 #include "Scripts/Manager_.hpp"
+#include "Scripts/Puzzle_Wire.hpp"
+#include "Scripts/WireChild.hpp"
+#include "Scripts/Interactable_WireButton.hpp"
+#include "Scripts/Grabbable.hpp"
+#include "Scripts/Grabber.hpp"
 #include "Scripts/Miscellaneous_ICOSwitcher.hpp"
 #include "Scripts/Puzzle_TwoStateRotater.hpp"
 #include "Scripts/Puzzle_OneWaySwitch.hpp"
@@ -38,6 +43,21 @@ extern "C" {
             });
         registrar->RegisterScript("Manager_", []() -> NE::Scripting::IScript* {
             return new Manager_();
+            });
+        registrar->RegisterScript("Puzzle_Wire", []() -> NE::Scripting::IScript* {
+            return new Puzzle_Wire();
+            });
+        registrar->RegisterScript("WireChild", []() -> NE::Scripting::IScript* {
+            return new WireChild();
+            });
+        registrar->RegisterScript("Interactable_WireButton", []() -> NE::Scripting::IScript* {
+            return new Interactable_WireButton();
+            });
+        registrar->RegisterScript("Grabbable", []() -> NE::Scripting::IScript* {
+            return new Grabbable();
+            });
+        registrar->RegisterScript("Grabber", []() -> NE::Scripting::IScript* {
+            return new Grabber();
             });
         registrar->RegisterScript("Miscellaneous_ICOSwitcher", []() -> NE::Scripting::IScript* {
             return new Miscellaneous_ICOSwitcher();
