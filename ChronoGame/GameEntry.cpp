@@ -8,7 +8,6 @@
 // Include headers for all scripts you want to register
 #include "Scripts/Interactable_.hpp"
 #include "Scripts/Player_Controller.hpp"
-#include "Scripts/Player_ColliderChecker.hpp"
 #include "Scripts/Manager_.hpp"
 #include "Scripts/Puzzle_Wire.hpp"
 #include "Scripts/WireChild.hpp"
@@ -37,9 +36,6 @@ extern "C" {
             });
         registrar->RegisterScript("Player_Controller", []() -> NE::Scripting::IScript* {
             return new Player_Controller();
-            });
-        registrar->RegisterScript("Player_ColliderChecker", []() -> NE::Scripting::IScript* {
-            return new Player_ColliderChecker();
             });
         registrar->RegisterScript("Manager_", []() -> NE::Scripting::IScript* {
             return new Manager_();

@@ -2,7 +2,6 @@
 #include <algorithm>
 #include <cmath>
 #include "EngineAPI.hpp"
-#include "Player_ColliderChecker.hpp"
 #include "Manager_.hpp"
 
 #define GLFW_KEY_SPACE 32
@@ -16,10 +15,8 @@ class Player_Controller : public IScript {
 public:
     Player_Controller() {
 		SCRIPT_GAMEOBJECT_REF(playerCameraRef);
-        SCRIPT_FIELD(cameraSensitivity, Float);
-        SCRIPT_GAMEOBJECT_REF(groundCheckRef);
+        SCRIPT_FIELD(lookSensitivity, Float);
         SCRIPT_FIELD(moveSpeed, Float);
-        SCRIPT_FIELD(snappiness, Float);
         SCRIPT_FIELD(jumpStrength, Float);
     }
     ~Player_Controller() override = default;
@@ -27,22 +24,20 @@ public:
     // === Custom Methods ===
     void Reset()
     {
-        cameraRotation = Vec3::Zero();
-        raycastForward = { 1.0f, 0.0f, 0.0f };
-    }
-    Vec3 GetRaycastForward()
-    {
-        return raycastForward;
+        lookRotation = Vec3::Zero();
     }
 
     // === Lifecycle Methods ===
     void Awake() override {}
     void Initialize(Entity entity) override {}
+
     void Start() override {
-		// Get player camera game object
+		// Get player camera entity
         if (playerCameraRef.IsValid()) {
-			playerCameraTransformRef = GetTransformRef(playerCameraRef.GetEntity());
+			playerCameraEntity = playerCameraRef.GetEntity();
         }
+
+		// Find Manager_
         auto v = GameObject::FindObjectsOfType<Manager_>();
         if (v.size() == 0) {
             LOG_ERROR("No managers found!");
@@ -53,19 +48,22 @@ public:
         else {
             manager = v.begin()->GetComponent<Manager_>();
         }
-        transformRef = GetTransformRef(GetEntity());
-        rigidbodyRef = GetRigidbodyRef(GetEntity());
+
+		// Reset state
         Reset();
     }
 
     void Update(double deltaTime) override {
+        // === Grounded ===
+        bool isGrounded = CC_IsGrounded();
+
         // === Camera controls ===
         std::pair<double, double> const& mouseDelta = Input::GetMouseDelta();
-        cameraRotation.y -= static_cast<float>(mouseDelta.second) * cameraSensitivity;
-        cameraRotation.y = std::clamp(cameraRotation.y, -89.0f, 89.0f);
-        cameraRotation.x += static_cast<float>(mouseDelta.first) * cameraSensitivity;
-        SetRotation(transformRef, {-cameraRotation.x, 0.0f, 0.0f });
-        SetRotation(playerCameraTransformRef, { cameraRotation.y, cameraRotation.x, 0.0f });
+        lookRotation.x += static_cast<float>(mouseDelta.first) * lookSensitivity;   // Yaw
+        lookRotation.y -= static_cast<float>(mouseDelta.second) * lookSensitivity;  // Pitch
+        lookRotation.y = std::clamp(lookRotation.y, -89.0f, 89.0f);
+        CC_Rotate(lookRotation.x);
+        TF_SetRotation({ lookRotation.y, 0.0f, 0.0f }, playerCameraEntity);
 
         // === Movement controls ===
         // Input Direction
@@ -74,58 +72,25 @@ public:
         if (Input::IsKeyDown('S')) { inputDirection.z -= 1.0f; }
         if (Input::IsKeyDown('A')) { inputDirection.x -= 1.0f; }
         if (Input::IsKeyDown('D')) { inputDirection.x += 1.0f; }
-        inputDirection = inputDirection.Normalized();
+        inputDirection.Normalize();
 
         // Camera-relative direction
-        float yaw = manager->DegreesToRadians(-cameraRotation.x);
-        float pitch = manager->DegreesToRadians(-cameraRotation.y);
-        Vec3 cameraForward = { cosf(yaw), 0.0f, -sinf(yaw) };
-        Vec3 cameraRight = { sinf(yaw), 0.0f, cosf(yaw) };
-        raycastForward = {
-            cosf(pitch) * sinf(yaw),
-            sinf(pitch),
-            cosf(pitch) * cosf(yaw)
-        };
-        raycastForward = raycastForward.Normalized();
+        Vec3 cameraForward = TF_GetForward(playerCameraEntity);
+        Vec3 cameraRight = TF_GetRight(playerCameraEntity);
 
         // Movement direction
         Vec3 moveDirection = (cameraRight * inputDirection.x) + (cameraForward * inputDirection.z);
-        moveDirection = moveDirection.Normalized();
-
-        // Velocity
-        Vec3 velocity = GetVelocity(rigidbodyRef); // Must have Rigidbody
-        Vec3 targetVelocity
-        {
-            moveDirection.x * moveSpeed,
-            velocity.y,
-            moveDirection.z * moveSpeed
-        };
-        
-        // Lerp velocity
-        velocity.x = manager->SnappyLerp(
-            velocity.x, 
-            targetVelocity.x, 
-            snappiness, 
-            static_cast<float>(deltaTime)
-        );
-        velocity.z = manager->SnappyLerp(
-            velocity.z, 
-            targetVelocity.z, 
-            snappiness, 
-            static_cast<float>(deltaTime)
-        );
+        moveDirection.Normalize();
 
         // === Jumping ===
-        if (Input::IsKeyDown(GLFW_KEY_SPACE))
+        static bool wasJumpKeyDown = false;
+        bool isJumpKeyDown = Input::IsKeyDown(' ');
+        if (isGrounded && isJumpKeyDown && !wasJumpKeyDown)
         {
-            if (GameObject(groundCheckRef).GetComponent<Player_ColliderChecker>()->CheckCollision())
-            {
-                velocity.y = jumpStrength;
-            }
+            // Todo
         }
 
         // Assign
-        SetVelocity(rigidbodyRef, velocity);
     }
     void OnDestroy() override {}
 
@@ -144,21 +109,14 @@ public:
 private:
     // === Manager ===
     Manager_* manager;
-    TransformRef transformRef;
-    RigidbodyRef rigidbodyRef;
 
     // === Camera ===
 	GameObjectRef playerCameraRef;
-    TransformRef playerCameraTransformRef;
-    Vec3 cameraRotation;
-    float cameraSensitivity;
+	Entity playerCameraEntity;
+    Vec3 lookRotation;
+    float lookSensitivity;
 
     // === Movement ===
-    GameObjectRef groundCheckRef;
     float moveSpeed;
-    float snappiness;
     float jumpStrength;
-
-    // === Raycast ===
-    Vec3 raycastForward;
 };

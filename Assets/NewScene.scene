@@ -237,36 +237,30 @@
                 },
                 "luid": 7165061449873031216
             },
-            "Rigidbody": {
-                "Mass": 10.0,
-                "Linear Damping": 0.0,
-                "Angular Damping": 0.05000000074505806,
-                "Use Gravity": 1,
-                "Is Kinematic": 0,
-                "freezeRotX": 0,
-                "freezeRotY": 0,
-                "freezeRotZ": 0,
-                "freezePosX": 0,
-                "freezePosY": 0,
-                "freezePosZ": 0,
-                "luid": 8242266186254254092
-            },
             "NativeScript": {
                 "ScriptNames": [
                     "Player_Controller"
                 ],
                 "SerializedFields": {
-                    "Player_Controller.playerCameraRef": "0",
-                    "Player_Controller.cameraSensitivity": "0.000000",
-                    "Player_Controller.groundCheckRef": "0",
-                    "Player_Controller.moveSpeed": "0.000000",
-                    "Player_Controller.snappiness": "0.000000"
+                    "Player_Controller.jumpStrength": "1.000000",
+                    "Player_Controller.playerCameraRef": "7308613686500261889",
+                    "Player_Controller.lookSensitivity": "1.000000",
+                    "Player_Controller.moveSpeed": "1.000000"
                 },
                 "EntityReferenceFields": [
                     "playerCameraRef",
                     "groundCheckRef"
                 ],
                 "luid": 7958820927292964864
+            },
+            "CharacterController": {
+                "Max Slope Angle": 45.0,
+                "Max Strength": 1000.0,
+                "Character Padding": 0.019999999552965164,
+                "Penetration Recovery Speed": 1.0,
+                "Predictive Contact Distance": 0.10000000149011612,
+                "Supporting Volume Depth": 1.0,
+                "luid": 7161683794716000256
             }
         },
         {
@@ -348,47 +342,6 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Ground Check",
-                "isActive": 1,
-                "luid": 7308613687923703809
-            },
-            "Hierarchy": {
-                "luid": 7526193844921040899,
-                "parentLuid": 7526193813062090765
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -1.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884973376176130
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Player_ColliderChecker"
-                ],
-                "SerializedFields": {
-                    "Player_ColliderChecker.radius": "0.000000",
-                    "Player_ColliderChecker.targetLayer": "0"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820927292964865
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
                 "name": "Manager",
                 "isActive": 1,
                 "luid": 7308613688463327234
@@ -460,11 +413,11 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireHolderObject": "7308613731881123843",
                     "Puzzle_Wire.wireColours": "3 0 2 1",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.wireHolderObject": "7308613731881123843",
                     "Puzzle_Wire.correctColours": "3 1 2 0",
+                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
                     "Puzzle_Wire.wirePuzzleIndex": "0"
                 },
                 "EntityReferenceFields": [
@@ -551,8 +504,8 @@
                     "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "WireChild.purple": "",
                     "WireChild.orange": "",
+                    "WireChild.purple": "",
                     "WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
                 },
@@ -608,8 +561,8 @@
                     "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "WireChild.purple": "",
                     "WireChild.orange": "",
+                    "WireChild.purple": "",
                     "WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
                 },
@@ -665,8 +618,8 @@
                     "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "WireChild.purple": "",
                     "WireChild.orange": "",
+                    "WireChild.purple": "",
                     "WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
                 },
