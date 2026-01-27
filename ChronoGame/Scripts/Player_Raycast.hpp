@@ -32,18 +32,8 @@ public:
     // === Lifecycle Methods ===
     void Awake() override {}
     void Initialize(Entity entity) override {}
-    void Start() override {
-        auto v = GameObject::FindObjectsOfType<Player_Controller>();
-        if (v.size() == 0) {
-            LOG_ERROR("No player controllers found!");
-        }
-        else if (v.size() > 1) {
-            LOG_WARNING("Multiple player controllers found!");
-        }
-        else {
-            playerController = v.begin()->GetComponent<Player_Controller>();
-        }
-    }
+    void Start() override {}
+
     void Update(double deltaTime) override {
 
         // === Raycast Interval ===
@@ -51,8 +41,8 @@ public:
         if (timer > interval)
         {
             timer = 0.0f;
-            Vec3 origin = TF_GetWorldPosition(cameraEntity);
-            Vec3 direction = playerController->GetRaycastForward();
+            Vec3 origin = TF_GetPosition();
+            Vec3 direction = TF_GetForward();
             RaycastHit raycastHit = Raycast(
                 origin, 
                 direction, 
@@ -120,5 +110,4 @@ private:
     Entity storedEntity;
 
     Entity cameraEntity;
-    Player_Controller* playerController;
 };

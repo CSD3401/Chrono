@@ -10,12 +10,12 @@
 * for frequently used game data and methods.
 */
 
-class Manager_ : public IScript {
+class Misc_Manager : public IScript {
 public:
-    Manager_() {
+    Misc_Manager() {
 		SCRIPT_FIELD(highlightMaterial, MaterialRef);
     }
-    ~Manager_() override = default;
+    ~Misc_Manager() override = default;
 
     // === Custom Methods ===
     MaterialRef GetHighlightMaterial() const {

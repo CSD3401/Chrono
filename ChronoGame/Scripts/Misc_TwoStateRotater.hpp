@@ -6,9 +6,9 @@
 * Two-state rotation tween on a target entity, driven by public methods.
 */
 
-class Puzzle_TwoStateRotater : public IScript {
+class Misc_TwoStateRotater : public IScript {
 public:
-    Puzzle_TwoStateRotater() {
+    Misc_TwoStateRotater() {
         SCRIPT_GAMEOBJECT_REF(target);
         SCRIPT_FIELD(rotationX1, Float);
         SCRIPT_FIELD(rotationX2, Float);
@@ -16,7 +16,7 @@ public:
         SCRIPT_FIELD(startingState, Bool);
     }
 
-    ~Puzzle_TwoStateRotater() override = default;
+    ~Misc_TwoStateRotater() override = default;
 
     // === Lifecycle Methods ===
     void Awake() override {}

@@ -9,9 +9,9 @@
  * Implement your game logic in the lifecycle methods below.
  */
 
-class WireChild : public IScript {
+class Misc_WireChild : public IScript {
 public:
-    WireChild() {
+    Misc_WireChild() {
         // Register any editable fields here
         // Example: SCRIPT_FIELD(speed, float);
         // Example: SCRIPT_FIELD_VECTOR(blingstring, String);
@@ -27,7 +27,7 @@ public:
         SCRIPT_COMPONENT_REF(white, MaterialRef);
     }
 
-    ~WireChild() override = default;
+    ~Misc_WireChild() override = default;
 
     // === Lifecycle Methods ===
 
@@ -68,7 +68,7 @@ public:
             }
             else
             {
-                changeTimer -= deltaTime;
+                changeTimer -= static_cast<float>(deltaTime);
             }
         }
     }

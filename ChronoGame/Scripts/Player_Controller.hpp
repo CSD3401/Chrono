@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cmath>
 #include "EngineAPI.hpp"
-#include "Manager_.hpp"
+#include "Misc_Manager.hpp"
 
 #define GLFW_KEY_SPACE 32
 /*
@@ -40,7 +40,7 @@ public:
         }
 
 		// Find Manager_
-        auto v = GameObject::FindObjectsOfType<Manager_>();
+        auto v = GameObject::FindObjectsOfType<Misc_Manager>();
         if (v.size() == 0) {
             LOG_ERROR("No managers found!");
         }
@@ -48,7 +48,7 @@ public:
             LOG_WARNING("Multiple managers found!");
         }
         else {
-            manager = v.begin()->GetComponent<Manager_>();
+            manager = v.begin()->GetComponent<Misc_Manager>();
         }
 
 		// Reset state
@@ -115,7 +115,6 @@ public:
         );
 
         // Assign
-        LOG_DEBUG("Velocity: " << velocity.x << ", " << velocity.y << ", " << velocity.z);
         CC_Move(velocity * static_cast<float>(deltaTime));
     }
     void OnDestroy() override {}
@@ -134,7 +133,7 @@ public:
 
 private:
     // === Manager ===
-    Manager_* manager;
+    Misc_Manager* manager;
 
     // === Camera ===
 	GameObjectRef playerCameraRef;

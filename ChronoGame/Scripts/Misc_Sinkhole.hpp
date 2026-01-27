@@ -1,6 +1,6 @@
 #pragma once
 #include "EngineAPI.hpp"
-#include "Miscellaneous_ICOSwitcher.hpp"
+#include "Misc_ICOSwitcher.hpp"
 
 /*
 * Puzzle_Sinkhole
@@ -8,11 +8,11 @@
 * Present objects are hidden when ChronoActivated (past), and shown when ChronoDeactivated (present).
 */
 
-class Puzzle_Sinkhole : public IScript {
+class Misc_Sinkhole : public IScript {
 public:
-    Puzzle_Sinkhole() = default;
+    Misc_Sinkhole() = default;
 
-    ~Puzzle_Sinkhole() override = default;
+    ~Misc_Sinkhole() override = default;
 
     // === Lifecycle Methods ===
     void Awake() override { ValidateICOSwitcher(); }
@@ -48,7 +48,7 @@ private:
             return;
         }
 
-        auto* switcher = GameObject(icoSwitcherRef).GetComponent<Miscellaneous_ICOSwitcher>();
+        auto* switcher = GameObject(icoSwitcherRef).GetComponent<Misc_ICOSwitcher>();
         if (!switcher) {
             LOG_WARNING("Puzzle_Sinkhole: ICOSwitcher entity has no Miscellaneous_ICOSwitcher");
         }

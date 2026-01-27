@@ -1,18 +1,18 @@
 #pragma once
 #include "EngineAPI.hpp"
 #include "Interactable_.hpp"
-#include "Puzzle_TwoStateRotater.hpp"
+#include "Misc_TwoStateRotater.hpp"
 
 /*
 * Puzzle_OneWaySwitch
 * One-way switch that can only be activated once, toggling a TwoStateRotater.
 */
 
-class Puzzle_OneWaySwitch : public Interactable_ {
+class Interactable_OneWaySwitch : public Interactable_ {
 public:
-    Puzzle_OneWaySwitch() = default;
+    Interactable_OneWaySwitch() = default;
 
-    ~Puzzle_OneWaySwitch() override = default;
+    ~Interactable_OneWaySwitch() override = default;
 
     // === Lifecycle Methods ===
     void Awake() override {}
@@ -86,7 +86,7 @@ public:
 
 private:
     GameObjectRef twoStateRotaterRef;
-    Puzzle_TwoStateRotater* rotater = nullptr;
+    Misc_TwoStateRotater* rotater = nullptr;
     bool state = false;
 
     void CacheRotater() {
@@ -95,6 +95,6 @@ private:
             return;
         }
 
-        rotater = GameObject(twoStateRotaterRef).GetComponent<Puzzle_TwoStateRotater>();
+        rotater = GameObject(twoStateRotaterRef).GetComponent<Misc_TwoStateRotater>();
     }
 };

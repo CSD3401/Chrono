@@ -7,14 +7,14 @@
 * - Destroys itself if references are invalid
 */
 
-class Miscellaneous_ICOSwitcher : public IScript {
+class Misc_ICOSwitcher : public IScript {
 public:
-    Miscellaneous_ICOSwitcher() {
+    Misc_ICOSwitcher() {
         SCRIPT_GAMEOBJECT_REF(objectsIdle);
         SCRIPT_GAMEOBJECT_REF(objectsRunning);
     }
 
-    ~Miscellaneous_ICOSwitcher() override = default;
+    ~Misc_ICOSwitcher() override = default;
 
     // === Lifecycle Methods ===
     void Awake() override {
