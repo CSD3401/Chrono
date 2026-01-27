@@ -19,7 +19,7 @@ public:
     // === Lifecycle Methods ===
     void Awake() override {
         RegisterEventListeners();
-        LOG_INFO("Miscellaneous_ICOSwitcher: listeners registered");
+        LOG_INFO("Misc_ICOSwitcher: listeners registered");
     }
 
     void Initialize(Entity entity) override {}
@@ -36,18 +36,18 @@ public:
     // === Optional Callbacks ===
     void OnEnable() override {
         listeningEnabled = true;
-        LOG_INFO("Miscellaneous_ICOSwitcher: enabled");
+        LOG_INFO("Misc_ICOSwitcher: enabled");
     }
 
     void OnDisable() override {
         listeningEnabled = false;
-        LOG_INFO("Miscellaneous_ICOSwitcher: disabled");
+        LOG_INFO("Misc_ICOSwitcher: disabled");
     }
 
     void OnValidate() override {}
 
     const char* GetTypeName() const override {
-        return "Miscellaneous_ICOSwitcher";
+        return "Misc_ICOSwitcher";
     }
 
     // === Collision Callbacks ===
@@ -69,7 +69,7 @@ private:
 
         Events::Listen("ChronoActivated", [this](void*) {
             if (!listeningEnabled) {
-                LOG_INFO("Miscellaneous_ICOSwitcher: ChronoActivated ignored (disabled)");
+                LOG_INFO("Misc_ICOSwitcher: ChronoActivated ignored (disabled)");
                 return;
             }
             Activate();
@@ -77,7 +77,7 @@ private:
 
         Events::Listen("ChronoDeactivated", [this](void*) {
             if (!listeningEnabled) {
-                LOG_INFO("Miscellaneous_ICOSwitcher: ChronoDeactivated ignored (disabled)");
+                LOG_INFO("Misc_ICOSwitcher: ChronoDeactivated ignored (disabled)");
                 return;
             }
             Deactivate();
@@ -92,22 +92,22 @@ private:
 
     void Activate() {
         if (CheckObjectsValid()) {
-            LOG_INFO("Miscellaneous_ICOSwitcher: ChronoActivated -> idle off, running on");
+            LOG_INFO("Misc_ICOSwitcher: ChronoActivated -> idle off, running on");
             SetActive(false, objectsIdle.GetEntity());
             SetActive(true, objectsRunning.GetEntity());
         } else {
-            LOG_WARNING("Miscellaneous_ICOSwitcher: Invalid references on activate, destroying");
+            LOG_WARNING("Misc_ICOSwitcher: Invalid references on activate, destroying");
             Command::DestroyEntity(GetEntity());
         }
     }
 
     void Deactivate() {
         if (CheckObjectsValid()) {
-            LOG_INFO("Miscellaneous_ICOSwitcher: ChronoDeactivated -> idle on, running off");
+            LOG_INFO("Misc_ICOSwitcher: ChronoDeactivated -> idle on, running off");
             SetActive(true, objectsIdle.GetEntity());
             SetActive(false, objectsRunning.GetEntity());
         } else {
-            LOG_WARNING("Miscellaneous_ICOSwitcher: Invalid references on deactivate, destroying");
+            LOG_WARNING("Misc_ICOSwitcher: Invalid references on deactivate, destroying");
             Command::DestroyEntity(GetEntity());
         }
     }

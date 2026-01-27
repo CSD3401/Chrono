@@ -6,12 +6,16 @@
 #include <ScriptSDK/ScriptAPI.h>
 
 // Include headers for all scripts you want to register
-#include "Scripts/Interactable_.hpp"
+#include "Scripts/Highlightable_Material.hpp"
 #include "Scripts/Player_Controller.hpp"
+#include "Scripts/Player_Raycast.hpp"
 #include "Scripts/Puzzle_Wire.hpp"
+#include "Scripts/Puzzle_Lever.hpp"
+#include "Scripts/Interactable_.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
+#include "Scripts/Interactable_TwoWaySwitch.hpp"
 #include "Scripts/Misc_Manager.hpp"
 #include "Scripts/Misc_WireChild.hpp"
 #include "Scripts/Misc_Grabber.hpp"
@@ -31,17 +35,26 @@ extern "C" {
         }
 
         // Register all your game-specific scripts here
+        registrar->RegisterScript("Highlightable_Material", []() -> NE::Scripting::IScript* {
+            return new Highlightable_Material();
+            });
         registrar->RegisterScript("Interactable_", []() -> NE::Scripting::IScript* {
             return new Interactable_();
             });
         registrar->RegisterScript("Player_Controller", []() -> NE::Scripting::IScript* {
             return new Player_Controller();
             });
-        registrar->RegisterScript("Misc_Manager", []() -> NE::Scripting::IScript* {
-            return new Misc_Manager();
+        registrar->RegisterScript("Player_Raycast", []() -> NE::Scripting::IScript* {
+            return new Player_Raycast();
             });
         registrar->RegisterScript("Puzzle_Wire", []() -> NE::Scripting::IScript* {
             return new Puzzle_Wire();
+            });
+        registrar->RegisterScript("Puzzle_Lever", []() -> NE::Scripting::IScript* {
+            return new Puzzle_Lever();
+            });
+        registrar->RegisterScript("Misc_Manager", []() -> NE::Scripting::IScript* {
+            return new Misc_Manager();
             });
         registrar->RegisterScript("Misc_WireChild", []() -> NE::Scripting::IScript* {
             return new Misc_WireChild();
@@ -63,6 +76,9 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_OneWaySwitch", []() -> NE::Scripting::IScript* {
             return new Interactable_OneWaySwitch();
+            });
+        registrar->RegisterScript("Interactable_TwoWaySwitch", []() -> NE::Scripting::IScript* {
+            return new Interactable_TwoWaySwitch();
             });
         registrar->RegisterScript("Misc_Sinkhole", []() -> NE::Scripting::IScript* {
             return new Misc_Sinkhole();

@@ -41,7 +41,7 @@ public:
     void OnEnable() override {}
     void OnDisable() override {}
     void OnValidate() override {}
-    const char* GetTypeName() const override { return "Grabbable"; }
+    const char* GetTypeName() const override { return "Interactable_Grabbable"; }
 
     // === Collision Callbacks ===
     void OnCollisionEnter(Entity other) override {}

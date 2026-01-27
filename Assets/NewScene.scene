@@ -198,7 +198,7 @@
                 "Position": {
                     "x": 0.0,
                     "y": 0.0,
-                    "z": 0.09637677669525146
+                    "z": 0.0
                 },
                 "Scale": {
                     "x": 1.0,
@@ -206,7 +206,7 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
                 },
@@ -242,8 +242,9 @@
                     "Player_Controller"
                 ],
                 "SerializedFields": {
+                    "Player_Controller.jumpStrength": "5.000000",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
-                    "Player_Controller.jumpStrength": "1.000000",
+                    "Player_Controller.gravity": "10.000000",
                     "Player_Controller.lookSensitivity": "1.000000",
                     "Player_Controller.moveSpeed": "10.000000",
                     "Player_Controller.snappiness": "5.000000"
@@ -325,11 +326,23 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": 0.0,
                     "y": 0.0,
-                    "z": -0.0
+                    "z": 0.0
                 },
                 "luid": 8390884971952734210
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Player_Raycast"
+                ],
+                "SerializedFields": {
+                    "Player_Raycast.interval": "0.100000",
+                    "Player_Raycast.distance": "10.000000",
+                    "Player_Raycast.targetLayer": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820932201152512
             },
             "Camera": {
                 "FOV Y": 60.0,
@@ -338,6 +351,44 @@
                 "Far Plane": 1000.0,
                 "Is Main Camera": 1,
                 "Is Active Camera": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sphere",
+                "isActive": 1,
+                "luid": 7308613735953989639
+            },
+            "Hierarchy": {
+                "luid": 7526193892951326729,
+                "parentLuid": 7526193843497598979
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.20000000298023224
+                },
+                "Scale": {
+                    "x": 0.003000000026077032,
+                    "y": 0.003000000026077032,
+                    "z": 0.003000000026077032
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885021406461960
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829183656656906
             }
         },
         {
@@ -371,10 +422,10 @@
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "Manager_"
+                    "Misc_Manager"
                 ],
                 "SerializedFields": {
-                    "Manager_.highlightMaterial": "078ba8be-60b1-4057-8ca2-339f202c05ad"
+                    "Misc_Manager.highlightMaterial": "078ba8be-60b1-4057-8ca2-339f202c05ad"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820927292964866
@@ -414,11 +465,12 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireHolderObject": "7308613731881123843",
+                    "Puzzle_Wire.puzzleKey": "0",
                     "Puzzle_Wire.wireColours": "3 0 2 1",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.wireHolderObject": "7308613731881123843",
                     "Puzzle_Wire.correctColours": "3 1 2 0",
+                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
                     "Puzzle_Wire.wirePuzzleIndex": "0"
                 },
                 "EntityReferenceFields": [
@@ -499,11 +551,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "WireChild.wirePuzzleIndex": "0",
                     "WireChild.wireChildIndex": "0",
-                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "WireChild.pink": "",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",
@@ -556,11 +608,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "WireChild.wirePuzzleIndex": "0",
                     "WireChild.wireChildIndex": "1",
-                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "WireChild.pink": "",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",
@@ -613,11 +665,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "WireChild.wirePuzzleIndex": "0",
                     "WireChild.wireChildIndex": "2",
-                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "WireChild.pink": "",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",
@@ -738,6 +790,88 @@
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820928097288222
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613735973650438
+            },
+            "Hierarchy": {
+                "luid": 7526193892970987528,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 3.758603572845459,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885021426122759
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829183676317705
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061497851215882
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_TwoWaySwitch",
+                    "Misc_TwoStateRotater",
+                    "Puzzle_Lever",
+                    "Highlightable_Material"
+                ],
+                "SerializedFields": {
+                    "Misc_TwoStateRotater.target": "7308613735973650438",
+                    "Misc_TwoStateRotater.rotationX1": "0.000000",
+                    "Misc_TwoStateRotater.startingState": "0",
+                    "Puzzle_Lever.puzzleKey": "0",
+                    "Misc_TwoStateRotater.duration": "1.000000",
+                    "Misc_TwoStateRotater.rotationX2": "90.000000",
+                    "Puzzle_Lever.twoStateRotaterObject": "7308613735973650438",
+                    "Puzzle_Lever.twoWaySwitchObject": "7308613735973650438"
+                },
+                "EntityReferenceFields": [
+                    "twoStateRotaterObject",
+                    "twoWaySwitchObject",
+                    "target"
+                ],
+                "luid": 7958820932177690635
             }
         }
     ]
