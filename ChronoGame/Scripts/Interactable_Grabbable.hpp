@@ -7,14 +7,15 @@
 * It simply provides a virtual function Interact that can be overridden by child classes.
 */
 
-class Grabbable : public Interactable_ {
+class Interactable_Grabbable : public Interactable_ {
 public:
-    Grabbable() {
+    Interactable_Grabbable() {
+        SCRIPT_COMPONENT_REF(body, RigidbodyRef);
         SCRIPT_FIELD(isHeavy, Bool);
         SCRIPT_FIELD(activatesPressurePlates, Bool);
         SCRIPT_GAMEOBJECT_REF(playerGrabber);
     }
-    ~Grabbable() override = default;
+    ~Interactable_Grabbable() override = default;
 
     // == Custom Methods ==
     virtual void Interact() 
@@ -40,7 +41,7 @@ public:
     void OnEnable() override {}
     void OnDisable() override {}
     void OnValidate() override {}
-    const char* GetTypeName() const override { return "Grabbable"; }
+    const char* GetTypeName() const override { return "Interactable_Grabbable"; }
 
     // === Collision Callbacks ===
     void OnCollisionEnter(Entity other) override {}
@@ -48,8 +49,13 @@ public:
     void OnTriggerEnter(Entity other) override {}
     void OnTriggerExit(Entity other) override {}
 
+    RigidbodyRef GetBody()
+    {
+        return body;
+    }
+
 private:
-    RigidbodyRef rigidBody;
+    RigidbodyRef body;
     bool isHeavy = false;
     bool activatesPressurePlates = false;
     GameObjectRef playerGrabber;

@@ -1,20 +1,20 @@
 #pragma once
 #include "EngineAPI.hpp"
-#include "Grabbable.hpp"
+#include "Interactable_Grabbable.hpp"
 
 /**
  * Template - Auto-generated script template
  * Implement your game logic in the lifecycle methods below.
  */
-class Grabbable_Battery : public Grabbable {
+class Interactable_Battery : public Interactable_Grabbable {
 public:
-    Grabbable_Battery() {
+    Interactable_Battery() {
         // Register any editable fields here
         // Example: SCRIPT_FIELD(speed, float);
         // Example: SCRIPT_FIELD_VECTOR(blingstring, String);;
     }
 
-    ~Grabbable_Battery() override = default;
+    ~Interactable_Battery() override = default;
 
     // === Lifecycle Methods ===
 
@@ -53,7 +53,7 @@ public:
     }
 
     const char* GetTypeName() const override {
-        return "Grabbable_Battery";
+        return "Interactable_Battery";
     }
 
     // === Collision Callbacks ===
@@ -72,6 +72,14 @@ public:
 
     void OnTriggerExit(Entity other) override {
         // Called when this entity exits a trigger
+    }
+
+    void Align(Vec3 pos, Vec3 scale, Vec3 rot)
+    {
+        TransformRef t = this->GetTransformRef(GetEntity());
+        SetPosition(t, pos);
+        SetScale(t, scale);
+        SetRotation(t, rot);
     }
 
 private:

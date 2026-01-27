@@ -1,20 +1,23 @@
 #pragma once
 #include "EngineAPI.hpp"
+#include "Interactable_Battery.hpp"
+#include "Puzzle_.hpp"
 
 /**
  * Template - Auto-generated script template
  * Implement your game logic in the lifecycle methods below.
  */
-class Batter_Panel : public IScript {
+class Puzzle_BatteryPanel : public Puzzle_{
 public:
-    Batter_Panel() {
+    Puzzle_BatteryPanel() {
         // Register any editable fields here
         // Example: SCRIPT_FIELD(speed, float);
         // Example: SCRIPT_FIELD_VECTOR(blingstring, String);;
         SCRIPT_COMPONENT_REF(panelRef, TransformRef);
+        SCRIPT_FIELD(message, String);
     }
 
-    ~Batter_Panel() override = default;
+    ~Puzzle_BatteryPanel() override = default;
 
     // === Lifecycle Methods ===
 
@@ -53,7 +56,7 @@ public:
     }
 
     const char* GetTypeName() const override {
-        return "Batter_Panel";
+        return "Puzzle_BatteryPanel";
     }
 
     // === Collision Callbacks ===
@@ -72,8 +75,20 @@ public:
         // when the grabbed object collides with the trigger box
         if (name.find("Battery"))
         {
+            // turn the grabbed object off
+            Events::Send("LetGo");
             // set the battery to the transform aligning to the panel
+            GameObject battery(other);
+            auto batteryScript = battery.GetComponent<Interactable_Battery>();
 
+            Vec3 pos = GetPosition(panelRef);
+            Vec3 scale = GetScale(panelRef);
+            Vec3 rot = GetRotation(panelRef);
+
+            batteryScript->Align(pos, scale, rot);
+
+            // also send a message to whatever needs to be sent
+            Events::Send(message.c_str());
         }
     }
 
@@ -85,4 +100,5 @@ private:
     // Add your private member variables here
     // Example: float speed = 5.0f;
     TransformRef panelRef;
+    std::string message;
 };
