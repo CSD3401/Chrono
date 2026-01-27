@@ -75,6 +75,8 @@ public:
         // when the grabbed object collides with the trigger box
         if (name.find("Battery"))
         {
+            // Solve the puzzle
+            // Solve();
             // turn the grabbed object off
             Events::Send("LetGo");
             // set the battery to the transform aligning to the panel

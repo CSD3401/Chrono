@@ -20,7 +20,6 @@ public:
     // == Custom Methods ==
     virtual void Interact() 
     {
-        GameObjectRef obj;
     }
 
     // === Lifecycle Methods ===

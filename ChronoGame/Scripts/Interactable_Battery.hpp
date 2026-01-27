@@ -56,6 +56,10 @@ public:
         return "Interactable_Battery";
     }
 
+    void Interact() override {
+        Interactable_Grabbable::Interact();
+    }
+
     // === Collision Callbacks ===
 
     void OnCollisionEnter(Entity other) override {

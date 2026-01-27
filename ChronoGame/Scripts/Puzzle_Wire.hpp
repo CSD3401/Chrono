@@ -3,6 +3,7 @@
 #include "Puzzle_.hpp"
 #include <map>
 #include <vector>
+#include "Misc_WireChild.hpp"
 
 /**
  * Template - Auto-generated script template
@@ -41,8 +42,6 @@ public:
     void Initialize(Entity entity) override {
         // Called to initialize the script with its entity
         // Grab all the children from the entity
-        numWires = static_cast<int>(GetChildCount(wireHolderObject.GetEntity()));
-        LOG_DEBUG("CHILDREN" + std::to_string(numWires));
 
     }
 
@@ -109,25 +108,20 @@ public:
         // Called when this entity exits a trigger
     }
 
-    enum WIRE_COLOUR
-    {
-        BLUE = 0,
-        RED,
-        GREEN,
-        YELLOW,
-        ORANGE,
-        PURPLE,
-        PINK,
-        WHITE // Finished
-    };
-
     void InitWireColours()
     {
+        numWires = static_cast<int>(GetChildCount(wireHolderObject.GetEntity()));
+        LOG_DEBUG("NUM CHILDREN: " + std::to_string(numWires));
         // Message is UpdateWireColour + WirePuzzleIndex + WireChildIndex
-        std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
-        for (int i = 0; i < wireColours.size(); ++i)
+        wireChildren = GetChildren(wireHolderObject.GetEntity());
+
+
+        //std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
+        for (int i = 0; i < numWires; ++i)
         {
-            Events::Send((message + std::to_string(i)).c_str(), &wireColours[i]);
+            //Events::Send((message + std::to_string(i)).c_str(), &wireColours[i]);
+            GameObject child(wireChildren[i]);
+            child.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[i]);
         }
     }
 
@@ -145,19 +139,26 @@ public:
         std::swap(wireColours[leftIndex], wireColours[rightIndex]);
 
         // update the wire gameobjects to their new colour
-        std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
-        LOG_DEBUG(message.c_str());
-        Events::Send((message + std::to_string(leftIndex)).c_str(), &wireColours[leftIndex]);
-        Events::Send((message + std::to_string(rightIndex)).c_str(), &wireColours[rightIndex]);
+        //std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
         //LOG_DEBUG(message.c_str());
+        //Events::Send((message + std::to_string(leftIndex)).c_str(), &wireColours[leftIndex]);
+        //Events::Send((message + std::to_string(rightIndex)).c_str(), &wireColours[rightIndex]);
+        //LOG_DEBUG(message.c_str());
+
+        GameObject child1(wireChildren[leftIndex]);
+        child1.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[leftIndex]);
+        GameObject child2(wireChildren[rightIndex]);
+        child2.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[rightIndex]);
 
         // Check if the puzzle is solved
         if (CheckWireColours())
         {
             // Send message that puzzle is solved
             //Solve();
+
+            // Current Fix until solve is able to be used
             LOG_DEBUG("PUZZLE SOLVED!");
-            message = "PuzzleSolved1";
+            std::string message = "PuzzleSolved1";
             Events::Send(message.c_str(), &changeTimer);
         }
     }
@@ -186,4 +187,7 @@ private:
     int indexToSwap = 0;
     MaterialRef finishedWireColour;
     float changeTimer = 0.5f;
+
+    // Testing
+    std::vector<Entity> wireChildren;
 };

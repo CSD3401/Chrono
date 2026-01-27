@@ -18,6 +18,7 @@
 #include "Scripts/Misc_ICOSwitcher.hpp"
 #include "Scripts/Misc_TwoStateRotater.hpp"
 #include "Scripts/Misc_Sinkhole.hpp"
+#include "Scripts/Listener_MoveObject.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -66,6 +67,9 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_Sinkhole", []() -> NE::Scripting::IScript* {
             return new Misc_Sinkhole();
+            });
+        registrar->RegisterScript("Listener_MoveObject", []() -> NE::Scripting::IScript* {
+            return new Listener_MoveObject();
             });
         }
 }

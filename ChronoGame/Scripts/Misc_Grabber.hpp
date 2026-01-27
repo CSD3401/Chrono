@@ -1,6 +1,6 @@
 #pragma once
 #include "EngineAPI.hpp"
-#include "Grabbable.hpp"
+#include "Interactable_Grabbable.hpp"
 /*
 * By Chan Kuan Fu Ryan (c.kuanfuryan)
 * Interactable_ is the parent class for all interactable objects in the game.
@@ -47,7 +47,7 @@ public:
         return isGrabbing;
     }
 
-    void Grab(Grabbable g)
+    void Grab(Interactable_Grabbable g)
     {
         currentlyGrabbing = g;
         isGrabbing = true;
@@ -66,7 +66,7 @@ private:
     float timerBuffer;
 
     Vec3 targetPosition;
-    Grabbable currentlyGrabbing;
+    Interactable_Grabbable currentlyGrabbing;
     bool isGrabbing = false;
 
     float defaultDrag;

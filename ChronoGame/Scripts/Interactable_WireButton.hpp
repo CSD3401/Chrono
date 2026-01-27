@@ -46,6 +46,10 @@ public:
             Events::Send(message.c_str(), &leftWireIndex);
 
         }
+        if (Input::WasKeyReleased('B'))
+        {
+            Events::Send("MOVE");
+        }
 
     }
     void OnDestroy() override {}
