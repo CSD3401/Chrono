@@ -1,7 +1,6 @@
 #pragma once
 #include "EngineAPI.hpp"
 #include "Interactable_.hpp"
-#include "WireChild.hpp"
 /*
 * By Chan Kuan Fu Ryan (c.kuanfuryan)
 * Interactable_ is the parent class for all interactable objects in the game.
