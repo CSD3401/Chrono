@@ -121,6 +121,46 @@ public:
         );
     }
 
+    // for stretching
+    void StretchObject()
+    {
+        if (isMoving)
+            return;
+
+        isMoving = true;
+        destinationReached = false;
+
+        Vec3 A = startingPos;
+        Vec3 B = targetPos;
+
+        Vec3 dir = (B - A).Normalized();
+        float fullLength = (B - A).Length();
+
+        Tweener::StartVec3(
+            [this, A, dir](const Vec3& v) {
+                float currentLength = v.x;
+
+                TransformRef t = GetTransformRef(GetEntity());
+
+                // rotation
+                float angle = atan2(dir.y, dir.x);
+                SetRotation(t, angle);
+
+                // position (center-pivot safe)
+                SetPosition(t, A + dir * (currentLength * 0.5f));
+
+                // scale
+                Vec3 sc = GetScale(t);
+                SetScale(t, Vec3(currentLength, sc.y, sc.z));
+            },
+            Vec3::Zero(),
+            Vec3(fullLength, 0, 0),
+            tweenDuration,
+            Tweener::Type::CUBIC_EASE_IN,
+            GetEntity()
+        );
+    }
+
 private:
     // Add your private member variables here
     // Example: float speed = 5.0f;
