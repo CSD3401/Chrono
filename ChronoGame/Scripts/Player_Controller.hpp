@@ -18,6 +18,7 @@ public:
         SCRIPT_FIELD(lookSensitivity, Float);
         SCRIPT_FIELD(moveSpeed, Float);
         SCRIPT_FIELD(jumpStrength, Float);
+        SCRIPT_FIELD(snappiness, Float);
     }
     ~Player_Controller() override = default;
 
@@ -25,6 +26,7 @@ public:
     void Reset()
     {
         lookRotation = Vec3::Zero();
+        velocity = Vec3::Zero();
     }
 
     // === Lifecycle Methods ===
@@ -59,7 +61,7 @@ public:
 
         // === Camera controls ===
         std::pair<double, double> const& mouseDelta = Input::GetMouseDelta();
-        lookRotation.x += static_cast<float>(mouseDelta.first) * lookSensitivity;   // Yaw
+        lookRotation.x -= static_cast<float>(mouseDelta.first) * lookSensitivity;   // Yaw
         lookRotation.y -= static_cast<float>(mouseDelta.second) * lookSensitivity;  // Pitch
         lookRotation.y = std::clamp(lookRotation.y, -89.0f, 89.0f);
         CC_Rotate(lookRotation.x);
@@ -83,14 +85,38 @@ public:
         moveDirection.Normalize();
 
         // === Jumping ===
-        static bool wasJumpKeyDown = false;
-        bool isJumpKeyDown = Input::IsKeyDown(' ');
-        if (isGrounded && isJumpKeyDown && !wasJumpKeyDown)
-        {
-            // Todo
+        if (isGrounded)
+        {            
+            if (Input::IsKeyDown(' '))
+            {
+                velocity.y = jumpStrength;
+                isGrounded = false;
+            }
         }
 
+		// === Velocity Smoothing ===
+        Vec3 targetVelocity
+        {
+            moveDirection.x * moveSpeed,
+            velocity.y,
+            moveDirection.z * moveSpeed
+        };
+		velocity.x = manager->SnappyLerp(
+            velocity.x, 
+            targetVelocity.x, 
+            snappiness, 
+            static_cast<float>(deltaTime)
+        );
+        velocity.z = manager->SnappyLerp(
+            velocity.z,
+            targetVelocity.z,
+            snappiness,
+            static_cast<float>(deltaTime)
+        );
+
         // Assign
+        LOG_DEBUG("Velocity: " << velocity.x << ", " << velocity.y << ", " << velocity.z);
+        CC_Move(velocity * static_cast<float>(deltaTime));
     }
     void OnDestroy() override {}
 
@@ -117,6 +143,8 @@ private:
     float lookSensitivity;
 
     // === Movement ===
+    Vec3 velocity;
     float moveSpeed;
     float jumpStrength;
+    float snappiness;
 };
