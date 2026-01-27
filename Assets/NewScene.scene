@@ -237,36 +237,31 @@
                 },
                 "luid": 7165061449873031216
             },
-            "Rigidbody": {
-                "Mass": 1.0,
-                "Linear Damping": 0.0,
-                "Angular Damping": 0.05000000074505806,
-                "Use Gravity": 1,
-                "Is Kinematic": 1,
-                "freezeRotX": 0,
-                "freezeRotY": 0,
-                "freezeRotZ": 0,
-                "freezePosX": 0,
-                "freezePosY": 0,
-                "freezePosZ": 0,
-                "luid": 8242266186254254092
-            },
             "NativeScript": {
                 "ScriptNames": [
                     "Player_Controller"
                 ],
                 "SerializedFields": {
-                    "Player_Controller.playerCameraRef": "0",
-                    "Player_Controller.cameraSensitivity": "0.000000",
-                    "Player_Controller.groundCheckRef": "0",
-                    "Player_Controller.moveSpeed": "0.000000",
-                    "Player_Controller.snappiness": "0.000000"
+                    "Player_Controller.playerCameraRef": "7308613686500261889",
+                    "Player_Controller.jumpStrength": "1.000000",
+                    "Player_Controller.lookSensitivity": "1.000000",
+                    "Player_Controller.moveSpeed": "10.000000",
+                    "Player_Controller.snappiness": "5.000000"
                 },
                 "EntityReferenceFields": [
                     "playerCameraRef",
                     "groundCheckRef"
                 ],
                 "luid": 7958820927292964864
+            },
+            "CharacterController": {
+                "Max Slope Angle": 45.0,
+                "Max Strength": 1000.0,
+                "Character Padding": 0.019999999552965164,
+                "Penetration Recovery Speed": 1.0,
+                "Predictive Contact Distance": 0.10000000149011612,
+                "Supporting Volume Depth": 1.0,
+                "luid": 7161683794716000256
             }
         },
         {
@@ -282,9 +277,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.2702232003211975,
+                    "x": 0.0,
                     "y": 0.4674674868583679,
-                    "z": 0.0
+                    "z": -0.27000001072883606
                 },
                 "Scale": {
                     "x": 0.6000000238418579,
@@ -320,47 +315,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.2702232003211975,
-                    "y": 0.4674674868583679,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -1.0,
-                    "y": -0.5,
-                    "z": 0.0
-                },
-                "luid": 8390884971952734210
-            },
-            "Camera": {
-                "FOV Y": 60.0,
-                "Aspect Ratio": 1.7777777910232544,
-                "Near Plane": 0.10000000149011612,
-                "Far Plane": 1000.0,
-                "Is Main Camera": 1,
-                "Is Active Camera": 1
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Ground Check",
-                "isActive": 1,
-                "luid": 7308613687923703809
-            },
-            "Hierarchy": {
-                "luid": 7526193844921040899,
-                "parentLuid": 7526193813062090765
-            },
-            "Transform": {
-                "Position": {
                     "x": 0.0,
-                    "y": -1.0,
-                    "z": 0.0
+                    "y": 0.46700000762939453,
+                    "z": -0.27000001072883606
                 },
                 "Scale": {
                     "x": 1.0,
@@ -372,18 +329,15 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390884973376176130
+                "luid": 8390884971952734210
             },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Player_ColliderChecker"
-                ],
-                "SerializedFields": {
-                    "Player_ColliderChecker.radius": "0.000000",
-                    "Player_ColliderChecker.targetLayer": "0"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820927292964865
+            "Camera": {
+                "FOV Y": 60.0,
+                "Aspect Ratio": 1.7777777910232544,
+                "Near Plane": 0.10000000149011612,
+                "Far Plane": 1000.0,
+                "Is Main Camera": 1,
+                "Is Active Camera": 1
             }
         },
         {
@@ -420,7 +374,7 @@
                     "Manager_"
                 ],
                 "SerializedFields": {
-                    "Manager_.highlightMaterial": ""
+                    "Manager_.highlightMaterial": "078ba8be-60b1-4057-8ca2-339f202c05ad"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820927292964866
@@ -545,11 +499,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.wireChildIndex": "0",
-                    "WireChild.wirePuzzleIndex": "0",
-                    "WireChild.pink": "",
-                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.wireChildIndex": "0",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.pink": "",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",
@@ -602,11 +556,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.wireChildIndex": "1",
-                    "WireChild.wirePuzzleIndex": "0",
-                    "WireChild.pink": "",
-                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.wireChildIndex": "1",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.pink": "",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",
@@ -659,11 +613,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.wireChildIndex": "2",
-                    "WireChild.wirePuzzleIndex": "0",
-                    "WireChild.pink": "",
-                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.wireChildIndex": "2",
+                    "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.pink": "",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",

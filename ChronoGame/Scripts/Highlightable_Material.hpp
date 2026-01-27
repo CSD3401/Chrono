@@ -1,7 +1,7 @@
 #pragma once
 #include "EngineAPI.hpp"
 #include "Highlightable_.hpp"
-#include "Manager_.hpp"
+#include "Misc_Manager.hpp"
 /*
 * === WORK IN PROGRESS ===
 * By Chan Kuan Fu Ryan (c.kuanfuryan)
@@ -14,7 +14,7 @@ public:
     Highlightable_Material() {}
     ~Highlightable_Material() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     void SetHighlight(bool state) override
     {
         if (state) {
@@ -35,7 +35,7 @@ public:
 
     void Start() override {
         // Store highlight material from Manager
-        auto m = GameObject::FindObjectsOfType<Manager_>();
+        auto m = GameObject::FindObjectsOfType<Misc_Manager>();
         if (m.size() == 0) {
             LOG_ERROR("No managers found!");
         }
@@ -43,7 +43,7 @@ public:
             LOG_WARNING("Multiple managers found!");
         }
         else {
-            highlightMaterial = m.begin()->GetComponent<Manager_>()->GetHighlightMaterial();
+            highlightMaterial = m.begin()->GetComponent<Misc_Manager>()->GetHighlightMaterial();
         }
 
         // Store default material from this entity

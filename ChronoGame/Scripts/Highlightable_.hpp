@@ -11,7 +11,7 @@ public:
     Highlightable_() {}
     ~Highlightable_() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     virtual void SetHighlight(bool state) {}
 
     // === Lifecycle Methods ===
