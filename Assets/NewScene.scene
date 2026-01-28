@@ -85,7 +85,7 @@
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": 1.7194510698318481,
+                    "y": 2.0062568187713623,
                     "z": 5.0
                 },
                 "Scale": {
@@ -132,7 +132,7 @@
                 "Position": {
                     "x": 0.0,
                     "y": 0.0,
-                    "z": -0.6102474927902222
+                    "z": 0.41807985305786133
                 },
                 "Scale": {
                     "x": 1.0,
@@ -227,7 +227,7 @@
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": 0.0,
+                    "y": 0.8038514852523804,
                     "z": 0.09637677669525146
                 },
                 "Scale": {
@@ -368,6 +368,50 @@
                 "Far Plane": 1000.0,
                 "Is Main Camera": 1,
                 "Is Active Camera": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Watch Controller",
+                "isActive": 1,
+                "luid": 7308613743798386688
+            },
+            "Hierarchy": {
+                "luid": 7526193900795723778,
+                "parentLuid": 7526193813062090765
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.8038514852523804,
+                    "z": -0.09637677669525146
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885029250859009
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Watch_Controller"
+                ],
+                "SerializedFields": {
+                    "Watch_Controller.maxResource": "100.000000",
+                    "Watch_Controller.resourceRegenRate": "20.000000",
+                    "Watch_Controller.activationThreshold": "0.300000",
+                    "Watch_Controller.resourceConsumeRate": "50.000000",
+                    "Watch_Controller.minDeactivationTime": "0.500000"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820940000657411
             }
         },
         {
@@ -529,11 +573,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.wireChildIndex": "0",
-                    "WireChild.wirePuzzleIndex": "0",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "WireChild.pink": "",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.wireChildIndex": "0",
                     "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.pink": "",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",
@@ -586,11 +630,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.wireChildIndex": "1",
-                    "WireChild.wirePuzzleIndex": "0",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "WireChild.pink": "",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.wireChildIndex": "1",
                     "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.pink": "",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",
@@ -643,11 +687,11 @@
                     "WireChild"
                 ],
                 "SerializedFields": {
-                    "WireChild.wireChildIndex": "2",
-                    "WireChild.wirePuzzleIndex": "0",
                     "WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "WireChild.pink": "",
+                    "WireChild.wirePuzzleIndex": "0",
+                    "WireChild.wireChildIndex": "2",
                     "WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "WireChild.pink": "",
                     "WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "WireChild.purple": "",
                     "WireChild.orange": "",
@@ -3856,6 +3900,176 @@
                     "z": -0.0
                 },
                 "luid": 8390885022143480095
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Past Parent",
+                "isActive": 1,
+                "luid": 7308613743830171662
+            },
+            "Hierarchy": {
+                "luid": 7526193900827508752,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885029282643983
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Present Parent",
+                "isActive": 1,
+                "luid": 7308613743835414553
+            },
+            "Hierarchy": {
+                "luid": 7526193900832751640,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885029287886874
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sinkhole",
+                "isActive": 1,
+                "luid": 7308613743799959556
+            },
+            "Hierarchy": {
+                "luid": 7526193900797296646,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.10220211744308472,
+                    "y": 0.07457149028778076,
+                    "z": -5.726158142089844
+                },
+                "Scale": {
+                    "x": 4.0,
+                    "y": 0.20000000298023224,
+                    "z": 4.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885029252431877
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "be49c8c3-0be6-455c-b3dd-fd1bb6332f4b",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829191502626823
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061505677525000
+            },
+            "NativeScript": {
+                "ScriptNames": [],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958820940013109257
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "ICO Manager",
+                "isActive": 1,
+                "luid": 7308613743830958098
+            },
+            "Hierarchy": {
+                "luid": 7526193900828295185,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885029283430419
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_ICOSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_ICOSwitcher.presentObj": "7308613743835414553",
+                    "Misc_ICOSwitcher.pastObj": "7308613743830171662"
+                },
+                "EntityReferenceFields": [
+                    "presentObj",
+                    "objectsIdle",
+                    "pastObj",
+                    "objectsRunning"
+                ],
+                "luid": 7958820940036177943
             }
         }
     ]
