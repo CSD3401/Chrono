@@ -72,7 +72,7 @@ public:
 
                     // Then we can set Highlight and store
                     // h->SetHighlight(true);
-                    storedEntity = raycastHit.entity;
+                    // storedEntity = raycastHit.entity;
                 }
                 else
                 {
