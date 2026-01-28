@@ -10,6 +10,7 @@
 #include "Scripts/Player_Controller.hpp"
 #include "Scripts/Watch_Controller.hpp"
 #include "Scripts/Puzzle_Wire.hpp"
+#include "Scripts/Puzzle_Mirror.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
@@ -46,6 +47,9 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_Wire", []() -> NE::Scripting::IScript* {
             return new Puzzle_Wire();
+            });
+        registrar->RegisterScript("Puzzle_Mirror", []() -> NE::Scripting::IScript* {
+            return new MirrorPuzzle();
             });
         registrar->RegisterScript("Misc_WireChild", []() -> NE::Scripting::IScript* {
             return new Misc_WireChild();
