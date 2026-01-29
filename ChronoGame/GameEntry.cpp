@@ -23,6 +23,11 @@
 #include "Scripts/Misc_ICOSwitcher.hpp"
 #include "Scripts/Misc_TwoStateRotater.hpp"
 #include "Scripts/Misc_Sinkhole.hpp"
+#include "Scripts/Misc_MaterialSwitcher.hpp"
+#include "Scripts/Misc_PLayerRespawn.hpp"
+#include "Scripts/Misc_PlayerRespawnTest.hpp"
+#include "Scripts/Interactable_NoteCollector.hpp"
+#include "Scripts/NoteCollector_Controller.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -92,6 +97,21 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_Sinkhole", []() -> NE::Scripting::IScript* {
             return new Misc_Sinkhole();
+            });
+        registrar->RegisterScript("Misc_MaterialSwitcher", []() -> NE::Scripting::IScript* {
+            return new Misc_MaterialSwitcher();
+            });
+        registrar->RegisterScript("Misc_PlayerRespawn", []() -> NE::Scripting::IScript* {
+            return new Misc_PlayerRespawn();
+            });
+        registrar->RegisterScript("Misc_PlayerRespawnTest", []() -> NE::Scripting::IScript* {
+            return new Misc_PlayerRespawnTest();
+            });
+        registrar->RegisterScript("Interactable_NoteCollector", []() -> NE::Scripting::IScript* {
+            return new Interactable_NoteCollector();
+            });
+        registrar->RegisterScript("NoteCollector_Controller", []() -> NE::Scripting::IScript* {
+            return new NoteCollector_Controller();
             });
         }
 }
