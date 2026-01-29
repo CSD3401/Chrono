@@ -8,9 +8,11 @@
 // Include headers for all scripts you want to register
 #include "Scripts/Highlightable_Material.hpp"
 #include "Scripts/Player_Controller.hpp"
+#include "Scripts/Player_Raycast.hpp"
 #include "Scripts/Watch_Controller.hpp"
 #include "Scripts/Puzzle_Wire.hpp"
 #include "Scripts/Puzzle_Mirror.hpp"
+#include "Scripts/Puzzle_Lever.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"

@@ -227,8 +227,8 @@
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": 0.8038514852523804,
-                    "z": 3.5478744506835938
+                    "y": 1.0,
+                    "z": 3.5
                 },
                 "Scale": {
                     "x": 1.0,
@@ -272,9 +272,10 @@
                     "Player_Controller"
                 ],
                 "SerializedFields": {
-                    "Player_Controller.jumpStrength": "1.000000",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
+                    "Player_Controller.jumpStrength": "5.000000",
                     "Player_Controller.lookSensitivity": "1.000000",
+                    "Player_Controller.gravity": "10.000000",
                     "Player_Controller.moveSpeed": "10.000000",
                     "Player_Controller.snappiness": "5.000000"
                 },
@@ -372,6 +373,44 @@
         {
             "Layer": 0,
             "EntityMeta": {
+                "name": "Sphere",
+                "isActive": 1,
+                "luid": 7308613746426314752
+            },
+            "Hierarchy": {
+                "luid": 7526193903423651842,
+                "parentLuid": 7526193843497598979
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.17377591133117676
+                },
+                "Scale": {
+                    "x": 0.003000000026077032,
+                    "y": 0.003000000026077032,
+                    "z": 0.003000000026077032
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885031878787073
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829194128982019
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
                 "name": "Watch Controller",
                 "isActive": 1,
                 "luid": 7308613743798386688
@@ -404,8 +443,8 @@
                 ],
                 "SerializedFields": {
                     "Watch_Controller.maxResource": "100.000000",
-                    "Watch_Controller.activationThreshold": "0.300000",
                     "Watch_Controller.resourceRegenRate": "20.000000",
+                    "Watch_Controller.activationThreshold": "0.300000",
                     "Watch_Controller.resourceConsumeRate": "50.000000",
                     "Watch_Controller.minDeactivationTime": "0.500000"
                 },
@@ -487,11 +526,12 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireColours": "3 0 2 1",
+                    "Puzzle_Wire.puzzleKey": "0",
                     "Puzzle_Wire.wireHolderObject": "7308613731881123843",
-                    "Puzzle_Wire.correctColours": "3 1 2 0",
-                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.wireColours": "3 0 2 1",
                     "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.correctColours": "3 1 2 0",
                     "Puzzle_Wire.wirePuzzleIndex": "0"
                 },
                 "EntityReferenceFields": [
@@ -8942,29 +8982,29 @@
                     "Puzzle_Mirror.targetTransform": "8390885029430100475",
                     "Puzzle_Mirror.mirrorTargetTransform": "8390885029430624770",
                     "Puzzle_Mirror.tile01": "8390885029412536365",
-                    "Puzzle_Mirror.tile02": "8390885029414568001",
                     "Puzzle_Mirror.debugMode": "1",
+                    "Puzzle_Mirror.tile02": "8390885029414568001",
                     "Puzzle_Mirror.tile10": "8390885029416009833",
                     "Puzzle_Mirror.tile03": "8390885029415223381",
                     "Puzzle_Mirror.tile11": "8390885029416337533",
                     "Puzzle_Mirror.tile12": "8390885029416403089",
                     "Puzzle_Mirror.tile13": "8390885029416468645",
-                    "Puzzle_Mirror.tile20": "8390885029422235833",
                     "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
-                    "Puzzle_Mirror.tile21": "8390885029422366925",
+                    "Puzzle_Mirror.tile20": "8390885029422235833",
                     "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
-                    "Puzzle_Mirror.tile22": "8390885029422432481",
+                    "Puzzle_Mirror.tile21": "8390885029422366925",
                     "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
-                    "Puzzle_Mirror.tile23": "8390885029422498037",
-                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.tile22": "8390885029422432481",
                     "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
+                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.tile23": "8390885029422498037",
                     "Puzzle_Mirror.mirrorTile10": "8390885029427020124",
                     "Puzzle_Mirror.mirrorTile11": "8390885029427020144",
                     "Puzzle_Mirror.mirrorTile12": "8390885029427020164",
                     "Puzzle_Mirror.mirrorTile13": "8390885029427020184",
                     "Puzzle_Mirror.mirrorTile20": "8390885029427020204",
-                    "Puzzle_Mirror.startCol": "0",
                     "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
+                    "Puzzle_Mirror.startCol": "0",
                     "Puzzle_Mirror.mirrorTile22": "8390885029427020244",
                     "Puzzle_Mirror.mirrorTile23": "8390885029427020264",
                     "Puzzle_Mirror.startRow": "2",
