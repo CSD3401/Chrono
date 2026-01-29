@@ -2,7 +2,7 @@
 #include "EngineAPI.hpp"
 
 /*
-* Misc_TwoStateRotater
+* Puzzle_Two State Rotater
 * Two-state rotation tween on a target entity, driven by public methods.
 */
 
@@ -27,7 +27,7 @@ public:
         currentState = startingState;
         CacheTarget();
         if (!targetTransformRef.IsValid()) {
-            LOG_WARNING("Misc_TwoStateRotater: target not set or invalid");
+            LOG_WARNING("Puzzle_TwoStateRotater: target not set or invalid");
             return;
         }
 
@@ -47,7 +47,7 @@ public:
     void OnValidate() override {}
 
     const char* GetTypeName() const override {
-        return "Misc_TwoStateRotater";
+        return "Puzzle_Two State Rotater";
     }
 
     // === Collision Callbacks ===
@@ -107,7 +107,7 @@ private:
 
     void ApplyStateTweened() {
         if (!targetTransformRef.IsValid()) {
-            LOG_WARNING("Misc_TwoStateRotater: target invalid while applying state");
+            LOG_WARNING("Puzzle_TwoStateRotater: target invalid while applying state");
             return;
         }
 

@@ -99,7 +99,7 @@ public:
     }
 
     const char* GetTypeName() const override {
-        return "Misc_WireChild";
+        return "WireChild";
     }
 
     // === Collision Callbacks ===

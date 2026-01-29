@@ -7,10 +7,14 @@
 * unsolving, and receiving inputs.
 */
 
+enum class PuzzleKey {
+    _1_FirstLever
+};
+
 class Puzzle_ : public IScript {
 public:
     Puzzle_() {
-		SCRIPT_FIELD(puzzleKey, Int);
+		//SCRIPT_FIELD_STRUCT(puzzleKey, PuzzleKey);
     }
     ~Puzzle_() override = default;
 
@@ -56,5 +60,5 @@ public:
     void OnTriggerExit(Entity other) override {}
 
 private:
-	int puzzleKey;
+	PuzzleKey puzzleKey;
 };

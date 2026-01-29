@@ -19,7 +19,6 @@ public:
         SCRIPT_FIELD(moveSpeed, Float);
         SCRIPT_FIELD(jumpStrength, Float);
         SCRIPT_FIELD(snappiness, Float);
-		SCRIPT_FIELD(gravity, Float);
     }
     ~Player_Controller() override = default;
 
@@ -87,17 +86,12 @@ public:
 
         // === Jumping ===
         if (isGrounded)
-        {   
-			velocity.y = -2.0f; // Small downward force to keep grounded
+        {            
             if (Input::IsKeyDown(' '))
             {
                 velocity.y = jumpStrength;
                 isGrounded = false;
             }
-        }
-        else
-        {
-			velocity.y -= gravity * static_cast<float>(deltaTime);
         }
 
 		// === Velocity Smoothing ===
@@ -152,5 +146,4 @@ private:
     float moveSpeed;
     float jumpStrength;
     float snappiness;
-	float gravity;
 };

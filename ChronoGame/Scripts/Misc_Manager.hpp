@@ -46,7 +46,7 @@ public:
     void OnEnable() override {}
     void OnDisable() override {}
     void OnValidate() override {}
-    const char* GetTypeName() const override { return "Misc_Manager"; }
+    const char* GetTypeName() const override { return "Manager_"; }
 
     // === Collision Callbacks ===
     void OnCollisionEnter(Entity other) override {}

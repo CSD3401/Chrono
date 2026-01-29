@@ -31,7 +31,7 @@ public:
     void OnValidate() override { ValidateICOSwitcher(); }
 
     const char* GetTypeName() const override {
-        return "Misc_Sinkhole";
+        return "Puzzle_Sinkhole";
     }
 
     // === Collision Callbacks ===
@@ -44,13 +44,13 @@ private:
     GameObjectRef icoSwitcherRef;
     void ValidateICOSwitcher() {
         if (!icoSwitcherRef.IsValid()) {
-            LOG_WARNING("Misc_Sinkhole: missing ICOSwitcher reference");
+            LOG_WARNING("Puzzle_Sinkhole: missing ICOSwitcher reference");
             return;
         }
 
         auto* switcher = GameObject(icoSwitcherRef).GetComponent<Misc_ICOSwitcher>();
         if (!switcher) {
-            LOG_WARNING("Misc_Sinkhole: ICOSwitcher entity has no Miscellaneous_ICOSwitcher");
+            LOG_WARNING("Puzzle_Sinkhole: ICOSwitcher entity has no Miscellaneous_ICOSwitcher");
         }
     }
 };
