@@ -146,7 +146,8 @@ public:
             return;
         }
 
-        // Handle WASD input
+        // Handle WASD input (commented out for now)
+        /*
         if (Input::WasKeyPressed('W') || Input::WasKeyPressed(VK_UP)) {
             TryMoveUp();
         }
@@ -159,6 +160,7 @@ public:
         if (Input::WasKeyPressed('D') || Input::WasKeyPressed(VK_RIGHT)) {
             TryMoveRight();
         }
+        */
 
         // Check win condition
         if (HasReachedEnd() && HasMirrorReachedEnd()) {

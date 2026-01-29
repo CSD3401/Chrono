@@ -13,7 +13,14 @@
 
 class Player_Raycast : public IScript {
 public:
-    Player_Raycast() {
+    Player_Raycast() : 
+        interval{ 0.1f },  
+		distance{ 5.0f },
+        targetLayer{ 0 },  
+		timer{ 0.0f },
+		storedHighlightable{ nullptr },
+		storedInteractable{ nullptr }
+    {
         SCRIPT_FIELD(interval, Float);
         SCRIPT_FIELD(distance, Float);
         SCRIPT_FIELD_LAYERREF(targetLayer);
@@ -23,12 +30,10 @@ public:
     // === Custom Methods ===
     void NoInteract()
     {
-        if (storedEntity)
+        if (storedHighlightable)
         {
-            GameObject storedObject = GameObject(storedEntity);
-            Highlightable_* h = storedObject.GetComponent<Highlightable_>();
-            if (h) { h->SetHighlight(false); }
-            storedEntity = 0;
+            storedHighlightable->SetHighlight(false);
+            storedHighlightable = nullptr;
         }
     }
 
@@ -60,19 +65,28 @@ public:
 
                 LOG_DEBUG("Hit something!");
 
-                // Only proceed if Highlightable component exists and we are hitting another entity
-                if (h && raycastHit.entity != storedEntity)
+				// Only proceed if Highlightable component exists and we are hitting another Highlightable
+                if (h && h != storedHighlightable)
                 {
-                    if (storedEntity)
+                    LOG_DEBUG("Hit a highlightable!");
+                    if (storedHighlightable)
                     {
-                        // By virtue of only storing entities with Highlightable component,
-                        // we can safe assume that the storedEntity already has one
-                        // GameObject(storedEntity).GetComponent<Highlightable_>()->SetHighlight(false);
+                        storedHighlightable->SetHighlight(false);
                     }
 
                     // Then we can set Highlight and store
-                    // h->SetHighlight(true);
-                    // storedEntity = raycastHit.entity;
+                    h->SetHighlight(true);
+                    storedHighlightable = h;
+
+					Interactable_* i = go.GetComponent<Interactable_>();
+                    if (i)
+                    {
+                        storedInteractable = i;
+                    }
+                    else
+                    {
+						storedInteractable = nullptr;
+                    }
                 }
                 else
                 {
@@ -87,14 +101,9 @@ public:
             }
         }
 
-        if (storedEntity)
+        if (storedInteractable && Input::WasKeyPressed(GLFW_MOUSE_BUTTON_LEFT))
         {
-            if (Input::WasKeyPressed(GLFW_MOUSE_BUTTON_LEFT))
-            {
-                GameObject storedObject = GameObject(storedEntity);
-                Interactable_* i = storedObject.GetComponent<Interactable_>();
-                if (i) { i->Interact(); }
-            }
+            storedInteractable->Interact();
         }
     }
     void OnDestroy() override {}
@@ -119,5 +128,6 @@ private:
 
 	// === Private Fields ===
     float timer;
-    Entity storedEntity;
+	Highlightable_* storedHighlightable;
+	Interactable_* storedInteractable;
 };
