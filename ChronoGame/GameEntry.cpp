@@ -13,6 +13,7 @@
 #include "Scripts/Puzzle_Wire.hpp"
 #include "Scripts/Puzzle_Mirror.hpp"
 #include "Scripts/Puzzle_Lever.hpp"
+#include "Scripts/Puzzle_MultiLightSequencer.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
@@ -59,6 +60,9 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_Lever", []() -> NE::Scripting::IScript* {
             return new Puzzle_Lever();
+            });
+        registrar->RegisterScript("Puzzle_MultiLightSequencer", []() -> NE::Scripting::IScript* {
+            return new Puzzle_MultiLightSequencer();
             });
         registrar->RegisterScript("Misc_Manager", []() -> NE::Scripting::IScript* {
             return new Misc_Manager();

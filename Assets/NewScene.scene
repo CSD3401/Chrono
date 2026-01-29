@@ -272,10 +272,10 @@
                     "Player_Controller"
                 ],
                 "SerializedFields": {
-                    "Player_Controller.jumpStrength": "5.000000",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
-                    "Player_Controller.gravity": "10.000000",
+                    "Player_Controller.jumpStrength": "5.000000",
                     "Player_Controller.lookSensitivity": "1.000000",
+                    "Player_Controller.gravity": "10.000000",
                     "Player_Controller.moveSpeed": "10.000000",
                     "Player_Controller.snappiness": "5.000000"
                 },
@@ -455,8 +455,8 @@
                 ],
                 "SerializedFields": {
                     "Watch_Controller.maxResource": "100.000000",
-                    "Watch_Controller.activationThreshold": "0.300000",
                     "Watch_Controller.resourceRegenRate": "20.000000",
+                    "Watch_Controller.activationThreshold": "0.300000",
                     "Watch_Controller.resourceConsumeRate": "50.000000",
                     "Watch_Controller.minDeactivationTime": "0.500000"
                 },
@@ -540,11 +540,11 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_Wire.puzzleKey": "0",
-                    "Puzzle_Wire.wireColours": "3 0 2 1",
                     "Puzzle_Wire.wireHolderObject": "7308613731881123843",
-                    "Puzzle_Wire.correctColours": "3 1 2 0",
-                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.wireColours": "3 0 2 1",
                     "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.correctColours": "3 1 2 0",
                     "Puzzle_Wire.wirePuzzleIndex": "0"
                 },
                 "EntityReferenceFields": [
@@ -8995,29 +8995,29 @@
                     "Puzzle_Mirror.targetTransform": "8390885029430100475",
                     "Puzzle_Mirror.mirrorTargetTransform": "8390885029430624770",
                     "Puzzle_Mirror.tile01": "8390885029412536365",
-                    "Puzzle_Mirror.tile02": "8390885029414568001",
                     "Puzzle_Mirror.debugMode": "1",
+                    "Puzzle_Mirror.tile02": "8390885029414568001",
                     "Puzzle_Mirror.tile10": "8390885029416009833",
                     "Puzzle_Mirror.tile03": "8390885029415223381",
                     "Puzzle_Mirror.tile11": "8390885029416337533",
                     "Puzzle_Mirror.tile12": "8390885029416403089",
                     "Puzzle_Mirror.tile13": "8390885029416468645",
-                    "Puzzle_Mirror.tile20": "8390885029422235833",
                     "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
-                    "Puzzle_Mirror.tile21": "8390885029422366925",
+                    "Puzzle_Mirror.tile20": "8390885029422235833",
                     "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
-                    "Puzzle_Mirror.tile22": "8390885029422432481",
+                    "Puzzle_Mirror.tile21": "8390885029422366925",
                     "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
-                    "Puzzle_Mirror.tile23": "8390885029422498037",
-                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.tile22": "8390885029422432481",
                     "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
+                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.tile23": "8390885029422498037",
                     "Puzzle_Mirror.mirrorTile10": "8390885029427020124",
                     "Puzzle_Mirror.mirrorTile11": "8390885029427020144",
                     "Puzzle_Mirror.mirrorTile12": "8390885029427020164",
                     "Puzzle_Mirror.mirrorTile13": "8390885029427020184",
                     "Puzzle_Mirror.mirrorTile20": "8390885029427020204",
-                    "Puzzle_Mirror.startCol": "0",
                     "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
+                    "Puzzle_Mirror.startCol": "0",
                     "Puzzle_Mirror.mirrorTile22": "8390885029427020244",
                     "Puzzle_Mirror.mirrorTile23": "8390885029427020264",
                     "Puzzle_Mirror.startRow": "2",
@@ -9459,14 +9459,14 @@
                     "Misc_TwoStateRotater"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Lever.puzzleKey": "0",
-                    "Misc_TwoStateRotater.target": "7308613746448793600",
-                    "Misc_TwoStateRotater.rotationX1": "0.000000",
                     "Misc_TwoStateRotater.startingState": "0",
+                    "Misc_TwoStateRotater.rotationX1": "0.000000",
+                    "Misc_TwoStateRotater.target": "7308613746448793600",
+                    "Puzzle_Lever.puzzleKey": "0",
                     "Puzzle_Lever.twoStateRotaterObject": "7308613746448793600",
                     "Puzzle_Lever.twoWaySwitchObject": "7308613746448793600",
-                    "Misc_TwoStateRotater.duration": "90.000000",
-                    "Misc_TwoStateRotater.rotationX2": "0.000000"
+                    "Misc_TwoStateRotater.rotationX2": "0.000000",
+                    "Misc_TwoStateRotater.duration": "90.000000"
                 },
                 "EntityReferenceFields": [
                     "target",
@@ -9474,6 +9474,460 @@
                     "twoWaySwitchObject"
                 ],
                 "luid": 7958820942652768261
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Multi Light Sequencer",
+                "isActive": 1,
+                "luid": 7308613747310460929
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798016,
+                "parentLuid": 0
+            },
+            "PrefabInstance": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854"
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 31.303455352783203,
+                    "y": -20.471067428588867,
+                    "z": -0.9935898184776306
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885032762933250
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_MultiLightSequencer"
+                ],
+                "SerializedFields": {
+                    "Puzzle_MultiLightSequencer.light1": "7308613747310460933",
+                    "Puzzle_MultiLightSequencer.light2": "7308613747310460937",
+                    "Puzzle_MultiLightSequencer.light3": "7308613747310460941",
+                    "Puzzle_MultiLightSequencer.sequenceLength": "3",
+                    "Puzzle_MultiLightSequencer.light4": "7308613747310460945",
+                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
+                    "Puzzle_MultiLightSequencer.light5": "7308613747310460949",
+                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
+                    "Puzzle_MultiLightSequencer.light6": "7308613747310460953",
+                    "Puzzle_MultiLightSequencer.light7": "0",
+                    "Puzzle_MultiLightSequencer.lightOffMaterial": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Puzzle_MultiLightSequencer.solvedEventName": "SequencerSolved",
+                    "Puzzle_MultiLightSequencer.light8": "0",
+                    "Puzzle_MultiLightSequencer.light9": "0",
+                    "Puzzle_MultiLightSequencer.lightOnMaterial": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Puzzle_MultiLightSequencer.blinkOffTime": "0.200000",
+                    "Puzzle_MultiLightSequencer.failReplayDelay": "0.600000",
+                    "Puzzle_MultiLightSequencer.autoStart": "1",
+                    "Puzzle_MultiLightSequencer.logSequence": "0",
+                    "Puzzle_MultiLightSequencer.puzzleKeyId": "1"
+                },
+                "EntityReferenceFields": [
+                    "light1",
+                    "light2",
+                    "light3",
+                    "light4",
+                    "light5",
+                    "light6",
+                    "light7",
+                    "light8",
+                    "light9"
+                ],
+                "luid": 7958820943512076291
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light1",
+                "isActive": 1,
+                "luid": 7308613747310460933
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798020,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 1
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885032762933254
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128199
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light2",
+                "isActive": 1,
+                "luid": 7308613747310460937
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798024,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 2
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.20000000298023224
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885032762933258
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128203
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light3",
+                "isActive": 1,
+                "luid": 7308613747310460941
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798028,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 3
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.4000000059604645
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885032762933262
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128207
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light4",
+                "isActive": 1,
+                "luid": 7308613747310460945
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798032,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 4
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.6000000238418579
+                },
+                "Scale": {
+                    "x": 0.09999997913837433,
+                    "y": 0.10000000149011612,
+                    "z": 0.09999997913837433
+                },
+                "Rotation": {
+                    "x": -0.0548311248421669,
+                    "y": -0.027415569871664047,
+                    "z": -0.05483114719390869
+                },
+                "luid": 8390885032762933266
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128211
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light5",
+                "isActive": 1,
+                "luid": 7308613747310460949
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798036,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 5
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.800000011920929
+                },
+                "Scale": {
+                    "x": 0.09999997913837433,
+                    "y": 0.10000000149011612,
+                    "z": 0.09999997913837433
+                },
+                "Rotation": {
+                    "x": 0.0009569837711751461,
+                    "y": 0.00047849174006842077,
+                    "z": 0.0009565262007527053
+                },
+                "luid": 8390885032762933270
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128215
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light6",
+                "isActive": 1,
+                "luid": 7308613747310460953
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798040,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 6
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.0
+                },
+                "Scale": {
+                    "x": 0.09999997913837433,
+                    "y": 0.10000000149011612,
+                    "z": 0.09999997913837433
+                },
+                "Rotation": {
+                    "x": 0.0009569837711751461,
+                    "y": 0.00047849174006842077,
+                    "z": 0.0009565262007527053
+                },
+                "luid": 8390885032762933274
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128219
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light7",
+                "isActive": 0,
+                "luid": 7308613747310460957
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798044,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 7
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.2000000476837158
+                },
+                "Scale": {
+                    "x": 0.09999997913837433,
+                    "y": 0.10000000149011612,
+                    "z": 0.09999997913837433
+                },
+                "Rotation": {
+                    "x": 0.0009569837711751461,
+                    "y": 0.00047849174006842077,
+                    "z": 0.0009565262007527053
+                },
+                "luid": 8390885032762933278
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128223
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light8",
+                "isActive": 0,
+                "luid": 7308613747310460961
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798048,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 8
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.399999976158142
+                },
+                "Scale": {
+                    "x": 0.09999997913837433,
+                    "y": 0.10000000149011612,
+                    "z": 0.09999997913837433
+                },
+                "Rotation": {
+                    "x": 0.0009569837711751461,
+                    "y": 0.00047849174006842077,
+                    "z": 0.0009565262007527053
+                },
+                "luid": 8390885032762933282
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128227
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Light9",
+                "isActive": 0,
+                "luid": 7308613747310460965
+            },
+            "Hierarchy": {
+                "luid": 7526193904307798052,
+                "parentLuid": 7526193904307798016
+            },
+            "PrefabLink": {
+                "prefabUUID": "6ce2f742-5d6e-413b-9f50-1aa08760d854",
+                "localID": 9
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.600000023841858
+                },
+                "Scale": {
+                    "x": 0.09999997913837433,
+                    "y": 0.10000000149011612,
+                    "z": 0.09999997913837433
+                },
+                "Rotation": {
+                    "x": 0.0009569837711751461,
+                    "y": 0.00047849174006842077,
+                    "z": 0.0009565262007527053
+                },
+                "luid": 8390885032762933286
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829195013128231
             }
         }
     ]
