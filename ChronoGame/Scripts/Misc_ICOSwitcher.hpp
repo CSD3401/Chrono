@@ -10,8 +10,10 @@
 class Misc_ICOSwitcher : public IScript {
 public:
     Misc_ICOSwitcher() {
-        SCRIPT_GAMEOBJECT_REF(objectsIdle);
-        SCRIPT_GAMEOBJECT_REF(objectsRunning);
+        //SCRIPT_GAMEOBJECT_REF(objectsIdle);
+        //SCRIPT_GAMEOBJECT_REF(objectsRunning);
+        SCRIPT_GAMEOBJECT_REF(presentObj);
+        SCRIPT_GAMEOBJECT_REF(pastObj);
     }
 
     ~Misc_ICOSwitcher() override = default;
@@ -19,13 +21,15 @@ public:
     // === Lifecycle Methods ===
     void Awake() override {
         RegisterEventListeners();
-        LOG_INFO("Misc_ICOSwitcher: listeners registered");
+        LOG_INFO("Miscellaneous_ICOSwitcher: listeners registered");
     }
 
     void Initialize(Entity entity) override {}
     void Start() override {
         // Addition: Ensure a consistent initial state at play start (running on, idle off).
-        Activate();
+        
+		// RF - Start the game in the present state aka presentObj - active  , pastObj - inactive
+        //Activate();
     }
     void Update(double deltaTime) override {}
 
@@ -36,18 +40,18 @@ public:
     // === Optional Callbacks ===
     void OnEnable() override {
         listeningEnabled = true;
-        LOG_INFO("Misc_ICOSwitcher: enabled");
+        LOG_INFO("Miscellaneous_ICOSwitcher: enabled");
     }
 
     void OnDisable() override {
         listeningEnabled = false;
-        LOG_INFO("Misc_ICOSwitcher: disabled");
+        LOG_INFO("Miscellaneous_ICOSwitcher: disabled");
     }
 
     void OnValidate() override {}
 
     const char* GetTypeName() const override {
-        return "Misc_ICOSwitcher";
+        return "Miscellaneous_ICOSwitcher";
     }
 
     // === Collision Callbacks ===
@@ -57,8 +61,10 @@ public:
     void OnTriggerExit(Entity other) override {}
 
 private:
-    GameObjectRef objectsIdle;
-    GameObjectRef objectsRunning;
+    //GameObjectRef objectsIdle; // list of past obj
+    //GameObjectRef objectsRunning; // list of present obj
+    GameObjectRef presentObj; // list of past obj -> put a empty parent to contain all present obj
+    GameObjectRef pastObj; // list of past obj -> put a empty parent to contain all present obj
     bool eventsRegistered = false;
     bool listeningEnabled = false;
 
@@ -69,7 +75,7 @@ private:
 
         Events::Listen("ChronoActivated", [this](void*) {
             if (!listeningEnabled) {
-                LOG_INFO("Misc_ICOSwitcher: ChronoActivated ignored (disabled)");
+                LOG_INFO("Miscellaneous_ICOSwitcher: ChronoActivated ignored (disabled)");
                 return;
             }
             Activate();
@@ -77,7 +83,7 @@ private:
 
         Events::Listen("ChronoDeactivated", [this](void*) {
             if (!listeningEnabled) {
-                LOG_INFO("Misc_ICOSwitcher: ChronoDeactivated ignored (disabled)");
+                LOG_INFO("Miscellaneous_ICOSwitcher: ChronoDeactivated ignored (disabled)");
                 return;
             }
             Deactivate();
@@ -87,27 +93,27 @@ private:
     }
 
     bool CheckObjectsValid() const {
-        return objectsIdle.IsValid() && objectsRunning.IsValid();
+        return presentObj.IsValid() && pastObj.IsValid();
     }
 
     void Activate() {
         if (CheckObjectsValid()) {
-            LOG_INFO("Misc_ICOSwitcher: ChronoActivated -> idle off, running on");
-            SetActive(false, objectsIdle.GetEntity());
-            SetActive(true, objectsRunning.GetEntity());
+            LOG_INFO("Miscellaneous_ICOSwitcher: ChronoActivated -> idle off, running on");
+            SetActive(false, presentObj.GetEntity());
+            SetActive(true, pastObj.GetEntity());
         } else {
-            LOG_WARNING("Misc_ICOSwitcher: Invalid references on activate, destroying");
+            LOG_WARNING("Miscellaneous_ICOSwitcher: Invalid references on activate, destroying");
             Command::DestroyEntity(GetEntity());
         }
     }
 
     void Deactivate() {
         if (CheckObjectsValid()) {
-            LOG_INFO("Misc_ICOSwitcher: ChronoDeactivated -> idle on, running off");
-            SetActive(true, objectsIdle.GetEntity());
-            SetActive(false, objectsRunning.GetEntity());
+            LOG_INFO("Miscellaneous_ICOSwitcher: ChronoDeactivated -> idle on, running off");
+            SetActive(true, presentObj.GetEntity());
+            SetActive(false, pastObj.GetEntity());
         } else {
-            LOG_WARNING("Misc_ICOSwitcher: Invalid references on deactivate, destroying");
+            LOG_WARNING("Miscellaneous_ICOSwitcher: Invalid references on deactivate, destroying");
             Command::DestroyEntity(GetEntity());
         }
     }

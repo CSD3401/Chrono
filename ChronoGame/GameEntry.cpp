@@ -8,10 +8,9 @@
 // Include headers for all scripts you want to register
 #include "Scripts/Highlightable_Material.hpp"
 #include "Scripts/Player_Controller.hpp"
-#include "Scripts/Player_Raycast.hpp"
+#include "Scripts/Watch_Controller.hpp"
 #include "Scripts/Puzzle_Wire.hpp"
-#include "Scripts/Puzzle_Lever.hpp"
-#include "Scripts/Interactable_.hpp"
+#include "Scripts/Puzzle_Mirror.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
@@ -47,6 +46,12 @@ extern "C" {
         registrar->RegisterScript("Player_Raycast", []() -> NE::Scripting::IScript* {
             return new Player_Raycast();
             });
+        registrar->RegisterScript("Watch_Controller", []() -> NE::Scripting::IScript* {
+            return new Watch_Controller();
+            });
+        registrar->RegisterScript("Misc_Manager", []() -> NE::Scripting::IScript* {
+            return new Misc_Manager();
+            });
         registrar->RegisterScript("Puzzle_Wire", []() -> NE::Scripting::IScript* {
             return new Puzzle_Wire();
             });
@@ -55,6 +60,9 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_Manager", []() -> NE::Scripting::IScript* {
             return new Misc_Manager();
+            });
+        registrar->RegisterScript("Puzzle_Mirror", []() -> NE::Scripting::IScript* {
+            return new MirrorPuzzle();
             });
         registrar->RegisterScript("Misc_WireChild", []() -> NE::Scripting::IScript* {
             return new Misc_WireChild();
