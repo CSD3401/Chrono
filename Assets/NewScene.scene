@@ -227,8 +227,8 @@
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": 0.8038514852523804,
-                    "z": 3.5478744506835938
+                    "y": 1.0,
+                    "z": 3.5
                 },
                 "Scale": {
                     "x": 1.0,
@@ -272,8 +272,9 @@
                     "Player_Controller"
                 ],
                 "SerializedFields": {
-                    "Player_Controller.jumpStrength": "1.000000",
+                    "Player_Controller.jumpStrength": "5.000000",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
+                    "Player_Controller.gravity": "10.000000",
                     "Player_Controller.lookSensitivity": "1.000000",
                     "Player_Controller.moveSpeed": "10.000000",
                     "Player_Controller.snappiness": "5.000000"
@@ -360,6 +361,18 @@
                 },
                 "luid": 8390884971952734210
             },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Player_Raycast"
+                ],
+                "SerializedFields": {
+                    "Player_Raycast.interval": "0.300000",
+                    "Player_Raycast.distance": "10.000000",
+                    "Player_Raycast.targetLayer": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820942659846150
+            },
             "Camera": {
                 "FOV Y": 60.0,
                 "Aspect Ratio": 1.7777777910232544,
@@ -367,6 +380,44 @@
                 "Far Plane": 1000.0,
                 "Is Main Camera": 1,
                 "Is Active Camera": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sphere",
+                "isActive": 1,
+                "luid": 7308613746426314752
+            },
+            "Hierarchy": {
+                "luid": 7526193903423651842,
+                "parentLuid": 7526193843497598979
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.17377591133117676
+                },
+                "Scale": {
+                    "x": 0.003000000026077032,
+                    "y": 0.003000000026077032,
+                    "z": 0.003000000026077032
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885031878787073
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829194128982019
             }
         },
         {
@@ -417,7 +468,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Manager",
-                "isActive": 0,
+                "isActive": 1,
                 "luid": 7308613688463327234
             },
             "Hierarchy": {
@@ -444,7 +495,8 @@
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "Manager_"
+                    "Manager_",
+                    "Misc_Manager"
                 ],
                 "SerializedFields": {
                     "Manager_.highlightMaterial": "078ba8be-60b1-4057-8ca2-339f202c05ad"
@@ -487,6 +539,7 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
+                    "Puzzle_Wire.puzzleKey": "0",
                     "Puzzle_Wire.wireColours": "3 0 2 1",
                     "Puzzle_Wire.wireHolderObject": "7308613731881123843",
                     "Puzzle_Wire.correctColours": "3 1 2 0",
@@ -9339,6 +9392,88 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829192157528093
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Raycast Test",
+                "isActive": 1,
+                "luid": 7308613746448793600
+            },
+            "Hierarchy": {
+                "luid": 7526193903446130690,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.9299452900886536,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885031901265921
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829194152378371
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061508328456196
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Highlightable_Material",
+                    "Interactable_TwoWaySwitch",
+                    "Puzzle_Lever",
+                    "Misc_TwoStateRotater"
+                ],
+                "SerializedFields": {
+                    "Puzzle_Lever.puzzleKey": "0",
+                    "Misc_TwoStateRotater.target": "7308613746448793600",
+                    "Misc_TwoStateRotater.rotationX1": "0.000000",
+                    "Misc_TwoStateRotater.startingState": "0",
+                    "Puzzle_Lever.twoStateRotaterObject": "7308613746448793600",
+                    "Puzzle_Lever.twoWaySwitchObject": "7308613746448793600",
+                    "Misc_TwoStateRotater.duration": "90.000000",
+                    "Misc_TwoStateRotater.rotationX2": "0.000000"
+                },
+                "EntityReferenceFields": [
+                    "target",
+                    "twoStateRotaterObject",
+                    "twoWaySwitchObject"
+                ],
+                "luid": 7958820942652768261
             }
         }
     ]

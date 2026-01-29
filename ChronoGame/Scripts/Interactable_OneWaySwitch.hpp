@@ -40,7 +40,7 @@ public:
     void OnValidate() override {}
 
     const char* GetTypeName() const override {
-        return "Puzzle_OneWaySwitch";
+        return "Interactable_OneWaySwitch";
     }
 
     // === Interaction ===
