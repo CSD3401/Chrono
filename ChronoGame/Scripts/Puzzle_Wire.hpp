@@ -179,6 +179,7 @@ private:
     // Add your private member variables here
     // Example: float speed = 5.0f;
     GameObjectRef wireHolderObject;
+    GameObjectRef correctHolderObject;
     int numWires = 3;
     std::vector<int> wireColours;
     std::vector<int> correctColours;
