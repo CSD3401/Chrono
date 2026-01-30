@@ -23,6 +23,7 @@ public:
         // Example: SCRIPT_FIELD(speed, float);
         // Example: SCRIPT_FIELD_VECTOR(blingstring, String);;
         SCRIPT_GAMEOBJECT_REF(wireHolderObject);
+        SCRIPT_GAMEOBJECT_REF(correctHolderObject);
         SCRIPT_FIELD_VECTOR(wireColours, Int);
         SCRIPT_FIELD_VECTOR(correctColours, Int);
         SCRIPT_FIELD(wirePuzzleIndex, Int);

@@ -272,10 +272,10 @@
                     "Player_Controller"
                 ],
                 "SerializedFields": {
-                    "Player_Controller.playerCameraRef": "7308613686500261889",
                     "Player_Controller.jumpStrength": "5.000000",
-                    "Player_Controller.lookSensitivity": "1.000000",
+                    "Player_Controller.playerCameraRef": "7308613686500261889",
                     "Player_Controller.gravity": "10.000000",
+                    "Player_Controller.lookSensitivity": "1.000000",
                     "Player_Controller.moveSpeed": "10.000000",
                     "Player_Controller.snappiness": "5.000000"
                 },
@@ -362,14 +362,8 @@
                 "luid": 8390884971952734210
             },
             "NativeScript": {
-                "ScriptNames": [
-                    "Player_Raycast"
-                ],
-                "SerializedFields": {
-                    "Player_Raycast.interval": "0.300000",
-                    "Player_Raycast.distance": "10.000000",
-                    "Player_Raycast.targetLayer": "0"
-                },
+                "ScriptNames": [],
+                "SerializedFields": {},
                 "EntityReferenceFields": [],
                 "luid": 7958820942659846150
             },
@@ -455,8 +449,8 @@
                 ],
                 "SerializedFields": {
                     "Watch_Controller.maxResource": "100.000000",
-                    "Watch_Controller.resourceRegenRate": "20.000000",
                     "Watch_Controller.activationThreshold": "0.300000",
+                    "Watch_Controller.resourceRegenRate": "20.000000",
                     "Watch_Controller.resourceConsumeRate": "50.000000",
                     "Watch_Controller.minDeactivationTime": "0.500000"
                 },
@@ -499,15 +493,17 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_Wire.puzzleKey": "0",
-                    "Puzzle_Wire.wireHolderObject": "7308613749220048900",
                     "Puzzle_Wire.wireColours": "4 1 2 0 3",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_Wire.changeTimer": "1.000000",
+                    "Puzzle_Wire.wireHolderObject": "7308613749220048900",
+                    "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.correctHolderObject": "7308613749250129953",
                     "Puzzle_Wire.correctColours": "4 2 0 3 1",
-                    "Puzzle_Wire.wirePuzzleIndex": "0"
+                    "Puzzle_Wire.changeTimer": "1.000000",
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348"
                 },
                 "EntityReferenceFields": [
-                    "wireHolderObject"
+                    "wireHolderObject",
+                    "correctHolderObject"
                 ],
                 "luid": 7958820945420681219
             }
@@ -587,11 +583,11 @@
                     "Misc_WireChild.wireChildIndex": "2031617",
                     "Misc_WireChild.wirePuzzleIndex": "257",
                     "Misc_WireChild.pink": "",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
                 },
@@ -644,11 +640,11 @@
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
                 },
@@ -701,11 +697,11 @@
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
                 },
@@ -758,11 +754,11 @@
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
                 },
@@ -966,7 +962,7 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -5.11383056640625,
+                    "x": -5.113999843597412,
                     "y": -4.458740234375,
                     "z": 10.0107421875
                 },
@@ -989,6 +985,19 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829196954304551
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Listener_StretchObject"
+                ],
+                "SerializedFields": {
+                    "Listener_StretchObject.startingPos": "0 0 0",
+                    "Listener_StretchObject.listenToMessage": "PuzzleSolved1",
+                    "Listener_StretchObject.targetPos": "0 0 0",
+                    "Listener_StretchObject.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820949120057344
             }
         },
         {
@@ -1027,6 +1036,19 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829196958040107
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Listener_StretchObject"
+                ],
+                "SerializedFields": {
+                    "Listener_StretchObject.startingPos": "0 0 0",
+                    "Listener_StretchObject.listenToMessage": "PuzzleSolved1",
+                    "Listener_StretchObject.targetPos": "0 0 0",
+                    "Listener_StretchObject.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820949124448256
             }
         },
         {
@@ -1065,6 +1087,19 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829196961447983
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Listener_StretchObject"
+                ],
+                "SerializedFields": {
+                    "Listener_StretchObject.startingPos": "0 0 0",
+                    "Listener_StretchObject.listenToMessage": "PuzzleSolved1",
+                    "Listener_StretchObject.targetPos": "0 0 0",
+                    "Listener_StretchObject.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820949124579329
             }
         },
         {
@@ -1103,6 +1138,68 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829197163102211
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Listener_StretchObject"
+                ],
+                "SerializedFields": {
+                    "Listener_StretchObject.startingPos": "0 0 0",
+                    "Listener_StretchObject.listenToMessage": "PuzzleSolved1",
+                    "Listener_StretchObject.targetPos": "0 0 0",
+                    "Listener_StretchObject.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820949124710402
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613752993742848
+            },
+            "Hierarchy": {
+                "luid": 7526193909991079938,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.5155723690986633,
+                    "y": 0.20463907718658447,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885038446215169
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829200697589763
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Listener_StretchObject"
+                ],
+                "SerializedFields": {
+                    "Listener_StretchObject.targetPos": "0 5 0",
+                    "Listener_StretchObject.listenToMessage": "dsf"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820949197651972
             }
         },
         {
@@ -9275,29 +9372,29 @@
                     "Puzzle_Mirror.targetTransform": "8390885029430100475",
                     "Puzzle_Mirror.mirrorTargetTransform": "8390885029430624770",
                     "Puzzle_Mirror.tile01": "8390885029412536365",
-                    "Puzzle_Mirror.debugMode": "1",
                     "Puzzle_Mirror.tile02": "8390885029414568001",
+                    "Puzzle_Mirror.debugMode": "1",
                     "Puzzle_Mirror.tile10": "8390885029416009833",
                     "Puzzle_Mirror.tile03": "8390885029415223381",
                     "Puzzle_Mirror.tile11": "8390885029416337533",
                     "Puzzle_Mirror.tile12": "8390885029416403089",
                     "Puzzle_Mirror.tile13": "8390885029416468645",
-                    "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
                     "Puzzle_Mirror.tile20": "8390885029422235833",
-                    "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
+                    "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
                     "Puzzle_Mirror.tile21": "8390885029422366925",
-                    "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
+                    "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
                     "Puzzle_Mirror.tile22": "8390885029422432481",
-                    "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
-                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
                     "Puzzle_Mirror.tile23": "8390885029422498037",
+                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
                     "Puzzle_Mirror.mirrorTile10": "8390885029427020124",
                     "Puzzle_Mirror.mirrorTile11": "8390885029427020144",
                     "Puzzle_Mirror.mirrorTile12": "8390885029427020164",
                     "Puzzle_Mirror.mirrorTile13": "8390885029427020184",
                     "Puzzle_Mirror.mirrorTile20": "8390885029427020204",
-                    "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
                     "Puzzle_Mirror.startCol": "0",
+                    "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
                     "Puzzle_Mirror.mirrorTile22": "8390885029427020244",
                     "Puzzle_Mirror.mirrorTile23": "8390885029427020264",
                     "Puzzle_Mirror.startRow": "2",
@@ -9739,14 +9836,14 @@
                     "Misc_TwoStateRotater"
                 ],
                 "SerializedFields": {
-                    "Misc_TwoStateRotater.startingState": "0",
-                    "Misc_TwoStateRotater.rotationX1": "0.000000",
-                    "Misc_TwoStateRotater.target": "7308613746448793600",
                     "Puzzle_Lever.puzzleKey": "0",
+                    "Misc_TwoStateRotater.target": "7308613746448793600",
+                    "Misc_TwoStateRotater.rotationX1": "0.000000",
+                    "Misc_TwoStateRotater.startingState": "0",
                     "Puzzle_Lever.twoStateRotaterObject": "7308613746448793600",
                     "Puzzle_Lever.twoWaySwitchObject": "7308613746448793600",
-                    "Misc_TwoStateRotater.rotationX2": "0.000000",
-                    "Misc_TwoStateRotater.duration": "90.000000"
+                    "Misc_TwoStateRotater.duration": "90.000000",
+                    "Misc_TwoStateRotater.rotationX2": "0.000000"
                 },
                 "EntityReferenceFields": [
                     "target",

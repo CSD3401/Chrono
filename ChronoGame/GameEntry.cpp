@@ -24,6 +24,7 @@
 #include "Scripts/Misc_TwoStateRotater.hpp"
 #include "Scripts/Misc_Sinkhole.hpp"
 #include "Scripts/Listener_MoveObject.hpp"
+#include "Scripts/Listener_StretchObject.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -96,6 +97,9 @@ extern "C" {
             });
         registrar->RegisterScript("Listener_MoveObject", []() -> NE::Scripting::IScript* {
             return new Listener_MoveObject();
+            });
+        registrar->RegisterScript("Listener_StretchObject", []() -> NE::Scripting::IScript* {
+            return new Listener_StretchObject();
             });
         }
 }
