@@ -16,7 +16,7 @@ enum class PuzzleKey {
 class Puzzle_ : public IScript {
 public:
     Puzzle_() {
-        SCRIPT_ENUM_FIELD(puzzleKey);
+        // SCRIPT_ENUM_FIELD(puzzleKey);
     }
     ~Puzzle_() override = default;
 

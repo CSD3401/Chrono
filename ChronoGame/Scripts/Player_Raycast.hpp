@@ -67,8 +67,13 @@ public:
             if (raycastHit.hasHit)
             {
                 GameObject go = GameObject(raycastHit.entity);
-                Highlightable_* h = go.GetComponent<Highlightable_>();
-                Interactable_* i = go.GetComponent<Interactable_>();
+
+                if (!go.IsValid())
+                {
+                    return;
+                }
+                Highlightable_* h = nullptr; // = go.GetComponent<Highlightable_>();
+                Interactable_* i = nullptr; // = go.GetComponent<Interactable_>();
 
 				// Only proceed if Highlightable component exists
                 if (h)
