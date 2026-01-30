@@ -24,6 +24,7 @@ public:
         // Example: SCRIPT_FIELD_VECTOR(blingstring, String);;
         SCRIPT_GAMEOBJECT_REF(wireHolderObject);
         SCRIPT_GAMEOBJECT_REF(correctHolderObject);
+        SCRIPT_GAMEOBJECT_REF(connectedHolderObject);
         SCRIPT_FIELD_VECTOR(wireColours, Int);
         SCRIPT_FIELD_VECTOR(correctColours, Int);
         SCRIPT_FIELD(wirePuzzleIndex, Int);
@@ -115,15 +116,32 @@ public:
         LOG_DEBUG("NUM CHILDREN: " + std::to_string(numWires));
         // Message is UpdateWireColour + WirePuzzleIndex + WireChildIndex
         wireChildren = GetChildren(wireHolderObject.GetEntity());
-
-
+        correctChildren = GetChildren(correctHolderObject.GetEntity());
+        connectedWires = GetChildren(connectedHolderObject.GetEntity());
         //std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
         for (int i = 0; i < numWires; ++i)
         {
             //Events::Send((message + std::to_string(i)).c_str(), &wireColours[i]);
             GameObject child(wireChildren[i]);
-            child.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[i]);
+            if (child)
+            {
+                child.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[i]);
+            }
+            GameObject child2(correctChildren[i]);
+            if (child2)
+            {
+                child2.GetComponent<Misc_WireChild>()->UpdateWireColour(correctColours[i]); 
+            }
+            GameObject child3(connectedWires[i]);
+            if (child3)
+            {
+                child3.GetComponent<Misc_WireChild>()->UpdateWireColour(correctColours[i]);
+                SetActive(false, connectedWires[i]);
+            }
         }
+
+
+
     }
 
     void RecieveIndexData(void* indexData)
@@ -160,7 +178,12 @@ public:
             // Current Fix until solve is able to be used
             LOG_DEBUG("PUZZLE SOLVED!");
             std::string message = "PuzzleSolved1";
-            Events::Send(message.c_str(), &changeTimer);
+            Events::Send(message.c_str());
+
+            for (int i = 0; i < numWires; ++i)
+            {
+                SetActive(true, connectedWires[i]);
+            }
         }
     }
 
@@ -181,6 +204,7 @@ private:
     // Example: float speed = 5.0f;
     GameObjectRef wireHolderObject;
     GameObjectRef correctHolderObject;
+    GameObjectRef connectedHolderObject;
     int numWires = 3;
     std::vector<int> wireColours;
     std::vector<int> correctColours;
@@ -192,4 +216,6 @@ private:
 
     // Testing
     std::vector<Entity> wireChildren;
+    std::vector<Entity> correctChildren;
+    std::vector<Entity> connectedWires;
 };

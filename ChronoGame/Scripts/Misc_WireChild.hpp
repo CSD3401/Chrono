@@ -24,6 +24,7 @@ public:
         SCRIPT_COMPONENT_REF(purple, MaterialRef);
         SCRIPT_COMPONENT_REF(pink, MaterialRef);
         SCRIPT_COMPONENT_REF(white, MaterialRef);
+        SCRIPT_FIELD(correctWire, Bool);
     }
 
     ~Misc_WireChild() override = default;
@@ -84,9 +85,10 @@ public:
         //LOG_DEBUG(message.c_str());
         // listen to event for updating wire colours
         //Events::Listen(message.c_str(), UpdateWireColour);
+
         std::string message2 = "PuzzleSolved1";
         Events::Listen(message2.c_str(), [this](void* data) {
-            this->PuzzleSolved(data);
+            this->PuzzleSolved();
             });
     }
 
@@ -118,6 +120,11 @@ public:
 
     void OnTriggerExit(Entity other) override {
         // Called when this entity exits a trigger
+    }
+
+    bool GetIsCorrectWire()
+    {
+        return correctWire;
     }
 
     void UpdateWireColour(int colourIndex)
@@ -172,12 +179,12 @@ public:
         }
     }
 
-    void PuzzleSolved(void* data)
+    void PuzzleSolved()
     {
         // play sound effect
         // start countdown
-        puzzleSolved = true;
-        changeTimer = *reinterpret_cast<float*>(data);
+        //puzzleSolved = true;
+        //changeTimer = *reinterpret_cast<float*>(data);
     }
 
     enum WIRE_COLOUR
@@ -211,5 +218,7 @@ private:
 
     bool puzzleSolved = false;
     float changeTimer = 0.5f;
+
+    bool correctWire = false;
 
 };
