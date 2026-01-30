@@ -46,6 +46,17 @@ public:
             Events::Send(message.c_str(), &leftWireIndex);
 
         }
+        if (Input::WasKeyReleased(',') && leftWireIndex == 2)
+        {
+            std::string message = "WireButtonPressed" + std::to_string(wirePuzzleIndex);
+            LOG_DEBUG("BUTTON PRESSED:" + message);
+            Events::Send(message.c_str(), &leftWireIndex);
+
+        }
+        if (Input::WasKeyReleased('B'))
+        {
+            Events::Send("MOVE");
+        }
 
     }
     void OnDestroy() override {}
