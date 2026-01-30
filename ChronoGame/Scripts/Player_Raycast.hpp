@@ -2,6 +2,7 @@
 #include "EngineAPI.hpp"
 #include "Highlightable_.hpp"
 #include "Interactable_.hpp"
+#include "Interactable_Bridge.hpp"
 #include "Player_Controller.hpp"
 
 #define GLFW_MOUSE_BUTTON_LEFT 0
@@ -18,8 +19,7 @@ public:
 		distance{ 5.0f },
         targetLayer{ 0 },  
 		timer{ 0.0f },
-		storedHighlightable{ nullptr },
-		storedInteractable{ nullptr }
+        storedBridge{ nullptr }
     {
         SCRIPT_FIELD(interval, Float);
         SCRIPT_FIELD(distance, Float);
@@ -30,15 +30,14 @@ public:
     // === Custom Methods ===
     void NoInteract()
     {
-        if (storedHighlightable)
+        if (storedBridge)
         {
-            storedHighlightable->SetHighlight(false);
-            storedHighlightable = nullptr;
+            storedBridge->SetHighlight(false);
+            storedBridge = nullptr;
         }
 
-        if (storedInteractable)
+        if (storedBridge)
         {
-            storedInteractable = nullptr;
             LOG_DEBUG("Interactable nulled");
         }
     }
@@ -72,23 +71,22 @@ public:
                 {
                     return;
                 }
-                Highlightable_* h = nullptr; // = go.GetComponent<Highlightable_>();
-                Interactable_* i = nullptr; // = go.GetComponent<Interactable_>();
+                Interactable_Bridge* bridge = go.GetComponent<Interactable_Bridge>();
 
 				// Only proceed if Highlightable component exists
-                if (h)
+                if (bridge)
                 {
 					// Un-highlight previous highlightable if different
-                    if (h != storedHighlightable)
+                    if (bridge != storedBridge)
                     {
-                        if (storedHighlightable)
+                        if (storedBridge)
                         {
-                            storedHighlightable->SetHighlight(false);
+                            storedBridge->SetHighlight(false);
                         }
 
                         // Then we can set Highlight and store
-                        h->SetHighlight(true);
-                        storedHighlightable = h;
+                        bridge->SetHighlight(true);
+                        storedBridge = bridge;
                     }
                 }
                 else
@@ -97,14 +95,14 @@ public:
                 }
 
                 // Store if interactable exists
-                if (i)
+                if (bridge)
                 {
-                    storedInteractable = i;
+                    storedBridge = bridge;
                     LOG_DEBUG("Stored interactable");
                 }
                 else
                 {
-                    storedInteractable = nullptr;
+                    storedBridge = nullptr;
                     LOG_DEBUG("Interactable nulled");
                 }
             }
@@ -114,10 +112,10 @@ public:
             }
         }
 
-        if (storedInteractable && Input::WasKeyPressed('Q'))
+        if (storedBridge && Input::WasKeyPressed('Q'))
         {
 			LOG_DEBUG("Interacting with interactable");
-            storedInteractable->Interact();
+            storedBridge->Interact();
         }
     }
     void OnDestroy() override {}
@@ -142,6 +140,5 @@ private:
 
 	// === Private Fields ===
     float timer;
-	Highlightable_* storedHighlightable;
-	Interactable_* storedInteractable;
+    Interactable_Bridge* storedBridge;
 };

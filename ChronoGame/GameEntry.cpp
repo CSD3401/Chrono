@@ -17,6 +17,7 @@
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
 #include "Scripts/Interactable_TwoWaySwitch.hpp"
+#include "Scripts/Interactable_Bridge.hpp"
 #include "Scripts/Misc_Manager.hpp"
 #include "Scripts/Misc_WireChild.hpp"
 #include "Scripts/Misc_Grabber.hpp"
@@ -94,6 +95,9 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_TwoWaySwitch", []() -> NE::Scripting::IScript* {
             return new Interactable_TwoWaySwitch();
+            });
+        registrar->RegisterScript("Interactable_Bridge", []() -> NE::Scripting::IScript* {
+            return new Interactable_Bridge();
             });
         registrar->RegisterScript("Misc_Sinkhole", []() -> NE::Scripting::IScript* {
             return new Misc_Sinkhole();
