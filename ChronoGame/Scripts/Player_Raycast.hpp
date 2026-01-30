@@ -35,6 +35,12 @@ public:
             storedHighlightable->SetHighlight(false);
             storedHighlightable = nullptr;
         }
+
+        if (storedInteractable)
+        {
+            storedInteractable = nullptr;
+            LOG_DEBUG("Interactable nulled");
+        }
     }
 
     // === Lifecycle Methods ===
@@ -62,47 +68,50 @@ public:
             {
                 GameObject go = GameObject(raycastHit.entity);
                 Highlightable_* h = go.GetComponent<Highlightable_>();
+                Interactable_* i = go.GetComponent<Interactable_>();
 
-                LOG_DEBUG("Hit something!");
-
-				// Only proceed if Highlightable component exists and we are hitting another Highlightable
-                if (h && h != storedHighlightable)
+				// Only proceed if Highlightable component exists
+                if (h)
                 {
-                    LOG_DEBUG("Hit a highlightable!");
-                    if (storedHighlightable)
+					// Un-highlight previous highlightable if different
+                    if (h != storedHighlightable)
                     {
-                        storedHighlightable->SetHighlight(false);
-                    }
+                        if (storedHighlightable)
+                        {
+                            storedHighlightable->SetHighlight(false);
+                        }
 
-                    // Then we can set Highlight and store
-                    h->SetHighlight(true);
-                    storedHighlightable = h;
-
-					Interactable_* i = go.GetComponent<Interactable_>();
-                    if (i)
-                    {
-                        storedInteractable = i;
-                    }
-                    else
-                    {
-						storedInteractable = nullptr;
+                        // Then we can set Highlight and store
+                        h->SetHighlight(true);
+                        storedHighlightable = h;
                     }
                 }
                 else
                 {
                     NoInteract();
                 }
+
+                // Store if interactable exists
+                if (i)
+                {
+                    storedInteractable = i;
+                    LOG_DEBUG("Stored interactable");
+                }
+                else
+                {
+                    storedInteractable = nullptr;
+                    LOG_DEBUG("Interactable nulled");
+                }
             }
-            else
+            else // Raycast hit nothing
             {
                 NoInteract();
-
-				LOG_DEBUG("Hit nothing!");
             }
         }
 
-        if (storedInteractable && Input::WasKeyPressed(GLFW_MOUSE_BUTTON_LEFT))
+        if (storedInteractable && Input::WasKeyPressed('Q'))
         {
+			LOG_DEBUG("Interacting with interactable");
             storedInteractable->Interact();
         }
     }

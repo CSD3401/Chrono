@@ -17,8 +17,7 @@ public:
     // === Custom Methods ===
     void SetHighlight(bool state) override
     {
-        LOG_DEBUG("SetHighlight " << state);
-        /*if (state) {
+        if (state) {
 			NE::Renderer::Command::AssignMaterial(
                 GetEntity(),
                 highlightMaterial);
@@ -27,7 +26,7 @@ public:
             NE::Renderer::Command::AssignMaterial(
                 GetEntity(),
                 defaultMaterial);
-        }*/
+        }
     }
 
     // === Lifecycle Methods ===
@@ -48,7 +47,7 @@ public:
         }
 
         // Store default material from this entity
-        // ...
+		defaultMaterial = GetMaterialRef(GetRendererRef(GetEntity()));
     }
     void Update(double deltaTime) override {}
     void OnDestroy() override {}
