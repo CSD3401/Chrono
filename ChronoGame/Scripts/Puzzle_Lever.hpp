@@ -45,7 +45,9 @@ public:
             twoWaySwitch = GameObject(twoWaySwitchObject).GetComponent<Interactable_TwoWaySwitch>();
         }
     }
-    void Initialize(Entity entity) override {}
+    void Initialize(Entity entity) override {
+        Puzzle_::Initialize(entity);
+    }
     void Start() override {}
     void Update(double deltaTime) override {}
     void OnDestroy() override {}

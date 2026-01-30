@@ -15,9 +15,7 @@ enum class PuzzleKey {
 
 class Puzzle_ : public IScript {
 public:
-    Puzzle_() {
-        // SCRIPT_ENUM_FIELD(puzzleKey);
-    }
+    Puzzle_() {}
     ~Puzzle_() override = default;
 
     // === Custom Methods ===
@@ -44,7 +42,9 @@ public:
 
     // === Lifecycle Methods ===
     void Awake() override {}
-    void Initialize(Entity entity) override {}
+    void Initialize(Entity entity) override {
+        SCRIPT_ENUM_FIELD(puzzleKey, "_1", "_2", "_3");
+    }
     void Start() override {}
     void Update(double deltaTime) override {}
     void OnDestroy() override {}
