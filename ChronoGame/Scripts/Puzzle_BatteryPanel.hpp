@@ -61,13 +61,9 @@ public:
 
     // === Collision Callbacks ===
 
-    void OnCollisionEnter(Entity other) override {
-        // Called when this entity starts colliding with another
-    }
-
-    void OnCollisionExit(Entity other) override {
-        // Called when this entity stops colliding with another
-    }
+    void OnCollisionEnter(Entity other) override { (void)other; }
+    void OnCollisionExit(Entity other) override { (void)other; }
+    void OnCollisionStay(Entity other) override { (void)other; }
 
     void OnTriggerEnter(Entity other) override {
         // Called when this entity enters a trigger
@@ -94,9 +90,8 @@ public:
         }
     }
 
-    void OnTriggerExit(Entity other) override {
-        // Called when this entity exits a trigger
-    }
+    void OnTriggerExit(Entity other) override { (void)other; }
+    void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
     // Add your private member variables here

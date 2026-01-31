@@ -158,64 +158,6 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Platform",
-                "isActive": 0,
-                "luid": 7308613656041357315
-            },
-            "Hierarchy": {
-                "luid": 7526193813038694405,
-                "parentLuid": 0
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -1.5,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 50.0,
-                    "y": 1.0,
-                    "z": 50.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884941493829636
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "069a7e39-306f-4d20-a6ff-99e7b956ff76",
-                "shadowCastMode": 0,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829103744024582
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 25.0,
-                            "y": 0.5,
-                            "z": 25.0
-                        }
-                    }
-                },
-                "luid": 7165061449827418138
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
                 "name": "Puzzle_Wire_0",
                 "isActive": 1,
                 "luid": 7308613753032802309
@@ -254,14 +196,14 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireColours": "4 1 3 0 2",
-                    "Puzzle_Wire.connectedHolderObject": "7308613753152929792",
                     "Puzzle_Wire.wireHolderObject": "7308613753035358216",
-                    "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.connectedHolderObject": "7308613753152929792",
+                    "Puzzle_Wire.wireColours": "4 1 3 0 2",
                     "Puzzle_Wire.correctHolderObject": "7308613753036210190",
-                    "Puzzle_Wire.correctColours": "4 2 1 3 0",
+                    "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
                     "Puzzle_Wire.changeTimer": "0.500000",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Puzzle_Wire.correctColours": "4 2 1 3 0"
                 },
                 "EntityReferenceFields": [
                     "connectedHolderObject",
@@ -1310,9 +1252,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.0,
-                    "y": 1.0,
-                    "z": 3.5
+                    "x": -0.4579600691795349,
+                    "y": 0.994633674621582,
+                    "z": 2.588587522506714
                 },
                 "Scale": {
                     "x": 1.0,
@@ -1449,7 +1391,11 @@
                 "ScriptNames": [
                     "Player_Raycast"
                 ],
-                "SerializedFields": {},
+                "SerializedFields": {
+                    "Player_Raycast.interval": "0.100000",
+                    "Player_Raycast.distance": "5.000000",
+                    "Player_Raycast.targetLayer": "0"
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958820942659846150
             },
@@ -1583,302 +1529,6 @@
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820927292964866
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "WHOLE SCENE",
-                "isActive": 1,
-                "luid": 1
-            },
-            "Hierarchy": {
-                "luid": 7308613736459206656,
-                "parentLuid": 0
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 1
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "pCube664",
-                "isActive": 1,
-                "luid": 7308613736459206665
-            },
-            "Hierarchy": {
-                "luid": 7308613736459206657,
-                "parentLuid": 7308613736459206656
-            },
-            "Transform": {
-                "Position": {
-                    "x": 70.7174301147461,
-                    "y": -8.018636703491211,
-                    "z": -2.4705686569213867
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 2
-            },
-            "Renderer": {
-                "modelUUID": "d025b18f-e299-4035-98e3-b20854bcf184",
-                "materialUUID": "711502ab-9624-44ea-88cb-dd81932efa3f",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829184161873928
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "pCube664",
-                "isActive": 1,
-                "luid": 7308613736459206667
-            },
-            "Hierarchy": {
-                "luid": 7308613736459206658,
-                "parentLuid": 7308613736459206656
-            },
-            "Transform": {
-                "Position": {
-                    "x": 2.144266128540039,
-                    "y": 0.02087428793311119,
-                    "z": 0.4689774513244629
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 3
-            },
-            "Renderer": {
-                "modelUUID": "d025b18f-e299-4035-98e3-b20854bcf184",
-                "materialUUID": "cb36bfe1-4c17-433f-8244-609ef74b388e",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 1,
-                "luid": 8242829184161873930
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "pCube664",
-                "isActive": 1,
-                "luid": 7308613736459206669
-            },
-            "Hierarchy": {
-                "luid": 7308613736459206659,
-                "parentLuid": 7308613736459206656
-            },
-            "Transform": {
-                "Position": {
-                    "x": 74.4572982788086,
-                    "y": -10.147184371948242,
-                    "z": -11.735166549682617
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 4
-            },
-            "Renderer": {
-                "modelUUID": "d025b18f-e299-4035-98e3-b20854bcf184",
-                "materialUUID": "d0fc4d1f-e484-4f47-add2-358602490a81",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 2,
-                "luid": 8242829184161873932
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "pCube664",
-                "isActive": 1,
-                "luid": 7308613736459206671
-            },
-            "Hierarchy": {
-                "luid": 7308613736459206660,
-                "parentLuid": 7308613736459206656
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.02180314064025879,
-                    "y": -0.10536281764507294,
-                    "z": -0.6246862411499023
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 5
-            },
-            "Renderer": {
-                "modelUUID": "d025b18f-e299-4035-98e3-b20854bcf184",
-                "materialUUID": "4fad7213-faa8-47c3-8318-0fc7eb440f95",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 3,
-                "luid": 8242829184161873934
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "pCube664",
-                "isActive": 1,
-                "luid": 7308613736459206673
-            },
-            "Hierarchy": {
-                "luid": 7308613736459206661,
-                "parentLuid": 7308613736459206656
-            },
-            "Transform": {
-                "Position": {
-                    "x": -8.126396179199219,
-                    "y": 6.63975715637207,
-                    "z": -4.905004024505615
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 6
-            },
-            "Renderer": {
-                "modelUUID": "d025b18f-e299-4035-98e3-b20854bcf184",
-                "materialUUID": "96d4cb59-97d0-41a8-a00a-9dfd8c9de906",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 4,
-                "luid": 8242829184161873936
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "pCube664",
-                "isActive": 1,
-                "luid": 7308613736459206675
-            },
-            "Hierarchy": {
-                "luid": 7308613736459206662,
-                "parentLuid": 7308613736459206656
-            },
-            "Transform": {
-                "Position": {
-                    "x": 40.495887756347656,
-                    "y": -5.798973560333252,
-                    "z": -8.522561073303223
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 7
-            },
-            "Renderer": {
-                "modelUUID": "d025b18f-e299-4035-98e3-b20854bcf184",
-                "materialUUID": "c479a6a5-2856-4162-8bbe-de8d9bd5150d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 5,
-                "luid": 8242829184161873938
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "pCube664",
-                "isActive": 1,
-                "luid": 7308613736459206677
-            },
-            "Hierarchy": {
-                "luid": 7308613736459206663,
-                "parentLuid": 7308613736459206656
-            },
-            "Transform": {
-                "Position": {
-                    "x": 123.72187805175781,
-                    "y": -19.451326370239258,
-                    "z": -1.0252617597579956
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8
-            },
-            "Renderer": {
-                "modelUUID": "d025b18f-e299-4035-98e3-b20854bcf184",
-                "materialUUID": "8398f754-5f76-4306-a61f-1cbaf26de2bd",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 6,
-                "luid": 8242829184161873940
             }
         },
         {
@@ -10196,6 +9846,316 @@
                     "twoWaySwitchObject"
                 ],
                 "luid": 7958820942652768261
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "WHOLE SCENE",
+                "isActive": 1,
+                "luid": 1
+            },
+            "Hierarchy": {
+                "luid": 7308613761467219968,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "pCube664",
+                "isActive": 1,
+                "luid": 7308613761467219977
+            },
+            "Hierarchy": {
+                "luid": 7308613761467219969,
+                "parentLuid": 7308613761467219968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 70.7174301147461,
+                    "y": -8.018636703491211,
+                    "z": -2.4705686569213867
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 2
+            },
+            "Renderer": {
+                "modelUUID": "e61fef9e-53a2-4c8a-b9d1-8b7383f2c2ba",
+                "materialUUID": "10e228e0-6dae-4eaa-81e9-c0af24a2e0fe",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829209169887240
+            },
+            "Collider": {
+                "type": 4,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 4,
+                    "value": {}
+                },
+                "luid": 7165061523364052992
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "pCube664",
+                "isActive": 1,
+                "luid": 7308613761467219979
+            },
+            "Hierarchy": {
+                "luid": 7308613761467219970,
+                "parentLuid": 7308613761467219968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 2.144266128540039,
+                    "y": 0.02087428793311119,
+                    "z": 0.4689774513244629
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 3
+            },
+            "Renderer": {
+                "modelUUID": "e61fef9e-53a2-4c8a-b9d1-8b7383f2c2ba",
+                "materialUUID": "7dc9a418-92be-4f63-8bda-25c308e5c734",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 1,
+                "luid": 8242829209169887242
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "pCube664",
+                "isActive": 1,
+                "luid": 7308613761467219981
+            },
+            "Hierarchy": {
+                "luid": 7308613761467219971,
+                "parentLuid": 7308613761467219968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 74.4572982788086,
+                    "y": -10.147184371948242,
+                    "z": -11.735166549682617
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 4
+            },
+            "Renderer": {
+                "modelUUID": "e61fef9e-53a2-4c8a-b9d1-8b7383f2c2ba",
+                "materialUUID": "b425d952-8eb2-4c1d-9773-591c2090ceaf",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 2,
+                "luid": 8242829209169887244
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "pCube664",
+                "isActive": 1,
+                "luid": 7308613761467219983
+            },
+            "Hierarchy": {
+                "luid": 7308613761467219972,
+                "parentLuid": 7308613761467219968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.02180314064025879,
+                    "y": -0.10536281764507294,
+                    "z": -0.6246862411499023
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 5
+            },
+            "Renderer": {
+                "modelUUID": "e61fef9e-53a2-4c8a-b9d1-8b7383f2c2ba",
+                "materialUUID": "f159e5f9-5600-402c-bb49-f12e896d4973",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 3,
+                "luid": 8242829209169887246
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "pCube664",
+                "isActive": 1,
+                "luid": 7308613761467219985
+            },
+            "Hierarchy": {
+                "luid": 7308613761467219973,
+                "parentLuid": 7308613761467219968
+            },
+            "Transform": {
+                "Position": {
+                    "x": -8.126396179199219,
+                    "y": 6.63975715637207,
+                    "z": -4.905004024505615
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 6
+            },
+            "Renderer": {
+                "modelUUID": "e61fef9e-53a2-4c8a-b9d1-8b7383f2c2ba",
+                "materialUUID": "dbefd3fc-2fe7-4be6-9048-9edb5ae5934f",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 4,
+                "luid": 8242829209169887248
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "pCube664",
+                "isActive": 1,
+                "luid": 7308613761467219987
+            },
+            "Hierarchy": {
+                "luid": 7308613761467219974,
+                "parentLuid": 7308613761467219968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 40.495887756347656,
+                    "y": -5.798973560333252,
+                    "z": -8.522561073303223
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 7
+            },
+            "Renderer": {
+                "modelUUID": "e61fef9e-53a2-4c8a-b9d1-8b7383f2c2ba",
+                "materialUUID": "0f35ba79-14f4-4c7b-b9ae-f5855f555163",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 5,
+                "luid": 8242829209169887250
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "pCube664",
+                "isActive": 1,
+                "luid": 7308613761467219989
+            },
+            "Hierarchy": {
+                "luid": 7308613761467219975,
+                "parentLuid": 7308613761467219968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 123.72187805175781,
+                    "y": -19.451326370239258,
+                    "z": -1.0252617597579956
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8
+            },
+            "Renderer": {
+                "modelUUID": "e61fef9e-53a2-4c8a-b9d1-8b7383f2c2ba",
+                "materialUUID": "dbe88bb3-1412-4271-8776-fb2460a0bfa2",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 6,
+                "luid": 8242829209169887252
             }
         }
     ]
