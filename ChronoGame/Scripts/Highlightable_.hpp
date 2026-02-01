@@ -11,7 +11,7 @@ public:
     Highlightable_() {}
     ~Highlightable_() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     virtual void SetHighlight(bool state) {}
 
     // === Lifecycle Methods ===
@@ -28,10 +28,12 @@ public:
     const char* GetTypeName() const override { return "Highlightable_"; }
 
     // === Collision Callbacks ===
-    void OnCollisionEnter(Entity other) override {}
-    void OnCollisionExit(Entity other) override {}
-    void OnTriggerEnter(Entity other) override {}
-    void OnTriggerExit(Entity other) override {}
+    void OnCollisionEnter(Entity other) override { (void)other; }
+    void OnCollisionExit(Entity other) override { (void)other; }
+    void OnCollisionStay(Entity other) override { (void)other; }
+    void OnTriggerEnter(Entity other) override { (void)other; }
+    void OnTriggerExit(Entity other) override { (void)other; }
+    void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
 };

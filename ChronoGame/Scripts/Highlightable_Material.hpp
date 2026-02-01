@@ -1,7 +1,7 @@
 #pragma once
 #include "EngineAPI.hpp"
 #include "Highlightable_.hpp"
-#include "Manager_.hpp"
+#include "Misc_Manager.hpp"
 /*
 * === WORK IN PROGRESS ===
 * By Chan Kuan Fu Ryan (c.kuanfuryan)
@@ -14,7 +14,7 @@ public:
     Highlightable_Material() {}
     ~Highlightable_Material() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     void SetHighlight(bool state) override
     {
         if (state) {
@@ -35,7 +35,7 @@ public:
 
     void Start() override {
         // Store highlight material from Manager
-        auto m = GameObject::FindObjectsOfType<Manager_>();
+        auto m = GameObject::FindObjectsOfType<Misc_Manager>();
         if (m.size() == 0) {
             LOG_ERROR("No managers found!");
         }
@@ -43,11 +43,11 @@ public:
             LOG_WARNING("Multiple managers found!");
         }
         else {
-            highlightMaterial = m.begin()->GetComponent<Manager_>()->GetHighlightMaterial();
+            highlightMaterial = m.begin()->GetComponent<Misc_Manager>()->GetHighlightMaterial();
         }
 
         // Store default material from this entity
-        // ...
+		defaultMaterial = GetMaterialRef(GetRendererRef(GetEntity()));
     }
     void Update(double deltaTime) override {}
     void OnDestroy() override {}
@@ -59,10 +59,12 @@ public:
     const char* GetTypeName() const override { return "Highlightable_Material"; }
 
     // === Collision Callbacks ===
-    void OnCollisionEnter(Entity other) override {}
-    void OnCollisionExit(Entity other) override {}
-    void OnTriggerEnter(Entity other) override {}
-    void OnTriggerExit(Entity other) override {}
+    void OnCollisionEnter(Entity other) override { (void)other; }
+    void OnCollisionExit(Entity other) override { (void)other; }
+    void OnCollisionStay(Entity other) override { (void)other; }
+    void OnTriggerEnter(Entity other) override { (void)other; }
+    void OnTriggerExit(Entity other) override { (void)other; }
+    void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
     MaterialRef defaultMaterial{};

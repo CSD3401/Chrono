@@ -2,8 +2,7 @@
 #include <algorithm>
 #include <cmath>
 #include "EngineAPI.hpp"
-#include "Player_ColliderChecker.hpp"
-#include "Manager_.hpp"
+#include "Misc_Manager.hpp"
 
 #define GLFW_KEY_SPACE 32
 /*
@@ -16,50 +15,58 @@ class Player_Controller : public IScript {
 public:
     Player_Controller() {
 		SCRIPT_GAMEOBJECT_REF(playerCameraRef);
-        SCRIPT_FIELD(cameraSensitivity, Float);
-        SCRIPT_GAMEOBJECT_REF(groundCheckRef);
+        SCRIPT_FIELD(lookSensitivity, Float);
         SCRIPT_FIELD(moveSpeed, Float);
+        SCRIPT_FIELD(jumpStrength, Float);
         SCRIPT_FIELD(snappiness, Float);
+		SCRIPT_FIELD(gravity, Float);
     }
     ~Player_Controller() override = default;
 
-    // == Custom Methods ==
+    // === Custom Methods ===
     void Reset()
     {
-        cameraRotation = Vec3::Zero();
+        lookRotation = Vec3::Zero();
+        velocity = Vec3::Zero();
     }
 
     // === Lifecycle Methods ===
     void Awake() override {}
     void Initialize(Entity entity) override {}
+
     void Start() override {
-		// Get player camera game object
+		// Get player camera entity
         if (playerCameraRef.IsValid()) {
-			playerCameraTransformRef = GetTransformRef(playerCameraRef.GetEntity());
+			playerCameraEntity = playerCameraRef.GetEntity();
         }
-        auto m = GameObject::FindObjectsOfType<Manager_>();
-        if (m.size() == 0) {
+
+		// Find Manager_
+        auto v = GameObject::FindObjectsOfType<Misc_Manager>();
+        if (v.size() == 0) {
             LOG_ERROR("No managers found!");
         }
-        else if (m.size() > 1) {
+        else if (v.size() > 1) {
             LOG_WARNING("Multiple managers found!");
         }
         else {
-            manager = m.begin()->GetComponent<Manager_>();
+            manager = v.begin()->GetComponent<Misc_Manager>();
         }
-        transformRef = GetTransformRef(GetEntity());
-        rigidbodyRef = GetRigidbodyRef(GetEntity());
+
+		// Reset state
         Reset();
     }
 
     void Update(double deltaTime) override {
+        // === Grounded ===
+        bool isGrounded = CC_IsGrounded();
+
         // === Camera controls ===
         std::pair<double, double> const& mouseDelta = Input::GetMouseDelta();
-        cameraRotation.y -= static_cast<float>(mouseDelta.second) * cameraSensitivity;
-        cameraRotation.y = std::clamp(cameraRotation.y, -89.0f, 89.0f);
-        cameraRotation.x += static_cast<float>(mouseDelta.first) * cameraSensitivity;
-        SetRotation(transformRef, {-cameraRotation.x, 0.0f, 0.0f });
-        SetRotation(playerCameraTransformRef, { cameraRotation.y, cameraRotation.x, 0.0f });
+        lookRotation.x -= static_cast<float>(mouseDelta.first) * lookSensitivity;   // Yaw
+        lookRotation.y -= static_cast<float>(mouseDelta.second) * lookSensitivity;  // Pitch
+        lookRotation.y = std::clamp(lookRotation.y, -89.0f, 89.0f);
+        CC_Rotate(lookRotation.x);
+        TF_SetRotation({ lookRotation.y, 0.0f, 0.0f }, playerCameraEntity);
 
         // === Movement controls ===
         // Input Direction
@@ -68,57 +75,53 @@ public:
         if (Input::IsKeyDown('S')) { inputDirection.z -= 1.0f; }
         if (Input::IsKeyDown('A')) { inputDirection.x -= 1.0f; }
         if (Input::IsKeyDown('D')) { inputDirection.x += 1.0f; }
-        inputDirection = inputDirection.Normalized();
+        inputDirection.Normalize();
 
         // Camera-relative direction
-        float yaw = manager->DegreesToRadians(-cameraRotation.x);
-        Vec3 cameraForward = { cosf(yaw), 0.0f, -sinf(yaw) };
-        Vec3 cameraRight = { sinf(yaw), 0.0f, cosf(yaw) };
+        Vec3 cameraForward = TF_GetForward(playerCameraEntity);
+        Vec3 cameraRight = TF_GetRight(playerCameraEntity);
 
         // Movement direction
         Vec3 moveDirection = (cameraRight * inputDirection.x) + (cameraForward * inputDirection.z);
-        moveDirection = moveDirection.Normalized();
+        moveDirection.Normalize();
 
-        // Velocity
-        Vec3 velocity = GetVelocity(rigidbodyRef); // Must have Rigidbody
+        // === Jumping ===
+        if (isGrounded)
+        {   
+			velocity.y = -2.0f; // Small downward force to keep grounded
+            if (Input::IsKeyDown(' '))
+            {
+                velocity.y = jumpStrength;
+                isGrounded = false;
+            }
+        }
+        else
+        {
+			velocity.y -= gravity * static_cast<float>(deltaTime);
+        }
+
+		// === Velocity Smoothing ===
         Vec3 targetVelocity
         {
             moveDirection.x * moveSpeed,
             velocity.y,
             moveDirection.z * moveSpeed
         };
-        
-        // Lerp velocity
-        velocity.x = manager->SnappyLerp(
+		velocity.x = manager->SnappyLerp(
             velocity.x, 
             targetVelocity.x, 
             snappiness, 
             static_cast<float>(deltaTime)
         );
         velocity.z = manager->SnappyLerp(
-            velocity.z, 
-            targetVelocity.z, 
-            snappiness, 
+            velocity.z,
+            targetVelocity.z,
+            snappiness,
             static_cast<float>(deltaTime)
         );
 
         // Assign
-        SetVelocity(rigidbodyRef, velocity);
-        
-        // Ground Check
-
-        // === Jumping ===
-        if (Input::WasKeyPressed(GLFW_KEY_SPACE))
-        {
-            if (GameObject(groundCheckRef).GetComponent<Player_ColliderChecker>()->CheckCollision())
-            {
-                LOG_DEBUG("JUMP!");
-            }
-            else
-            {
-                LOG_DEBUG("NO JUMP!");
-            }
-        }
+        CC_Move(velocity * static_cast<float>(deltaTime));
     }
     void OnDestroy() override {}
 
@@ -129,25 +132,27 @@ public:
     const char* GetTypeName() const override { return "Player_Controller"; }
 
     // === Collision Callbacks ===
-    void OnCollisionEnter(Entity other) override {}
-    void OnCollisionExit(Entity other) override {}
-    void OnTriggerEnter(Entity other) override {}
-    void OnTriggerExit(Entity other) override {}
+    void OnCollisionEnter(Entity other) override { (void)other; }
+    void OnCollisionExit(Entity other) override { (void)other; }
+    void OnCollisionStay(Entity other) override { (void)other; }
+    void OnTriggerEnter(Entity other) override { (void)other; }
+    void OnTriggerExit(Entity other) override { (void)other; }
+    void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
     // === Manager ===
-    Manager_* manager;
-    TransformRef transformRef;
-    RigidbodyRef rigidbodyRef;
+    Misc_Manager* manager;
 
     // === Camera ===
 	GameObjectRef playerCameraRef;
-    TransformRef playerCameraTransformRef;
-    Vec3 cameraRotation;
-    float cameraSensitivity;
+	Entity playerCameraEntity;
+    Vec3 lookRotation;
+    float lookSensitivity;
 
     // === Movement ===
-    GameObjectRef groundCheckRef;
+    Vec3 velocity;
     float moveSpeed;
+    float jumpStrength;
     float snappiness;
+	float gravity;
 };
