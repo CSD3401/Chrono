@@ -39,7 +39,6 @@ public:
         if (storedInteractable)
         {
             storedInteractable = nullptr;
-            LOG_DEBUG("Interactable nulled");
         }
     }
 
@@ -100,12 +99,10 @@ public:
                 if (i)
                 {
                     storedInteractable = i;
-                    LOG_DEBUG("Stored interactable");
                 }
                 else
                 {
                     storedInteractable = nullptr;
-                    LOG_DEBUG("Interactable nulled");
                 }
             }
             else // Raycast hit nothing
