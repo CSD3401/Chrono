@@ -114,7 +114,7 @@ public:
             }
         }
 
-        if (storedInteractable && Input::WasKeyPressed('Q'))
+        if (storedInteractable && Input::WasMousePressed(GLFW_MOUSE_BUTTON_LEFT))
         {
             LOG_DEBUG("Interacting with interactable");
             storedInteractable->Interact();
