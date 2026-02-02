@@ -63,7 +63,7 @@ public:
                 distance,
                 targetLayer.ToMask());
 
-            // Once we hit something, check for interactable and store it
+            // Once we hit something, check for highlightable/interactable and store them.
             if (raycastHit.hasHit)
             {
                 GameObject go = GameObject(raycastHit.entity);
@@ -75,7 +75,7 @@ public:
                 Highlightable_* h = go.GetComponent<Highlightable_>();
                 Interactable_* i = go.GetComponent<Interactable_>();
 
-                // Only proceed if Highlightable component exists
+                // --- Highlight handling (optional) ---
                 if (h)
                 {
                     // Un-highlight previous highlightable if different
@@ -86,27 +86,22 @@ public:
                             storedHighlightable->SetHighlight(false);
                         }
 
-                        // Then we can set Highlight and store
                         h->SetHighlight(true);
                         storedHighlightable = h;
                     }
                 }
                 else
                 {
-                    NoInteract();
+                    // Don't require highlightable for interaction
+                    if (storedHighlightable)
+                    {
+                        storedHighlightable->SetHighlight(false);
+                        storedHighlightable = nullptr;
+                    }
                 }
 
-                // Store if interactable exists
-                if (i)
-                {
-                    storedInteractable = i;
-                    LOG_DEBUG("Stored interactable");
-                }
-                else
-                {
-                    storedInteractable = nullptr;
-                    LOG_DEBUG("Interactable nulled");
-                }
+                // --- Interactable handling (independent of highlightable) ---
+                storedInteractable = i;
             }
             else // Raycast hit nothing
             {
