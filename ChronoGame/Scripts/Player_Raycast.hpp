@@ -2,7 +2,6 @@
 #include "EngineAPI.hpp"
 #include "Highlightable_.hpp"
 #include "Interactable_.hpp"
-#include "Interactable_Bridge.hpp"
 #include "Player_Controller.hpp"
 
 #define GLFW_MOUSE_BUTTON_LEFT 0
@@ -14,12 +13,13 @@
 
 class Player_Raycast : public IScript {
 public:
-    Player_Raycast() : 
-        interval{ 0.1f },  
-		distance{ 5.0f },
-        targetLayer{ 0 },  
-		timer{ 0.0f },
-        storedBridge{ nullptr }
+    Player_Raycast() :
+        interval{ 0.1f },
+        distance{ 5.0f },
+        targetLayer{ 0 },
+        timer{ 0.0f },
+        storedHighlightable{ nullptr },
+        storedInteractable{ nullptr }
     {
         SCRIPT_FIELD(interval, Float);
         SCRIPT_FIELD(distance, Float);
@@ -30,14 +30,15 @@ public:
     // === Custom Methods ===
     void NoInteract()
     {
-        if (storedBridge)
+        if (storedHighlightable)
         {
-            storedBridge->SetHighlight(false);
-            storedBridge = nullptr;
+            storedHighlightable->SetHighlight(false);
+            storedHighlightable = nullptr;
         }
 
-        if (storedBridge)
+        if (storedInteractable)
         {
+            storedInteractable = nullptr;
             LOG_DEBUG("Interactable nulled");
         }
     }
@@ -57,9 +58,9 @@ public:
             Vec3 origin = TF_GetPosition();
             Vec3 direction = TF_GetForward();
             RaycastHit raycastHit = Raycast(
-                origin, 
-                direction, 
-                distance, 
+                origin,
+                direction,
+                distance,
                 targetLayer.ToMask());
 
             // Once we hit something, check for interactable and store it
@@ -71,22 +72,23 @@ public:
                 {
                     return;
                 }
-                Interactable_Bridge* bridge = go.GetComponent<Interactable_Bridge>();
+                Highlightable_* h = go.GetComponent<Highlightable_>();
+                Interactable_* i = go.GetComponent<Interactable_>();
 
-				// Only proceed if Highlightable component exists
-                if (bridge)
+                // Only proceed if Highlightable component exists
+                if (h)
                 {
-					// Un-highlight previous highlightable if different
-                    if (bridge != storedBridge)
+                    // Un-highlight previous highlightable if different
+                    if (h != storedHighlightable)
                     {
-                        if (storedBridge)
+                        if (storedHighlightable)
                         {
-                            storedBridge->SetHighlight(false);
+                            storedHighlightable->SetHighlight(false);
                         }
 
                         // Then we can set Highlight and store
-                        bridge->SetHighlight(true);
-                        storedBridge = bridge;
+                        h->SetHighlight(true);
+                        storedHighlightable = h;
                     }
                 }
                 else
@@ -95,14 +97,14 @@ public:
                 }
 
                 // Store if interactable exists
-                if (bridge)
+                if (i)
                 {
-                    storedBridge = bridge;
+                    storedInteractable = i;
                     LOG_DEBUG("Stored interactable");
                 }
                 else
                 {
-                    storedBridge = nullptr;
+                    storedInteractable = nullptr;
                     LOG_DEBUG("Interactable nulled");
                 }
             }
@@ -112,10 +114,10 @@ public:
             }
         }
 
-        if (storedBridge && Input::WasKeyPressed('Q'))
+        if (storedInteractable && Input::WasKeyPressed('Q'))
         {
-			LOG_DEBUG("Interacting with interactable");
-            storedBridge->Interact();
+            LOG_DEBUG("Interacting with interactable");
+            storedInteractable->Interact();
         }
     }
     void OnDestroy() override {}
@@ -135,12 +137,13 @@ public:
     void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
-	// === Inspector Fields ===
+    // === Inspector Fields ===
     float interval;
     float distance;
     LayerRef targetLayer;
 
-	// === Private Fields ===
+    // === Private Fields ===
     float timer;
-    Interactable_Bridge* storedBridge;
+    Highlightable_* storedHighlightable;
+    Interactable_* storedInteractable;
 };
