@@ -2,7 +2,6 @@
 #include "EngineAPI.hpp"
 
 /*
-* RMB TO REMOVE THE COMMENTS AND SWAP IN THE APPROPRIATE UI / EVENT SYSTEM CALLS
 * Watch_Controller - Manages a regenerating resource with activation system
 * Resource regenerates after 1 second of non-usage
 * Activation requires >30% resource and consumes at steady rate
@@ -36,23 +35,6 @@ public:
     }
 
     void Update(double deltaTime) override {
-
-        // Trigger Code
-
-        if (Input::WasKeyPressed('1')) {
-            Events::Send("ChronoActivated");
-            LOG_INFO("Puzzle_Sinkhole_TestTrigger: ChronoActivated sent");
-            LOG_INFO("You are now in the past !");
-        }
-
-        if (Input::WasKeyPressed('2')) {
-            Events::Send("ChronoDeactivated");
-            LOG_INFO("Puzzle_Sinkhole_TestTrigger: ChronoDeactivated sent");
-            LOG_INFO("You are now in the present !");
-        }
-
-        return;
-
         float dt = static_cast<float>(deltaTime);
 
         // === Handle Input ===
@@ -139,8 +121,9 @@ private:
         isActive = true;
         timeSinceActivation = 0.0f;
 
-        // Event Bus placeholder - send activation event
-        LOG_DEBUG("=== EVENT BUS: WATCH ACTIVATED ===");
+        // Send activation event to Event Bus
+        Events::Send("ChronoActivated");
+        LOG_INFO("Watch activated - You are now in the past!");
         LOG_DEBUG("Resource at activation: " + std::to_string(currentResource) +
             " / " + std::to_string(maxResource));
     }
@@ -149,8 +132,9 @@ private:
         isActive = false;
         timeSinceActivation = 0.0f;
 
-        // Event Bus placeholder - send deactivation event
-        LOG_DEBUG("=== EVENT BUS: WATCH DEACTIVATED ===");
+        // Send deactivation event to Event Bus
+        Events::Send("ChronoDeactivated");
+        LOG_INFO("Watch deactivated - You are now in the present!");
         LOG_DEBUG("Resource at deactivation: " + std::to_string(currentResource) +
             " / " + std::to_string(maxResource));
     }
@@ -185,7 +169,7 @@ private:
     // === Configuration Fields (visible in inspector) ===
     float maxResource = 100.0f;              // Maximum resource capacity
     float resourceRegenRate = 20.0f;         // Resource per second regeneration
-    float resourceConsumeRate = 50.0f;       // Resource per second consumption
+    float resourceConsumeRate = 20.0f;       // Resource per second consumption
     float activationThreshold = 0.3f;        // 30% minimum to activate
     float minDeactivationTime = 0.5f;        // 0.5 seconds minimum active time
 };

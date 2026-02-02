@@ -160,10 +160,13 @@ public:
     void OnValidate() override {}
     const char* GetTypeName() const override { return "Puzzle_MultiLightSequencer"; }
 
+    // === Collision Callbacks ===
     void OnCollisionEnter(Entity other) override { (void)other; }
     void OnCollisionExit(Entity other) override { (void)other; }
+    void OnCollisionStay(Entity other) override { (void)other; }
     void OnTriggerEnter(Entity other) override { (void)other; }
     void OnTriggerExit(Entity other) override { (void)other; }
+    void OnTriggerStay(Entity other) override { (void)other; }
 
     // Accepts either 1..numLights (recommended) or 0..numLights-1.
     void ReceiveInput(int input) {
