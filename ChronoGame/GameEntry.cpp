@@ -25,6 +25,8 @@
 #include "Scripts/Misc_Sinkhole.hpp"
 #include "Scripts/Listener_MoveObject.hpp"
 #include "Scripts/Listener_StretchObject.hpp"
+#include "Scripts/Interactable_SequencerPad.hpp"
+#include "Scripts/Puzzle_MultiLightSequencer.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -101,5 +103,12 @@ extern "C" {
         registrar->RegisterScript("Listener_StretchObject", []() -> NE::Scripting::IScript* {
             return new Listener_StretchObject();
             });
+        registrar->RegisterScript("Interactable_SequencerPad", []() -> NE::Scripting::IScript* {
+            return new Interactable_SequencerPad();
+            });
+        registrar->RegisterScript("Puzzle_MultiLightSequencer", []() -> NE::Scripting::IScript* {
+            return new Puzzle_MultiLightSequencer();
+            });
+
         }
 }
