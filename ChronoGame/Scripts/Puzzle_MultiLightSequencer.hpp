@@ -224,7 +224,8 @@ private:
     void SendSolvedEvent() {
         const char* evt = solvedEventName.empty() ? "PuzzleSolved" : solvedEventName.c_str();
         void* payload = reinterpret_cast<void*>(static_cast<std::uintptr_t>(puzzleKeyId));
-        Events::Send(evt, payload);
+        //Events::Send(evt, payload); // this crashes - RF
+        Events::Send(evt, &puzzleKeyId);
     }
 
     void BeginNewRound(bool reseed) {

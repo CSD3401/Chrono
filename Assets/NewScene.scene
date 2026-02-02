@@ -1331,9 +1331,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.5753504633903503,
-                    "y": 0.9946340322494507,
-                    "z": 6.966179370880127
+                    "x": 0.2045350968837738,
+                    "y": 0.9911708235740662,
+                    "z": 1.852588176727295
                 },
                 "Scale": {
                     "x": 1.0,
@@ -10321,14 +10321,35 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613771630477337",
                     "Puzzle_MultiLightSequencer.light2": "7308613771645485097",
+                    "Puzzle_MultiLightSequencer.sequenceLength": "3",
                     "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
+                    "Puzzle_MultiLightSequencer.light4": "0",
+                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
+                    "Puzzle_MultiLightSequencer.light5": "0",
+                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
+                    "Puzzle_MultiLightSequencer.light6": "0",
+                    "Puzzle_MultiLightSequencer.light7": "0",
+                    "Puzzle_MultiLightSequencer.lightOffMaterial": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_MultiLightSequencer.solvedEventName": "PuzzleSolved",
+                    "Puzzle_MultiLightSequencer.light8": "0",
+                    "Puzzle_MultiLightSequencer.light9": "0",
                     "Puzzle_MultiLightSequencer.lightOnMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Puzzle_MultiLightSequencer.lightOffMaterial": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Puzzle_MultiLightSequencer.blinkOffTime": "0.200000",
+                    "Puzzle_MultiLightSequencer.failReplayDelay": "0.600000",
+                    "Puzzle_MultiLightSequencer.autoStart": "1",
+                    "Puzzle_MultiLightSequencer.logSequence": "0",
+                    "Puzzle_MultiLightSequencer.puzzleKeyId": "1"
                 },
                 "EntityReferenceFields": [
                     "light1",
                     "light2",
-                    "light3"
+                    "light3",
+                    "light4",
+                    "light5",
+                    "light6",
+                    "light7",
+                    "light8",
+                    "light9"
                 ],
                 "luid": 7958820967885766739
             }
@@ -10781,7 +10802,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.sequencer": "7308613771618615296"
+                    "Interactable_SequencerPad.slotNumber": "1",
+                    "Interactable_SequencerPad.sequencer": "7308613771618615296",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -10920,7 +10943,8 @@
                 ],
                 "SerializedFields": {
                     "Interactable_SequencerPad.slotNumber": "2",
-                    "Interactable_SequencerPad.sequencer": "7308613771618615296"
+                    "Interactable_SequencerPad.sequencer": "7308613771618615296",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -11059,7 +11083,8 @@
                 ],
                 "SerializedFields": {
                     "Interactable_SequencerPad.slotNumber": "3",
-                    "Interactable_SequencerPad.sequencer": "7308613771618615296"
+                    "Interactable_SequencerPad.sequencer": "7308613771618615296",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
