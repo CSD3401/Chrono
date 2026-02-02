@@ -159,6 +159,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Scripts\Example_EnumField.hpp" />
+    <ClInclude Include="Scripts\Interactable_Bridge.hpp" />
+    <ClInclude Include="Scripts\Listener_MoveObject.hpp" />
+    <ClInclude Include="Scripts\Interactable_Battery.hpp" />
     <ClInclude Include="Scripts\Interactable_Grabbable.hpp" />
     <ClInclude Include="include\ScriptSDK\Components.h" />
     <ClInclude Include="include\ScriptSDK\ECS.h" />
@@ -182,6 +186,7 @@
     <ClInclude Include="Scripts\Player_Controller.hpp" />
     <ClInclude Include="Scripts\Player_Raycast.hpp" />
     <ClInclude Include="Scripts\Puzzle_.hpp" />
+    <ClInclude Include="Scripts\Puzzle_BatteryPanel.hpp" />
     <ClInclude Include="Scripts\Puzzle_Lever.hpp" />
     <ClInclude Include="Scripts\Puzzle_Mirror.hpp" />
     <ClInclude Include="Scripts\Puzzle_MultiLightSequencer.hpp" />
@@ -202,6 +207,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Scripts\Listener_StretchObject.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

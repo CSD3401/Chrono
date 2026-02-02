@@ -7,11 +7,15 @@
 * unsolving, and receiving inputs.
 */
 
+enum class PuzzleKey {
+    _1,
+    _2,
+    _3
+};
+
 class Puzzle_ : public IScript {
 public:
-    Puzzle_() {
-		SCRIPT_FIELD(puzzleKey, Int);
-    }
+    Puzzle_() {}
     ~Puzzle_() override = default;
 
     // === Custom Methods ===
@@ -38,7 +42,9 @@ public:
 
     // === Lifecycle Methods ===
     void Awake() override {}
-    void Initialize(Entity entity) override {}
+    void Initialize(Entity entity) override {
+        SCRIPT_ENUM_FIELD(puzzleKey, "_1", "_2", "_3");
+    }
     void Start() override {}
     void Update(double deltaTime) override {}
     void OnDestroy() override {}
@@ -50,11 +56,13 @@ public:
     const char* GetTypeName() const override { return "Puzzle_"; }
 
     // === Collision Callbacks ===
-    void OnCollisionEnter(Entity other) override {}
-    void OnCollisionExit(Entity other) override {}
-    void OnTriggerEnter(Entity other) override {}
-    void OnTriggerExit(Entity other) override {}
+    void OnCollisionEnter(Entity other) override { (void)other; }
+    void OnCollisionExit(Entity other) override { (void)other; }
+    void OnCollisionStay(Entity other) override { (void)other; }
+    void OnTriggerEnter(Entity other) override { (void)other; }
+    void OnTriggerExit(Entity other) override { (void)other; }
+    void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
-	int puzzleKey;
+	PuzzleKey puzzleKey;
 };

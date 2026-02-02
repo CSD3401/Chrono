@@ -1,5 +1,6 @@
 #pragma once
 #include "EngineAPI.hpp"
+#include "Interactable_Grabbable.hpp"
 /*
 * By Chan Kuan Fu Ryan (c.kuanfuryan)
 * Interactable_ is the parent class for all interactable objects in the game.
@@ -24,7 +25,9 @@ public:
     void Start() override
     {
     }
-    void Update(double deltaTime) override {}
+    void Update(double deltaTime) override 
+    {
+    }
     void OnDestroy() override {}
 
     // === Optional Callbacks ===
@@ -34,10 +37,43 @@ public:
     const char* GetTypeName() const override { return "Misc_Grabber"; }
 
     // === Collision Callbacks ===
-    void OnCollisionEnter(Entity other) override {}
-    void OnCollisionExit(Entity other) override {}
-    void OnTriggerEnter(Entity other) override {}
-    void OnTriggerExit(Entity other) override {}
+    void OnCollisionEnter(Entity other) override { (void)other; }
+    void OnCollisionExit(Entity other) override { (void)other; }
+    void OnCollisionStay(Entity other) override { (void)other; }
+    void OnTriggerEnter(Entity other) override { (void)other; }
+    void OnTriggerExit(Entity other) override { (void)other; }
+    void OnTriggerStay(Entity other) override { (void)other; }
+
+    bool IsGrabbing()
+    {
+        return isGrabbing;
+    }
+
+    void Grab(Interactable_Grabbable g)
+    {
+        currentlyGrabbing = g;
+        isGrabbing = true;
+    }
+    
+    void LetGo()
+    {
+        isGrabbing = false;
+    }
 
 private:
+    // no instance cause whats singleton lmao
+    float distance;
+    float grabStrength;
+    float damping;
+    float timerBuffer;
+
+    Vec3 targetPosition;
+    Interactable_Grabbable currentlyGrabbing;
+    bool isGrabbing = false;
+
+    float defaultDrag;
+    float defaultAngularDrag;
+    float timer;
+
+
 };
