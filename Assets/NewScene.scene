@@ -1242,6 +1242,85 @@
         {
             "Layer": 0,
             "EntityMeta": {
+                "name": "ElevatorLever",
+                "isActive": 1,
+                "luid": 7308613770881925120
+            },
+            "Hierarchy": {
+                "luid": 7526193927879262210,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 1.345207691192627,
+                    "y": 0.43790334463119507,
+                    "z": 6.979764938354492
+                },
+                "Scale": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.8552113771438599,
+                    "z": -0.0
+                },
+                "luid": 8390885056334397441
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/capsule",
+                "materialUUID": "653b9ba2-9453-47e8-a7e9-04388f0f0835",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829218584985603
+            },
+            "Collider": {
+                "type": 2,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 2,
+                    "value": {
+                        "radius": 0.25,
+                        "height": 0.5
+                    }
+                },
+                "luid": 7165061532761194500
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_TwoWaySwitch",
+                    "Puzzle_Lever",
+                    "Highlightable_Material",
+                    "Misc_TwoStateRotater"
+                ],
+                "SerializedFields": {
+                    "Puzzle_Lever.twoStateRotaterObject": "7308613770881925120",
+                    "Puzzle_Lever.twoWaySwitchObject": "7308613770881925120",
+                    "Misc_TwoStateRotater.startingState": "0",
+                    "Misc_TwoStateRotater.rotationX1": "50.000000",
+                    "Misc_TwoStateRotater.target": "7308613770881925120",
+                    "Puzzle_Lever.puzzleKey": "0",
+                    "Misc_TwoStateRotater.rotationX2": "0.000000",
+                    "Misc_TwoStateRotater.duration": "0.500000"
+                },
+                "EntityReferenceFields": [
+                    "twoStateRotaterObject",
+                    "twoWaySwitchObject",
+                    "target"
+                ],
+                "luid": 7958820967086555141
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
                 "name": "Player",
                 "isActive": 1,
                 "luid": 7308613656064753675
@@ -1252,9 +1331,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -0.5860486030578613,
-                    "y": 1.0,
-                    "z": 0.0
+                    "x": 0.5753504633903503,
+                    "y": 0.9946340322494507,
+                    "z": 6.966179370880127
                 },
                 "Scale": {
                     "x": 1.0,
@@ -1333,9 +1412,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.0,
-                    "y": 0.4674674868583679,
-                    "z": -0.27000001072883606
+                    "x": -0.44773414731025696,
+                    "y": -18.504091262817383,
+                    "z": 1.0163300037384033
                 },
                 "Scale": {
                     "x": 0.6000000238418579,
@@ -10153,6 +10232,57 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 6,
                 "luid": 8242829209169887252
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Temp Eleveator",
+                "isActive": 1,
+                "luid": 7308613771000020992
+            },
+            "Hierarchy": {
+                "luid": 7526193927997358082,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.6000000238418579,
+                    "y": 1.252363681793213,
+                    "z": 11.47650146484375
+                },
+                "Scale": {
+                    "x": 2.0,
+                    "y": 3.0,
+                    "z": 2.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 1.1344640254974365,
+                    "z": -0.0
+                },
+                "luid": 8390885056452493313
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829218703605763
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Listener_MoveObject"
+                ],
+                "SerializedFields": {
+                    "Listener_MoveObject.startingPos": "0 0 0",
+                    "Listener_MoveObject.targetPos": "0.6 -5 11.477",
+                    "Listener_MoveObject.tweenDuration": "1.500000",
+                    "Listener_MoveObject.listenerPuzzleKey": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820967208124420
             }
         }
     ]

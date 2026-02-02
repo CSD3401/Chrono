@@ -10,7 +10,11 @@
 enum class PuzzleKey {
     _1,
     _2,
-    _3
+    _3,
+    _4,
+    _5,
+    _6
+
 };
 
 class Puzzle_ : public IScript {
@@ -21,11 +25,11 @@ public:
     // === Custom Methods ===
     void Solve()
     {
-		Events::Send("PuzzleSolved", (void*)puzzleKey);
+		Events::Send("PuzzleSolved", &puzzleKey);
     }
     void Unsolve()
     {
-		Events::Send("PuzzleUnsolved", (void*)puzzleKey);
+		Events::Send("PuzzleUnsolved", &puzzleKey);
     }
     virtual void ReceiveInput(bool input)
     {
@@ -43,7 +47,7 @@ public:
     // === Lifecycle Methods ===
     void Awake() override {}
     void Initialize(Entity entity) override {
-        SCRIPT_ENUM_FIELD(puzzleKey, "_1", "_2", "_3");
+        SCRIPT_ENUM_FIELD(puzzleKey, "_1", "_2", "_3", "_4", "_5", "_6");
     }
     void Start() override {}
     void Update(double deltaTime) override {}
