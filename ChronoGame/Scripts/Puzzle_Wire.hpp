@@ -27,6 +27,7 @@ public:
         SCRIPT_GAMEOBJECT_REF(connectedHolderObject);
         SCRIPT_FIELD_VECTOR(wireColours, Int);
         SCRIPT_FIELD_VECTOR(correctColours, Int);
+        SCRIPT_FIELD_VECTOR(wirePath, Int);
         SCRIPT_FIELD(wirePuzzleIndex, Int);
         SCRIPT_COMPONENT_REF(finishedWireColour, MaterialRef);
         SCRIPT_FIELD(changeTimer, Float);
@@ -127,7 +128,7 @@ public:
             if (child3)
             {
                 child3.GetComponent<Misc_WireChild>()->UpdateWireColour(correctColours[i]);
-                SetActive(false, connectedWires[i]);
+                //SetActive(false, connectedWires[i]);
             }
         }
 
@@ -171,10 +172,10 @@ public:
             std::string message = "PuzzleSolved1";
             Events::Send(message.c_str());
 
-            for (int i = 0; i < numWires; ++i)
-            {
-                SetActive(true, connectedWires[i]);
-            }
+            //for (int i = 0; i < numWires; ++i)
+            //{
+            //    SetActive(true, connectedWires[i]);
+            //}
         }
     }
 
@@ -182,7 +183,8 @@ public:
     {
         for (int i = 0; i < wireColours.size(); ++i)
         {
-            if (wireColours[i] != correctColours[i])
+            //if (wireColours[i] != correctColours[i])
+            if (wireColours[i] != correctColours[wirePath[i]])
             {
                 return false;
             }
@@ -199,6 +201,7 @@ private:
     int numWires = 3;
     std::vector<int> wireColours;
     std::vector<int> correctColours;
+    std::vector<int> wirePath;
     int wirePuzzleIndex;
     bool buttonPressed = false;
     int indexToSwap = 0;
@@ -209,4 +212,15 @@ private:
     std::vector<Entity> wireChildren;
     std::vector<Entity> correctChildren;
     std::vector<Entity> connectedWires;
+
+
+    // Connected wires and correct children are teh colours the player needs to line up
+    // correct[0, 2, 1] -> blue red green
+    // connected are coloured the same as correct
+    // wireChildren [1, 0, 2] -> red green blue 
+    // wirepaths -> map where [x][y]
+    // x: the index of the wirechild
+    // y: what colour it connects to
+    // must match wirechildren to correct wire paths
+    // the value inside wirechild[x] must be == to correctWire[wirepath[x]]
 };
