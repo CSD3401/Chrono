@@ -98,9 +98,6 @@ extern "C" {
         registrar->RegisterScript("Interactable_TwoWaySwitch", []() -> NE::Scripting::IScript* {
             return new Interactable_TwoWaySwitch();
             });
-        registrar->RegisterScript("Interactable_Bridge", []() -> NE::Scripting::IScript* {
-            return new Interactable_Bridge();
-            });
         registrar->RegisterScript("Interactable_NoteCollector", []() -> NE::Scripting::IScript* {
             return new Interactable_NoteCollector();
             });
