@@ -219,12 +219,12 @@
                 "SerializedFields": {
                     "Puzzle_Lever.twoStateRotaterObject": "7308613770881925120",
                     "Puzzle_Lever.twoWaySwitchObject": "7308613770881925120",
-                    "Puzzle_Lever.puzzleKey": "0",
-                    "Misc_TwoStateRotater.target": "7308613770881925120",
-                    "Misc_TwoStateRotater.rotationX1": "50.000000",
                     "Misc_TwoStateRotater.startingState": "0",
-                    "Misc_TwoStateRotater.duration": "0.500000",
-                    "Misc_TwoStateRotater.rotationX2": "0.000000"
+                    "Misc_TwoStateRotater.rotationX1": "50.000000",
+                    "Misc_TwoStateRotater.target": "7308613770881925120",
+                    "Puzzle_Lever.puzzleKey": "0",
+                    "Misc_TwoStateRotater.rotationX2": "0.000000",
+                    "Misc_TwoStateRotater.duration": "0.500000"
                 },
                 "EntityReferenceFields": [
                     "twoStateRotaterObject",
@@ -247,9 +247,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.202297642827034,
-                    "y": 0.9910690784454346,
-                    "z": 1.8495714664459229
+                    "x": 23.735925674438477,
+                    "y": -20.72990608215332,
+                    "z": -5.5465569496154785
                 },
                 "Scale": {
                     "x": 1.0,
@@ -293,10 +293,10 @@
                     "Player_Controller"
                 ],
                 "SerializedFields": {
-                    "Player_Controller.jumpStrength": "5.000000",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
-                    "Player_Controller.gravity": "10.000000",
+                    "Player_Controller.jumpStrength": "5.000000",
                     "Player_Controller.lookSensitivity": "1.000000",
+                    "Player_Controller.gravity": "10.000000",
                     "Player_Controller.moveSpeed": "10.000000",
                     "Player_Controller.snappiness": "5.000000"
                 },
@@ -328,9 +328,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -0.44773414731025696,
-                    "y": -18.504091262817383,
-                    "z": 1.0163300037384033
+                    "x": 0.024290084838867188,
+                    "y": 0.534088134765625,
+                    "z": 0.319366455078125
                 },
                 "Scale": {
                     "x": 0.6000000238418579,
@@ -476,8 +476,8 @@
                 ],
                 "SerializedFields": {
                     "Watch_Controller.maxResource": "100.000000",
-                    "Watch_Controller.activationThreshold": "0.300000",
                     "Watch_Controller.resourceRegenRate": "20.000000",
+                    "Watch_Controller.activationThreshold": "0.300000",
                     "Watch_Controller.resourceConsumeRate": "50.000000",
                     "Watch_Controller.minDeactivationTime": "0.500000"
                 },
@@ -3447,7 +3447,7 @@
             },
             "Collider": {
                 "type": 0,
-                "isTrigger": 0,
+                "isTrigger": 1,
                 "center": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3466,9 +3466,17 @@
                 "luid": 7165061505677525000
             },
             "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
-                "EntityReferenceFields": [],
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613777666211846"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
                 "luid": 7958820940013109257
             }
         },
@@ -8209,28 +8217,28 @@
                     "Puzzle_Mirror.steppedOnMaterial": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Puzzle_Mirror.tile01": "8390885029412536365",
                     "Puzzle_Mirror.destinationMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Puzzle_Mirror.tile02": "8390885029414568001",
                     "Puzzle_Mirror.debugMode": "1",
+                    "Puzzle_Mirror.tile02": "8390885029414568001",
                     "Puzzle_Mirror.tile10": "8390885029416009833",
                     "Puzzle_Mirror.tile11": "8390885029416337533",
                     "Puzzle_Mirror.tile12": "8390885029416403089",
                     "Puzzle_Mirror.tile13": "8390885029416468645",
-                    "Puzzle_Mirror.tile20": "8390885029422235833",
                     "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
-                    "Puzzle_Mirror.tile21": "8390885029422366925",
+                    "Puzzle_Mirror.tile20": "8390885029422235833",
                     "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
-                    "Puzzle_Mirror.tile22": "8390885029422432481",
+                    "Puzzle_Mirror.tile21": "8390885029422366925",
                     "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
-                    "Puzzle_Mirror.tile23": "8390885029422498037",
-                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.tile22": "8390885029422432481",
                     "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
+                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.tile23": "8390885029422498037",
                     "Puzzle_Mirror.mirrorTile10": "8390885029427020124",
                     "Puzzle_Mirror.mirrorTile11": "8390885029427020144",
                     "Puzzle_Mirror.mirrorTile12": "8390885029427020164",
                     "Puzzle_Mirror.mirrorTile13": "8390885029427020184",
                     "Puzzle_Mirror.mirrorTile20": "8390885029427020204",
-                    "Puzzle_Mirror.startCol": "0",
                     "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
+                    "Puzzle_Mirror.startCol": "0",
                     "Puzzle_Mirror.mirrorTile22": "8390885029427020244",
                     "Puzzle_Mirror.mirrorTile23": "8390885029427020264",
                     "Puzzle_Mirror.startRow": "2",
@@ -8415,6 +8423,37 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829192139702281
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.05000000074505806,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061539581132816
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613777679253507"
+                },
+                "EntityReferenceFields": [
+                    "respawnRef",
+                    "playerRef"
+                ],
+                "luid": 7958820973896597514
             }
         },
         {
@@ -8453,6 +8492,37 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829192147238925
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.05000000074505806,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061539581591569
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613777679253507"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958820973897187339
             }
         },
         {
@@ -8491,6 +8561,37 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829192149139473
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.05000000074505806,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061539581919250
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613777679253507"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958820973897580556
             }
         },
         {
@@ -8529,6 +8630,37 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829192151629845
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.05000000074505806,
+                        "height": 4.0
+                    }
+                },
+                "luid": 7165061539582115859
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613777679253507"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958820973898039309
             }
         },
         {
@@ -8567,6 +8699,37 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829192155103257
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.05000000074505806,
+                        "height": 4.0
+                    }
+                },
+                "luid": 7165061539582378004
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613777679253507"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958820973898432526
             }
         },
         {
@@ -8605,6 +8768,37 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829192157528093
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.05000000074505806,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061539582705685
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613777679253507"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958820973898825743
             }
         },
         {
@@ -8672,12 +8866,12 @@
                     "Puzzle_Lever"
                 ],
                 "SerializedFields": {
-                    "Misc_TwoStateRotater.target": "7308613746448793600",
-                    "Misc_TwoStateRotater.rotationX1": "0.000000",
-                    "Misc_TwoStateRotater.startingState": "0",
                     "Puzzle_Lever.puzzleKey": "0",
-                    "Misc_TwoStateRotater.duration": "1.000000",
+                    "Misc_TwoStateRotater.startingState": "0",
+                    "Misc_TwoStateRotater.rotationX1": "0.000000",
+                    "Misc_TwoStateRotater.target": "7308613746448793600",
                     "Misc_TwoStateRotater.rotationX2": "90.000000",
+                    "Misc_TwoStateRotater.duration": "1.000000",
                     "Puzzle_Lever.twoStateRotaterObject": "7308613746448793600",
                     "Puzzle_Lever.twoWaySwitchObject": "7308613746448793600"
                 },
@@ -9089,14 +9283,14 @@
                     "Puzzle_MultiLightSequencer.sequenceLength": "3",
                     "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
                     "Puzzle_MultiLightSequencer.light4": "0",
-                    "Puzzle_MultiLightSequencer.light5": "0",
                     "Puzzle_MultiLightSequencer.startDelay": "0.500000",
-                    "Puzzle_MultiLightSequencer.light6": "0",
+                    "Puzzle_MultiLightSequencer.light5": "0",
                     "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
+                    "Puzzle_MultiLightSequencer.light6": "0",
                     "Puzzle_MultiLightSequencer.light7": "0",
                     "Puzzle_MultiLightSequencer.lightOffMaterial": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_MultiLightSequencer.light8": "0",
                     "Puzzle_MultiLightSequencer.solvedEventName": "PuzzleSolved",
+                    "Puzzle_MultiLightSequencer.light8": "0",
                     "Puzzle_MultiLightSequencer.light9": "0",
                     "Puzzle_MultiLightSequencer.lightOnMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Puzzle_MultiLightSequencer.blinkOffTime": "0.200000",
@@ -9567,9 +9761,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
+                    "Interactable_SequencerPad.slotNumber": "1",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.slotNumber": "1"
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -9707,9 +9901,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
+                    "Interactable_SequencerPad.slotNumber": "2",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.slotNumber": "2"
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -9847,9 +10041,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
+                    "Interactable_SequencerPad.slotNumber": "3",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.slotNumber": "3"
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -9898,14 +10092,14 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireColours": "4 0 2 3 1",
-                    "Puzzle_Wire.connectedHolderObject": "7308613776928080028",
                     "Puzzle_Wire.wireHolderObject": "7308613776928079966",
-                    "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.connectedHolderObject": "7308613776928080028",
+                    "Puzzle_Wire.wireColours": "4 0 2 3 1",
                     "Puzzle_Wire.correctHolderObject": "7308613776928080005",
-                    "Puzzle_Wire.correctColours": "4 2 1 3 0",
+                    "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
                     "Puzzle_Wire.changeTimer": "0.500000",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Puzzle_Wire.correctColours": "4 2 1 3 0"
                 },
                 "EntityReferenceFields": [
                     "wireHolderObject",
@@ -9999,8 +10193,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10061,8 +10255,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10123,8 +10317,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10185,8 +10379,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10461,8 +10655,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10523,8 +10717,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10585,8 +10779,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10647,8 +10841,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10743,8 +10937,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10805,8 +10999,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10867,8 +11061,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10929,8 +11123,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -10939,6 +11133,220 @@
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820973129695409
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sinkhole Respawn",
+                "isActive": 1,
+                "luid": 7308613777663787008
+            },
+            "Hierarchy": {
+                "luid": 7526193934661124098,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885063116259329
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sinkhole Checkpoint",
+                "isActive": 1,
+                "luid": 7308613777665163267
+            },
+            "Hierarchy": {
+                "luid": 7526193934662500357,
+                "parentLuid": 7526193934661124098
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.20200000703334808,
+                    "y": 0.9909999966621399,
+                    "z": -3.0139999389648438
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885063117635588
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sinkhole Respawn Script",
+                "isActive": 1,
+                "luid": 7308613777666211846
+            },
+            "Hierarchy": {
+                "luid": 7526193934663548936,
+                "parentLuid": 7526193934661124098
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885063118684167
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_PlayerRespawn"
+                ],
+                "SerializedFields": {
+                    "Misc_PlayerRespawn.playerRef": "7308613656064753675",
+                    "Misc_PlayerRespawn.checkpointRef": "7308613777665163267",
+                    "Misc_PlayerRespawn.returnSpeed": "100.000000",
+                    "Misc_PlayerRespawn.returnStopThreshold": "0.050000",
+                    "Misc_PlayerRespawn.returnOnlyXZ": "1"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "checkpointRef"
+                ],
+                "luid": 7958820973868613641
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Lazer Maze Respawn",
+                "isActive": 1,
+                "luid": 7308613777678467072
+            },
+            "Hierarchy": {
+                "luid": 7526193934675804162,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885063130939393
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Lazer Maze Checkpoint",
+                "isActive": 1,
+                "luid": 7308613777680826375
+            },
+            "Hierarchy": {
+                "luid": 7526193934678163465,
+                "parentLuid": 7526193934675804162
+            },
+            "Transform": {
+                "Position": {
+                    "x": 23.441999435424805,
+                    "y": -20.729999542236328,
+                    "z": -4.810999870300293
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885063133298696
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Lazer Maze Respawn Script",
+                "isActive": 1,
+                "luid": 7308613777679253507
+            },
+            "Hierarchy": {
+                "luid": 7526193934676590597,
+                "parentLuid": 7526193934675804162
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885063131725828
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_PlayerRespawn"
+                ],
+                "SerializedFields": {
+                    "Misc_PlayerRespawn.playerRef": "7308613656064753675",
+                    "Misc_PlayerRespawn.checkpointRef": "7308613777680826375",
+                    "Misc_PlayerRespawn.returnSpeed": "100.000000",
+                    "Misc_PlayerRespawn.returnStopThreshold": "0.050000",
+                    "Misc_PlayerRespawn.returnOnlyXZ": "1"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "checkpointRef"
+                ],
+                "luid": 7958820973881851910
             }
         }
     ]
