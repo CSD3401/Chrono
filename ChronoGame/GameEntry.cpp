@@ -24,7 +24,7 @@
 #include "Scripts/Misc_Grabber.hpp"
 #include "Scripts/Misc_ICOSwitcher.hpp"
 #include "Scripts/Misc_TwoStateRotater.hpp"
-#include "Scripts/Misc_Sinkhole.hpp"
+#include "Scripts/Misc_RespawnOnCollision.hpp"
 #include "Scripts/Misc_MaterialSwitcher.hpp"
 #include "Scripts/Misc_PlayerRespawn.hpp"
 #include "Scripts/Listener_MoveObject.hpp"
@@ -104,8 +104,8 @@ extern "C" {
         registrar->RegisterScript("NoteCollector_Controller", []() -> NE::Scripting::IScript* {
             return new NoteCollector_Controller();
             });
-        registrar->RegisterScript("Misc_Sinkhole", []() -> NE::Scripting::IScript* {
-            return new Misc_Sinkhole();
+        registrar->RegisterScript("Misc_RespawnOnCollision", []() -> NE::Scripting::IScript* {
+            return new Misc_RespawnOnCollision();
             });
         registrar->RegisterScript("Misc_MaterialSwitcher", []() -> NE::Scripting::IScript* {
             return new Misc_MaterialSwitcher();
