@@ -1,6 +1,8 @@
 #pragma once
 #include "EngineAPI.hpp"
 #include "Interactable_.hpp"
+#include "Misc_Grabber.hpp"
+
 /*
 * By Chan Kuan Fu Ryan (c.kuanfuryan)
 * Interactable_ is the parent class for all interactable objects in the game.
@@ -20,6 +22,14 @@ public:
     // == Custom Methods ==
     virtual void Interact() 
     {
+        GameObject playerRef(playerGrabber.GetEntity());
+        if (playerGrabber)
+        {
+            LOG_DEBUG("Player grabber IS valid");
+        }
+        LOG_DEBUG("ABOUT TO PICK UP OBJECT");
+        playerRef.GetComponent<Misc_Grabber>()->Grab(GetEntity(), isHeavy, activatesPressurePlates);
+
     }
 
     // === Lifecycle Methods ===
@@ -27,17 +37,19 @@ public:
     void Initialize(Entity entity) override {}
     void Start() override 
     {
-        playerGrabber.SetEntity(NE::Scripting::GameObject::Find("PlayerGrabber").GetEntityId());
-        if (!playerGrabber.IsValid())
-        {
-            LOG_ERROR("Player Grabber Not Found!");
-        }
+
     }
     void Update(double deltaTime) override {}
     void OnDestroy() override {}
 
     // === Optional Callbacks ===
-    void OnEnable() override {}
+    void OnEnable() override {
+        playerGrabber.SetEntity(NE::Scripting::GameObject::Find("Camera").GetEntityId());
+        if (!playerGrabber.IsValid())
+        {
+            LOG_ERROR("Player Grabber Not Found!");
+        }
+    }
     void OnDisable() override {}
     void OnValidate() override {}
     const char* GetTypeName() const override { return "Interactable_Grabbable"; }
@@ -53,6 +65,16 @@ public:
     RigidbodyRef GetBody()
     {
         return body;
+    }
+
+    bool GetIsHeavy()
+    {
+        return isHeavy;
+    }
+
+    bool GetActivatesPressurePlates()
+    {
+        return activatesPressurePlates;
     }
 
 private:

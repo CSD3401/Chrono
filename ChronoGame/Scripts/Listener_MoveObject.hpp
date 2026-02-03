@@ -17,7 +17,8 @@ public:
         SCRIPT_FIELD(startingPos, Vec3);
         SCRIPT_FIELD(targetPos, Vec3);
         SCRIPT_FIELD(tweenDuration, Float);
-        SCRIPT_FIELD(listenToMessage, String);
+        //SCRIPT_FIELD(listenToMessage, String);
+        SCRIPT_ENUM_FIELD(listenerPuzzleKey, "_1", "_2", "_3", "_4", "_5", "_6");
     }
 
     ~Listener_MoveObject() override = default;
@@ -34,7 +35,9 @@ public:
 
     void Start() override {
         // Called when the script is enabled and play mode starts
-        SetPosition(GetTransformRef(GetEntity()), startingPos);
+        //SetPosition(GetTransformRef(GetEntity()), startingPos);
+        startingPos = GetPosition(GetTransformRef(GetEntity()));
+
     }
 
     void Update(double deltaTime) override {
@@ -47,10 +50,6 @@ public:
             {
                 destinationReached = true;
                 isMoving = false;
-
-                Vec3 dummy = startingPos;
-                startingPos = targetPos;
-                targetPos = dummy;
             }
         }
     }
@@ -62,13 +61,23 @@ public:
     // === Optional Callbacks ===
 
     void OnEnable() override {
-        // Called when the script is enabled
-        if (!listenToMessage.empty())
-        {
-            Events::Listen(listenToMessage.c_str(), [this](void* data) {
+        // Listen for puzzle solved events
+        Events::Listen("PuzzleSolved", [this](void* data) {
+            // Fix: Cast data to PuzzleKey* and dereference
+            // In this example, listenerPuzzleKey is stored as a member variable of Listener_MoveObject
+            if (*static_cast<PuzzleKey*>(data) == listenerPuzzleKey)
+            {
                 this->MoveObject();
-                });
-        }
+            }
+        });
+        Events::Listen("PuzzleUnsolved", [this](void* data) {
+            // Fix: Cast data to PuzzleKey* and dereference
+            // In this example, listenerPuzzleKey is stored as a member variable of Listener_MoveObject
+            if (*static_cast<PuzzleKey*>(data) == listenerPuzzleKey)
+            {
+                this->MoveObjectReversed();
+            }
+            });
     }
 
     void OnDisable() override {
@@ -112,8 +121,7 @@ public:
         );
     }
 
-    // for stretching
-    void StretchObject()
+    void MoveObjectReversed()
     {
         if (isMoving)
             return;
@@ -121,31 +129,12 @@ public:
         isMoving = true;
         destinationReached = false;
 
-        Vec3 A = startingPos;
-        Vec3 B = targetPos;
-
-        Vec3 dir = (B - A).Normalized();
-        float fullLength = (B - A).Length();
-
         Tweener::StartVec3(
-            [this, A, dir](const Vec3& v) {
-                float currentLength = v.x;
-
-                TransformRef t = GetTransformRef(GetEntity());
-
-                // rotation
-                float angle = atan2(dir.y, dir.x);
-                SetRotation(t, angle);
-
-                // position (center-pivot safe)
-                SetPosition(t, A + dir * (currentLength * 0.5f));
-
-                // scale
-                Vec3 sc = GetScale(t);
-                SetScale(t, Vec3(currentLength, sc.y, sc.z));
+            [this](const Vec3& pos) {
+                SetPosition(GetTransformRef(GetEntity()), pos);
             },
-            Vec3::Zero(),
-            Vec3(fullLength, 0, 0),
+            startingPos,
+            targetPos,
             tweenDuration,
             Tweener::Type::CUBIC_EASE_IN,
             GetEntity()
@@ -162,4 +151,5 @@ private:
     float tweenDuration = 1.5f;
 
     std::string listenToMessage;
+    PuzzleKey listenerPuzzleKey;
 };

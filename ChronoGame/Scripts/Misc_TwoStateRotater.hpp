@@ -78,6 +78,7 @@ public:
 private:
     GameObjectRef target;
     TransformRef targetTransformRef;
+    Entity targetEntity = NE::Scripting::INVALID_ENTITY;
     float rotationX1 = 0.0f;
     float rotationX2 = 0.0f;
     float duration = 0.0f;
@@ -89,10 +90,12 @@ private:
 
     void CacheTarget() {
         if (target.IsValid()) {
-            targetTransformRef = GetTransformRef(target.GetEntity());
+            targetEntity = target.GetEntity();
+            targetTransformRef = GetTransformRef(targetEntity);
         }
         else {
-            targetTransformRef = TransformRef();
+            targetEntity = GetEntity();
+            targetTransformRef = GetTransformRef(targetEntity);
         }
     }
 
@@ -104,7 +107,7 @@ private:
         if (!targetTransformRef.IsValid()) {
             return;
         }
-        SetRotation(targetTransformRef, GetTargetRotation());
+        TF_SetRotation(GetTargetRotation(), targetEntity);
     }
 
     void ApplyStateTweened() {
@@ -113,17 +116,17 @@ private:
             return;
         }
 
-        Vec3 startRotation = GetRotation(targetTransformRef);
+        Vec3 startRotation = TF_GetLocalRotation(targetEntity);
         Vec3 endRotation = GetTargetRotation();
 
         if (duration <= 0.0f) {
-            SetRotation(targetTransformRef, endRotation);
+            TF_SetRotation(endRotation, targetEntity);
             return;
         }
 
         Tweener::StartVec3(
             [this](const Vec3& rot) {
-                SetRotation(targetTransformRef, rot);
+                TF_SetRotation(rot, targetEntity);
             },
             startRotation,
             endRotation,
