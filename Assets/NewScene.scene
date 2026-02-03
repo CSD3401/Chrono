@@ -158,1090 +158,6 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Puzzle_Wire_0",
-                "isActive": 1,
-                "luid": 7308613753032802309
-            },
-            "Hierarchy": {
-                "luid": 7526193910030139399,
-                "parentLuid": 0
-            },
-            "PrefabInstance": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b"
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 0
-            },
-            "Transform": {
-                "Position": {
-                    "x": 1.4343458414077759,
-                    "y": -20.741844177246094,
-                    "z": -9.187780380249023
-                },
-                "Scale": {
-                    "x": 0.02500000037252903,
-                    "y": 0.02500000037252903,
-                    "z": 0.02500000037252903
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038485274630
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Puzzle_Wire"
-                ],
-                "SerializedFields": {
-                    "Puzzle_Wire.wireHolderObject": "7308613753035358216",
-                    "Puzzle_Wire.connectedHolderObject": "7308613753152929792",
-                    "Puzzle_Wire.wireColours": "4 1 3 0 2",
-                    "Puzzle_Wire.correctHolderObject": "7308613753036210190",
-                    "Puzzle_Wire.wirePuzzleIndex": "0",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_Wire.changeTimer": "0.500000",
-                    "Puzzle_Wire.correctColours": "4 2 1 3 0"
-                },
-                "EntityReferenceFields": [
-                    "connectedHolderObject",
-                    "wireHolderObject",
-                    "correctHolderObject"
-                ],
-                "luid": 7958820949286977611
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "ChildHolder",
-                "isActive": 1,
-                "luid": 7308613753035358216
-            },
-            "Hierarchy": {
-                "luid": 7526193910032695306,
-                "parentLuid": 7526193910030139399
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 1
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038487830537
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Wire_Child_0",
-                "isActive": 1,
-                "luid": 7308613753050562577
-            },
-            "Hierarchy": {
-                "luid": 7526193910047899667,
-                "parentLuid": 7526193910032695306
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 2
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038503034898
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200753623060
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949262991381
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Wire_Child_1",
-                "isActive": 1,
-                "luid": 7308613753063931927
-            },
-            "Hierarchy": {
-                "luid": 7526193910061269014,
-                "parentLuid": 7526193910032695306
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 3
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -0.00048828125,
-                    "z": 1.6650390625
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038516404248
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200766599193
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "1",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949265547290
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Wire_Child_2",
-                "isActive": 1,
-                "luid": 7308613753064390684
-            },
-            "Hierarchy": {
-                "luid": 7526193910061727771,
-                "parentLuid": 7526193910032695306
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 4
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -0.00048828125,
-                    "z": 3.345245361328125
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038516863005
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200767057950
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "2",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949266006047
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Wire_Child_3",
-                "isActive": 1,
-                "luid": 7308613753064587297
-            },
-            "Hierarchy": {
-                "luid": 7526193910061924384,
-                "parentLuid": 7526193910032695306
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 5
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -0.00048828125,
-                    "z": 5.077911376953125
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038517059618
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200767254563
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "3",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949266202660
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "ButtonHolder",
-                "isActive": 1,
-                "luid": 7308613753035882507
-            },
-            "Hierarchy": {
-                "luid": 7526193910033219597,
-                "parentLuid": 7526193910030139399
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 6
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038488354828
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Interactable_WireButton"
-                ],
-                "SerializedFields": {
-                    "Interactable_WireButton.leftWireIndex": "0",
-                    "Interactable_WireButton.wirePuzzleIndex": "0"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949283045449
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Wire_Switch_0",
-                "isActive": 1,
-                "luid": 7308613753080184894
-            },
-            "Hierarchy": {
-                "luid": 7526193910077521984,
-                "parentLuid": 7526193910033219597
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 7
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038532657215
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Interactable_WireButton"
-                ],
-                "SerializedFields": {
-                    "Interactable_WireButton.leftWireIndex": "0",
-                    "Interactable_WireButton.wirePuzzleIndex": "0"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949282127940
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Wire_Switch_1",
-                "isActive": 1,
-                "luid": 7308613753080315969
-            },
-            "Hierarchy": {
-                "luid": 7526193910077653059,
-                "parentLuid": 7526193910033219597
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 8
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038532788290
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Interactable_WireButton"
-                ],
-                "SerializedFields": {
-                    "Interactable_WireButton.leftWireIndex": "1",
-                    "Interactable_WireButton.wirePuzzleIndex": "0"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949282586693
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Wire_Switch_2",
-                "isActive": 1,
-                "luid": 7308613753081233478
-            },
-            "Hierarchy": {
-                "luid": 7526193910078570568,
-                "parentLuid": 7526193910033219597
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 9
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038533705799
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Interactable_WireButton"
-                ],
-                "SerializedFields": {
-                    "Interactable_WireButton.leftWireIndex": "2",
-                    "Interactable_WireButton.wirePuzzleIndex": "0"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949284814922
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "CorrectWireHolder",
-                "isActive": 1,
-                "luid": 7308613753036210190
-            },
-            "Hierarchy": {
-                "luid": 7526193910033547280,
-                "parentLuid": 7526193910030139399
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 10
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038488682511
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Correct_Wire_0",
-                "isActive": 1,
-                "luid": 7308613753070485547
-            },
-            "Hierarchy": {
-                "luid": 7526193910067822634,
-                "parentLuid": 7526193910033547280
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 11
-            },
-            "Transform": {
-                "Position": {
-                    "x": -4.8621063232421875,
-                    "y": -4.60699462890625,
-                    "z": 9.91729736328125
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038522957868
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200773152813
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949272100910
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Correct_Wire_1",
-                "isActive": 1,
-                "luid": 7308613753071665205
-            },
-            "Hierarchy": {
-                "luid": 7526193910069002292,
-                "parentLuid": 7526193910033547280
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 12
-            },
-            "Transform": {
-                "Position": {
-                    "x": -4.8621063232421875,
-                    "y": -4.60736083984375,
-                    "z": 11.572265625
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038524137526
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200774332471
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949273280568
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Correct_Wire_2",
-                "isActive": 1,
-                "luid": 7308613753071140912
-            },
-            "Hierarchy": {
-                "luid": 7526193910068477999,
-                "parentLuid": 7526193910033547280
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 13
-            },
-            "Transform": {
-                "Position": {
-                    "x": -4.8621063232421875,
-                    "y": -4.60736083984375,
-                    "z": 13.213714599609375
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038523613233
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200773808178
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949272756275
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Correct_Wire_3",
-                "isActive": 1,
-                "luid": 7308613753072058426
-            },
-            "Hierarchy": {
-                "luid": 7526193910069395513,
-                "parentLuid": 7526193910033547280
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 14
-            },
-            "Transform": {
-                "Position": {
-                    "x": -4.8621063232421875,
-                    "y": -4.60736083984375,
-                    "z": 15.0126953125
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038524530747
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200774725692
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949273673789
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "ConnectedHolder",
-                "isActive": 1,
-                "luid": 7308613753152929792
-            },
-            "Hierarchy": {
-                "luid": 7526193910150266882,
-                "parentLuid": 7526193910030139399
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 15
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885038605402113
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Connected_0",
-                "isActive": 1,
-                "luid": 7308613753153519619
-            },
-            "Hierarchy": {
-                "luid": 7526193910150856709,
-                "parentLuid": 7526193910150266882
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 16
-            },
-            "Transform": {
-                "Position": {
-                    "x": -2.8379898071289063,
-                    "y": -2.1971435546875,
-                    "z": 5.194793701171875
-                },
-                "Scale": {
-                    "x": 12.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "Rotation": {
-                    "x": 0.0,
-                    "y": 57.0,
-                    "z": 42.0
-                },
-                "luid": 8390885038605991940
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200856973318
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949389082643
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Connected_1",
-                "isActive": 1,
-                "luid": 7308613753176784904
-            },
-            "Hierarchy": {
-                "luid": 7526193910174121991,
-                "parentLuid": 7526193910150266882
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 17
-            },
-            "Transform": {
-                "Position": {
-                    "x": -2.5805320739746094,
-                    "y": -2.18719482421875,
-                    "z": 6.667449951171875
-                },
-                "Scale": {
-                    "x": 12.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 57.0,
-                    "z": 42.0
-                },
-                "luid": 8390885038629257225
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200879452170
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949392752660
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Connected_2",
-                "isActive": 1,
-                "luid": 7308613753177178124
-            },
-            "Hierarchy": {
-                "luid": 7526193910174515211,
-                "parentLuid": 7526193910150266882
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 18
-            },
-            "Transform": {
-                "Position": {
-                    "x": -2.7314453125,
-                    "y": -2.05126953125,
-                    "z": 8.36529541015625
-                },
-                "Scale": {
-                    "x": 12.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 57.0,
-                    "z": 42.0
-                },
-                "luid": 8390885038629650445
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200879845390
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949393866773
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Connected_3",
-                "isActive": 1,
-                "luid": 7308613753177571344
-            },
-            "Hierarchy": {
-                "luid": 7526193910174908431,
-                "parentLuid": 7526193910150266882
-            },
-            "PrefabLink": {
-                "prefabUUID": "35d576a5-bb64-44bb-8eb2-513a4874474b",
-                "localID": 19
-            },
-            "Transform": {
-                "Position": {
-                    "x": -2.4382781982421875,
-                    "y": -2.0662841796875,
-                    "z": 10.145538330078125
-                },
-                "Scale": {
-                    "x": 12.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 57.0,
-                    "z": 42.0
-                },
-                "luid": 8390885038630043665
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829200880238610
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_WireChild"
-                ],
-                "SerializedFields": {
-                    "Misc_WireChild.wireChildIndex": "0",
-                    "Misc_WireChild.wirePuzzleIndex": "0",
-                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
-                    "Misc_WireChild.orange": "",
-                    "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
-                },
-                "EntityReferenceFields": [],
-                "luid": 7958820949394849814
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
                 "name": "ElevatorLever",
                 "isActive": 1,
                 "luid": 7308613770881925120
@@ -1262,7 +178,7 @@
                     "z": 0.5
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": 0.0,
                     "y": 0.8552113771438599,
                     "z": -0.0
                 },
@@ -1331,9 +247,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.2045350968837738,
-                    "y": 0.9911708235740662,
-                    "z": 1.852588176727295
+                    "x": 0.202297642827034,
+                    "y": 0.9910690784454346,
+                    "z": 1.8495714664459229
                 },
                 "Scale": {
                     "x": 1.0,
@@ -1341,8 +257,8 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
+                    "x": 0.0,
+                    "y": -47.99998092651367,
                     "z": 0.0
                 },
                 "luid": 8390884941517225996
@@ -1460,9 +376,9 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": 48.0,
                     "y": 0.0,
-                    "z": -0.0
+                    "z": 0.0
                 },
                 "luid": 8390884971952734210
             },
@@ -4704,7 +3620,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743956656156
             },
             "Hierarchy": {
@@ -4742,7 +3658,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743956656160
             },
             "Hierarchy": {
@@ -4780,7 +3696,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743956656164
             },
             "Hierarchy": {
@@ -4818,7 +3734,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743956656168
             },
             "Hierarchy": {
@@ -4894,7 +3810,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743960064048
             },
             "Hierarchy": {
@@ -4932,7 +3848,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743960064052
             },
             "Hierarchy": {
@@ -4970,7 +3886,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743960064056
             },
             "Hierarchy": {
@@ -5008,7 +3924,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743960064060
             },
             "Hierarchy": {
@@ -5084,7 +4000,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743962095684
             },
             "Hierarchy": {
@@ -5122,7 +4038,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743962095688
             },
             "Hierarchy": {
@@ -5160,7 +4076,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743962095692
             },
             "Hierarchy": {
@@ -5198,7 +4114,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743962095696
             },
             "Hierarchy": {
@@ -5274,7 +4190,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743962751064
             },
             "Hierarchy": {
@@ -5312,7 +4228,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743962751068
             },
             "Hierarchy": {
@@ -5388,7 +4304,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743962751076
             },
             "Hierarchy": {
@@ -5464,7 +4380,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963537516
             },
             "Hierarchy": {
@@ -5502,7 +4418,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963537520
             },
             "Hierarchy": {
@@ -5540,7 +4456,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963537524
             },
             "Hierarchy": {
@@ -5578,7 +4494,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963537528
             },
             "Hierarchy": {
@@ -5654,7 +4570,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963865216
             },
             "Hierarchy": {
@@ -5692,7 +4608,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963865220
             },
             "Hierarchy": {
@@ -5730,7 +4646,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963865224
             },
             "Hierarchy": {
@@ -5768,7 +4684,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963865228
             },
             "Hierarchy": {
@@ -5844,7 +4760,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963930772
             },
             "Hierarchy": {
@@ -5882,7 +4798,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963930776
             },
             "Hierarchy": {
@@ -5920,7 +4836,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963930780
             },
             "Hierarchy": {
@@ -5958,7 +4874,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963930784
             },
             "Hierarchy": {
@@ -6072,7 +4988,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963996332
             },
             "Hierarchy": {
@@ -6148,7 +5064,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743963996340
             },
             "Hierarchy": {
@@ -6224,7 +5140,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743969763516
             },
             "Hierarchy": {
@@ -6300,7 +5216,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743969763524
             },
             "Hierarchy": {
@@ -6338,7 +5254,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743969763528
             },
             "Hierarchy": {
@@ -6414,7 +5330,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743969894608
             },
             "Hierarchy": {
@@ -6490,7 +5406,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743969894616
             },
             "Hierarchy": {
@@ -6604,7 +5520,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743969960164
             },
             "Hierarchy": {
@@ -6680,7 +5596,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743969960172
             },
             "Hierarchy": {
@@ -6832,7 +5748,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743970025724
             },
             "Hierarchy": {
@@ -6870,7 +5786,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743970025728
             },
             "Hierarchy": {
@@ -7014,7 +5930,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547727
             },
             "Hierarchy": {
@@ -7052,7 +5968,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547731
             },
             "Hierarchy": {
@@ -7128,7 +6044,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547739
             },
             "Hierarchy": {
@@ -7204,7 +6120,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547747
             },
             "Hierarchy": {
@@ -7242,7 +6158,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547751
             },
             "Hierarchy": {
@@ -7280,7 +6196,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547755
             },
             "Hierarchy": {
@@ -7318,7 +6234,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547759
             },
             "Hierarchy": {
@@ -7394,7 +6310,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547767
             },
             "Hierarchy": {
@@ -7432,7 +6348,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547771
             },
             "Hierarchy": {
@@ -7470,7 +6386,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547775
             },
             "Hierarchy": {
@@ -7508,7 +6424,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547779
             },
             "Hierarchy": {
@@ -7584,7 +6500,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547787
             },
             "Hierarchy": {
@@ -7622,7 +6538,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547791
             },
             "Hierarchy": {
@@ -7660,7 +6576,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547795
             },
             "Hierarchy": {
@@ -7698,7 +6614,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547799
             },
             "Hierarchy": {
@@ -7812,7 +6728,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547811
             },
             "Hierarchy": {
@@ -7888,7 +6804,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547819
             },
             "Hierarchy": {
@@ -7964,7 +6880,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547827
             },
             "Hierarchy": {
@@ -8002,7 +6918,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547831
             },
             "Hierarchy": {
@@ -8040,7 +6956,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547835
             },
             "Hierarchy": {
@@ -8078,7 +6994,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547839
             },
             "Hierarchy": {
@@ -8154,7 +7070,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547847
             },
             "Hierarchy": {
@@ -8192,7 +7108,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547851
             },
             "Hierarchy": {
@@ -8230,7 +7146,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547855
             },
             "Hierarchy": {
@@ -8268,7 +7184,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547859
             },
             "Hierarchy": {
@@ -8344,7 +7260,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547867
             },
             "Hierarchy": {
@@ -8382,7 +7298,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547871
             },
             "Hierarchy": {
@@ -8420,7 +7336,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547875
             },
             "Hierarchy": {
@@ -8458,7 +7374,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547879
             },
             "Hierarchy": {
@@ -8610,7 +7526,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547895
             },
             "Hierarchy": {
@@ -8648,7 +7564,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "LEFT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547899
             },
             "Hierarchy": {
@@ -8724,7 +7640,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547907
             },
             "Hierarchy": {
@@ -8800,7 +7716,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547915
             },
             "Hierarchy": {
@@ -8914,7 +7830,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547927
             },
             "Hierarchy": {
@@ -8990,7 +7906,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547935
             },
             "Hierarchy": {
@@ -9104,7 +8020,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "UP",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547947
             },
             "Hierarchy": {
@@ -9142,7 +8058,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "RIGHT",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547951
             },
             "Hierarchy": {
@@ -9180,7 +8096,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "DOWN",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743974547955
             },
             "Hierarchy": {
@@ -9266,8 +8182,8 @@
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": -0.9467743039131165,
-                    "z": 0.3399660885334015
+                    "y": -1.0,
+                    "z": 0.10000000149011612
                 },
                 "Scale": {
                     "x": 0.10000000149011612,
@@ -9341,9 +8257,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 3.582263946533203,
-                    "y": -0.9322327375411987,
-                    "z": 0.3399660885334015
+                    "x": 1.5,
+                    "y": -1.0,
+                    "z": 0.10000000149011612
                 },
                 "Scale": {
                     "x": 0.10000000149011612,
@@ -9865,7 +8781,7 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": 0.0,
+                    "x": 90.0,
                     "y": 0.0,
                     "z": -0.0
                 },
@@ -11090,6 +10006,1090 @@
                     "sequencer"
                 ],
                 "luid": 7958820967893434454
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Puzzle_Wire_0_Updated",
+                "isActive": 1,
+                "luid": 7308613776928079962
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417049,
+                "parentLuid": 0
+            },
+            "PrefabInstance": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5"
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 1.4343458414077759,
+                    "y": -20.741844177246094,
+                    "z": -9.187780380249023
+                },
+                "Scale": {
+                    "x": 0.02500000037252903,
+                    "y": 0.02500000037252903,
+                    "z": 0.02500000037252903
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552283
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_Wire"
+                ],
+                "SerializedFields": {
+                    "Puzzle_Wire.wireHolderObject": "7308613776928079966",
+                    "Puzzle_Wire.connectedHolderObject": "7308613776928080028",
+                    "Puzzle_Wire.wireColours": "4 0 2 3 1",
+                    "Puzzle_Wire.correctHolderObject": "7308613776928080005",
+                    "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.correctColours": "4 2 1 3 0"
+                },
+                "EntityReferenceFields": [
+                    "wireHolderObject",
+                    "connectedHolderObject",
+                    "correctHolderObject"
+                ],
+                "luid": 7958820973129695324
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "ChildHolder",
+                "isActive": 1,
+                "luid": 7308613776928079966
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417053,
+                "parentLuid": 7526193933925417049
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 1
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552287
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Wire_Child_0",
+                "isActive": 1,
+                "luid": 7308613776928079969
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417056,
+                "parentLuid": 7526193933925417053
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 2
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552290
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747235
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695332
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Wire_Child_1",
+                "isActive": 1,
+                "luid": 7308613776928079974
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417061,
+                "parentLuid": 7526193933925417053
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 3
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.00048828125,
+                    "z": 1.6650390625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552295
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747240
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "1",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695337
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Wire_Child_2",
+                "isActive": 1,
+                "luid": 7308613776928079979
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417066,
+                "parentLuid": 7526193933925417053
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 4
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.00048828125,
+                    "z": 3.345245361328125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552300
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747245
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "2",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695342
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Wire_Child_3",
+                "isActive": 1,
+                "luid": 7308613776928079984
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417071,
+                "parentLuid": 7526193933925417053
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 5
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.00048828125,
+                    "z": 5.077911376953125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552305
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747250
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "3",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695347
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "ButtonHolder",
+                "isActive": 1,
+                "luid": 7308613776928079989
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417076,
+                "parentLuid": 7526193933925417049
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 6
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552310
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_WireButton"
+                ],
+                "SerializedFields": {
+                    "Interactable_WireButton.leftWireIndex": "0",
+                    "Interactable_WireButton.wirePuzzleIndex": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695351
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Wire_Switch_0",
+                "isActive": 1,
+                "luid": 7308613776928079993
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417080,
+                "parentLuid": 7526193933925417076
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 7
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552314
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_WireButton"
+                ],
+                "SerializedFields": {
+                    "Interactable_WireButton.leftWireIndex": "0",
+                    "Interactable_WireButton.wirePuzzleIndex": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695355
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Wire_Switch_1",
+                "isActive": 1,
+                "luid": 7308613776928079997
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417084,
+                "parentLuid": 7526193933925417076
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 8
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552318
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_WireButton"
+                ],
+                "SerializedFields": {
+                    "Interactable_WireButton.leftWireIndex": "1",
+                    "Interactable_WireButton.wirePuzzleIndex": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695359
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Wire_Switch_2",
+                "isActive": 1,
+                "luid": 7308613776928080001
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417088,
+                "parentLuid": 7526193933925417076
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 9
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552322
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_WireButton"
+                ],
+                "SerializedFields": {
+                    "Interactable_WireButton.leftWireIndex": "2",
+                    "Interactable_WireButton.wirePuzzleIndex": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695363
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "CorrectWireHolder",
+                "isActive": 1,
+                "luid": 7308613776928080005
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417092,
+                "parentLuid": 7526193933925417049
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 10
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552326
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Correct_Wire_0",
+                "isActive": 1,
+                "luid": 7308613776928080008
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417095,
+                "parentLuid": 7526193933925417092
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 11
+            },
+            "Transform": {
+                "Position": {
+                    "x": -4.8621063232421875,
+                    "y": -4.60699462890625,
+                    "z": 9.91729736328125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552329
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747274
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695371
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Correct_Wire_1",
+                "isActive": 1,
+                "luid": 7308613776928080013
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417100,
+                "parentLuid": 7526193933925417092
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 12
+            },
+            "Transform": {
+                "Position": {
+                    "x": -4.8621063232421875,
+                    "y": -4.60736083984375,
+                    "z": 11.572265625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552334
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747279
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695376
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Correct_Wire_2",
+                "isActive": 1,
+                "luid": 7308613776928080018
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417105,
+                "parentLuid": 7526193933925417092
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 13
+            },
+            "Transform": {
+                "Position": {
+                    "x": -4.8621063232421875,
+                    "y": -4.60736083984375,
+                    "z": 13.213714599609375
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552339
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747284
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695381
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Correct_Wire_3",
+                "isActive": 1,
+                "luid": 7308613776928080023
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417110,
+                "parentLuid": 7526193933925417092
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 14
+            },
+            "Transform": {
+                "Position": {
+                    "x": -4.8621063232421875,
+                    "y": -4.60736083984375,
+                    "z": 15.0126953125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552344
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747289
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695386
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "ConnectedHolder",
+                "isActive": 1,
+                "luid": 7308613776928080028
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417115,
+                "parentLuid": 7526193933925417049
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 15
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885062380552349
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Connected_0",
+                "isActive": 1,
+                "luid": 7308613776928080031
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417118,
+                "parentLuid": 7526193933925417115
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 16
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.5805320739746094,
+                    "y": -2.18731689453125,
+                    "z": 5.746124267578125
+                },
+                "Scale": {
+                    "x": 11.000000953674316,
+                    "y": 0.25,
+                    "z": 0.25
+                },
+                "Rotation": {
+                    "x": 4.636418537984355e-8,
+                    "y": 55.0,
+                    "z": 42.0
+                },
+                "luid": 8390885062380552352
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747297
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695394
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Connected_1",
+                "isActive": 1,
+                "luid": 7308613776928080036
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417123,
+                "parentLuid": 7526193933925417115
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 17
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.4382781982421875,
+                    "y": -2.06646728515625,
+                    "z": 8.5560302734375
+                },
+                "Scale": {
+                    "x": 9.000000953674316,
+                    "y": 0.25,
+                    "z": 0.25
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 48.0,
+                    "z": 42.0
+                },
+                "luid": 8390885062380552357
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747302
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695399
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Connected_2",
+                "isActive": 1,
+                "luid": 7308613776928080041
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417128,
+                "parentLuid": 7526193933925417115
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 18
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.3927383422851563,
+                    "y": -2.1971435546875,
+                    "z": 6.51611328125
+                },
+                "Scale": {
+                    "x": 14.0,
+                    "y": 0.25,
+                    "z": 0.25
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 65.0,
+                    "z": 42.0
+                },
+                "luid": 8390885062380552362
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747307
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695404
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Connected_3",
+                "isActive": 1,
+                "luid": 7308613776928080046
+            },
+            "Hierarchy": {
+                "luid": 7526193933925417133,
+                "parentLuid": 7526193933925417115
+            },
+            "PrefabLink": {
+                "prefabUUID": "1379ae24-7f68-4dcf-bfcb-5a06716640a5",
+                "localID": 19
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.7314453125,
+                    "y": -2.05126953125,
+                    "z": 9.137542724609375
+                },
+                "Scale": {
+                    "x": 13.0,
+                    "y": 0.25,
+                    "z": 0.25
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 60.0,
+                    "z": 42.0
+                },
+                "luid": 8390885062380552367
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829224630747312
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_WireChild"
+                ],
+                "SerializedFields": {
+                    "Misc_WireChild.wireChildIndex": "0",
+                    "Misc_WireChild.wirePuzzleIndex": "0",
+                    "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958820973129695409
             }
         }
     ]
