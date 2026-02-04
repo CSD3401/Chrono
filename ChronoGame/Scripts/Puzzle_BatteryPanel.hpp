@@ -35,6 +35,8 @@ public:
 
     void Update(double deltaTime) override {
         // Called every frame while the script is enabled
+        if (HoldingBattery)
+            AlignTheBattery(heldBattery);
     }
 
     void OnDestroy() override {
@@ -66,36 +68,51 @@ public:
     void OnCollisionStay(Entity other) override { (void)other; }
 
     void OnTriggerEnter(Entity other) override {
+        LOG_DEBUG("THE BATTERY PANEL TRIGGERED ENTER");
         // Called when this entity enters a trigger
         std::string name = GetEntityName(other);
+        GameObject battery(other);
+        auto batteryScript = battery.GetComponent<Interactable_Battery>();
         // when the grabbed object collides with the trigger box
-        if (name.find("Battery"))
+        if (batteryScript)
         {
             // Solve the puzzle
             // Solve();
             // turn the grabbed object off
-            Events::Send("LetGo");
+            // Events::Send("LetGo");
             // set the battery to the transform aligning to the panel
-            GameObject battery(other);
-            auto batteryScript = battery.GetComponent<Interactable_Battery>();
 
-            Vec3 pos = GetPosition(panelRef);
-            Vec3 scale = GetScale(panelRef);
-            Vec3 rot = GetRotation(panelRef);
+            heldBattery = other;
+            HoldingBattery = true;
 
-            batteryScript->Align(pos, scale, rot);
+            AlignTheBattery(other);
 
             // also send a message to whatever needs to be sent
             Events::Send(message.c_str());
+            LOG_DEBUG("BATTERY HOLDING");
         }
     }
 
     void OnTriggerExit(Entity other) override { (void)other; }
     void OnTriggerStay(Entity other) override { (void)other; }
 
+    void AlignTheBattery(Entity batteryEntity)
+    {
+        GameObject battery(batteryEntity);
+        auto batteryScript = battery.GetComponent<Interactable_Battery>();
+
+        Vec3 pos = GetPosition(panelRef);
+        Vec3 scale = GetScale(panelRef);
+        Vec3 rot = GetRotation(panelRef);
+
+        batteryScript->Align(pos, scale, rot);
+    }
+
 private:
     // Add your private member variables here
     // Example: float speed = 5.0f;
     TransformRef panelRef;
     std::string message;
+    Entity heldBattery;
+    bool HoldingBattery = false;
 };

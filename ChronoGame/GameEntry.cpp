@@ -13,10 +13,12 @@
 #include "Scripts/Puzzle_Wire.hpp"
 #include "Scripts/Puzzle_Mirror.hpp"
 #include "Scripts/Puzzle_Lever.hpp"
+#include "Scripts/Puzzle_BatteryPanel.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
 #include "Scripts/Interactable_TwoWaySwitch.hpp"
+#include "Scripts/Interactable_Battery.hpp"
 #include "Scripts/Misc_Manager.hpp"
 #include "Scripts/Misc_WireChild.hpp"
 #include "Scripts/Misc_Grabber.hpp"
@@ -100,6 +102,12 @@ extern "C" {
             });
         registrar->RegisterScript("Listener_StretchObject", []() -> NE::Scripting::IScript* {
             return new Listener_StretchObject();
+            });
+        registrar->RegisterScript("Interactable_Battery", []() -> NE::Scripting::IScript* {
+            return new Interactable_Battery();
+            });
+        registrar->RegisterScript("Puzzle_BatteryPanel", []() -> NE::Scripting::IScript* {
+            return new Puzzle_BatteryPanel();
             });
         }
 }

@@ -104,6 +104,7 @@ public:
             targetPosition = TF_GetPosition(t) + TF_GetForward(t) * distance;
 
             Vec3 displacement = targetPosition - TF_GetPosition(grabbedT);
+            
 
             if (grabbedIsHeavy)
             {
