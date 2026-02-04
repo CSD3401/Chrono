@@ -21,6 +21,7 @@
 #include "Scripts/Interactable_TwoWaySwitch.hpp"
 #include "Scripts/Interactable_Battery.hpp"
 #include "Scripts/Interactable_NoteCollector.hpp"
+#include "Scripts/Interactable_WireTether.hpp"
 #include "Scripts/Misc_Manager.hpp"
 #include "Scripts/Misc_WireChild.hpp"
 #include "Scripts/Misc_Grabber.hpp"
@@ -132,6 +133,9 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_MultiLightSequencer", []() -> NE::Scripting::IScript* {
             return new Puzzle_MultiLightSequencer();
+            });
+        registrar->RegisterScript("Interactable_WireTether", []() -> NE::Scripting::IScript* {
+            return new Interactable_WireTether();
             });
 
         }
