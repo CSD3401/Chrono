@@ -57,6 +57,7 @@ public:
         Entity player = playerRef.GetEntity();
         Vec3 playerPos = GetPosition(GetTransformRef(player));
         Vec3 gatePos = GetPosition(GetTransformRef(gateEntity));
+        LOG_WARNING("Player Pos: " << gatePos.x << " : " << gatePos.z);
 
         // Calculate distance
         Vec3 delta = playerPos - gatePos;
@@ -64,7 +65,9 @@ public:
 
         // Check if player is in range and presses E
         if (distance <= interactionDistance) {
+        LOG_WARNING("Gate Entity: " << gateEntity);
             if (Input::WasKeyPressed('E')) {
+                LOG_WARNING("Opening");
                 OpenGate();
             }
         }
@@ -90,7 +93,7 @@ private:
 
         // Calculate target position: move along Z axis by moveDistance
         Vec3 targetPos = startingPos;
-        targetPos.z += moveDistance;
+        targetPos.x -= moveDistance;
 
         // Start tween from current position to target position
         Tweener::StartVec3(

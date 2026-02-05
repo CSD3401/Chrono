@@ -220,12 +220,12 @@
                     "Interactable_TwoWaySwitch.toggleCooldown": "1.500000",
                     "Puzzle_Lever.twoStateRotaterObject": "7308613770881925120",
                     "Puzzle_Lever.twoWaySwitchObject": "7308613770881925120",
-                    "Misc_TwoStateRotater.startingState": "0",
-                    "Misc_TwoStateRotater.rotationX1": "50.000000",
                     "Puzzle_Lever.puzzleKey": "0",
                     "Misc_TwoStateRotater.target": "7308613770881925120",
+                    "Misc_TwoStateRotater.rotationX1": "50.000000",
                     "Misc_TwoStateRotater.rotationX2": "0.000000",
-                    "Misc_TwoStateRotater.duration": "0.500000"
+                    "Misc_TwoStateRotater.duration": "0.500000",
+                    "Misc_TwoStateRotater.startingState": "0"
                 },
                 "EntityReferenceFields": [
                     "twoStateRotaterObject",
@@ -248,9 +248,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -0.15444692969322205,
-                    "y": 1.1734771728515625,
-                    "z": 2.5202620029449463
+                    "x": 4.044431209564209,
+                    "y": 1.1084625720977783,
+                    "z": -23.036170959472656
                 },
                 "Scale": {
                     "x": 1.0,
@@ -259,7 +259,7 @@
                 },
                 "Rotation": {
                     "x": 0.0,
-                    "y": -47.99998092651367,
+                    "y": 0.0,
                     "z": 0.0
                 },
                 "luid": 8390884941517225996
@@ -319,44 +319,6 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Cube",
-                "isActive": 1,
-                "luid": 7308613686507339780
-            },
-            "Hierarchy": {
-                "luid": 7526193843504676870,
-                "parentLuid": 7526193813062090765
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 0.6000000238418579,
-                    "y": 0.20000000298023224,
-                    "z": 0.6000000238418579
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390884971959812101
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "078ba8be-60b1-4057-8ca2-339f202c05ad",
-                "shadowCastMode": 0,
-                "receiveShadows": 0,
-                "subMeshIndex": 0,
-                "luid": 8242829134210007047
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
                 "name": "Camera",
                 "isActive": 1,
                 "luid": 7308613686500261889
@@ -377,7 +339,7 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": 48.0,
+                    "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
                 },
@@ -1312,13 +1274,13 @@
                 "SerializedFields": {
                     "Interactable_TwoWaySwitch.toggleCooldown": "0.000000",
                     "Misc_TwoStateRotater.target": "7308613746448793600",
-                    "Puzzle_Lever.puzzleKey": "0",
-                    "Misc_TwoStateRotater.startingState": "0",
                     "Misc_TwoStateRotater.rotationX1": "0.000000",
                     "Misc_TwoStateRotater.rotationX2": "90.000000",
                     "Misc_TwoStateRotater.duration": "1.000000",
+                    "Misc_TwoStateRotater.startingState": "0",
                     "Puzzle_Lever.twoStateRotaterObject": "7308613746448793600",
-                    "Puzzle_Lever.twoWaySwitchObject": "7308613746448793600"
+                    "Puzzle_Lever.twoWaySwitchObject": "7308613746448793600",
+                    "Puzzle_Lever.puzzleKey": "0"
                 },
                 "EntityReferenceFields": [
                     "target",
@@ -1416,8 +1378,8 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613771630477337",
                     "Puzzle_MultiLightSequencer.light2": "7308613771645485097",
-                    "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
                     "Puzzle_MultiLightSequencer.sequenceLength": "3",
+                    "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
                     "Puzzle_MultiLightSequencer.light4": "0",
                     "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "0",
@@ -3757,60 +3719,6 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Fence_door",
-                "isActive": 1,
-                "luid": 7308613787329036314
-            },
-            "Hierarchy": {
-                "luid": 7308613787329036292,
-                "parentLuid": 7308613787329036288
-            },
-            "Transform": {
-                "Position": {
-                    "x": -0.46415138244628906,
-                    "y": 1.1638611555099487,
-                    "z": -2.393930435180664
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 5
-            },
-            "Renderer": {
-                "modelUUID": "bbbbf0a5-69a2-43c9-aff5-8376d904b941",
-                "materialUUID": "999da723-a372-4de3-990e-aac165ff610c",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 3,
-                "luid": 8242829235031703577
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Interactable_Gate"
-                ],
-                "SerializedFields": {
-                    "Interactable_Gate.playerRef": "7308613656064753675",
-                    "Interactable_Gate.interactionDistance": "5.000000",
-                    "Interactable_Gate.logInteractions": "1",
-                    "Interactable_Gate.tweenDuration": "1.500000",
-                    "Interactable_Gate.moveDistance": "1.265000"
-                },
-                "EntityReferenceFields": [
-                    "playerRef"
-                ],
-                "luid": 7958820983653793871
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
                 "name": "Fence2",
                 "isActive": 1,
                 "luid": 7308613787329036316
@@ -4998,6 +4906,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 2,
                 "luid": 8242829235407290397
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.8818371295928955,
+                            "y": 1.0485036373138428,
+                            "z": 0.11999999731779099
+                        }
+                    }
+                },
+                "luid": 7165061550428913665
             }
         },
         {
@@ -5756,198 +5684,6 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 8,
                 "luid": 8242829235407290409
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Door",
-                "isActive": 0,
-                "luid": 7308613787874099371
-            },
-            "Hierarchy": {
-                "luid": 7526193944871436461,
-                "parentLuid": 7308613787704623104
-            },
-            "Transform": {
-                "Position": {
-                    "x": 3.0365591049194336,
-                    "y": 1.1754578351974487,
-                    "z": -0.7295608520507813
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885073326571692
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "DoorFrame",
-                "isActive": 0,
-                "luid": 7308613787704623152
-            },
-            "Hierarchy": {
-                "luid": 7308613787704623116,
-                "parentLuid": 7526193944871436461
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 13
-            },
-            "Renderer": {
-                "modelUUID": "6f19e0e8-1d7d-4b70-b7a6-7d44b2a9bd6f",
-                "materialUUID": "d261d7aa-14f0-47aa-9c4a-e5a743ed7941",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 11,
-                "luid": 8242829235407290415
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Hinge",
-                "isActive": 0,
-                "luid": 7308613787875082414
-            },
-            "Hierarchy": {
-                "luid": 7526193944872419504,
-                "parentLuid": 7526193944871436461
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.550000011920929
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885073327554735
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Interactable_DoorHinge"
-                ],
-                "SerializedFields": {
-                    "Interactable_DoorHinge.targetRotationY": "-100.000000",
-                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
-                    "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
-                },
-                "EntityReferenceFields": [
-                    "playerRef"
-                ],
-                "luid": 7958820984116019381
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Door2",
-                "isActive": 0,
-                "luid": 7308613787704623154
-            },
-            "Hierarchy": {
-                "luid": 7308613787704623117,
-                "parentLuid": 7526193944872419504
-            },
-            "Transform": {
-                "Position": {
-                    "x": -0.0321044921875,
-                    "y": -0.07085907459259033,
-                    "z": -0.5499992370605469
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 14
-            },
-            "Renderer": {
-                "modelUUID": "6f19e0e8-1d7d-4b70-b7a6-7d44b2a9bd6f",
-                "materialUUID": "d261d7aa-14f0-47aa-9c4a-e5a743ed7941",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 12,
-                "luid": 8242829235407290417
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Door2",
-                "isActive": 0,
-                "luid": 7308613787704623156
-            },
-            "Hierarchy": {
-                "luid": 7308613787704623118,
-                "parentLuid": 7526193944872419504
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0912632942199707,
-                    "y": -0.21495211124420166,
-                    "z": -0.5605564117431641
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 15
-            },
-            "Renderer": {
-                "modelUUID": "6f19e0e8-1d7d-4b70-b7a6-7d44b2a9bd6f",
-                "materialUUID": "f36e9a98-40e4-42f7-9d71-79258797b100",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 13,
-                "luid": 8242829235407290419
             }
         },
         {
@@ -6781,15 +6517,15 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireHolderObject": "7308613787156414469",
-                    "Puzzle_Wire.wireColours": "4 3 2 0 1",
                     "Puzzle_Wire.connectedHolderObject": "7308613787156414539",
-                    "Puzzle_Wire.correctHolderObject": "7308613787156414512",
+                    "Puzzle_Wire.wireColours": "4 3 2 0 1",
+                    "Puzzle_Wire.wireHolderObject": "7308613787156414469",
                     "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.correctHolderObject": "7308613787156414512",
                     "Puzzle_Wire.correctColours": "4 2 1 3 0",
                     "Puzzle_Wire.wirePath": "0",
-                    "Puzzle_Wire.changeTimer": "0.500000",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Wire.changeTimer": "0.500000"
                 },
                 "EntityReferenceFields": [
                     "connectedHolderObject",
@@ -6897,19 +6633,19 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -6980,19 +6716,19 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -7063,19 +6799,19 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -7146,19 +6882,19 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -7443,19 +7179,19 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -7526,19 +7262,19 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -7609,19 +7345,19 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -7692,19 +7428,19 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -7794,14 +7530,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820983358029905
@@ -7856,14 +7592,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820983358029910
@@ -7918,14 +7654,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820983358029915
@@ -7980,17 +7716,93 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820983358029920
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Puzzle script holder",
+                "isActive": 0,
+                "luid": 7308613743991915018
+            },
+            "Hierarchy": {
+                "luid": 7526193900989252108,
+                "parentLuid": 7308613787704623104
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885029444387339
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_Mirror"
+                ],
+                "SerializedFields": {
+                    "Puzzle_Mirror.tile00": "8390885029409128473",
+                    "Puzzle_Mirror.mazeServerDoor": "7308613744334602250",
+                    "Puzzle_Mirror.originalMaterial": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Mirror.tile03": "8390885029415223381",
+                    "Puzzle_Mirror.steppedOnMaterial": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Puzzle_Mirror.tile01": "8390885029412536365",
+                    "Puzzle_Mirror.destinationMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Puzzle_Mirror.debugMode": "0",
+                    "Puzzle_Mirror.tile02": "8390885029414568001",
+                    "Puzzle_Mirror.tile10": "8390885029416009833",
+                    "Puzzle_Mirror.tile11": "8390885029416337533",
+                    "Puzzle_Mirror.tile12": "8390885029416403089",
+                    "Puzzle_Mirror.tile13": "8390885029416468645",
+                    "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
+                    "Puzzle_Mirror.tile20": "8390885029422235833",
+                    "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
+                    "Puzzle_Mirror.tile21": "8390885029422366925",
+                    "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
+                    "Puzzle_Mirror.tile22": "8390885029422432481",
+                    "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
+                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.tile23": "8390885029422498037",
+                    "Puzzle_Mirror.mirrorTile10": "8390885029427020124",
+                    "Puzzle_Mirror.mirrorTile11": "8390885029427020144",
+                    "Puzzle_Mirror.mirrorTile12": "8390885029427020164",
+                    "Puzzle_Mirror.mirrorTile13": "8390885029427020184",
+                    "Puzzle_Mirror.mirrorTile20": "8390885029427020204",
+                    "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
+                    "Puzzle_Mirror.startCol": "0",
+                    "Puzzle_Mirror.mirrorTile22": "8390885029427020244",
+                    "Puzzle_Mirror.mirrorTile23": "8390885029427020264",
+                    "Puzzle_Mirror.startRow": "2",
+                    "Puzzle_Mirror.endCol": "3",
+                    "Puzzle_Mirror.zOffset": "0.200000",
+                    "Puzzle_Mirror.eventName": "MirrorPuzzleSolved"
+                },
+                "EntityReferenceFields": [
+                    "mazeServerDoor"
+                ],
+                "luid": 7958820940193726989
             }
         },
         {
@@ -8002,13 +7814,13 @@
             },
             "Hierarchy": {
                 "luid": 7526193943678746626,
-                "parentLuid": 7308613787704623104
+                "parentLuid": 0
             },
             "Transform": {
                 "Position": {
-                    "x": 2.3032612800598145,
-                    "y": 0.7155128717422485,
-                    "z": -1.8173103332519531
+                    "x": 5.628077030181885,
+                    "y": 1.6049838066101074,
+                    "z": -24.360872268676758
                 },
                 "Scale": {
                     "x": 0.20000000298023224,
@@ -8083,82 +7895,6 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Puzzle script holder",
-                "isActive": 1,
-                "luid": 7308613743991915018
-            },
-            "Hierarchy": {
-                "luid": 7526193900989252108,
-                "parentLuid": 7308613787704623104
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885029444387339
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Puzzle_Mirror"
-                ],
-                "SerializedFields": {
-                    "Puzzle_Mirror.tile00": "8390885029409128473",
-                    "Puzzle_Mirror.mazeServerDoor": "7308613744334602250",
-                    "Puzzle_Mirror.originalMaterial": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_Mirror.tile03": "8390885029415223381",
-                    "Puzzle_Mirror.steppedOnMaterial": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Puzzle_Mirror.tile01": "8390885029412536365",
-                    "Puzzle_Mirror.destinationMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Puzzle_Mirror.debugMode": "1",
-                    "Puzzle_Mirror.tile02": "8390885029414568001",
-                    "Puzzle_Mirror.tile10": "8390885029416009833",
-                    "Puzzle_Mirror.tile11": "8390885029416337533",
-                    "Puzzle_Mirror.tile12": "8390885029416403089",
-                    "Puzzle_Mirror.tile13": "8390885029416468645",
-                    "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
-                    "Puzzle_Mirror.tile20": "8390885029422235833",
-                    "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
-                    "Puzzle_Mirror.tile21": "8390885029422366925",
-                    "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
-                    "Puzzle_Mirror.tile22": "8390885029422432481",
-                    "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
-                    "Puzzle_Mirror.endRow": "0",
-                    "Puzzle_Mirror.tile23": "8390885029422498037",
-                    "Puzzle_Mirror.mirrorTile10": "8390885029427020124",
-                    "Puzzle_Mirror.mirrorTile11": "8390885029427020144",
-                    "Puzzle_Mirror.mirrorTile12": "8390885029427020164",
-                    "Puzzle_Mirror.mirrorTile13": "8390885029427020184",
-                    "Puzzle_Mirror.mirrorTile20": "8390885029427020204",
-                    "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
-                    "Puzzle_Mirror.startCol": "0",
-                    "Puzzle_Mirror.mirrorTile22": "8390885029427020244",
-                    "Puzzle_Mirror.mirrorTile23": "8390885029427020264",
-                    "Puzzle_Mirror.startRow": "2",
-                    "Puzzle_Mirror.endCol": "3",
-                    "Puzzle_Mirror.zOffset": "0.200000",
-                    "Puzzle_Mirror.eventName": "MirrorPuzzleSolved"
-                },
-                "EntityReferenceFields": [
-                    "mazeServerDoor"
-                ],
-                "luid": 7958820940193726989
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
                 "name": "CircuitCover",
                 "isActive": 1,
                 "luid": 7308613787998093315
@@ -8170,7 +7906,7 @@
             "Transform": {
                 "Position": {
                     "x": 0.38823753595352173,
-                    "y": 1.1164559125900269,
+                    "y": 1.2901904582977295,
                     "z": -23.392040252685547
                 },
                 "Scale": {
@@ -8206,7 +7942,7 @@
                     "value": {
                         "halfExtents": {
                             "x": 0.11018073558807373,
-                            "y": 0.019999999552965164,
+                            "y": 0.11999999731779099,
                             "z": 0.25
                         }
                     }
@@ -8226,6 +7962,21 @@
                 "freezePosY": 0,
                 "freezePosZ": 0,
                 "luid": 8242266285755727877
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_Grabbable"
+                ],
+                "SerializedFields": {
+                    "Interactable_Grabbable.body": "8242266285755727877",
+                    "Interactable_Grabbable.isHeavy": "1",
+                    "Interactable_Grabbable.activatesPressurePlates": "0",
+                    "Interactable_Grabbable.playerGrabber": "7308613686500261889"
+                },
+                "EntityReferenceFields": [
+                    "playerGrabber"
+                ],
+                "luid": 7958820984747917312
             }
         },
         {
@@ -8699,10 +8450,10 @@
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
                     "Interactable_DoorHinge.isEventBased": "0",
-                    "Interactable_DoorHinge.logInteractions": "1",
                     "Interactable_DoorHinge.interactionDistance": "5.000000",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000",
-                    "Interactable_DoorHinge.eventName": ""
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
                 },
                 "EntityReferenceFields": [
                     "playerRef"
@@ -13985,6 +13736,272 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829191677215225
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Fence_door",
+                "isActive": 1,
+                "luid": 7308613787329036314
+            },
+            "Hierarchy": {
+                "luid": 7308613787329036292,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.46415138244628906,
+                    "y": 1.1638611555099487,
+                    "z": -2.393930435180664
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 5
+            },
+            "Renderer": {
+                "modelUUID": "bbbbf0a5-69a2-43c9-aff5-8376d904b941",
+                "materialUUID": "999da723-a372-4de3-990e-aac165ff610c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 3,
+                "luid": 8242829235031703577
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6056295037269592,
+                            "y": 1.160014271736145,
+                            "z": 0.06600534915924072
+                        }
+                    }
+                },
+                "luid": 7165061550414888966
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_Gate"
+                ],
+                "SerializedFields": {
+                    "Interactable_Gate.playerRef": "7308613656064753675",
+                    "Interactable_Gate.interactionDistance": "5.000000",
+                    "Interactable_Gate.logInteractions": "1",
+                    "Interactable_Gate.tweenDuration": "1.500000",
+                    "Interactable_Gate.moveDistance": "1.265000"
+                },
+                "EntityReferenceFields": [
+                    "playerRef"
+                ],
+                "luid": 7958820983653793871
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Hinge",
+                "isActive": 1,
+                "luid": 7308613787875082414
+            },
+            "Hierarchy": {
+                "luid": 7526193944872419504,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 7.7243332862854,
+                    "y": 1.1754578351974487,
+                    "z": -24.044870376586914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885073327554735
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_DoorHinge"
+                ],
+                "SerializedFields": {
+                    "Interactable_DoorHinge.targetRotationY": "-100.000000",
+                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.isEventBased": "0",
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [
+                    "playerRef"
+                ],
+                "luid": 7958820984116019381
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Door2",
+                "isActive": 1,
+                "luid": 7308613787704623154
+            },
+            "Hierarchy": {
+                "luid": 7308613787704623117,
+                "parentLuid": 7526193944872419504
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.0321044921875,
+                    "y": -0.07085907459259033,
+                    "z": -0.5499992370605469
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 14
+            },
+            "Renderer": {
+                "modelUUID": "6f19e0e8-1d7d-4b70-b7a6-7d44b2a9bd6f",
+                "materialUUID": "d261d7aa-14f0-47aa-9c4a-e5a743ed7941",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 12,
+                "luid": 8242829235407290417
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Door2",
+                "isActive": 1,
+                "luid": 7308613787704623156
+            },
+            "Hierarchy": {
+                "luid": 7308613787704623118,
+                "parentLuid": 7526193944872419504
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0912632942199707,
+                    "y": -0.21495211124420166,
+                    "z": -0.5605564117431641
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 15
+            },
+            "Renderer": {
+                "modelUUID": "6f19e0e8-1d7d-4b70-b7a6-7d44b2a9bd6f",
+                "materialUUID": "f36e9a98-40e4-42f7-9d71-79258797b100",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 13,
+                "luid": 8242829235407290419
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Door",
+                "isActive": 1,
+                "luid": 7308613787874099371
+            },
+            "Hierarchy": {
+                "luid": 7526193944871436461,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 7.7243332862854,
+                    "y": 1.1754578351974487,
+                    "z": -24.59486961364746
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885073326571692
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "DoorFrame",
+                "isActive": 1,
+                "luid": 7308613787704623152
+            },
+            "Hierarchy": {
+                "luid": 7308613787704623116,
+                "parentLuid": 7526193944871436461
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 13
+            },
+            "Renderer": {
+                "modelUUID": "6f19e0e8-1d7d-4b70-b7a6-7d44b2a9bd6f",
+                "materialUUID": "d261d7aa-14f0-47aa-9c4a-e5a743ed7941",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 11,
+                "luid": 8242829235407290415
             }
         }
     ]
