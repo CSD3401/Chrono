@@ -248,60 +248,6 @@ public:
         return false;
     }
 
-    //void UpdatePuzzleVars()
-    //{
-    //    int side = std::stoi(wireDataRecieved.substr(0,1));
-    //    int index = std::stoi(wireDataRecieved.substr(1));
-    //    if (side == 0)
-    //    {
-    //        currentSelectedLeftIndex = index;
-    //    }
-    //    else
-    //    {
-    //        currentSelectedRightIndex = index;
-    //    }
-
-    //    std::string message = "SIDE: ";
-    //    message += side == 0 ? "TOP" : "BOTTOM";
-    //    message += ", INDEX: ";
-    //    message += std::to_string(index);
-    //    LOG_DEBUG(message);
-
-    //    if (currentSelectedLeftIndex != 9999 && currentSelectedRightIndex != 9999)
-    //    {
-    //        if (CheckWirePair()) // if all 4 are correct
-    //        {
-    //            LOG_DEBUG("PUZZLE SOLVED!");
-    //            std::string message = "PuzzleSolved1";
-    //            Events::Send(message.c_str());
-    //        }
-
-    //    }
-    //}
-
-    //bool CheckWirePair()
-    //{
-    //    if (wireColours[currentSelectedLeftIndex] == correctColours[currentSelectedRightIndex])
-    //    {
-    //        // if true turn on the wire connecting them
-    //        SetActive(true, connectedWires[currentSelectedRightIndex]);
-    //        // then reset
-    //        currentSelectedLeftIndex = 9999;
-    //        currentSelectedRightIndex = 9999;
-
-    //        // Increment number of correct pairs
-    //        ++correctPairs;
-    //        if (correctPairs >= numWires)
-    //        {
-    //            return true;
-    //        }
-    //    }
-    //    // fail then reset pair
-    //    currentSelectedLeftIndex = 9999;
-    //    currentSelectedRightIndex = 9999;
-    //    return false;
-    //}
-
 private:
     // Add your private member variables here
     // Example: float speed = 5.0f;

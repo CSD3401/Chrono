@@ -28,7 +28,6 @@ public:
 
     void Start() override {
         // Called when the script is enabled and play mode starts
-        Interactable_Grabbable::Start();
     }
 
     void Update(double deltaTime) override {
@@ -43,7 +42,6 @@ public:
 
     void OnEnable() override {
         // Called when the script is enabled
-        Interactable_Grabbable::OnEnable();
     }
 
     void OnDisable() override {
@@ -73,11 +71,10 @@ public:
 
     void Align(Vec3 pos, Vec3 scale, Vec3 rot)
     {
-        LOG_DEBUG("ALIGNING BATTERY");
-        TransformRef t = GetTransformRef(GetEntity());
-        TF_SetPosition(pos, t);
-        TF_SetScale(scale, t);
-        TF_SetRotation(rot, t);
+        TransformRef t = this->GetTransformRef(GetEntity());
+        SetPosition(t, pos);
+        SetScale(t, scale);
+        SetRotation(t, rot);
     }
 
 private:

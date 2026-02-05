@@ -24,7 +24,6 @@ public:
         SCRIPT_COMPONENT_REF(purple, MaterialRef);
         SCRIPT_COMPONENT_REF(pink, MaterialRef);
         SCRIPT_COMPONENT_REF(white, MaterialRef);
-        SCRIPT_COMPONENT_REF(black, MaterialRef);
         SCRIPT_FIELD(correctWire, Bool);
     }
 
@@ -166,11 +165,6 @@ public:
             SetMaterialRef(GetRendererRef(GetEntity()), white);
             break;
         }
-        case WIRE_COLOUR::BLACK:
-        {
-            SetMaterialRef(GetRendererRef(GetEntity()), black);
-            break;
-        }
         default:
             LOG_ERROR("COLOUR OUT OF RANGE!");
         }
@@ -190,11 +184,10 @@ public:
         RED,
         GREEN,
         YELLOW,
-        BLACK,// Finished
-        WHITE,
         ORANGE,
         PURPLE,
-        PINK
+        PINK,
+        WHITE // Finished
     };
 
 private:
@@ -213,7 +206,6 @@ private:
     MaterialRef red;
     MaterialRef yellow;
     MaterialRef white;
-    MaterialRef black;
 
     bool puzzleSolved = false;
     float changeTimer = 0.5f;
