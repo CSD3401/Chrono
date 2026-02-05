@@ -19,6 +19,7 @@
 #include "Scripts/Interactable_OneWaySwitch.hpp"
 #include "Scripts/Interactable_TwoWaySwitch.hpp"
 #include "Scripts/Interactable_NoteCollector.hpp"
+#include "Scripts/Interactable_Gate.hpp"
 #include "Scripts/Misc_Manager.hpp"
 #include "Scripts/Misc_WireChild.hpp"
 #include "Scripts/Misc_Grabber.hpp"
@@ -100,6 +101,9 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_NoteCollector", []() -> NE::Scripting::IScript* {
             return new Interactable_NoteCollector();
+            });
+        registrar->RegisterScript("Interactable_Gate", []() -> NE::Scripting::IScript* {
+            return new Interactable_Gate();
             });
         registrar->RegisterScript("NoteCollector_Controller", []() -> NE::Scripting::IScript* {
             return new NoteCollector_Controller();
