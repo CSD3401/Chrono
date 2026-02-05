@@ -15,6 +15,7 @@
 #include "Scripts/Puzzle_Mirror.hpp"
 #include "Scripts/Puzzle_Lever.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
+#include "Scripts/Interactable_WireTether.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
 #include "Scripts/Interactable_TwoWaySwitch.hpp"
@@ -81,6 +82,9 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_WireButton", []() -> NE::Scripting::IScript* {
             return new Interactable_WireButton();
+            });
+        registrar->RegisterScript("Interactable_WireTether", []() -> NE::Scripting::IScript* {
+            return new Interactable_WireTether();
             });
         registrar->RegisterScript("Interactable_Grabbable", []() -> NE::Scripting::IScript* {
             return new Interactable_Grabbable();
