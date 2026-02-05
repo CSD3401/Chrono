@@ -14,15 +14,12 @@
 #include "Scripts/Puzzle_Wire.hpp"
 #include "Scripts/Puzzle_Mirror.hpp"
 #include "Scripts/Puzzle_Lever.hpp"
-#include "Scripts/Puzzle_BatteryPanel.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
 #include "Scripts/Interactable_WireTether.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
 #include "Scripts/Interactable_TwoWaySwitch.hpp"
-#include "Scripts/Interactable_Battery.hpp"
 #include "Scripts/Interactable_NoteCollector.hpp"
-#include "Scripts/Interactable_WireTether.hpp"
 #include "Scripts/Interactable_Gate.hpp"
 #include "Scripts/Interactable_DoorHinge.hpp"
 #include "Scripts/Misc_Manager.hpp"
@@ -134,20 +131,11 @@ extern "C" {
         registrar->RegisterScript("Listener_StretchObject", []() -> NE::Scripting::IScript* {
             return new Listener_StretchObject();
             });
-        registrar->RegisterScript("Interactable_Battery", []() -> NE::Scripting::IScript* {
-            return new Interactable_Battery();
-            });
-        registrar->RegisterScript("Puzzle_BatteryPanel", []() -> NE::Scripting::IScript* {
-            return new Puzzle_BatteryPanel();
-            });
         registrar->RegisterScript("Interactable_SequencerPad", []() -> NE::Scripting::IScript* {
             return new Interactable_SequencerPad();
             });
         registrar->RegisterScript("Puzzle_MultiLightSequencer", []() -> NE::Scripting::IScript* {
             return new Puzzle_MultiLightSequencer();
-            });
-        registrar->RegisterScript("Interactable_WireTether", []() -> NE::Scripting::IScript* {
-            return new Interactable_WireTether();
             });
 
         }

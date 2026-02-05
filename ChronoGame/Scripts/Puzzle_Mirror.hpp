@@ -168,6 +168,7 @@ public:
     }
 
     void Update(double deltaTime) override {
+        return;
         if (puzzleSolved) return;
 
         //if (!targetTransform.IsValid() || !mirrorTargetTransform.IsValid()) {

@@ -70,22 +70,22 @@ public:
     void OnCollisionStay(Entity other) override { (void)other; }
 
     void OnTriggerEnter(Entity other) override {
-        LOG_DEBUG("THE BATTERY PANEL TRIGGERED ENTER");
         // Called when this entity enters a trigger
         std::string name = GetEntityName(other);
-        GameObject battery(other);
-        auto batteryScript = battery.GetComponent<Interactable_Battery>();
         // when the grabbed object collides with the trigger box
-        if (batteryScript)
+        if (name.find("Battery"))
         {
             // Solve the puzzle
             // Solve();
             // turn the grabbed object off
-            // Events::Send("LetGo");
+            Events::Send("LetGo");
             // set the battery to the transform aligning to the panel
+            GameObject battery(other);
+            auto batteryScript = battery.GetComponent<Interactable_Battery>();
 
-            heldBattery = other;
-            HoldingBattery = true;
+            Vec3 pos = GetPosition(panelRef);
+            Vec3 scale = GetScale(panelRef);
+            Vec3 rot = GetRotation(panelRef);
 
             AlignTheBattery(other);
             SetActive(false, other);
@@ -93,7 +93,6 @@ public:
             SetActive(true, alignedBattery.GetEntity());
             // also send a message to whatever needs to be sent
             Events::Send(message.c_str());
-            LOG_DEBUG("BATTERY HOLDING");
         }
     }
 
@@ -123,6 +122,4 @@ private:
     GameObjectRef alignedBattery;
     TransformRef panelRef;
     std::string message;
-    Entity heldBattery;
-    bool HoldingBattery = false;
 };
