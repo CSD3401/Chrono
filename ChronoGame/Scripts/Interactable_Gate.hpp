@@ -30,7 +30,7 @@ public:
 
     void Start() override {
         gateEntity = GetEntity();
-        startingPos = GetPosition(GetTransformRef(gateEntity));
+		startingPos = TF_GetLocalPosition(gateEntity);
 
         if (!playerRef.IsValid()) {
             LOG_ERROR("Interactable_Gate: playerRef not assigned!");
@@ -56,8 +56,7 @@ public:
         // Get player entity and positions
         Entity player = playerRef.GetEntity();
         Vec3 playerPos = GetPosition(GetTransformRef(player));
-        Vec3 gatePos = GetPosition(GetTransformRef(gateEntity));
-        //LOG_WARNING("Player Pos: " << gatePos.x << " : " << gatePos.z);
+        Vec3 gatePos = TF_GetPosition(gateEntity);
 
         // Calculate distance
         Vec3 delta = playerPos - gatePos;
@@ -65,9 +64,7 @@ public:
 
         // Check if player is in range and presses E
         if (distance <= interactionDistance) {
-        LOG_WARNING("Gate Entity: " << gateEntity);
             if (Input::WasKeyPressed('E')) {
-                LOG_WARNING("Opening");
                 OpenGate();
             }
         }
@@ -98,7 +95,8 @@ private:
         // Start tween from current position to target position
         Tweener::StartVec3(
             [this](const Vec3& pos) {
-                SetPosition(GetTransformRef(gateEntity), pos);
+                //SetPosition(GetTransformRef(gateEntity), pos);
+                TF_SetPosition(pos, gateEntity);
             },
             startingPos,
             targetPos,
@@ -106,6 +104,8 @@ private:
             Tweener::Type::CUBIC_EASE_BOTH,
             gateEntity
         );
+
+        RB_SetIsTrigger(true, gateEntity);
 
         if (logInteractions) {
             LOG_DEBUG("Gate opening! Moving from ({}, {}, {}) to ({}, {}, {})",
