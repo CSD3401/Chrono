@@ -37,6 +37,7 @@
 #include "Scripts/Puzzle_MultiLightSequencer.hpp"
 #include "Scripts/LaserListener.hpp"
 #include "Scripts/IntersectionListerner.hpp"
+#include "Scripts/Misc_Teleporter.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -149,6 +150,8 @@ extern "C" {
         registrar->RegisterScript("IntersectionListener", []() -> NE::Scripting::IScript* {
             return new IntersectionListener();
             });
-
+        registrar->RegisterScript("Misc_Teleporter", []() -> NE::Scripting::IScript* {
+            return new Misc_Teleporter();
+            });
         }
 }

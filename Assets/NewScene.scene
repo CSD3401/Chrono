@@ -28,7 +28,7 @@
             "brightThreshold": 1.0,
             "brightScale": 1.0,
             "softKnee": 0.20000000298023224,
-            "bloomRadius": 1.0,
+            "bloomRadius": 0.0,
             "bloomIntensity": 0.15000000596046448,
             "exposure": 1.0
         },
@@ -223,8 +223,8 @@
                     "Puzzle_Lever.puzzleKey": "0",
                     "Misc_TwoStateRotater.target": "7308613770881925120",
                     "Misc_TwoStateRotater.rotationX1": "50.000000",
-                    "Misc_TwoStateRotater.rotationX2": "0.000000",
                     "Misc_TwoStateRotater.duration": "0.500000",
+                    "Misc_TwoStateRotater.rotationX2": "0.000000",
                     "Misc_TwoStateRotater.startingState": "0"
                 },
                 "EntityReferenceFields": [
@@ -248,9 +248,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -1.2409918308258057,
-                    "y": 1.0563558340072632,
-                    "z": -23.53904914855957
+                    "x": 11.60312557220459,
+                    "y": 1.0563536882400513,
+                    "z": -19.55702018737793
                 },
                 "Scale": {
                     "x": 0.800000011920929,
@@ -259,7 +259,7 @@
                 },
                 "Rotation": {
                     "x": 0.0,
-                    "y": -85.99992370605469,
+                    "y": 0.0,
                     "z": 0.0
                 },
                 "luid": 8390884941517225996
@@ -294,10 +294,10 @@
                     "Player_Controller"
                 ],
                 "SerializedFields": {
-                    "Player_Controller.playerCameraRef": "7308613686500261889",
                     "Player_Controller.jumpStrength": "2.500000",
-                    "Player_Controller.lookSensitivity": "0.250000",
+                    "Player_Controller.playerCameraRef": "7308613686500261889",
                     "Player_Controller.gravity": "10.000000",
+                    "Player_Controller.lookSensitivity": "0.250000",
                     "Player_Controller.moveSpeed": "4.000000",
                     "Player_Controller.snappiness": "5.000000"
                 },
@@ -339,7 +339,7 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -21.0,
+                    "x": 0.0,
                     "y": 0.0,
                     "z": 0.0
                 },
@@ -352,11 +352,11 @@
                 ],
                 "SerializedFields": {
                     "Player_Raycast.interval": "0.100000",
-                    "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.distance": "5.000000",
+                    "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.targetLayer": "0",
-                    "Misc_Grabber.distance": "2.000000",
                     "Misc_Grabber.grabStrength": "0.000000",
+                    "Misc_Grabber.distance": "2.000000",
                     "Misc_Grabber.damping": "0.000000"
                 },
                 "EntityReferenceFields": [],
@@ -444,8 +444,8 @@
                 ],
                 "SerializedFields": {
                     "Watch_Controller.maxResource": "100.000000",
-                    "Watch_Controller.resourceRegenRate": "20.000000",
                     "Watch_Controller.activationThreshold": "0.300000",
+                    "Watch_Controller.resourceRegenRate": "20.000000",
                     "Watch_Controller.resourceConsumeRate": "50.000000",
                     "Watch_Controller.minDeactivationTime": "0.500000"
                 },
@@ -837,8 +837,8 @@
                     "Interactable_TwoWaySwitch.toggleCooldown": "0.000000",
                     "Misc_TwoStateRotater.target": "7308613746448793600",
                     "Misc_TwoStateRotater.rotationX1": "0.000000",
-                    "Misc_TwoStateRotater.rotationX2": "90.000000",
                     "Misc_TwoStateRotater.duration": "1.000000",
+                    "Misc_TwoStateRotater.rotationX2": "90.000000",
                     "Misc_TwoStateRotater.startingState": "0",
                     "Puzzle_Lever.twoStateRotaterObject": "7308613746448793600",
                     "Puzzle_Lever.twoWaySwitchObject": "7308613746448793600",
@@ -943,14 +943,14 @@
                     "Puzzle_MultiLightSequencer.sequenceLength": "3",
                     "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
                     "Puzzle_MultiLightSequencer.light4": "0",
-                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "0",
-                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
+                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light6": "0",
+                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
                     "Puzzle_MultiLightSequencer.light7": "0",
                     "Puzzle_MultiLightSequencer.lightOffMaterial": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_MultiLightSequencer.solvedEventName": "PuzzleSolved",
                     "Puzzle_MultiLightSequencer.light8": "0",
+                    "Puzzle_MultiLightSequencer.solvedEventName": "PuzzleSolved",
                     "Puzzle_MultiLightSequencer.light9": "0",
                     "Puzzle_MultiLightSequencer.lightOnMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Puzzle_MultiLightSequencer.blinkOffTime": "0.200000",
@@ -1421,9 +1421,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "1",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "1"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -1561,9 +1561,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "2",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "2"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -1701,9 +1701,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "3",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "3"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -2302,8 +2302,8 @@
                 ],
                 "SerializedFields": {
                     "Interactable_Gate.playerRef": "7308613656064753675",
-                    "Interactable_Gate.interactionDistance": "5.000000",
                     "Interactable_Gate.logInteractions": "0",
+                    "Interactable_Gate.interactionDistance": "5.000000",
                     "Interactable_Gate.tweenDuration": "1.500000",
                     "Interactable_Gate.moveDistance": "1.265000"
                 },
@@ -2988,10 +2988,10 @@
                 "data": {
                     "index": 2,
                     "value": {
-                        "Intensity": 1.0,
+                        "Intensity": 3.5,
                         "Inner Cone Angle": 10.0,
                         "Outer Cone Angle": 75.0,
-                        "Range": 10.0
+                        "Range": 12.5
                     }
                 },
                 "color": {
@@ -3001,6 +3001,15 @@
                 },
                 "shadowType": 2,
                 "shadowUpdateMode": 1
+            },
+            "Animator": {
+                "animClipUUID": "fa1a19d5-f30a-4cc1-88c7-4ef98492c253",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 1,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664820121601
             }
         },
         {
@@ -4584,323 +4593,19 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Laser",
+                "name": "Empty Entity",
                 "isActive": 1,
-                "luid": 7308613782253731889
+                "luid": 7308613790831280131
             },
             "Hierarchy": {
-                "luid": 7526193939251068979,
+                "luid": 7526193947828617221,
                 "parentLuid": 7526193939249954861
             },
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": 0.8148736953735352,
-                    "z": 0.800000011920929
-                },
-                "Scale": {
-                    "x": 0.05000002309679985,
-                    "y": 1.100000023841858,
-                    "z": 0.05000000074505806
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "luid": 8390885067706204210
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829229956399156
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787780448343
-            },
-            "Hierarchy": {
-                "luid": 7526193944777785430,
-                "parentLuid": 7526193939249954861
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.5679596662521362,
-                    "z": 0.7999992370605469
-                },
-                "Scale": {
-                    "x": 0.05000002309679985,
-                    "y": 1.100000023841858,
-                    "z": 0.05000000074505806
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "luid": 8390885073232920664
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235483115609
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787780776027
-            },
-            "Hierarchy": {
-                "luid": 7526193944778113114,
-                "parentLuid": 7526193939249954861
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.3243582248687744,
-                    "z": 0.7999992370605469
-                },
-                "Scale": {
-                    "x": 0.05000001937150955,
-                    "y": 1.0999999046325684,
-                    "z": 0.05000000074505806
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": -2.9103833926180656e-11,
-                    "z": 0.027415568009018898
-                },
-                "luid": 8390885073233248348
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235483443293
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787780776031
-            },
-            "Hierarchy": {
-                "luid": 7526193944778113118,
-                "parentLuid": 7526193939249954861
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.07958531379699707,
-                    "z": 0.7999992370605469
-                },
-                "Scale": {
-                    "x": 0.05000001937150955,
-                    "y": 1.0999999046325684,
-                    "z": 0.05000000074505806
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "luid": 8390885073233248352
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235483443297
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787788181603
-            },
-            "Hierarchy": {
-                "luid": 7526193944785518690,
-                "parentLuid": 7526193939249954861
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -0.16423392295837402,
-                    "z": 0.7999992370605469
-                },
-                "Scale": {
-                    "x": 0.05000001937150955,
-                    "y": 1.100000023841858,
-                    "z": 0.05000000819563866
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885073240653924
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235490848869
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787788247143
-            },
-            "Hierarchy": {
-                "luid": 7526193944785584230,
-                "parentLuid": 7526193939249954861
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -0.40934962034225464,
-                    "z": 0.7999992370605469
-                },
-                "Scale": {
-                    "x": 0.05000001937150955,
-                    "y": 1.100000023841858,
-                    "z": 0.05000000819563866
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885073240719464
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235490914409
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787788247147
-            },
-            "Hierarchy": {
-                "luid": 7526193944785584234,
-                "parentLuid": 7526193939249954861
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -0.6530835628509521,
-                    "z": 0.7999992370605469
-                },
-                "Scale": {
-                    "x": 0.05000001937150955,
-                    "y": 1.100000023841858,
-                    "z": 0.05000000819563866
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885073240719468
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235490914413
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787793817711
-            },
-            "Hierarchy": {
-                "luid": 7526193944791154798,
-                "parentLuid": 7526193939249954861
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -0.8960452675819397,
-                    "z": 0.7999992370605469
-                },
-                "Scale": {
-                    "x": 0.05000001937150955,
-                    "y": 1.1000001430511475,
-                    "z": 0.050000015646219254
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885073246290032
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235496484977
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Lasers Left",
-                "isActive": 1,
-                "luid": 7308613787798995060
-            },
-            "Hierarchy": {
-                "luid": 7526193944796332147,
-                "parentLuid": 7526193944747704405
-            },
-            "Transform": {
-                "Position": {
-                    "x": -0.03200000151991844,
-                    "y": 0.0,
-                    "z": 0.0
+                    "y": 0.8134758472442627,
+                    "z": 0.237396240234375
                 },
                 "Scale": {
                     "x": 1.0,
@@ -4912,7 +4617,623 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885073251467381
+                "luid": 8390885076283752452
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613787780776031
+            },
+            "Hierarchy": {
+                "luid": 7526193944778113118,
+                "parentLuid": 7526193947828617221
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885073233248352
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829235483443297
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664920588294
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790855593992
+            },
+            "Hierarchy": {
+                "luid": 7526193947852931079,
+                "parentLuid": 7526193939249954861
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.5722532272338867,
+                    "z": 1.2717971801757813
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308066313
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790855593995
+            },
+            "Hierarchy": {
+                "luid": 7526193947852931082,
+                "parentLuid": 7526193947852931079
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308066316
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238558261261
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664936775694
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790856249360
+            },
+            "Hierarchy": {
+                "luid": 7526193947853586447,
+                "parentLuid": 7526193939249954861
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.3276132345199585,
+                    "z": 0.2370000034570694
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308721681
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790856249363
+            },
+            "Hierarchy": {
+                "luid": 7526193947853586450,
+                "parentLuid": 7526193947853586447
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308721684
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238558916629
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664937431062
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790856314904
+            },
+            "Hierarchy": {
+                "luid": 7526193947853651991,
+                "parentLuid": 7526193939249954861
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.07872772216796875,
+                    "z": 1.2719993591308594
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308787225
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790856314907
+            },
+            "Hierarchy": {
+                "luid": 7526193947853651994,
+                "parentLuid": 7526193947853651991
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308787228
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238558982173
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664937496606
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790856314912
+            },
+            "Hierarchy": {
+                "luid": 7526193947853651999,
+                "parentLuid": 7526193939249954861
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.16243469715118408,
+                    "z": 0.2370000034570694
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308787233
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790856314915
+            },
+            "Hierarchy": {
+                "luid": 7526193947853652002,
+                "parentLuid": 7526193947853651999
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308787236
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238558982181
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664937496614
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790856380456
+            },
+            "Hierarchy": {
+                "luid": 7526193947853717543,
+                "parentLuid": 7526193939249954861
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.4084617495536804,
+                    "z": 1.270456314086914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308852777
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790856380459
+            },
+            "Hierarchy": {
+                "luid": 7526193947853717546,
+                "parentLuid": 7526193947853717543
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308852780
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238559047725
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664937562158
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790856380464
+            },
+            "Hierarchy": {
+                "luid": 7526193947853717551,
+                "parentLuid": 7526193939249954861
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.6540970206260681,
+                    "z": 0.23699951171875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308852785
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790856380467
+            },
+            "Hierarchy": {
+                "luid": 7526193947853717554,
+                "parentLuid": 7526193947853717551
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308852788
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238559047733
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664937562166
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790856380472
+            },
+            "Hierarchy": {
+                "luid": 7526193947853717559,
+                "parentLuid": 7526193939249954861
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.8953096866607666,
+                    "z": 1.2700004577636719
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308852793
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790856380475
+            },
+            "Hierarchy": {
+                "luid": 7526193947853717562,
+                "parentLuid": 7526193947853717559
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076308852796
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238559047741
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664937562174
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Lasers Left",
+                "isActive": 1,
+                "luid": 7308613790875385920
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723007,
+                "parentLuid": 7526193944747704405
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -1.6026630401611328
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858241
             },
             "Collider": {
                 "type": 0,
@@ -4920,7 +5241,7 @@
                 "center": {
                     "x": 0.0,
                     "y": 0.0,
-                    "z": -0.800000011920929
+                    "z": 0.800000011920929
                 },
                 "data": {
                     "index": 0,
@@ -4932,45 +5253,37 @@
                         }
                     }
                 },
-                "luid": 7165061549676560502
+                "luid": 7165061552752951362
             }
         },
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Laser",
+                "name": "Empty Entity",
                 "isActive": 1,
-                "luid": 7308613787798995064
+                "luid": 7308613790875385924
             },
             "Hierarchy": {
-                "luid": 7526193944796332151,
-                "parentLuid": 7526193944796332147
+                "luid": 7526193947872723011,
+                "parentLuid": 7526193947872723007
             },
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": 0.8148736953735352,
-                    "z": -0.800000011920929
+                    "y": 0.8134758472442627,
+                    "z": 0.237396240234375
                 },
                 "Scale": {
-                    "x": 0.05000002309679985,
-                    "y": 1.100000023841858,
-                    "z": 0.05000000074505806
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
                 },
                 "Rotation": {
-                    "x": 90.0,
+                    "x": -0.0,
                     "y": 0.0,
-                    "z": 0.0
+                    "z": -0.0
                 },
-                "luid": 8390885073251467385
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235501662330
+                "luid": 8390885076327858245
             }
         },
         {
@@ -4978,131 +5291,17 @@
             "EntityMeta": {
                 "name": "Laser",
                 "isActive": 1,
-                "luid": 7308613787798995068
+                "luid": 7308613790875385927
             },
             "Hierarchy": {
-                "luid": 7526193944796332155,
-                "parentLuid": 7526193944796332147
+                "luid": 7526193947872723014,
+                "parentLuid": 7526193947872723011
             },
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": 0.5679596662521362,
-                    "z": -0.800000011920929
-                },
-                "Scale": {
-                    "x": 0.05000002309679985,
-                    "y": 1.100000023841858,
-                    "z": 0.05000000074505806
-                },
-                "Rotation": {
-                    "x": 90.0,
                     "y": 0.0,
-                    "z": 0.0
-                },
-                "luid": 8390885073251467389
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235501662334
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787798995072
-            },
-            "Hierarchy": {
-                "luid": 7526193944796332159,
-                "parentLuid": 7526193944796332147
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.3243582248687744,
-                    "z": -0.800000011920929
-                },
-                "Scale": {
-                    "x": 0.05000001937150955,
-                    "y": 1.0999999046325684,
-                    "z": 0.05000000074505806
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": -2.9103833926180656e-11,
-                    "z": 0.027415568009018898
-                },
-                "luid": 8390885073251467393
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235501662338
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787798995076
-            },
-            "Hierarchy": {
-                "luid": 7526193944796332163,
-                "parentLuid": 7526193944796332147
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.07958531379699707,
-                    "z": -0.800000011920929
-                },
-                "Scale": {
-                    "x": 0.05000001937150955,
-                    "y": 1.0999999046325684,
-                    "z": 0.05000000074505806
-                },
-                "Rotation": {
-                    "x": 90.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "luid": 8390885073251467397
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829235501662342
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "luid": 7308613787798995080
-            },
-            "Hierarchy": {
-                "luid": 7526193944796332167,
-                "parentLuid": 7526193944796332147
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": -0.16423392295837402,
-                    "z": -0.800000011920929
+                    "z": 0.5626029968261719
                 },
                 "Scale": {
                     "x": 0.05000001937150955,
@@ -5114,7 +5313,7 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885073251467401
+                "luid": 8390885076327858248
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cylinder",
@@ -5122,7 +5321,46 @@
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
-                "luid": 8242829235501662346
+                "luid": 8242829238578053193
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664956567626
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790875385932
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723019,
+                "parentLuid": 7526193947872723007
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.5722532272338867,
+                    "z": 1.2717971801757813
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858253
             }
         },
         {
@@ -5130,17 +5368,17 @@
             "EntityMeta": {
                 "name": "Laser",
                 "isActive": 1,
-                "luid": 7308613787798995084
+                "luid": 7308613790875385935
             },
             "Hierarchy": {
-                "luid": 7526193944796332171,
-                "parentLuid": 7526193944796332147
+                "luid": 7526193947872723022,
+                "parentLuid": 7526193947872723019
             },
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": -0.40934962034225464,
-                    "z": -0.800000011920929
+                    "y": 0.0,
+                    "z": 0.5626029968261719
                 },
                 "Scale": {
                     "x": 0.05000001937150955,
@@ -5152,7 +5390,7 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885073251467405
+                "luid": 8390885076327858256
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cylinder",
@@ -5160,7 +5398,46 @@
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
-                "luid": 8242829235501662350
+                "luid": 8242829238578053201
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664956567634
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790875385940
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723027,
+                "parentLuid": 7526193947872723007
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.3276132345199585,
+                    "z": 0.2370000034570694
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858261
             }
         },
         {
@@ -5168,17 +5445,17 @@
             "EntityMeta": {
                 "name": "Laser",
                 "isActive": 1,
-                "luid": 7308613787798995088
+                "luid": 7308613790875385943
             },
             "Hierarchy": {
-                "luid": 7526193944796332175,
-                "parentLuid": 7526193944796332147
+                "luid": 7526193947872723030,
+                "parentLuid": 7526193947872723027
             },
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": -0.6530835628509521,
-                    "z": -0.800000011920929
+                    "y": 0.0,
+                    "z": 0.5626029968261719
                 },
                 "Scale": {
                     "x": 0.05000001937150955,
@@ -5190,7 +5467,7 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885073251467409
+                "luid": 8390885076327858264
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cylinder",
@@ -5198,7 +5475,46 @@
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
-                "luid": 8242829235501662354
+                "luid": 8242829238578053209
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664956567642
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790875385948
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723035,
+                "parentLuid": 7526193947872723007
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.07872772216796875,
+                    "z": 1.2719993591308594
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858269
             }
         },
         {
@@ -5206,29 +5522,29 @@
             "EntityMeta": {
                 "name": "Laser",
                 "isActive": 1,
-                "luid": 7308613787798995092
+                "luid": 7308613790875385951
             },
             "Hierarchy": {
-                "luid": 7526193944796332179,
-                "parentLuid": 7526193944796332147
+                "luid": 7526193947872723038,
+                "parentLuid": 7526193947872723035
             },
             "Transform": {
                 "Position": {
                     "x": 0.0,
-                    "y": -0.8960452675819397,
-                    "z": -0.800000011920929
+                    "y": 0.0,
+                    "z": 0.5626029968261719
                 },
                 "Scale": {
                     "x": 0.05000001937150955,
-                    "y": 1.1000001430511475,
-                    "z": 0.050000015646219254
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
                 },
                 "Rotation": {
                     "x": 90.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885073251467413
+                "luid": 8390885076327858272
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cylinder",
@@ -5236,7 +5552,324 @@
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
-                "luid": 8242829235501662358
+                "luid": 8242829238578053217
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664956567650
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790875385956
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723043,
+                "parentLuid": 7526193947872723007
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.16243469715118408,
+                    "z": 0.2370000034570694
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858277
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790875385959
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723046,
+                "parentLuid": 7526193947872723043
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858280
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238578053225
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664956567658
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790875385964
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723051,
+                "parentLuid": 7526193947872723007
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.4084617495536804,
+                    "z": 1.270456314086914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858285
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790875385967
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723054,
+                "parentLuid": 7526193947872723051
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858288
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238578053233
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664956567666
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790875385972
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723059,
+                "parentLuid": 7526193947872723007
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.6540970206260681,
+                    "z": 0.23699951171875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858293
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790875385975
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723062,
+                "parentLuid": 7526193947872723059
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858296
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238578053241
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664956567674
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613790875385980
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723067,
+                "parentLuid": 7526193947872723007
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -0.8953096866607666,
+                    "z": 1.2700004577636719
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858301
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "luid": 7308613790875385983
+            },
+            "Hierarchy": {
+                "luid": 7526193947872723070,
+                "parentLuid": 7526193947872723067
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.5626029968261719
+                },
+                "Scale": {
+                    "x": 0.05000001937150955,
+                    "y": 1.100000023841858,
+                    "z": 0.05000000819563866
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885076327858304
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829238578053249
+            },
+            "Animator": {
+                "animClipUUID": "0e1322c7-5cf9-4488-bd18-bc0772099e29",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 0,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664956567682
             }
         },
         {
@@ -5273,7 +5906,7 @@
                     "LaserListener"
                 ],
                 "SerializedFields": {
-                    "LaserListener.leftLaser": "7308613787798995060",
+                    "LaserListener.leftLaser": "7308613790875385920",
                     "LaserListener.rightLaser": "7308613782252617771"
                 },
                 "EntityReferenceFields": [
@@ -5324,28 +5957,28 @@
                     "Puzzle_Mirror.steppedOnMaterial": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Puzzle_Mirror.tile01": "8390885029412536365",
                     "Puzzle_Mirror.destinationMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Puzzle_Mirror.debugMode": "0",
                     "Puzzle_Mirror.tile02": "8390885029414568001",
+                    "Puzzle_Mirror.debugMode": "0",
                     "Puzzle_Mirror.tile10": "8390885029416009833",
                     "Puzzle_Mirror.tile11": "8390885029416337533",
                     "Puzzle_Mirror.tile12": "8390885029416403089",
                     "Puzzle_Mirror.tile13": "8390885029416468645",
-                    "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
                     "Puzzle_Mirror.tile20": "8390885029422235833",
-                    "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
+                    "Puzzle_Mirror.mirrorTile03": "8390885029427020104",
                     "Puzzle_Mirror.tile21": "8390885029422366925",
-                    "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
+                    "Puzzle_Mirror.mirrorTile02": "8390885029427020084",
                     "Puzzle_Mirror.tile22": "8390885029422432481",
-                    "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
-                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.mirrorTile01": "8390885029427020064",
                     "Puzzle_Mirror.tile23": "8390885029422498037",
+                    "Puzzle_Mirror.endRow": "0",
+                    "Puzzle_Mirror.mirrorTile00": "8390885029427020044",
                     "Puzzle_Mirror.mirrorTile10": "8390885029427020124",
                     "Puzzle_Mirror.mirrorTile11": "8390885029427020144",
                     "Puzzle_Mirror.mirrorTile12": "8390885029427020164",
                     "Puzzle_Mirror.mirrorTile13": "8390885029427020184",
                     "Puzzle_Mirror.mirrorTile20": "8390885029427020204",
-                    "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
                     "Puzzle_Mirror.startCol": "0",
+                    "Puzzle_Mirror.mirrorTile21": "8390885029427020224",
                     "Puzzle_Mirror.mirrorTile22": "8390885029427020244",
                     "Puzzle_Mirror.mirrorTile23": "8390885029427020264",
                     "Puzzle_Mirror.startRow": "2",
@@ -5357,93 +5990,6 @@
                     "mazeServerDoor"
                 ],
                 "luid": 7958820940193726989
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "box",
-                "isActive": 1,
-                "luid": 7308613786681409536
-            },
-            "Hierarchy": {
-                "luid": 7526193943678746626,
-                "parentLuid": 7308613787704623104
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.9403104782104492,
-                    "y": 0.1531941443681717,
-                    "z": -0.4960174560546875
-                },
-                "Scale": {
-                    "x": 0.20000000298023224,
-                    "y": 0.20000000298023224,
-                    "z": 0.20000000298023224
-                },
-                "Rotation": {
-                    "x": -0.06061781197786331,
-                    "y": -0.00003969452154706232,
-                    "z": 0.05368496850132942
-                },
-                "luid": 8390885072133881857
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829234384535557
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 0.10000000149011612,
-                            "y": 0.10000000149011612,
-                            "z": 0.10000000149011612
-                        }
-                    }
-                },
-                "luid": 7165061548559368195
-            },
-            "Rigidbody": {
-                "Mass": 1.0,
-                "Linear Damping": 0.0,
-                "Angular Damping": 0.05000000074505806,
-                "Use Gravity": 1,
-                "Is Kinematic": 0,
-                "freezeRotX": 0,
-                "freezeRotY": 0,
-                "freezeRotZ": 0,
-                "freezePosX": 0,
-                "freezePosY": 0,
-                "freezePosZ": 0,
-                "luid": 8242266284431048708
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Interactable_Grabbable"
-                ],
-                "SerializedFields": {
-                    "Interactable_Grabbable.body": "8242266284431048708",
-                    "Interactable_Grabbable.isHeavy": "0",
-                    "Interactable_Grabbable.activatesPressurePlates": "0",
-                    "Interactable_Grabbable.playerGrabber": "7308613686500261889"
-                },
-                "EntityReferenceFields": [
-                    "playerGrabber"
-                ],
-                "luid": 7958820982884139014
             }
         },
         {
@@ -5482,14 +6028,16 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.doorRef": "7308613787704623154",
                     "Interactable_DoorHinge.isEventBased": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
-                    "playerRef"
+                    "playerRef",
+                    "doorRef"
                 ],
                 "luid": 7958820984116019381
             }
@@ -5667,9 +6215,9 @@
                 ],
                 "SerializedFields": {
                     "Interactable_Grabbable.body": "8242266285755727877",
-                    "Interactable_Grabbable.isHeavy": "1",
-                    "Interactable_Grabbable.activatesPressurePlates": "0",
-                    "Interactable_Grabbable.playerGrabber": "7308613686500261889"
+                    "Interactable_Grabbable.isHeavy": "0",
+                    "Interactable_Grabbable.playerGrabber": "7308613656064753675",
+                    "Interactable_Grabbable.activatesPressurePlates": "0"
                 },
                 "EntityReferenceFields": [
                     "playerGrabber"
@@ -5974,7 +6522,7 @@
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
+                "materialUUID": "9db8e4b5-89e0-48d1-ac74-fbffe01fe68d",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
@@ -6143,14 +6691,16 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.doorRef": "7308613788329705531",
                     "Interactable_DoorHinge.isEventBased": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
-                    "playerRef"
+                    "playerRef",
+                    "doorRef"
                 ],
                 "luid": 7958820984531320889
             }
@@ -6191,6 +6741,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 12,
                 "luid": 8242829236032372797
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.0820932388305664,
+                            "y": 1.0472259521484375,
+                            "z": 0.6315752267837524
+                        }
+                    }
+                },
+                "luid": 7165061552652156930
             }
         },
         {
@@ -6452,6 +7022,15 @@
                 },
                 "shadowType": 0,
                 "shadowUpdateMode": 0
+            },
+            "Animator": {
+                "animClipUUID": "fa1a19d5-f30a-4cc1-88c7-4ef98492c253",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 1,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664852561921
             }
         },
         {
@@ -6648,6 +7227,15 @@
                 },
                 "shadowType": 0,
                 "shadowUpdateMode": 0
+            },
+            "Animator": {
+                "animClipUUID": "fa1a19d5-f30a-4cc1-88c7-4ef98492c253",
+                "applyRootMotion": 0,
+                "animatePhysics": 0,
+                "Play On Start": 1,
+                "updateMode": 0,
+                "cullingMode": 0,
+                "luid": 7017568664850202624
             }
         },
         {
@@ -12411,8 +12999,8 @@
                 "SerializedFields": {
                     "Misc_PlayerRespawn.playerRef": "7308613656064753675",
                     "Misc_PlayerRespawn.checkpointRef": "7308613744454860827",
-                    "Misc_PlayerRespawn.returnSpeed": "100.000000",
                     "Misc_PlayerRespawn.returnStopThreshold": "0.050000",
+                    "Misc_PlayerRespawn.returnSpeed": "100.000000",
                     "Misc_PlayerRespawn.returnOnlyXZ": "1"
                 },
                 "EntityReferenceFields": [
@@ -14529,13 +15117,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "0",
@@ -14613,13 +15201,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "1",
@@ -14697,13 +15285,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "2",
@@ -14781,13 +15369,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "3",
@@ -15079,13 +15667,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "0",
@@ -15163,13 +15751,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "1",
@@ -15247,13 +15835,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "2",
@@ -15331,13 +15919,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "3",
@@ -15431,8 +16019,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -15494,8 +16082,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -15557,8 +16145,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -15620,8 +16208,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -15795,13 +16383,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "0",
@@ -15879,13 +16467,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "1",
@@ -15963,13 +16551,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "2",
@@ -16047,13 +16635,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "3",
@@ -16345,13 +16933,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "0",
@@ -16429,13 +17017,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "1",
@@ -16513,13 +17101,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "2",
@@ -16597,13 +17185,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                     "Interactable_WireTether.wireIndex": "3",
@@ -16697,8 +17285,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -16760,8 +17348,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -16823,8 +17411,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -16886,8 +17474,8 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
@@ -17147,8 +17735,8 @@
                 "SerializedFields": {
                     "Interactable_Grabbable.body": "8242266287197519894",
                     "Interactable_Grabbable.isHeavy": "0",
-                    "Interactable_Grabbable.activatesPressurePlates": "0",
-                    "Interactable_Grabbable.playerGrabber": "7308613656064753675"
+                    "Interactable_Grabbable.playerGrabber": "7308613656064753675",
+                    "Interactable_Grabbable.activatesPressurePlates": "0"
                 },
                 "EntityReferenceFields": [
                     "playerGrabber"
@@ -17272,7 +17860,7 @@
                 "luid": 7165061551465627654
             },
             "Rigidbody": {
-                "Mass": 1.0,
+                "Mass": 10.0,
                 "Linear Damping": 0.0,
                 "Angular Damping": 0.05000000074505806,
                 "Use Gravity": 1,
@@ -17292,8 +17880,8 @@
                 "SerializedFields": {
                     "Interactable_Grabbable.body": "8242266287342682119",
                     "Interactable_Grabbable.isHeavy": "0",
-                    "Interactable_Grabbable.activatesPressurePlates": "0",
-                    "Interactable_Grabbable.playerGrabber": "7308613656064753675"
+                    "Interactable_Grabbable.playerGrabber": "7308613656064753675",
+                    "Interactable_Grabbable.activatesPressurePlates": "0"
                 },
                 "EntityReferenceFields": [
                     "playerGrabber"
@@ -17332,7 +17920,7 @@
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
+                "materialUUID": "9db8e4b5-89e0-48d1-ac74-fbffe01fe68d",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
@@ -17372,12 +17960,12 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 23.337095260620117,
+                    "x": 25.76399803161621,
                     "y": 1.4119114875793457,
                     "z": -24.571256637573242
                 },
                 "Scale": {
-                    "x": 1.0,
+                    "x": 6.0,
                     "y": 4.0,
                     "z": 6.5
                 },
@@ -17390,7 +17978,7 @@
             },
             "Renderer": {
                 "modelUUID": "builtin:model/cube",
-                "materialUUID": "neunlitmat",
+                "materialUUID": "9db8e4b5-89e0-48d1-ac74-fbffe01fe68d",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
@@ -17408,7 +17996,7 @@
                     "index": 0,
                     "value": {
                         "halfExtents": {
-                            "x": 0.5,
+                            "x": 3.0,
                             "y": 2.0,
                             "z": 3.25
                         }
@@ -17430,9 +18018,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": -9.21905517578125
+                    "x": -1.268805742263794,
+                    "y": 1.2234864234924316,
+                    "z": -23.505210876464844
                 },
                 "Scale": {
                     "x": 1.0,
@@ -17460,9 +18048,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.0,
-                    "y": 0.6357259154319763,
-                    "z": -3.7087202072143555
+                    "x": 1.2919719219207764,
+                    "y": -0.6706867814064026,
+                    "z": 10.639822959899902
                 },
                 "Scale": {
                     "x": 1.0,
@@ -17495,36 +18083,19 @@
                     }
                 },
                 "luid": 7165061552223092745
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
-                "name": "Section 2",
-                "isActive": 1,
-                "luid": 7308613790343692295
             },
-            "Hierarchy": {
-                "luid": 7526193947341029382,
-                "parentLuid": 7526193947339390978
-            },
-            "Transform": {
-                "Position": {
-                    "x": -1.1918864250183105,
-                    "y": 1.263610601425171,
-                    "z": -14.285892486572266
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_Teleporter"
+                ],
+                "SerializedFields": {
+                    "Misc_Teleporter.player": "7308613656064753675",
+                    "Misc_Teleporter.targetTransformRef": "8390885075794526209"
                 },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885075796164616
+                "EntityReferenceFields": [
+                    "player"
+                ],
+                "luid": 7958820986881048576
             }
         }
     ]

@@ -63,7 +63,7 @@ public:
     void OnCollisionExit(Entity other) override { (void)other; }
     void OnCollisionStay(Entity other) override { (void)other; }
     void OnTriggerEnter(Entity other) override { 
-        //CC_SetPo
+		CC_SetPosition(GetPosition(targetTransformRef), player.GetEntity());
     }
     void OnTriggerExit(Entity other) override { (void)other; }
     void OnTriggerStay(Entity other) override { (void)other; }
