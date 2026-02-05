@@ -264,6 +264,7 @@ private:
         void* payload = reinterpret_cast<void*>(static_cast<std::uintptr_t>(puzzleKeyId));
         //Events::Send(evt, payload); // this crashes - RF
         Events::Send(evt, &puzzleKeyId);
+        Events::Send("RaziPuzzle");
     }
 
     void BeginNewRound(bool reseed) {

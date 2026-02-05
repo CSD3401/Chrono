@@ -35,6 +35,8 @@
 #include "Scripts/Listener_StretchObject.hpp"
 #include "Scripts/Interactable_SequencerPad.hpp"
 #include "Scripts/Puzzle_MultiLightSequencer.hpp"
+#include "Scripts/LaserListener.hpp"
+#include "Scripts/IntersectionListerner.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -140,6 +142,12 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_MultiLightSequencer", []() -> NE::Scripting::IScript* {
             return new Puzzle_MultiLightSequencer();
+            });
+        registrar->RegisterScript("LaserListener", []() -> NE::Scripting::IScript* {
+            return new LaserListener();
+            });
+        registrar->RegisterScript("IntersectionListener", []() -> NE::Scripting::IScript* {
+            return new IntersectionListener();
             });
 
         }
