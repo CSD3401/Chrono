@@ -30,6 +30,7 @@
 #include "Scripts/Misc_Sinkhole.hpp"
 #include "Scripts/Misc_MaterialSwitcher.hpp"
 #include "Scripts/Misc_PlayerRespawn.hpp"
+#include "Scripts/Misc_RespawnOnCollision.hpp"
 #include "Scripts/Listener_MoveObject.hpp"
 #include "Scripts/Listener_StretchObject.hpp"
 #include "Scripts/Interactable_SequencerPad.hpp"
@@ -124,6 +125,9 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_PlayerRespawn", []() -> NE::Scripting::IScript* {
             return new Misc_PlayerRespawn();
+            });
+        registrar->RegisterScript("Misc_RespawnOnCollision", []() -> NE::Scripting::IScript* {
+            return new Misc_RespawnOnCollision();
             });
         registrar->RegisterScript("Listener_MoveObject", []() -> NE::Scripting::IScript* {
             return new Listener_MoveObject();
