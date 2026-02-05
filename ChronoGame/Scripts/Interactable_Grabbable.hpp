@@ -78,6 +78,12 @@ public:
         return activatesPressurePlates;
     }
 
+    void ForceLetGo()
+    {
+        GameObject playerRef(playerGrabber.GetEntity());
+        playerRef.GetComponent<Misc_Grabber>()->LetGo();
+    }
+
 private:
     RigidbodyRef body;
     bool isHeavy = false;
