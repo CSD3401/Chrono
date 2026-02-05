@@ -4,19 +4,23 @@
 /**
  * Interactable_DoorHinge
  *
- * Rotates door around hinge (Y-axis rotation) when player presses E nearby.
- * Attach this to the door HINGE parent entity, not the door mesh itself.
+ * Rotates door around hinge (Y-axis rotation) in two modes:
+ * 1. Distance-based: Player presses E when nearby
+ * 2. Event-based: Receives event message (e.g., from puzzle completion)
  *
  * Setup:
  * 1. Add this script to the door hinge parent entity
- * 2. Assign playerRef (drag Player entity)
+ * 2. Choose mode:
+ *    - Distance: Set isEventBased=false, assign playerRef
+ *    - Event: Set isEventBased=true, set eventName
  * 3. Set targetRotationY (e.g., -100 to rotate 100 degrees)
- * 4. Press E when near door to open it
  */
 class Interactable_DoorHinge : public IScript {
 public:
     Interactable_DoorHinge() {
         SCRIPT_GAMEOBJECT_REF(playerRef);
+        SCRIPT_FIELD(isEventBased, Bool);
+        SCRIPT_FIELD(eventName, String);
         SCRIPT_FIELD(interactionDistance, Float);
         SCRIPT_FIELD(targetRotationY, Float);
         SCRIPT_FIELD(tweenDuration, Float);
@@ -33,8 +37,12 @@ public:
         Vec3 rot = TF_GetLocalRotation(hingeEntity);
         startingRotation = rot;
 
-        if (!playerRef.IsValid()) {
-            LOG_ERROR("Interactable_DoorHinge: playerRef not assigned!");
+        if (!isEventBased && !playerRef.IsValid()) {
+            LOG_ERROR("Interactable_DoorHinge: playerRef not assigned (required for distance-based mode)!");
+        }
+
+        if (isEventBased && eventName.empty()) {
+            LOG_ERROR("Interactable_DoorHinge: eventName not set (required for event-based mode)!");
         }
 
         if (interactionDistance <= 0.0f) {
@@ -47,11 +55,24 @@ public:
             tweenDuration = 1.5f;
         }
 
-        LOG_DEBUG("Interactable_DoorHinge initialized - StartRot: ({}, {}, {}), TargetRotY: {}",
+        // Register event listener if event-based
+        if (isEventBased && !eventName.empty()) {
+            Events::Listen(eventName.c_str(), [this](void* data) {
+                (void)data;
+                OpenDoor();
+                });
+            LOG_DEBUG("Interactable_DoorHinge: Listening for event '{}'", eventName);
+        }
+
+        LOG_DEBUG("Interactable_DoorHinge initialized - Mode: {}, StartRot: ({}, {}, {}), TargetRotY: {}",
+            isEventBased ? "Event" : "Distance",
             startingRotation.x, startingRotation.y, startingRotation.z, targetRotationY);
     }
 
     void Update(double deltaTime) override {
+        // Skip distance check if event-based
+        if (isEventBased) return;
+
         if (!playerRef.IsValid() || isRotating) return;
 
         // Get player entity and positions
@@ -111,9 +132,11 @@ private:
 
     // Exposed fields
     GameObjectRef playerRef;
+    bool isEventBased = false;  // false = distance check, true = event-based
+    std::string eventName = "";  // Event to listen for (e.g., "MirrorPuzzleSolved")
     float interactionDistance = 5.0f;
     float targetRotationY = -100.0f;  // Target Y rotation in degrees
-    float tweenDuration = 2.0f;
+    float tweenDuration = 1.5f;
     bool logInteractions = true;
 
     // Runtime
