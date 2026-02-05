@@ -57,7 +57,7 @@ public:
         Entity player = playerRef.GetEntity();
         Vec3 playerPos = GetPosition(GetTransformRef(player));
         Vec3 gatePos = GetPosition(GetTransformRef(gateEntity));
-        LOG_WARNING("Player Pos: " << gatePos.x << " : " << gatePos.z);
+        //LOG_WARNING("Player Pos: " << gatePos.x << " : " << gatePos.z);
 
         // Calculate distance
         Vec3 delta = playerPos - gatePos;

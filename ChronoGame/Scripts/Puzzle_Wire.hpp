@@ -237,7 +237,7 @@ public:
 
             // Increment number of correct pairs
             ++correctPairs;
-            if (correctPairs >= numWires)
+            if (correctPairs == numWires)
             {
                 return true;
             }
