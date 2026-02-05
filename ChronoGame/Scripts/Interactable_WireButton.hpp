@@ -10,7 +10,7 @@
 // Legacy class
 class Interactable_WireButton : public Interactable_ {
 public:
-    Interactable_WireButton() 
+    Interactable_WireButton()
     {
         SCRIPT_FIELD(leftWireIndex, Int);
         SCRIPT_FIELD(wirePuzzleIndex, Int);
@@ -18,7 +18,7 @@ public:
     ~Interactable_WireButton() override = default;
 
     // == Custom Methods ==
-    virtual void Interact() 
+    virtual void Interact()
     {
         if (puzzleSolved)
             return;
@@ -32,7 +32,7 @@ public:
     void Awake() override {}
     void Initialize(Entity entity) override {}
     void Start() override {}
-    void Update(double deltaTime) override 
+    void Update(double deltaTime) override
     {
         //if (Input::WasKeyReleased('N') && leftWireIndex == 0)
         //{

@@ -16,12 +16,15 @@
 #include "Scripts/Puzzle_Lever.hpp"
 #include "Scripts/Puzzle_BatteryPanel.hpp"
 #include "Scripts/Interactable_WireButton.hpp"
+#include "Scripts/Interactable_WireTether.hpp"
 #include "Scripts/Interactable_Grabbable.hpp"
 #include "Scripts/Interactable_OneWaySwitch.hpp"
 #include "Scripts/Interactable_TwoWaySwitch.hpp"
 #include "Scripts/Interactable_Battery.hpp"
 #include "Scripts/Interactable_NoteCollector.hpp"
 #include "Scripts/Interactable_WireTether.hpp"
+#include "Scripts/Interactable_Gate.hpp"
+#include "Scripts/Interactable_DoorHinge.hpp"
 #include "Scripts/Misc_Manager.hpp"
 #include "Scripts/Misc_WireChild.hpp"
 #include "Scripts/Misc_Grabber.hpp"
@@ -83,6 +86,9 @@ extern "C" {
         registrar->RegisterScript("Interactable_WireButton", []() -> NE::Scripting::IScript* {
             return new Interactable_WireButton();
             });
+        registrar->RegisterScript("Interactable_WireTether", []() -> NE::Scripting::IScript* {
+            return new Interactable_WireTether();
+            });
         registrar->RegisterScript("Interactable_Grabbable", []() -> NE::Scripting::IScript* {
             return new Interactable_Grabbable();
             });
@@ -103,6 +109,12 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_NoteCollector", []() -> NE::Scripting::IScript* {
             return new Interactable_NoteCollector();
+            });
+        registrar->RegisterScript("Interactable_Gate", []() -> NE::Scripting::IScript* {
+            return new Interactable_Gate();
+            });
+        registrar->RegisterScript("Interactable_DoorHinge", []() -> NE::Scripting::IScript* {
+            return new Interactable_DoorHinge();
             });
         registrar->RegisterScript("NoteCollector_Controller", []() -> NE::Scripting::IScript* {
             return new NoteCollector_Controller();
