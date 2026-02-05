@@ -20,6 +20,7 @@
 #include "Scripts/Interactable_TwoWaySwitch.hpp"
 #include "Scripts/Interactable_NoteCollector.hpp"
 #include "Scripts/Interactable_Gate.hpp"
+#include "Scripts/Interactable_DoorHinge.hpp"
 #include "Scripts/Misc_Manager.hpp"
 #include "Scripts/Misc_WireChild.hpp"
 #include "Scripts/Misc_Grabber.hpp"
@@ -104,6 +105,9 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_Gate", []() -> NE::Scripting::IScript* {
             return new Interactable_Gate();
+            });
+        registrar->RegisterScript("Interactable_DoorHinge", []() -> NE::Scripting::IScript* {
+            return new Interactable_DoorHinge();
             });
         registrar->RegisterScript("NoteCollector_Controller", []() -> NE::Scripting::IScript* {
             return new NoteCollector_Controller();
