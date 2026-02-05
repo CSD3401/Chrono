@@ -144,55 +144,55 @@ public:
         buttonPressed = true;
     }
 
-    void SwapWireColours(int lIndex)
-    {
-        int leftIndex = lIndex;
-        int rightIndex = leftIndex + 1;
-        // Update the colours in the vector
-        std::swap(wireColours[leftIndex], wireColours[rightIndex]);
+    //void SwapWireColours(int lIndex)
+    //{
+    //    int leftIndex = lIndex;
+    //    int rightIndex = leftIndex + 1;
+    //    // Update the colours in the vector
+    //    std::swap(wireColours[leftIndex], wireColours[rightIndex]);
 
-        // update the wire gameobjects to their new colour
-        //std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
-        //LOG_DEBUG(message.c_str());
-        //Events::Send((message + std::to_string(leftIndex)).c_str(), &wireColours[leftIndex]);
-        //Events::Send((message + std::to_string(rightIndex)).c_str(), &wireColours[rightIndex]);
-        //LOG_DEBUG(message.c_str());
+    //    // update the wire gameobjects to their new colour
+    //    //std::string message = "UpdateWireColour" + std::to_string(wirePuzzleIndex);
+    //    //LOG_DEBUG(message.c_str());
+    //    //Events::Send((message + std::to_string(leftIndex)).c_str(), &wireColours[leftIndex]);
+    //    //Events::Send((message + std::to_string(rightIndex)).c_str(), &wireColours[rightIndex]);
+    //    //LOG_DEBUG(message.c_str());
 
-        GameObject child1(wireChildren[leftIndex]);
-        child1.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[leftIndex]);
-        GameObject child2(wireChildren[rightIndex]);
-        child2.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[rightIndex]);
+    //    GameObject child1(wireChildren[leftIndex]);
+    //    child1.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[leftIndex]);
+    //    GameObject child2(wireChildren[rightIndex]);
+    //    child2.GetComponent<Misc_WireChild>()->UpdateWireColour(wireColours[rightIndex]);
 
-        // Check if the puzzle is solved
-        if (CheckWireColours())
-        {
-            // Send message that puzzle is solved
-            //Solve();
+    //    // Check if the puzzle is solved
+    //    if (CheckWireColours())
+    //    {
+    //        // Send message that puzzle is solved
+    //        //Solve();
 
-            // Current Fix until solve is able to be used
-            LOG_DEBUG("PUZZLE SOLVED!");
-            std::string message = "PuzzleSolved1";
-            Events::Send(message.c_str());
+    //        // Current Fix until solve is able to be used
+    //        LOG_DEBUG("PUZZLE SOLVED!");
+    //        std::string message = "PuzzleSolved1";
+    //        Events::Send(message.c_str());
 
-            //for (int i = 0; i < numWires; ++i)
-            //{
-            //    SetActive(true, connectedWires[i]);
-            //}
-        }
-    }
+    //        //for (int i = 0; i < numWires; ++i)
+    //        //{
+    //        //    SetActive(true, connectedWires[i]);
+    //        //}
+    //    }
+    //}
 
-    bool CheckWireColours()
-    {
-        for (int i = 0; i < wireColours.size(); ++i)
-        {
-            //if (wireColours[i] != correctColours[i])
-            if (wireColours[i] != correctColours[wirePath[i]])
-            {
-                return false;
-            }
-        }
-        return true;
-    }
+    //bool CheckWireColours()
+    //{
+    //    for (int i = 0; i < wireColours.size(); ++i)
+    //    {
+    //        //if (wireColours[i] != correctColours[i])
+    //        if (wireColours[i] != correctColours[wirePath[i]])
+    //        {
+    //            return false;
+    //        }
+    //    }
+    //    return true;
+    //}
 
     void UpdatePuzzleVars()
     {
