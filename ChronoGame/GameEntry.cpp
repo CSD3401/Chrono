@@ -22,6 +22,8 @@
 #include "Scripts/Interactable_Battery.hpp"
 #include "Scripts/Interactable_NoteCollector.hpp"
 #include "Scripts/Interactable_WireTether.hpp"
+#include "Scripts/Interactable_Gate.hpp"
+#include "Scripts/Interactable_DoorHinge.hpp"
 #include "Scripts/Misc_Manager.hpp"
 #include "Scripts/Misc_WireChild.hpp"
 #include "Scripts/Misc_Grabber.hpp"
@@ -103,6 +105,12 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_NoteCollector", []() -> NE::Scripting::IScript* {
             return new Interactable_NoteCollector();
+            });
+        registrar->RegisterScript("Interactable_Gate", []() -> NE::Scripting::IScript* {
+            return new Interactable_Gate();
+            });
+        registrar->RegisterScript("Interactable_DoorHinge", []() -> NE::Scripting::IScript* {
+            return new Interactable_DoorHinge();
             });
         registrar->RegisterScript("NoteCollector_Controller", []() -> NE::Scripting::IScript* {
             return new NoteCollector_Controller();
