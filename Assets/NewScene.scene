@@ -348,22 +348,22 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Player_Raycast",
-                    "Misc_Grabber",
-                    "Camera_FOVPulse"
+                    "Camera_FOVPulse",
+                    "Misc_Grabber"
                 ],
                 "SerializedFields": {
                     "Player_Raycast.interval": "0.100000",
                     "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.distance": "5.000000",
                     "Player_Raycast.targetLayer": "0",
-                    "Misc_Grabber.grabStrength": "0.000000",
-                    "Misc_Grabber.distance": "2.000000",
-                    "Misc_Grabber.damping": "0.000000",
                     "Camera_FOVPulse.baseFov": "60.000000",
                     "Camera_FOVPulse.enabledAtStart": "1",
                     "Camera_FOVPulse.pulseFov": "150.000000",
                     "Camera_FOVPulse.fallTimeSeconds": "0.300000",
-                    "Camera_FOVPulse.riseTimeSeconds": "0.100000"
+                    "Camera_FOVPulse.riseTimeSeconds": "0.100000",
+                    "Misc_Grabber.grabStrength": "0.000000",
+                    "Misc_Grabber.distance": "2.500000",
+                    "Misc_Grabber.damping": "0.000000"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820942659846150
@@ -534,7 +534,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Present Parent",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743835414553
             },
             "Hierarchy": {
@@ -564,7 +564,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Sinkhole",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613743799959556
             },
             "Hierarchy": {
@@ -628,7 +628,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Toppled Rack 1",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613792998752256
             },
             "Hierarchy": {
@@ -698,7 +698,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Toppled Rack 2",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793060028417
             },
             "Hierarchy": {
@@ -768,7 +768,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Toppled Rack 3",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793065730055
             },
             "Hierarchy": {
@@ -838,7 +838,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Toppled Rack 4",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793071890445
             },
             "Hierarchy": {
@@ -902,6 +902,426 @@
                     "wallObject"
                 ],
                 "luid": 7958820989273505809
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Rubble 1",
+                "isActive": 1,
+                "luid": 7308613793118158851
+            },
+            "Hierarchy": {
+                "luid": 7526193950115495941,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 15.743512153625488,
+                    "y": 0.699999988079071,
+                    "z": -19.561145782470703
+                },
+                "Scale": {
+                    "x": 0.07999999821186066,
+                    "y": 0.07999999821186066,
+                    "z": 0.07999999821186066
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885078570631172
+            },
+            "Renderer": {
+                "modelUUID": "18f2e5c9-e5d1-4c65-b2d9-c53885577de7",
+                "materialUUID": "c586eeb6-d9ac-4d0b-9ed2-9f9a3dca7301",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829240820826118
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.800000011920929,
+                            "y": 0.5,
+                            "z": 1.2000000476837158
+                        }
+                    }
+                },
+                "luid": 7165061554995724295
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "TimeWallController"
+                ],
+                "SerializedFields": {
+                    "TimeWallController.wallObject": "7308613793118158851"
+                },
+                "EntityReferenceFields": [
+                    "wallObject"
+                ],
+                "luid": 7958820989452091451
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Rubble 2",
+                "isActive": 1,
+                "luid": 7308613793134346249
+            },
+            "Hierarchy": {
+                "luid": 7526193950131683336,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 21.285310745239258,
+                    "y": 0.699999988079071,
+                    "z": -21.781219482421875
+                },
+                "Scale": {
+                    "x": 0.07999999821186066,
+                    "y": 0.07999999821186066,
+                    "z": 0.07999999821186066
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885078586818570
+            },
+            "Renderer": {
+                "modelUUID": "18f2e5c9-e5d1-4c65-b2d9-c53885577de7",
+                "materialUUID": "c586eeb6-d9ac-4d0b-9ed2-9f9a3dca7301",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829240837013515
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 1.2000000476837158,
+                            "y": 0.5,
+                            "z": 1.0
+                        }
+                    }
+                },
+                "luid": 7165061555011911692
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "TimeWallController"
+                ],
+                "SerializedFields": {
+                    "TimeWallController.wallObject": "7308613793134346249"
+                },
+                "EntityReferenceFields": [
+                    "wallObject"
+                ],
+                "luid": 7958820989456220220
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Rubble 3",
+                "isActive": 1,
+                "luid": 7308613793160822817
+            },
+            "Hierarchy": {
+                "luid": 7526193950158159904,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 21.84207534790039,
+                    "y": 0.4173000454902649,
+                    "z": -28.396968841552734
+                },
+                "Scale": {
+                    "x": 0.05999999865889549,
+                    "y": 0.05999999865889549,
+                    "z": 0.05999999865889549
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885078613295138
+            },
+            "Renderer": {
+                "modelUUID": "18f2e5c9-e5d1-4c65-b2d9-c53885577de7",
+                "materialUUID": "c586eeb6-d9ac-4d0b-9ed2-9f9a3dca7301",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829240863490083
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6000000238418579,
+                            "y": 0.5,
+                            "z": 0.699999988079071
+                        }
+                    }
+                },
+                "luid": 7165061555038388260
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "TimeWallController"
+                ],
+                "SerializedFields": {
+                    "TimeWallController.wallObject": "7308613793160822817"
+                },
+                "EntityReferenceFields": [
+                    "wallObject"
+                ],
+                "luid": 7958820989456678973
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Rubble 4",
+                "isActive": 1,
+                "luid": 7308613793181859878
+            },
+            "Hierarchy": {
+                "luid": 7526193950179196965,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 34.602149963378906,
+                    "y": 0.43149977922439575,
+                    "z": -26.635244369506836
+                },
+                "Scale": {
+                    "x": 0.05000000074505806,
+                    "y": 0.05000000074505806,
+                    "z": 0.05000000074505806
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885078634332199
+            },
+            "Renderer": {
+                "modelUUID": "18f2e5c9-e5d1-4c65-b2d9-c53885577de7",
+                "materialUUID": "c586eeb6-d9ac-4d0b-9ed2-9f9a3dca7301",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829240884527144
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.699999988079071,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061555059425321
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "TimeWallController"
+                ],
+                "SerializedFields": {
+                    "TimeWallController.wallObject": "7308613793181859878"
+                },
+                "EntityReferenceFields": [
+                    "wallObject"
+                ],
+                "luid": 7958820989457137726
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Rubble 5",
+                "isActive": 1,
+                "luid": 7308613793305526272
+            },
+            "Hierarchy": {
+                "luid": 7526193950302863362,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 27.006141662597656,
+                    "y": 0.699999988079071,
+                    "z": -15.255046844482422
+                },
+                "Scale": {
+                    "x": 0.11999999731779099,
+                    "y": 0.09000000357627869,
+                    "z": 0.09000000357627869
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 22.899999618530273,
+                    "z": -0.0
+                },
+                "luid": 8390885078757998593
+            },
+            "Renderer": {
+                "modelUUID": "18f2e5c9-e5d1-4c65-b2d9-c53885577de7",
+                "materialUUID": "c586eeb6-d9ac-4d0b-9ed2-9f9a3dca7301",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829241008193539
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 1.399999976158142,
+                            "y": 0.699999988079071,
+                            "z": 1.100000023841858
+                        }
+                    }
+                },
+                "luid": 7165061555183091716
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "TimeWallController"
+                ],
+                "SerializedFields": {
+                    "TimeWallController.wallObject": "7308613793305526272"
+                },
+                "EntityReferenceFields": [
+                    "wallObject"
+                ],
+                "luid": 7958820989524901893
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Rubble 6",
+                "isActive": 1,
+                "luid": 7308613793237958711
+            },
+            "Hierarchy": {
+                "luid": 7526193950235295798,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 31.901002883911133,
+                    "y": 0.699999988079071,
+                    "z": -17.097244262695313
+                },
+                "Scale": {
+                    "x": 0.08999999612569809,
+                    "y": 0.09000000357627869,
+                    "z": 0.08999999612569809
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.7888887524604797,
+                    "z": -0.0
+                },
+                "luid": 8390885078690431032
+            },
+            "Renderer": {
+                "modelUUID": "18f2e5c9-e5d1-4c65-b2d9-c53885577de7",
+                "materialUUID": "c586eeb6-d9ac-4d0b-9ed2-9f9a3dca7301",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829240940625977
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 1.2999999523162842,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061555115524154
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "TimeWallController"
+                ],
+                "SerializedFields": {
+                    "TimeWallController.wallObject": "7308613793237958711"
+                },
+                "EntityReferenceFields": [
+                    "wallObject"
+                ],
+                "luid": 7958820989457793088
             }
         },
         {
