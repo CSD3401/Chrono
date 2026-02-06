@@ -348,16 +348,22 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Player_Raycast",
-                    "Misc_Grabber"
+                    "Misc_Grabber",
+                    "Camera_FOVPulse"
                 ],
                 "SerializedFields": {
                     "Player_Raycast.interval": "0.100000",
                     "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.distance": "5.000000",
                     "Player_Raycast.targetLayer": "0",
-                    "Misc_Grabber.distance": "2.000000",
                     "Misc_Grabber.grabStrength": "0.000000",
-                    "Misc_Grabber.damping": "0.000000"
+                    "Misc_Grabber.distance": "2.000000",
+                    "Misc_Grabber.damping": "0.000000",
+                    "Camera_FOVPulse.baseFov": "60.000000",
+                    "Camera_FOVPulse.enabledAtStart": "1",
+                    "Camera_FOVPulse.pulseFov": "150.000000",
+                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
+                    "Camera_FOVPulse.riseTimeSeconds": "0.100000"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820942659846150
@@ -5943,10 +5949,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "leftLaser7",
                     "rightLaser8",
-                    "leftLaser8",
+                    "leftLaser7",
                     "rightLaser7",
+                    "leftLaser8",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
