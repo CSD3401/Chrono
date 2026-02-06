@@ -44,6 +44,7 @@
 #include "Scripts/UI_MasterVolumeButtons.hpp"
 #include "Scripts/BackgroundAudio.hpp"
 #include "Scripts/Camera_FOVPulse.hpp"
+#include "Scripts/TimeWallController.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -177,6 +178,8 @@ extern "C" {
         registrar->RegisterScript("Camera_FOVPulse", []() -> NE::Scripting::IScript* {
             return new Camera_FOVPulse();
             });
-
+        registrar->RegisterScript("TimeWallController", []() -> NE::Scripting::IScript* {
+            return new TimeWallController();
+            });
         }
 }
