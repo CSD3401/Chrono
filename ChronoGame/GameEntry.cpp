@@ -42,6 +42,7 @@
 #include "Scripts/UIButton_SwitchSceneTwo.hpp"
 #include "Scripts/UIButton_SwitchScene.hpp"
 #include "Scripts/UI_MasterVolumeButtons.hpp"
+#include "Scripts/BackgroundAudio.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -168,6 +169,9 @@ extern "C" {
             });
         registrar->RegisterScript("UI_MasterVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_MasterVolumeButtons();
+            });
+        registrar->RegisterScript("BackgroundAudio", []() -> NE::Scripting::IScript* {
+            return new BackgroundAudio();
             });
         }
 }

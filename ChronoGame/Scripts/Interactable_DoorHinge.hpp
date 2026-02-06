@@ -108,6 +108,8 @@ public:
 
 private:
     void OpenDoor() {
+        PlayAudio("event:/DOOR_OPEN");
+
         isRotating = true;
 
         // Target rotation: only Y changes
