@@ -38,6 +38,10 @@
 #include "Scripts/LaserListener.hpp"
 #include "Scripts/IntersectionListerner.hpp"
 #include "Scripts/Misc_Teleporter.hpp"
+#include "Scripts/UIButton_SwitchSceneThree.hpp"
+#include "Scripts/UIButton_SwitchSceneTwo.hpp"
+#include "Scripts/UIButton_SwitchScene.hpp"
+#include "Scripts/UI_MasterVolumeButtons.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -152,6 +156,18 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_Teleporter", []() -> NE::Scripting::IScript* {
             return new Misc_Teleporter();
+            });
+        registrar->RegisterScript("UIButton_SwitchSceneThree", []() -> NE::Scripting::IScript* {
+            return new UIButton_SwitchSceneThree();
+            });
+        registrar->RegisterScript("UIButton_SwitchScene", []() -> NE::Scripting::IScript* {
+            return new UIButton_SwitchScene();
+            });
+        registrar->RegisterScript("UIButton_SwitchSceneTwo", []() -> NE::Scripting::IScript* {
+            return new UIButton_SwitchSceneTwo();
+            });
+        registrar->RegisterScript("UI_MasterVolumeButtons", []() -> NE::Scripting::IScript* {
+            return new UI_MasterVolumeButtons();
             });
         }
 }
