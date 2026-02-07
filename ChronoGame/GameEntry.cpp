@@ -31,6 +31,7 @@
 #include "Scripts/Misc_MaterialSwitcher.hpp"
 #include "Scripts/Misc_PlayerRespawn.hpp"
 #include "Scripts/Misc_RespawnOnCollision.hpp"
+#include "Scripts/Misc_WallToggle.hpp"
 #include "Scripts/Listener_MoveObject.hpp"
 #include "Scripts/Listener_StretchObject.hpp"
 #include "Scripts/Interactable_SequencerPad.hpp"
@@ -44,7 +45,6 @@
 #include "Scripts/UI_MasterVolumeButtons.hpp"
 #include "Scripts/BackgroundAudio.hpp"
 #include "Scripts/Camera_FOVPulse.hpp"
-#include "Scripts/TimeWallController.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -139,6 +139,9 @@ extern "C" {
         registrar->RegisterScript("Misc_RespawnOnCollision", []() -> NE::Scripting::IScript* {
             return new Misc_RespawnOnCollision();
             });
+        registrar->RegisterScript("Misc_WallToggle", []() -> NE::Scripting::IScript* {
+            return new Misc_WallToggle();
+            });
         registrar->RegisterScript("Listener_MoveObject", []() -> NE::Scripting::IScript* {
             return new Listener_MoveObject();
             });
@@ -177,9 +180,6 @@ extern "C" {
             });
         registrar->RegisterScript("Camera_FOVPulse", []() -> NE::Scripting::IScript* {
             return new Camera_FOVPulse();
-            });
-        registrar->RegisterScript("TimeWallController", []() -> NE::Scripting::IScript* {
-            return new TimeWallController();
             });
         }
 }
