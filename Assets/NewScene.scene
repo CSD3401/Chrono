@@ -564,7 +564,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Sinkhole",
-                "isActive": 0,
+                "isActive": 1,
                 "luid": 7308613743799959556
             },
             "Hierarchy": {
@@ -573,14 +573,14 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.10220211744308472,
+                    "x": -0.1067778468132019,
                     "y": 0.07457149028778076,
-                    "z": -5.726158142089844
+                    "z": -8.417376518249512
                 },
                 "Scale": {
-                    "x": 4.0,
+                    "x": 5.199999809265137,
                     "y": 0.20000000298023224,
-                    "z": 4.0
+                    "z": 8.800000190734863
                 },
                 "Rotation": {
                     "x": -0.0,
@@ -599,7 +599,7 @@
             },
             "Collider": {
                 "type": 0,
-                "isTrigger": 0,
+                "isTrigger": 1,
                 "center": {
                     "x": 0.0,
                     "y": 0.0,
@@ -609,18 +609,29 @@
                     "index": 0,
                     "value": {
                         "halfExtents": {
-                            "x": 0.5,
+                            "x": 2.5999999046325684,
                             "y": 0.5,
-                            "z": 0.5
+                            "z": 4.400000095367432
                         }
                     }
                 },
                 "luid": 7165061505677525000
             },
             "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
-                "EntityReferenceFields": [],
+                "ScriptNames": [
+                    "Misc_PlayerRespawn"
+                ],
+                "SerializedFields": {
+                    "Misc_PlayerRespawn.playerRef": "7308613656064753675",
+                    "Misc_PlayerRespawn.checkpointRef": "7308613798273941504",
+                    "Misc_PlayerRespawn.returnSpeed": "100.000000",
+                    "Misc_PlayerRespawn.returnStopThreshold": "0.050000",
+                    "Misc_PlayerRespawn.returnOnlyXZ": "1"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "checkpointRef"
+                ],
                 "luid": 7958820940013109257
             }
         },
@@ -908,7 +919,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Rubble 1",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793118158851
             },
             "Hierarchy": {
@@ -978,7 +989,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Rubble 2",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793134346249
             },
             "Hierarchy": {
@@ -1048,7 +1059,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Rubble 3",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793160822817
             },
             "Hierarchy": {
@@ -1118,7 +1129,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Rubble 4",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793181859878
             },
             "Hierarchy": {
@@ -1188,7 +1199,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Rubble 5",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793305526272
             },
             "Hierarchy": {
@@ -1258,7 +1269,7 @@
             "Layer": 0,
             "EntityMeta": {
                 "name": "Rubble 6",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613793237958711
             },
             "Hierarchy": {
@@ -3719,6 +3730,53 @@
                 "updateMode": 0,
                 "cullingMode": 0,
                 "luid": 7017568664820121601
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "SinkHole Respawn",
+                "isActive": 1,
+                "luid": 7308613798273941504
+            },
+            "Hierarchy": {
+                "luid": 7526193955271278594,
+                "parentLuid": 7308613787329036288
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.5272462368011475,
+                    "y": 0.0,
+                    "z": 2.489609718322754
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885083726413825
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_PlayerRespawn"
+                ],
+                "SerializedFields": {
+                    "Misc_PlayerRespawn.playerRef": "7308613656064753675",
+                    "Misc_PlayerRespawn.checkpointRef": "7308613798273941504",
+                    "Misc_PlayerRespawn.returnSpeed": "100.000000",
+                    "Misc_PlayerRespawn.returnStopThreshold": "0.050000",
+                    "Misc_PlayerRespawn.returnOnlyXZ": "1"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "checkpointRef"
+                ],
+                "luid": 7958820994476474371
             }
         },
         {
@@ -6652,10 +6710,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "rightLaser8",
                     "leftLaser7",
-                    "rightLaser7",
+                    "rightLaser8",
                     "leftLaser8",
+                    "rightLaser7",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
