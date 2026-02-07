@@ -44,6 +44,7 @@
 #include "Scripts/UIButton_SwitchScene.hpp"
 #include "Scripts/UI_MasterVolumeButtons.hpp"
 #include "Scripts/BackgroundAudio.hpp"
+#include "Scripts/UI_Notes.hpp"
 #include "Scripts/Camera_FOVPulse.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
@@ -177,6 +178,9 @@ extern "C" {
             });
         registrar->RegisterScript("BackgroundAudio", []() -> NE::Scripting::IScript* {
             return new BackgroundAudio();
+            });
+        registrar->RegisterScript("UI_Notes", []() -> NE::Scripting::IScript* {
+            return new UI_Notes();
             });
         registrar->RegisterScript("Camera_FOVPulse", []() -> NE::Scripting::IScript* {
             return new Camera_FOVPulse();
