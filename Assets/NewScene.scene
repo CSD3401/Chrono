@@ -563,78 +563,6 @@
         {
             "Layer": 0,
             "EntityMeta": {
-                "name": "Sinkhole",
-                "isActive": 1,
-                "luid": 7308613743799959556
-            },
-            "Hierarchy": {
-                "luid": 7526193900797296646,
-                "parentLuid": 7526193900832751640
-            },
-            "Transform": {
-                "Position": {
-                    "x": -0.1067778468132019,
-                    "y": 0.07457149028778076,
-                    "z": -8.417376518249512
-                },
-                "Scale": {
-                    "x": 5.199999809265137,
-                    "y": 0.20000000298023224,
-                    "z": 8.800000190734863
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885029252431877
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "be49c8c3-0be6-455c-b3dd-fd1bb6332f4b",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829191502626823
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 1,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 2.5999999046325684,
-                            "y": 0.5,
-                            "z": 4.400000095367432
-                        }
-                    }
-                },
-                "luid": 7165061505677525000
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_RespawnOnCollision"
-                ],
-                "SerializedFields": {
-                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
-                    "Misc_RespawnOnCollision.respawnRef": "7308613798273941504"
-                },
-                "EntityReferenceFields": [
-                    "playerRef",
-                    "respawnRef"
-                ],
-                "luid": 7958820940013109257
-            }
-        },
-        {
-            "Layer": 0,
-            "EntityMeta": {
                 "name": "Toppled Rack 1",
                 "isActive": 0,
                 "luid": 7308613792998752256
@@ -1330,6 +1258,78 @@
                     "wallObject"
                 ],
                 "luid": 7958820989457793088
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Sinkhole",
+                "isActive": 1,
+                "luid": 7308613802918608897
+            },
+            "Hierarchy": {
+                "luid": 7526193959915945984,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.1067778468132019,
+                    "y": 0.07457149028778076,
+                    "z": -8.417376518249512
+                },
+                "Scale": {
+                    "x": 5.199999809265137,
+                    "y": 0.20000000298023224,
+                    "z": 8.800000190734863
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088371081218
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "be49c8c3-0be6-455c-b3dd-fd1bb6332f4b",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829250621276163
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061564796174340
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613798273941504"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958820999120224261
             }
         },
         {
@@ -19733,6 +19733,810 @@
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958820988253700099
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Canvas",
+                "isActive": 1,
+                "luid": 7167031889608048640
+            },
+            "Hierarchy": {
+                "luid": 7526193959890845697,
+                "parentLuid": 0
+            },
+            "UIRectTransform": {
+                "luid": 8247332850223546371,
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 0
+            },
+            "UICanvas": {
+                "luid": 7167031889608048642,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Note1",
+                "isActive": 0,
+                "luid": 7308613802894426116
+            },
+            "Hierarchy": {
+                "luid": 7526193959891763205,
+                "parentLuid": 7526193959890845697
+            },
+            "UIRectTransform": {
+                "luid": 8247332850224463878,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332850223546371
+            },
+            "UIText": {
+                "text": "Team B,\n\nI've completed my sweep of the Aether Core maintenance tunnels.\nSecurity is heavier than expected, so I left observations where I could.\nYou'll have to figure out the rest yourselves.\n\nYour first objective is simple: reach the train. \nThat's our transport deeper into the facility. \nTeam A is entering from the upper ventilation shafts.\n If you fall behind, they'll proceed without you.\n\nBring down the capitalist pigs. Viva revolution!\n\n-- Click to Continue --\n",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 60.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Note2",
+                "isActive": 0,
+                "luid": 7308613802921164806
+            },
+            "Hierarchy": {
+                "luid": 7526193959918501895,
+                "parentLuid": 7526193959890845697
+            },
+            "UIRectTransform": {
+                "luid": 8247332850251202568,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332850223546371
+            },
+            "UIText": {
+                "text": "The access panel routes power through colour-matched conduits. \nThe wires only stabilise when paired with their own kind.\n\n-- Click to Continue --",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 60.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Note3",
+                "isActive": 0,
+                "luid": 7308613802938007569
+            },
+            "Hierarchy": {
+                "luid": 7526193959935344658,
+                "parentLuid": 7526193959890845697
+            },
+            "UIRectTransform": {
+                "luid": 8247332850268045331,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332850223546371
+            },
+            "UIText": {
+                "text": "The layout here is confusing. You'll need to locate the control board to move on.\nLeft and right arrays are synchronized, any input on one side echoes on the other.\n-- Click to Continue --",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 60.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Note4",
+                "isActive": 0,
+                "luid": 7308613802938204180
+            },
+            "Hierarchy": {
+                "luid": 7526193959935541269,
+                "parentLuid": 7526193959890845697
+            },
+            "UIRectTransform": {
+                "luid": 8247332850268241942,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332850223546371
+            },
+            "UIText": {
+                "text": "The corridor ahead is threaded with live electrical emitters.\n-- Click to Continue --",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 60.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Note5",
+                "isActive": 0,
+                "luid": 7308613802938335255
+            },
+            "Hierarchy": {
+                "luid": 7526193959935672344,
+                "parentLuid": 7526193959890845697
+            },
+            "UIRectTransform": {
+                "luid": 8247332850268373017,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332850223546371
+            },
+            "UIText": {
+                "text": "Same circuit-redirection logic as before.\n\nOne panel alone won't shut the system down.\n Activate the control box on the other tunnel if you haven't.\n\n-- Click to Continue --",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 60.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Note6",
+                "isActive": 0,
+                "luid": 7308613802938466330
+            },
+            "Hierarchy": {
+                "luid": 7526193959935803419,
+                "parentLuid": 7526193959890845697
+            },
+            "UIRectTransform": {
+                "luid": 8247332850268504092,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332850223546371
+            },
+            "UIText": {
+                "text": "The node cycles through a fixed pulse sequence.\nThe manual override only responds when the rhythm is matched precisely.\n\nActivate the control box on the other tunnel if you haven't.\n-- Click to Continue --",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 60.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Notes",
+                "isActive": 1,
+                "luid": 7308613802895605767
+            },
+            "Hierarchy": {
+                "luid": 7526193959892942857,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088348078088
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Interactable1",
+                "isActive": 1,
+                "luid": 7308613802900127754
+            },
+            "Hierarchy": {
+                "luid": 7526193959897464844,
+                "parentLuid": 7526193959892942857
+            },
+            "Transform": {
+                "Position": {
+                    "x": -1.503000020980835,
+                    "y": 0.3700000047683716,
+                    "z": -12.324000358581543
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088352600075
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829250602795021
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.10000000149011612,
+                            "y": 0.10000000149011612,
+                            "z": 0.10000000149011612
+                        }
+                    }
+                },
+                "luid": 7165061564777693198
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_Notes"
+                ],
+                "SerializedFields": {
+                    "UI_Notes.objectToActivate": "7308613802894426116"
+                },
+                "EntityReferenceFields": [
+                    "objectToActivate"
+                ],
+                "luid": 7958820999105544207
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Interactable2",
+                "isActive": 1,
+                "luid": 7308613802925031434
+            },
+            "Hierarchy": {
+                "luid": 7526193959922368521,
+                "parentLuid": 7526193959892942857
+            },
+            "Transform": {
+                "Position": {
+                    "x": -1.7280000448226929,
+                    "y": 0.3700000047683716,
+                    "z": -23.02400016784668
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088377503755
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829250627698700
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.10000000149011612,
+                            "y": 0.10000000149011612,
+                            "z": 0.10000000149011612
+                        }
+                    }
+                },
+                "luid": 7165061564802596877
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_Notes"
+                ],
+                "SerializedFields": {
+                    "UI_Notes.objectToActivate": "7308613802921164806"
+                },
+                "EntityReferenceFields": [
+                    "objectToActivate"
+                ],
+                "luid": 7958820999126646798
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Interactable3",
+                "isActive": 1,
+                "luid": 7308613802940825630
+            },
+            "Hierarchy": {
+                "luid": 7526193959938162717,
+                "parentLuid": 7526193959892942857
+            },
+            "Transform": {
+                "Position": {
+                    "x": 8.458999633789063,
+                    "y": 0.17499999701976776,
+                    "z": -27.974000930786133
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088393297951
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829250643492896
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.10000000149011612,
+                            "y": 0.10000000149011612,
+                            "z": 0.10000000149011612
+                        }
+                    }
+                },
+                "luid": 7165061564818391073
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_Notes"
+                ],
+                "SerializedFields": {
+                    "UI_Notes.objectToActivate": "7308613802938007569"
+                },
+                "EntityReferenceFields": [
+                    "objectToActivate"
+                ],
+                "luid": 7958820999142440994
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Interactable4",
+                "isActive": 1,
+                "luid": 7308613802941284388
+            },
+            "Hierarchy": {
+                "luid": 7526193959938621475,
+                "parentLuid": 7526193959892942857
+            },
+            "Transform": {
+                "Position": {
+                    "x": 19.675085067749023,
+                    "y": 1.1510000228881836,
+                    "z": -20.815200805664063
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088393756709
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829250643951654
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.10000000149011612,
+                            "y": 0.10000000149011612,
+                            "z": 0.10000000149011612
+                        }
+                    }
+                },
+                "luid": 7165061564818849831
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_Notes"
+                ],
+                "SerializedFields": {
+                    "UI_Notes.objectToActivate": "7308613802938204180"
+                },
+                "EntityReferenceFields": [
+                    "objectToActivate"
+                ],
+                "luid": 7958820999142899752
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Interactable5",
+                "isActive": 1,
+                "luid": 7308613802941481002
+            },
+            "Hierarchy": {
+                "luid": 7526193959938818089,
+                "parentLuid": 7526193959892942857
+            },
+            "Transform": {
+                "Position": {
+                    "x": 26.847999572753906,
+                    "y": 1.0529999732971191,
+                    "z": -28.304000854492188
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088393953323
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829250644148268
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.10000000149011612,
+                            "y": 0.10000000149011612,
+                            "z": 0.10000000149011612
+                        }
+                    }
+                },
+                "luid": 7165061564819046445
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_Notes"
+                ],
+                "SerializedFields": {
+                    "UI_Notes.objectToActivate": "7308613802938335255"
+                },
+                "EntityReferenceFields": [
+                    "objectToActivate"
+                ],
+                "luid": 7958820999143096366
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Interactable6",
+                "isActive": 1,
+                "luid": 7308613802941612080
+            },
+            "Hierarchy": {
+                "luid": 7526193959938949167,
+                "parentLuid": 7526193959892942857
+            },
+            "Transform": {
+                "Position": {
+                    "x": 28.711000442504883,
+                    "y": 1.503000020980835,
+                    "z": -15.64799976348877
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088394084401
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829250644279346
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.10000000149011612,
+                            "y": 0.10000000149011612,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061564819177523
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_Notes"
+                ],
+                "SerializedFields": {
+                    "UI_Notes.objectToActivate": "7308613802938466330"
+                },
+                "EntityReferenceFields": [
+                    "objectToActivate"
+                ],
+                "luid": 7958820999143227444
             }
         }
     ]
