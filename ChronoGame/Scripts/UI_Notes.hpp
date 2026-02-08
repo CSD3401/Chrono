@@ -31,6 +31,7 @@ public:
 
             // ignore the same click that opened it
             ignoreNextMouseClick = true;
+            PlayAudio("event:/COLOR_CLICK");
         }
     }
 
@@ -48,6 +49,7 @@ public:
             }
 
             SetActive(false, target);
+            PlayAudio("event:/COLOR_CLICK");
         }
     }
 

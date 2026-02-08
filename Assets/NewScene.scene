@@ -6707,10 +6707,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "leftLaser7",
                     "rightLaser8",
-                    "leftLaser8",
+                    "leftLaser7",
                     "rightLaser7",
+                    "leftLaser8",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -20092,6 +20092,57 @@
         {
             "Layer": 0,
             "EntityMeta": {
+                "name": "Note7",
+                "isActive": 0,
+                "luid": 7308613803014815750
+            },
+            "Hierarchy": {
+                "luid": 7526193960012152839,
+                "parentLuid": 7526193959890845697
+            },
+            "UIRectTransform": {
+                "luid": 8247332850344853512,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332850223546371
+            },
+            "UIText": {
+                "text": "Press E to interact\n\n-- Click to Continue --",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 60.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
                 "name": "Notes",
                 "isActive": 1,
                 "luid": 7308613802895605767
@@ -20537,6 +20588,76 @@
                     "objectToActivate"
                 ],
                 "luid": 7958820999143227444
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Interactable7",
+                "isActive": 1,
+                "luid": 7308613803010359297
+            },
+            "Hierarchy": {
+                "luid": 7526193960007696384,
+                "parentLuid": 7526193959892942857
+            },
+            "Transform": {
+                "Position": {
+                    "x": 7.402717590332031,
+                    "y": 1.2636433839797974,
+                    "z": -23.238149642944336
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885088462831618
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829250713026563
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.10000000149011612,
+                            "y": 0.10000000149011612,
+                            "z": 0.10000000149011612
+                        }
+                    }
+                },
+                "luid": 7165061564887924740
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_Notes"
+                ],
+                "SerializedFields": {
+                    "UI_Notes.objectToActivate": "7308613803014815750"
+                },
+                "EntityReferenceFields": [
+                    "objectToActivate"
+                ],
+                "luid": 7958820999211974661
             }
         }
     ]
