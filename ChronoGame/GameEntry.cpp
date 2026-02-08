@@ -46,6 +46,7 @@
 #include "Scripts/BackgroundAudio.hpp"
 #include "Scripts/Camera_FOVPulse.hpp"
 #include "Scripts/UI_Notes.hpp"
+#include "Scripts/PhoneBooth.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -184,6 +185,9 @@ extern "C" {
             });
         registrar->RegisterScript("UI_Notes", []() -> NE::Scripting::IScript* {
             return new UI_Notes();
+            });
+        registrar->RegisterScript("PhoneBooth", []() -> NE::Scripting::IScript* {
+            return new PhoneBooth();
             });
         }
 }
