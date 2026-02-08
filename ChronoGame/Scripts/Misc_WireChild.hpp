@@ -166,6 +166,11 @@ public:
             SetMaterialRef(GetRendererRef(GetEntity()), white);
             break;
         }
+        case WIRE_COLOUR::BLACK:
+        {
+            SetMaterialRef(GetRendererRef(GetEntity()), black);
+            break;
+        }
         default:
             LOG_ERROR("COLOUR OUT OF RANGE!");
         }

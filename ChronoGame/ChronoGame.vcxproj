@@ -119,13 +119,13 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\NANOEngine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\NANOEngine\include;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\bin\NANOEngine\$(Configuration)-$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\bin\NANOEngine\$(Configuration)-$(Platform);$(ProjectDir)..\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>NANOEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
@@ -159,13 +159,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
-    <ClInclude Include="Interactable_Gate.hpp" />
+    <ClInclude Include="include\ScriptSDK\UI.h" />
+    <ClInclude Include="Scripts\BackgroundAudio.hpp" />
+    <ClInclude Include="Scripts\Camera_FOVPulse.hpp" />
     <ClInclude Include="Scripts\Example_EnumField.hpp" />
     <ClInclude Include="Scripts\Interactable_Bridge.hpp" />
     <ClInclude Include="Scripts\Interactable_DoorHinge.hpp" />
     <ClInclude Include="Scripts\Interactable_Gate.hpp" />
     <ClInclude Include="Scripts\Interactable_NoteCollector.hpp" />
     <ClInclude Include="Scripts\Interactable_SequencerPad.hpp" />
+    <ClInclude Include="Scripts\Interactable_WireTether.hpp" />
+    <ClInclude Include="Scripts\IntersectionListerner.hpp" />
+    <ClInclude Include="Scripts\LaserListener.hpp" />
     <ClInclude Include="Scripts\Listener_.hpp" />
     <ClInclude Include="Scripts\Listener_MoveObject.hpp" />
     <ClInclude Include="Scripts\Interactable_Battery.hpp" />
@@ -191,7 +196,11 @@
     <ClInclude Include="Scripts\Misc_Manager.hpp" />
     <ClInclude Include="Scripts\Misc_MaterialSwitcher.hpp" />
     <ClInclude Include="Scripts\Misc_PlayerRespawn.hpp" />
+    <ClInclude Include="Scripts\Misc_RespawnOnCollision.hpp" />
+    <ClInclude Include="Scripts\Misc_Teleporter.hpp" />
+    <ClInclude Include="Scripts\Misc_WallToggle.hpp" />
     <ClInclude Include="Scripts\NoteCollector_Controller.hpp" />
+    <ClInclude Include="Scripts\PhoneBooth.hpp" />
     <ClInclude Include="Scripts\Player_Controller.hpp" />
     <ClInclude Include="Scripts\Player_Raycast.hpp" />
     <ClInclude Include="Scripts\Puzzle_.hpp" />
@@ -205,6 +214,11 @@
     <ClInclude Include="Scripts\Misc_Sinkhole.hpp" />
     <ClInclude Include="Scripts\Misc_TwoStateRotater.hpp" />
     <ClInclude Include="Scripts\Test_SetActive.hpp" />
+    <ClInclude Include="Scripts\UIButton_SwitchScene.hpp" />
+    <ClInclude Include="Scripts\UIButton_SwitchSceneThree.hpp" />
+    <ClInclude Include="Scripts\UIButton_SwitchSceneTwo.hpp" />
+    <ClInclude Include="Scripts\UI_MasterVolumeButtons.hpp" />
+    <ClInclude Include="Scripts\UI_Notes.hpp" />
     <ClInclude Include="Scripts\Watch_Controller.hpp" />
   </ItemGroup>
   <ItemGroup>

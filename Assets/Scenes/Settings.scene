@@ -1,0 +1,525 @@
+{
+    "RenderSettings": {
+        "envSource": 2,
+        "ambientColour": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        },
+        "ambientIntensity": 0.0,
+        "fogEnabled": 0,
+        "fogMode": 0,
+        "fogColour": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        },
+        "fogStart": 0.0,
+        "fogEnd": 100.0,
+        "fogDensity": 0.10000000149011612
+    },
+    "PostProcessingSettings": {
+        "bloomSettings": {
+            "tint": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "brightThreshold": 1.0,
+            "brightScale": 1.0,
+            "softKnee": 0.20000000298023224,
+            "bloomRadius": 1.0,
+            "bloomIntensity": 0.10000000149011612,
+            "exposure": 1.0
+        },
+        "ssaoSettings": {
+            "enabled": 0,
+            "radius": 0.5,
+            "bias": 0.02500000037252903,
+            "intensity": 1.0,
+            "power": 1.5
+        }
+    },
+    "Entities": [
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Empty Entity",
+                "isActive": 1,
+                "luid": 7308613789253435392
+            },
+            "Hierarchy": {
+                "luid": 7526193946250772482,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885074705907713
+            },
+            "Camera": {
+                "FOV Y": 45.0,
+                "Aspect Ratio": 1.7777777910232544,
+                "Near Plane": 0.10000000149011612,
+                "Far Plane": 1000.0,
+                "Is Main Camera": 1,
+                "Is Active Camera": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Canvas",
+                "isActive": 1,
+                "luid": 7167031876249387025
+            },
+            "Hierarchy": {
+                "luid": 7526193946532184082,
+                "parentLuid": 0
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_MasterVolumeButtons"
+                ],
+                "SerializedFields": {
+                    "UI_MasterVolumeButtons.volumeUpButton": "7308613789535043611",
+                    "UI_MasterVolumeButtons.volumeDownButton": "7308613789534846997"
+                },
+                "EntityReferenceFields": [
+                    "volumeUpButton",
+                    "volumeDownButton"
+                ],
+                "luid": 7958820985737904161
+            },
+            "UIRectTransform": {
+                "luid": 8247332836864884756,
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 0
+            },
+            "UICanvas": {
+                "luid": 7167031876249387027,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Button",
+                "isActive": 1,
+                "luid": 7308613789534846997
+            },
+            "Hierarchy": {
+                "luid": 7526193946532184086,
+                "parentLuid": 7526193946532184082
+            },
+            "UIRectTransform": {
+                "luid": 8247332836864884759,
+                "x": -175.89999389648438,
+                "y": -129.39999389648438,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332836864884756
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UIButton": {
+                "normalColor": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 1.0
+                },
+                "hoverColor": {
+                    "x": 0.8999999761581421,
+                    "y": 0.8999999761581421,
+                    "z": 0.8999999761581421,
+                    "w": 1.0
+                },
+                "pressedColor": {
+                    "x": 0.6000000238418579,
+                    "y": 0.6000000238418579,
+                    "z": 0.6000000238418579,
+                    "w": 1.0
+                },
+                "disabledColor": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5,
+                    "w": 0.5
+                },
+                "onClickEventId": 0,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Button",
+                "isActive": 1,
+                "luid": 7308613789535043611
+            },
+            "Hierarchy": {
+                "luid": 7526193946532380700,
+                "parentLuid": 7526193946532184082
+            },
+            "UIRectTransform": {
+                "luid": 8247332836865081373,
+                "x": 295.0,
+                "y": -129.39999389648438,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332836864884756
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UIButton": {
+                "normalColor": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 1.0
+                },
+                "hoverColor": {
+                    "x": 0.8999999761581421,
+                    "y": 0.8999999761581421,
+                    "z": 0.8999999761581421,
+                    "w": 1.0
+                },
+                "pressedColor": {
+                    "x": 0.6000000238418579,
+                    "y": 0.6000000238418579,
+                    "z": 0.6000000238418579,
+                    "w": 1.0
+                },
+                "disabledColor": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5,
+                    "w": 0.5
+                },
+                "onClickEventId": 0,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Button",
+                "isActive": 1,
+                "luid": 7308613791257591808
+            },
+            "Hierarchy": {
+                "luid": 7526193948254928897,
+                "parentLuid": 7526193946532184082
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UIButton_SwitchSceneThree"
+                ],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958820987473559558
+            },
+            "UIRectTransform": {
+                "luid": 8247332838587629570,
+                "x": 192.52989196777344,
+                "y": 360.57232666015625,
+                "z": 0.0,
+                "width": 304.8389892578125,
+                "height": 81.51033020019531,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332836864884756
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 0.027149319648742676
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UIButton": {
+                "normalColor": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 0.027149319648742676
+                },
+                "hoverColor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.24434387683868408
+                },
+                "pressedColor": {
+                    "x": 0.6000000238418579,
+                    "y": 0.6000000238418579,
+                    "z": 0.6000000238418579,
+                    "w": 1.0
+                },
+                "disabledColor": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5,
+                    "w": 0.5
+                },
+                "onClickEventId": 0,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Canvas",
+                "isActive": 1,
+                "luid": 7167031876281499708
+            },
+            "Hierarchy": {
+                "luid": 7526193946564296765,
+                "parentLuid": 0
+            },
+            "UIRectTransform": {
+                "luid": 8247332836896997439,
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 0
+            },
+            "UICanvas": {
+                "luid": 7167031876281499710,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "EntityMeta": {
+                "name": "Image",
+                "isActive": 1,
+                "luid": 7308613789567418432
+            },
+            "Hierarchy": {
+                "luid": 7526193946564755521,
+                "parentLuid": 7526193946564296765
+            },
+            "UIRectTransform": {
+                "luid": 8247332836897456194,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "parentLuid": 8247332836896997439
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "e422d44d-1c4c-412f-b1c0-fddef2a443b5",
+                "materialUUID": "7df30ba8-b5e3-40af-9a47-e8ca7ae0fea8",
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            }
+        }
+    ]
+}

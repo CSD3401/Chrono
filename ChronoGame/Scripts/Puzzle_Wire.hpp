@@ -32,6 +32,7 @@ public:
         SCRIPT_COMPONENT_REF(finishedWireColour, MaterialRef);
         SCRIPT_FIELD(changeTimer, Float);
 
+        SCRIPT_FIELD(eventName, String);
     }
 
     ~Puzzle_Wire() override = default;
@@ -219,7 +220,8 @@ public:
             {
                 LOG_DEBUG("PUZZLE SOLVED!");
                 std::string message = "PuzzleSolved1";
-                Events::Send(message.c_str());
+                Events::Send(eventName.c_str());
+                PlayAudio("event:/SOLVE_WIRE_PUZZLE");
             }
 
         }
@@ -229,6 +231,8 @@ public:
     {
         if (wireColours[currentSelectedLeftIndex] == correctColours[currentSelectedRightIndex])
         {
+            PlayAudio("event:/CONNECT_WIRE");
+
             // if true turn on the wire connecting them
             SetActive(true, connectedWires[currentSelectedRightIndex]);
             // then reset
@@ -237,7 +241,7 @@ public:
 
             // Increment number of correct pairs
             ++correctPairs;
-            if (correctPairs >= numWires)
+            if (correctPairs == numWires)
             {
                 return true;
             }
@@ -273,6 +277,12 @@ private:
     int currentSelectedRightIndex = 9999; // right -> bottom row
     int correctPairs = 0;
     std::string wireDataRecieved;
+
+    // RF Added
+    // PuzzleSolved1 - at the left and right
+    // PuzzleSolved2 - right b4 catwalk
+
+    std::string eventName = "PuzzleSolved1"; 
 
     // Connected wires and correct children are teh colours the player needs to line up
     // correct[0, 2, 1] -> blue red green
