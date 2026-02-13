@@ -47,6 +47,8 @@
 #include "Scripts/Camera_FOVPulse.hpp"
 #include "Scripts/UI_Notes.hpp"
 #include "Scripts/PhoneBooth.hpp"
+#include "Scripts/Misc_TimeFogLighting.hpp"
+
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -188,6 +190,9 @@ extern "C" {
             });
         registrar->RegisterScript("PhoneBooth", []() -> NE::Scripting::IScript* {
             return new PhoneBooth();
+            });
+        registrar->RegisterScript("Misc_TimeFogLighting", []() -> NE::Scripting::IScript* {
+            return new Misc_TimeFogLighting();
             });
         }
 }
