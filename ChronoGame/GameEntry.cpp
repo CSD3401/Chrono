@@ -50,6 +50,7 @@
 #include "Scripts/UI_Notes.hpp"
 #include "Scripts/PhoneBooth.hpp"
 #include "Scripts/Misc_TimeFogLighting.hpp"
+#include "Scripts/Cutscene_Controller.hpp"
 
 
 
@@ -202,6 +203,10 @@ extern "C" {
             });
         registrar->RegisterScript("Interactable_Battery", []() -> NE::Scripting::IScript* {
             return new Interactable_Battery();
+            });
+
+        registrar->RegisterScript("Cutscene_Controller", []() -> NE::Scripting::IScript* {
+            return new Cutscene_Controller();
             });
         }
 }
