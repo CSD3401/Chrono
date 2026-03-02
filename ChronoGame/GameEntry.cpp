@@ -51,6 +51,7 @@
 #include "Scripts/PhoneBooth.hpp"
 #include "Scripts/Misc_TimeFogLighting.hpp"
 #include "Scripts/Cutscene_Controller.hpp"
+#include "Scripts/Dialouge_Marker.hpp"
 
 
 
@@ -206,6 +207,9 @@ extern "C" {
             });
         registrar->RegisterScript("Cutscene_Controller", []() -> NE::Scripting::IScript* {
             return new Cutscene_Controller();
+            });
+        registrar->RegisterScript("Dialouge_Marker", []() -> NE::Scripting::IScript* {
+            return new DialogueMarker();
             });
         }
 }
