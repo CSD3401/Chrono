@@ -7,104 +7,129 @@
  * Cutscene_Controller
  *
  * Displays a series of cutscene "pages" (UI image GameObjects) one at a time.
- * Each page has a matching caption shown on a UIText entity at the bottom of
- * the screen. A left mouse click advances to the next page; the cutscene ends
- * and hides itself when all pages are done.
+ * Each page has a matching caption, an optional audio clip, and an optional
+ * custom display duration. A BGM track plays for the full duration of the
+ * cutscene. A left mouse click advances to the next page early.
  *
- * ── Editor Setup ────────────────────────────────────────────────────────────
- *  1. Create a parent GameObject for this script (e.g. "CutsceneManager").
+ * ── Inspector Fields ─────────────────────────────────────────────────────────
  *
- *  2. Assign eventName (String) — the event that triggers this cutscene.
- *     Leave blank / default to auto-catch any mistake (see Start()).
- *     Example: "StartCutscene_Intro"
+ *  eventName        (String) Event that triggers this cutscene.
+ *                            e.g. "StartCutscene_Intro"
  *
- *  3. Build your pages in the scene as separate UI Image GameObjects
- *     (one per page). Set them all INACTIVE in the editor — the script
- *     activates them one at a time at runtime.
- *     Drag them into the pageImages list in order (page 1 → page 2 → …).
+ *  bgmAudioName     (String) FMOD event path for background music.
+ *                            Plays when cutscene starts, stops when it ends.
+ *                            e.g. "event:/BGM_CutsceneIntro"
+ *                            Leave empty for no BGM.
  *
- *  4. Create ONE UIText GameObject for the caption bar (position it at the
- *     bottom of your canvas however you like in the editor).
- *     Set it INACTIVE in the editor.
- *     Drag it into captionTextRef.
+ *  autoAdvance      (Bool)   Enable timed page flipping.
  *
- *  5. Fill in the pageCaptions string vector — one entry per page, in the
- *     same order as pageImages.  Leave an entry as "" for no caption.
+ *  autoAdvanceDelay (Float)  Default seconds per page used when a page has no
+ *                            entry in pageDelays, or pageDelays is empty.
+ *                            Default: 2.0s.
  *
- *  6. Fire the event from any other script to start the cutscene:
- *       Events::Send("StartCutscene_Intro");
+ *  pageDelays       (Float Vector) Per-page display duration in seconds.
+ *                            Index matches pageImages order.
+ *                            Any missing entries fall back to autoAdvanceDelay.
+ *                            e.g. [2.0, 5.0, 3.0]
  *
- * ── Auto-Advance ─────────────────────────────────────────────────────────────
- *  - Toggle autoAdvance ON in the inspector to enable timed page progression.
- *  - autoAdvanceDelay controls how many seconds each page stays visible
- *    before automatically moving to the next (default: 2.0s).
- *  - A left-click still advances immediately even when autoAdvance is ON,
- *    and resets the timer so the new page gets its full delay.
- *  - The ignoreNextClick guard still applies on cutscene open.
+ *  pageAudioNames   (String Vector) FMOD event path to play on each page.
+ *                            Index matches pageImages order.
+ *                            Leave an entry empty for a silent page.
+ *                            Stopped automatically when the page changes.
+ *                            e.g. ["event:/VO_Intro1", "event:/VO_Intro2"]
+ *
+ *  pageCaptions     (String Vector) Caption text per page.
+ *                            Leave an entry empty for no caption on that page.
+ *
+ *  captionTextRef   (GameObject) Shared UIText entity for captions.
+ *                            Set INACTIVE in editor.
+ *
+ *  pageImages       (GameObject Vector) UI Image GameObjects, one per page.
+ *                            Set all INACTIVE in editor. Order = display order.
  *
  * ── Behaviour ────────────────────────────────────────────────────────────────
- *  - Receiving the event shows page 0 and its caption.
- *  - Each left-click advances to the next page (with a 1-frame click guard
- *    so the opening click never skips page 0).
- *  - After the last page the cutscene hides everything and fires
- *    "CutsceneDone_<eventName>" so other systems can react.
+ *  - Fire eventName to start.
+ *  - BGM starts immediately and runs until EndCutscene().
+ *  - Each page: image shown → caption set → page audio played → timer starts.
+ *  - Timer uses pageDelays[index] if available, else autoAdvanceDelay.
+ *  - Left-click skips the timer, stops current page audio, advances early.
+ *  - On the last page advancing: page audio stopped, BGM stopped, UI hidden,
+ *    "CutsceneDone_<eventName>" fired.
  */
 class Cutscene_Controller : public IScript {
 public:
     Cutscene_Controller() {
-        // ── Inspector fields ────────────────────────────────────────────────
-        SCRIPT_FIELD(eventName, String);  // event that triggers this cutscene
-        SCRIPT_FIELD(autoAdvance, Bool);    // enable timed auto page flip
-        SCRIPT_FIELD(autoAdvanceDelay, Float);   // seconds per page (default 2.0)
+        SCRIPT_FIELD(eventName, String);
+        SCRIPT_FIELD(bgmAudioName, String);
+        SCRIPT_FIELD(autoAdvance, Bool);
+        SCRIPT_FIELD(autoAdvanceDelay, Float);
+        RegisterFloatVectorField("pageDelays", &pageDelays);
+        RegisterStringVectorField("pageAudioNames", &pageAudioNames);
         RegisterStringVectorField("pageCaptions", &pageCaptions);
-        SCRIPT_GAMEOBJECT_REF(captionTextRef);   // UIText GameObject
+        SCRIPT_GAMEOBJECT_REF(captionTextRef);
         RegisterGameObjectRefVectorField("pageImages", &pageImages);
     }
 
     ~Cutscene_Controller() override = default;
 
-    // ── Lifecycle ────────────────────────────────────────────────────────────
-
-    void Awake() override {}
-
-    void Initialize(Entity entity) override {
-        (void)entity;
+    void Awake()            override {}
+    void Initialize(Entity) override {}
+    void OnDestroy()        override {
+        if (isPlaying) {
+            StopCurrentPageAudio();
+            StopBGM();
+            HideAllPages();
+            SetCaptionVisible(false);
+        }
     }
+    void OnEnable()         override {}
+    void OnDisable()        override {}
+    void OnValidate()       override {}
+    const char* GetTypeName() const override { return "Cutscene_Controller"; }
+    void OnCollisionEnter(Entity o) override { (void)o; }
+    void OnCollisionExit(Entity o)  override { (void)o; }
+    void OnCollisionStay(Entity o)  override { (void)o; }
+    void OnTriggerEnter(Entity o)   override { (void)o; }
+    void OnTriggerExit(Entity o)    override { (void)o; }
+    void OnTriggerStay(Entity o)    override { (void)o; }
 
     void Start() override {
-        // ── Failsafe: warn if eventName was never set ─────────────────────
+        // ── Failsafe ──────────────────────────────────────────────────────
         if (eventName.empty() || eventName == "emptyEvent") {
-            LOG_ERROR("Cutscene_Controller: eventName is not set (defaulting to "
-                "'emptyEvent'). Assign a real event name in the inspector "
-                "or this cutscene will never trigger!");
+            LOG_ERROR("Cutscene_Controller: eventName is not set! "
+                "Assign a real event name in the inspector.");
             eventName = "emptyEvent";
         }
 
-        // ── Validate page data ────────────────────────────────────────────
-        if (pageImages.empty()) {
+        // ── Validate ──────────────────────────────────────────────────────
+        if (pageImages.empty())
             LOG_WARNING("Cutscene_Controller [" << eventName
-                << "]: pageImages list is empty — cutscene has no pages!");
-        }
+                << "]: pageImages is empty — cutscene has no pages!");
 
-        if (pageCaptions.size() < pageImages.size()) {
+        if (pageCaptions.size() < pageImages.size())
             LOG_WARNING("Cutscene_Controller [" << eventName
-                << "]: pageCaptions has fewer entries (" << pageCaptions.size()
-                << ") than pageImages (" << pageImages.size()
-                << "). Missing captions will show as blank.");
-        }
+                << "]: pageCaptions has fewer entries than pageImages. "
+                "Missing captions will be blank.");
 
-        // ── Clamp autoAdvanceDelay to a sensible minimum ──────────────────
-        // Catches the case where the field was left at 0 in the inspector
-        if (autoAdvanceDelay <= 0.0f) {
+        if (pageAudioNames.size() < pageImages.size())
+            LOG_WARNING("Cutscene_Controller [" << eventName
+                << "]: pageAudioNames has fewer entries than pageImages. "
+                "Missing entries will be silent.");
+
+        if (pageDelays.size() < pageImages.size())
+            LOG_WARNING("Cutscene_Controller [" << eventName
+                << "]: pageDelays has fewer entries than pageImages. "
+                "Missing entries will use autoAdvanceDelay ("
+                << autoAdvanceDelay << "s).");
+
+        if (autoAdvanceDelay <= 0.0f)
             autoAdvanceDelay = 2.0f;
-        }
 
         // ── Register event listener ───────────────────────────────────────
-        Events::Listen(eventName.c_str(), [this](void* /*data*/) {
+        Events::Listen(eventName.c_str(), [this](void*) {
             TriggerCutscene();
             });
 
-        // ── Make sure every page starts hidden ───────────────────────────
         HideAllPages();
         SetCaptionVisible(false);
 
@@ -112,83 +137,82 @@ public:
         currentPageIndex = 0;
         ignoreNextClick = false;
         pageTimer = 0.0f;
+        currentPageAudio = "";
 
         LOG_DEBUG("Cutscene_Controller [" << eventName << "]: Ready with "
-            << pageImages.size() << " page(s)."
-            << (autoAdvance
-                ? " Auto-advance ON (" + std::to_string(autoAdvanceDelay) + "s)"
-                : " Auto-advance OFF"));
+            << pageImages.size() << " page(s).");
     }
 
     void Update(double deltaTime) override {
         if (!isPlaying) return;
 
         // ── Auto-advance timer ────────────────────────────────────────────
-        // Counts up every frame. When it hits the delay threshold the page
-        // flips automatically regardless of any click input.
         if (autoAdvance) {
             pageTimer += static_cast<float>(deltaTime);
-            if (pageTimer >= autoAdvanceDelay) {
+
+            float delay = GetDelayForPage(currentPageIndex);
+            if (pageTimer >= delay) {
                 pageTimer = 0.0f;
-                ignoreNextClick = false; // clear guard so clicks work on new page
+                ignoreNextClick = false;
                 AdvancePage();
-                return; // skip click check this frame so we don't double-advance
+                return;
             }
         }
 
         // ── Manual left-click advance ─────────────────────────────────────
         if (Input::WasMousePressed(GLFW_MOUSE_BUTTON_LEFT)) {
-            // Guard: ignore the same click that opened the cutscene
             if (ignoreNextClick) {
                 ignoreNextClick = false;
                 return;
             }
-            // Reset timer so the new page gets its full autoAdvanceDelay
             pageTimer = 0.0f;
             AdvancePage();
         }
     }
 
-    void OnDestroy() override {
-        if (isPlaying) {
-            HideAllPages();
-            SetCaptionVisible(false);
+private:
+    // ── Inspector ─────────────────────────────────────────────────────────
+    std::string                eventName = "emptyEvent";
+    std::string                bgmAudioName = "";
+    bool                       autoAdvance = false;
+    float                      autoAdvanceDelay = 2.0f;
+    std::vector<float>         pageDelays;        // per-page duration (seconds)
+    std::vector<std::string>   pageAudioNames;    // per-page FMOD event path
+    std::vector<std::string>   pageCaptions;
+    GameObjectRef              captionTextRef;
+    std::vector<GameObjectRef> pageImages;
+
+    // ── Runtime ───────────────────────────────────────────────────────────
+    bool        isPlaying = false;
+    int         currentPageIndex = 0;
+    bool        ignoreNextClick = false;
+    float       pageTimer = 0.0f;
+    std::string currentPageAudio = ""; // track what's playing so we can stop it
+
+
+    // ── Helpers ───────────────────────────────────────────────────────────
+
+    /** Returns the display duration for a given page index.
+     *  Uses pageDelays[index] if available, falls back to autoAdvanceDelay. */
+    float GetDelayForPage(int index) const {
+        if (index >= 0 && index < static_cast<int>(pageDelays.size())
+            && pageDelays[index] > 0.0f) {
+            return pageDelays[index];
         }
+        return autoAdvanceDelay;
     }
 
-    void OnEnable()   override {}
-    void OnDisable()  override {}
-    void OnValidate() override {}
-    const char* GetTypeName() const override { return "Cutscene_Controller"; }
+    /** Returns the audio event path for a given page, or "" if none. */
+    std::string GetAudioForPage(int index) const {
+        if (index >= 0 && index < static_cast<int>(pageAudioNames.size()))
+            return pageAudioNames[index];
+        return "";
+    }
 
-    void OnCollisionEnter(Entity other) override { (void)other; }
-    void OnCollisionExit(Entity other) override { (void)other; }
-    void OnCollisionStay(Entity other) override { (void)other; }
-    void OnTriggerEnter(Entity other) override { (void)other; }
-    void OnTriggerExit(Entity other) override { (void)other; }
-    void OnTriggerStay(Entity other) override { (void)other; }
-
-private:
-    // ── Inspector fields ──────────────────────────────────────────────────
-    std::string                eventName = "emptyEvent";
-    bool                       autoAdvance = true;  // enable timed page flip
-    float                      autoAdvanceDelay = 2.0f;   // seconds per page
-    std::vector<GameObjectRef> pageImages;
-    GameObjectRef              captionTextRef;
-    std::vector<std::string>   pageCaptions;
-
-    // ── Runtime state ─────────────────────────────────────────────────────
-    bool  isPlaying = false;
-    int   currentPageIndex = 0;
-    bool  ignoreNextClick = false;
-    float pageTimer = 0.0f;  // accumulates deltaTime while page is visible
-
-
-    /** Called when the trigger event fires — starts the cutscene from page 0. */
     void TriggerCutscene() {
         if (pageImages.empty()) {
             LOG_ERROR("Cutscene_Controller [" << eventName
-                << "]: Cannot start — pageImages list is empty!");
+                << "]: Cannot start — pageImages is empty!");
             return;
         }
 
@@ -197,12 +221,15 @@ private:
         currentPageIndex = 0;
         ignoreNextClick = true;
         pageTimer = 0.0f;
+        currentPageAudio = "";
 
+        PlayBGM();
         ShowPage(currentPageIndex);
     }
 
-    /** Hides the current page, shows the next one, or ends the cutscene. */
     void AdvancePage() {
+        // Stop the current page's audio before leaving
+        StopCurrentPageAudio();
         HidePage(currentPageIndex);
 
         ++currentPageIndex;
@@ -215,10 +242,10 @@ private:
         }
     }
 
-    /** Activates a page image and updates the caption text. */
     void ShowPage(int index) {
         if (index < 0 || index >= static_cast<int>(pageImages.size())) return;
 
+        // Show image
         if (pageImages[index].IsValid()) {
             SetActive(true, pageImages[index].GetEntity());
         }
@@ -227,57 +254,72 @@ private:
                 << "]: pageImages[" << index << "] is not a valid reference!");
         }
 
+        // Caption
         const std::string& caption = (index < static_cast<int>(pageCaptions.size()))
-            ? pageCaptions[index]
-            : "";
+            ? pageCaptions[index] : "";
         UpdateCaption(caption);
+
+        // Per-page audio
+        std::string audio = GetAudioForPage(index);
+        if (!audio.empty()) {
+            PlayAudio(audio);
+            currentPageAudio = audio;
+        }
+        else {
+            currentPageAudio = "";
+        }
     }
 
-    /** Deactivates a single page image (leaves caption alone). */
     void HidePage(int index) {
         if (index < 0 || index >= static_cast<int>(pageImages.size())) return;
-        if (pageImages[index].IsValid()) {
+        if (pageImages[index].IsValid())
             SetActive(false, pageImages[index].GetEntity());
-        }
     }
 
-    /** Deactivates every page image at once. */
     void HideAllPages() {
-        for (auto& page : pageImages) {
-            if (page.IsValid()) {
+        for (auto& page : pageImages)
+            if (page.IsValid())
                 SetActive(false, page.GetEntity());
-            }
-        }
     }
 
-    /** Shows or hides the caption UIText entity. */
     void SetCaptionVisible(bool visible) {
-        if (captionTextRef.IsValid()) {
+        if (captionTextRef.IsValid())
             SetActive(visible, captionTextRef.GetEntity());
-        }
     }
 
-    /**
-     * Writes text to the caption UIText component and ensures it is visible.
-     * If caption is empty the text bar is hidden instead.
-     */
     void UpdateCaption(const std::string& text) {
         if (!captionTextRef.IsValid()) return;
-
         if (text.empty()) {
             SetCaptionVisible(false);
             return;
         }
-
         NE::Scripting::SetUIText(captionTextRef.GetEntity(), text.c_str());
         SetCaptionVisible(true);
     }
 
-    /** Cleans up after the last page and fires the "done" event. */
+    void PlayBGM() {
+        if (!bgmAudioName.empty())
+            PlayAudio(bgmAudioName);
+    }
+
+    void StopBGM() {
+        if (!bgmAudioName.empty())
+            StopAudio(bgmAudioName);
+    }
+
+    /** Stops whatever per-page audio is currently playing, if any. */
+    void StopCurrentPageAudio() {
+        if (!currentPageAudio.empty()) {
+            StopAudio(currentPageAudio);
+            currentPageAudio = "";
+        }
+    }
+
     void EndCutscene() {
         isPlaying = false;
         HideAllPages();
         SetCaptionVisible(false);
+        StopBGM();
 
         std::string doneEvent = "CutsceneDone_" + eventName;
         Events::Send(doneEvent.c_str());
