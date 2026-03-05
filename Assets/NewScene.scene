@@ -4581,7 +4581,7 @@
                     "Puzzle_BatteryPanel"
                 ],
                 "SerializedFields": {
-                    "Puzzle_BatteryPanel.panelRef": "8390885023159091204",
+                    "Puzzle_BatteryPanel.panelRef": "0",
                     "Puzzle_BatteryPanel.alignedBattery": "7308613911473094665",
                     "Puzzle_BatteryPanel.message": "",
                     "Puzzle_BatteryPanel.puzzleKey": "5"
@@ -7782,10 +7782,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "rightLaser8",
                     "leftLaser7",
-                    "rightLaser7",
+                    "rightLaser8",
                     "leftLaser8",
+                    "rightLaser7",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -23964,6 +23964,65 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "End of Tunnel",
+                "isActive": 1,
+                "luid": 7308613945495912448
+            },
+            "Hierarchy": {
+                "luid": 7526194102493249538,
+                "parentLuid": 7308613930824499200
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 1.6037342548370361,
+                    "z": 10.76463508605957
+                },
+                "Scale": {
+                    "x": 7.259999752044678,
+                    "y": 4.979999542236328,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885230948384769
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829393198579715
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061707373477892
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "ALL Section 2",
                 "isActive": 1,
                 "luid": 1
@@ -24808,6 +24867,65 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 20,
                 "luid": 8242829384176435262
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Temp Wall",
+                "isActive": 1,
+                "luid": 7308613945525993480
+            },
+            "Hierarchy": {
+                "luid": 7526194102523330570,
+                "parentLuid": 7308613936473767936
+            },
+            "Transform": {
+                "Position": {
+                    "x": -1.0148143768310547,
+                    "y": 1.5706018209457397,
+                    "z": 3.997364044189453
+                },
+                "Scale": {
+                    "x": 8.429999351501465,
+                    "y": 4.440000057220459,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": 180.0
+                },
+                "luid": 8390885230978465801
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "9a1a8e58-7d3a-4a92-b0a2-9f4187dad84f",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829393228660747
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 4.300000190734863,
+                            "y": 2.2200000286102295,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061707403558924
             }
         }
     ]
