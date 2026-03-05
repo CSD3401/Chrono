@@ -1,0 +1,224 @@
+{
+    "fileFormatVersion": 1,
+    "uuid": "761bf484-bf37-4734-b6fa-0ea1e5317d39",
+    "assetType": "Model",
+    "sourcePath": "Assets/Level1Assets\\Section 1 (M5)\\Section 1 just lights.fbx",
+    "modelImport": {
+        "scene": {
+            "scaleFactor": 0.009999999776482582,
+            "convertUnits": 1,
+            "importCameras": 0,
+            "importLights": 0,
+            "preserveHierarchy": 1
+        },
+        "mesh": {
+            "weldVertices": 0,
+            "keepQuads": 0,
+            "swapUVs": 0,
+            "generateColliders": 1,
+            "generateMeshLODs": 0,
+            "smoothingAngle": 60.0,
+            "normalMode": 0,
+            "tangentMode": 0,
+            "indexFormat": 0,
+            "meshOptimizationMode": 1
+        },
+        "rig": {
+            "stripBones": 0,
+            "animationType": 0
+        },
+        "animation": {
+            "importAnimations": 1,
+            "importConstraints": 0,
+            "importAnimatedCustomProperties": 0,
+            "autoSplitClips": 1,
+            "importRootMotion": 0,
+            "lockRootPositionXZ": 0,
+            "lockRootRotationY": 0,
+            "sampleRate": 0.0
+        },
+        "material": {
+            "importMaterials": 1,
+            "tryReuseExistingMaterials": 1,
+            "creationMode": 0
+        }
+    },
+    "submeshes": [
+        {
+            "name": "RootNode/FluorescentLightFLICKER_$AssimpFbx$_RotationPivot/FluorescentLightFLICKER_$AssimpFbx$_RotationPivotInverse/FluorescentLightFLICKER_$AssimpFbx$_ScalingPivot/FluorescentLightFLICKER_$AssimpFbx$_ScalingPivotInverse/FluorescentLightFLICKER/FluorescentLightFLICKER",
+            "index": 0,
+            "pivotOffset": {
+                "x": 2.6665680408477783,
+                "y": 2.05869722366333,
+                "z": -2.24843692779541
+            }
+        },
+        {
+            "name": "RootNode/FluorescentLights/FluorescentLights",
+            "index": 1,
+            "pivotOffset": {
+                "x": -0.016353756189346313,
+                "y": 3.375962972640991,
+                "z": -2.5881574153900146
+            }
+        },
+        {
+            "name": "RootNode/FluorescentLightsALWAYSON_$AssimpFbx$_RotationPivot/FluorescentLightsALWAYSON_$AssimpFbx$_RotationPivotInverse/FluorescentLightsALWAYSON_$AssimpFbx$_ScalingPivot/FluorescentLightsALWAYSON_$AssimpFbx$_ScalingPivotInverse/FluorescentLightsALWAYSON/FluorescentLightsALWAYSON",
+            "index": 2,
+            "pivotOffset": {
+                "x": -0.016353756189346313,
+                "y": 2.8613953590393066,
+                "z": -7.7011308670043945
+            }
+        }
+    ],
+    "generatedPrefab": {
+        "schemaVersion": 1,
+        "Entities": [
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Section 1 just lights",
+                    "isActive": 1,
+                    "luid": 1
+                },
+                "Hierarchy": {
+                    "luid": 1,
+                    "parentLuid": 0
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 1
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "FluorescentLightFLICKER",
+                    "isActive": 1,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 2,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 2
+                },
+                "Renderer": {
+                    "modelUUID": "761bf484-bf37-4734-b6fa-0ea1e5317d39",
+                    "materialUUID": "d6ae8c6d-9be0-47db-a5ef-ee72c361f32c",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 0,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "FluorescentLights",
+                    "isActive": 1,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 3,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 3
+                },
+                "Renderer": {
+                    "modelUUID": "761bf484-bf37-4734-b6fa-0ea1e5317d39",
+                    "materialUUID": "d6ae8c6d-9be0-47db-a5ef-ee72c361f32c",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 1,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "FluorescentLightsALWAYSON",
+                    "isActive": 1,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 4,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 4
+                },
+                "Renderer": {
+                    "modelUUID": "761bf484-bf37-4734-b6fa-0ea1e5317d39",
+                    "materialUUID": "7019d882-1092-4470-9d4c-fe8f077e380d",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 2,
+                    "luid": 0
+                }
+            }
+        ]
+    }
+}
