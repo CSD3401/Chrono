@@ -15,6 +15,7 @@ public:
         // Example: SCRIPT_FIELD_VECTOR(blingstring, String);;
         SCRIPT_COMPONENT_REF(panelRef, TransformRef);
         SCRIPT_GAMEOBJECT_REF(alignedBattery);
+        SCRIPT_GAMEOBJECT_REF(batteryRef);
         SCRIPT_FIELD(message, String);
     }
 
@@ -72,32 +73,26 @@ public:
     void OnCollisionStay(Entity other) override { (void)other; }
 
     void OnTriggerEnter(Entity other) override {
+        if (isSolved)
+            return;
         // Called when this entity enters a trigger
         std::string name = GetEntityName(other);
         // when the grabbed object collides with the trigger box
         if (name.find("Battery") != std::string::npos)
         {
             // Solve the puzzle
-            //Solve();
+            isSolved = true;
+            Solve();
             // turn the grabbed object off
-            //Events::Send("LetGo");
-            // set the battery to the transform aligning to the panel
-            GameObject battery(other);
-            //auto batteryScript = battery.GetComponent<Interactable_Battery>();
+            Events::Send("LetGo");
 
-            //Vec3 pos = GetPosition(panelRef);
-            //Vec3 scale = GetScale(panelRef);
-            //Vec3 rot = GetRotation(panelRef);
-
-            //AlignTheBattery(other);
-            LOG_DEBUG(name);
             RB_SetIsTrigger(true, other);
-            SetActive(false, battery.GetEntityId()); //< ----- This is now bugged for some reason specifically this line
+            SetActive(false, batteryRef.GetEntity());
             SetActive(false, panelRef.GetEntity());
             SetActive(true, alignedBattery.GetEntity());
             // also send a message to whatever needs to be sent
-            Events::Send(message.c_str());
-            //LOG_DEBUG("END OF PANEL BATTERY");
+            if (!message.empty())
+                Events::Send(message.c_str());
         }
         else
         {
@@ -130,5 +125,7 @@ private:
     // Example: float speed = 5.0f;
     GameObjectRef alignedBattery;
     TransformRef panelRef;
+    GameObjectRef batteryRef;
     std::string message;
+    bool isSolved = false;
 };
