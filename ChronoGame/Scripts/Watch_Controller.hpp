@@ -50,7 +50,9 @@ public:
         ApplyOverlayState();
         ApplyClockFill();
 
-        LOG_INFO("Watch_Controller: Ready. Press E to toggle past/present.");
+        LOG_INFO("Watch_Controller: Ready. Press Q to toggle past/present.");
+
+        //DeferEvent("StartCutscene"); // I jus put here first - play cutscene on run
     }
 
     void Update(double deltaTime) override {
@@ -67,7 +69,7 @@ public:
         }
 
         // Toggle on E press
-        if (Input::WasKeyPressed('E')) {
+        if (Input::WasKeyPressed('Q')) {
             isPast = !isPast;
             ApplyOverlayState();
 
