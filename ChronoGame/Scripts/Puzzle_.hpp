@@ -13,7 +13,10 @@ enum class PuzzleKey {
     _3,
     _4,
     _5,
-    _6
+    _6,
+    _TrainKey01,
+    _TrainKey02,
+    _TrainKey03
 
 };
 
@@ -47,7 +50,7 @@ public:
     // === Lifecycle Methods ===
     void Awake() override {}
     void Initialize(Entity entity) override {
-        SCRIPT_ENUM_FIELD(puzzleKey, "_1", "_2", "_3", "_4", "_5", "_6");
+        SCRIPT_ENUM_FIELD(puzzleKey, "_1", "_2", "_3", "_4", "_5", "_6", "_TrainKey01", "_TrainKey02", "_TrainKey03");
     }
     void Start() override {}
     void Update(double deltaTime) override {}

@@ -78,46 +78,52 @@ public:
         if (name.find("Battery") != std::string::npos)
         {
             // Solve the puzzle
-            Solve();
+            //Solve();
             // turn the grabbed object off
-            Events::Send("LetGo");
+            //Events::Send("LetGo");
             // set the battery to the transform aligning to the panel
             GameObject battery(other);
-            auto batteryScript = battery.GetComponent<Interactable_Battery>();
+            //auto batteryScript = battery.GetComponent<Interactable_Battery>();
 
-            Vec3 pos = GetPosition(panelRef);
-            Vec3 scale = GetScale(panelRef);
-            Vec3 rot = GetRotation(panelRef);
+            //Vec3 pos = GetPosition(panelRef);
+            //Vec3 scale = GetScale(panelRef);
+            //Vec3 rot = GetRotation(panelRef);
 
-            AlignTheBattery(other);
-            SetActive(false, other);
+            //AlignTheBattery(other);
+            LOG_DEBUG(name);
             RB_SetIsTrigger(true, other);
+            SetActive(false, battery.GetEntityId()); //< ----- This is now bugged for some reason specifically this line
             SetActive(false, panelRef.GetEntity());
             SetActive(true, alignedBattery.GetEntity());
             // also send a message to whatever needs to be sent
             Events::Send(message.c_str());
+            //LOG_DEBUG("END OF PANEL BATTERY");
+        }
+        else
+        {
+            LOG_DEBUG("This aint a battery");
         }
     }
 
     void OnTriggerExit(Entity other) override { (void)other; }
     void OnTriggerStay(Entity other) override { (void)other; }
 
-    void AlignTheBattery(Entity batteryEntity)
-    {
-        GameObject battery(batteryEntity);
-        auto batteryScript = battery.GetComponent<Interactable_Battery>();
+    //void AlignTheBattery(Entity batteryEntity)
+    //{
+    //    GameObject battery(batteryEntity);
+    //    auto batteryScript = battery.GetComponent<Interactable_Battery>();
 
-        Entity e = panelRef.GetEntity();
-        Vec3 pos = TF_GetPosition(e);
-        Vec3 scale = TF_GetScale(e);
-        Vec3 rot = TF_GetRotation(e);
-        std::string logMsg = "PANEL BATTERY POS[X: " + std::to_string(pos.x) + ", Y: " + std::to_string(pos.y) + ", Z: " + std::to_string(pos.z) + "]";
-        LOG_DEBUG("ALIGNING TO THIS TRANSFORM!");
-        LOG_DEBUG(logMsg);
-        //TF_SetPosition(pos, batteryEntity);
+    //    Entity e = panelRef.GetEntity();
+    //    Vec3 pos = TF_GetPosition(e);
+    //    Vec3 scale = TF_GetScale(e);
+    //    Vec3 rot = TF_GetRotation(e);
+    //    std::string logMsg = "PANEL BATTERY POS[X: " + std::to_string(pos.x) + ", Y: " + std::to_string(pos.y) + ", Z: " + std::to_string(pos.z) + "]";
+    //    LOG_DEBUG("ALIGNING TO THIS TRANSFORM!");
+    //    LOG_DEBUG(logMsg);
+    //    //TF_SetPosition(pos, batteryEntity);
 
-        batteryScript->Align(pos, scale, rot);
-    }
+    //    batteryScript->Align(pos, scale, rot);
+    //}
 
 private:
     // Add your private member variables here
