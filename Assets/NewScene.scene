@@ -74,16 +74,16 @@
             "temporalProjectionResetThreshold": 0.05000000074505806
         },
         "vignetteSettings": {
-            "enabled": 0,
-            "intensity": 0.25,
-            "radius": 0.949999988079071,
-            "softness": 0.3499999940395355,
+            "enabled": 1,
+            "intensity": 1.0,
+            "radius": 1.0,
+            "softness": 1.0,
             "tint": {
-                "x": 1.0,
-                "y": 1.0,
+                "x": 85.0,
+                "y": 79.0,
                 "z": 1.0
             },
-            "tintIntensity": 0.0
+            "tintIntensity": 0.4000000059604645
         }
     },
     "Entities": [
@@ -274,7 +274,7 @@
                     "Misc_TimeFogLighting.normalEnvSource": "2",
                     "Misc_TimeFogLighting.affectAmbient": "1",
                     "Misc_TimeFogLighting.startInPresent": "1",
-                    "Misc_TimeFogLighting.normalFogEnabled": "0",
+                    "Misc_TimeFogLighting.normalFogEnabled": "1",
                     "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.presentFogEnabled": "1",
                     "Misc_TimeFogLighting.normalFogColor": "0.5 0.5 0.5",
@@ -653,7 +653,7 @@
                     "value": {
                         "Intensity": 16.0,
                         "Inner Cone Angle": 20.0,
-                        "Outer Cone Angle": 80.0,
+                        "Outer Cone Angle": 35.0,
                         "Range": 10.0
                     }
                 },
@@ -15499,7 +15499,7 @@
             },
             "UIImage": {
                 "luid": 0,
-                "textureUUID": "764697b0-0a58-4bd9-a991-bfc62f046303",
+                "textureUUID": "f3ace456-8af6-4d77-bd74-f74006ac07f8",
                 "materialUUID": "3c577bb6-856c-471d-93af-06b869aec18a",
                 "color": {
                     "x": 1.0,
@@ -15563,7 +15563,7 @@
             },
             "UIImage": {
                 "luid": 0,
-                "textureUUID": "47123621-5697-4ffb-bc06-7384dfebe7dd",
+                "textureUUID": "fbf8e469-fd74-41a3-a51e-cee76ee5492f",
                 "materialUUID": "3c577bb6-856c-471d-93af-06b869aec18a",
                 "color": {
                     "x": 1.0,
@@ -16648,6 +16648,16 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 1,
                 "luid": 8242829378527166501
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.presentMaterial": "8977f5ab-68eb-46c0-be60-5d14d80aa3cb"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821147462336517
             }
         },
         {
@@ -17704,7 +17714,7 @@
                 "modelUUID": "builtin:model/cube",
                 "materialUUID": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
                 "shadowCastMode": 1,
-                "receiveShadows": 1,
+                "receiveShadows": 0,
                 "subMeshIndex": 0,
                 "luid": 8242829393198579715
             },
@@ -17892,25 +17902,33 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829384176435222
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958821147458338820
             }
         },
         {
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "ElevatorDoors",
+                "name": "LiftDoors1",
                 "isActive": 1,
-                "luid": 7308613936473767961
+                "luid": 7308613951113723905
             },
             "Hierarchy": {
-                "luid": 7308613936473767938,
+                "luid": 7526194108111060992,
                 "parentLuid": 7308613936473767936
             },
             "Transform": {
                 "Position": {
-                    "x": -5.5983567237854,
-                    "y": 1.123101830482483,
-                    "z": -1.789623737335205
+                    "x": -5.5980000495910645,
+                    "y": 1.1230000257492065,
+                    "z": -1.7899999618530273
                 },
                 "Scale": {
                     "x": 1.0,
@@ -17918,19 +17936,19 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
+                    "x": -3.141592502593994,
+                    "y": -8.742277657347586e-8,
+                    "z": -3.141592502593994
                 },
-                "luid": 3
+                "luid": 8390885236566196226
             },
             "Renderer": {
-                "modelUUID": "2e263379-e35f-4600-99f4-9fd2e954d8b6",
-                "materialUUID": "0fa323b8-7ac6-4a7e-9b5d-9a15c772d247",
+                "modelUUID": "045f8d19-7cda-4cf2-8e6d-933a517e8b71",
+                "materialUUID": "5a85ab8c-99c7-415f-b5e3-38feec137f7c",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
-                "subMeshIndex": 1,
-                "luid": 8242829384176435224
+                "subMeshIndex": 5,
+                "luid": 8242829398816391171
             }
         },
         {
@@ -18290,17 +18308,17 @@
             "EntityMeta": {
                 "name": "Door2",
                 "isActive": 1,
-                "luid": 7308613936473767981
+                "luid": 7308613951058870279
             },
             "Hierarchy": {
-                "luid": 7308613936473767948,
+                "luid": 7308613951058870277,
                 "parentLuid": 7308613936473767936
             },
             "Transform": {
                 "Position": {
-                    "x": 3.0044546127319336,
+                    "x": 3.003999948501587,
                     "y": 1.1045987606048584,
-                    "z": -0.7295615673065186
+                    "z": -0.7300000190734863
                 },
                 "Scale": {
                     "x": 1.0,
@@ -18312,54 +18330,15 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 13
+                "luid": 2
             },
             "Renderer": {
-                "modelUUID": "2e263379-e35f-4600-99f4-9fd2e954d8b6",
+                "modelUUID": "e9224362-309d-4167-b3ed-0e22f5a8a5d4",
                 "materialUUID": "4d8edcf4-0032-4d0e-a3c1-d348a197d903",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
-                "subMeshIndex": 11,
-                "luid": 8242829384176435244
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Door2",
-                "isActive": 1,
-                "luid": 7308613936473767983
-            },
-            "Hierarchy": {
-                "luid": 7308613936473767949,
-                "parentLuid": 7308613936473767936
-            },
-            "Transform": {
-                "Position": {
-                    "x": 3.1278226375579834,
-                    "y": 0.9605057239532471,
-                    "z": -0.7401180863380432
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 14
-            },
-            "Renderer": {
-                "modelUUID": "2e263379-e35f-4600-99f4-9fd2e954d8b6",
-                "materialUUID": "190d9e7b-08b9-4516-8eb9-9fc28ebbbf86",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 12,
-                "luid": 8242829384176435246
+                "subMeshIndex": 0,
+                "luid": 8242829398761537542
             }
         },
         {
@@ -18581,10 +18560,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "leftLaser7",
                     "rightLaser8",
-                    "leftLaser8",
+                    "leftLaser7",
                     "rightLaser7",
+                    "leftLaser8",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
