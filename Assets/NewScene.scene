@@ -213,9 +213,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -0.1668674498796463,
-                    "y": 0.5999993085861206,
-                    "z": 2.6341652870178223
+                    "x": -5.800063610076904,
+                    "y": 2.146517276763916,
+                    "z": -86.13639068603516
                 },
                 "Scale": {
                     "x": 0.800000011920929,
@@ -14682,10 +14682,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Canvas",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7167031889608048640
             },
             "Hierarchy": {
@@ -15400,10 +15400,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Dialogue Marker Text",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613928195129344
             },
             "Hierarchy": {
@@ -15459,10 +15459,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Overlay 1",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613938681806848
             },
             "Hierarchy": {
@@ -15587,10 +15587,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Image",
-                "isActive": 1,
+                "isActive": 0,
                 "luid": 7308613938684166148
             },
             "Hierarchy": {
@@ -20694,6 +20694,4083 @@
                 },
                 "shadowType": 0,
                 "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Lab_Section",
+                "isActive": 1,
+                "luid": 7308613957851348992
+            },
+            "Hierarchy": {
+                "luid": 7526194114848686082,
+                "parentLuid": 0
+            },
+            "PrefabInstance": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c"
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 19.572465896606445,
+                    "y": 0.0,
+                    "z": -104.49951171875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.100000023841858
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243303821313
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Floor",
+                "isActive": 1,
+                "luid": 7308613957866618883
+            },
+            "Hierarchy": {
+                "luid": 7526194114863955973,
+                "parentLuid": 7526194114848686082
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 1
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 74.0,
+                    "y": 1.0,
+                    "z": 48.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243319091204
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829405569286150
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 37.0,
+                            "y": 0.5,
+                            "z": 26.0
+                        }
+                    }
+                },
+                "luid": 7165061719744184327
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Walls",
+                "isActive": 1,
+                "luid": 7308613957872189448
+            },
+            "Hierarchy": {
+                "luid": 7526194114869526538,
+                "parentLuid": 7526194114848686082
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 2
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243324661769
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958525845504
+            },
+            "Hierarchy": {
+                "luid": 7526194115523182594,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 3
+            },
+            "Transform": {
+                "Position": {
+                    "x": -37.5,
+                    "y": 2.5,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 48.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243978317825
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406228512771
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 26.5
+                        }
+                    }
+                },
+                "luid": 7165061720403410948
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958533775366
+            },
+            "Hierarchy": {
+                "luid": 7526194115531112453,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 4
+            },
+            "Transform": {
+                "Position": {
+                    "x": 37.5,
+                    "y": 2.5,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 48.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243986247687
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406236442632
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 26.5
+                        }
+                    }
+                },
+                "luid": 7165061720411340809
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958534430731
+            },
+            "Hierarchy": {
+                "luid": 7526194115531767818,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 5
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 2.5,
+                    "z": -24.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 75.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243986903052
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406237097997
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 37.5
+                        }
+                    }
+                },
+                "luid": 7165061720411996174
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958536790032
+            },
+            "Hierarchy": {
+                "luid": 7526194115534127119,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 6
+            },
+            "Transform": {
+                "Position": {
+                    "x": 6.862115859985352,
+                    "y": 2.5,
+                    "z": 24.49999237060547
+                },
+                "Scale": {
+                    "x": 1.0000001192092896,
+                    "y": 4.0,
+                    "z": 61.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243989262353
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406239457298
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 30.399999618530273
+                        }
+                    }
+                },
+                "luid": 7165061720414355475
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958543343637
+            },
+            "Hierarchy": {
+                "luid": 7526194115540680724,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 7
+            },
+            "Transform": {
+                "Position": {
+                    "x": -8.24954891204834,
+                    "y": 2.5,
+                    "z": -2.3619766235351563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 5.599999904632568
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243995815958
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406246010903
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.799999952316284
+                        }
+                    }
+                },
+                "luid": 7165061720420909080
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958544916506
+            },
+            "Hierarchy": {
+                "luid": 7526194115542253593,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 8
+            },
+            "Transform": {
+                "Position": {
+                    "x": -32.15596008300781,
+                    "y": 2.5,
+                    "z": -13.967605590820313
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 9.600000381469727
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243997388827
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406247583772
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 4.800000190734863
+                        }
+                    }
+                },
+                "luid": 7165061720422481949
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958544982047
+            },
+            "Hierarchy": {
+                "luid": 7526194115542319134,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 9
+            },
+            "Transform": {
+                "Position": {
+                    "x": -23.224916458129883,
+                    "y": 2.5,
+                    "z": -15.703651428222656
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 16.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885243997454368
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406247649313
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 9.0
+                        }
+                    }
+                },
+                "luid": 7165061720422547490
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958559268905
+            },
+            "Hierarchy": {
+                "luid": 7526194115556605992,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 10
+            },
+            "Transform": {
+                "Position": {
+                    "x": -28.491695404052734,
+                    "y": 2.5,
+                    "z": -8.221885681152344
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 9.600000381469727
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244011741226
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406261936171
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 4.800000190734863
+                        }
+                    }
+                },
+                "luid": 7165061720436834348
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958565560321
+            },
+            "Hierarchy": {
+                "luid": 7526194115562897408,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 11
+            },
+            "Transform": {
+                "Position": {
+                    "x": -23.224916458129883,
+                    "y": 2.5,
+                    "z": 3.889190673828125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 13.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244018032642
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406268227587
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 7.300000190734863
+                        }
+                    }
+                },
+                "luid": 7165061720443125764
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958579781638
+            },
+            "Hierarchy": {
+                "luid": 7526194115577118725,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 12
+            },
+            "Transform": {
+                "Position": {
+                    "x": -5.844018936157227,
+                    "y": 2.5,
+                    "z": -1.0314254760742188
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 19.600000381469727
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244032253959
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406282448904
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 10.600000381469727
+                        }
+                    }
+                },
+                "luid": 7165061720457347081
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958585286667
+            },
+            "Hierarchy": {
+                "luid": 7526194115582623754,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 13
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.2691020965576172,
+                    "y": 2.4999446868896484,
+                    "z": -10.541229248046875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 34.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244037758988
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406287953933
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 17.0
+                        }
+                    }
+                },
+                "luid": 7165061720462852110
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958600294426
+            },
+            "Hierarchy": {
+                "luid": 7526194115597631513,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 14
+            },
+            "Transform": {
+                "Position": {
+                    "x": -35.780189514160156,
+                    "y": 2.5,
+                    "z": 17.360000610351563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.700000047683716
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244052766747
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406302961692
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.399999976158142
+                        }
+                    }
+                },
+                "luid": 7165061720477859869
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958605733934
+            },
+            "Hierarchy": {
+                "luid": 7526194115603071021,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 15
+            },
+            "Transform": {
+                "Position": {
+                    "x": -25.06754493713379,
+                    "y": 2.5,
+                    "z": 17.360000610351563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.700000047683716
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244058206255
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406308401200
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.399999976158142
+                        }
+                    }
+                },
+                "luid": 7165061720483299377
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958609469491
+            },
+            "Hierarchy": {
+                "luid": 7526194115606806578,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 16
+            },
+            "Transform": {
+                "Position": {
+                    "x": -11.137758255004883,
+                    "y": 2.5,
+                    "z": -22.531417846679688
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244061941812
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406312136757
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                "luid": 7165061720487034934
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958616743997
+            },
+            "Hierarchy": {
+                "luid": 7526194115614081084,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 17
+            },
+            "Transform": {
+                "Position": {
+                    "x": -23.251455307006836,
+                    "y": 2.5,
+                    "z": 19.304718017578125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 9.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244069216318
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406319411263
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061720494309440
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958632013890
+            },
+            "Hierarchy": {
+                "luid": 7526194115629350977,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 18
+            },
+            "Transform": {
+                "Position": {
+                    "x": -16.397022247314453,
+                    "y": 2.5,
+                    "z": -3.624053955078125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244084486211
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406334681156
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                "luid": 7165061720509579333
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958642237524
+            },
+            "Hierarchy": {
+                "luid": 7526194115639574611,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 19
+            },
+            "Transform": {
+                "Position": {
+                    "x": -16.803312301635742,
+                    "y": 2.4999403953552246,
+                    "z": 16.186599731445313
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 16.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244094709845
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406344904790
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 8.5
+                        }
+                    }
+                },
+                "luid": 7165061720519802967
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958645317721
+            },
+            "Hierarchy": {
+                "luid": 7526194115642654808,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 20
+            },
+            "Transform": {
+                "Position": {
+                    "x": -19.318971633911133,
+                    "y": 2.5,
+                    "z": -2.3619766235351563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 8.800000190734863
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244097790042
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406347984987
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 4.400000095367432
+                        }
+                    }
+                },
+                "luid": 7165061720522883164
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958657179752
+            },
+            "Hierarchy": {
+                "luid": 7526194115654516839,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 21
+            },
+            "Transform": {
+                "Position": {
+                    "x": -4.813800811767578,
+                    "y": 2.5,
+                    "z": 8.545509338378906
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 12.600000381469727
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244109652073
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406359847018
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 6.300000190734863
+                        }
+                    }
+                },
+                "luid": 7165061720534745195
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958657572973
+            },
+            "Hierarchy": {
+                "luid": 7526194115654910060,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 22
+            },
+            "Transform": {
+                "Position": {
+                    "x": -16.924198150634766,
+                    "y": 2.5,
+                    "z": 8.621063232421875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 4.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244110045294
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406360240239
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720535138416
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958667468914
+            },
+            "Hierarchy": {
+                "luid": 7526194115664806001,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 23
+            },
+            "Transform": {
+                "Position": {
+                    "x": 35.37261199951172,
+                    "y": 2.4999446868896484,
+                    "z": -10.541229248046875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 3.0999999046325684
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244119941235
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406370136180
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.5499999523162842
+                        }
+                    }
+                },
+                "luid": 7165061720545034357
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958670876796
+            },
+            "Hierarchy": {
+                "luid": 7526194115668213883,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 24
+            },
+            "Transform": {
+                "Position": {
+                    "x": 25.47737693786621,
+                    "y": 2.4999446868896484,
+                    "z": -10.541229248046875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 8.699999809265137
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244123349117
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406373544062
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 4.349999904632568
+                        }
+                    }
+                },
+                "luid": 7165061720548442239
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958685425813
+            },
+            "Hierarchy": {
+                "luid": 7526194115682762900,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 25
+            },
+            "Transform": {
+                "Position": {
+                    "x": -11.137758255004883,
+                    "y": 2.5,
+                    "z": -12.250350952148438
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244137898134
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406388093079
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.440000057220459
+                        }
+                    }
+                },
+                "luid": 7165061720562991256
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958689751199
+            },
+            "Hierarchy": {
+                "luid": 7526194115687088286,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 26
+            },
+            "Transform": {
+                "Position": {
+                    "x": -16.44016456604004,
+                    "y": 2.5,
+                    "z": -9.752265930175781
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244142223520
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406392418465
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.399999976158142
+                        }
+                    }
+                },
+                "luid": 7165061720567316642
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958695846057
+            },
+            "Hierarchy": {
+                "luid": 7526194115693183144,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 27
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.122264862060547,
+                    "y": 2.5000627040863037,
+                    "z": 22.840133666992188
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244148318378
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406398513323
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.399999976158142
+                        }
+                    }
+                },
+                "luid": 7165061720573411500
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958697353395
+            },
+            "Hierarchy": {
+                "luid": 7526194115694690482,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 28
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.0335521697998047,
+                    "y": 2.5,
+                    "z": 13.036758422851563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 8.899999618530273
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244149825716
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406400020661
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 4.900000095367432
+                        }
+                    }
+                },
+                "luid": 7165061720574918838
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958702661821
+            },
+            "Hierarchy": {
+                "luid": 7526194115699998908,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 29
+            },
+            "Transform": {
+                "Position": {
+                    "x": 5.650934219360352,
+                    "y": 2.5,
+                    "z": 15.565078735351563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 6.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244155134142
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406405329087
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 3.25
+                        }
+                    }
+                },
+                "luid": 7165061720580227264
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958703579330
+            },
+            "Hierarchy": {
+                "luid": 7526194115700916417,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 30
+            },
+            "Transform": {
+                "Position": {
+                    "x": 8.435419082641602,
+                    "y": 2.5000627040863037,
+                    "z": 22.840118408203125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244156051651
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406406246596
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.399999976158142
+                        }
+                    }
+                },
+                "luid": 7165061720581144773
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958706987217
+            },
+            "Hierarchy": {
+                "luid": 7526194115704324304,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 31
+            },
+            "Transform": {
+                "Position": {
+                    "x": 8.436389923095703,
+                    "y": 2.5,
+                    "z": 13.036758422851563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 8.899999618530273
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244159459538
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406409654483
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 4.900000095367432
+                        }
+                    }
+                },
+                "luid": 7165061720584552660
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958708691158
+            },
+            "Hierarchy": {
+                "luid": 7526194115706028245,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 32
+            },
+            "Transform": {
+                "Position": {
+                    "x": 16.097379684448242,
+                    "y": 2.5,
+                    "z": 8.545509338378906
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 21.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244161163479
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406411358424
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 10.5
+                        }
+                    }
+                },
+                "luid": 7165061720586256601
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958714720475
+            },
+            "Hierarchy": {
+                "luid": 7526194115712057562,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 33
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.848825454711914,
+                    "y": 2.5,
+                    "z": 15.565078735351563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 2.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244167192796
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406417387741
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                "luid": 7165061720592285918
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958716883173
+            },
+            "Hierarchy": {
+                "luid": 7526194115714220260,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 34
+            },
+            "Transform": {
+                "Position": {
+                    "x": 15.234224319458008,
+                    "y": 2.5,
+                    "z": -0.96417236328125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 19.600000381469727
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244169355494
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406419550439
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 10.399999618530273
+                        }
+                    }
+                },
+                "luid": 7165061720594448616
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958725861610
+            },
+            "Hierarchy": {
+                "luid": 7526194115723198697,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 35
+            },
+            "Transform": {
+                "Position": {
+                    "x": 15.234224319458008,
+                    "y": 2.5,
+                    "z": 10.700965881347656
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 3.4000000953674316
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244178333931
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406428528876
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.899999976158142
+                        }
+                    }
+                },
+                "luid": 7165061720603427053
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958727041263
+            },
+            "Hierarchy": {
+                "luid": 7526194115724378350,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 36
+            },
+            "Transform": {
+                "Position": {
+                    "x": 18.84514045715332,
+                    "y": 2.5,
+                    "z": 14.089462280273438
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 3.440000057220459
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244179513584
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406429708529
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.899999976158142
+                        }
+                    }
+                },
+                "luid": 7165061720604606706
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958729531636
+            },
+            "Hierarchy": {
+                "luid": 7526194115726868723,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 37
+            },
+            "Transform": {
+                "Position": {
+                    "x": 26.12883186340332,
+                    "y": 2.5,
+                    "z": 7.565330505371094
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 7.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244182003957
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406432198902
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 3.799999952316284
+                        }
+                    }
+                },
+                "luid": 7165061720607097079
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958731038969
+            },
+            "Hierarchy": {
+                "luid": 7526194115728376056,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 38
+            },
+            "Transform": {
+                "Position": {
+                    "x": 18.059736251831055,
+                    "y": 2.5,
+                    "z": 15.54376220703125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 6.599999904632568
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244183511290
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406433706235
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 3.299999952316284
+                        }
+                    }
+                },
+                "luid": 7165061720608604412
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958734774531
+            },
+            "Hierarchy": {
+                "luid": 7526194115732111618,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 39
+            },
+            "Transform": {
+                "Position": {
+                    "x": 20.082799911499023,
+                    "y": 2.5,
+                    "z": 19.978652954101563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 8.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244187246852
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406437441797
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 4.699999809265137
+                        }
+                    }
+                },
+                "luid": 7165061720612339974
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958736937224
+            },
+            "Hierarchy": {
+                "luid": 7526194115734274311,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 40
+            },
+            "Transform": {
+                "Position": {
+                    "x": 31.105005264282227,
+                    "y": 2.5,
+                    "z": 15.543746948242188
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 12.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244189409545
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406439604490
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 6.0
+                        }
+                    }
+                },
+                "luid": 7165061720614502667
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958740738327
+            },
+            "Hierarchy": {
+                "luid": 7526194115738075414,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 41
+            },
+            "Transform": {
+                "Position": {
+                    "x": 30.42403221130371,
+                    "y": 2.4999446868896484,
+                    "z": -0.33443450927734375
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 14.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244193210648
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406443405593
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 7.0
+                        }
+                    }
+                },
+                "luid": 7165061720618303770
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958745194780
+            },
+            "Hierarchy": {
+                "luid": 7526194115742531867,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 42
+            },
+            "Transform": {
+                "Position": {
+                    "x": 23.880945205688477,
+                    "y": 2.5,
+                    "z": -5.315086364746094
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 10.5
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244197667101
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406447862046
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 6.0
+                        }
+                    }
+                },
+                "luid": 7165061720622760223
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958747816230
+            },
+            "Hierarchy": {
+                "luid": 7526194115745153317,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 43
+            },
+            "Transform": {
+                "Position": {
+                    "x": 16.003232955932617,
+                    "y": 2.4999446868896484,
+                    "z": -2.637603759765625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244200288551
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406450483496
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061720625381673
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958748733739
+            },
+            "Hierarchy": {
+                "luid": 7526194115746070826,
+                "parentLuid": 7526194114869526538
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 44
+            },
+            "Transform": {
+                "Position": {
+                    "x": 21.91450309753418,
+                    "y": 2.4999446868896484,
+                    "z": -2.637603759765625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 3.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 90.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244201206060
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406451401005
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 1.5
+                        }
+                    }
+                },
+                "luid": 7165061720626299182
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Doors",
+                "isActive": 1,
+                "luid": 7308613958636798027
+            },
+            "Hierarchy": {
+                "luid": 7526194115634135117,
+                "parentLuid": 7526194114848686082
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 45
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 0.9090908765792847
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244089270348
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958596034576
+            },
+            "Hierarchy": {
+                "luid": 7526194115593371663,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 46
+            },
+            "Transform": {
+                "Position": {
+                    "x": -25.63237762451172,
+                    "y": 2.5,
+                    "z": -15.4298095703125
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244048506897
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406298701842
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720473600019
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958610321464
+            },
+            "Hierarchy": {
+                "luid": 7526194115607658551,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 47
+            },
+            "Transform": {
+                "Position": {
+                    "x": -23.29979133605957,
+                    "y": 2.5,
+                    "z": 13.818000793457031
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 4.400000095367432
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244062793785
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406312988730
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720487886907
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958605340713
+            },
+            "Hierarchy": {
+                "luid": 7526194115602677800,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 48
+            },
+            "Transform": {
+                "Position": {
+                    "x": -28.442962646484375,
+                    "y": 2.5,
+                    "z": 19.06293487548828
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244057813034
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406308007979
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720482906156
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958604750884
+            },
+            "Hierarchy": {
+                "luid": 7526194115602087971,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 49
+            },
+            "Transform": {
+                "Position": {
+                    "x": -32.433197021484375,
+                    "y": 2.5,
+                    "z": 19.06293487548828
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244057223205
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406307418150
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720482316327
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958639026255
+            },
+            "Hierarchy": {
+                "luid": 7526194115636363342,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 50
+            },
+            "Transform": {
+                "Position": {
+                    "x": -20.761619567871094,
+                    "y": 2.5,
+                    "z": 9.502632141113281
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244091498576
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406341693521
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720516591698
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958646169694
+            },
+            "Hierarchy": {
+                "luid": 7526194115643506781,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 51
+            },
+            "Transform": {
+                "Position": {
+                    "x": -13.03923225402832,
+                    "y": 2.5,
+                    "z": -2.5920333862304688
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244098642015
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406348836960
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720523735137
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958656852067
+            },
+            "Hierarchy": {
+                "luid": 7526194115654189154,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 52
+            },
+            "Transform": {
+                "Position": {
+                    "x": -13.03923225402832,
+                    "y": 2.5,
+                    "z": 9.474723815917969
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244109324388
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406359519333
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720534417510
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958668517495
+            },
+            "Hierarchy": {
+                "luid": 7526194115665854582,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 53
+            },
+            "Transform": {
+                "Position": {
+                    "x": 31.821592330932617,
+                    "y": 2.5,
+                    "z": -11.596305847167969
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244120989816
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406371184761
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720546082938
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958671728769
+            },
+            "Hierarchy": {
+                "luid": 7526194115669065856,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 54
+            },
+            "Transform": {
+                "Position": {
+                    "x": 19.255151748657227,
+                    "y": 2.5,
+                    "z": -11.596305847167969
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244124201090
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406374396035
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720549294212
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958680379531
+            },
+            "Hierarchy": {
+                "luid": 7526194115677716618,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 55
+            },
+            "Transform": {
+                "Position": {
+                    "x": -11.161503791809082,
+                    "y": 2.5,
+                    "z": -21.555099487304688
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 4.400000095367432
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244132851852
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406383046797
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720557944974
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958685098128
+            },
+            "Hierarchy": {
+                "luid": 7526194115682435215,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 56
+            },
+            "Transform": {
+                "Position": {
+                    "x": -11.161503791809082,
+                    "y": 2.5,
+                    "z": -17.104049682617188
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 4.400000095367432
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244137570449
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406387765394
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720562663571
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958689095834
+            },
+            "Hierarchy": {
+                "luid": 7526194115686432921,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 57
+            },
+            "Transform": {
+                "Position": {
+                    "x": -16.42000961303711,
+                    "y": 2.5,
+                    "z": -7.2516326904296875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 4.400000095367432
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244141568155
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406391763100
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720566661277
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958696763566
+            },
+            "Hierarchy": {
+                "luid": 7526194115694100653,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 58
+            },
+            "Transform": {
+                "Position": {
+                    "x": -2.115894317626953,
+                    "y": 2.5,
+                    "z": 21.500457763671875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 4.400000095367432
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244149235887
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406399430832
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720574329009
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958700499128
+            },
+            "Hierarchy": {
+                "luid": 7526194115697836215,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 59
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.41543006896972656,
+                    "y": 2.5,
+                    "z": 17.127540588378906
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244152971449
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406403166394
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720578064571
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958703710407
+            },
+            "Hierarchy": {
+                "luid": 7526194115701047494,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 60
+            },
+            "Transform": {
+                "Position": {
+                    "x": 8.388290405273438,
+                    "y": 2.5,
+                    "z": 21.500457763671875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 4.400000095367432
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244156182728
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406406377673
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720581275850
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958715506912
+            },
+            "Hierarchy": {
+                "luid": 7526194115712843999,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 61
+            },
+            "Transform": {
+                "Position": {
+                    "x": 12.798460006713867,
+                    "y": 2.5,
+                    "z": 17.127540588378906
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244167979233
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406418174178
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720593072355
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958734446846
+            },
+            "Hierarchy": {
+                "luid": 7526194115731783933,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 62
+            },
+            "Transform": {
+                "Position": {
+                    "x": 23.250280380249023,
+                    "y": 2.5,
+                    "z": 17.127540588378906
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244186919167
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406437114112
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720612012289
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958740082962
+            },
+            "Hierarchy": {
+                "luid": 7526194115737420049,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 63
+            },
+            "Transform": {
+                "Position": {
+                    "x": 26.113218307495117,
+                    "y": 2.5,
+                    "z": 2.3741912841796875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 4.0,
+                    "z": 4.400000095367432
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885244192555283
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406442750228
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720617648405
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958747423009
+            },
+            "Hierarchy": {
+                "luid": 7526194115744760096,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 64
+            },
+            "Transform": {
+                "Position": {
+                    "x": 18.441923141479492,
+                    "y": 2.5,
+                    "z": -2.8503875732421875
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244199895330
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406450090275
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720624988452
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 1,
+                "luid": 7308613958597017621
+            },
+            "Hierarchy": {
+                "luid": 7526194115594354708,
+                "parentLuid": 7526194115634135117
+            },
+            "PrefabLink": {
+                "prefabUUID": "d75e62d8-5b2e-4c70-b476-74a97260788c",
+                "localID": 65
+            },
+            "Transform": {
+                "Position": {
+                    "x": -35.10539245605469,
+                    "y": 2.5,
+                    "z": -8.99237060546875
+                },
+                "Scale": {
+                    "x": 1.1000001430511475,
+                    "y": 4.0,
+                    "z": 4.000000476837158
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "luid": 8390885244049489942
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829406299684887
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 2.0,
+                            "z": 2.0
+                        }
+                    }
+                },
+                "luid": 7165061720474583064
             }
         }
     ]
