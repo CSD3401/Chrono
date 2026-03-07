@@ -3,12 +3,13 @@
 #include "ScriptSDK//UI.h"
 /*
 * Watch_Controller - Overlay swap + clock fill
-* Press E to toggle between present (green) and past (blue).
+* Press Q to toggle between present (green) and past (blue).
 * Clock drains while in past, refills while in present.
 * Auto-switches back to present when depleted.
 *
-* All state changes (overlay swap + events) that could conflict
-* with ICO switcher are deferred via coroutine.
+* Inspector fields:
+*   pastDuration   - seconds at full charge before depletion (default 10s)
+*   refillDuration - seconds from empty to full (default 5s)
 */
 
 class Watch_Controller : public IScript {
@@ -21,6 +22,8 @@ public:
         SCRIPT_GAMEOBJECT_REF(presentOverlayRef);
         SCRIPT_GAMEOBJECT_REF(pastOverlayRef);
         SCRIPT_GAMEOBJECT_REF(clockFillRef);
+        SCRIPT_FIELD(chronoCapacity, Float);
+        SCRIPT_FIELD(chronoRechargeTime, Float);
     }
     ~Watch_Controller() override = default;
 
@@ -43,6 +46,10 @@ public:
         else
             LOG_WARNING("Watch_Controller: clockFillRef not set.");
 
+        // Safety clamp
+        if (chronoCapacity <= 0.0f) chronoCapacity = 10.0f;
+        if (chronoRechargeTime <= 0.0f) chronoRechargeTime = 5.0f;
+
         isPast = false;
         fillValue = 1.0f;
         m_pendingDepletion = false;
@@ -50,9 +57,9 @@ public:
         ApplyOverlayState();
         ApplyClockFill();
 
-        LOG_INFO("Watch_Controller: Ready. Press Q to toggle past/present.");
-
-        //DeferEvent("StartCutscene"); // I jus put here first - play cutscene on run
+        LOG_INFO("Watch_Controller: Ready. Press Q to toggle. Drain=" +
+            std::to_string(chronoCapacity) + "s, Refill=" +
+            std::to_string(chronoRechargeTime) + "s");
     }
 
     void Update(double deltaTime) override {
@@ -68,7 +75,7 @@ public:
             LOG_INFO("Watch_Controller: Depletion applied, back to PRESENT");
         }
 
-        // Toggle on E press
+        // Toggle on Q press
         if (Input::WasKeyPressed('Q')) {
             isPast = !isPast;
             ApplyOverlayState();
@@ -87,16 +94,17 @@ public:
 
         // Drain in past, refill in present
         if (isPast) {
-            fillValue -= 0.5f * dt;
+            // fillValue goes from 1.0 to 0.0 over pastDuration seconds
+            fillValue -= (1.0f / chronoCapacity) * dt;
             if (fillValue < 0.0f) {
                 fillValue = 0.0f;
-                // Don't change state now — defer to next frame
                 m_pendingDepletion = true;
                 LOG_INFO("Watch_Controller: Fill depleted, deferring state change to next frame");
             }
         }
         else {
-            fillValue += 0.3f * dt;
+            // fillValue goes from 0.0 to 1.0 over refillDuration seconds
+            fillValue += (1.0f / chronoRechargeTime) * dt;
             if (fillValue > 1.0f)
                 fillValue = 1.0f;
         }
@@ -123,6 +131,10 @@ private:
     bool isPast = false;
     float fillValue = 1.0f;
     bool m_pendingDepletion = false;
+
+    // Inspector fields
+    float chronoCapacity = 10.0f;    // seconds at full before depletion
+    float chronoRechargeTime = 5.0f;   // seconds from empty to full
 
     void ApplyOverlayState() {
         if (m_presentOverlay != 0)
