@@ -127,10 +127,10 @@ public:
         bool isMoving = inputDirection.x != 0.0f || inputDirection.z != 0.0f;
 
         if (isGrounded && isMoving && walkSoundTimer < 0.0f) {
-			walkSoundTimer = walkSoundInterval;
+            walkSoundTimer = walkSoundInterval;
             PlayAudio("event:/WALK");
         }
-		walkSoundTimer -= static_cast<float>(deltaTime);
+        walkSoundTimer -= static_cast<float>(deltaTime);
 
         // Assign
         CC_Move(velocity * static_cast<float>(deltaTime));
