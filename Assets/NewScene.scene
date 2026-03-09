@@ -5399,6 +5399,65 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "SECTION 2 rubble",
+                "isActive": 1,
+                "luid": 7308613967688499203
+            },
+            "Hierarchy": {
+                "luid": 7308613967688499201,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 6.864691734313965,
+                    "y": 0.5431637763977051,
+                    "z": -24.564170837402344
+                },
+                "Scale": {
+                    "x": 0.05999999865889549,
+                    "y": 0.05999999865889549,
+                    "z": 0.05999999865889549
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 2
+            },
+            "Renderer": {
+                "modelUUID": "18f2e5c9-e5d1-4c65-b2d9-c53885577de7",
+                "materialUUID": "c586eeb6-d9ac-4d0b-9ed2-9f9a3dca7301",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829415391166466
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.75,
+                            "y": 0.6899999976158142,
+                            "z": 0.75
+                        }
+                    }
+                },
+                "luid": 7165061729580613636
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "ICO Manager",
                 "isActive": 1,
                 "luid": 7308613743830958098
@@ -21687,6 +21746,20 @@
                 "subMeshIndex": 0,
                 "luid": 8242829384176435222
             },
+            "Collider": {
+                "type": 4,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 4,
+                    "value": {}
+                },
+                "luid": 7165061729614233607
+            },
             "NativeScript": {
                 "ScriptNames": [
                     "Misc_MaterialSwitcher"
@@ -22098,6 +22171,77 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 10,
                 "luid": 8242829384176435242
+            },
+            "Collider": {
+                "type": 4,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 4,
+                    "value": {}
+                },
+                "luid": 7165061729688092672
+            },
+            "NativeScript": {
+                "ScriptNames": [],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958821163917312005
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Door Hinge",
+                "isActive": 1,
+                "luid": 7308613967784902656
+            },
+            "Hierarchy": {
+                "luid": 7526194124782239746,
+                "parentLuid": 7308613936473767936
+            },
+            "Transform": {
+                "Position": {
+                    "x": 3.012634754180908,
+                    "y": 1.1050000190734863,
+                    "z": -1.361124038696289
+                },
+                "Scale": {
+                    "x": 0.05000000074505806,
+                    "y": 0.05000000074505806,
+                    "z": 0.05000000074505806
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885253237374977
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_DoorHinge"
+                ],
+                "SerializedFields": {
+                    "Interactable_DoorHinge.targetRotationY": "-100.000000",
+                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.isEventBased": "0",
+                    "Interactable_DoorHinge.doorRef": "7308613967784902656",
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [
+                    "doorRef",
+                    "playerRef"
+                ],
+                "luid": 7958821163993792517
             }
         },
         {
@@ -22110,18 +22254,18 @@
             },
             "Hierarchy": {
                 "luid": 7308613951913000961,
-                "parentLuid": 7308613936473767936
+                "parentLuid": 7526194124782239746
             },
             "Transform": {
                 "Position": {
-                    "x": 3.003999948501587,
-                    "y": 1.1045987606048584,
-                    "z": -0.7300000190734863
+                    "x": -0.1726837158203125,
+                    "y": -0.008024215698242188,
+                    "z": 12.622467041015625
                 },
                 "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "x": 20.0,
+                    "y": 20.0,
+                    "z": 20.0
                 },
                 "Rotation": {
                     "x": -0.0,
@@ -22137,6 +22281,32 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829399615668226
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.12956452369689941,
+                            "y": 1.0472259521484375,
+                            "z": 0.6315752267837524
+                        }
+                    }
+                },
+                "luid": 7165061729651982336
+            },
+            "NativeScript": {
+                "ScriptNames": [],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958821163922358278
             }
         },
         {
@@ -22224,24 +22394,24 @@
                     "LaserListener"
                 ],
                 "SerializedFields": {
-                    "LaserListener.leftLaser": "0",
-                    "LaserListener.rightLaser3": "0",
-                    "LaserListener.leftLaser2": "0",
-                    "LaserListener.leftLaser1": "0",
-                    "LaserListener.rightLaser2": "0",
-                    "LaserListener.leftLaser3": "0",
-                    "LaserListener.rightLaser5": "0",
-                    "LaserListener.leftLaser4": "0",
-                    "LaserListener.rightLaser4": "0",
-                    "LaserListener.leftLaser5": "0",
-                    "LaserListener.rightLaser7": "0",
-                    "LaserListener.leftLaser6": "0",
-                    "LaserListener.rightLaser6": "0",
-                    "LaserListener.leftLaser7": "0",
-                    "LaserListener.leftLaser8": "0",
-                    "LaserListener.rightLaser": "0",
-                    "LaserListener.rightLaser1": "0",
-                    "LaserListener.rightLaser8": "0"
+                    "LaserListener.leftLaser": "7308613950611456073",
+                    "LaserListener.rightLaser3": "7308613950610931737",
+                    "LaserListener.leftLaser2": "7308613950611456085",
+                    "LaserListener.leftLaser1": "7308613950611456077",
+                    "LaserListener.rightLaser2": "7308613950610931729",
+                    "LaserListener.leftLaser3": "7308613950611456093",
+                    "LaserListener.rightLaser5": "7308613950610931753",
+                    "LaserListener.leftLaser4": "7308613950611456101",
+                    "LaserListener.rightLaser4": "7308613950610931745",
+                    "LaserListener.leftLaser5": "7308613950611456109",
+                    "LaserListener.rightLaser7": "7308613950610931769",
+                    "LaserListener.leftLaser6": "7308613950611456117",
+                    "LaserListener.rightLaser6": "7308613950610931761",
+                    "LaserListener.leftLaser7": "7308613950611456125",
+                    "LaserListener.leftLaser8": "7308613950611456133",
+                    "LaserListener.rightLaser": "7308613950610931717",
+                    "LaserListener.rightLaser1": "7308613950610931721",
+                    "LaserListener.rightLaser8": "7308613950610931777"
                 },
                 "EntityReferenceFields": [
                     "rightLaser",
@@ -22252,10 +22422,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "leftLaser7",
                     "rightLaser8",
-                    "leftLaser8",
+                    "leftLaser7",
                     "rightLaser7",
+                    "leftLaser8",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -23962,7 +24132,7 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -4.020045757293701,
+                    "x": -4.010045528411865,
                     "y": 1.060046911239624,
                     "z": 0.5838832855224609
                 },
