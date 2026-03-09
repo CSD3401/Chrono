@@ -57,7 +57,7 @@
 #include "Scripts/Interactable_TeleportToTop.hpp"
 #include "Scripts/Misc_ExplosionCameraShakeOnCollision.hpp"
 #include "Scripts/Camera_ExplosionShake.hpp"
-
+#include "Scripts/UI_MainMenu.hpp"
 
 
 
@@ -235,8 +235,8 @@ extern "C" {
         registrar->RegisterScript("Camera_ExplosionShake", []() -> NE::Scripting::IScript* {
             return new Camera_ExplosionShake();
             });
-
-       
-        
+        registrar->RegisterScript("UI_MainMenu", []() -> NE::Scripting::IScript* {
+            return new UI_MainMenu();
+            });
         }
 }
