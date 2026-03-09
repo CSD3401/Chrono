@@ -58,6 +58,9 @@
 #include "Scripts/Misc_ExplosionCameraShakeOnCollision.hpp"
 #include "Scripts/Camera_ExplosionShake.hpp"
 #include "Scripts/UI_MainMenu.hpp"
+#include "Scripts/UI_BGMVolumeButtons.hpp"
+#include "Scripts/UI_SFXVolumeButtons.hpp"
+#include "Scripts/UI_AmbienceVolumeButtons.hpp"
 
 
 
@@ -237,6 +240,15 @@ extern "C" {
             });
         registrar->RegisterScript("UI_MainMenu", []() -> NE::Scripting::IScript* {
             return new UI_MainMenu();
+            });
+        registrar->RegisterScript("UI_BGMVolumeButtons", []() -> NE::Scripting::IScript* {
+            return new UI_BGMVolumeButtons();
+            });
+        registrar->RegisterScript("UI_SFXVolumeButtons", []() -> NE::Scripting::IScript* {
+            return new UI_SFXVolumeButtons();
+            });
+        registrar->RegisterScript("UI_AmbienceVolumeButtons", []() -> NE::Scripting::IScript* {
+            return new UI_AmbienceVolumeButtons();
             });
         }
 }
