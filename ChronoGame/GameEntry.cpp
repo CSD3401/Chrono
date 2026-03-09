@@ -62,6 +62,7 @@
 #include "Scripts/UI_SFXVolumeButtons.hpp"
 #include "Scripts/UI_AmbienceVolumeButtons.hpp"
 #include "Scripts/SplashScreen_Controller.hpp"
+#include "Scripts/Credits_Controller.hpp"
 
 
 
@@ -253,6 +254,9 @@ extern "C" {
             });
         registrar->RegisterScript("SplashScreen_Controller", []() -> NE::Scripting::IScript* {
             return new SplashScreen_Controller();
+            });
+        registrar->RegisterScript("Credits_Controller", []() -> NE::Scripting::IScript* {
+            return new Credits_Controller();
             });
         }
 }
