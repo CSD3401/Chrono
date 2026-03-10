@@ -529,44 +529,66 @@
                 "name": "Master Volume",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968144695303
+                "luid": 7167032061686120448
             },
             "Hierarchy": {
-                "luid": 7526194125142032393,
+                "luid": 7167032061686120449,
                 "parentLuid": 7526193946532184082
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885253597167624
             },
             "NativeScript": {
                 "ScriptNames": [
                     "UI_MasterVolumeButtons"
                 ],
                 "SerializedFields": {
-                    "UI_MasterVolumeButtons.volumeUpButton": "7308613789535043611",
                     "UI_MasterVolumeButtons.volumeDownButton": "7308613789534846997",
-                    "UI_MasterVolumeButtons.step": "1"
+                    "UI_MasterVolumeButtons.volumeUpButton": "7308613789535043611"
                 },
                 "EntityReferenceFields": [
                     "volumeDownButton",
                     "volumeUpButton"
                 ],
-                "luid": 7958821164460867615
+                "luid": 7958821171180142607
+            },
+            "UIRectTransform": {
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UICanvas": {
+                "luid": 7167032061686120450,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "cameraEntity": 4294967295,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 0,
+                "alpha": 1.0
             }
         },
         {
@@ -580,7 +602,7 @@
             },
             "Hierarchy": {
                 "luid": 7526193946532184086,
-                "parentLuid": 7526194125142032393
+                "parentLuid": 7167032061686120449
             },
             "UIRectTransform": {
                 "x": -175.89999389648438,
@@ -674,7 +696,7 @@
             },
             "Hierarchy": {
                 "luid": 7526193946532380700,
-                "parentLuid": 7526194125142032393
+                "parentLuid": 7167032061686120449
             },
             "UIRectTransform": {
                 "x": 295.0,
@@ -764,29 +786,11 @@
                 "name": "Music",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968146530315
+                "luid": 7167032061687169027
             },
             "Hierarchy": {
-                "luid": 7526194125143867402,
+                "luid": 7167032061687169028,
                 "parentLuid": 7526193946532184082
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885253599002636
             },
             "NativeScript": {
                 "ScriptNames": [
@@ -800,7 +804,48 @@
                     "volumeDownButton",
                     "volumeUpButton"
                 ],
-                "luid": 7958821164494815264
+                "luid": 7958821171178897422
+            },
+            "UIRectTransform": {
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UICanvas": {
+                "luid": 7167032061687169029,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "cameraEntity": 4294967295,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 0,
+                "alpha": 1.0
             }
         },
         {
@@ -814,7 +859,7 @@
             },
             "Hierarchy": {
                 "luid": 7526194125143867405,
-                "parentLuid": 7526194125143867402
+                "parentLuid": 7167032061687169028
             },
             "UIRectTransform": {
                 "x": -175.89999389648438,
@@ -908,7 +953,7 @@
             },
             "Hierarchy": {
                 "luid": 7526194125143867407,
-                "parentLuid": 7526194125143867402
+                "parentLuid": 7167032061687169028
             },
             "UIRectTransform": {
                 "x": 295.0,
@@ -998,43 +1043,66 @@
                 "name": "SFX",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968149741586
+                "luid": 7167032061687300102
             },
             "Hierarchy": {
-                "luid": 7526194125147078673,
+                "luid": 7167032061687300103,
                 "parentLuid": 7526193946532184082
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885253602213907
             },
             "NativeScript": {
                 "ScriptNames": [
                     "UI_SFXVolumeButtons"
                 ],
                 "SerializedFields": {
-                    "UI_SFXVolumeButtons.volumeUpButton": "7308613968149741591",
-                    "UI_SFXVolumeButtons.volumeDownButton": "7308613968149741589"
+                    "UI_SFXVolumeButtons.volumeDownButton": "7308613968149741589",
+                    "UI_SFXVolumeButtons.volumeUpButton": "7308613968149741591"
                 },
                 "EntityReferenceFields": [
-                    "volumeUpButton",
-                    "volumeDownButton"
+                    "volumeDownButton",
+                    "volumeUpButton"
                 ],
-                "luid": 7958821164496912384
+                "luid": 7958821171177848845
+            },
+            "UIRectTransform": {
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UICanvas": {
+                "luid": 7167032061687300104,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "cameraEntity": 4294967295,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 0,
+                "alpha": 1.0
             }
         },
         {
@@ -1048,7 +1116,7 @@
             },
             "Hierarchy": {
                 "luid": 7526194125147078676,
-                "parentLuid": 7526194125147078673
+                "parentLuid": 7167032061687300103
             },
             "UIRectTransform": {
                 "x": -175.89999389648438,
@@ -1142,7 +1210,7 @@
             },
             "Hierarchy": {
                 "luid": 7526194125147078678,
-                "parentLuid": 7526194125147078673
+                "parentLuid": 7167032061687300103
             },
             "UIRectTransform": {
                 "x": 295.0,
@@ -1232,43 +1300,66 @@
                 "name": "Ambience",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968151052313
+                "luid": 7167032061687365641
             },
             "Hierarchy": {
-                "luid": 7526194125148389400,
+                "luid": 7167032061687365642,
                 "parentLuid": 7526193946532184082
-            },
-            "Transform": {
-                "Position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885253603524634
             },
             "NativeScript": {
                 "ScriptNames": [
                     "UI_AmbienceVolumeButtons"
                 ],
                 "SerializedFields": {
-                    "UI_AmbienceVolumeButtons.volumeUpButton": "7308613968151052318",
-                    "UI_AmbienceVolumeButtons.volumeDownButton": "7308613968151052316"
+                    "UI_AmbienceVolumeButtons.volumeDownButton": "7308613968151052316",
+                    "UI_AmbienceVolumeButtons.volumeUpButton": "7308613968151052318"
                 },
                 "EntityReferenceFields": [
-                    "volumeUpButton",
-                    "volumeDownButton"
+                    "volumeDownButton",
+                    "volumeUpButton"
                 ],
-                "luid": 7958821164497829889
+                "luid": 7958821171176931340
+            },
+            "UIRectTransform": {
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UICanvas": {
+                "luid": 7167032061687365643,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "cameraEntity": 4294967295,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 0,
+                "alpha": 1.0
             }
         },
         {
@@ -1282,7 +1373,7 @@
             },
             "Hierarchy": {
                 "luid": 7526194125148389403,
-                "parentLuid": 7526194125148389400
+                "parentLuid": 7167032061687365642
             },
             "UIRectTransform": {
                 "x": -175.89999389648438,
@@ -1376,7 +1467,7 @@
             },
             "Hierarchy": {
                 "luid": 7526194125148389405,
-                "parentLuid": 7526194125148389400
+                "parentLuid": 7167032061687365642
             },
             "UIRectTransform": {
                 "x": 295.0,
