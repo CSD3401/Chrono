@@ -223,9 +223,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -10.864654541015625,
-                    "y": 10.0,
-                    "z": -79.69002532958984
+                    "x": -11.299484252929688,
+                    "y": 3.9289588928222656,
+                    "z": -79.29008483886719
                 },
                 "Scale": {
                     "x": 0.800000011920929,
@@ -3180,9 +3180,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 26.699932098388672,
-                    "y": 2.286881446838379,
-                    "z": -116.86803436279297
+                    "x": 20.0,
+                    "y": 2.0,
+                    "z": -123.01000213623047
                 },
                 "Scale": {
                     "x": 0.10000001639127731,
@@ -3251,9 +3251,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 26.699932098388672,
-                    "y": 2.286881446838379,
-                    "z": -115.90105438232422
+                    "x": 20.0,
+                    "y": 2.0,
+                    "z": -121.0
                 },
                 "Scale": {
                     "x": 0.10000001639127731,
@@ -3311,6 +3311,148 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613968333635628
+            },
+            "Hierarchy": {
+                "luid": 7526194125330972715,
+                "parentLuid": 7526194087960641641
+            },
+            "Transform": {
+                "Position": {
+                    "x": 20.0,
+                    "y": 2.0,
+                    "z": -125.0
+                },
+                "Scale": {
+                    "x": 0.10000001639127731,
+                    "y": 2.999999761581421,
+                    "z": 0.10000001639127731
+                },
+                "Rotation": {
+                    "x": 5.0897890346846e-9,
+                    "y": -2.540113896998264e-9,
+                    "z": 5.224941368453528e-9
+                },
+                "luid": 8390885253786107949
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829416036302894
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.10000000149011612,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061730211201071
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613968325836817"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958821164535250992
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Laser",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975851073537
+            },
+            "Hierarchy": {
+                "luid": 7526194132848410624,
+                "parentLuid": 7526194087960641641
+            },
+            "Transform": {
+                "Position": {
+                    "x": 20.0,
+                    "y": 2.0,
+                    "z": -119.0
+                },
+                "Scale": {
+                    "x": 0.10000001639127731,
+                    "y": 2.999999761581421,
+                    "z": 0.10000001639127731
+                },
+                "Rotation": {
+                    "x": 5.0897890346846e-9,
+                    "y": -2.540113896998264e-9,
+                    "z": 5.224941368453528e-9
+                },
+                "luid": 8390885261303545858
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423553740803
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.10000000149011612,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061737728638980
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613968325836817"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958821172052688901
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Respawn Point",
                 "isActive": 1,
                 "isStatic": 0,
@@ -3359,77 +3501,6 @@
                     "checkpointRef"
                 ],
                 "luid": 7958821164527452180
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Laser",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613968333635628
-            },
-            "Hierarchy": {
-                "luid": 7526194125330972715,
-                "parentLuid": 7526194087960641641
-            },
-            "Transform": {
-                "Position": {
-                    "x": 20.049867630004883,
-                    "y": 2.696000099182129,
-                    "z": -124.21815490722656
-                },
-                "Scale": {
-                    "x": 0.10000001639127731,
-                    "y": 2.999999761581421,
-                    "z": 0.10000001639127731
-                },
-                "Rotation": {
-                    "x": -2.9162342229938076e-7,
-                    "y": 1.4553781113590958e-7,
-                    "z": -2.993670875639509e-7
-                },
-                "luid": 8390885253786107949
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cylinder",
-                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829416036302894
-            },
-            "Collider": {
-                "type": 3,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 3,
-                    "value": {
-                        "radius": 0.10000000149011612,
-                        "height": 3.0
-                    }
-                },
-                "luid": 7165061730211201071
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Misc_RespawnOnCollision"
-                ],
-                "SerializedFields": {
-                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
-                    "Misc_RespawnOnCollision.respawnRef": "7308613968325836817"
-                },
-                "EntityReferenceFields": [
-                    "playerRef",
-                    "respawnRef"
-                ],
-                "luid": 7958821164535250992
             }
         },
         {
@@ -4021,6 +4092,290 @@
                     "playerRef"
                 ],
                 "luid": 7958821171590660123
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Laser near batter",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976025595923
+            },
+            "Hierarchy": {
+                "luid": 7526194133022933010,
+                "parentLuid": 7526194087960641641
+            },
+            "Transform": {
+                "Position": {
+                    "x": 50.18742752075195,
+                    "y": 2.0,
+                    "z": -125.87361907958984
+                },
+                "Scale": {
+                    "x": 0.10000001639127731,
+                    "y": 2.999999761581421,
+                    "z": 0.10000001639127731
+                },
+                "Rotation": {
+                    "x": 5.0897890346846e-9,
+                    "y": -2.540113896998264e-9,
+                    "z": 5.224941368453528e-9
+                },
+                "luid": 8390885261478068244
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423728263189
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.10000000149011612,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061737903161366
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613968325836817"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958821172227211287
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Laser near batter",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976027693081
+            },
+            "Hierarchy": {
+                "luid": 7526194133025030168,
+                "parentLuid": 7526194087960641641
+            },
+            "Transform": {
+                "Position": {
+                    "x": 50.18742752075195,
+                    "y": 2.0,
+                    "z": -124.18997192382813
+                },
+                "Scale": {
+                    "x": 0.10000001639127731,
+                    "y": 2.999999761581421,
+                    "z": 0.10000001639127731
+                },
+                "Rotation": {
+                    "x": 5.0897890346846e-9,
+                    "y": -2.540113896998264e-9,
+                    "z": 5.224941368453528e-9
+                },
+                "luid": 8390885261480165402
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423730360347
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.10000000149011612,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061737905258524
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613968325836817"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958821172229308445
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Laser near batter",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976028217375
+            },
+            "Hierarchy": {
+                "luid": 7526194133025554462,
+                "parentLuid": 7526194087960641641
+            },
+            "Transform": {
+                "Position": {
+                    "x": 52.058494567871094,
+                    "y": 2.0,
+                    "z": -124.18997192382813
+                },
+                "Scale": {
+                    "x": 0.10000001639127731,
+                    "y": 2.999999761581421,
+                    "z": 0.10000001639127731
+                },
+                "Rotation": {
+                    "x": 5.0897890346846e-9,
+                    "y": -2.540113896998264e-9,
+                    "z": 5.224941368453528e-9
+                },
+                "luid": 8390885261480689696
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423730884641
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.10000000149011612,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061737905782818
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613968325836817"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958821172229832739
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Laser near batter",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976028676133
+            },
+            "Hierarchy": {
+                "luid": 7526194133026013220,
+                "parentLuid": 7526194087960641641
+            },
+            "Transform": {
+                "Position": {
+                    "x": 53.99711227416992,
+                    "y": 2.0,
+                    "z": -124.18997192382813
+                },
+                "Scale": {
+                    "x": 0.10000001639127731,
+                    "y": 2.999999761581421,
+                    "z": 0.10000001639127731
+                },
+                "Rotation": {
+                    "x": 5.0897890346846e-9,
+                    "y": -2.540113896998264e-9,
+                    "z": 5.224941368453528e-9
+                },
+                "luid": 8390885261481148454
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423731343399
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.10000000149011612,
+                        "height": 3.0
+                    }
+                },
+                "luid": 7165061737906241576
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_RespawnOnCollision"
+                ],
+                "SerializedFields": {
+                    "Misc_RespawnOnCollision.playerRef": "7308613656064753675",
+                    "Misc_RespawnOnCollision.respawnRef": "7308613968325836817"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "respawnRef"
+                ],
+                "luid": 7958821172230291497
             }
         },
         {
@@ -7037,7 +7392,7 @@
         },
         {
             "Layer": 0,
-            "Active": 0,
+            "Active": 1,
             "EntityMeta": {
                 "name": "LAB rubble",
                 "isActive": 1,
@@ -7051,7 +7406,7 @@
             "Transform": {
                 "Position": {
                     "x": 21.97977638244629,
-                    "y": 3.5154218673706055,
+                    "y": 2.6511847972869873,
                     "z": -121.36053466796875
                 },
                 "Scale": {
@@ -7097,7 +7452,7 @@
         },
         {
             "Layer": 0,
-            "Active": 0,
+            "Active": 1,
             "EntityMeta": {
                 "name": "LAB rubble",
                 "isActive": 1,
@@ -7111,7 +7466,7 @@
             "Transform": {
                 "Position": {
                     "x": 29.951337814331055,
-                    "y": 3.5053536891937256,
+                    "y": 2.3357937335968018,
                     "z": -118.05522155761719
                 },
                 "Scale": {
@@ -7153,6 +7508,66 @@
                     }
                 },
                 "luid": 7165061730187280420
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "LAB rubble",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975853891591
+            },
+            "Hierarchy": {
+                "luid": 7526194132851228678,
+                "parentLuid": 7526193900832751640
+            },
+            "Transform": {
+                "Position": {
+                    "x": 18.326189041137695,
+                    "y": 1.057680606842041,
+                    "z": -115.81129455566406
+                },
+                "Scale": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261306363912
+            },
+            "Renderer": {
+                "modelUUID": "18f2e5c9-e5d1-4c65-b2d9-c53885577de7",
+                "materialUUID": "c586eeb6-d9ac-4d0b-9ed2-9f9a3dca7301",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423556558857
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                "luid": 7165061737731457034
             }
         },
         {
@@ -30566,6 +30981,58 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Hinge",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975953702912
+            },
+            "Hierarchy": {
+                "luid": 7526194132951040002,
+                "parentLuid": 7526194122928685277
+            },
+            "Transform": {
+                "Position": {
+                    "x": 21.293020248413086,
+                    "y": 2.5,
+                    "z": -11.596000671386719
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261406175233
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_DoorHinge"
+                ],
+                "SerializedFields": {
+                    "Interactable_DoorHinge.targetRotationY": "-100.000000",
+                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.isEventBased": "1",
+                    "Interactable_DoorHinge.doorRef": "7308613975953702912",
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "Battery4Inserted",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "doorRef"
+                ],
+                "luid": 7958821172164886528
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Cube",
                 "isActive": 1,
                 "isStatic": 0,
@@ -30573,18 +31040,18 @@
             },
             "Hierarchy": {
                 "luid": 7526194122928685320,
-                "parentLuid": 7526194122928685277
+                "parentLuid": 7526194132951040002
             },
             "Transform": {
                 "Position": {
-                    "x": 19.255151748657227,
-                    "y": 2.5,
-                    "z": -11.596305847167969
+                    "x": -2.0378684997558594,
+                    "y": 0.0,
+                    "z": -0.00030517578125
                 },
                 "Scale": {
-                    "x": 1.1000001430511475,
+                    "x": 1.1000005006790161,
                     "y": 4.0,
-                    "z": 4.000000476837158
+                    "z": 4.000001907348633
                 },
                 "Rotation": {
                     "x": 0.0,
@@ -30972,6 +31439,58 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Hinge",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976000299017
+            },
+            "Hierarchy": {
+                "luid": 7526194132997636107,
+                "parentLuid": 7526194122928685277
+            },
+            "Transform": {
+                "Position": {
+                    "x": 2.634889602661133,
+                    "y": 2.5,
+                    "z": 17.12799835205078
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261452771338
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_DoorHinge"
+                ],
+                "SerializedFields": {
+                    "Interactable_DoorHinge.targetRotationY": "120.000000",
+                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.isEventBased": "0",
+                    "Interactable_DoorHinge.doorRef": "7308613976000299017",
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [
+                    "doorRef",
+                    "playerRef"
+                ],
+                "luid": 7958821172204666892
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Cube",
                 "isActive": 1,
                 "isStatic": 0,
@@ -30979,18 +31498,18 @@
             },
             "Hierarchy": {
                 "luid": 7526194122928685345,
-                "parentLuid": 7526194122928685277
+                "parentLuid": 7526194132997636107
             },
             "Transform": {
                 "Position": {
-                    "x": 0.41543006896972656,
-                    "y": 2.5,
-                    "z": 17.127540588378906
+                    "x": -2.2194595336914063,
+                    "y": 0.0,
+                    "z": -0.000457763671875
                 },
                 "Scale": {
-                    "x": 1.1000001430511475,
+                    "x": 1.100000262260437,
                     "y": 4.0,
-                    "z": 4.000000476837158
+                    "z": 4.000000953674316
                 },
                 "Rotation": {
                     "x": 0.0,
@@ -31032,6 +31551,58 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Hinge",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975995318277
+            },
+            "Hierarchy": {
+                "luid": 7526194132992655367,
+                "parentLuid": 7526194122928685277
+            },
+            "Transform": {
+                "Position": {
+                    "x": 8.387998580932617,
+                    "y": 2.5,
+                    "z": 23.678932189941406
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261447790598
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_DoorHinge"
+                ],
+                "SerializedFields": {
+                    "Interactable_DoorHinge.targetRotationY": "-100.000000",
+                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.isEventBased": "0",
+                    "Interactable_DoorHinge.doorRef": "7308613975995318277",
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [
+                    "doorRef",
+                    "playerRef"
+                ],
+                "luid": 7958821172199292936
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Cube",
                 "isActive": 1,
                 "isStatic": 0,
@@ -31039,13 +31610,13 @@
             },
             "Hierarchy": {
                 "luid": 7526194122928685350,
-                "parentLuid": 7526194122928685277
+                "parentLuid": 7526194132992655367
             },
             "Transform": {
                 "Position": {
-                    "x": 8.388290405273438,
-                    "y": 2.5,
-                    "z": 21.500457763671875
+                    "x": 0.0002918243408203125,
+                    "y": 0.0,
+                    "z": -2.1784744262695313
                 },
                 "Scale": {
                     "x": 1.0,
@@ -31092,6 +31663,58 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Hinge",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975988568065
+            },
+            "Hierarchy": {
+                "luid": 7526194132985905155,
+                "parentLuid": 7526194122928685277
+            },
+            "Transform": {
+                "Position": {
+                    "x": 10.644088745117188,
+                    "y": 2.5,
+                    "z": 17.12799835205078
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261441040386
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_DoorHinge"
+                ],
+                "SerializedFields": {
+                    "Interactable_DoorHinge.targetRotationY": "100.000000",
+                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.isEventBased": "0",
+                    "Interactable_DoorHinge.doorRef": "7308613975988568065",
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [
+                    "doorRef",
+                    "playerRef"
+                ],
+                "luid": 7958821172195688452
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Cube",
                 "isActive": 1,
                 "isStatic": 0,
@@ -31099,18 +31722,18 @@
             },
             "Hierarchy": {
                 "luid": 7526194122928685355,
-                "parentLuid": 7526194122928685277
+                "parentLuid": 7526194132985905155
             },
             "Transform": {
                 "Position": {
-                    "x": 12.798460006713867,
-                    "y": 2.5,
-                    "z": 17.127540588378906
+                    "x": 2.1543712615966797,
+                    "y": 0.0,
+                    "z": -0.000457763671875
                 },
                 "Scale": {
-                    "x": 1.1000001430511475,
+                    "x": 1.100000262260437,
                     "y": 4.0,
-                    "z": 4.000000476837158
+                    "z": 4.000000953674316
                 },
                 "Rotation": {
                     "x": 0.0,
@@ -31212,6 +31835,58 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Hinge",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975968186369
+            },
+            "Hierarchy": {
+                "luid": 7526194132965523459,
+                "parentLuid": 7526194122928685277
+            },
+            "Transform": {
+                "Position": {
+                    "x": 26.113000869750977,
+                    "y": 2.5,
+                    "z": 4.759025573730469
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261420658690
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_DoorHinge"
+                ],
+                "SerializedFields": {
+                    "Interactable_DoorHinge.targetRotationY": "100.000000",
+                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.isEventBased": "0",
+                    "Interactable_DoorHinge.doorRef": "7308613975968186369",
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [
+                    "doorRef",
+                    "playerRef"
+                ],
+                "luid": 7958821172182712320
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Cube",
                 "isActive": 1,
                 "isStatic": 0,
@@ -31219,13 +31894,13 @@
             },
             "Hierarchy": {
                 "luid": 7526194122928685365,
-                "parentLuid": 7526194122928685277
+                "parentLuid": 7526194132965523459
             },
             "Transform": {
                 "Position": {
-                    "x": 26.113218307495117,
-                    "y": 2.5,
-                    "z": 2.3741912841796875
+                    "x": 0.000217437744140625,
+                    "y": 0.0,
+                    "z": -2.3848342895507813
                 },
                 "Scale": {
                     "x": 1.0,
@@ -31272,6 +31947,58 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Hinge",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975968317444
+            },
+            "Hierarchy": {
+                "luid": 7526194132965654534,
+                "parentLuid": 7526194122928685277
+            },
+            "Transform": {
+                "Position": {
+                    "x": 20.47483253479004,
+                    "y": 2.5,
+                    "z": -2.8499984741210938
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261420789765
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_DoorHinge"
+                ],
+                "SerializedFields": {
+                    "Interactable_DoorHinge.targetRotationY": "-100.000000",
+                    "Interactable_DoorHinge.playerRef": "7308613656064753675",
+                    "Interactable_DoorHinge.isEventBased": "0",
+                    "Interactable_DoorHinge.doorRef": "7308613975968317444",
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.logInteractions": "1",
+                    "Interactable_DoorHinge.eventName": "",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                },
+                "EntityReferenceFields": [
+                    "doorRef",
+                    "playerRef"
+                ],
+                "luid": 7958821172173930503
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Cube",
                 "isActive": 1,
                 "isStatic": 0,
@@ -31279,18 +32006,18 @@
             },
             "Hierarchy": {
                 "luid": 7526194122928685370,
-                "parentLuid": 7526194122928685277
+                "parentLuid": 7526194132965654534
             },
             "Transform": {
                 "Position": {
-                    "x": 18.441923141479492,
-                    "y": 2.5,
-                    "z": -2.8503875732421875
+                    "x": -2.032909393310547,
+                    "y": 0.0,
+                    "z": -0.00038909912109375
                 },
                 "Scale": {
-                    "x": 1.1000001430511475,
+                    "x": 1.100000262260437,
                     "y": 4.0,
-                    "z": 4.000000476837158
+                    "z": 4.000000953674316
                 },
                 "Rotation": {
                     "x": 0.0,
@@ -31478,7 +32205,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Battery Socket 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613968176087050
             },
@@ -31555,7 +32282,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Preview",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973219409920
             },
@@ -31587,7 +32314,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Aligned",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973219606531
             },
@@ -31619,7 +32346,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Battery_01",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613968169861123
             },
@@ -31709,7 +32436,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Battery Socket 2",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973244182539
             },
@@ -31786,7 +32513,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Preview",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973244182545
             },
@@ -31818,7 +32545,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Aligned",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973244182548
             },
@@ -31850,7 +32577,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Battery_02",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973244182551
             },
@@ -31940,7 +32667,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Battery Socket 3",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973250080798
             },
@@ -32017,7 +32744,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Preview",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973250080804
             },
@@ -32049,7 +32776,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Aligned",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973250080807
             },
@@ -32081,7 +32808,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Battery_03",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973250080810
             },
@@ -32959,6 +33686,269 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Battery Holder Pair",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975863525388
+            },
+            "Hierarchy": {
+                "luid": 7526194132860862475,
+                "parentLuid": 7526194125165494274
+            },
+            "Transform": {
+                "Position": {
+                    "x": 20.179433822631836,
+                    "y": 1.431803822517395,
+                    "z": -18.88190460205078
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261315997709
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Battery Socket 4",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975863525391
+            },
+            "Hierarchy": {
+                "luid": 7526194132860862478,
+                "parentLuid": 7526194132860862475
+            },
+            "Transform": {
+                "Position": {
+                    "x": 2.062450408935547,
+                    "y": 0.0,
+                    "z": 5.351921081542969
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261315997712
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423566192657
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061737741090834
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_BatteryPanel"
+                ],
+                "SerializedFields": {
+                    "Puzzle_BatteryPanel.panelRef": "8390885261315997718",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613975863525400",
+                    "Puzzle_BatteryPanel.message": "Battery4Inserted",
+                    "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.batteryRef": "7308613975863525403"
+                },
+                "EntityReferenceFields": [
+                    "alignedBattery",
+                    "batteryRef"
+                ],
+                "luid": 7958821172065140755
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Preview",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975863525397
+            },
+            "Hierarchy": {
+                "luid": 7526194132860862484,
+                "parentLuid": 7526194132860862475
+            },
+            "Transform": {
+                "Position": {
+                    "x": 1.979217529296875,
+                    "y": 0.7369086742401123,
+                    "z": -11.697975158691406
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261315997718
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Aligned",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975863525400
+            },
+            "Hierarchy": {
+                "luid": 7526194132860862487,
+                "parentLuid": 7526194132860862475
+            },
+            "Transform": {
+                "Position": {
+                    "x": 1.979217529296875,
+                    "y": 0.7369086742401123,
+                    "z": -11.697976112365723
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261315997721
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Battery_04",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613975863525403
+            },
+            "Hierarchy": {
+                "luid": 7526194132860862490,
+                "parentLuid": 7526194132860862475
+            },
+            "Transform": {
+                "Position": {
+                    "x": 13.16012191772461,
+                    "y": 0.0,
+                    "z": -4.968017578125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261315997724
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423566192669
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061737741090846
+            },
+            "Rigidbody": {
+                "Mass": 1.0,
+                "Linear Damping": 0.0,
+                "Angular Damping": 0.05000000074505806,
+                "Use Gravity": 1,
+                "Is Kinematic": 0,
+                "freezeRotX": 0,
+                "freezeRotY": 0,
+                "freezeRotZ": 0,
+                "freezePosX": 0,
+                "freezePosY": 0,
+                "freezePosZ": 0,
+                "luid": 8242266473612771359
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_Battery"
+                ],
+                "SerializedFields": {
+                    "Interactable_Battery.body": "8242266473541664832",
+                    "Interactable_Battery.isHeavy": "0",
+                    "Interactable_Battery.activatesPressurePlates": "0",
+                    "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.lockWhenNotGrabbed": "1"
+                },
+                "EntityReferenceFields": [
+                    "playerGrabber"
+                ],
+                "luid": 7958821172065140768
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "FinalSequencerPuzzle",
                 "isActive": 1,
                 "isStatic": 0,
@@ -32970,9 +33960,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 4.435161590576172,
+                    "x": 8.466699600219727,
                     "y": 1.4435279369354248,
-                    "z": 2.0915374755859375
+                    "z": 3.9530410766601563
                 },
                 "Scale": {
                     "x": 1.0,
@@ -33798,6 +34788,345 @@
                     "sequencer"
                 ],
                 "luid": 7958821166141800523
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Cylinder",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976009539597
+            },
+            "Hierarchy": {
+                "luid": 7526194133006876687,
+                "parentLuid": 7526194122928685056
+            },
+            "Transform": {
+                "Position": {
+                    "x": 3.523458480834961,
+                    "y": 7.980258941650391,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 8.0,
+                    "y": 15.0,
+                    "z": 8.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261462011918
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "d83e1685-5203-4b80-a2d9-10739b9e1b2d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423712206864
+            },
+            "Collider": {
+                "type": 3,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "radius": 0.5,
+                        "height": 1.0
+                    }
+                },
+                "luid": 7165061737887105041
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Movable Box",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976065900586
+            },
+            "Hierarchy": {
+                "luid": 7526194133063237676,
+                "parentLuid": 7526194122928685056
+            },
+            "Transform": {
+                "Position": {
+                    "x": -33.85578155517578,
+                    "y": 1.4114370346069336,
+                    "z": 7.4207305908203125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261518372907
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423768567853
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061737943466030
+            },
+            "Rigidbody": {
+                "Mass": 1.0,
+                "Linear Damping": 0.0,
+                "Angular Damping": 0.05000000074505806,
+                "Use Gravity": 1,
+                "Is Kinematic": 0,
+                "freezeRotX": 0,
+                "freezeRotY": 0,
+                "freezeRotZ": 0,
+                "freezePosX": 0,
+                "freezePosY": 0,
+                "freezePosZ": 0,
+                "luid": 8242266473815539759
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_TrolleyPush"
+                ],
+                "SerializedFields": {
+                    "Misc_TrolleyPush.stopDamping": "10.000000",
+                    "Misc_TrolleyPush.playerRef": "7308613656064753675",
+                    "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
+                    "Misc_TrolleyPush.moveSpeed": "1.000000",
+                    "Misc_TrolleyPush.useTransformFallback": "1",
+                    "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
+                    "Misc_TrolleyPush.debugLogs": "0"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "playerCameraRef"
+                ],
+                "luid": 7958821172268105776
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Movable Box",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976073175090
+            },
+            "Hierarchy": {
+                "luid": 7526194133070512177,
+                "parentLuid": 7526194122928685056
+            },
+            "Transform": {
+                "Position": {
+                    "x": -31.0631103515625,
+                    "y": 1.4114370346069336,
+                    "z": 7.4207305908203125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 2.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261525647411
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423775842356
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 1.0
+                        }
+                    }
+                },
+                "luid": 7165061737950740533
+            },
+            "Rigidbody": {
+                "Mass": 1.0,
+                "Linear Damping": 0.0,
+                "Angular Damping": 0.05000000074505806,
+                "Use Gravity": 1,
+                "Is Kinematic": 0,
+                "freezeRotX": 0,
+                "freezeRotY": 0,
+                "freezeRotZ": 0,
+                "freezePosX": 0,
+                "freezePosY": 0,
+                "freezePosZ": 0,
+                "luid": 8242266473822421046
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_TrolleyPush"
+                ],
+                "SerializedFields": {
+                    "Misc_TrolleyPush.stopDamping": "10.000000",
+                    "Misc_TrolleyPush.playerRef": "7308613656064753675",
+                    "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
+                    "Misc_TrolleyPush.moveSpeed": "1.000000",
+                    "Misc_TrolleyPush.useTransformFallback": "1",
+                    "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
+                    "Misc_TrolleyPush.debugLogs": "0"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "playerCameraRef"
+                ],
+                "luid": 7958821172274790455
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Movable Box",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613976074879033
+            },
+            "Hierarchy": {
+                "luid": 7526194133072216120,
+                "parentLuid": 7526194122928685056
+            },
+            "Transform": {
+                "Position": {
+                    "x": -33.85578155517578,
+                    "y": 1.719551682472229,
+                    "z": 1.90728759765625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 2.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885261527351354
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829423777546299
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 1.0,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061737952444476
+            },
+            "Rigidbody": {
+                "Mass": 1.0,
+                "Linear Damping": 0.0,
+                "Angular Damping": 0.05000000074505806,
+                "Use Gravity": 1,
+                "Is Kinematic": 0,
+                "freezeRotX": 0,
+                "freezeRotY": 0,
+                "freezeRotZ": 0,
+                "freezePosX": 0,
+                "freezePosY": 0,
+                "freezePosZ": 0,
+                "luid": 8242266473824124989
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_TrolleyPush"
+                ],
+                "SerializedFields": {
+                    "Misc_TrolleyPush.stopDamping": "10.000000",
+                    "Misc_TrolleyPush.playerRef": "7308613656064753675",
+                    "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
+                    "Misc_TrolleyPush.moveSpeed": "1.000000",
+                    "Misc_TrolleyPush.useTransformFallback": "1",
+                    "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
+                    "Misc_TrolleyPush.debugLogs": "0"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "playerCameraRef"
+                ],
+                "luid": 7958821172276494398
             }
         },
         {
