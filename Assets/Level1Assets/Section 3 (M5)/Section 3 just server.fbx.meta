@@ -1,0 +1,181 @@
+{
+    "fileFormatVersion": 1,
+    "uuid": "e99944dc-0ba9-4cc8-bf84-ea39264be5cb",
+    "assetType": "Model",
+    "sourcePath": "Assets/Level1Assets\\Section 3 (M5)\\Section 3 just server.fbx",
+    "modelImport": {
+        "scene": {
+            "scaleFactor": 0.009999999776482582,
+            "convertUnits": 1,
+            "importCameras": 0,
+            "importLights": 0,
+            "preserveHierarchy": 1
+        },
+        "mesh": {
+            "weldVertices": 0,
+            "keepQuads": 0,
+            "swapUVs": 0,
+            "generateLightmapUVs": 0,
+            "generateColliders": 0,
+            "generateMeshLODs": 0,
+            "smoothingAngle": 60.0,
+            "normalMode": 0,
+            "tangentMode": 0,
+            "indexFormat": 0,
+            "meshOptimizationMode": 1
+        },
+        "rig": {
+            "stripBones": 0,
+            "animationType": 0
+        },
+        "animation": {
+            "importAnimations": 1,
+            "importConstraints": 0,
+            "importAnimatedCustomProperties": 0,
+            "autoSplitClips": 1,
+            "importRootMotion": 0,
+            "lockRootPositionXZ": 0,
+            "lockRootRotationY": 0,
+            "sampleRate": 0.0
+        },
+        "material": {
+            "importMaterials": 1,
+            "tryReuseExistingMaterials": 1,
+            "creationMode": 0
+        }
+    },
+    "submeshes": [
+        {
+            "name": "RootNode/ServerRack_$AssimpFbx$_Translation/ServerRack_$AssimpFbx$_RotationPivot/ServerRack_$AssimpFbx$_RotationPivotInverse/ServerRack_$AssimpFbx$_ScalingPivot/ServerRack_$AssimpFbx$_ScalingPivotInverse/ServerRack/ServerRackOnlyShelves_$AssimpFbx$_RotationPivot/ServerRackOnlyShelves_$AssimpFbx$_RotationPivotInverse/ServerRackOnlyShelves_$AssimpFbx$_ScalingPivot/ServerRackOnlyShelves_$AssimpFbx$_ScalingPivotInverse/ServerRackOnlyShelves/ServerRackOnlyShelves",
+            "index": 0,
+            "pivotOffset": {
+                "x": 12.512007713317871,
+                "y": -20.71184539794922,
+                "z": -6.838842391967773
+            }
+        },
+        {
+            "name": "RootNode/ServerRack_$AssimpFbx$_Translation/ServerRack_$AssimpFbx$_RotationPivot/ServerRack_$AssimpFbx$_RotationPivotInverse/ServerRack_$AssimpFbx$_ScalingPivot/ServerRack_$AssimpFbx$_ScalingPivotInverse/ServerRack/ServerRackOnlyCables_$AssimpFbx$_RotationPivot/ServerRackOnlyCables_$AssimpFbx$_RotationPivotInverse/ServerRackOnlyCables_$AssimpFbx$_ScalingPivot/ServerRackOnlyCables_$AssimpFbx$_ScalingPivotInverse/ServerRackOnlyCables/ServerRackOnlyCables",
+            "index": 1,
+            "pivotOffset": {
+                "x": 12.502913475036621,
+                "y": -20.73953628540039,
+                "z": -7.0148539543151855
+            }
+        }
+    ],
+    "generatedPrefab": {
+        "schemaVersion": 1,
+        "Entities": [
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Section 3 just server",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 1
+                },
+                "Hierarchy": {
+                    "luid": 1,
+                    "parentLuid": 0
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 1
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "ServerRackOnlyShelves",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 2,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": -12.512007713317871,
+                        "y": 20.71184539794922,
+                        "z": 6.838842391967773
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 2
+                },
+                "Renderer": {
+                    "modelUUID": "e99944dc-0ba9-4cc8-bf84-ea39264be5cb",
+                    "materialUUID": "b4c63af8-6efe-43ca-83aa-e442b3b330a9",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 0,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "ServerRackOnlyCables",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 3,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": -12.512007713317871,
+                        "y": 20.71184539794922,
+                        "z": 6.838842391967773
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 3
+                },
+                "Renderer": {
+                    "modelUUID": "e99944dc-0ba9-4cc8-bf84-ea39264be5cb",
+                    "materialUUID": "4982c285-b4ed-4173-81e1-a31944b70528",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 1,
+                    "luid": 0
+                }
+            }
+        ]
+    }
+}
