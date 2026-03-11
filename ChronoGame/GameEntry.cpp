@@ -251,8 +251,10 @@ extern "C" {
         registrar->RegisterScript("UI_AmbienceVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_AmbienceVolumeButtons();
             });
-                    registrar->RegisterScript("Interactable_MirrorTile", []() -> NE::Scripting::IScript* {
+
+        registrar->RegisterScript("Interactable_MirrorTile", []() -> NE::Scripting::IScript* {
             return new Interactable_MirrorTile();
             });
+
         }
 }
