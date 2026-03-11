@@ -11,49 +11,58 @@ public:
 
     void Initialize(Entity entity) override {
         _SetEntity(entity);
-
-        // IMPORTANT: use the macro so the field key is stable for the editor/serialization
         SCRIPT_GAMEOBJECT_REF(objectToActivate);
     }
 
     const char* GetTypeName() const override { return "UI_Notes"; }
 
-    // Raycast-click opens (only if currently inactive)
+    // Open with raycast interaction only
     void Interact() override {
         if (!objectToActivate) {
-            //LOG_DEBUG("UI_Notes: objectToActivate is NOT set");
             return;
         }
 
         Entity target = objectToActivate.GetEntity();
-        if (!IsActive(target)) {
-            SetActive(true, target);
 
-            // ignore the same click that opened it
-            ignoreNextMouseClick = true;
+        if (!noteIsOpen) {
+            noteIsOpen = true;
+            SetActive(true, target);
+            waitingForMouseReleaseAfterOpen = true;
+            LOG_DEBUG("open note!");
             PlayAudio("event:/COLOR_CLICK");
         }
     }
 
-    // While active: ANY click closes (no raycast)
+    // Close without raycast: any later left click will close it
     void Update(double /*dt*/) override {
         if (!objectToActivate) return;
 
         Entity target = objectToActivate.GetEntity();
-        if (!IsActive(target)) return;
 
-        if (Input::WasMousePressed(GLFW_MOUSE_BUTTON_LEFT)) {
-            if (ignoreNextMouseClick) {
-                ignoreNextMouseClick = false;
-                return;
+        if (!noteIsOpen) {
+            waitingForMouseReleaseAfterOpen = false;
+            return;
+        }
+
+        // Ignore the same click that opened the note
+        if (waitingForMouseReleaseAfterOpen) {
+            if (!Input::IsMouseDown(GLFW_MOUSE_BUTTON_LEFT)) {
+                waitingForMouseReleaseAfterOpen = false;
             }
+            return;
+        }
 
+        // Any new left click closes the note
+        if (Input::WasMousePressed(GLFW_MOUSE_BUTTON_LEFT)) {
+            noteIsOpen = false;
             SetActive(false, target);
+            LOG_DEBUG("close note!");
             PlayAudio("event:/COLOR_CLICK");
         }
     }
 
 private:
     GameObjectRef objectToActivate;
-    bool ignoreNextMouseClick = false;
+    bool noteIsOpen = false;
+    bool waitingForMouseReleaseAfterOpen = false;
 };
