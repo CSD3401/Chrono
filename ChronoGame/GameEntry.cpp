@@ -62,7 +62,7 @@
 #include "Scripts/UI_SFXVolumeButtons.hpp"
 #include "Scripts/UI_AmbienceVolumeButtons.hpp"
 #include "Scripts/Interactable_MirrorTile.hpp"
-
+#include "Scripts/Misc_StopAnimationOnEvent.hpp"
 
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
@@ -255,6 +255,8 @@ extern "C" {
         registrar->RegisterScript("Interactable_MirrorTile", []() -> NE::Scripting::IScript* {
             return new Interactable_MirrorTile();
             });
-
+        registrar->RegisterScript("Misc_StopAnimationOnEvent", []() -> NE::Scripting::IScript* {
+            return new Misc_StopAnimationOnEvent();
+            });
         }
 }

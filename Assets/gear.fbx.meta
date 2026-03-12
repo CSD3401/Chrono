@@ -1,0 +1,133 @@
+{
+    "fileFormatVersion": 1,
+    "uuid": "3c25880a-490f-4e27-9be4-fd29007a54ab",
+    "assetType": "Model",
+    "sourcePath": "Assets/gear.fbx",
+    "modelImport": {
+        "scene": {
+            "scaleFactor": 0.009999999776482582,
+            "convertUnits": 1,
+            "importCameras": 0,
+            "importLights": 0,
+            "preserveHierarchy": 1
+        },
+        "mesh": {
+            "weldVertices": 0,
+            "keepQuads": 0,
+            "swapUVs": 0,
+            "generateLightmapUVs": 0,
+            "generateColliders": 0,
+            "generateMeshLODs": 0,
+            "smoothingAngle": 60.0,
+            "normalMode": 0,
+            "tangentMode": 0,
+            "indexFormat": 0,
+            "meshOptimizationMode": 1
+        },
+        "rig": {
+            "stripBones": 0,
+            "animationType": 0
+        },
+        "animation": {
+            "importAnimations": 1,
+            "importConstraints": 0,
+            "importAnimatedCustomProperties": 0,
+            "autoSplitClips": 1,
+            "importRootMotion": 0,
+            "lockRootPositionXZ": 0,
+            "lockRootRotationY": 0,
+            "sampleRate": 0.0
+        },
+        "material": {
+            "importMaterials": 1,
+            "tryReuseExistingMaterials": 1,
+            "creationMode": 0
+        }
+    },
+    "submeshes": [
+        {
+            "name": "RootNode/GearRight/GearRightMesh",
+            "index": 0,
+            "pivotOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        }
+    ],
+    "generatedPrefab": {
+        "schemaVersion": 1,
+        "Entities": [
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "gear",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 1
+                },
+                "Hierarchy": {
+                    "luid": 1,
+                    "parentLuid": 0
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 1
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "GearRightMesh",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 2,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": -0.024996861815452576,
+                        "y": 0.04309627413749695,
+                        "z": 0.030640721321105957
+                    },
+                    "Scale": {
+                        "x": 100.00000762939453,
+                        "y": 100.00000762939453,
+                        "z": 100.0
+                    },
+                    "Rotation": {
+                        "x": -90.00003814697266,
+                        "y": 79.71231079101563,
+                        "z": -180.0
+                    },
+                    "luid": 2
+                },
+                "Renderer": {
+                    "modelUUID": "3c25880a-490f-4e27-9be4-fd29007a54ab",
+                    "materialUUID": "77e596c4-8cab-4ee6-a0de-a721fe863b6d",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 0,
+                    "luid": 0
+                }
+            }
+        ]
+    }
+}
