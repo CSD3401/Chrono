@@ -256,10 +256,8 @@ extern "C" {
         registrar->RegisterScript("Interactable_MirrorTile", []() -> NE::Scripting::IScript* {
             return new Interactable_MirrorTile();
             });
-
         registrar->RegisterScript("UIButton_QuitGame", []() -> NE::Scripting::IScript* {
             return new UIButton_QuitGame();
             });
-
         }
 }
