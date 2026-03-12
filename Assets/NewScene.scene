@@ -193,12 +193,12 @@
                     "Interactable_TwoWaySwitch.toggleCooldown": "1.500000",
                     "Puzzle_Lever.twoStateRotaterObject": "7308613770881925120",
                     "Puzzle_Lever.twoWaySwitchObject": "7308613770881925120",
+                    "Misc_TwoStateRotater.startingState": "0",
+                    "Misc_TwoStateRotater.rotationX1": "50.000000",
                     "Puzzle_Lever.puzzleKey": "0",
                     "Misc_TwoStateRotater.target": "7308613770881925120",
-                    "Misc_TwoStateRotater.rotationX1": "50.000000",
-                    "Misc_TwoStateRotater.rotationX2": "0.000000",
                     "Misc_TwoStateRotater.duration": "0.500000",
-                    "Misc_TwoStateRotater.startingState": "0"
+                    "Misc_TwoStateRotater.rotationX2": "0.000000"
                 },
                 "EntityReferenceFields": [
                     "twoStateRotaterObject",
@@ -223,9 +223,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -33.17048645019531,
-                    "y": 4.336690425872803,
-                    "z": 5.522665977478027
+                    "x": -31.08979034423828,
+                    "y": 1.9761004447937012,
+                    "z": -9.554553031921387
                 },
                 "Scale": {
                     "x": 0.800000011920929,
@@ -270,34 +270,34 @@
                     "Misc_TimeFogLighting"
                 ],
                 "SerializedFields": {
+                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
+                    "Misc_TimeFogLighting.affectFog": "1",
                     "Player_Controller.jumpStrength": "5.000000",
+                    "Misc_TimeFogLighting.presentFogStart": "0.000000",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
+                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.030000",
                     "Player_Controller.gravity": "10.000000",
                     "Player_Controller.lookSensitivity": "0.250000",
-                    "Misc_TimeFogLighting.normalAmbientIntensity": "0.400000",
-                    "Player_Controller.moveSpeed": "4.000000",
-                    "Misc_TimeFogLighting.normalAmbientColor": "25 15 10",
-                    "Misc_TimeFogLighting.normalFogMode": "1",
-                    "Player_Controller.snappiness": "5.000000",
-                    "Player_Controller.walkSoundInterval": "0.500000",
-                    "Misc_TimeFogLighting.affectFog": "1",
-                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
-                    "Misc_TimeFogLighting.normalEnvSource": "2",
-                    "Misc_TimeFogLighting.affectAmbient": "1",
-                    "Misc_TimeFogLighting.startInPresent": "1",
-                    "Misc_TimeFogLighting.normalFogEnabled": "1",
                     "Misc_TimeFogLighting.applyStateOnStart": "1",
-                    "Misc_TimeFogLighting.presentFogEnabled": "1",
+                    "Player_Controller.moveSpeed": "4.000000",
+                    "Misc_TimeFogLighting.normalAmbientIntensity": "0.400000",
+                    "Player_Controller.snappiness": "5.000000",
+                    "Misc_TimeFogLighting.normalFogMode": "1",
+                    "Misc_TimeFogLighting.normalAmbientColor": "25 15 10",
+                    "Player_Controller.walkSoundInterval": "0.500000",
+                    "Misc_TimeFogLighting.affectAmbient": "1",
+                    "Misc_TimeFogLighting.normalEnvSource": "2",
+                    "Misc_TimeFogLighting.normalFogEnabled": "1",
+                    "Misc_TimeFogLighting.startInPresent": "1",
                     "Misc_TimeFogLighting.normalFogColor": "15 10 8",
+                    "Misc_TimeFogLighting.presentFogEnabled": "1",
                     "Misc_TimeFogLighting.normalFogDensity": "0.015000",
                     "Misc_TimeFogLighting.normalFogStart": "0.000000",
                     "Misc_TimeFogLighting.normalFogEnd": "50.000000",
                     "Misc_TimeFogLighting.presentFogColor": "5 3 3",
                     "Misc_TimeFogLighting.presentFogDensity": "0.020000",
-                    "Misc_TimeFogLighting.presentFogStart": "0.000000",
                     "Misc_TimeFogLighting.presentFogEnd": "10.000000",
-                    "Misc_TimeFogLighting.presentAmbientColor": "18 11 6",
-                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.030000"
+                    "Misc_TimeFogLighting.presentAmbientColor": "18 11 6"
                 },
                 "EntityReferenceFields": [
                     "playerCameraRef"
@@ -353,13 +353,13 @@
                 ],
                 "SerializedFields": {
                     "Player_Raycast.interval": "0.100000",
-                    "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.distance": "5.000000",
+                    "Misc_Grabber.isGrabbing": "0",
+                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Player_Raycast.targetLayer": "0",
                     "Camera_FOVPulse.baseFov": "90.000000",
                     "Camera_FOVPulse.enabledAtStart": "1",
                     "Camera_FOVPulse.pulseFov": "150.000000",
-                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Camera_FOVPulse.riseTimeSeconds": "0.100000",
                     "Misc_Grabber.grabStrength": "0.000000",
                     "Misc_Grabber.distance": "2.500000",
@@ -455,11 +455,11 @@
                     "Watch_Controller"
                 ],
                 "SerializedFields": {
-                    "Watch_Controller.presentOverlayRef": "7308613938681806848",
                     "Watch_Controller.refillDuration": "5.000000",
+                    "Watch_Controller.presentOverlayRef": "7308613938681806848",
                     "Watch_Controller.pastOverlayRef": "7308613938682658819",
-                    "Watch_Controller.clockFillRef": "7308613938684166148",
                     "Watch_Controller.pastDuration": "10.000000",
+                    "Watch_Controller.clockFillRef": "7308613938684166148",
                     "Watch_Controller.chronoTextRef": "7308613958801752064"
                 },
                 "EntityReferenceFields": [
@@ -7659,17 +7659,17 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613771630477337",
                     "Puzzle_MultiLightSequencer.light2": "7308613771645485097",
-                    "Puzzle_MultiLightSequencer.sequenceLength": "3",
                     "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
+                    "Puzzle_MultiLightSequencer.sequenceLength": "3",
                     "Puzzle_MultiLightSequencer.light4": "0",
-                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "0",
-                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
+                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light6": "0",
+                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
                     "Puzzle_MultiLightSequencer.light7": "0",
                     "Puzzle_MultiLightSequencer.lightOffMaterial": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_MultiLightSequencer.solvedEventName": "PuzzleSolved",
                     "Puzzle_MultiLightSequencer.light8": "0",
+                    "Puzzle_MultiLightSequencer.solvedEventName": "PuzzleSolved",
                     "Puzzle_MultiLightSequencer.light9": "0",
                     "Puzzle_MultiLightSequencer.lightOnMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Puzzle_MultiLightSequencer.blinkOffTime": "0.200000",
@@ -8164,9 +8164,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "1",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "1"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -8310,9 +8310,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "2",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "2"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -8456,9 +8456,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "3",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613771618615296",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "3"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -8967,12 +8967,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "1",
                     "Interactable_DoorHinge.doorRef": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "1",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "MirrorPuzzleSolved",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": "MirrorPuzzleSolved"
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -14784,8 +14784,8 @@
                 "SerializedFields": {
                     "Misc_Teleporter.player": "7308613656064753675",
                     "Misc_Teleporter.targetTransformRef": "8390885076532068415",
-                    "Misc_Teleporter.eventName": "",
-                    "Misc_Teleporter.eventBased": "0"
+                    "Misc_Teleporter.eventBased": "0",
+                    "Misc_Teleporter.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "player"
@@ -17599,15 +17599,15 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.connectedHolderObject": "7308613789212147787",
-                    "Puzzle_Wire.wireColours": "4 5 3 4 1",
                     "Puzzle_Wire.wireHolderObject": "7308613789212147717",
-                    "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.wireColours": "4 5 3 4 1",
+                    "Puzzle_Wire.connectedHolderObject": "7308613789212147787",
                     "Puzzle_Wire.correctHolderObject": "7308613789212147760",
+                    "Puzzle_Wire.wirePuzzleIndex": "0",
                     "Puzzle_Wire.correctColours": "4 3 1 5 4",
                     "Puzzle_Wire.wirePath": "0",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
                     "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
                     "Puzzle_Wire.eventName": "PuzzleSolved1"
                 },
                 "EntityReferenceFields": [
@@ -17720,20 +17720,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -17806,20 +17806,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -17892,20 +17892,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -17978,20 +17978,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -18288,20 +18288,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "1",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -18374,20 +18374,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "1",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -18460,20 +18460,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "1",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -18546,20 +18546,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "0",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "1",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -18653,14 +18653,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -18718,14 +18718,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -18783,14 +18783,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -18848,14 +18848,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -18898,15 +18898,15 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.connectedHolderObject": "7308613789263659083",
-                    "Puzzle_Wire.wireColours": "4 5 3 4 1",
                     "Puzzle_Wire.wireHolderObject": "7308613789263659013",
-                    "Puzzle_Wire.wirePuzzleIndex": "1",
+                    "Puzzle_Wire.wireColours": "4 5 3 4 1",
+                    "Puzzle_Wire.connectedHolderObject": "7308613789263659083",
                     "Puzzle_Wire.correctHolderObject": "7308613789263659056",
+                    "Puzzle_Wire.wirePuzzleIndex": "1",
                     "Puzzle_Wire.correctColours": "4 3 1 5 4",
                     "Puzzle_Wire.wirePath": "0",
-                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
                     "Puzzle_Wire.changeTimer": "0.500000",
+                    "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
                     "Puzzle_Wire.eventName": "PuzzleSolved2"
                 },
                 "EntityReferenceFields": [
@@ -19011,20 +19011,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "1",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19093,20 +19093,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "1",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19175,20 +19175,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "1",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19257,20 +19257,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "1",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19543,20 +19543,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "1",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "1",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -19625,20 +19625,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "1",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "1",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -19707,20 +19707,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "1",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "1",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -19789,20 +19789,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Misc_WireChild.purple": "",
-                    "Interactable_WireTether.wirePuzzleIndex": "1",
-                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
                     "Misc_WireChild.correctWire": "1",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
+                    "Misc_WireChild.purple": "",
+                    "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -19899,14 +19899,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -19960,14 +19960,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -20021,14 +20021,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -20082,14 +20082,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.correctWire": "0",
+                    "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireChild.orange": "",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -22068,8 +22068,8 @@
                     "Cutscene_Controller"
                 ],
                 "SerializedFields": {
-                    "Cutscene_Controller.pageDelays": "4 3 3 3 3",
                     "Cutscene_Controller.eventName": "StartCutscene",
+                    "Cutscene_Controller.pageDelays": "4 3 3 3 3",
                     "Cutscene_Controller.bgmAudioName": "",
                     "Cutscene_Controller.pageAudioNames": "4 5:TEMP1 5:TEMP2 5:TEMP3 5:TEMP1",
                     "Cutscene_Controller.autoAdvance": "1",
@@ -22656,8 +22656,8 @@
                 ],
                 "SerializedFields": {
                     "Interactable_Gate.playerRef": "7308613656064753675",
-                    "Interactable_Gate.interactionDistance": "5.000000",
                     "Interactable_Gate.logInteractions": "1",
+                    "Interactable_Gate.interactionDistance": "5.000000",
                     "Interactable_Gate.tweenDuration": "1.500000",
                     "Interactable_Gate.moveDistance": "1.265000",
                     "Misc_MaterialSwitcher.pastMaterial": "e2449c0b-af90-4019-84c4-290b42b3d40b",
@@ -23345,9 +23345,9 @@
                     "Misc_TimeAnimationController"
                 ],
                 "SerializedFields": {
-                    "Misc_TimeAnimationController.targetObject": "7308613934279950479",
-                    "Misc_TimeAnimationController.applyStateOnStart": "1",
                     "Misc_TimeAnimationController.startInPresent": "1",
+                    "Misc_TimeAnimationController.applyStateOnStart": "1",
+                    "Misc_TimeAnimationController.targetObject": "7308613934279950479",
                     "Misc_TimeAnimationController.playOnPresent": "1",
                     "Misc_TimeAnimationController.stopOnPast": "1"
                 },
@@ -23715,8 +23715,8 @@
                 "SerializedFields": {
                     "Misc_Teleporter.player": "7308613656064753675",
                     "Misc_Teleporter.targetTransformRef": "8390885075794526209",
-                    "Misc_Teleporter.eventName": "Section1Lift",
-                    "Misc_Teleporter.eventBased": "1"
+                    "Misc_Teleporter.eventBased": "1",
+                    "Misc_Teleporter.eventName": "Section1Lift"
                 },
                 "EntityReferenceFields": [
                     "player"
@@ -23821,9 +23821,9 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885258713825288",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613973261352970",
-                    "Puzzle_BatteryPanel.message": "Section1Lift",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "Section1Lift",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613973261352970",
                     "Puzzle_BatteryPanel.batteryRef": "7308613973261352973"
                 },
                 "EntityReferenceFields": [
@@ -23977,8 +23977,8 @@
                 "SerializedFields": {
                     "Interactable_Battery.body": "8242266465924284424",
                     "Interactable_Battery.isHeavy": "0",
-                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -24553,12 +24553,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613967784902656",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -24682,19 +24682,19 @@
                     "Misc_MaterialSwitcher.pastMaterial": "15abf0b2-d314-44dc-a4ad-28f350d6d61e",
                     "Misc_MaterialSwitcher.presentMaterial": "4aca4726-9a12-4c49-8286-b76531214e48",
                     "LaserListener.leftLaser": "7308613950611456077",
-                    "LaserListener.rightLaser3": "7308613950610931753",
                     "LaserListener.leftLaser2": "7308613950611456085",
+                    "LaserListener.rightLaser3": "7308613950610931753",
                     "LaserListener.leftLaser1": "7308613950611456093",
-                    "LaserListener.rightLaser2": "7308613950610931745",
                     "LaserListener.leftLaser3": "7308613950611456101",
-                    "LaserListener.rightLaser5": "7308613950610931753",
+                    "LaserListener.rightLaser2": "7308613950610931745",
                     "LaserListener.leftLaser4": "7308613950611456109",
-                    "LaserListener.rightLaser4": "7308613950610931745",
+                    "LaserListener.rightLaser5": "7308613950610931753",
                     "LaserListener.leftLaser5": "0",
-                    "LaserListener.rightLaser7": "7308613950610931769",
+                    "LaserListener.rightLaser4": "7308613950610931745",
                     "LaserListener.leftLaser6": "7308613950611456117",
-                    "LaserListener.rightLaser6": "7308613950610931761",
+                    "LaserListener.rightLaser7": "7308613950610931769",
                     "LaserListener.leftLaser7": "7308613950611456125",
+                    "LaserListener.rightLaser6": "7308613950610931761",
                     "LaserListener.leftLaser8": "7308613950611456133",
                     "LaserListener.rightLaser": "7308613950610931721",
                     "LaserListener.rightLaser1": "7308613950610931729",
@@ -24760,19 +24760,19 @@
                 ],
                 "SerializedFields": {
                     "LaserListener.leftLaser": "7308613950611456073",
-                    "LaserListener.rightLaser3": "7308613950610931740",
                     "LaserListener.leftLaser2": "7308613950611456080",
+                    "LaserListener.rightLaser3": "7308613950610931740",
                     "LaserListener.leftLaser1": "7308613950611456088",
-                    "LaserListener.rightLaser2": "7308613950610931732",
                     "LaserListener.leftLaser3": "7308613950611456096",
-                    "LaserListener.rightLaser5": "7308613950610931756",
+                    "LaserListener.rightLaser2": "7308613950610931732",
                     "LaserListener.leftLaser4": "7308613950611456104",
-                    "LaserListener.rightLaser4": "7308613950610931748",
+                    "LaserListener.rightLaser5": "7308613950610931756",
                     "LaserListener.leftLaser5": "7308613950611456112",
-                    "LaserListener.rightLaser7": "7308613950610931772",
+                    "LaserListener.rightLaser4": "7308613950610931748",
                     "LaserListener.leftLaser6": "7308613950611456120",
-                    "LaserListener.rightLaser6": "7308613950610931764",
+                    "LaserListener.rightLaser7": "7308613950610931772",
                     "LaserListener.leftLaser7": "7308613950611456128",
+                    "LaserListener.rightLaser6": "7308613950610931764",
                     "LaserListener.leftLaser8": "7308613950611456136",
                     "LaserListener.rightLaser": "7308613950610931717",
                     "LaserListener.rightLaser1": "7308613950610931724",
@@ -26614,8 +26614,8 @@
                 "SerializedFields": {
                     "Interactable_Grabbable.body": "8242266285755727877",
                     "Interactable_Grabbable.isHeavy": "0",
-                    "Interactable_Grabbable.activatesPressurePlates": "0",
                     "Interactable_Grabbable.playerGrabber": "7308613656064753675",
+                    "Interactable_Grabbable.activatesPressurePlates": "0",
                     "Interactable_Grabbable.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -26813,12 +26813,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613975229464576",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -28032,10 +28032,10 @@
                     "Interactable_TeleportToTop"
                 ],
                 "SerializedFields": {
-                    "Interactable_TeleportToTop.player": "7308613656064753675",
                     "Interactable_TeleportToTop.extraClearanceY": "9.000000",
-                    "Interactable_TeleportToTop.assumePlayerPivotAtCenter": "1",
+                    "Interactable_TeleportToTop.player": "7308613656064753675",
                     "Interactable_TeleportToTop.useCharacterControllerMove": "1",
+                    "Interactable_TeleportToTop.assumePlayerPivotAtCenter": "1",
                     "Interactable_TeleportToTop.snapXZToObject": "1",
                     "Interactable_TeleportToTop.liftSpeedY": "3.500000"
                 },
@@ -30819,12 +30819,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -30992,12 +30992,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -31105,12 +31105,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -31218,12 +31218,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -31451,12 +31451,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "1",
                     "Interactable_DoorHinge.doorRef": "7308613975953702912",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "1",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "Battery4Inserted",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": "Battery4Inserted"
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -31563,12 +31563,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "0",
-                    "Interactable_DoorHinge.isEventBased": "1",
                     "Interactable_DoorHinge.doorRef": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "1",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "Battery1Inserted",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": "Battery1Inserted"
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -31736,12 +31736,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -31909,12 +31909,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "120.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613976000299017",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -32021,12 +32021,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613975995318277",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -32133,12 +32133,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613975988568065",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -32305,12 +32305,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613975968186369",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -32417,12 +32417,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613975968317444",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -32529,12 +32529,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "0",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "doorRef",
@@ -32701,9 +32701,9 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885258671882241",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613973219606531",
-                    "Puzzle_BatteryPanel.message": "Battery1Inserted",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "Battery1Inserted",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613973219606531",
                     "Puzzle_BatteryPanel.batteryRef": "7308613968169861123"
                 },
                 "EntityReferenceFields": [
@@ -32857,8 +32857,8 @@
                 "SerializedFields": {
                     "Interactable_Battery.body": "8242266465924284424",
                     "Interactable_Battery.isHeavy": "0",
-                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -32932,9 +32932,9 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885258696654866",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613973244182548",
-                    "Puzzle_BatteryPanel.message": "Battery2Inserted",
                     "Puzzle_BatteryPanel.puzzleKey": "1",
+                    "Puzzle_BatteryPanel.message": "Battery2Inserted",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613973244182548",
                     "Puzzle_BatteryPanel.batteryRef": "7308613973244182551"
                 },
                 "EntityReferenceFields": [
@@ -33088,8 +33088,8 @@
                 "SerializedFields": {
                     "Interactable_Battery.body": "8242266470993428507",
                     "Interactable_Battery.isHeavy": "0",
-                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -33163,9 +33163,9 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885258702553125",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613973250080807",
-                    "Puzzle_BatteryPanel.message": "Battery3Inserted",
                     "Puzzle_BatteryPanel.puzzleKey": "2",
+                    "Puzzle_BatteryPanel.message": "Battery3Inserted",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613973250080807",
                     "Puzzle_BatteryPanel.batteryRef": "7308613973250080810"
                 },
                 "EntityReferenceFields": [
@@ -33319,8 +33319,8 @@
                 "SerializedFields": {
                     "Interactable_Battery.body": "8242266470999326766",
                     "Interactable_Battery.isHeavy": "0",
-                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -33426,9 +33426,9 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885258713825288",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613973261352970",
-                    "Puzzle_BatteryPanel.message": "Battery1Inserted",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "Battery1Inserted",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613973261352970",
                     "Puzzle_BatteryPanel.batteryRef": "7308613973261352973"
                 },
                 "EntityReferenceFields": [
@@ -33582,8 +33582,8 @@
                 "SerializedFields": {
                     "Interactable_Battery.body": "8242266465924284424",
                     "Interactable_Battery.isHeavy": "0",
-                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -33689,9 +33689,9 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885261244629025",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613975792156707",
-                    "Puzzle_BatteryPanel.message": "Battery2Inserted",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "Battery2Inserted",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613975792156707",
                     "Puzzle_BatteryPanel.batteryRef": "7308613975792156710"
                 },
                 "EntityReferenceFields": [
@@ -33845,8 +33845,8 @@
                 "SerializedFields": {
                     "Interactable_Battery.body": "8242266465924284424",
                     "Interactable_Battery.isHeavy": "0",
-                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -33952,9 +33952,9 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885261244891191",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613975792418873",
-                    "Puzzle_BatteryPanel.message": "Battery3Inserted",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "Battery3Inserted",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613975792418873",
                     "Puzzle_BatteryPanel.batteryRef": "7308613975792418876"
                 },
                 "EntityReferenceFields": [
@@ -34108,8 +34108,8 @@
                 "SerializedFields": {
                     "Interactable_Battery.body": "8242266473541664832",
                     "Interactable_Battery.isHeavy": "0",
-                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -34215,9 +34215,9 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885261315997718",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613975863525400",
-                    "Puzzle_BatteryPanel.message": "Battery4Inserted",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "Battery4Inserted",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613975863525400",
                     "Puzzle_BatteryPanel.batteryRef": "7308613975863525403"
                 },
                 "EntityReferenceFields": [
@@ -34371,8 +34371,8 @@
                 "SerializedFields": {
                     "Interactable_Battery.body": "8242266473541664832",
                     "Interactable_Battery.isHeavy": "0",
-                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -34419,17 +34419,17 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613969940185100",
                     "Puzzle_MultiLightSequencer.light2": "7308613969940185111",
-                    "Puzzle_MultiLightSequencer.sequenceLength": "3",
                     "Puzzle_MultiLightSequencer.light3": "7308613969940185122",
+                    "Puzzle_MultiLightSequencer.sequenceLength": "3",
                     "Puzzle_MultiLightSequencer.light4": "0",
-                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "0",
-                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
+                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light6": "0",
+                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
                     "Puzzle_MultiLightSequencer.light7": "0",
                     "Puzzle_MultiLightSequencer.lightOffMaterial": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Puzzle_MultiLightSequencer.solvedEventName": "FINAL_SEQUENCER",
                     "Puzzle_MultiLightSequencer.light8": "0",
+                    "Puzzle_MultiLightSequencer.solvedEventName": "FINAL_SEQUENCER",
                     "Puzzle_MultiLightSequencer.light9": "0",
                     "Puzzle_MultiLightSequencer.lightOnMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Puzzle_MultiLightSequencer.blinkOffTime": "0.200000",
@@ -34924,9 +34924,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "1",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613969940185089",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "1"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -35070,9 +35070,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "2",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613969940185089",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "2"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -35216,9 +35216,9 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "3",
+                    "Interactable_SequencerPad.startPuzzleIfIdle": "0",
                     "Interactable_SequencerPad.sequencer": "7308613969940185089",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.slotNumber": "3"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -35365,9 +35365,9 @@
                     "Misc_TrolleyPush.playerRef": "7308613656064753675",
                     "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
-                    "Misc_TrolleyPush.useTransformFallback": "1",
-                    "Misc_TrolleyPush.pushDistance": "1.600000",
                     "Misc_TrolleyPush.useTriggerToo": "1",
+                    "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -35459,9 +35459,9 @@
                     "Misc_TrolleyPush.playerRef": "7308613656064753675",
                     "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
-                    "Misc_TrolleyPush.useTransformFallback": "1",
-                    "Misc_TrolleyPush.pushDistance": "1.600000",
                     "Misc_TrolleyPush.useTriggerToo": "1",
+                    "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -35553,9 +35553,9 @@
                     "Misc_TrolleyPush.playerRef": "7308613656064753675",
                     "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
-                    "Misc_TrolleyPush.useTransformFallback": "1",
-                    "Misc_TrolleyPush.pushDistance": "1.600000",
                     "Misc_TrolleyPush.useTriggerToo": "1",
+                    "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -35567,10 +35567,10 @@
         },
         {
             "Layer": 0,
-            "Active": 0,
+            "Active": 1,
             "EntityMeta": {
                 "name": "Bomb puzzle",
-                "isActive": 0,
+                "isActive": 1,
                 "isStatic": 0,
                 "luid": 1
             },
@@ -35580,9 +35580,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.0,
-                    "y": 0.3354423940181732,
-                    "z": 0.0
+                    "x": -30.784202575683594,
+                    "y": 1.2265832424163818,
+                    "z": -12.078291893005371
                 },
                 "Scale": {
                     "x": 1.0,
@@ -35595,14 +35595,33 @@
                     "z": -0.0
                 },
                 "luid": 1
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_RotateLock"
+                ],
+                "SerializedFields": {
+                    "Puzzle_RotateLock.rotationMargin": "10.000000",
+                    "Puzzle_RotateLock.inUse": "0",
+                    "Puzzle_RotateLock.rotationSpeed": "100.000000",
+                    "Puzzle_RotateLock.outerRingRef": "8390885272458493954",
+                    "Puzzle_RotateLock.numCorrect": "0",
+                    "Puzzle_RotateLock.checkTimerAmount": "0.500000",
+                    "Puzzle_RotateLock.rotateLockIndex": "rotate_01",
+                    "Puzzle_RotateLock.correctNums": "3 3 6 1",
+                    "Puzzle_RotateLock.correctAlphas": "3 0 5 6",
+                    "Puzzle_RotateLock.puzzleKey": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821183110250541
             }
         },
         {
             "Layer": 0,
-            "Active": 0,
+            "Active": 1,
             "EntityMeta": {
                 "name": "Inner",
-                "isActive": 0,
+                "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613968463462405
             },
@@ -35639,50 +35658,10 @@
         },
         {
             "Layer": 0,
-            "Active": 0,
-            "EntityMeta": {
-                "name": "Outer",
-                "isActive": 0,
-                "isStatic": 0,
-                "luid": 7308613968463462407
-            },
-            "Hierarchy": {
-                "luid": 7308613968463462402,
-                "parentLuid": 7308613968463462400
-            },
-            "Transform": {
-                "Position": {
-                    "x": -6.984919309616089e-9,
-                    "y": 7.636845111846924e-8,
-                    "z": 4.6566128730773926e-9
-                },
-                "Scale": {
-                    "x": 10.063644409179688,
-                    "y": 1.6298611164093018,
-                    "z": 10.063644409179688
-                },
-                "Rotation": {
-                    "x": -90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 3
-            },
-            "Renderer": {
-                "modelUUID": "09cda3c0-01e4-41eb-8d98-0c6e0fe9255f",
-                "materialUUID": "870a6bd0-ebf5-45f5-8731-b325d992b6a6",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 1,
-                "luid": 8242829416166129670
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 0,
+            "Active": 1,
             "EntityMeta": {
                 "name": "Center",
-                "isActive": 0,
+                "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613968463462409
             },
@@ -35715,6 +35694,76 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 2,
                 "luid": 8242829416166129672
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.10000000149011612,
+                            "y": 0.10000000149011612,
+                            "z": 0.10000000149011612
+                        }
+                    }
+                },
+                "luid": 7165061748861239306
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_RotateLock"
+                ],
+                "SerializedFields": {
+                    "Interactable_RotateLock.rotateLockIndex": "rotate_01"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821183193612299
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Outer",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613987006021633
+            },
+            "Hierarchy": {
+                "luid": 7526194144003358720,
+                "parentLuid": 7308613968463462400
+            },
+            "Transform": {
+                "Position": {
+                    "x": -6.984919309616089e-9,
+                    "y": 7.636845111846924e-8,
+                    "z": 4.6566128730773926e-9
+                },
+                "Scale": {
+                    "x": 10.063644409179688,
+                    "y": 1.6298611164093018,
+                    "z": 10.063644409179688
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885272458493954
+            },
+            "Renderer": {
+                "modelUUID": "09cda3c0-01e4-41eb-8d98-0c6e0fe9255f",
+                "materialUUID": "870a6bd0-ebf5-45f5-8731-b325d992b6a6",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 1,
+                "luid": 8242829434708688899
             }
         },
         {
@@ -36372,12 +36421,12 @@
                 "SerializedFields": {
                     "Interactable_DoorHinge.targetRotationY": "-100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
-                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613979695087659",
-                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.logInteractions": "1",
-                    "Interactable_DoorHinge.eventName": "",
-                    "Interactable_DoorHinge.tweenDuration": "1.500000"
+                    "Interactable_DoorHinge.interactionDistance": "5.000000",
+                    "Interactable_DoorHinge.tweenDuration": "1.500000",
+                    "Interactable_DoorHinge.eventName": ""
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -38900,6 +38949,207 @@
                     "z": -0.0
                 },
                 "luid": 8390885265463574542
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Bomb_Puzzle01",
+                "isActive": 0,
+                "isStatic": 0,
+                "luid": 7308613986911977519
+            },
+            "Hierarchy": {
+                "luid": 7526194143909314606,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.8550897240638733,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885272364449840
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_RotateLock"
+                ],
+                "SerializedFields": {
+                    "Puzzle_RotateLock.rotationMargin": "10.000000",
+                    "Puzzle_RotateLock.inUse": "0",
+                    "Puzzle_RotateLock.rotationSpeed": "100.000000",
+                    "Puzzle_RotateLock.outerRingRef": "8390885272434114562",
+                    "Puzzle_RotateLock.numCorrect": "3",
+                    "Puzzle_RotateLock.checkTimerAmount": "0.500000",
+                    "Puzzle_RotateLock.rotateLockIndex": "rotate_01",
+                    "Puzzle_RotateLock.correctNums": "0",
+                    "Puzzle_RotateLock.correctAlphas": "0",
+                    "Puzzle_RotateLock.puzzleKey": "0"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821183113592881
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "InnerRing",
+                "isActive": 0,
+                "isStatic": 0,
+                "luid": 7308613986911977523
+            },
+            "Hierarchy": {
+                "luid": 7526194143909314610,
+                "parentLuid": 7526194143909314606
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0000011920928955078125
+                },
+                "Scale": {
+                    "x": 0.20000000298023224,
+                    "y": 1.0,
+                    "z": 0.20000000298023224
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885272364449844
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829434614644789
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "OuterRing",
+                "isActive": 0,
+                "isStatic": 0,
+                "luid": 7308613986981642241
+            },
+            "Hierarchy": {
+                "luid": 7526194143978979328,
+                "parentLuid": 7526194143909314606
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.020142942667007446
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885272434114562
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cylinder",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829434684309507
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061748859207684
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Interactable_RotateLock"
+                ],
+                "SerializedFields": {
+                    "Interactable_RotateLock.rotateLockIndex": "rotate_01"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821183183257605
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Cube",
+                "isActive": 0,
+                "isStatic": 0,
+                "luid": 7308613986981642247
+            },
+            "Hierarchy": {
+                "luid": 7526194143978979334,
+                "parentLuid": 7526194143978979328
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.3508465588092804,
+                    "z": -0.4760180711746216
+                },
+                "Scale": {
+                    "x": 0.20000000298023224,
+                    "y": 0.20000000298023224,
+                    "z": 0.20000000298023224
+                },
+                "Rotation": {
+                    "x": -0.027415569871664047,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885272434114568
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/cube",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829434684309513
             }
         }
     ]

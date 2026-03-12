@@ -61,7 +61,8 @@
 #include "Scripts/UI_BGMVolumeButtons.hpp"
 #include "Scripts/UI_SFXVolumeButtons.hpp"
 #include "Scripts/UI_AmbienceVolumeButtons.hpp"
-
+#include "Scripts/Puzzle_RotateLock.hpp"
+#include "Scripts/Interactable_RotateLock.hpp"
 
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
@@ -171,6 +172,12 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_MultiLightSequencer", []() -> NE::Scripting::IScript* {
             return new Puzzle_MultiLightSequencer();
+            });
+        registrar->RegisterScript("Puzzle_RotateLock", []() -> NE::Scripting::IScript* {
+            return new Puzzle_RotateLock();
+            });
+        registrar->RegisterScript("Interactable_RotateLock", []() -> NE::Scripting::IScript* {
+            return new Interactable_RotateLock();
             });
         registrar->RegisterScript("LaserListener", []() -> NE::Scripting::IScript* {
             return new LaserListener();
