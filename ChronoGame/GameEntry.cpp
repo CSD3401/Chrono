@@ -63,6 +63,8 @@
 #include "Scripts/UI_AmbienceVolumeButtons.hpp"
 #include "Scripts/Interactable_MirrorTile.hpp"
 #include "Scripts/Misc_StopAnimationOnEvent.hpp"
+#include "Scripts/Misc_SolvedMaterialOverride.hpp"
+
 
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
@@ -251,12 +253,14 @@ extern "C" {
         registrar->RegisterScript("UI_AmbienceVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_AmbienceVolumeButtons();
             });
-
         registrar->RegisterScript("Interactable_MirrorTile", []() -> NE::Scripting::IScript* {
             return new Interactable_MirrorTile();
             });
         registrar->RegisterScript("Misc_StopAnimationOnEvent", []() -> NE::Scripting::IScript* {
             return new Misc_StopAnimationOnEvent();
+            });
+        registrar->RegisterScript("Misc_SolvedMaterialOverride", []() -> NE::Scripting::IScript* {
+            return new Misc_SolvedMaterialOverride();
             });
         }
 }

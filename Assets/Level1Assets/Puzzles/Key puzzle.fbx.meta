@@ -1,0 +1,181 @@
+{
+    "fileFormatVersion": 1,
+    "uuid": "3e659cb1-9836-40f4-aff8-b68c9daaafbb",
+    "assetType": "Model",
+    "sourcePath": "Assets/Level1Assets\\Puzzles\\Key puzzle.fbx",
+    "modelImport": {
+        "scene": {
+            "scaleFactor": 0.009999999776482582,
+            "convertUnits": 1,
+            "importCameras": 0,
+            "importLights": 0,
+            "preserveHierarchy": 1
+        },
+        "mesh": {
+            "weldVertices": 0,
+            "keepQuads": 0,
+            "swapUVs": 0,
+            "generateLightmapUVs": 0,
+            "generateColliders": 1,
+            "generateMeshLODs": 0,
+            "smoothingAngle": 60.0,
+            "normalMode": 0,
+            "tangentMode": 0,
+            "indexFormat": 0,
+            "meshOptimizationMode": 1
+        },
+        "rig": {
+            "stripBones": 0,
+            "animationType": 0
+        },
+        "animation": {
+            "importAnimations": 1,
+            "importConstraints": 0,
+            "importAnimatedCustomProperties": 0,
+            "autoSplitClips": 1,
+            "importRootMotion": 0,
+            "lockRootPositionXZ": 0,
+            "lockRootRotationY": 0,
+            "sampleRate": 0.0
+        },
+        "material": {
+            "importMaterials": 1,
+            "tryReuseExistingMaterials": 1,
+            "creationMode": 0
+        }
+    },
+    "submeshes": [
+        {
+            "name": "RootNode/Puzzle_Elements_$AssimpFbx$_RotationPivot/Puzzle_Elements_$AssimpFbx$_RotationPivotInverse/Puzzle_Elements_$AssimpFbx$_ScalingPivot/Puzzle_Elements_$AssimpFbx$_ScalingPivotInverse/Puzzle_Elements/Keycard_Reader_$AssimpFbx$_Translation/Keycard_Reader_$AssimpFbx$_RotationPivot/Keycard_Reader_$AssimpFbx$_RotationPivotInverse/Keycard_Reader_$AssimpFbx$_ScalingPivot/Keycard_Reader_$AssimpFbx$_ScalingPivotInverse/Keycard_Reader/Keycard_Reader",
+            "index": 0,
+            "pivotOffset": {
+                "x": 0.15513840317726135,
+                "y": 1.1233018636703491,
+                "z": -2.351074695587158
+            }
+        },
+        {
+            "name": "RootNode/Puzzle_Elements_$AssimpFbx$_RotationPivot/Puzzle_Elements_$AssimpFbx$_RotationPivotInverse/Puzzle_Elements_$AssimpFbx$_ScalingPivot/Puzzle_Elements_$AssimpFbx$_ScalingPivotInverse/Puzzle_Elements/Keycard_$AssimpFbx$_Translation/Keycard_$AssimpFbx$_RotationPivot/Keycard_$AssimpFbx$_RotationPivotInverse/Keycard_$AssimpFbx$_ScalingPivot/Keycard_$AssimpFbx$_ScalingPivotInverse/Keycard/Keycard",
+            "index": 1,
+            "pivotOffset": {
+                "x": 0.2843480408191681,
+                "y": 1.1038756370544434,
+                "z": -2.357534170150757
+            }
+        }
+    ],
+    "generatedPrefab": {
+        "schemaVersion": 1,
+        "Entities": [
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Key puzzle",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 1
+                },
+                "Hierarchy": {
+                    "luid": 1,
+                    "parentLuid": 0
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 1
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Keycard_Reader",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 2,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": -0.24033398926258087,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 2
+                },
+                "Renderer": {
+                    "modelUUID": "3e659cb1-9836-40f4-aff8-b68c9daaafbb",
+                    "materialUUID": "7a975feb-208a-4abf-a48c-49b8177d3956",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 0,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Keycard",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 3,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": -0.15526925027370453,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 3
+                },
+                "Renderer": {
+                    "modelUUID": "3e659cb1-9836-40f4-aff8-b68c9daaafbb",
+                    "materialUUID": "7a975feb-208a-4abf-a48c-49b8177d3956",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 1,
+                    "luid": 0
+                }
+            }
+        ]
+    }
+}
