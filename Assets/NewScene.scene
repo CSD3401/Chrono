@@ -193,12 +193,12 @@
                     "Interactable_TwoWaySwitch.toggleCooldown": "1.500000",
                     "Puzzle_Lever.twoStateRotaterObject": "7308613770881925120",
                     "Puzzle_Lever.twoWaySwitchObject": "7308613770881925120",
-                    "Misc_TwoStateRotater.startingState": "0",
-                    "Misc_TwoStateRotater.rotationX1": "50.000000",
                     "Puzzle_Lever.puzzleKey": "0",
                     "Misc_TwoStateRotater.target": "7308613770881925120",
+                    "Misc_TwoStateRotater.rotationX1": "50.000000",
                     "Misc_TwoStateRotater.rotationX2": "0.000000",
-                    "Misc_TwoStateRotater.duration": "0.500000"
+                    "Misc_TwoStateRotater.duration": "0.500000",
+                    "Misc_TwoStateRotater.startingState": "0"
                 },
                 "EntityReferenceFields": [
                     "twoStateRotaterObject",
@@ -225,7 +225,7 @@
                 "Position": {
                     "x": 0.0,
                     "y": 0.9810889959335327,
-                    "z": 0.0
+                    "z": 6.647388458251953
                 },
                 "Scale": {
                     "x": 0.800000011920929,
@@ -270,34 +270,34 @@
                     "Misc_TimeFogLighting"
                 ],
                 "SerializedFields": {
-                    "Misc_TimeFogLighting.affectFog": "1",
-                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
                     "Player_Controller.jumpStrength": "5.000000",
-                    "Misc_TimeFogLighting.presentFogStart": "0.000000",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
-                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.030000",
                     "Player_Controller.gravity": "10.000000",
                     "Player_Controller.lookSensitivity": "0.250000",
-                    "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.normalAmbientIntensity": "0.400000",
                     "Player_Controller.moveSpeed": "4.000000",
                     "Misc_TimeFogLighting.normalAmbientColor": "25 15 10",
                     "Misc_TimeFogLighting.normalFogMode": "1",
                     "Player_Controller.snappiness": "5.000000",
                     "Player_Controller.walkSoundInterval": "0.500000",
-                    "Misc_TimeFogLighting.affectAmbient": "1",
+                    "Misc_TimeFogLighting.affectFog": "1",
+                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
                     "Misc_TimeFogLighting.normalEnvSource": "2",
+                    "Misc_TimeFogLighting.affectAmbient": "1",
                     "Misc_TimeFogLighting.startInPresent": "1",
                     "Misc_TimeFogLighting.normalFogEnabled": "1",
-                    "Misc_TimeFogLighting.normalFogColor": "15 10 8",
+                    "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.presentFogEnabled": "1",
+                    "Misc_TimeFogLighting.normalFogColor": "15 10 8",
                     "Misc_TimeFogLighting.normalFogDensity": "0.015000",
                     "Misc_TimeFogLighting.normalFogStart": "0.000000",
                     "Misc_TimeFogLighting.normalFogEnd": "50.000000",
                     "Misc_TimeFogLighting.presentFogColor": "5 3 3",
                     "Misc_TimeFogLighting.presentFogDensity": "0.020000",
+                    "Misc_TimeFogLighting.presentFogStart": "0.000000",
                     "Misc_TimeFogLighting.presentFogEnd": "10.000000",
-                    "Misc_TimeFogLighting.presentAmbientColor": "18 11 6"
+                    "Misc_TimeFogLighting.presentAmbientColor": "18 11 6",
+                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.030000"
                 },
                 "EntityReferenceFields": [
                     "playerCameraRef"
@@ -355,11 +355,11 @@
                     "Player_Raycast.interval": "0.100000",
                     "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.distance": "5.000000",
-                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Player_Raycast.targetLayer": "0",
                     "Camera_FOVPulse.baseFov": "90.000000",
                     "Camera_FOVPulse.enabledAtStart": "1",
                     "Camera_FOVPulse.pulseFov": "150.000000",
+                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Camera_FOVPulse.riseTimeSeconds": "0.100000",
                     "Misc_Grabber.grabStrength": "0.000000",
                     "Misc_Grabber.distance": "2.500000",
@@ -7659,8 +7659,8 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613771630477337",
                     "Puzzle_MultiLightSequencer.light2": "7308613771645485097",
-                    "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
                     "Puzzle_MultiLightSequencer.sequenceLength": "3",
+                    "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
                     "Puzzle_MultiLightSequencer.light4": "0",
                     "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "0",
@@ -17599,15 +17599,15 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireHolderObject": "7308613789212147717",
-                    "Puzzle_Wire.wireColours": "4 5 3 4 1",
                     "Puzzle_Wire.connectedHolderObject": "7308613789212147787",
-                    "Puzzle_Wire.correctHolderObject": "7308613789212147760",
+                    "Puzzle_Wire.wireColours": "4 5 3 4 1",
+                    "Puzzle_Wire.wireHolderObject": "7308613789212147717",
                     "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.correctHolderObject": "7308613789212147760",
                     "Puzzle_Wire.correctColours": "4 3 1 5 4",
                     "Puzzle_Wire.wirePath": "0",
-                    "Puzzle_Wire.changeTimer": "0.500000",
                     "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Wire.changeTimer": "0.500000",
                     "Puzzle_Wire.eventName": "PuzzleSolved1"
                 },
                 "EntityReferenceFields": [
@@ -17720,20 +17720,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -17806,20 +17806,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -17892,20 +17892,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -17978,20 +17978,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -18288,20 +18288,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -18374,20 +18374,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -18460,20 +18460,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -18546,20 +18546,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -18653,14 +18653,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -18718,14 +18718,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -18783,14 +18783,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -18848,14 +18848,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -18898,15 +18898,15 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireHolderObject": "7308613789263659013",
-                    "Puzzle_Wire.wireColours": "4 5 3 4 1",
                     "Puzzle_Wire.connectedHolderObject": "7308613789263659083",
-                    "Puzzle_Wire.correctHolderObject": "7308613789263659056",
+                    "Puzzle_Wire.wireColours": "4 5 3 4 1",
+                    "Puzzle_Wire.wireHolderObject": "7308613789263659013",
                     "Puzzle_Wire.wirePuzzleIndex": "1",
+                    "Puzzle_Wire.correctHolderObject": "7308613789263659056",
                     "Puzzle_Wire.correctColours": "4 3 1 5 4",
                     "Puzzle_Wire.wirePath": "0",
-                    "Puzzle_Wire.changeTimer": "0.500000",
                     "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Wire.changeTimer": "0.500000",
                     "Puzzle_Wire.eventName": "PuzzleSolved2"
                 },
                 "EntityReferenceFields": [
@@ -19011,20 +19011,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19093,20 +19093,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19175,20 +19175,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19257,20 +19257,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19543,20 +19543,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -19625,20 +19625,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -19707,20 +19707,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -19789,20 +19789,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -19899,14 +19899,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -19960,14 +19960,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -20021,14 +20021,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -20082,14 +20082,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -22120,7 +22120,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Dialouge Marker",
+                "name": "1",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613928199258116
@@ -22133,7 +22133,7 @@
                 "Position": {
                     "x": -0.2257707118988037,
                     "y": 0.5221322774887085,
-                    "z": -0.9746692180633545
+                    "z": 3.5648066997528076
                 },
                 "Scale": {
                     "x": 1.0,
@@ -22174,7 +22174,7 @@
                 "SerializedFields": {
                     "Dialouge_Marker.playerRef": "7308613656064753675",
                     "Dialouge_Marker.dialogueUI": "7308613928195129344",
-                    "Dialouge_Marker.dialogueText": "So that's what happened huh. Lets try to proceed to look for more clues. This security gate seems to be working, pressing E should open up this.",
+                    "Dialouge_Marker.dialogueText": "I need to find my wife. She has to be somewhere here. ",
                     "Dialouge_Marker.audioName": "RF1"
                 },
                 "EntityReferenceFields": [
@@ -22188,7 +22188,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Dialouge Marker",
+                "name": "2",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613928241332230
@@ -22201,7 +22201,7 @@
                 "Position": {
                     "x": -0.42315804958343506,
                     "y": 0.5221322774887085,
-                    "z": -4.946829795837402
+                    "z": -0.21991300582885742
                 },
                 "Scale": {
                     "x": 1.0,
@@ -22242,7 +22242,7 @@
                 "SerializedFields": {
                     "Dialouge_Marker.playerRef": "7308613656064753675",
                     "Dialouge_Marker.dialogueUI": "7308613928195129344",
-                    "Dialouge_Marker.dialogueText": " Hmm the explosion must have caused a sinkhole in the ground. We might need to go into the past to get through this. Try pressing 1 to, that should do the trick",
+                    "Dialouge_Marker.dialogueText": "Looks like this gate can open... maybe if I press E.",
                     "Dialouge_Marker.audioName": "RF2"
                 },
                 "EntityReferenceFields": [
@@ -22256,7 +22256,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Dialouge Marker",
+                "name": "3A",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613928242839563
@@ -22267,9 +22267,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 6.208539962768555,
-                    "y": 0.7437918186187744,
-                    "z": -24.5563907623291
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -4.53854513168335
                 },
                 "Scale": {
                     "x": 1.0,
@@ -22310,7 +22310,7 @@
                 "SerializedFields": {
                     "Dialouge_Marker.playerRef": "7308613656064753675",
                     "Dialouge_Marker.dialogueUI": "7308613928195129344",
-                    "Dialouge_Marker.dialogueText": " Some doors seem to be left unlocked. Press E to open them ",
+                    "Dialouge_Marker.dialogueText": "Whoa... that's a massive sinkhole. Let's see what this watch can do. Maybe if I press Q. ",
                     "Dialouge_Marker.audioName": "RF3"
                 },
                 "EntityReferenceFields": [
@@ -22324,7 +22324,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Dialouge Marker",
+                "name": "3B",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613928243429392
@@ -22335,9 +22335,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -0.5188814401626587,
-                    "y": 0.5221322774887085,
-                    "z": -23.533870697021484
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -8.97198486328125
                 },
                 "Scale": {
                     "x": 1.0,
@@ -22378,7 +22378,7 @@
                 "SerializedFields": {
                     "Dialouge_Marker.playerRef": "7308613656064753675",
                     "Dialouge_Marker.dialogueUI": "7308613928195129344",
-                    "Dialouge_Marker.dialogueText": "These lasers are in the way. Maybe this circuit box holds the clue to disabling them. These colors and combinations. Could it be...",
+                    "Dialouge_Marker.dialogueText": "So this watch sends me back an hour before the explosion? I can't even begin to understand how this works... but it might be the only advantage I have. ",
                     "Dialouge_Marker.audioName": "RF4"
                 },
                 "EntityReferenceFields": [
@@ -22386,6 +22386,754 @@
                     "dialogueUI"
                 ],
                 "luid": 7958821124445044755
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "4",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984015810561
+            },
+            "Hierarchy": {
+                "luid": 7526194141013147648,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": -1.177304744720459,
+                    "y": 0.5221322774887085,
+                    "z": -22.52186393737793
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269468282882
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745893376003
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": " They were trying to get into the Aether Core... That can't be good. Maybe their notes will give me a clue about what they're planning.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180217425924
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "5",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984019415046
+            },
+            "Hierarchy": {
+                "luid": 7526194141016752133,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.5188814401626587,
+                    "y": 0.5221322774887085,
+                    "z": -23.533870697021484
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269471887367
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745896980488
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "Seems like the access panel routes power through colour-matched conduits.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180221030409
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "6",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984020201483
+            },
+            "Hierarchy": {
+                "luid": 7526194141017538570,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": 14.095561981201172,
+                    "y": 0.5221322774887085,
+                    "z": -29.110437393188477
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269472673804
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745897766925
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "Maybe if I switch to the past, the phone booth will work..",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180221816846
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "7",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984020201488
+            },
+            "Hierarchy": {
+                "luid": 7526194141017538575,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": 15.048272132873535,
+                    "y": 0.5221322774887085,
+                    "z": -28.517004013061523
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269472673809
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745897766930
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "Was that my wife's voice? How did it get here...? I need to find her.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180221816851
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "8",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984020201493
+            },
+            "Hierarchy": {
+                "luid": 7526194141017538580,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": 13.748456001281738,
+                    "y": 0.5221322774887085,
+                    "z": -26.625831604003906
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269472673814
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745897766935
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "The left and right arrays are linked... Whatever I do on one side mirrors on the other.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180221816856
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "9",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984020201498
+            },
+            "Hierarchy": {
+                "luid": 7526194141017538585,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": 18.604631423950195,
+                    "y": 0.5221322774887085,
+                    "z": -19.532381057739258
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269472673819
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745897766940
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "What the— is that a bomb?! I need to defuse it before it blows.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180221816861
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "10",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984024330271
+            },
+            "Hierarchy": {
+                "luid": 7526194141021667358,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": 22.3267765045166,
+                    "y": 0.5221322774887085,
+                    "z": -19.531999588012695
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269476802592
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745901895713
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "The corridor ahead is filled with live electrical emitters... I'd better be careful not to touch it.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180225945634
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "11",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984024330276
+            },
+            "Hierarchy": {
+                "luid": 7526194141021667363,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.5188814401626587,
+                    "y": 0.5221322774887085,
+                    "z": -23.533870697021484
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269476802597
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745901895718
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "The system's still running... There must be another control box somewhere.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180225945639
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "12",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984024330281
+            },
+            "Hierarchy": {
+                "luid": 7526194141021667368,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": 29.151124954223633,
+                    "y": 0.43205323815345764,
+                    "z": -14.031939506530762
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269476802602
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745901895723
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "Looks like this control box needs a fixed pulse sequence to activate.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180225945644
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "13",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984027672622
+            },
+            "Hierarchy": {
+                "luid": 7526194141025009709,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": 34.18536376953125,
+                    "y": 0.5221322774887085,
+                    "z": -21.375852584838867
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269480144943
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745905238064
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "This is it... the Aether Lab. Time to end this.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180229287985
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "14",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613984028459059
+            },
+            "Hierarchy": {
+                "luid": 7526194141025796146,
+                "parentLuid": 7526194085287297026
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.5188814401626587,
+                    "y": 0.5221322774887085,
+                    "z": -23.533870697021484
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885269480931380
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }
+                },
+                "luid": 7165061745906024501
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Dialouge_Marker"
+                ],
+                "SerializedFields": {
+                    "Dialouge_Marker.playerRef": "7308613656064753675",
+                    "Dialouge_Marker.dialogueUI": "7308613928195129344",
+                    "Dialouge_Marker.dialogueText": "That's... a massive bomb attached to my wife's experiment. If I can defuse it before it detonates... Maybe I can still save her. Maybe I can fix all of this.",
+                    "Dialouge_Marker.audioName": "RF4"
+                },
+                "EntityReferenceFields": [
+                    "playerRef",
+                    "dialogueUI"
+                ],
+                "luid": 7958821180230074422
             }
         },
         {
@@ -24712,10 +25460,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "rightLaser7",
                     "leftLaser8",
-                    "leftLaser7",
+                    "rightLaser7",
                     "rightLaser8",
+                    "leftLaser7",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -24787,10 +25535,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "rightLaser8",
                     "leftLaser7",
-                    "rightLaser7",
+                    "rightLaser8",
                     "leftLaser8",
+                    "rightLaser7",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -39782,8 +40530,8 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613969940185100",
                     "Puzzle_MultiLightSequencer.light2": "7308613969940185111",
-                    "Puzzle_MultiLightSequencer.light3": "7308613969940185122",
                     "Puzzle_MultiLightSequencer.sequenceLength": "3",
+                    "Puzzle_MultiLightSequencer.light3": "7308613969940185122",
                     "Puzzle_MultiLightSequencer.light4": "0",
                     "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "0",
