@@ -41,7 +41,7 @@ public:
             return;
         }
         TeleportToCheckpoint();
-        PlayAudio("event:/ELECTRIC_SHOCK"); // REPLACE THIS - RF
+        PlayAudio("event:/PLAYER_HURT"); // REPLACE THIS - RF
     }
 
     // === Collision Callbacks ===

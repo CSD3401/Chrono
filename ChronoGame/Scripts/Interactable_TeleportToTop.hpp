@@ -35,6 +35,7 @@ public:
         SCRIPT_FIELD(snapXZToObject, Bool);
         SCRIPT_FIELD(liftSpeedY, Float);
         SCRIPT_FIELD(useCharacterControllerMove, Bool);
+        SCRIPT_FIELD(climbAudioName, String);
     }
 
     ~Interactable_TeleportToTop() override = default;
@@ -91,6 +92,10 @@ public:
         targetY = topY + playerLift + extraClearanceY;
         isLifting = true;
 
+        // Play climb audio
+        if (!climbAudioName.empty())
+            PlayAudio("event:/" + climbAudioName);
+
         // Temporarily disable the player controller so it doesn't fight us (CC_Move / gravity / input).
         CacheAndDisablePlayerController();
     }
@@ -121,6 +126,10 @@ public:
             currentPos.y = targetY;
             TF_SetPosition(currentPos, playerEntity);
             isLifting = false;
+
+            // Stop climb audio
+            if (!climbAudioName.empty())
+                StopAudio("event:/" + climbAudioName);
 
             RestorePlayerController();
             return;
@@ -161,6 +170,9 @@ private:
     bool snapXZToObject;
     float liftSpeedY;
     bool useCharacterControllerMove;
+
+    // === Inspector Fields (audio) ===
+    std::string climbAudioName = "CLIMB_METAL";
 
     // === Runtime State ===
     bool isLifting;

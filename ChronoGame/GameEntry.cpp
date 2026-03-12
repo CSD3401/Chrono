@@ -64,6 +64,7 @@
 #include "Scripts/Interactable_MirrorTile.hpp"
 #include "Scripts/Misc_StopAnimationOnEvent.hpp"
 #include "Scripts/Misc_SolvedMaterialOverride.hpp"
+#include "Scripts/Puzzle_FinalBomb.hpp"
 
 
 
@@ -261,6 +262,9 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_SolvedMaterialOverride", []() -> NE::Scripting::IScript* {
             return new Misc_SolvedMaterialOverride();
+            });
+        registrar->RegisterScript("Puzzle_FinalBomb", []() -> NE::Scripting::IScript* {
+            return new Puzzle_FinalBomb();
             });
         }
 }
