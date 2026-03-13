@@ -68,6 +68,8 @@
 #include "Scripts/Puzzle_Bomb.hpp"
 #include "Scripts/UIButton_Quit.hpp"
 #include "Scripts/Credits_Controller.hpp"
+#include "Scripts/Credits_ReturnToMainMenu.hpp"
+#include "Scripts/UIButton_SwitchToCredits.hpp"
 #include "Scripts/UIButton_ResetVolumes.hpp"
 #include "Scripts/SplashScreen_Controller.hpp"
 
@@ -279,6 +281,12 @@ extern "C" {
             });
         registrar->RegisterScript("Credits_Controller", []() -> NE::Scripting::IScript* {
             return new Credits_Controller();
+            });
+        registrar->RegisterScript("Credits_ReturnToMainMenu", []() -> NE::Scripting::IScript* {
+            return new Credits_ReturnToMainMenu();
+            });
+        registrar->RegisterScript("UIButton_SwitchToCredits", []() -> NE::Scripting::IScript* {
+            return new UIButton_SwitchToCredits();
             });
         registrar->RegisterScript("UIButton_ResetVolumes", []() -> NE::Scripting::IScript* {
             return new UIButton_ResetVolumes();
