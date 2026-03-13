@@ -163,6 +163,7 @@ private:
         } else {
             done  = true;
             phase = Phase::DONE;
+            Events::Send("SplashScreenDone");
             LOG_INFO("SplashScreen_Controller: all slides done.");
         }
     }
