@@ -71,6 +71,7 @@
 #include "Scripts/UIButton_SwitchToCredits.hpp"
 #include "Scripts/UIButton_ResetVolumes.hpp"
 #include "Scripts/SplashScreen_Controller.hpp"
+#include "Scripts/SplashScreen_ReturnToMainMenu.hpp"
 
 
 
@@ -289,6 +290,9 @@ extern "C" {
             });
         registrar->RegisterScript("SplashScreen_Controller", []() -> NE::Scripting::IScript* {
             return new SplashScreen_Controller();
+            });
+        registrar->RegisterScript("SplashScreen_ReturnToMainMenu", []() -> NE::Scripting::IScript* {
+            return new SplashScreen_ReturnToMainMenu();
             });
         }
 }
