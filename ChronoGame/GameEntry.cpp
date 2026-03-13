@@ -65,6 +65,9 @@
 #include "Scripts/Misc_StopAnimationOnEvent.hpp"
 #include "Scripts/Misc_SolvedMaterialOverride.hpp"
 #include "Scripts/Puzzle_FinalBomb.hpp"
+#include "scripts/UIButton_Quit.hpp"
+#include "scripts/Credits_Controller.hpp"
+#include "Scripts/SplashScreen_Controller.hpp"
 
 
 
@@ -265,6 +268,15 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_FinalBomb", []() -> NE::Scripting::IScript* {
             return new Puzzle_FinalBomb();
+            });
+        registrar->RegisterScript("UIButton_Quit", []() -> NE::Scripting::IScript* {
+            return new UIButton_Quit();
+            });
+        registrar->RegisterScript("Credits_Controller", []() -> NE::Scripting::IScript* {
+            return new Credits_Controller();
+            });
+        registrar->RegisterScript("SplashScreen_Controller", []() -> NE::Scripting::IScript* {
+            return new SplashScreen_Controller();
             });
         }
 }
