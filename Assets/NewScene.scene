@@ -27522,10 +27522,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "leftLaser8",
                     "rightLaser7",
-                    "rightLaser8",
+                    "leftLaser8",
                     "leftLaser7",
+                    "rightLaser8",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -27597,10 +27597,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "leftLaser7",
                     "rightLaser8",
-                    "leftLaser8",
+                    "leftLaser7",
                     "rightLaser7",
+                    "leftLaser8",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -30623,7 +30623,7 @@
                     "z": 1.0000001192092896
                 },
                 "Rotation": {
-                    "x": 0.0,
+                    "x": -24.55999755859375,
                     "y": 0.0,
                     "z": 0.0
                 },
@@ -58051,7 +58051,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Light Puzzle",
+                "name": "Final Light Puzzle",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832795
@@ -58085,24 +58085,15 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613988044832893",
                     "Puzzle_MultiLightSequencer.light2": "7308613988044832881",
-                    "Puzzle_MultiLightSequencer.sequenceLength": "3",
                     "Puzzle_MultiLightSequencer.light3": "7308613988044832889",
                     "Puzzle_MultiLightSequencer.light4": "7308613988044832877",
-                    "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "7308613988044832885",
-                    "Puzzle_MultiLightSequencer.blinkOnTime": "0.350000",
                     "Puzzle_MultiLightSequencer.light6": "7308613988044832873",
-                    "Puzzle_MultiLightSequencer.light7": "0",
-                    "Puzzle_MultiLightSequencer.lightOffMaterial": "19de8522-2788-42d6-8949-f3314f4d58a6",
-                    "Puzzle_MultiLightSequencer.solvedEventName": "FinalSequencerSolved",
-                    "Puzzle_MultiLightSequencer.light8": "0",
-                    "Puzzle_MultiLightSequencer.light9": "0",
+                    "Puzzle_MultiLightSequencer.sequenceLength": "4",
                     "Puzzle_MultiLightSequencer.lightOnMaterial": "422f303b-a2fd-44d6-acbf-d930ef363e94",
-                    "Puzzle_MultiLightSequencer.blinkOffTime": "0.200000",
-                    "Puzzle_MultiLightSequencer.failReplayDelay": "0.600000",
-                    "Puzzle_MultiLightSequencer.autoStart": "1",
-                    "Puzzle_MultiLightSequencer.logSequence": "0",
-                    "Puzzle_MultiLightSequencer.puzzleKeyId": "1"
+                    "Puzzle_MultiLightSequencer.lightOffMaterial": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Puzzle_MultiLightSequencer.puzzleKeyId": "2",
+                    "Puzzle_MultiLightSequencer.solvedEventName": "FinalLightPuzzleSolved"
                 },
                 "EntityReferenceFields": [
                     "light1",
@@ -58242,7 +58233,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "button27",
+                "name": "b6",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832811
@@ -58335,8 +58326,7 @@
                 ],
                 "SerializedFields": {
                     "Interactable_SequencerPad.slotNumber": "6",
-                    "Interactable_SequencerPad.sequencer": "7308613985911898360",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.sequencer": "7308613988044832795"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -58348,7 +58338,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "button26",
+                "name": "b5",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832820
@@ -58441,7 +58431,7 @@
                 ],
                 "SerializedFields": {
                     "Interactable_SequencerPad.slotNumber": "5",
-                    "Interactable_SequencerPad.sequencer": "7308613985911898360",
+                    "Interactable_SequencerPad.sequencer": "7308613988044832795",
                     "Interactable_SequencerPad.startPuzzleIfIdle": "0"
                 },
                 "EntityReferenceFields": [
@@ -58454,7 +58444,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "button25",
+                "name": "b4",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832829
@@ -58547,8 +58537,7 @@
                 ],
                 "SerializedFields": {
                     "Interactable_SequencerPad.slotNumber": "4",
-                    "Interactable_SequencerPad.sequencer": "7308613985911898360",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.sequencer": "7308613988044832795"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -58560,7 +58549,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "button24",
+                "name": "b3",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832838
@@ -58653,8 +58642,7 @@
                 ],
                 "SerializedFields": {
                     "Interactable_SequencerPad.slotNumber": "3",
-                    "Interactable_SequencerPad.sequencer": "7308613985911898360",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.sequencer": "7308613988044832795"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -58666,7 +58654,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "button23",
+                "name": "b2",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832847
@@ -58759,8 +58747,7 @@
                 ],
                 "SerializedFields": {
                     "Interactable_SequencerPad.slotNumber": "2",
-                    "Interactable_SequencerPad.sequencer": "7308613985911898360",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.sequencer": "7308613988044832795"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -58772,7 +58759,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "button4",
+                "name": "b1",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832856
@@ -58864,9 +58851,7 @@
                     "Interactable_SequencerPad"
                 ],
                 "SerializedFields": {
-                    "Interactable_SequencerPad.slotNumber": "1",
-                    "Interactable_SequencerPad.sequencer": "7308613985911898360",
-                    "Interactable_SequencerPad.startPuzzleIfIdle": "0"
+                    "Interactable_SequencerPad.sequencer": "7308613988044832795"
                 },
                 "EntityReferenceFields": [
                     "sequencer"
@@ -58958,7 +58943,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "bulb6",
+                "name": "l6",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832873
@@ -58998,7 +58983,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "bulb4",
+                "name": "l4",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832877
@@ -59038,7 +59023,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "bulb2",
+                "name": "l2",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832881
@@ -59078,7 +59063,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "bulb5",
+                "name": "l5",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832885
@@ -59118,7 +59103,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "bulb3",
+                "name": "l3",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832889
@@ -59158,7 +59143,7 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "bulb1",
+                "name": "l1",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613988044832893
