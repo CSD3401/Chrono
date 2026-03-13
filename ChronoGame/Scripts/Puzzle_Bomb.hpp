@@ -100,14 +100,14 @@ public:
 
         if (scrollY > 0.0) {
             RotateOuter(+1);
-            StartRotateAudio();
+            //StartRotateAudio();
         }
         else if (scrollY < 0.0) {
             RotateOuter(-1);
-            StartRotateAudio();
+            //StartRotateAudio();
         }
         else {
-            StopRotateAudio();
+            //StopRotateAudio();
         }
 
         // === Check pairs every frame while in interaction mode ===
@@ -143,7 +143,7 @@ private:
     bool inInteractionMode = false;
     bool isSolved = false;
     bool isRotateAudioPlaying = false;
-    std::string rotateAudioName = "BOMB_ROTATE";
+    std::string rotateAudioName = "";
 
     bool pair1_matched = false;
     bool pair2_matched = false;
@@ -158,8 +158,8 @@ private:
 
         if (outerRef.IsValid()) {
             // Absolute Y offset from base - never touches X or Z
-            float yDegrees = outerBaseRot.y + outerRotation * (360.0f / SEGMENTS);
-            TF_SetRotation(outerBaseRot.x, yDegrees, outerBaseRot.z, outerRef.GetEntity());
+            float zDegrees = outerBaseRot.z + outerRotation * (360.0f / SEGMENTS);
+            TF_SetRotation(outerBaseRot.x, outerBaseRot.y, zDegrees, outerRef.GetEntity());
         }
 
         LOG_DEBUG("[Puzzle_Bomb] Scrolled! Step: " + std::to_string(outerRotation));
@@ -197,6 +197,7 @@ private:
         if (p1 && p2 && p3 && !isSolved) {
             isSolved = true;
             inInteractionMode = false;
+            StopRotateAudio();
             LOG_DEBUG("[Puzzle_Bomb] ALL PAIRS MATCHED - Solved! Sending: " + solveMessage);
             Events::Send(solveMessage.c_str());
         }

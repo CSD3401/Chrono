@@ -65,6 +65,7 @@
 #include "Scripts/Misc_StopAnimationOnEvent.hpp"
 #include "Scripts/Misc_SolvedMaterialOverride.hpp"
 #include "Scripts/Puzzle_FinalBomb.hpp"
+#include "Scripts/Puzzle_Bomb.hpp"
 
 
 
@@ -265,6 +266,9 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_FinalBomb", []() -> NE::Scripting::IScript* {
             return new Puzzle_FinalBomb();
+            });
+        registrar->RegisterScript("Puzzle_Bomb", []() -> NE::Scripting::IScript* {
+            return new Puzzle_Bomb();
             });
         }
 }
