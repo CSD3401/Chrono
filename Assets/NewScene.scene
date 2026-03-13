@@ -6,7 +6,7 @@
             "y": 1.0,
             "z": 1.0
         },
-        "ambientIntensity": 0.0,
+        "ambientIntensity": 1.0,
         "fogEnabled": 0,
         "fogMode": 1,
         "fogColour": {
@@ -21929,9 +21929,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 87.3042221069336,
-                    "y": 2.343045234680176,
-                    "z": -14.47157096862793
+                    "x": 79.47069549560547,
+                    "y": 12.56352710723877,
+                    "z": -21.724063873291016
                 },
                 "Scale": {
                     "x": 0.25,
@@ -21939,8 +21939,8 @@
                     "z": 0.25000008940696716
                 },
                 "Rotation": {
-                    "x": 0.0,
-                    "y": -90.0,
+                    "x": -90.0,
+                    "y": 0.0,
                     "z": 0.0
                 },
                 "luid": 8390885076536000580
@@ -27563,10 +27563,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "rightLaser7",
                     "leftLaser8",
-                    "leftLaser7",
+                    "rightLaser7",
                     "rightLaser8",
+                    "leftLaser7",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -27638,10 +27638,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "rightLaser8",
                     "leftLaser7",
-                    "rightLaser7",
+                    "rightLaser8",
                     "leftLaser8",
+                    "rightLaser7",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -50751,54 +50751,6 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "LIGHT TO REMOVE",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613987560849492
-            },
-            "Hierarchy": {
-                "luid": 7526194144558186582,
-                "parentLuid": 7308613987378003968
-            },
-            "Transform": {
-                "Position": {
-                    "x": 37.0484733581543,
-                    "y": 1.3029429912567139,
-                    "z": -4.091779708862305
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885273013321813
-            },
-            "Light": {
-                "type": 0,
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "Intensity": 0.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
                 "name": "Climbing",
                 "isActive": 1,
                 "isStatic": 0,
@@ -50871,6 +50823,567 @@
                     "player"
                 ],
                 "luid": 7958821183843401783
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990944079872
+            },
+            "Hierarchy": {
+                "luid": 7526194147941416962,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 32.67975997924805,
+                    "y": 2.280799388885498,
+                    "z": -7.208688735961914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276396552193
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 2.700000047683716,
+                        "Source Height": 0.6000000238418579,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990954500100
+            },
+            "Hierarchy": {
+                "luid": 7526194147951837187,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 32.54195785522461,
+                    "y": 4.5395426750183105,
+                    "z": 3.406982421875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276406972421
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990960463879
+            },
+            "Hierarchy": {
+                "luid": 7526194147957800966,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 38.504459381103516,
+                    "y": 4.5395426750183105,
+                    "z": 3.406982421875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276412936200
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990966755353
+            },
+            "Hierarchy": {
+                "luid": 7526194147964092440,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 21.04840087890625,
+                    "y": 2.280799388885498,
+                    "z": 12.28131103515625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 3.141592502593994,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276419227674
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990961709069
+            },
+            "Hierarchy": {
+                "luid": 7526194147959046156,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 38.53415298461914,
+                    "y": 2.280799388885498,
+                    "z": -7.208688735961914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276414181390
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990962167824
+            },
+            "Hierarchy": {
+                "luid": 7526194147959504911,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 44.54106903076172,
+                    "y": 2.280799388885498,
+                    "z": -7.208688735961914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276414640145
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990963085331
+            },
+            "Hierarchy": {
+                "luid": 7526194147960422418,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 44.61011505126953,
+                    "y": 4.5395426750183105,
+                    "z": 3.406982421875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276415557652
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990966427670
+            },
+            "Hierarchy": {
+                "luid": 7526194147963764757,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 32.67975997924805,
+                    "y": 2.280799388885498,
+                    "z": -7.208688735961914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276418899991
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 2.700000047683716,
+                        "Source Height": 0.6000000238418579,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990966886428
+            },
+            "Hierarchy": {
+                "luid": 7526194147964223515,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 38.53415298461914,
+                    "y": 6.241279125213623,
+                    "z": -7.208688735961914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276419358749
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990967214111
+            },
+            "Hierarchy": {
+                "luid": 7526194147964551198,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 32.6749267578125,
+                    "y": 6.241279125213623,
+                    "z": -7.208688735961914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276419686432
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990967476258
+            },
+            "Hierarchy": {
+                "luid": 7526194147964813345,
+                "parentLuid": 7308613987378003968
+            },
+            "Transform": {
+                "Position": {
+                    "x": 44.609764099121094,
+                    "y": 6.241279125213623,
+                    "z": -7.208688735961914
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276419948579
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
             }
         },
         {
@@ -52035,39 +52548,450 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "LIGHT TO REMOVE",
+                "name": "Spot Light",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613987563929688
+                "luid": 7308613990980714533
             },
             "Hierarchy": {
-                "luid": 7526194144561266775,
+                "luid": 7526194147978051620,
                 "parentLuid": 7308613987477946382
             },
             "Transform": {
                 "Position": {
-                    "x": -37.94794464111328,
-                    "y": 1.9611120223999023,
-                    "z": 6.501552581787109
+                    "x": -40.55194091796875,
+                    "y": 2.9079999923706055,
+                    "z": 9.07337760925293
                 },
                 "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": 1.5707964897155762,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276433186854
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
                     "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
                 },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990986154024
+            },
+            "Hierarchy": {
+                "luid": 7526194147983491111,
+                "parentLuid": 7308613987477946382
+            },
+            "Transform": {
+                "Position": {
+                    "x": -40.55194091796875,
+                    "y": 2.9079999923706055,
+                    "z": 6.527278900146484
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": -90.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885273016402009
+                "luid": 8390885276438626345
             },
             "Light": {
-                "type": 0,
+                "type": 3,
                 "data": {
-                    "index": 0,
+                    "index": 3,
                     "value": {
-                        "Intensity": 0.0
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990988382251
+            },
+            "Hierarchy": {
+                "luid": 7526194147985719338,
+                "parentLuid": 7308613987477946382
+            },
+            "Transform": {
+                "Position": {
+                    "x": -37.970619201660156,
+                    "y": 2.9079999923706055,
+                    "z": 6.527278900146484
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276440854572
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990989037614
+            },
+            "Hierarchy": {
+                "luid": 7526194147986374701,
+                "parentLuid": 7308613987477946382
+            },
+            "Transform": {
+                "Position": {
+                    "x": -38.035362243652344,
+                    "y": 2.9077982902526855,
+                    "z": 3.9754867553710938
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276441509935
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990992052273
+            },
+            "Hierarchy": {
+                "luid": 7526194147989389360,
+                "parentLuid": 7308613987477946382
+            },
+            "Transform": {
+                "Position": {
+                    "x": -38.01922607421875,
+                    "y": 2.9079999923706055,
+                    "z": 9.093996047973633
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276444524594
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613990997164084
+            },
+            "Hierarchy": {
+                "luid": 7526194147994501171,
+                "parentLuid": 7308613987477946382
+            },
+            "Transform": {
+                "Position": {
+                    "x": -38.72114562988281,
+                    "y": 2.4302890300750732,
+                    "z": 10.639629364013672
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276449636405
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991001358391
+            },
+            "Hierarchy": {
+                "luid": 7526194147998695478,
+                "parentLuid": 7308613987477946382
+            },
+            "Transform": {
+                "Position": {
+                    "x": -35.06193542480469,
+                    "y": 2.9077982902526855,
+                    "z": 3.9754867553710938
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276453830712
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991001882682
+            },
+            "Hierarchy": {
+                "luid": 7526194147999219769,
+                "parentLuid": 7308613987477946382
+            },
+            "Transform": {
+                "Position": {
+                    "x": -35.12580871582031,
+                    "y": 2.9077982902526855,
+                    "z": 6.504232406616211
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276454355003
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991002669117
+            },
+            "Hierarchy": {
+                "luid": 7526194148000006204,
+                "parentLuid": 7308613987477946382
+            },
+            "Transform": {
+                "Position": {
+                    "x": -35.12580871582031,
+                    "y": 2.9077982902526855,
+                    "z": 9.110965728759766
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276455141438
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 5.0
                     }
                 },
                 "color": {
@@ -52887,20 +53811,20 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "LIGHT TO REMOVE",
+                "name": "Spot Light",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613987565502555
+                "luid": 7308613991005618244
             },
             "Hierarchy": {
-                "luid": 7526194144562839642,
+                "luid": 7526194148002955331,
                 "parentLuid": 7526194144528367621
             },
             "Transform": {
                 "Position": {
-                    "x": 39.98854064941406,
-                    "y": 1.3029429912567139,
-                    "z": -4.303565979003906
+                    "x": 38.53734588623047,
+                    "y": 2.280799388885498,
+                    "z": -7.1346893310546875
                 },
                 "Scale": {
                     "x": 1.0,
@@ -52908,18 +53832,429 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": 180.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885273017974876
+                "luid": 8390885276458090565
             },
             "Light": {
-                "type": 0,
+                "type": 3,
                 "data": {
-                    "index": 0,
+                    "index": 3,
                     "value": {
-                        "Intensity": 0.0
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991011254343
+            },
+            "Hierarchy": {
+                "luid": 7526194148008591430,
+                "parentLuid": 7526194144528367621
+            },
+            "Transform": {
+                "Position": {
+                    "x": 32.671051025390625,
+                    "y": 2.280799388885498,
+                    "z": -7.1346893310546875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276463726664
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991013548106
+            },
+            "Hierarchy": {
+                "luid": 7526194148010885193,
+                "parentLuid": 7526194144528367621
+            },
+            "Transform": {
+                "Position": {
+                    "x": 44.527671813964844,
+                    "y": 2.280799388885498,
+                    "z": -7.1346893310546875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276466020427
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991015448661
+            },
+            "Hierarchy": {
+                "luid": 7526194148012785748,
+                "parentLuid": 7526194144528367621
+            },
+            "Transform": {
+                "Position": {
+                    "x": 44.53288269042969,
+                    "y": 6.268343925476074,
+                    "z": -7.1352386474609375
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276467920982
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991016366168
+            },
+            "Hierarchy": {
+                "luid": 7526194148013703255,
+                "parentLuid": 7526194144528367621
+            },
+            "Transform": {
+                "Position": {
+                    "x": 38.547935485839844,
+                    "y": 6.268343925476074,
+                    "z": -7.1352386474609375
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276468838489
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991017021531
+            },
+            "Hierarchy": {
+                "luid": 7526194148014358618,
+                "parentLuid": 7526194144528367621
+            },
+            "Transform": {
+                "Position": {
+                    "x": 32.643714904785156,
+                    "y": 6.268343925476074,
+                    "z": -7.1352386474609375
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276469493852
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991018135646
+            },
+            "Hierarchy": {
+                "luid": 7526194148015472733,
+                "parentLuid": 7526194144528367621
+            },
+            "Transform": {
+                "Position": {
+                    "x": 32.56651306152344,
+                    "y": 4.546692371368408,
+                    "z": 3.4788169860839844
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276470607967
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991020363873
+            },
+            "Hierarchy": {
+                "luid": 7526194148017700960,
+                "parentLuid": 7526194144528367621
+            },
+            "Transform": {
+                "Position": {
+                    "x": 38.52618408203125,
+                    "y": 4.538682460784912,
+                    "z": 3.4764881134033203
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276472836194
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991021477988
+            },
+            "Hierarchy": {
+                "luid": 7526194148018815075,
+                "parentLuid": 7526194144528367621
+            },
+            "Transform": {
+                "Position": {
+                    "x": 44.615760803222656,
+                    "y": 4.538682460784912,
+                    "z": 3.4764881134033203
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276473950309
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
                     }
                 },
                 "color": {
@@ -57387,22 +58722,22 @@
         },
         {
             "Layer": 0,
-            "Active": 0,
+            "Active": 1,
             "EntityMeta": {
-                "name": "LIGHT TO REMOVE",
-                "isActive": 0,
+                "name": "Spot Light",
+                "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613987567075422
+                "luid": 7308613991025737835
             },
             "Hierarchy": {
-                "luid": 7526194144564412509,
+                "luid": 7526194148023074922,
                 "parentLuid": 7308613986676703819
             },
             "Transform": {
                 "Position": {
-                    "x": 20.034591674804688,
-                    "y": 4.574876308441162,
-                    "z": -6.115207672119141
+                    "x": 8.44317626953125,
+                    "y": 5.745678424835205,
+                    "z": -10.24892807006836
                 },
                 "Scale": {
                     "x": 1.0,
@@ -57410,19 +58745,633 @@
                     "z": 1.0
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": -90.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885273019547743
+                "luid": 8390885276478210156
             },
             "Light": {
-                "type": 1,
+                "type": 3,
                 "data": {
-                    "index": 1,
+                    "index": 3,
                     "value": {
-                        "Intensity": 40.20000076293945,
-                        "Range": 19.700000762939453
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991030521966
+            },
+            "Hierarchy": {
+                "luid": 7526194148027859053,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 8.61907958984375,
+                    "y": 5.745678424835205,
+                    "z": 1.7377433776855469
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276482994287
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991032225905
+            },
+            "Hierarchy": {
+                "luid": 7526194148029562992,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 13.395736694335938,
+                    "y": 5.745678424835205,
+                    "z": -8.041801452636719
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276484698226
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991032291444
+            },
+            "Hierarchy": {
+                "luid": 7526194148029628531,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 14.64068603515625,
+                    "y": 5.745678424835205,
+                    "z": 0.4528160095214844
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276484763765
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991035306103
+            },
+            "Hierarchy": {
+                "luid": 7526194148032643190,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 8.44317626953125,
+                    "y": 5.745678424835205,
+                    "z": -12.444114685058594
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276487778424
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991036223610
+            },
+            "Hierarchy": {
+                "luid": 7526194148033560697,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 19.788345336914063,
+                    "y": 5.745678424835205,
+                    "z": -12.581806182861328
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276488695931
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991036944509
+            },
+            "Hierarchy": {
+                "luid": 7526194148034281596,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 27.18060302734375,
+                    "y": 5.721167087554932,
+                    "z": -12.50506591796875
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276489416830
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991037403264
+            },
+            "Hierarchy": {
+                "luid": 7526194148034740351,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 27.18060302734375,
+                    "y": 5.745678424835205,
+                    "z": -8.52798080444336
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276489875585
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991037796483
+            },
+            "Hierarchy": {
+                "luid": 7526194148035133570,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 30.18878173828125,
+                    "y": 5.745678424835205,
+                    "z": -7.381855010986328
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276490268804
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991038255238
+            },
+            "Hierarchy": {
+                "luid": 7526194148035592325,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 27.735855102539063,
+                    "y": 5.745678424835205,
+                    "z": -3.254131317138672
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276490727559
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991042187401
+            },
+            "Hierarchy": {
+                "luid": 7526194148039524488,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 20.499038696289063,
+                    "y": 5.745678424835205,
+                    "z": -0.17461013793945313
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276494659722
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991042580620
+            },
+            "Hierarchy": {
+                "luid": 7526194148039917707,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 27.735855102539063,
+                    "y": 5.745678424835205,
+                    "z": -0.17461013793945313
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276495052941
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991043104911
+            },
+            "Hierarchy": {
+                "luid": 7526194148040441998,
+                "parentLuid": 7308613986676703819
+            },
+            "Transform": {
+                "Position": {
+                    "x": 20.499038696289063,
+                    "y": 5.745678424835205,
+                    "z": -7.28277587890625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885276495577232
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.20000000298023224,
+                        "Range": 14.0
                     }
                 },
                 "color": {
@@ -65741,246 +67690,6 @@
         },
         {
             "Layer": 0,
-            "Active": 0,
-            "EntityMeta": {
-                "name": "Directional Light",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613990519734272
-            },
-            "Hierarchy": {
-                "luid": 7526194147517071362,
-                "parentLuid": 7526194144454836226
-            },
-            "Transform": {
-                "Position": {
-                    "x": 153.97305297851563,
-                    "y": 8.515074729919434,
-                    "z": -42.79231643676758
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885275972206593
-            },
-            "Light": {
-                "type": 0,
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "Intensity": 1.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 0,
-            "EntityMeta": {
-                "name": "Directional Light",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613990527860740
-            },
-            "Hierarchy": {
-                "luid": 7526194147525197827,
-                "parentLuid": 7526194144454836226
-            },
-            "Transform": {
-                "Position": {
-                    "x": 153.97305297851563,
-                    "y": 8.515074729919434,
-                    "z": -50.278350830078125
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885275980333061
-            },
-            "Light": {
-                "type": 0,
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "Intensity": 5.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 0,
-            "EntityMeta": {
-                "name": "Directional Light",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613990530220039
-            },
-            "Hierarchy": {
-                "luid": 7526194147527557126,
-                "parentLuid": 7526194144454836226
-            },
-            "Transform": {
-                "Position": {
-                    "x": 162.1352081298828,
-                    "y": 8.515074729919434,
-                    "z": -53.88893127441406
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885275982692360
-            },
-            "Light": {
-                "type": 0,
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "Intensity": 5.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 0,
-            "EntityMeta": {
-                "name": "Directional Light",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613990531268618
-            },
-            "Hierarchy": {
-                "luid": 7526194147528605705,
-                "parentLuid": 7526194144454836226
-            },
-            "Transform": {
-                "Position": {
-                    "x": 168.17172241210938,
-                    "y": 8.515074729919434,
-                    "z": -52.2962532043457
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885275983740939
-            },
-            "Light": {
-                "type": 0,
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "Intensity": 5.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 0,
-            "EntityMeta": {
-                "name": "Directional Light",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613990531792909
-            },
-            "Hierarchy": {
-                "luid": 7526194147529129996,
-                "parentLuid": 7526194144454836226
-            },
-            "Transform": {
-                "Position": {
-                    "x": 167.85426330566406,
-                    "y": 8.515074729919434,
-                    "z": -43.1278190612793
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885275984265230
-            },
-            "Light": {
-                "type": 0,
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "Intensity": 5.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
             "Active": 1,
             "EntityMeta": {
                 "name": "GearBombHolder",
@@ -66862,14 +68571,14 @@
                     "Puzzle_Bomb.outerRef": "7308613989846941713",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.solveMessage": "bomb1solved",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
@@ -67176,14 +68885,14 @@
                     "Puzzle_Bomb.outerRef": "7308613989956190233",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.solveMessage": "bomb2solved",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
@@ -67490,14 +69199,14 @@
                     "Puzzle_Bomb.outerRef": "7308613989956452404",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.solveMessage": "bomb3solved",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
@@ -67804,14 +69513,14 @@
                     "Puzzle_Bomb.outerRef": "7308613989956714575",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.solveMessage": "bomb4solved",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
@@ -68118,14 +69827,14 @@
                     "Puzzle_Bomb.outerRef": "7308613989956911210",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.solveMessage": "bomb5solved",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
@@ -68357,6 +70066,124 @@
                     "objectToActivate"
                 ],
                 "luid": 7958821186158526579
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991004438592
+            },
+            "Hierarchy": {
+                "luid": 7526194148001775679,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 98.34181213378906,
+                    "y": 12.56352710723877,
+                    "z": -32.7677116394043
+                },
+                "Scale": {
+                    "x": 0.25,
+                    "y": 0.25000008940696716,
+                    "z": 0.25000008940696716
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "luid": 8390885276456910913
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829438707105858
+            },
+            "Light": {
+                "type": 2,
+                "data": {
+                    "index": 2,
+                    "value": {
+                        "Intensity": 1.0,
+                        "Inner Cone Angle": 20.0,
+                        "Outer Cone Angle": 80.0,
+                        "Range": 60.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spot Light",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613991023968359
+            },
+            "Hierarchy": {
+                "luid": 7526194148021305446,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 138.30316162109375,
+                    "y": 12.56352710723877,
+                    "z": -38.75619888305664
+                },
+                "Scale": {
+                    "x": 0.25,
+                    "y": 0.25000008940696716,
+                    "z": 0.25000008940696716
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "luid": 8390885276476440680
+            },
+            "Renderer": {
+                "modelUUID": "builtin:model/sphere",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829438726635625
+            },
+            "Light": {
+                "type": 2,
+                "data": {
+                    "index": 2,
+                    "value": {
+                        "Intensity": 1.0,
+                        "Inner Cone Angle": 20.0,
+                        "Outer Cone Angle": 80.0,
+                        "Range": 60.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
             }
         }
     ]
