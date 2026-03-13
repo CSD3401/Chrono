@@ -7,9 +7,8 @@
  * Attach to the Reset button in the Settings scene.
  * On click, resets all volume buses to default (full volume).
  *
- * Defaults used (no separate "saved default" in engine – these are chosen here):
- *   - Master: level 5 (full). Engine uses 0–5.
- *   - BGM / SFX / Ambience: 1.0 (full). Engine uses 0.0–1.0.
+ * Defaults used (full volume = 1.0 for all buses):
+ *   - Master / BGM / SFX / Ambience: 1.0
  *
  * If you use slider-based volume scripts, assign the four sliders below so the
  * slider thumbs move to full when you reset. If you use button-based volume
@@ -38,7 +37,7 @@ public:
             return;
 
         // Reset audio to default (full volume)
-        Audio::SetMasterVolumeLevel(5);   // 0–5, 5 = full
+        SetMasterVolume(1.0f);
         SetBGMVolume(1.0f);
         SetSFXVolume(1.0f);
         SetAmbienceVolume(1.0f);
