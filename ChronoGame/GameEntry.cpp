@@ -65,8 +65,8 @@
 #include "Scripts/Misc_StopAnimationOnEvent.hpp"
 #include "Scripts/Misc_SolvedMaterialOverride.hpp"
 #include "Scripts/Puzzle_FinalBomb.hpp"
-#include "scripts/UIButton_Quit.hpp"
-#include "scripts/Credits_Controller.hpp"
+#include "Scripts/UIButton_Quit.hpp"
+#include "Scripts/Credits_Controller.hpp"
 #include "Scripts/SplashScreen_Controller.hpp"
 
 

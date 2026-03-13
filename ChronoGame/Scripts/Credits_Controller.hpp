@@ -80,17 +80,23 @@ public:
     void Update(double deltaTime) override {
         if (done) return;
 
-        float move = scrollSpeed * static_cast<float>(deltaTime);
-        scrolled  += move;
-
-        // Move the credits image via UIRectTransform. Read current position, then
-        // set new position with the helper so the layout system is marked dirty.
-        // Increasing y scrolls UP in this engine's UI coordinate system.
         Entity imgEntity = creditImage.GetEntity();
-        if (NE::ECS::Query::HasUIRectTransform(imgEntity)) {
-            const auto& rt = NE::ECS::Query::GetUIRectTransform(imgEntity);
-            NE::ECS::Command::SetUIRectTransformPos(imgEntity, rt.x, rt.y + move);
+        if (imgEntity == 0) return;
+
+        if (!NE::ECS::Query::HasUIRectTransform(imgEntity)) {
+            // No UIRectTransform on credit image - skip move (e.g. wrong ref or 3D object)
+            return;
         }
+
+        float move = scrollSpeed * static_cast<float>(deltaTime);
+        scrolled += move;
+
+        // Move the credits image via UIRectTransform. Mutate y and mark layout dirty
+        // so the engine recalculates. Decreasing y scrolls UP in this UI coordinate system.
+        auto& rt = NE::ECS::Command::GetUIRectTransform(imgEntity);
+        rt.y -= move;
+        rt.worldMatrixDirty = true;
+        rt.worldRectCached = false;
 
         if (scrolled >= totalScrollDist) {
             done = true;
