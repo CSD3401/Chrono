@@ -125,6 +125,14 @@
                 },
                 "luid": 8390885074705907713
             },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_MainMenu"
+                ],
+                "SerializedFields": {},
+                "EntityReferenceFields": [],
+                "luid": 7958821186366537728
+            },
             "Camera": {
                 "projectionType": 0,
                 "fovAxis": 0,
@@ -274,8 +282,8 @@
                     "UI_MasterVolumeButtons"
                 ],
                 "SerializedFields": {
-                    "UI_MasterVolumeButtons.volumeUpButton": "7308613789535043611",
-                    "UI_MasterVolumeButtons.volumeDownButton": "7308613789534846997",
+                    "UI_MasterVolumeButtons.volumeUpButton": "0",
+                    "UI_MasterVolumeButtons.volumeDownButton": "0",
                     "UI_MasterVolumeButtons.step": "1"
                 },
                 "EntityReferenceFields": [
@@ -338,6 +346,24 @@
             "Hierarchy": {
                 "luid": 7526194125067386884,
                 "parentLuid": 7526193946532184082
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UIButton_ResetVolumes"
+                ],
+                "SerializedFields": {
+                    "UIButton_ResetVolumes.masterSlider": "0",
+                    "UIButton_ResetVolumes.bgmSlider": "0",
+                    "UIButton_ResetVolumes.sfxSlider": "0",
+                    "UIButton_ResetVolumes.ambienceSlider": "0"
+                },
+                "EntityReferenceFields": [
+                    "masterSlider",
+                    "bgmSlider",
+                    "sfxSlider",
+                    "ambienceSlider"
+                ],
+                "luid": 7958821186238218247
             },
             "UIRectTransform": {
                 "x": -200.67315673828125,
@@ -529,10 +555,10 @@
                 "name": "Master Volume",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968144695303
+                "luid": 7308613990167871521
             },
             "Hierarchy": {
-                "luid": 7526194125142032393,
+                "luid": 7526194147165208608,
                 "parentLuid": 7526193946532184082
             },
             "Transform": {
@@ -551,7 +577,7 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885253597167624
+                "luid": 8390885275620343842
             },
             "NativeScript": {
                 "ScriptNames": [
@@ -566,7 +592,7 @@
                     "volumeDownButton",
                     "volumeUpButton"
                 ],
-                "luid": 7958821164460867615
+                "luid": 7958821186369486883
             }
         },
         {
@@ -576,11 +602,11 @@
                 "name": "Decrease",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613789534846997
+                "luid": 7308613990167871525
             },
             "Hierarchy": {
-                "luid": 7526193946532184086,
-                "parentLuid": 7526194125142032393
+                "luid": 7526194147165208612,
+                "parentLuid": 7526194147165208608
             },
             "UIRectTransform": {
                 "x": -175.89999389648438,
@@ -634,7 +660,7 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411510789570560,
+                "luid": 0,
                 "normalColor": {
                     "x": 0.800000011920929,
                     "y": 0.800000011920929,
@@ -670,11 +696,11 @@
                 "name": "Increase",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613789535043611
+                "luid": 7308613990167871527
             },
             "Hierarchy": {
-                "luid": 7526193946532380700,
-                "parentLuid": 7526194125142032393
+                "luid": 7526194147165208614,
+                "parentLuid": 7526194147165208608
             },
             "UIRectTransform": {
                 "x": 295.0,
@@ -728,7 +754,7 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411510789570561,
+                "luid": 0,
                 "normalColor": {
                     "x": 0.800000011920929,
                     "y": 0.800000011920929,
@@ -764,10 +790,10 @@
                 "name": "Music",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968146530315
+                "luid": 7308613990167871513
             },
             "Hierarchy": {
-                "luid": 7526194125143867402,
+                "luid": 7526194147165208600,
                 "parentLuid": 7526193946532184082
             },
             "Transform": {
@@ -786,21 +812,22 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885253599002636
+                "luid": 8390885275620343834
             },
             "NativeScript": {
                 "ScriptNames": [
                     "UI_BGMVolumeButtons"
                 ],
                 "SerializedFields": {
+                    "UI_BGMVolumeButtons.volumeUpButton": "7308613968146530320",
                     "UI_BGMVolumeButtons.volumeDownButton": "7308613968146530318",
-                    "UI_BGMVolumeButtons.volumeUpButton": "7308613968146530320"
+                    "UI_BGMVolumeButtons.step": "0.200000"
                 },
                 "EntityReferenceFields": [
                     "volumeDownButton",
                     "volumeUpButton"
                 ],
-                "luid": 7958821164494815264
+                "luid": 7958821186369486875
             }
         },
         {
@@ -810,11 +837,11 @@
                 "name": "Decrease",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968146530318
+                "luid": 7308613990167871517
             },
             "Hierarchy": {
-                "luid": 7526194125143867405,
-                "parentLuid": 7526194125143867402
+                "luid": 7526194147165208604,
+                "parentLuid": 7526194147165208600
             },
             "UIRectTransform": {
                 "x": -175.89999389648438,
@@ -868,7 +895,7 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411516312813568,
+                "luid": 0,
                 "normalColor": {
                     "x": 0.800000011920929,
                     "y": 0.800000011920929,
@@ -904,11 +931,11 @@
                 "name": "Increase",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968146530320
+                "luid": 7308613990167871519
             },
             "Hierarchy": {
-                "luid": 7526194125143867407,
-                "parentLuid": 7526194125143867402
+                "luid": 7526194147165208606,
+                "parentLuid": 7526194147165208600
             },
             "UIRectTransform": {
                 "x": 295.0,
@@ -962,7 +989,7 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411516312813569,
+                "luid": 0,
                 "normalColor": {
                     "x": 0.800000011920929,
                     "y": 0.800000011920929,
@@ -998,10 +1025,10 @@
                 "name": "SFX",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968149741586
+                "luid": 7308613990167871505
             },
             "Hierarchy": {
-                "luid": 7526194125147078673,
+                "luid": 7526194147165208592,
                 "parentLuid": 7526193946532184082
             },
             "Transform": {
@@ -1020,7 +1047,7 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885253602213907
+                "luid": 8390885275620343826
             },
             "NativeScript": {
                 "ScriptNames": [
@@ -1028,13 +1055,14 @@
                 ],
                 "SerializedFields": {
                     "UI_SFXVolumeButtons.volumeUpButton": "7308613968149741591",
-                    "UI_SFXVolumeButtons.volumeDownButton": "7308613968149741589"
+                    "UI_SFXVolumeButtons.volumeDownButton": "7308613968149741589",
+                    "UI_SFXVolumeButtons.step": "0.200000"
                 },
                 "EntityReferenceFields": [
                     "volumeUpButton",
                     "volumeDownButton"
                 ],
-                "luid": 7958821164496912384
+                "luid": 7958821186369486867
             }
         },
         {
@@ -1044,11 +1072,11 @@
                 "name": "Decrease",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968149741589
+                "luid": 7308613990167871509
             },
             "Hierarchy": {
-                "luid": 7526194125147078676,
-                "parentLuid": 7526194125147078673
+                "luid": 7526194147165208596,
+                "parentLuid": 7526194147165208592
             },
             "UIRectTransform": {
                 "x": -175.89999389648438,
@@ -1102,7 +1130,7 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411516312813570,
+                "luid": 0,
                 "normalColor": {
                     "x": 0.800000011920929,
                     "y": 0.800000011920929,
@@ -1138,11 +1166,11 @@
                 "name": "Increase",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968149741591
+                "luid": 7308613990167871511
             },
             "Hierarchy": {
-                "luid": 7526194125147078678,
-                "parentLuid": 7526194125147078673
+                "luid": 7526194147165208598,
+                "parentLuid": 7526194147165208592
             },
             "UIRectTransform": {
                 "x": 295.0,
@@ -1196,7 +1224,7 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411516312813571,
+                "luid": 0,
                 "normalColor": {
                     "x": 0.800000011920929,
                     "y": 0.800000011920929,
@@ -1232,10 +1260,10 @@
                 "name": "Ambience",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968151052313
+                "luid": 7308613990167805961
             },
             "Hierarchy": {
-                "luid": 7526194125148389400,
+                "luid": 7526194147165143048,
                 "parentLuid": 7526193946532184082
             },
             "Transform": {
@@ -1254,7 +1282,7 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885253603524634
+                "luid": 8390885275620278282
             },
             "NativeScript": {
                 "ScriptNames": [
@@ -1262,13 +1290,14 @@
                 ],
                 "SerializedFields": {
                     "UI_AmbienceVolumeButtons.volumeUpButton": "7308613968151052318",
-                    "UI_AmbienceVolumeButtons.volumeDownButton": "7308613968151052316"
+                    "UI_AmbienceVolumeButtons.volumeDownButton": "7308613968151052316",
+                    "UI_AmbienceVolumeButtons.step": "0.200000"
                 },
                 "EntityReferenceFields": [
                     "volumeUpButton",
                     "volumeDownButton"
                 ],
-                "luid": 7958821164497829889
+                "luid": 7958821186369421323
             }
         },
         {
@@ -1278,11 +1307,11 @@
                 "name": "Decrease",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968151052316
+                "luid": 7308613990167805965
             },
             "Hierarchy": {
-                "luid": 7526194125148389403,
-                "parentLuid": 7526194125148389400
+                "luid": 7526194147165143052,
+                "parentLuid": 7526194147165143048
             },
             "UIRectTransform": {
                 "x": -175.89999389648438,
@@ -1336,7 +1365,7 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411516312813572,
+                "luid": 0,
                 "normalColor": {
                     "x": 0.800000011920929,
                     "y": 0.800000011920929,
@@ -1372,11 +1401,11 @@
                 "name": "Increase",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613968151052318
+                "luid": 7308613990167805967
             },
             "Hierarchy": {
-                "luid": 7526194125148389405,
-                "parentLuid": 7526194125148389400
+                "luid": 7526194147165143054,
+                "parentLuid": 7526194147165143048
             },
             "UIRectTransform": {
                 "x": 295.0,
@@ -1430,7 +1459,7 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411516312813573,
+                "luid": 0,
                 "normalColor": {
                     "x": 0.800000011920929,
                     "y": 0.800000011920929,

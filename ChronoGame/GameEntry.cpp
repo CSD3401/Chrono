@@ -67,6 +67,7 @@
 #include "Scripts/Puzzle_FinalBomb.hpp"
 #include "Scripts/UIButton_Quit.hpp"
 #include "Scripts/Credits_Controller.hpp"
+#include "Scripts/UIButton_ResetVolumes.hpp"
 #include "Scripts/SplashScreen_Controller.hpp"
 
 
@@ -274,6 +275,9 @@ extern "C" {
             });
         registrar->RegisterScript("Credits_Controller", []() -> NE::Scripting::IScript* {
             return new Credits_Controller();
+            });
+        registrar->RegisterScript("UIButton_ResetVolumes", []() -> NE::Scripting::IScript* {
+            return new UIButton_ResetVolumes();
             });
         registrar->RegisterScript("SplashScreen_Controller", []() -> NE::Scripting::IScript* {
             return new SplashScreen_Controller();
