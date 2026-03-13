@@ -43,15 +43,18 @@ public:
 
         SCRIPT_FIELD(solveMessage, String);
         SCRIPT_FIELD(rotateAudioName, String);  // e.g. "BOMB_ROTATE" (without event:/)
+        SCRIPT_FIELD(interactAudioName, String); // oneshot on click, default "BOMB_INTERACT"
+        SCRIPT_FIELD(tickAudioName, String);     // looping while active, default "BOMB_TICK"
+        SCRIPT_FIELD(fuseAudioName, String);     // oneshot on solve, default "BOMB_FUSE"
     }
 
     ~Puzzle_Bomb() override = default;
 
     void Awake()    override {}
     void Initialize(Entity entity) override { Interactable_::Initialize(entity); }
-    void OnDestroy()  override {}
+    void OnDestroy()  override { StopTickAudio(); }
     void OnEnable()   override {}
-    void OnDisable()  override {}
+    void OnDisable()  override { StopTickAudio(); }
     void OnValidate() override {}
 
     const char* GetTypeName() const override { return "Puzzle_Bomb"; }
@@ -83,10 +86,23 @@ public:
 
     // Called by Player_Raycast on left click
     void Interact() override {
+        if (isSolved) return;
         inInteractionMode = !inInteractionMode;
         LOG_DEBUG(inInteractionMode
             ? "[Puzzle_Bomb] Entered interaction mode."
             : "[Puzzle_Bomb] Exited interaction mode.");
+
+        // Oneshot click sound every time
+        if (!interactAudioName.empty())
+            PlayAudio("event:/" + interactAudioName);
+
+        // Start looping tick when entering, stop when exiting
+        if (inInteractionMode) {
+            StartTickAudio();
+        }
+        else {
+            StopTickAudio();
+        }
     }
 
     void Update(double deltaTime) override {
@@ -144,6 +160,10 @@ private:
     bool isSolved = false;
     bool isRotateAudioPlaying = false;
     std::string rotateAudioName = "";
+    std::string interactAudioName = "BOMB_INTERACT";
+    std::string tickAudioName = "BOMB_TICK";
+    std::string fuseAudioName = "BOMB_FUSE";
+    bool isTickPlaying = false;
 
     bool pair1_matched = false;
     bool pair2_matched = false;
@@ -197,22 +217,37 @@ private:
         if (p1 && p2 && p3 && !isSolved) {
             isSolved = true;
             inInteractionMode = false;
-            StopRotateAudio();
+            //StopRotateAudio();
+            StopTickAudio();
+            if (!fuseAudioName.empty())
+                PlayAudio("event:/" + fuseAudioName);
             LOG_DEBUG("[Puzzle_Bomb] ALL PAIRS MATCHED - Solved! Sending: " + solveMessage);
             Events::Send(solveMessage.c_str());
         }
     }
 
+    void StartTickAudio() {
+        if (isTickPlaying || tickAudioName.empty()) return;
+        PlayAudio("event:/" + tickAudioName);
+        isTickPlaying = true;
+    }
+
+    void StopTickAudio() {
+        if (!isTickPlaying || tickAudioName.empty()) return;
+        StopAudio("event:/" + tickAudioName);
+        isTickPlaying = false;
+    }
+
     void StartRotateAudio() {
         if (isRotateAudioPlaying || rotateAudioName.empty()) return;
-        PlayAudio("event:/" + rotateAudioName);
-        isRotateAudioPlaying = true;
+        //PlayAudio("event:/" + rotateAudioName);
+        //isRotateAudioPlaying = true;
     }
 
     void StopRotateAudio() {
         if (!isRotateAudioPlaying || rotateAudioName.empty()) return;
-        StopAudio("event:/" + rotateAudioName);
-        isRotateAudioPlaying = false;
+        //StopAudio("event:/" + rotateAudioName);
+        //isRotateAudioPlaying = false;
     }
 
     std::string PairLabel(int letter, int number) const {
