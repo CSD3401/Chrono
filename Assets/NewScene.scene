@@ -6,7 +6,7 @@
             "y": 1.0,
             "z": 1.0
         },
-        "ambientIntensity": 1.0,
+        "ambientIntensity": 0.0,
         "fogEnabled": 0,
         "fogMode": 1,
         "fogColour": {
@@ -16480,7 +16480,6 @@
                     "Misc_Teleporter"
                 ],
                 "SerializedFields": {
-                    "Misc_Teleporter.impactAudioName": "PLAYER_IMPACT",
                     "Misc_Teleporter.player": "7308613656064753675",
                     "Misc_Teleporter.targetTransformRef": "8390885076532068415",
                     "Misc_Teleporter.eventName": "",
@@ -26240,7 +26239,6 @@
                     "Misc_Teleporter"
                 ],
                 "SerializedFields": {
-                    "Misc_Teleporter.impactAudioName": "PLAYER_IMPACT",
                     "Misc_Teleporter.player": "7308613656064753675",
                     "Misc_Teleporter.targetTransformRef": "8390885075794526209",
                     "Misc_Teleporter.eventName": "Section1Lift",
@@ -27565,10 +27563,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "leftLaser8",
                     "rightLaser7",
-                    "rightLaser8",
+                    "leftLaser8",
                     "leftLaser7",
+                    "rightLaser8",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -27640,10 +27638,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "leftLaser7",
                     "rightLaser8",
-                    "leftLaser8",
+                    "leftLaser7",
                     "rightLaser7",
+                    "leftLaser8",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -47364,54 +47362,6 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Directional Light TO REMOVE",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613985688944835
-            },
-            "Hierarchy": {
-                "luid": 7526194142686281925,
-                "parentLuid": 7526194142030921730
-            },
-            "Transform": {
-                "Position": {
-                    "x": 9.42984676361084,
-                    "y": 0.0,
-                    "z": -9.432233810424805
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885271141417156
-            },
-            "Light": {
-                "type": 0,
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "Intensity": 1.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
                 "name": "ALL Section 4",
                 "isActive": 1,
                 "isStatic": 0,
@@ -65791,7 +65741,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Directional Light",
                 "isActive": 1,
@@ -65839,7 +65789,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Directional Light",
                 "isActive": 1,
@@ -65887,7 +65837,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Directional Light",
                 "isActive": 1,
@@ -65935,7 +65885,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Directional Light",
                 "isActive": 1,
@@ -65983,7 +65933,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Directional Light",
                 "isActive": 1,
@@ -66912,15 +66862,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989846941713",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb1solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.pair3_Number": "7",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -67226,15 +67176,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989956190233",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb2solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.pair3_Number": "7",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -67540,15 +67490,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989956452404",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb3solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.pair3_Number": "7",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -67854,15 +67804,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989956714575",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb4solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.pair3_Number": "7",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -68168,15 +68118,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989956911210",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
+                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb5solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.pair3_Number": "7",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
