@@ -17,7 +17,7 @@ public:
     void Initialize(Entity) override {}
     void Start() override {
         Events::Listen("CreditsDone", [this](void*) {
-            NE::Scripting::SwitchScene("e17cc794-74d9-40ee-9c9e-efaa829ab09a");
+            NE::Scripting::SwitchScene("7f6eb653-c6f7-426d-b9ac-9c0bada73cfc");
         });
     }
 
