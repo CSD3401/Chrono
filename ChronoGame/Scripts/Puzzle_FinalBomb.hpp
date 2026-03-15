@@ -92,14 +92,24 @@ public:
         }
 
 
+        //if (isFinalMirrorSolved &&
+        //    isFinalSequencerSolved &&
+        //    isFinalWireSolved &&
+        //    isBomb1Solved &&
+        //    isBomb2Solved &&
+        //    isBomb3Solved &&
+        //    isBomb4Solved &&
+        //    isBomb5Solved)
+        //{
+        //    doOnce = true;
+        //    LOG_DEBUG("[Puzzle_FinalBomb] END GAME - PLAY CUTSCENE");
+        //    // TODO: Events::Send("PlayEndCutscene");
+        //}
+
+        // For m5 submission 
         if (isFinalMirrorSolved &&
             isFinalSequencerSolved &&
-            isFinalWireSolved &&
-            isBomb1Solved &&
-            isBomb2Solved &&
-            isBomb3Solved &&
-            isBomb4Solved &&
-            isBomb5Solved)
+            isBomb1Solved)
         {
             doOnce = true;
             LOG_DEBUG("[Puzzle_FinalBomb] END GAME - PLAY CUTSCENE");
