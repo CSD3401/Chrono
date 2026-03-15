@@ -49,6 +49,7 @@ public:
         isBomb5Solved = false;
         doOnce = false;
         isAudioPlaying = false;
+        pendingSceneSwitch = false;
 
         if (hearingDistance <= 0.0f)
             hearingDistance = 5.0f;
@@ -106,14 +107,20 @@ public:
         //    // TODO: Events::Send("PlayEndCutscene");
         //}
 
-        // For m5 submission 
+        // For m5 submission
         if (isFinalMirrorSolved &&
-            isFinalSequencerSolved &&
-            isBomb1Solved)
+            isFinalSequencerSolved)
         {
             doOnce = true;
-            LOG_DEBUG("[Puzzle_FinalBomb] END GAME - PLAY CUTSCENE");
+            StopAllAudio();
+            LOG_ERROR("[Puzzle_FinalBomb] END GAME - PLAY CUTSCENE");
             // TODO: Events::Send("PlayEndCutscene");
+            pendingSceneSwitch = true;
+        }
+
+        if (pendingSceneSwitch) {
+            pendingSceneSwitch = false;
+            NE::Scripting::SwitchScene("7c7bd1dd-30c6-414a-8514-b045d3b54acd");
         }
     }
 
@@ -135,6 +142,7 @@ private:
     bool isBomb5Solved = false;
     bool doOnce = false;
     bool isAudioPlaying = false;
+    bool pendingSceneSwitch = false;
     float hearingDistance = 5.0f;
     std::string finalBombBgm = "FINAL_BOMB";
     std::string heartbeatBgm = "HEARTBEAT";
