@@ -26,7 +26,11 @@ public:
     }
     ~Misc_SolvedMaterialOverride() override = default;
 
-    void Awake() override {
+    void Awake() override {}
+
+    void Initialize(Entity entity) override { (void)entity; }
+    void Start() override {
+        // Register in Start (not Awake) so inspector fields are guaranteed loaded.
         if (m_eventsRegistered) return;
 
         // Mirror Misc_MaterialSwitcher semantics:
@@ -48,13 +52,12 @@ public:
                 m_isSolved = true;
                 ApplySolvedMaterial();
                 });
+        } else {
+            LOG_WARNING("Misc_SolvedMaterialOverride: solvedEventName is empty (will never apply on solve)");
         }
 
         m_eventsRegistered = true;
     }
-
-    void Initialize(Entity entity) override { (void)entity; }
-    void Start() override {}
     void Update(double deltaTime) override { (void)deltaTime; }
     void OnDestroy() override {}
 
@@ -89,17 +92,7 @@ private:
         }
 
         const Entity targetEntity = GetEntity();
-        bool appliedAny = false;
-        const size_t childCount = GetChildCount(targetEntity);
-        if (childCount > 0) {
-            for (size_t i = 0; i < childCount; ++i) {
-                const Entity child = GetChild(i, targetEntity);
-                appliedAny = ApplyMaterialToEntity(child, mat) || appliedAny;
-            }
-        }
-        else {
-            appliedAny = ApplyMaterialToEntity(targetEntity, mat);
-        }
+        bool appliedAny = ApplyMaterialRecursive(targetEntity, mat);
 
         if (!appliedAny) {
             LOG_WARNING("Misc_SolvedMaterialOverride: no Renderer found to apply material");
@@ -115,6 +108,17 @@ private:
         }
         SetMaterialRef(GetRendererRef(entity), material);
         return true;
+    }
+
+    bool ApplyMaterialRecursive(Entity entity, const MaterialRef& material) {
+        bool appliedAny = ApplyMaterialToEntity(entity, material);
+
+        const size_t childCount = GetChildCount(entity);
+        for (size_t i = 0; i < childCount; ++i) {
+            const Entity child = GetChild(i, entity);
+            appliedAny = ApplyMaterialRecursive(child, material) || appliedAny;
+        }
+        return appliedAny;
     }
 };
 

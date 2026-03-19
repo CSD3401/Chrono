@@ -3,6 +3,7 @@
 #include "Highlightable_.hpp"
 #include "Interactable_.hpp"
 #include "Player_Controller.hpp"
+#include "Misc_Grabber.hpp"
 
 #define GLFW_MOUSE_BUTTON_LEFT 0
 /*
@@ -28,8 +29,42 @@ public:
     ~Player_Raycast() override = default;
 
     // === Custom Methods ===
+    bool TryLockHighlightToGrabbed()
+    {
+        auto* grabber = GameObject(GetEntity()).GetComponent<Misc_Grabber>();
+        if (!grabber || !grabber->IsGrabbing())
+            return false;
+
+        const Entity grabbed = grabber->GetCurrentlyGrabbing();
+        if (!grabbed)
+            return false;
+
+        GameObject grabbedGo(grabbed);
+        if (!grabbedGo.IsValid())
+            return false;
+
+        Highlightable_* grabbedHighlight = grabbedGo.GetComponent<Highlightable_>();
+        if (!grabbedHighlight)
+            return false;
+
+        // Ensure only the grabbed object remains highlighted while holding.
+        if (storedHighlightable && storedHighlightable != grabbedHighlight)
+            storedHighlightable->SetHighlight(false);
+
+        grabbedHighlight->SetHighlight(true);
+        storedHighlightable = grabbedHighlight;
+
+        // While holding, don't offer click-interaction on other things via raycast.
+        storedInteractable = nullptr;
+        return true;
+    }
+
     void NoInteract()
     {
+        // If we're currently holding something, keep it highlighted even if the ray hits nothing.
+        if (TryLockHighlightToGrabbed())
+            return;
+
         if (storedHighlightable)
         {
             storedHighlightable->SetHighlight(false);
@@ -48,6 +83,10 @@ public:
     void Start() override {}
 
     void Update(double deltaTime) override {
+
+        // If we're holding an object, keep it highlighted until LetGo().
+        if (TryLockHighlightToGrabbed())
+            return;
 
         // === Raycast Interval ===
         timer += static_cast<float>(deltaTime);

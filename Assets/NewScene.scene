@@ -193,7 +193,7 @@
                     "Player_Controller.playerCameraRef": "7308613686500261889",
                     "Player_Controller.gravity": "10.000000",
                     "Player_Controller.lookSensitivity": "0.250000",
-                    "Misc_TimeFogLighting.normalAmbientIntensity": "0.400000",
+                    "Misc_TimeFogLighting.normalAmbientIntensity": "0.500000",
                     "Player_Controller.moveSpeed": "4.000000",
                     "Misc_TimeFogLighting.normalAmbientColor": "25 15 10",
                     "Misc_TimeFogLighting.normalFogMode": "1",
@@ -211,12 +211,12 @@
                     "Misc_TimeFogLighting.normalFogDensity": "0.015000",
                     "Misc_TimeFogLighting.normalFogStart": "0.000000",
                     "Misc_TimeFogLighting.normalFogEnd": "50.000000",
-                    "Misc_TimeFogLighting.presentFogColor": "200 200 200",
-                    "Misc_TimeFogLighting.presentFogDensity": "0.010000",
+                    "Misc_TimeFogLighting.presentFogColor": "150 150 150",
+                    "Misc_TimeFogLighting.presentFogDensity": "0.005000",
                     "Misc_TimeFogLighting.presentFogStart": "20.000000",
                     "Misc_TimeFogLighting.presentFogEnd": "50.000000",
-                    "Misc_TimeFogLighting.presentAmbientColor": "18 11 6",
-                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.030000"
+                    "Misc_TimeFogLighting.presentAmbientColor": "25 15 10",
+                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.050000"
                 },
                 "EntityReferenceFields": [
                     "playerCameraRef"
@@ -1343,7 +1343,7 @@
                 "Position": {
                     "x": -0.01585814356803894,
                     "y": 2.355220317840576,
-                    "z": -2.3920719623565674
+                    "z": -2.4243526458740234
                 },
                 "Scale": {
                     "x": 0.25,
@@ -1363,9 +1363,9 @@
                     "index": 2,
                     "value": {
                         "Intensity": 12.0,
-                        "Inner Cone Angle": 41.099998474121094,
+                        "Inner Cone Angle": 50.0,
                         "Outer Cone Angle": 81.4000015258789,
-                        "Range": 5.0
+                        "Range": 6.199999809265137
                     }
                 },
                 "color": {
@@ -1392,14 +1392,14 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -0.006553545594215393,
-                    "y": 2.9260573387145996,
-                    "z": -13.819999694824219
+                    "x": -0.017990365624427795,
+                    "y": 1.530383825302124,
+                    "z": -13.416474342346191
                 },
                 "Scale": {
-                    "x": 0.25,
-                    "y": 0.25,
-                    "z": 0.25
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
                 },
                 "Rotation": {
                     "x": -90.0,
@@ -1409,13 +1409,64 @@
                 "luid": 8390885219644539016
             },
             "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 6.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.25,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Spotlight 3",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614024120827908
+            },
+            "Hierarchy": {
+                "luid": 7526194181118164995,
+                "parentLuid": 7526194091161354362
+            },
+            "Transform": {
+                "Position": {
+                    "x": -0.01585814356803894,
+                    "y": 1.4528632164001465,
+                    "z": -3.778756856918335
+                },
+                "Scale": {
+                    "x": 0.25,
+                    "y": 0.2500000298023224,
+                    "z": 0.2500000298023224
+                },
+                "Rotation": {
+                    "x": -56.91558074951172,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885309573300229
+            },
+            "Light": {
                 "type": 2,
                 "data": {
                     "index": 2,
                     "value": {
-                        "Intensity": 40.0,
-                        "Inner Cone Angle": 20.0,
-                        "Outer Cone Angle": 25.0,
+                        "Intensity": 5.0,
+                        "Inner Cone Angle": 38.599998474121094,
+                        "Outer Cone Angle": 43.0,
                         "Range": 5.0
                     }
                 },
@@ -2052,104 +2103,6 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Point Light Set L",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613952003375141
-            },
-            "Hierarchy": {
-                "luid": 7526194109000712228,
-                "parentLuid": 7526194109000712225
-            },
-            "Transform": {
-                "Position": {
-                    "x": -2.1177055835723877,
-                    "y": 1.2281818389892578,
-                    "z": -0.7521202564239502
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885237455847462
-            },
-            "Light": {
-                "type": 1,
-                "data": {
-                    "index": 1,
-                    "value": {
-                        "Intensity": 2.0,
-                        "Range": 1.5
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Point Light Set R",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613952003375144
-            },
-            "Hierarchy": {
-                "luid": 7526194109000712231,
-                "parentLuid": 7526194109000712225
-            },
-            "Transform": {
-                "Position": {
-                    "x": 1.8558292388916016,
-                    "y": 1.2281818389892578,
-                    "z": -0.7521202564239502
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885237455847465
-            },
-            "Light": {
-                "type": 1,
-                "data": {
-                    "index": 1,
-                    "value": {
-                        "Intensity": 2.0,
-                        "Range": 1.5
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
                 "name": "Point Light Set 5",
                 "isActive": 1,
                 "isStatic": 0,
@@ -2176,104 +2129,6 @@
                     "z": -0.0
                 },
                 "luid": 8390885237522366466
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Point Light Set L",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613952069894148
-            },
-            "Hierarchy": {
-                "luid": 7526194109067231235,
-                "parentLuid": 7526194109067231232
-            },
-            "Transform": {
-                "Position": {
-                    "x": -2.1177055835723877,
-                    "y": 1.2281818389892578,
-                    "z": -0.7521202564239502
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885237522366469
-            },
-            "Light": {
-                "type": 1,
-                "data": {
-                    "index": 1,
-                    "value": {
-                        "Intensity": 0.5,
-                        "Range": 0.5
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Point Light Set R",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613952069894151
-            },
-            "Hierarchy": {
-                "luid": 7526194109067231238,
-                "parentLuid": 7526194109067231232
-            },
-            "Transform": {
-                "Position": {
-                    "x": 1.8558292388916016,
-                    "y": 1.2281818389892578,
-                    "z": -0.7521202564239502
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885237522366472
-            },
-            "Light": {
-                "type": 1,
-                "data": {
-                    "index": 1,
-                    "value": {
-                        "Intensity": 1.0,
-                        "Range": 0.5
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
             }
         },
         {
@@ -4986,10 +4841,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "SECTION 1 Lights",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936074850305
             },
@@ -5018,10 +4873,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974499524609
             },
@@ -5069,10 +4924,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 1.5",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936075636746
             },
@@ -5120,10 +4975,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 2",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936086319123
             },
@@ -5171,10 +5026,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 2.5",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974615588883
             },
@@ -5222,10 +5077,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 2",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974619914262
             },
@@ -5271,10 +5126,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 3",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936074850308
             },
@@ -5322,10 +5177,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 4",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974630268953
             },
@@ -5373,10 +5228,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 4",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974634594332
             },
@@ -5422,10 +5277,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 5",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936079503373
             },
@@ -5473,10 +5328,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 6",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936084156432
             },
@@ -5524,10 +5379,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 7",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936074850311
             },
@@ -5575,10 +5430,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight Booth",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974532423684
             },
@@ -5626,10 +5481,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 8",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974562963463
             },
@@ -5677,10 +5532,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 8",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974593830925
             },
@@ -5728,10 +5583,10 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light Lift",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974580723722
             },
@@ -22840,18 +22695,18 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -1.8335899114608765,
-                    "y": 0.3700000047683716,
-                    "z": -10.838645935058594
+                    "x": -0.8355369567871094,
+                    "y": 0.06198498606681824,
+                    "z": -13.184325218200684
                 },
                 "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "x": 3.0,
+                    "y": 2.5,
+                    "z": 2.5
                 },
                 "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
+                    "x": 0.0,
+                    "y": -20.759998321533203,
                     "z": -0.0
                 },
                 "luid": 8390885088352600075
@@ -22912,24 +22767,24 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -1.7280000448226929,
-                    "y": 0.3700000047683716,
-                    "z": -23.02400016784668
+                    "x": -1.0512855052947998,
+                    "y": 0.06874305009841919,
+                    "z": -22.26566505432129
                 },
                 "Scale": {
-                    "x": 0.10000000149011612,
-                    "y": 0.10000000149011612,
-                    "z": 0.10000000149011612
+                    "x": 3.0,
+                    "y": 2.5,
+                    "z": 2.5
                 },
                 "Rotation": {
                     "x": -0.0,
-                    "y": 0.0,
+                    "y": 30.0,
                     "z": -0.0
                 },
                 "luid": 8390885088377503755
             },
             "Renderer": {
-                "modelUUID": "builtin:model/cube",
+                "modelUUID": "b792f053-b9eb-4664-b48c-b4e1de27c381",
                 "materialUUID": "neunlitmat",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
@@ -22984,24 +22839,24 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 8.458999633789063,
-                    "y": 0.17499999701976776,
-                    "z": -27.974000930786133
+                    "x": 8.692694664001465,
+                    "y": 0.07475179433822632,
+                    "z": -27.78013801574707
                 },
                 "Scale": {
-                    "x": 0.10000000149011612,
-                    "y": 0.10000000149011612,
-                    "z": 0.10000000149011612
+                    "x": 3.0,
+                    "y": 2.5,
+                    "z": 2.5
                 },
                 "Rotation": {
                     "x": -0.0,
-                    "y": 0.0,
+                    "y": -90.0,
                     "z": -0.0
                 },
                 "luid": 8390885088393297951
             },
             "Renderer": {
-                "modelUUID": "builtin:model/cube",
+                "modelUUID": "b792f053-b9eb-4664-b48c-b4e1de27c381",
                 "materialUUID": "neunlitmat",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
@@ -23272,24 +23127,24 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 7.402717590332031,
-                    "y": 1.2636433839797974,
-                    "z": -23.238149642944336
+                    "x": 4.763702869415283,
+                    "y": 0.08377838134765625,
+                    "z": -24.24374008178711
                 },
                 "Scale": {
-                    "x": 0.10000000149011612,
-                    "y": 0.10000000149011612,
-                    "z": 0.10000000149011612
+                    "x": 3.0,
+                    "y": 2.5,
+                    "z": 2.5
                 },
                 "Rotation": {
                     "x": -0.0,
-                    "y": 0.0,
+                    "y": 60.0,
                     "z": -0.0
                 },
                 "luid": 8390885088462831618
             },
             "Renderer": {
-                "modelUUID": "builtin:model/cube",
+                "modelUUID": "b792f053-b9eb-4664-b48c-b4e1de27c381",
                 "materialUUID": "neunlitmat",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
@@ -26102,9 +25957,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 1.5691306591033936,
+                    "x": 1.3128241300582886,
                     "y": 0.2064862847328186,
-                    "z": -0.4827451705932617
+                    "z": -0.9988002777099609
                 },
                 "Scale": {
                     "x": 2.0,
@@ -26163,15 +26018,12 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Misc_MaterialSwitcher",
-                    "Misc_SolvedMaterialOverride",
-                    "Interactable_Battery"
+                    "Interactable_Battery",
+                    "Highlightable_Material"
                 ],
                 "SerializedFields": {
                     "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
-                    "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
-                    "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Interactable_Battery.body": "8242266484285374489",
                     "Interactable_Battery.grabAudioName": "GRAB_BATTERY",
                     "Interactable_Battery.isHeavy": "0",
@@ -26246,9 +26098,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -1.3065556287765503,
-                    "y": 0.3163433074951172,
-                    "z": -1.7429466247558594
+                    "x": -1.7789604663848877,
+                    "y": 0.5836433172225952,
+                    "z": -2.0981645584106445
                 },
                 "Scale": {
                     "x": 2.0,
@@ -26271,8 +26123,13 @@
                 "luid": 8242829434226999317
             },
             "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef"
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958821182725947414
             }
@@ -26292,9 +26149,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": -1.306452989578247,
-                    "y": 0.3680194020271301,
-                    "z": -1.8279361724853516
+                    "x": -1.778857946395874,
+                    "y": 0.6353194713592529,
+                    "z": -2.1831541061401367
                 },
                 "Scale": {
                     "x": 2.0,
@@ -26339,17 +26196,21 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Puzzle_BatteryPanel",
-                    "Misc_MaterialSwitcher"
+                    "Misc_MaterialSwitcher",
+                    "Misc_SolvedMaterialOverride"
                 ],
                 "SerializedFields": {
-                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
                     "Puzzle_BatteryPanel.panelRef": "8390885271975559183",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613986524332051",
-                    "Puzzle_BatteryPanel.message": "Section1Lift",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "Section1Lift",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613986524332051",
                     "Puzzle_BatteryPanel.batteryRef": "7308613986513190916",
+                    "Misc_SolvedMaterialOverride.solvedEventName": "Section1Lift",
                     "Puzzle_BatteryPanel.slotAudioName": "SLOT_IN",
-                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80"
+                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65"
                 },
                 "EntityReferenceFields": [
                     "alignedBattery",
@@ -27042,7 +26903,7 @@
                     "Interactable_DoorHinge"
                 ],
                 "SerializedFields": {
-                    "Interactable_DoorHinge.targetRotationY": "-100.000000",
+                    "Interactable_DoorHinge.targetRotationY": "100.000000",
                     "Interactable_DoorHinge.playerRef": "7308613656064753675",
                     "Interactable_DoorHinge.isEventBased": "0",
                     "Interactable_DoorHinge.doorRef": "7308613951913000963",
@@ -27075,8 +26936,8 @@
             "Transform": {
                 "Position": {
                     "x": -0.1726837158203125,
-                    "y": -0.008024215698242188,
-                    "z": 12.622467041015625
+                    "y": -0.008016586303710938,
+                    "z": 12.7174072265625
                 },
                 "Scale": {
                     "x": 20.0,
@@ -27203,10 +27064,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "rightLaser7",
                     "leftLaser8",
-                    "leftLaser7",
+                    "rightLaser7",
                     "rightLaser8",
+                    "leftLaser7",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -27278,10 +27139,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "rightLaser8",
                     "leftLaser7",
-                    "rightLaser7",
+                    "rightLaser8",
                     "leftLaser8",
+                    "rightLaser7",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -30216,7 +30077,7 @@
                 "Position": {
                     "x": 0.0,
                     "y": 0.0,
-                    "z": 0.0
+                    "z": 0.0002727508544921875
                 },
                 "Scale": {
                     "x": 0.07000001519918442,
