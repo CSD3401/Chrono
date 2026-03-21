@@ -189,34 +189,34 @@
                     "Misc_TimeFogLighting"
                 ],
                 "SerializedFields": {
-                    "Misc_TimeFogLighting.affectFog": "1",
-                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
                     "Player_Controller.jumpStrength": "5.000000",
-                    "Misc_TimeFogLighting.presentFogStart": "20.000000",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
-                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.050000",
                     "Player_Controller.gravity": "10.000000",
                     "Player_Controller.lookSensitivity": "0.250000",
-                    "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.normalAmbientIntensity": "0.500000",
                     "Player_Controller.moveSpeed": "4.000000",
                     "Misc_TimeFogLighting.normalAmbientColor": "25 15 10",
                     "Misc_TimeFogLighting.normalFogMode": "1",
                     "Player_Controller.snappiness": "5.000000",
                     "Player_Controller.walkSoundInterval": "0.500000",
-                    "Misc_TimeFogLighting.affectAmbient": "1",
+                    "Misc_TimeFogLighting.affectFog": "1",
+                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
                     "Misc_TimeFogLighting.normalEnvSource": "2",
+                    "Misc_TimeFogLighting.affectAmbient": "1",
                     "Misc_TimeFogLighting.startInPresent": "1",
                     "Misc_TimeFogLighting.normalFogEnabled": "1",
-                    "Misc_TimeFogLighting.normalFogColor": "15 10 8",
+                    "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.presentFogEnabled": "1",
+                    "Misc_TimeFogLighting.normalFogColor": "15 10 8",
                     "Misc_TimeFogLighting.normalFogDensity": "0.015000",
                     "Misc_TimeFogLighting.normalFogStart": "0.000000",
                     "Misc_TimeFogLighting.normalFogEnd": "50.000000",
                     "Misc_TimeFogLighting.presentFogColor": "150 150 150",
                     "Misc_TimeFogLighting.presentFogDensity": "0.005000",
+                    "Misc_TimeFogLighting.presentFogStart": "20.000000",
                     "Misc_TimeFogLighting.presentFogEnd": "50.000000",
-                    "Misc_TimeFogLighting.presentAmbientColor": "25 15 10"
+                    "Misc_TimeFogLighting.presentAmbientColor": "25 15 10",
+                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.050000"
                 },
                 "EntityReferenceFields": [
                     "playerCameraRef"
@@ -274,11 +274,11 @@
                     "Player_Raycast.interval": "0.100000",
                     "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.distance": "5.000000",
-                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Player_Raycast.targetLayer": "0",
                     "Camera_FOVPulse.baseFov": "90.000000",
                     "Camera_FOVPulse.enabledAtStart": "1",
                     "Camera_FOVPulse.pulseFov": "150.000000",
+                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Camera_FOVPulse.riseTimeSeconds": "0.100000",
                     "Misc_Grabber.grabStrength": "0.000000",
                     "Misc_Grabber.distance": "0.500000",
@@ -2365,7 +2365,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "SECTION 3 Lights",
                 "isActive": 1,
@@ -2397,7 +2397,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 4",
                 "isActive": 1,
@@ -2448,7 +2448,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 6",
                 "isActive": 1,
@@ -2499,7 +2499,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 9",
                 "isActive": 1,
@@ -2550,7 +2550,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 10",
                 "isActive": 1,
@@ -2601,7 +2601,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 4",
                 "isActive": 1,
@@ -2650,7 +2650,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 5",
                 "isActive": 1,
@@ -2699,7 +2699,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 5",
                 "isActive": 1,
@@ -2748,7 +2748,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 6",
                 "isActive": 1,
@@ -2797,7 +2797,7 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
+            "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 7",
                 "isActive": 1,
@@ -6532,25 +6532,57 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Spot Light 1",
+                "name": "Light Set",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037460942854
+            },
+            "Hierarchy": {
+                "luid": 7526194194458279944,
+                "parentLuid": 7526194130947801090
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322913415175
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
                 "luid": 7308613973951381507
             },
             "Hierarchy": {
                 "luid": 7526194130948718597,
-                "parentLuid": 7526194130947801090
+                "parentLuid": 7526194194458279944
             },
             "Transform": {
                 "Position": {
-                    "x": 9.272724151611328,
-                    "y": 2.385999917984009,
+                    "x": 9.331897735595703,
+                    "y": 2.5657918453216553,
                     "z": -28.089000701904297
                 },
                 "Scale": {
                     "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
                     "x": -90.0,
@@ -6560,217 +6592,13 @@
                 "luid": 8390885259403853828
             },
             "Light": {
-                "type": 2,
+                "type": 3,
                 "data": {
-                    "index": 2,
+                    "index": 3,
                     "value": {
                         "Intensity": 10.0,
-                        "Inner Cone Angle": 86.69999694824219,
-                        "Outer Cone Angle": 92.0,
-                        "Range": 3.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Spot Light 2",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613973995814913
-            },
-            "Hierarchy": {
-                "luid": 7526194130993152000,
-                "parentLuid": 7526194130947801090
-            },
-            "Transform": {
-                "Position": {
-                    "x": 11.853188514709473,
-                    "y": 2.385999917984009,
-                    "z": -28.089000701904297
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885259448287234
-            },
-            "Light": {
-                "type": 2,
-                "data": {
-                    "index": 2,
-                    "value": {
-                        "Intensity": 10.0,
-                        "Inner Cone Angle": 86.69999694824219,
-                        "Outer Cone Angle": 92.0,
-                        "Range": 3.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Spot Light 3",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613973997846532
-            },
-            "Hierarchy": {
-                "luid": 7526194130995183619,
-                "parentLuid": 7526194130947801090
-            },
-            "Transform": {
-                "Position": {
-                    "x": 14.89712142944336,
-                    "y": 2.385999917984009,
-                    "z": -28.089025497436523
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885259450318853
-            },
-            "Light": {
-                "type": 2,
-                "data": {
-                    "index": 2,
-                    "value": {
-                        "Intensity": 10.0,
-                        "Inner Cone Angle": 86.69999694824219,
-                        "Outer Cone Angle": 92.0,
-                        "Range": 3.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Spot Light 4",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613974010953735
-            },
-            "Hierarchy": {
-                "luid": 7526194131008290822,
-                "parentLuid": 7526194130947801090
-            },
-            "Transform": {
-                "Position": {
-                    "x": 14.869112968444824,
-                    "y": 2.385999917984009,
-                    "z": -25.521961212158203
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885259463426056
-            },
-            "Light": {
-                "type": 2,
-                "data": {
-                    "index": 2,
-                    "value": {
-                        "Intensity": 10.0,
-                        "Inner Cone Angle": 86.69999694824219,
-                        "Outer Cone Angle": 92.0,
-                        "Range": 3.0
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Spot Light 5",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613974014296074
-            },
-            "Hierarchy": {
-                "luid": 7526194131011633161,
-                "parentLuid": 7526194130947801090
-            },
-            "Transform": {
-                "Position": {
-                    "x": 11.853188514709473,
-                    "y": 2.385999917984009,
-                    "z": -25.52199935913086
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -90.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885259466768395
-            },
-            "Light": {
-                "type": 2,
-                "data": {
-                    "index": 2,
-                    "value": {
-                        "Intensity": 10.0,
-                        "Inner Cone Angle": 79.0999984741211,
-                        "Outer Cone Angle": 82.80000305175781,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
                         "Range": 10.0
                     }
                 },
@@ -6787,42 +6615,176 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Spot Light 6",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974015672333
+                "luid": 7308614037429813249
             },
             "Hierarchy": {
-                "luid": 7526194131013009420,
+                "luid": 7526194194427150336,
+                "parentLuid": 7526194194458279944
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322882285570
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037446393860
+            },
+            "Hierarchy": {
+                "luid": 7526194194443730947,
+                "parentLuid": 7526194194458279944
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322898866181
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Light Set",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037464285194
+            },
+            "Hierarchy": {
+                "luid": 7526194194461622281,
                 "parentLuid": 7526194130947801090
             },
             "Transform": {
                 "Position": {
-                    "x": 9.272724151611328,
-                    "y": 2.385999917984009,
-                    "z": -25.52199935913086
+                    "x": 2.509999990463257,
+                    "y": 0.0,
+                    "z": 0.0
                 },
                 "Scale": {
                     "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322916757515
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037464285197
+            },
+            "Hierarchy": {
+                "luid": 7526194194461622284,
+                "parentLuid": 7526194194461622281
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.5657918453216553,
+                    "z": -28.089000701904297
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
                     "x": -90.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259468144654
+                "luid": 8390885322916757518
             },
             "Light": {
-                "type": 2,
+                "type": 3,
                 "data": {
-                    "index": 2,
+                    "index": 3,
                     "value": {
                         "Intensity": 10.0,
-                        "Inner Cone Angle": 86.69999694824219,
-                        "Outer Cone Angle": 92.0,
-                        "Range": 2.0
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 10.0
                     }
                 },
                 "color": {
@@ -6838,42 +6800,176 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Spot Light 7",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974018949136
+                "luid": 7308614037464285200
             },
             "Hierarchy": {
-                "luid": 7526194131016286223,
+                "luid": 7526194194461622287,
+                "parentLuid": 7526194194461622281
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322916757521
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037464285203
+            },
+            "Hierarchy": {
+                "luid": 7526194194461622290,
+                "parentLuid": 7526194194461622281
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322916757524
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Light Set",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037470642198
+            },
+            "Hierarchy": {
+                "luid": 7526194194467979285,
                 "parentLuid": 7526194130947801090
             },
             "Transform": {
                 "Position": {
-                    "x": 9.272724151611328,
-                    "y": 2.385999917984009,
-                    "z": -22.926090240478516
+                    "x": 5.429999828338623,
+                    "y": 0.0,
+                    "z": 0.0
                 },
                 "Scale": {
                     "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322923114519
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037470642201
+            },
+            "Hierarchy": {
+                "luid": 7526194194467979288,
+                "parentLuid": 7526194194467979285
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.310638427734375,
+                    "y": 2.5657918453216553,
+                    "z": -28.089000701904297
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
                     "x": -90.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259471421457
+                "luid": 8390885322923114522
             },
             "Light": {
-                "type": 2,
+                "type": 3,
                 "data": {
-                    "index": 2,
+                    "index": 3,
                     "value": {
-                        "Intensity": 12.5,
-                        "Inner Cone Angle": 86.69999694824219,
-                        "Outer Cone Angle": 92.0,
-                        "Range": 4.0
+                        "Intensity": 10.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 10.0
                     }
                 },
                 "color": {
@@ -6889,42 +6985,176 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Spot Light 8",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974020587539
+                "luid": 7308614037470642204
             },
             "Hierarchy": {
-                "luid": 7526194131017924626,
+                "luid": 7526194194467979291,
+                "parentLuid": 7526194194467979285
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.31303596496582,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322923114525
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037470642207
+            },
+            "Hierarchy": {
+                "luid": 7526194194467979294,
+                "parentLuid": 7526194194467979285
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322923114528
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Light Set",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037482111016
+            },
+            "Hierarchy": {
+                "luid": 7526194194479448103,
                 "parentLuid": 7526194130947801090
             },
             "Transform": {
                 "Position": {
-                    "x": 11.853188514709473,
-                    "y": 2.385999917984009,
-                    "z": -22.926000595092773
+                    "x": 5.429999828338623,
+                    "y": 0.0,
+                    "z": 2.569999933242798
                 },
                 "Scale": {
                     "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322934583337
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037482111019
+            },
+            "Hierarchy": {
+                "luid": 7526194194479448106,
+                "parentLuid": 7526194194479448103
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.321586608886719,
+                    "y": 2.5657918453216553,
+                    "z": -28.089000701904297
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
                     "x": -90.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259473059860
+                "luid": 8390885322934583340
             },
             "Light": {
-                "type": 2,
+                "type": 3,
                 "data": {
-                    "index": 2,
+                    "index": 3,
                     "value": {
                         "Intensity": 10.0,
-                        "Inner Cone Angle": 86.69999694824219,
-                        "Outer Cone Angle": 92.0,
-                        "Range": 3.0
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 10.0
                     }
                 },
                 "color": {
@@ -6940,42 +7170,176 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Spot Light 9",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974021570582
+                "luid": 7308614037482111022
             },
             "Hierarchy": {
-                "luid": 7526194131018907669,
+                "luid": 7526194194479448109,
+                "parentLuid": 7526194194479448103
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.31303596496582,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322934583343
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037482111025
+            },
+            "Hierarchy": {
+                "luid": 7526194194479448112,
+                "parentLuid": 7526194194479448103
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.315607070922852,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322934583346
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Light Set",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037485715508
+            },
+            "Hierarchy": {
+                "luid": 7526194194483052595,
                 "parentLuid": 7526194130947801090
             },
             "Transform": {
                 "Position": {
-                    "x": 14.869112968444824,
-                    "y": 2.385999917984009,
-                    "z": -22.926000595092773
+                    "x": 2.509999990463257,
+                    "y": 0.0,
+                    "z": 2.569999933242798
                 },
                 "Scale": {
                     "x": 1.0,
                     "y": 1.0,
                     "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322938187829
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037485715511
+            },
+            "Hierarchy": {
+                "luid": 7526194194483052598,
+                "parentLuid": 7526194194483052595
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.5657918453216553,
+                    "z": -28.089000701904297
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
                     "x": -90.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259474042903
+                "luid": 8390885322938187832
             },
             "Light": {
-                "type": 2,
+                "type": 3,
                 "data": {
-                    "index": 2,
+                    "index": 3,
                     "value": {
                         "Intensity": 10.0,
-                        "Inner Cone Angle": 86.69999694824219,
-                        "Outer Cone Angle": 92.0,
-                        "Range": 3.0
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 10.0
                     }
                 },
                 "color": {
@@ -6991,42 +7355,176 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Spot Light 10",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974246883341
+                "luid": 7308614037485715514
             },
             "Hierarchy": {
-                "luid": 7526194131244220428,
+                "luid": 7526194194483052601,
+                "parentLuid": 7526194194483052595
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322938187835
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037485715517
+            },
+            "Hierarchy": {
+                "luid": 7526194194483052604,
+                "parentLuid": 7526194194483052595
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322938187838
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Light Set",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037488271436
+            },
+            "Hierarchy": {
+                "luid": 7526194194485608523,
                 "parentLuid": 7526194130947801090
             },
             "Transform": {
                 "Position": {
-                    "x": 15.053999900817871,
-                    "y": 2.128999948501587,
-                    "z": -29.680999755859375
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 2.569999933242798
                 },
                 "Scale": {
                     "x": 1.0,
-                    "y": 1.000000238418579,
-                    "z": 1.000000238418579
+                    "y": 1.0,
+                    "z": 1.0
                 },
                 "Rotation": {
-                    "x": 1.5707964897155762,
+                    "x": -0.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259699355662
+                "luid": 8390885322940743757
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037488271439
+            },
+            "Hierarchy": {
+                "luid": 7526194194485608526,
+                "parentLuid": 7526194194485608523
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.5657918453216553,
+                    "z": -28.089000701904297
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322940743760
             },
             "Light": {
-                "type": 2,
+                "type": 3,
                 "data": {
-                    "index": 2,
+                    "index": 3,
                     "value": {
                         "Intensity": 10.0,
-                        "Inner Cone Angle": 47.0,
-                        "Outer Cone Angle": 90.30000305175781,
-                        "Range": 5.0
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 10.0
                     }
                 },
                 "color": {
@@ -7042,88 +7540,41 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Point Light 1",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974119743518
+                "luid": 7308614037488271442
             },
             "Hierarchy": {
-                "luid": 7526194131117080608,
-                "parentLuid": 7526194130947801090
+                "luid": 7526194194485608529,
+                "parentLuid": 7526194194485608523
             },
             "Transform": {
                 "Position": {
-                    "x": 10.560189247131348,
-                    "y": 1.8988776206970215,
-                    "z": -24.452999114990234
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
                 },
                 "Scale": {
                     "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
                     "x": -0.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259572215839
+                "luid": 8390885322940743763
             },
             "Light": {
-                "type": 1,
+                "type": 3,
                 "data": {
-                    "index": 1,
+                    "index": 3,
                     "value": {
-                        "Intensity": 80.0,
-                        "Range": 0.699999988079071
-                    }
-                },
-                "color": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "shadowType": 0,
-                "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Point Light 2",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613974131736613
-            },
-            "Hierarchy": {
-                "luid": 7526194131129073700,
-                "parentLuid": 7526194130947801090
-            },
-            "Transform": {
-                "Position": {
-                    "x": 10.436436653137207,
-                    "y": 2.1937344074249268,
-                    "z": -24.824310302734375
-                },
-                "Scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885259584208934
-            },
-            "Light": {
-                "type": 1,
-                "data": {
-                    "index": 1,
-                    "value": {
-                        "Intensity": 80.0,
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
                         "Range": 0.5
                     }
                 },
@@ -7140,39 +7591,41 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Point Light 3",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974134947880
+                "luid": 7308614037488271445
             },
             "Hierarchy": {
-                "luid": 7526194131132284967,
-                "parentLuid": 7526194130947801090
+                "luid": 7526194194485608532,
+                "parentLuid": 7526194194485608523
             },
             "Transform": {
                 "Position": {
-                    "x": 11.475077629089355,
-                    "y": 2.2051773071289063,
-                    "z": -23.57723617553711
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
                 },
                 "Scale": {
                     "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": 180.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259587420201
+                "luid": 8390885322940743766
             },
             "Light": {
-                "type": 1,
+                "type": 3,
                 "data": {
-                    "index": 1,
+                    "index": 3,
                     "value": {
-                        "Intensity": 80.0,
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
                         "Range": 0.5
                     }
                 },
@@ -7189,20 +7642,20 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Point Light 3",
+                "name": "Light Set",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974166011956
+                "luid": 7308614037495021656
             },
             "Hierarchy": {
-                "luid": 7526194131163349043,
+                "luid": 7526194194492358743,
                 "parentLuid": 7526194130947801090
             },
             "Transform": {
                 "Position": {
-                    "x": 11.163933753967285,
-                    "y": 2.2051773071289063,
-                    "z": -23.57723617553711
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 5.139999866485596
                 },
                 "Scale": {
                     "x": 1.0,
@@ -7214,14 +7667,99 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259618484277
+                "luid": 8390885322947493977
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037495021659
+            },
+            "Hierarchy": {
+                "luid": 7526194194492358746,
+                "parentLuid": 7526194194492358743
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.5657918453216553,
+                    "z": -28.089000701904297
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322947493980
             },
             "Light": {
-                "type": 1,
+                "type": 3,
                 "data": {
-                    "index": 1,
+                    "index": 3,
                     "value": {
-                        "Intensity": 80.0,
+                        "Intensity": 10.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 10.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037495021662
+            },
+            "Hierarchy": {
+                "luid": 7526194194492358749,
+                "parentLuid": 7526194194492358743
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322947493983
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
                         "Range": 0.5
                     }
                 },
@@ -7238,39 +7776,41 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Point Light 4",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974140583979
+                "luid": 7308614037495021665
             },
             "Hierarchy": {
-                "luid": 7526194131137921066,
-                "parentLuid": 7526194130947801090
+                "luid": 7526194194492358752,
+                "parentLuid": 7526194194492358743
             },
             "Transform": {
                 "Position": {
-                    "x": 13.658723831176758,
-                    "y": 2.2092607021331787,
-                    "z": -23.074199676513672
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
                 },
                 "Scale": {
                     "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": 180.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259593056300
+                "luid": 8390885322947493986
             },
             "Light": {
-                "type": 1,
+                "type": 3,
                 "data": {
-                    "index": 1,
+                    "index": 3,
                     "value": {
-                        "Intensity": 80.0,
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
                         "Range": 0.5
                     }
                 },
@@ -7287,20 +7827,20 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Point Light 5",
+                "name": "Light Set",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974142156846
+                "luid": 7308614037496791140
             },
             "Hierarchy": {
-                "luid": 7526194131139493933,
+                "luid": 7526194194494128227,
                 "parentLuid": 7526194130947801090
             },
             "Transform": {
                 "Position": {
-                    "x": 14.780923843383789,
-                    "y": 2.2115097045898438,
-                    "z": -23.506267547607422
+                    "x": 2.509999990463257,
+                    "y": 0.0,
+                    "z": 5.139999866485596
                 },
                 "Scale": {
                     "x": 1.0,
@@ -7312,14 +7852,99 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259594629167
+                "luid": 8390885322949263461
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037496791143
+            },
+            "Hierarchy": {
+                "luid": 7526194194494128230,
+                "parentLuid": 7526194194494128227
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.5657918453216553,
+                    "z": -28.089000701904297
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322949263464
             },
             "Light": {
-                "type": 1,
+                "type": 3,
                 "data": {
-                    "index": 1,
+                    "index": 3,
                     "value": {
-                        "Intensity": 80.0,
+                        "Intensity": 10.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 10.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037496791146
+            },
+            "Hierarchy": {
+                "luid": 7526194194494128233,
+                "parentLuid": 7526194194494128227
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322949263467
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
                         "Range": 0.5
                     }
                 },
@@ -7336,39 +7961,41 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Point Light 5",
+                "name": "Area Light 1",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974168043575
+                "luid": 7308614037496791149
             },
             "Hierarchy": {
-                "luid": 7526194131165380662,
-                "parentLuid": 7526194130947801090
+                "luid": 7526194194494128236,
+                "parentLuid": 7526194194494128227
             },
             "Transform": {
                 "Position": {
-                    "x": 14.780923843383789,
-                    "y": 2.2115097045898438,
-                    "z": -23.770166397094727
+                    "x": 9.331897735595703,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
                 },
                 "Scale": {
                     "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
                 },
                 "Rotation": {
-                    "x": -0.0,
+                    "x": 180.0,
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259620515896
+                "luid": 8390885322949263470
             },
             "Light": {
-                "type": 1,
+                "type": 3,
                 "data": {
-                    "index": 1,
+                    "index": 3,
                     "value": {
-                        "Intensity": 80.0,
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
                         "Range": 0.5
                     }
                 },
@@ -7385,20 +8012,20 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Point Light 6",
+                "name": "Light Set",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613974144974897
+                "luid": 7308614037497446512
             },
             "Hierarchy": {
-                "luid": 7526194131142311984,
+                "luid": 7526194194494783599,
                 "parentLuid": 7526194130947801090
             },
             "Transform": {
                 "Position": {
-                    "x": 14.192304611206055,
-                    "y": 2.102985382080078,
-                    "z": -25.27654266357422
+                    "x": 5.429999828338623,
+                    "y": 0.0,
+                    "z": 5.139999866485596
                 },
                 "Scale": {
                     "x": 1.0,
@@ -7410,15 +8037,151 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885259597447218
+                "luid": 8390885322949918833
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037497446515
+            },
+            "Hierarchy": {
+                "luid": 7526194194494783602,
+                "parentLuid": 7526194194494783599
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.321586608886719,
+                    "y": 2.5657918453216553,
+                    "z": -28.089000701904297
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322949918836
             },
             "Light": {
-                "type": 1,
+                "type": 3,
                 "data": {
-                    "index": 1,
+                    "index": 3,
                     "value": {
-                        "Intensity": 80.0,
-                        "Range": 0.6000000238418579
+                        "Intensity": 10.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 10.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037497446518
+            },
+            "Hierarchy": {
+                "luid": 7526194194494783605,
+                "parentLuid": 7526194194494783599
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.31303596496582,
+                    "y": 2.6565303802490234,
+                    "z": -28.244291305541992
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322949918839
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614037497446521
+            },
+            "Hierarchy": {
+                "luid": 7526194194494783608,
+                "parentLuid": 7526194194494783599
+            },
+            "Transform": {
+                "Position": {
+                    "x": 9.315607070922852,
+                    "y": 2.6565303802490234,
+                    "z": -27.913318634033203
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": 180.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885322949918842
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 2.5,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 0.5
                     }
                 },
                 "color": {
@@ -9446,8 +10209,8 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613771630477337",
                     "Puzzle_MultiLightSequencer.light2": "7308613771645485097",
-                    "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
                     "Puzzle_MultiLightSequencer.sequenceLength": "3",
+                    "Puzzle_MultiLightSequencer.light3": "7308613771649351729",
                     "Puzzle_MultiLightSequencer.light4": "0",
                     "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "0",
@@ -19389,15 +20152,15 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireHolderObject": "7308613789212147717",
-                    "Puzzle_Wire.wireColours": "4 2 0 4 1",
                     "Puzzle_Wire.connectedHolderObject": "7308613789212147787",
-                    "Puzzle_Wire.correctHolderObject": "7308613789212147760",
+                    "Puzzle_Wire.wireColours": "4 2 0 4 1",
+                    "Puzzle_Wire.wireHolderObject": "7308613789212147717",
                     "Puzzle_Wire.wirePuzzleIndex": "0",
+                    "Puzzle_Wire.correctHolderObject": "7308613789212147760",
                     "Puzzle_Wire.correctColours": "4 0 1 2 4",
                     "Puzzle_Wire.wirePath": "0",
-                    "Puzzle_Wire.changeTimer": "0.500000",
                     "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Wire.changeTimer": "0.500000",
                     "Puzzle_Wire.eventName": "PuzzleSolved1"
                 },
                 "EntityReferenceFields": [
@@ -19502,20 +20265,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19704,20 +20467,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -19906,20 +20669,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -20108,20 +20871,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -20534,20 +21297,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -20736,20 +21499,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -20938,20 +21701,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -21140,20 +21903,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -21371,14 +22134,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -21436,14 +22199,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -21501,14 +22264,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -21566,14 +22329,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -26126,7 +26889,6 @@
                     "Misc_TransitionTeleporter"
                 ],
                 "SerializedFields": {
-                    "Misc_TransitionTeleporter.impactAudioName": "PLAYER_IMPACT",
                     "Misc_TransitionTeleporter.player": "7308613656064753675",
                     "Misc_TransitionTeleporter.fadeInDuration": "0.500000",
                     "Misc_TransitionTeleporter.targetTransformRef": "8390885075794526209",
@@ -26134,7 +26896,8 @@
                     "Misc_TransitionTeleporter.overlayCanvas": "7167032123494432771",
                     "Misc_TransitionTeleporter.fadeOutDuration": "0.500000",
                     "Misc_TransitionTeleporter.eventBased": "1",
-                    "Misc_TransitionTeleporter.eventName": "Section1Lift"
+                    "Misc_TransitionTeleporter.eventName": "Section1Lift",
+                    "Misc_TransitionTeleporter.impactAudioName": "PLAYER_IMPACT"
                 },
                 "EntityReferenceFields": [
                     "player",
@@ -26699,15 +27462,15 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_BatteryPanel.panelRef": "8390885271975559183",
-                    "Puzzle_BatteryPanel.message": "Section1Lift",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "Section1Lift",
                     "Puzzle_BatteryPanel.alignedBattery": "7308613986524332051",
                     "Puzzle_BatteryPanel.batteryRef": "7308613986513190916",
                     "Misc_SolvedMaterialOverride.solvedEventName": "Section1Lift",
                     "Puzzle_BatteryPanel.slotAudioName": "SLOT_IN",
                     "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65"
                 },
                 "EntityReferenceFields": [
@@ -27562,10 +28325,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "leftLaser8",
                     "rightLaser7",
-                    "rightLaser8",
+                    "leftLaser8",
                     "leftLaser7",
+                    "rightLaser8",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -27637,10 +28400,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "leftLaser7",
                     "rightLaser8",
-                    "leftLaser8",
+                    "leftLaser7",
                     "rightLaser7",
+                    "leftLaser8",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -48981,8 +49744,8 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613969940185100",
                     "Puzzle_MultiLightSequencer.light2": "7308613969940185111",
-                    "Puzzle_MultiLightSequencer.light3": "7308613969940185122",
                     "Puzzle_MultiLightSequencer.sequenceLength": "3",
+                    "Puzzle_MultiLightSequencer.light3": "7308613969940185122",
                     "Puzzle_MultiLightSequencer.light4": "0",
                     "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "0",
@@ -49927,10 +50690,10 @@
                     "Misc_TrolleyPush.playerRef": "7308613656064753675",
                     "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
-                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.pushAudioName": "",
                     "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -50022,10 +50785,10 @@
                     "Misc_TrolleyPush.playerRef": "7308613656064753675",
                     "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
-                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.pushAudioName": "",
                     "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -50117,10 +50880,10 @@
                     "Misc_TrolleyPush.playerRef": "7308613656064753675",
                     "Misc_TrolleyPush.playerCameraRef": "7308613686500261889",
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
-                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.pushAudioName": "",
                     "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -53873,8 +54636,8 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613985911898427",
                     "Puzzle_MultiLightSequencer.light2": "7308613985911898415",
-                    "Puzzle_MultiLightSequencer.light3": "7308613985911898423",
                     "Puzzle_MultiLightSequencer.sequenceLength": "3",
+                    "Puzzle_MultiLightSequencer.light3": "7308613985911898423",
                     "Puzzle_MultiLightSequencer.light4": "7308613985911898411",
                     "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "7308613985911898419",
@@ -65941,15 +66704,15 @@
                 ],
                 "SerializedFields": {
                     "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
                     "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Interactable_Battery.body": "8242266487512301576",
-                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.grabAudioName": "GRAB_BATTERY",
-                    "Interactable_Battery.activatesPressurePlates": "0",
+                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -66244,15 +67007,15 @@
                 ],
                 "SerializedFields": {
                     "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
                     "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Interactable_Battery.body": "8242266485751742472",
-                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.grabAudioName": "GRAB_BATTERY",
-                    "Interactable_Battery.activatesPressurePlates": "0",
+                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -66472,8 +67235,8 @@
                 "SerializedFields": {
                     "Puzzle_MultiLightSequencer.light1": "7308613988044832893",
                     "Puzzle_MultiLightSequencer.light2": "7308613988044832881",
-                    "Puzzle_MultiLightSequencer.light3": "7308613988044832889",
                     "Puzzle_MultiLightSequencer.sequenceLength": "4",
+                    "Puzzle_MultiLightSequencer.light3": "7308613988044832889",
                     "Puzzle_MultiLightSequencer.light4": "7308613988044832877",
                     "Puzzle_MultiLightSequencer.startDelay": "0.500000",
                     "Puzzle_MultiLightSequencer.light5": "7308613988044832885",
@@ -73337,15 +74100,15 @@
                 ],
                 "SerializedFields": {
                     "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
                     "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Interactable_Battery.body": "8242266487534125064",
-                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.grabAudioName": "GRAB_BATTERY",
-                    "Interactable_Battery.activatesPressurePlates": "0",
+                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -73640,15 +74403,15 @@
                 ],
                 "SerializedFields": {
                     "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
                     "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Interactable_Battery.body": "8242266487558373384",
-                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.grabAudioName": "GRAB_BATTERY",
-                    "Interactable_Battery.activatesPressurePlates": "0",
+                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -73943,15 +74706,15 @@
                 ],
                 "SerializedFields": {
                     "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
                     "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Interactable_Battery.body": "8242266487558635554",
-                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.grabAudioName": "GRAB_BATTERY",
-                    "Interactable_Battery.activatesPressurePlates": "0",
+                    "Interactable_Battery.isHeavy": "0",
                     "Interactable_Battery.playerGrabber": "7308613686500261889",
+                    "Interactable_Battery.activatesPressurePlates": "0",
                     "Interactable_Battery.lockWhenNotGrabbed": "1"
                 },
                 "EntityReferenceFields": [
@@ -75736,15 +76499,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989846941713",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb1solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
+                    "Puzzle_Bomb.pair3_Number": "7",
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -76050,15 +76813,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989956190233",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb2solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
+                    "Puzzle_Bomb.pair3_Number": "7",
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -76364,15 +77127,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989956452404",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb3solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
+                    "Puzzle_Bomb.pair3_Number": "7",
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -76678,15 +77441,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989956714575",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb4solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
+                    "Puzzle_Bomb.pair3_Number": "7",
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -76992,15 +77755,15 @@
                     "Puzzle_Bomb.outerRef": "7308613989956911210",
                     "Puzzle_Bomb.pair1_Letter": "0",
                     "Puzzle_Bomb.pair1_Number": "3",
-                    "Puzzle_Bomb.pair3_Number": "7",
                     "Puzzle_Bomb.pair2_Letter": "2",
-                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
                     "Puzzle_Bomb.solveMessage": "bomb5solved",
                     "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
                     "Puzzle_Bomb.pair2_Number": "5",
-                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE",
                     "Puzzle_Bomb.pair3_Letter": "4",
-                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT"
+                    "Puzzle_Bomb.pair3_Number": "7",
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
                 },
                 "EntityReferenceFields": [
                     "outerRef"
@@ -77394,15 +78157,15 @@
                     "Puzzle_Wire"
                 ],
                 "SerializedFields": {
-                    "Puzzle_Wire.wireHolderObject": "7308613998597046277",
-                    "Puzzle_Wire.wireColours": "7 0 1 4 2 8 3 7",
                     "Puzzle_Wire.connectedHolderObject": "7308613998597046443",
-                    "Puzzle_Wire.correctHolderObject": "7308613998597046368",
+                    "Puzzle_Wire.wireColours": "7 0 1 4 2 8 3 7",
+                    "Puzzle_Wire.wireHolderObject": "7308613998597046277",
                     "Puzzle_Wire.wirePuzzleIndex": "1",
+                    "Puzzle_Wire.correctHolderObject": "7308613998597046368",
                     "Puzzle_Wire.correctColours": "7 0 1 2 4 3 7 8",
                     "Puzzle_Wire.wirePath": "0",
-                    "Puzzle_Wire.changeTimer": "0.500000",
                     "Puzzle_Wire.finishedWireColour": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Puzzle_Wire.changeTimer": "0.500000",
                     "Puzzle_Wire.eventName": "PuzzleSolved2"
                 },
                 "EntityReferenceFields": [
@@ -77507,20 +78270,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -77709,20 +78472,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -77911,20 +78674,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -78113,20 +78876,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -78315,20 +79078,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wireChildIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -78517,20 +79280,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wireChildIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -78719,20 +79482,20 @@
                     "Highlightable_Material"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wireChildIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -79145,20 +79908,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -79347,20 +80110,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wireChildIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -79549,20 +80312,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wireChildIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -79751,20 +80514,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wireChildIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -79953,20 +80716,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wireChildIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -80155,20 +80918,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wireChildIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -80357,20 +81120,20 @@
                     "Interactable_WireTether"
                 ],
                 "SerializedFields": {
-                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wireChildIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -80588,14 +81351,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -80653,14 +81416,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -80718,14 +81481,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -80783,14 +81546,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -80848,14 +81611,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -80913,14 +81676,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -80978,14 +81741,14 @@
                     "Misc_WireChild.wireChildIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
