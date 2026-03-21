@@ -1,0 +1,181 @@
+{
+    "fileFormatVersion": 1,
+    "uuid": "53bd60e1-c54f-447a-a029-7767480a148c",
+    "assetType": "Model",
+    "sourcePath": "Assets/Level1Assets\\Section 3 (M5)\\SmallBulb.fbx",
+    "modelImport": {
+        "scene": {
+            "scaleFactor": 0.009999999776482582,
+            "convertUnits": 1,
+            "importCameras": 0,
+            "importLights": 0,
+            "preserveHierarchy": 1
+        },
+        "mesh": {
+            "weldVertices": 0,
+            "keepQuads": 0,
+            "swapUVs": 0,
+            "generateLightmapUVs": 0,
+            "generateColliders": 0,
+            "generateMeshLODs": 0,
+            "smoothingAngle": 60.0,
+            "normalMode": 0,
+            "tangentMode": 0,
+            "indexFormat": 0,
+            "meshOptimizationMode": 1
+        },
+        "rig": {
+            "stripBones": 0,
+            "animationType": 0
+        },
+        "animation": {
+            "importAnimations": 1,
+            "importConstraints": 0,
+            "importAnimatedCustomProperties": 0,
+            "autoSplitClips": 1,
+            "importRootMotion": 0,
+            "lockRootPositionXZ": 0,
+            "lockRootRotationY": 0,
+            "sampleRate": 0.0
+        },
+        "material": {
+            "importMaterials": 1,
+            "tryReuseExistingMaterials": 1,
+            "creationMode": 0
+        }
+    },
+    "submeshes": [
+        {
+            "name": "RootNode/SmallBulb1/Holder_$AssimpFbx$_RotationPivot/Holder_$AssimpFbx$_RotationPivotInverse/Holder_$AssimpFbx$_ScalingPivot/Holder_$AssimpFbx$_ScalingPivotInverse/Holder/Holder",
+            "index": 0,
+            "pivotOffset": {
+                "x": 14.636062622070313,
+                "y": -19.896259307861328,
+                "z": -12.325260162353516
+            }
+        },
+        {
+            "name": "RootNode/SmallBulb1/Bulbb_$AssimpFbx$_RotationPivot/Bulbb_$AssimpFbx$_RotationPivotInverse/Bulbb_$AssimpFbx$_ScalingPivot/Bulbb_$AssimpFbx$_ScalingPivotInverse/Bulbb/Bulbb",
+            "index": 1,
+            "pivotOffset": {
+                "x": 14.63534927368164,
+                "y": -19.896259307861328,
+                "z": -12.224021911621094
+            }
+        }
+    ],
+    "generatedPrefab": {
+        "schemaVersion": 1,
+        "Entities": [
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "SmallBulb",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 1
+                },
+                "Hierarchy": {
+                    "luid": 1,
+                    "parentLuid": 0
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 1
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Holder",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 2,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 2
+                },
+                "Renderer": {
+                    "modelUUID": "53bd60e1-c54f-447a-a029-7767480a148c",
+                    "materialUUID": "51b0e6c1-57c6-48c6-9df7-2204032cbcac",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 0,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Bulbb",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 3,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 3
+                },
+                "Renderer": {
+                    "modelUUID": "53bd60e1-c54f-447a-a029-7767480a148c",
+                    "materialUUID": "51b0e6c1-57c6-48c6-9df7-2204032cbcac",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 1,
+                    "luid": 0
+                }
+            }
+        ]
+    }
+}
