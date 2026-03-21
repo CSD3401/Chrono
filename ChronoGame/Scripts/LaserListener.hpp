@@ -2,16 +2,12 @@
 #include "EngineAPI.hpp"
 
 /**
- * Interactable_Gate
+ * LaserListener
  *
- * Gate that smoothly moves along Z axis when player presses E nearby.
+ * Listens for puzzle solve events, then plays laser “open” anims and turns laser rigidbodies into triggers.
  *
- * Setup:
- * 1. Add this script to your gate entity
- * 2. Assign playerRef (drag Player entity)
- * 3. Set moveDistance (how far gate moves on Z axis)
- * 4. Set interactionDistance and tweenDuration
- * 5. Press E when near gate to open it
+ * Single puzzle: set `eventName` only (leave `eventName2` empty) — opens on first event.
+ * Two puzzles: set both `eventName` and `eventName2` — opens only after **both** have fired (any order).
  */
 class LaserListener : public IScript {
 public:
@@ -34,7 +30,8 @@ public:
         SCRIPT_GAMEOBJECT_REF(rightLaser6);
         SCRIPT_GAMEOBJECT_REF(rightLaser7);
         SCRIPT_GAMEOBJECT_REF(rightLaser8);
-        
+        SCRIPT_FIELD(eventName, String);
+        SCRIPT_FIELD(eventName2, String);
     }
 
     ~LaserListener() override = default;
@@ -46,9 +43,16 @@ public:
         if (!eventName.empty()) {
             Events::Listen(eventName.c_str(), [this](void* data) {
                 (void)data;
-                DisableLaser();
+                OnSolveEvent(0);
                 });
-            LOG_DEBUG("Laser Listener'{}'", eventName);
+            LOG_DEBUG("LaserListener listening: " + eventName);
+        }
+        if (!eventName2.empty()) {
+            Events::Listen(eventName2.c_str(), [this](void* data) {
+                (void)data;
+                OnSolveEvent(1);
+                });
+            LOG_DEBUG("LaserListener listening: " + eventName2);
         }
     }
 
@@ -73,9 +77,36 @@ public:
     void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
-    
+    std::string eventName = "PuzzleSolved1";
+    std::string eventName2;
+
+    bool m_laserDisabled = false;
+    bool m_solved0 = false;
+    bool m_solved1 = false;
+
+    void OnSolveEvent(int index) {
+        if (m_laserDisabled)
+            return;
+        if (index == 0)
+            m_solved0 = true;
+        else
+            m_solved1 = true;
+
+        const bool needTwo = !eventName2.empty();
+        if (!needTwo) {
+            DisableLaser();
+            return;
+        }
+        if (m_solved0 && m_solved1)
+            DisableLaser();
+    }
+
     void DisableLaser()
     {
+        if (m_laserDisabled)
+            return;
+        m_laserDisabled = true;
+
         Entity leftLaserEntity = leftLaser.GetEntity();
         Entity rightLaserEntity = rightLaser.GetEntity();
         //SetActive(false, leftLaserEntity);
@@ -122,7 +153,4 @@ private:
     GameObjectRef rightLaser6;
     GameObjectRef rightLaser7;
     GameObjectRef rightLaser8;
-
-    // Exposed fields
-    std::string eventName = "PuzzleSolved1"; // PuzzleSolved1 - for puzzle wire
 };
