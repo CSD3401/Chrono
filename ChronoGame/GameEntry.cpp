@@ -41,6 +41,7 @@
 #include "Scripts/LaserListener.hpp"
 #include "Scripts/IntersectionListerner.hpp"
 #include "Scripts/Misc_Teleporter.hpp"
+#include "Scripts/Misc_TransitionTeleporter.hpp"
 #include "Scripts/UIButton_SwitchSceneThree.hpp"
 #include "Scripts/UIButton_SwitchSceneTwo.hpp"
 #include "Scripts/UIButton_SwitchScene.hpp"
@@ -192,6 +193,9 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_Teleporter", []() -> NE::Scripting::IScript* {
             return new Misc_Teleporter();
+            });
+        registrar->RegisterScript("Misc_TransitionTeleporter", []() -> NE::Scripting::IScript* {
+            return new Misc_TransitionTeleporter();
             });
         registrar->RegisterScript("UIButton_SwitchSceneThree", []() -> NE::Scripting::IScript* {
             return new UIButton_SwitchSceneThree();

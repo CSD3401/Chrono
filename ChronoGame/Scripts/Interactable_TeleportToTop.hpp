@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <algorithm>
 #include <cmath>
 #include "EngineAPI.hpp"
@@ -14,7 +14,16 @@
 *
 * By default, this script auto-finds the player by looking for an entity with
 * Player_Controller. You can also assign the player manually via the inspector.
+*
+* Interaction:
+*  - Default: Player_Raycast + **left click** on the object (Interact()).
+*  - Optional: enable `useSpaceKeyInsteadOfMouse` — press **Space** when within
+*    `spaceKeyMaxDistance` (raycast click is ignored for this object).
 */
+
+#ifndef GLFW_KEY_SPACE
+#define GLFW_KEY_SPACE 32
+#endif
 
 class Interactable_TeleportToTop : public Interactable_ {
 public:
@@ -36,12 +45,22 @@ public:
         SCRIPT_FIELD(liftSpeedY, Float);
         SCRIPT_FIELD(useCharacterControllerMove, Bool);
         SCRIPT_FIELD(climbAudioName, String);
+        SCRIPT_FIELD(useSpaceKeyInsteadOfMouse, Bool);
+        SCRIPT_FIELD(spaceKeyMaxDistance, Float);
     }
 
     ~Interactable_TeleportToTop() override = default;
 
     // === Interactable_ ===
     void Interact() override
+    {
+        if (useSpaceKeyInsteadOfMouse)
+            return;
+
+        TryStartLift();
+    }
+
+    void TryStartLift()
     {
         // If we're already in the middle of a lift, ignore additional clicks.
         if (isLifting)
@@ -100,12 +119,33 @@ public:
         CacheAndDisablePlayerController();
     }
 
+    bool IsPlayerWithinInteractRange() const
+    {
+        if (!player.IsValid())
+            return false;
+        const Vec3 p = TF_GetPosition(player.GetEntity());
+        const Vec3 o = TF_GetPosition(GetEntity());
+        const float dx = p.x - o.x;
+        const float dy = p.y - o.y;
+        const float dz = p.z - o.z;
+        const float distSq = dx * dx + dy * dy + dz * dz;
+        const float r = spaceKeyMaxDistance > 0.0f ? spaceKeyMaxDistance : 3.0f;
+        return distSq <= r * r;
+    }
+
     // === Lifecycle ===
     void Awake() override {}
     void Initialize(Entity entity) override { (void)entity; }
     void Start() override {}
     void Update(double deltaTime) override
     {
+        if (useSpaceKeyInsteadOfMouse && !isLifting && Input::WasKeyPressed(GLFW_KEY_SPACE))
+        {
+            ResolvePlayerRef();
+            if (player.IsValid() && IsPlayerWithinInteractRange())
+                TryStartLift();
+        }
+
         if (!isLifting)
             return;
 
@@ -174,6 +214,9 @@ private:
     // === Inspector Fields (audio) ===
     std::string climbAudioName = "CLIMB_METAL";
 
+    bool useSpaceKeyInsteadOfMouse = false;
+    float spaceKeyMaxDistance = 3.0f;
+
     // === Runtime State ===
     bool isLifting;
     float targetY;
@@ -194,7 +237,7 @@ private:
             return;
 
         cachedPlayerControllerWasEnabled = cachedPlayerController->IsEnabled();
-        cachedPlayerController->Reset();
+        cachedPlayerController->ResetMovementOnly();
         cachedPlayerController->SetEnabled(false);
     }
 
@@ -202,7 +245,7 @@ private:
     {
         if (cachedPlayerController)
         {
-            cachedPlayerController->Reset();
+            cachedPlayerController->ResetMovementOnly();
             cachedPlayerController->SetEnabled(cachedPlayerControllerWasEnabled);
         }
 
