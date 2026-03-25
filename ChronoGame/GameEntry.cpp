@@ -74,7 +74,7 @@
 #include "Scripts/UIButton_ResetVolumes.hpp"
 #include "Scripts/SplashScreen_Controller.hpp"
 #include "Scripts/SplashScreen_ReturnToMainMenu.hpp"
-
+#include "Scripts/Misc_WireBlinking.hpp"
 
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
@@ -302,5 +302,8 @@ extern "C" {
         registrar->RegisterScript("SplashScreen_ReturnToMainMenu", []() -> NE::Scripting::IScript* {
             return new SplashScreen_ReturnToMainMenu();
             });
-        }
+        registrar->RegisterScript("Misc_WireBlinking", []() -> NE::Scripting::IScript* {
+            return new Misc_WireBlinking();
+            });
+    }
 }
