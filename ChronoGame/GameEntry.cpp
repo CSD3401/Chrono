@@ -75,7 +75,7 @@
 #include "Scripts/SplashScreen_Controller.hpp"
 #include "Scripts/SplashScreen_ReturnToMainMenu.hpp"
 #include "Scripts/Misc_WireBlinking.hpp"
-
+#include "Scripts/Misc_ForcePastOnCollision.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -304,6 +304,9 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_WireBlinking", []() -> NE::Scripting::IScript* {
             return new Misc_WireBlinking();
+            });
+        registrar->RegisterScript("Misc_ForcePastOnCollision", []() -> NE::Scripting::IScript* {
+            return new Misc_ForcePastOnCollision();
             });
     }
 }
