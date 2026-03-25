@@ -1,6 +1,8 @@
 #pragma once
 #include "EngineAPI.hpp"
 #include "Interactable_.hpp"
+#include "Player_Controller.hpp"
+#include "Player_Raycast.hpp"
 
 #define GLFW_MOUSE_BUTTON_LEFT 0
 
@@ -14,6 +16,11 @@ public:
         SCRIPT_GAMEOBJECT_REF(objectToActivate);
     }
 
+    void Start() override {
+        ResolvePlayerController();
+        ResolvePlayerRaycast();
+    }
+
     const char* GetTypeName() const override { return "UI_Notes"; }
 
     // Open with raycast interaction only
@@ -25,6 +32,7 @@ public:
         Entity target = objectToActivate.GetEntity();
 
         if (!noteIsOpen) {
+            CacheAndDisablePlayerInput();
             noteIsOpen = true;
             SetActive(true, target);
             waitingForMouseReleaseAfterOpen = true;
@@ -56,13 +64,97 @@ public:
         if (Input::WasMousePressed(GLFW_MOUSE_BUTTON_LEFT)) {
             noteIsOpen = false;
             SetActive(false, target);
+            RestorePlayerInput();
             LOG_DEBUG("close note!");
             PlayAudio("event:/COLOR_CLICK");
         }
+    }
+
+    void OnDisable() override {
+        if (!noteIsOpen)
+            return;
+
+        noteIsOpen = false;
+        waitingForMouseReleaseAfterOpen = false;
+
+        if (objectToActivate)
+            SetActive(false, objectToActivate.GetEntity());
+
+        RestorePlayerInput();
+    }
+
+    void OnDestroy() override {
+        RestorePlayerInput();
     }
 
 private:
     GameObjectRef objectToActivate;
     bool noteIsOpen = false;
     bool waitingForMouseReleaseAfterOpen = false;
+
+    Player_Controller* cachedPlayerController = nullptr;
+    bool cachedPlayerControllerWasEnabled = true;
+
+    Player_Raycast* cachedPlayerRaycast = nullptr;
+    bool cachedPlayerRaycastWasEnabled = true;
+
+    void ResolvePlayerController() {
+        if (cachedPlayerController)
+            return;
+
+        auto players = GameObject::FindObjectsOfType<Player_Controller>();
+        if (players.size() == 0) {
+            LOG_WARNING("UI_Notes: could not auto-find Player_Controller.");
+            return;
+        }
+        if (players.size() > 1) {
+            LOG_WARNING("UI_Notes: multiple Player_Controller found; using the first one.");
+        }
+
+        cachedPlayerController = players.begin()->GetComponent<Player_Controller>();
+    }
+
+    void ResolvePlayerRaycast() {
+        if (cachedPlayerRaycast)
+            return;
+
+        auto raycasts = GameObject::FindObjectsOfType<Player_Raycast>();
+        if (raycasts.size() == 0) {
+            LOG_WARNING("UI_Notes: could not auto-find Player_Raycast.");
+            return;
+        }
+        if (raycasts.size() > 1) {
+            LOG_WARNING("UI_Notes: multiple Player_Raycast found; using the first one.");
+        }
+
+        cachedPlayerRaycast = raycasts.begin()->GetComponent<Player_Raycast>();
+    }
+
+    void CacheAndDisablePlayerInput() {
+        ResolvePlayerController();
+        ResolvePlayerRaycast();
+
+        if (cachedPlayerController) {
+            cachedPlayerControllerWasEnabled = cachedPlayerController->IsEnabled();
+            // Keep current look rotation so the camera does not snap when the note closes.
+            cachedPlayerController->ResetMovementOnly();
+            cachedPlayerController->SetEnabled(false);
+        }
+
+        if (cachedPlayerRaycast) {
+            cachedPlayerRaycastWasEnabled = cachedPlayerRaycast->IsEnabled();
+            cachedPlayerRaycast->SetEnabled(false);
+        }
+    }
+
+    void RestorePlayerInput() {
+        if (cachedPlayerController) {
+            cachedPlayerController->ResetMovementOnly();
+            cachedPlayerController->SetEnabled(cachedPlayerControllerWasEnabled);
+        }
+
+        if (cachedPlayerRaycast) {
+            cachedPlayerRaycast->SetEnabled(cachedPlayerRaycastWasEnabled);
+        }
+    }
 };
