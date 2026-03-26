@@ -6,8 +6,7 @@
  *
  * Listens for puzzle solve events, then plays laser “open” anims and turns laser rigidbodies into triggers.
  *
- * Single puzzle: set `eventName` only (leave `eventName2` empty) — opens on first event.
- * Two puzzles: set both `eventName` and `eventName2` — opens only after **both** have fired (any order).
+ * Opens when `eventName` is received.
  */
 class LaserListener : public IScript {
 public:
@@ -31,7 +30,6 @@ public:
         SCRIPT_GAMEOBJECT_REF(rightLaser7);
         SCRIPT_GAMEOBJECT_REF(rightLaser8);
         SCRIPT_FIELD(eventName, String);
-        SCRIPT_FIELD(eventName2, String);
     }
 
     ~LaserListener() override = default;
@@ -43,16 +41,9 @@ public:
         if (!eventName.empty()) {
             Events::Listen(eventName.c_str(), [this](void* data) {
                 (void)data;
-                OnSolveEvent(0);
+                OnSolveEvent();
                 });
             LOG_DEBUG("LaserListener listening: " + eventName);
-        }
-        if (!eventName2.empty()) {
-            Events::Listen(eventName2.c_str(), [this](void* data) {
-                (void)data;
-                OnSolveEvent(1);
-                });
-            LOG_DEBUG("LaserListener listening: " + eventName2);
         }
     }
 
@@ -78,27 +69,13 @@ public:
 
 private:
     std::string eventName = "PuzzleSolved1";
-    std::string eventName2;
 
     bool m_laserDisabled = false;
-    bool m_solved0 = false;
-    bool m_solved1 = false;
 
-    void OnSolveEvent(int index) {
+    void OnSolveEvent() {
         if (m_laserDisabled)
             return;
-        if (index == 0)
-            m_solved0 = true;
-        else
-            m_solved1 = true;
-
-        const bool needTwo = !eventName2.empty();
-        if (!needTwo) {
-            DisableLaser();
-            return;
-        }
-        if (m_solved0 && m_solved1)
-            DisableLaser();
+        DisableLaser();
     }
 
     void DisableLaser()

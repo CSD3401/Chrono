@@ -305,5 +305,5 @@ extern "C" {
         registrar->RegisterScript("Misc_WireBlinking", []() -> NE::Scripting::IScript* {
             return new Misc_WireBlinking();
             });
-        }
+    }
 }
