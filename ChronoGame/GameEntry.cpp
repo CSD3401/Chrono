@@ -310,7 +310,6 @@ extern "C" {
         registrar->RegisterScript("TaskCheckpoint", []() -> NE::Scripting::IScript* {
             return new TaskCheckpoint();
             });
-        }
         registrar->RegisterScript("Misc_WireBlinking", []() -> NE::Scripting::IScript* {
             return new Misc_WireBlinking();
             });

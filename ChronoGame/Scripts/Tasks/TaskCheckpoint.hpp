@@ -4,15 +4,14 @@
 class TaskCheckpoint : public IScript {
 public:
     TaskCheckpoint() {
+        SCRIPT_GAMEOBJECT_REF(playerRef);
     }
 
     ~TaskCheckpoint() override = default;
 
     void Awake() override {}
-    void Initialize(Entity entity) override {
-    }
-    void Start() override {
-    }
+    void Initialize(Entity entity) override { (void)entity; }
+    void Start() override {}
 
     void Update(double /*dt*/) override {
     }
@@ -28,12 +27,18 @@ public:
     void OnCollisionExit(Entity other) override { (void)other; }
     void OnCollisionStay(Entity other) override { (void)other; }
     void OnTriggerEnter(Entity other) override {
-        Events::Send("CheckpointReached");
+        if (isTriggered || !playerRef.IsValid() || other != playerRef.GetEntity()) {
+            return;
+        }
+
+        isTriggered = true;
+        Events::Send("TaskCheckpointCompleted");
     }
 
     void OnTriggerExit(Entity other) override { (void)other; }
     void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
-	bool isTriggered = false;
+    GameObjectRef playerRef;
+    bool isTriggered = false;
 };
