@@ -62,6 +62,7 @@
 #include "Scripts/UI_BGMVolumeButtons.hpp"
 #include "Scripts/UI_SFXVolumeButtons.hpp"
 #include "Scripts/UI_AmbienceVolumeButtons.hpp"
+#include "Scripts/UI_HoverTextColor.hpp"
 #include "Scripts/Interactable_MirrorTile.hpp"
 #include "Scripts/Misc_StopAnimationOnEvent.hpp"
 #include "Scripts/Misc_SolvedMaterialOverride.hpp"
@@ -265,6 +266,9 @@ extern "C" {
             });
         registrar->RegisterScript("UI_AmbienceVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_AmbienceVolumeButtons();
+            });
+        registrar->RegisterScript("UI_HoverTextColor", []() -> NE::Scripting::IScript* {
+            return new UI_HoverTextColor();
             });
         registrar->RegisterScript("Interactable_MirrorTile", []() -> NE::Scripting::IScript* {
             return new Interactable_MirrorTile();
