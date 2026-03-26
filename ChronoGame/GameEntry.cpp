@@ -76,7 +76,7 @@
 #include "Scripts/SplashScreen_ReturnToMainMenu.hpp"
 #include "Scripts/Tasks/TaskManager.hpp"
 #include "Scripts/Tasks/TaskCheckpoint.hpp"
-
+#include "Scripts/Misc_WireBlinking.hpp"
 
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
@@ -311,4 +311,8 @@ extern "C" {
             return new TaskCheckpoint();
             });
         }
+        registrar->RegisterScript("Misc_WireBlinking", []() -> NE::Scripting::IScript* {
+            return new Misc_WireBlinking();
+            });
+    }
 }
