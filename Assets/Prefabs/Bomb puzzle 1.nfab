@@ -1,0 +1,458 @@
+{
+    "Entities": [
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Bomb puzzle 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613989846941700
+            },
+            "Hierarchy": {
+                "luid": 7526194146844278787,
+                "parentLuid": 7526194146843820034
+            },
+            "PrefabInstance": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6"
+            },
+            "PrefabLink": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6",
+                "localID": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": -125.4113998413086,
+                    "y": 0.7597005367279053,
+                    "z": 18.1700382232666
+                },
+                "Scale": {
+                    "x": 2.0,
+                    "y": 2.0,
+                    "z": 2.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 180.0,
+                    "z": -0.0
+                },
+                "luid": 8390885275299414021
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 1,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.30000001192092896,
+                            "y": 0.30000001192092896,
+                            "z": 0.30000001192092896
+                        }
+                    }
+                },
+                "luid": 7165061751781457921
+            },
+            "Rigidbody": {
+                "Mass": 1.0,
+                "Linear Damping": 0.0,
+                "Angular Damping": 0.05000000074505806,
+                "Use Gravity": 0,
+                "Is Kinematic": 0,
+                "freezeRotX": 0,
+                "freezeRotY": 0,
+                "freezeRotZ": 0,
+                "freezePosX": 0,
+                "freezePosY": 0,
+                "freezePosZ": 0,
+                "luid": 8242266487653138434
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Puzzle_Bomb"
+                ],
+                "SerializedFields": {
+                    "Puzzle_Bomb.outerRef": "7308613989846941713",
+                    "Puzzle_Bomb.pair1_Letter": "0",
+                    "Puzzle_Bomb.pair1_Number": "3",
+                    "Puzzle_Bomb.pair2_Letter": "2",
+                    "Puzzle_Bomb.solveMessage": "bomb1solved",
+                    "Puzzle_Bomb.rotateAudioName": "BOMB_ROTATE",
+                    "Puzzle_Bomb.pair2_Number": "5",
+                    "Puzzle_Bomb.pair3_Letter": "4",
+                    "Puzzle_Bomb.pair3_Number": "7",
+                    "Puzzle_Bomb.interactAudioName": "BOMB_INTERACT",
+                    "Puzzle_Bomb.tickAudioName": "BOMB_TICK",
+                    "Puzzle_Bomb.fuseAudioName": "BOMB_FUSE"
+                },
+                "EntityReferenceFields": [
+                    "outerRef"
+                ],
+                "luid": 7958821186100854784
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Small bomb",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 1
+            },
+            "Hierarchy": {
+                "luid": 7308614065678974979,
+                "parentLuid": 7526194146844278787
+            },
+            "PrefabLink": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6",
+                "localID": 1
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.4999999701976776,
+                    "y": 0.4999999701976776,
+                    "z": 0.4999999701976776
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": -90.0,
+                    "z": 0.0
+                },
+                "luid": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "SmallBomb",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614065678974982
+            },
+            "Hierarchy": {
+                "luid": 7308614065678974980,
+                "parentLuid": 7308614065678974979
+            },
+            "PrefabLink": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6",
+                "localID": 2
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.010645993053913116,
+                    "y": 0.22763149440288544,
+                    "z": 0.005261160433292389
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 2
+            },
+            "Renderer": {
+                "modelUUID": "6464da95-a8cf-4f54-a91f-79f1aa8e152c",
+                "materialUUID": "999da723-a372-4de3-990e-aac165ff610c",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829513381642245
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "RingHolder",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614065677205504
+            },
+            "Hierarchy": {
+                "luid": 7526194222674542594,
+                "parentLuid": 7526194146844278787
+            },
+            "PrefabLink": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6",
+                "localID": 3
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.02632904052734375,
+                    "y": 0.104739248752594,
+                    "z": 0.032006263732910156
+                },
+                "Scale": {
+                    "x": 0.550000011920929,
+                    "y": 0.550000011920929,
+                    "z": 0.550000011920929
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 8.579218047088943e-8,
+                    "z": 0.0
+                },
+                "luid": 8390885351129677825
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Middle_Ring",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613989846941703
+            },
+            "Hierarchy": {
+                "luid": 7526194146844278790,
+                "parentLuid": 7526194222674542594
+            },
+            "PrefabLink": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6",
+                "localID": 4
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.9999999403953552,
+                    "y": 0.9999999403953552,
+                    "z": 0.9999999403953552
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 8.576511589808433e-8,
+                    "z": 0.0
+                },
+                "luid": 8390885275299414024
+            },
+            "Renderer": {
+                "modelUUID": "92b82306-01e0-4c43-b812-5566663ecfbf",
+                "materialUUID": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829437549608969
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821186048557066
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Inner_Ring",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613989846941708
+            },
+            "Hierarchy": {
+                "luid": 7526194146844278795,
+                "parentLuid": 7526194222674542594
+            },
+            "PrefabLink": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6",
+                "localID": 5
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 0.9999999403953552,
+                    "y": 0.9999999403953552,
+                    "z": 0.9999999403953552
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 8.576511589808433e-8,
+                    "z": 0.0
+                },
+                "luid": 8390885275299414029
+            },
+            "Renderer": {
+                "modelUUID": "92b82306-01e0-4c43-b812-5566663ecfbf",
+                "materialUUID": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 1,
+                "luid": 8242829437549608974
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821186048557071
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Outer_Ring",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613989846941713
+            },
+            "Hierarchy": {
+                "luid": 7526194146844278800,
+                "parentLuid": 7526194222674542594
+            },
+            "PrefabLink": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6",
+                "localID": 6
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": -2.384185791015625e-7,
+                    "z": -0.014999999664723873
+                },
+                "Scale": {
+                    "x": 0.9999999403953552,
+                    "y": 0.9999999403953552,
+                    "z": 0.9999999403953552
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "luid": 8390885275299414034
+            },
+            "Renderer": {
+                "modelUUID": "92b82306-01e0-4c43-b812-5566663ecfbf",
+                "materialUUID": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 2,
+                "luid": 8242829437549608979
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821186048557076
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "Interactable1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308613989942755329
+            },
+            "Hierarchy": {
+                "luid": 7526194146940092416,
+                "parentLuid": 7526194146844278787
+            },
+            "PrefabLink": {
+                "prefabUUID": "af6de2c8-280c-4e8a-884f-46e3dc9387a6",
+                "localID": 7
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.4393310546875,
+                    "y": -0.08827120065689087,
+                    "z": -0.03466320037841797
+                },
+                "Scale": {
+                    "x": 1.5,
+                    "y": 1.25,
+                    "z": 1.25
+                },
+                "Rotation": {
+                    "x": 90.0,
+                    "y": 0.0,
+                    "z": 90.0
+                },
+                "luid": 8390885275395227650
+            },
+            "Renderer": {
+                "modelUUID": "b792f053-b9eb-4664-b48c-b4e1de27c381",
+                "materialUUID": "neunlitmat",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829437645422595
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.12999999523162842,
+                            "y": 0.10000000149011612,
+                            "z": 0.10000000149011612
+                        }
+                    }
+                },
+                "luid": 7165061751820320772
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_Notes",
+                    "Highlightable_Material"
+                ],
+                "SerializedFields": {
+                    "UI_Notes.objectToActivate": "7308613989945966599"
+                },
+                "EntityReferenceFields": [
+                    "objectToActivate"
+                ],
+                "luid": 7958821186144370693
+            }
+        }
+    ]
+}
