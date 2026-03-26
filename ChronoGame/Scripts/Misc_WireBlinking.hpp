@@ -95,7 +95,8 @@ public:
         }
         else
         {
-            TurnOffBlinking();
+            if (side == wSide && wireIndex != wIndex)
+                TurnOffBlinking();
         }
     }
 
@@ -109,7 +110,7 @@ public:
 
     void SolvedListener(void* data)
     {
-        buttonSolved = true;
+
 
         std::string indexData = *reinterpret_cast<std::string*>(data);
 
@@ -119,6 +120,7 @@ public:
         int side = correctSide ? 1 : 0;
         if (side == wSide && wireIndex == wIndex)
         {
+            buttonSolved = true;
             TurnOffBlinking();
         }
     }

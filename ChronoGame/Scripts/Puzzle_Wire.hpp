@@ -243,6 +243,9 @@ public:
             Events::Send(buttonSolvedMessage.c_str(), &buttonData1);
             Events::Send(buttonSolvedMessage.c_str(), &buttonData2);
 
+            LOG_DEBUG(("SOLVED BUTTON DATA LEFT: " + buttonData2).c_str());
+            LOG_DEBUG(("SOLVED BUTTON DATA RIGHT: " + buttonData1).c_str());
+
             // then reset
             currentSelectedLeftIndex = 9999;
             currentSelectedRightIndex = 9999;
@@ -255,8 +258,8 @@ public:
             }
         }
         // fail then reset pair
-        currentSelectedLeftIndex = 9999;
-        currentSelectedRightIndex = 9999;
+        //currentSelectedLeftIndex = 9999;
+        //currentSelectedRightIndex = 9999;
         return false;
     }
 
