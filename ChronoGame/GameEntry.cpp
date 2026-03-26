@@ -74,6 +74,8 @@
 #include "Scripts/UIButton_ResetVolumes.hpp"
 #include "Scripts/SplashScreen_Controller.hpp"
 #include "Scripts/SplashScreen_ReturnToMainMenu.hpp"
+#include "Scripts/Tasks/TaskManager.hpp"
+#include "Scripts/Tasks/TaskCheckpoint.hpp"
 
 
 
@@ -301,6 +303,12 @@ extern "C" {
             });
         registrar->RegisterScript("SplashScreen_ReturnToMainMenu", []() -> NE::Scripting::IScript* {
             return new SplashScreen_ReturnToMainMenu();
+            });
+        registrar->RegisterScript("TaskManager", []() -> NE::Scripting::IScript* {
+            return new TaskManager();
+            });
+        registrar->RegisterScript("TaskCheckpoint", []() -> NE::Scripting::IScript* {
+            return new TaskCheckpoint();
             });
         }
 }
