@@ -5,19 +5,18 @@
 /*
 * UI_MainMenu:
 * - ensures the cursor is visible and unlocked in the main menu
-* - optionally fades in a target UICanvas on scene start
+* - fades OUT a black overlay canvas on scene start
 *
 * Setup:
 * - Attach to any entity in MainMenu scene
-* - Optional: assign fadeCanvas to a UICanvas entity you want to fade
-* - If fadeCanvas is not assigned, script tries to fade its own entity if it has UICanvas
+* - Assign one UICanvas entity in blackOverlayCanvas (full-screen black)
 */
 class UI_MainMenu : public IScript {
 public:
     UI_MainMenu() {
-        RegisterGameObjectRefVectorField("fadeCanvases", &fadeCanvases);
-        SCRIPT_FIELD(enableFadeIn, Bool);
-        SCRIPT_FIELD(fadeInDuration, Float);
+        SCRIPT_GAMEOBJECT_REF(blackOverlayCanvas);
+        SCRIPT_FIELD(enableFadeOut, Bool);
+        SCRIPT_FIELD(fadeOutDuration, Float);
     }
     ~UI_MainMenu() override = default;
 
@@ -28,27 +27,43 @@ public:
         Input::SetMouseLocked(false);
         NE::Scripting::SetMouseVisible(true);
 
-        if (!enableFadeIn) return;
+        m_phase = Phase::DONE;
+        m_timer = 0.0f;
 
-        m_targetCanvasEntities = ResolveTargetCanvases();
-        if (m_targetCanvasEntities.empty()) return;
+        if (!enableFadeOut) return;
 
-        if (fadeInDuration <= 0.0f) fadeInDuration = 0.01f;
-        m_fading = true;
-        m_fadeTimer = 0.0f;
-        SetAllTargetCanvasAlpha(0.0f);
+        m_overlayEntity = ResolveOverlayCanvas();
+        if (m_overlayEntity == 0) return;
+        if (fadeOutDuration <= 0.0f) fadeOutDuration = 2.0f;
+
+        // Start from full black.
+        SetActive(true, m_overlayEntity);
+        auto& canvas = NE::ECS::Command::GetUICanvas(m_overlayEntity);
+        canvas.isActive = true;
+        NE::ECS::Command::SetUICanvasAlpha(m_overlayEntity, 1.0f);
+
+        m_timer = 0.0f;
+        m_phase = Phase::FADE_OUT;
     }
 
     void Update(double deltaTime) override {
-        if (!m_fading || m_targetCanvasEntities.empty()) return;
+        if (m_phase == Phase::DONE || m_overlayEntity == 0) return;
 
-        m_fadeTimer += static_cast<float>(deltaTime);
-        float t = m_fadeTimer / fadeInDuration;
-        if (t >= 1.0f) {
-            t = 1.0f;
-            m_fading = false;
+        if (m_phase == Phase::FADE_OUT) {
+            m_timer += static_cast<float>(deltaTime);
+            const float t = (fadeOutDuration > 0.0f)
+                ? std::min(1.0f, m_timer / fadeOutDuration)
+                : 1.0f;
+            const float alpha = 1.0f - t;
+
+            NE::ECS::Command::SetUICanvasAlpha(m_overlayEntity, alpha);
+            if (t >= 1.0f - 1e-4f) {
+                NE::ECS::Command::SetUICanvasAlpha(m_overlayEntity, 0.0f);
+                // Hide overlay after fade so it no longer blocks raycasts.
+                SetActive(false, m_overlayEntity);
+                m_phase = Phase::DONE;
+            }
         }
-        SetAllTargetCanvasAlpha(t);
     }
     void OnDestroy() override {}
     void OnEnable() override {}
@@ -64,36 +79,30 @@ public:
     void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
-    std::vector<GameObjectRef> fadeCanvases;
-    bool enableFadeIn = true;
-    float fadeInDuration = 2.0f;
+    GameObjectRef blackOverlayCanvas;
+    bool enableFadeOut = true;
+    float fadeOutDuration = 2.0f;
 
-    std::vector<Entity> m_targetCanvasEntities;
-    bool m_fading = false;
-    float m_fadeTimer = 0.0f;
+    Entity m_overlayEntity = 0;
+    enum class Phase { FADE_OUT, DONE };
+    Phase m_phase = Phase::DONE;
+    float m_timer = 0.0f;
 
-    std::vector<Entity> ResolveTargetCanvases() const {
-        std::vector<Entity> resolved;
-
-        for (const auto& ref : fadeCanvases) {
-            if (!ref.IsValid()) continue;
-            const Entity e = ref.GetEntity();
-            if (NE::ECS::Query::HasUICanvas(e)) {
-                resolved.push_back(e);
-            }
-            else {
-                LOG_WARNING("UI_MainMenu: fadeCanvases contains entity without UICanvas");
-            }
+    Entity ResolveOverlayCanvas() const {
+        if (!blackOverlayCanvas.IsValid()) {
+            LOG_WARNING("UI_MainMenu: blackOverlayCanvas is not assigned");
+            return 0;
         }
-        if (resolved.empty()) {
-            LOG_WARNING("UI_MainMenu: fadeCanvases is empty or invalid");
+        const Entity e = blackOverlayCanvas.GetEntity();
+        if (e == 0) {
+            LOG_WARNING("UI_MainMenu: blackOverlayCanvas reference is unresolved");
+            return 0;
         }
-        return resolved;
+        if (!NE::ECS::Query::HasUICanvas(e)) {
+            LOG_WARNING("UI_MainMenu: blackOverlayCanvas has no UICanvas");
+            return 0;
+        }
+        return e;
     }
 
-    void SetAllTargetCanvasAlpha(float alpha) const {
-        for (Entity e : m_targetCanvasEntities) {
-            NE::ECS::Command::SetUICanvasAlpha(e, alpha);
-        }
-    }
 };
