@@ -255,8 +255,8 @@ public:
             }
         }
         // fail then reset pair
-        currentSelectedLeftIndex = 9999;
-        currentSelectedRightIndex = 9999;
+        //currentSelectedLeftIndex = 9999;
+        //currentSelectedRightIndex = 9999;
         return false;
     }
 
