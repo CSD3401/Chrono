@@ -86,7 +86,7 @@ public:
         std::string indexData = *reinterpret_cast<std::string*>(data);
         int wSide = std::stoi(indexData.substr(0, 1));
         int wIndex = std::stoi(indexData.substr(1));
-        
+
         int side = correctSide ? 1 : 0;
 
         if (side == wSide && wireIndex == wIndex)
@@ -95,7 +95,10 @@ public:
         }
         else
         {
-            TurnOffBlinking();
+            if (side == wSide && wireIndex != wIndex)
+            {
+                TurnOffBlinking();
+            }
         }
     }
 
@@ -109,7 +112,6 @@ public:
 
     void SolvedListener(void* data)
     {
-        buttonSolved = true;
 
         std::string indexData = *reinterpret_cast<std::string*>(data);
 
@@ -119,6 +121,7 @@ public:
         int side = correctSide ? 1 : 0;
         if (side == wSide && wireIndex == wIndex)
         {
+            buttonSolved = true;
             TurnOffBlinking();
         }
     }

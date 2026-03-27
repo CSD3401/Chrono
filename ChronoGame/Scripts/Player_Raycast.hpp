@@ -4,6 +4,7 @@
 #include "Interactable_.hpp"
 #include "Player_Controller.hpp"
 #include "Misc_Grabber.hpp"
+#include "Misc_ObjectUI.hpp"
 
 #define GLFW_MOUSE_BUTTON_LEFT 0
 /*
@@ -112,6 +113,7 @@ public:
                 }
                 Highlightable_* h = go.GetComponent<Highlightable_>();
                 Interactable_* i = go.GetComponent<Interactable_>();
+                Misc_ObjectUI* u = go.GetComponent<Misc_ObjectUI>();
 
                 // Only proceed if Highlightable component exists
                 if (h)
@@ -143,10 +145,30 @@ public:
                 {
                     storedInteractable = nullptr;
                 }
+
+                if (u != storedObjectUI)
+                {
+                    if (storedObjectUI != nullptr)
+                    {
+                        storedObjectUI->ClearText();
+                    }
+
+                    storedObjectUI = u;
+
+                    if (storedObjectUI != nullptr)
+                    {
+                        storedObjectUI->SetUIText();
+                    }
+                }
             }
             else // Raycast hit nothing
             {
                 NoInteract();
+                if (storedObjectUI != nullptr)
+                {
+                    storedObjectUI->ClearText();
+                    storedObjectUI = nullptr;
+                }
             }
         }
 
@@ -182,4 +204,5 @@ private:
     float timer;
     Highlightable_* storedHighlightable;
     Interactable_* storedInteractable;
+    Misc_ObjectUI* storedObjectUI;
 };
