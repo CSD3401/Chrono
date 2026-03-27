@@ -61,6 +61,7 @@ public:
         isPast = false;
         fillValue = 1.0f;
         m_pendingDepletion = false;
+        m_lockPastForever = false;
 
         ApplyOverlayState();
         ApplyClockFill();
@@ -84,36 +85,40 @@ public:
             LOG_INFO("Watch_Controller: Depletion applied, back to PRESENT");
         }
 
-        // Toggle on Q press
-        if (Input::WasKeyPressed('Q')) {
-            isPast = !isPast;
-            ApplyOverlayState();
+        // When locked, the player is forced to remain in the past forever.
+        // Ignore manual toggles and skip drain/refill entirely.
+        if (!m_lockPastForever) {
+            // Toggle on Q press
+            if (Input::WasKeyPressed('Q')) {
+                isPast = !isPast;
+                ApplyOverlayState();
 
+                if (isPast) {
+                    DeferEvent("ChronoActivated");
+                    PlayAudio("event:/SWITCH_TO_PAST");
+                    LOG_INFO("Watch_Controller: Switched to PAST");
+                }
+                else {
+                    DeferEvent("ChronoDeactivated");
+                    PlayAudio("event:/SWITCH_TO_PRESENT");
+                    LOG_INFO("Watch_Controller: Switched to PRESENT");
+                }
+            }
+
+            // Drain in past, refill in present
             if (isPast) {
-                DeferEvent("ChronoActivated");
-                PlayAudio("event:/SWITCH_TO_PAST");
-                LOG_INFO("Watch_Controller: Switched to PAST");
+                fillValue -= (1.0f / pastDuration) * dt;
+                if (fillValue < 0.0f) {
+                    fillValue = 0.0f;
+                    m_pendingDepletion = true;
+                    LOG_INFO("Watch_Controller: Fill depleted, deferring state change to next frame");
+                }
             }
             else {
-                DeferEvent("ChronoDeactivated");
-                PlayAudio("event:/SWITCH_TO_PRESENT");
-                LOG_INFO("Watch_Controller: Switched to PRESENT");
+                fillValue += (1.0f / refillDuration) * dt;
+                if (fillValue > 1.0f)
+                    fillValue = 1.0f;
             }
-        }
-
-        // Drain in past, refill in present
-        if (isPast) {
-            fillValue -= (1.0f / pastDuration) * dt;
-            if (fillValue < 0.0f) {
-                fillValue = 0.0f;
-                m_pendingDepletion = true;
-                LOG_INFO("Watch_Controller: Fill depleted, deferring state change to next frame");
-            }
-        }
-        else {
-            fillValue += (1.0f / refillDuration) * dt;
-            if (fillValue > 1.0f)
-                fillValue = 1.0f;
         }
 
         ApplyClockFill();
@@ -132,6 +137,38 @@ public:
     void OnTriggerExit(Entity other) override { (void)other; }
     void OnTriggerStay(Entity other) override { (void)other; }
 
+    bool IsPastActive() const { return isPast; }
+    bool IsPastLockedForever() const { return m_lockPastForever; }
+
+    void ForcePastForever(bool refillClockToFull = true) {
+        const bool wasPast = isPast;
+
+        m_lockPastForever = true;
+        m_pendingDepletion = false;
+        isPast = true;
+
+        if (refillClockToFull) {
+            fillValue = 1.0f;
+        }
+
+        ApplyOverlayState();
+        ApplyClockFill();
+        UpdateChronoText();
+
+        if (!wasPast) {
+            DeferEvent("ChronoActivated");
+            PlayAudio("event:/SWITCH_TO_PAST");
+        }
+
+        LOG_INFO("Watch_Controller: Time locked to PAST forever");
+    }
+
+    void ClearForcedPastLock() {
+        m_lockPastForever = false;
+        m_pendingDepletion = false;
+        LOG_INFO("Watch_Controller: Permanent past lock cleared");
+    }
+
 private:
     Entity m_presentOverlay = 0;
     Entity m_pastOverlay = 0;
@@ -140,6 +177,7 @@ private:
     bool isPast = false;
     float fillValue = 1.0f;
     bool m_pendingDepletion = false;
+    bool m_lockPastForever = false;
 
     // Inspector fields
     float pastDuration = 10.0f;
@@ -159,6 +197,11 @@ private:
 
     void UpdateChronoText() {
         if (m_chronoText == 0) return;
+
+        if (m_lockPastForever) {
+            NE::Scripting::SetUIText(m_chronoText, "LOCKED");
+            return;
+        }
 
         // Remaining seconds based on fill and pastDuration
         float remainingSeconds = fillValue * pastDuration;
