@@ -33438,10 +33438,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "leftLaser8",
                     "rightLaser7",
-                    "rightLaser8",
+                    "leftLaser8",
                     "leftLaser7",
+                    "rightLaser8",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -33514,10 +33514,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "leftLaser7",
                     "rightLaser8",
-                    "leftLaser8",
+                    "leftLaser7",
                     "rightLaser7",
+                    "leftLaser8",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -59686,6 +59686,78 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Small bomb",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 1
+            },
+            "Hierarchy": {
+                "luid": 7308614070209216512,
+                "parentLuid": 7526194142030921730
+            },
+            "Transform": {
+                "Position": {
+                    "x": 2.283590793609619,
+                    "y": 0.0,
+                    "z": -3.5911808013916016
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "SmallBomb",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614070209216515
+            },
+            "Hierarchy": {
+                "luid": 7308614070209216513,
+                "parentLuid": 7308614070209216512
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.01064610481262207,
+                    "y": 0.22763149440288544,
+                    "z": 3.3415908813476563
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 2
+            },
+            "Renderer": {
+                "modelUUID": "2b4e4f9c-2c68-4fb6-9b9b-af8b5fc84e5c",
+                "materialUUID": "f009d216-be2e-4e0e-9728-836d9c5f7d6f",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 0,
+                "luid": 8242829517911883778
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "ALL Section 4",
                 "isActive": 1,
                 "isStatic": 0,
@@ -73791,9 +73863,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 20.499000549316406,
+                    "x": 19.418655395507813,
                     "y": 0.9536783695220947,
-                    "z": -7.2829999923706055
+                    "z": 0.3416938781738281
                 },
                 "Scale": {
                     "x": 1.0,
@@ -73806,14 +73878,6 @@
                     "z": -0.0
                 },
                 "luid": 8390885355610570754
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "nelitmat",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829517890715648
             },
             "Collider": {
                 "type": 0,
