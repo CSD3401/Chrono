@@ -77,6 +77,8 @@
 #include "Scripts/Misc_WireBlinking.hpp"
 #include "Scripts/Misc_ForcePastOnCollision.hpp"
 #include "Scripts/Misc_ObjectUI.hpp"
+#include "Scripts/Interactable_RotateLock.hpp"
+#include "Scripts/Puzzle_RotateLock.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -311,6 +313,12 @@ extern "C" {
             });
         registrar->RegisterScript("Misc_ObjectUI", []() -> NE::Scripting::IScript* {
             return new Misc_ObjectUI();
+            });
+        registrar->RegisterScript("Interactable_RotateLock", []() -> NE::Scripting::IScript* {
+            return new Interactable_RotateLock();
+            });
+        registrar->RegisterScript("Puzzle_RotateLock", []() -> NE::Scripting::IScript* {
+            return new Puzzle_RotateLock();
             });
     }
 }
