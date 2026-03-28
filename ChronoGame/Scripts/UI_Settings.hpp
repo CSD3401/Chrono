@@ -3,22 +3,22 @@
 #include <ScriptSDK/UI.h>
 
 /*
-* UI_MainMenu:
-* - ensures the cursor is visible and unlocked in the main menu
-* - fades OUT a black overlay canvas on scene start
-*
-* Setup:
-* - Attach to any entity in MainMenu scene
-* - Assign one UICanvas entity in blackOverlayCanvas (full-screen black)
-*/
-class UI_MainMenu : public IScript {
+ * UI_Settings:
+ * - ensures the cursor is visible and unlocked in the settings scene
+ * - fades OUT a black overlay canvas on scene start (same behavior as UI_MainMenu)
+ *
+ * Setup:
+ * - Attach to any entity in Settings.scene
+ * - Assign one UICanvas entity in blackOverlayCanvas (full-screen black)
+ */
+class UI_Settings : public IScript {
 public:
-    UI_MainMenu() {
+    UI_Settings() {
         SCRIPT_GAMEOBJECT_REF(blackOverlayCanvas);
         SCRIPT_FIELD(enableFadeOut, Bool);
         SCRIPT_FIELD(fadeOutDuration, Float);
     }
-    ~UI_MainMenu() override = default;
+    ~UI_Settings() override = default;
 
     void Awake() override {}
     void Initialize(Entity entity) override {}
@@ -36,7 +36,6 @@ public:
         if (m_overlayEntity == 0) return;
         if (fadeOutDuration <= 0.0f) fadeOutDuration = 2.0f;
 
-        // Start from full black.
         SetActive(true, m_overlayEntity);
         auto& canvas = NE::ECS::Command::GetUICanvas(m_overlayEntity);
         canvas.isActive = true;
@@ -59,7 +58,6 @@ public:
             NE::ECS::Command::SetUICanvasAlpha(m_overlayEntity, alpha);
             if (t >= 1.0f - 1e-4f) {
                 NE::ECS::Command::SetUICanvasAlpha(m_overlayEntity, 0.0f);
-                // Hide overlay after fade so it no longer blocks raycasts.
                 SetActive(false, m_overlayEntity);
                 m_phase = Phase::DONE;
             }
@@ -69,7 +67,7 @@ public:
     void OnEnable() override {}
     void OnDisable() override {}
     void OnValidate() override {}
-    const char* GetTypeName() const override { return "UI_MainMenu"; }
+    const char* GetTypeName() const override { return "UI_Settings"; }
 
     void OnCollisionEnter(Entity other) override { (void)other; }
     void OnCollisionExit(Entity other) override { (void)other; }
@@ -90,19 +88,18 @@ private:
 
     Entity ResolveOverlayCanvas() const {
         if (!blackOverlayCanvas.IsValid()) {
-            LOG_WARNING("UI_MainMenu: blackOverlayCanvas is not assigned");
+            LOG_WARNING("UI_Settings: blackOverlayCanvas is not assigned");
             return 0;
         }
         const Entity e = blackOverlayCanvas.GetEntity();
         if (e == 0) {
-            LOG_WARNING("UI_MainMenu: blackOverlayCanvas reference is unresolved");
+            LOG_WARNING("UI_Settings: blackOverlayCanvas reference is unresolved");
             return 0;
         }
         if (!NE::ECS::Query::HasUICanvas(e)) {
-            LOG_WARNING("UI_MainMenu: blackOverlayCanvas has no UICanvas");
+            LOG_WARNING("UI_Settings: blackOverlayCanvas has no UICanvas");
             return 0;
         }
         return e;
     }
-
 };
