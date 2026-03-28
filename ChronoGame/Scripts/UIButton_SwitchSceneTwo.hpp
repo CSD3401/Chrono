@@ -4,7 +4,7 @@
 class UIButton_SwitchSceneTwo : public IScript {
 public:
     UIButton_SwitchSceneTwo() {
-        SCRIPT_FIELD(switchDelaySeconds, Float);
+       // SCRIPT_FIELD(scenePath, String);
     }
 
     ~UIButton_SwitchSceneTwo() override = default;
@@ -19,27 +19,13 @@ public:
         scenePath = "7271eb07-beef-4306-b5d6-1b6ef60418d3";
     }
 
-    void Update(double deltaTime) override {
+    void Update(double /*dt*/) override {
         if (m_sent) return;
-
-        if (m_pendingDelay) {
-            m_delayElapsed += static_cast<float>(deltaTime);
-            if (m_delayElapsed >= switchDelaySeconds) {
-                m_sent = true;
-                NE::Scripting::SwitchScene(scenePath);
-            }
-            return;
-        }
 
         if (NE::Scripting::WasButtonClicked(m_Button) &&
             NE::Scripting::IsButtonInteractable(m_Button)) {
-            if (switchDelaySeconds <= 0.0f) {
-                m_sent = true;
-                NE::Scripting::SwitchScene(scenePath);
-            } else {
-                m_pendingDelay = true;
-                m_delayElapsed = 0.0f;
-            }
+            m_sent = true;
+            NE::Scripting::SwitchScene(scenePath); // now queues safely
         }
     }
 
@@ -48,7 +34,7 @@ public:
     void OnDisable() override {}
     void OnValidate() override {}
 
-    const char* GetTypeName() const override { return "UIButton_SwitchSceneTwo"; }
+    const char* GetTypeName() const override { return "UIButton_SwitchScene"; }
 
     void OnCollisionEnter(Entity other) override { (void)other; }
     void OnCollisionExit(Entity other) override { (void)other; }
@@ -60,8 +46,5 @@ public:
 private:
     Entity m_Button{};
     std::string scenePath{}; /*= "23817f87-176c-4c6d-84a9-1999ac689ce9";*/
-    float switchDelaySeconds = 0.0f;
     bool m_sent = false;
-    bool m_pendingDelay = false;
-    float m_delayElapsed = 0.0f;
 };

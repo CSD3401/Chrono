@@ -1,6 +1,5 @@
 #pragma once
 #include "EngineAPI.hpp"
-#include <ScriptSDK/UI.h>
 
 /**
  * UIButton_SwitchToCredits
@@ -10,38 +9,20 @@
  */
 class UIButton_SwitchToCredits : public IScript {
 public:
-    UIButton_SwitchToCredits() {
-        SCRIPT_FIELD(switchDelaySeconds, Float);
-    }
+    UIButton_SwitchToCredits() = default;
     ~UIButton_SwitchToCredits() override = default;
 
     void Awake() override {}
     void Initialize(Entity entity) override { m_button = entity; }
     void Start() override {}
 
-    void Update(double deltaTime) override {
+    void Update(double /*dt*/) override {
         if (m_sent) return;
         if (m_button == 0) return;
-
-        if (m_pendingDelay) {
-            m_delayElapsed += static_cast<float>(deltaTime);
-            if (m_delayElapsed >= switchDelaySeconds) {
-                m_sent = true;
-                NE::Scripting::SwitchScene("7c7bd1dd-30c6-414a-8514-b045d3b54acd");
-            }
-            return;
-        }
-
         if (!UI::WasButtonClicked(m_button) || !UI::IsButtonInteractable(m_button))
             return;
-
-        if (switchDelaySeconds <= 0.0f) {
-            m_sent = true;
-            NE::Scripting::SwitchScene("7c7bd1dd-30c6-414a-8514-b045d3b54acd");
-        } else {
-            m_pendingDelay = true;
-            m_delayElapsed = 0.0f;
-        }
+        m_sent = true;
+        NE::Scripting::SwitchScene("7c7bd1dd-30c6-414a-8514-b045d3b54acd");
     }
 
     void OnDestroy() override {}
@@ -60,8 +41,5 @@ public:
 
 private:
     Entity m_button = 0;
-    float switchDelaySeconds = 0.0f;
     bool m_sent = false;
-    bool m_pendingDelay = false;
-    float m_delayElapsed = 0.0f;
 };

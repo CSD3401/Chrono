@@ -16,7 +16,7 @@ public:
     void Awake() override {}
     void Initialize(Entity) override {}
     void Start() override {
-        Events::Listen("SplashScreenDone", [](void*) {
+        Events::Listen("SplashScreenDone", [this](void*) {
             NE::Scripting::SwitchScene("7f6eb653-c6f7-426d-b9ac-9c0bada73cfc");
         });
     }

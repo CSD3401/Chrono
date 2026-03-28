@@ -1,7 +1,5 @@
 ﻿#pragma once
 #include "EngineAPI.hpp"
-#include <algorithm>
-#include <ScriptSDK/UI.h>
 
 #define GLFW_MOUSE_BUTTON_LEFT 0
 
@@ -63,17 +61,12 @@ public:
     Cutscene_Controller() {
         SCRIPT_FIELD(eventName, String);
         SCRIPT_FIELD(bgmAudioName, String);
-        SCRIPT_FIELD(autoStartOnPlay, Bool);
         SCRIPT_FIELD(autoAdvance, Bool);
         SCRIPT_FIELD(autoAdvanceDelay, Float);
-        SCRIPT_FIELD(fadeInSeconds, Float);
-        SCRIPT_FIELD(fadeOutSeconds, Float);
-        SCRIPT_FIELD(blackFadeOutSeconds, Float);
         RegisterFloatVectorField("pageDelays", &pageDelays);
         RegisterStringVectorField("pageAudioNames", &pageAudioNames);
         RegisterStringVectorField("pageCaptions", &pageCaptions);
         SCRIPT_GAMEOBJECT_REF(captionTextRef);
-        SCRIPT_GAMEOBJECT_REF(blackBackgroundRef);
         RegisterGameObjectRefVectorField("pageImages", &pageImages);
     }
 
@@ -146,66 +139,49 @@ public:
         pageTimer = 0.0f;
         currentPageAudio = "";
 
-        // Keep black background on from Play start.
-        ShowBlackBackground(true);
-
         LOG_DEBUG("Cutscene_Controller [" << eventName << "]: Ready with "
             << pageImages.size() << " page(s).");
 
-        if (autoStartOnPlay) {
-            // Start next tick so all UI refs are fully initialized.
-            Coroutines::Handle h = Coroutines::Create();
-            Coroutines::AddWait(h, 0.0f);
-            Coroutines::AddAction(h, [this]() { TriggerCutscene(); });
-            Coroutines::Start(h);
-        }
+        //TriggerCutscene(); // temp here
     }
 
     void Update(double deltaTime) override {
-        const float dt = static_cast<float>(deltaTime);
-
-        if (blackFadeOutActive) {
-            blackFadeOutTimer += dt;
-            const float dur = blackFadeOutSeconds > 0.0f ? blackFadeOutSeconds : 0.0f;
-            const float t = (dur <= 0.0f) ? 0.0f : std::max(0.0f, 1.0f - (blackFadeOutTimer / dur));
-            SetBlackBackgroundAlpha(t);
-            if (t <= 0.0f + 1e-4f) {
-                ShowBlackBackground(false);
-                blackFadeOutActive = false;
-                blackFadeOutTimer = 0.0f;
-            }
-        }
-
         if (!isPlaying) return;
 
+        // ── Auto-advance timer ────────────────────────────────────────────
+        if (autoAdvance) {
+            pageTimer += static_cast<float>(deltaTime);
+
+            float delay = GetDelayForPage(currentPageIndex);
+            if (pageTimer >= delay) {
+                pageTimer = 0.0f;
+                ignoreNextClick = false;
+                AdvancePage();
+                return;
+            }
+        }
 
         // ── Manual left-click advance ─────────────────────────────────────
         if (Input::WasMousePressed(GLFW_MOUSE_BUTTON_LEFT)) {
             if (ignoreNextClick) {
                 ignoreNextClick = false;
-            } else {
-                RequestAdvance();
+                return;
             }
+            pageTimer = 0.0f;
+            AdvancePage();
         }
-
-        UpdateFade(dt);
     }
 
 private:
     // ── Inspector ─────────────────────────────────────────────────────────
     std::string                eventName = "emptyEvent";
     std::string                bgmAudioName = "";
-    bool                       autoStartOnPlay = false;
     bool                       autoAdvance = false;
     float                      autoAdvanceDelay = 2.0f;
-    float                      fadeInSeconds = 0.18f;
-    float                      fadeOutSeconds = 0.18f;
-    float                      blackFadeOutSeconds = 0.5f;
     std::vector<float>         pageDelays;        // per-page duration (seconds)
     std::vector<std::string>   pageAudioNames;    // per-page FMOD event path
     std::vector<std::string>   pageCaptions;
     GameObjectRef              captionTextRef;
-    GameObjectRef              blackBackgroundRef; // UICanvas or UIImage (black)
     std::vector<GameObjectRef> pageImages;
 
     // ── Runtime ───────────────────────────────────────────────────────────
@@ -214,12 +190,6 @@ private:
     bool        ignoreNextClick = false;
     float       pageTimer = 0.0f;
     std::string currentPageAudio = ""; // track what's playing so we can stop it
-
-    enum class Phase { FadeIn, Hold, FadeOut };
-    Phase phase = Phase::FadeIn;
-    float phaseTimer = 0.0f;
-    bool  blackFadeOutActive = false;
-    float blackFadeOutTimer = 0.0f;
 
 
     // ── Helpers ───────────────────────────────────────────────────────────
@@ -254,11 +224,8 @@ private:
         ignoreNextClick = true;
         pageTimer = 0.0f;
         currentPageAudio = "";
-        phase = Phase::FadeIn;
-        phaseTimer = 0.0f;
 
         PlayBGM();
-        ShowBlackBackground(true);
         ShowPage(currentPageIndex);
     }
 
@@ -271,9 +238,6 @@ private:
 
         if (currentPageIndex < static_cast<int>(pageImages.size())) {
             ShowPage(currentPageIndex);
-            phase = Phase::FadeIn;
-            phaseTimer = 0.0f;
-            pageTimer = 0.0f;
         }
         else {
             EndCutscene();
@@ -286,7 +250,6 @@ private:
         // Show image
         if (pageImages[index].IsValid()) {
             SetActive(true, pageImages[index].GetEntity());
-            SetPageImageAlpha(index, 0.0f);
         }
         else {
             LOG_WARNING("Cutscene_Controller [" << eventName
@@ -297,7 +260,6 @@ private:
         const std::string& caption = (index < static_cast<int>(pageCaptions.size()))
             ? pageCaptions[index] : "";
         UpdateCaption(caption);
-        SetCaptionAlpha(0.0f);
 
         // Per-page audio
         std::string audio = GetAudioForPage(index);
@@ -322,38 +284,6 @@ private:
                 SetActive(false, page.GetEntity());
     }
 
-    void ShowBlackBackground(bool visible) {
-        if (!blackBackgroundRef.IsValid())
-            return;
-
-        const Entity e = blackBackgroundRef.GetEntity();
-        SetActive(visible, e);
-        if (!visible)
-            return;
-
-        // Force opaque black. Supports either a background UICanvas or a UIImage.
-        if (NE::ECS::Query::HasUICanvas(e)) {
-            NE::ECS::Command::SetUICanvasAlpha(e, 1.0f);
-        } else if (NE::ECS::Query::HasUIImage(e)) {
-            NE::ECS::Command::SetUIImageColor(e, 0.0f, 0.0f, 0.0f, 1.0f);
-        } else {
-            LOG_WARNING("Cutscene_Controller [" << eventName
-                << "]: blackBackgroundRef has no UICanvas/UIImage.");
-        }
-    }
-
-    void SetBlackBackgroundAlpha(float a) {
-        if (!blackBackgroundRef.IsValid())
-            return;
-        const Entity e = blackBackgroundRef.GetEntity();
-        const float alpha = std::clamp(a, 0.0f, 1.0f);
-        if (NE::ECS::Query::HasUICanvas(e)) {
-            NE::ECS::Command::SetUICanvasAlpha(e, alpha);
-        } else if (NE::ECS::Query::HasUIImage(e)) {
-            NE::ECS::Command::SetUIImageColor(e, 0.0f, 0.0f, 0.0f, alpha);
-        }
-    }
-
     void SetCaptionVisible(bool visible) {
         if (captionTextRef.IsValid())
             SetActive(visible, captionTextRef.GetEntity());
@@ -367,84 +297,6 @@ private:
         }
         NE::Scripting::SetUIText(captionTextRef.GetEntity(), text.c_str());
         SetCaptionVisible(true);
-    }
-
-    void SetCaptionAlpha(float a) {
-        if (!captionTextRef.IsValid())
-            return;
-        const Entity e = captionTextRef.GetEntity();
-        if (!NE::ECS::Query::HasUIText(e))
-            return;
-        NE::ECS::Command::SetUITextColor(e, 1.0f, 1.0f, 1.0f, std::clamp(a, 0.0f, 1.0f));
-    }
-
-    void SetPageImageAlpha(int index, float a) {
-        if (index < 0 || index >= static_cast<int>(pageImages.size()))
-            return;
-        if (!pageImages[index].IsValid())
-            return;
-        const Entity e = pageImages[index].GetEntity();
-        if (!NE::ECS::Query::HasUIImage(e))
-            return;
-        NE::ECS::Command::SetUIImageColor(e, 1.0f, 1.0f, 1.0f, std::clamp(a, 0.0f, 1.0f));
-    }
-
-    void RequestAdvance() {
-        if (!isPlaying) return;
-        if (phase == Phase::FadeOut) return;
-        phase = Phase::FadeOut;
-        phaseTimer = 0.0f;
-        pageTimer = 0.0f;
-    }
-
-    void UpdateFade(float dt) {
-        // Clamp to safe values.
-        if (fadeInSeconds < 0.0f) fadeInSeconds = 0.0f;
-        if (fadeOutSeconds < 0.0f) fadeOutSeconds = 0.0f;
-
-        phaseTimer += dt;
-
-        switch (phase) {
-        case Phase::FadeIn: {
-            const float dur = fadeInSeconds;
-            const float t = (dur <= 0.0f) ? 1.0f : std::min(1.0f, phaseTimer / dur);
-            SetPageImageAlpha(currentPageIndex, t);
-            if (captionTextRef.IsValid())
-                SetCaptionAlpha(t);
-            if (t >= 1.0f - 1e-4f) {
-                phase = Phase::Hold;
-                phaseTimer = 0.0f;
-                pageTimer = 0.0f;
-            }
-            break;
-        }
-        case Phase::Hold: {
-            // Auto-advance timer
-            if (autoAdvance) {
-                pageTimer += dt;
-                const float delay = GetDelayForPage(currentPageIndex);
-                if (pageTimer >= delay) {
-                    phase = Phase::FadeOut;
-                    phaseTimer = 0.0f;
-                    pageTimer = 0.0f;
-                }
-            }
-            break;
-        }
-        case Phase::FadeOut: {
-            const float dur = fadeOutSeconds;
-            const float t = (dur <= 0.0f) ? 0.0f : std::max(0.0f, 1.0f - (phaseTimer / dur));
-            SetPageImageAlpha(currentPageIndex, t);
-            if (captionTextRef.IsValid())
-                SetCaptionAlpha(t);
-            if (t <= 0.0f + 1e-4f) {
-                SetPageImageAlpha(currentPageIndex, 0.0f);
-                SetCaptionAlpha(0.0f);
-                AdvancePage();
-            }
-            break;
-        }
-        }
     }
 
     void PlayBGM() {
@@ -470,9 +322,6 @@ private:
         HideAllPages();
         SetCaptionVisible(false);
         StopBGM();
-        blackFadeOutActive = true;
-        blackFadeOutTimer = 0.0f;
-        SetBlackBackgroundAlpha(1.0f);
 
         std::string doneEvent = "CutsceneDone_" + eventName;
         Events::Send(doneEvent.c_str());
