@@ -64,6 +64,7 @@
 #include "Scripts/UI_SFXVolumeButtons.hpp"
 #include "Scripts/UI_AmbienceVolumeButtons.hpp"
 #include "Scripts/UI_HoverTextColor.hpp"
+#include "Scripts/UI_OverlayFadeIn.hpp"
 #include "Scripts/Interactable_MirrorTile.hpp"
 #include "Scripts/Misc_StopAnimationOnEvent.hpp"
 #include "Scripts/Misc_SolvedMaterialOverride.hpp"
@@ -273,6 +274,9 @@ extern "C" {
             });
         registrar->RegisterScript("UI_HoverTextColor", []() -> NE::Scripting::IScript* {
             return new UI_HoverTextColor();
+            });
+        registrar->RegisterScript("UI_OverlayFadeIn", []() -> NE::Scripting::IScript* {
+            return new UI_OverlayFadeIn();
             });
         registrar->RegisterScript("Interactable_MirrorTile", []() -> NE::Scripting::IScript* {
             return new Interactable_MirrorTile();

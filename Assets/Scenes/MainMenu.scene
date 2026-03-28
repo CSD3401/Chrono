@@ -139,7 +139,7 @@
                 "SerializedFields": {
                     "UI_MainMenu.blackOverlayCanvas": "7167032157330210816",
                     "UI_MainMenu.enableFadeOut": "1",
-                    "UI_MainMenu.fadeOutDuration": "2.000000"
+                    "UI_MainMenu.fadeOutDuration": "1.000000"
                 },
                 "EntityReferenceFields": [
                     "blackOverlayCanvas"
@@ -408,15 +408,22 @@
             "NativeScript": {
                 "ScriptNames": [
                     "UIButton_SwitchScene",
-                    "UI_HoverTextColor"
+                    "UI_HoverTextColor",
+                    "UI_OverlayFadeIn"
                 ],
                 "SerializedFields": {
+                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
+                    "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
                     "UI_HoverTextColor.targetText": "7308614066332237835",
                     "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94"
+                    "UI_HoverTextColor.hoverHex": "#50ce94",
+                    "UI_OverlayFadeIn.triggerButton": "7308614066332237832",
+                    "UIButton_SwitchScene.switchDelaySeconds": "1.000000"
                 },
                 "EntityReferenceFields": [
-                    "targetText"
+                    "targetText",
+                    "triggerButton",
+                    "blackOverlayCanvas"
                 ],
                 "luid": 7958821262568783887
             },
@@ -585,15 +592,22 @@
             "NativeScript": {
                 "ScriptNames": [
                     "UIButton_SwitchSceneTwo",
-                    "UI_HoverTextColor"
+                    "UI_HoverTextColor",
+                    "UI_OverlayFadeIn"
                 ],
                 "SerializedFields": {
+                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
+                    "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
+                    "UIButton_SwitchSceneTwo.switchDelaySeconds": "1.000000",
                     "UI_HoverTextColor.targetText": "7308614066382307354",
                     "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94"
+                    "UI_HoverTextColor.hoverHex": "#50ce94",
+                    "UI_OverlayFadeIn.triggerButton": "7308614066382307351"
                 },
                 "EntityReferenceFields": [
-                    "targetText"
+                    "targetText",
+                    "triggerButton",
+                    "blackOverlayCanvas"
                 ],
                 "luid": 7958821262583922712
             },
@@ -762,15 +776,22 @@
             "NativeScript": {
                 "ScriptNames": [
                     "UIButton_SwitchToCredits",
-                    "UI_HoverTextColor"
+                    "UI_HoverTextColor",
+                    "UI_OverlayFadeIn"
                 ],
                 "SerializedFields": {
+                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
+                    "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
                     "UI_HoverTextColor.targetText": "7308614066368872468",
                     "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94"
+                    "UIButton_SwitchToCredits.switchDelaySeconds": "1.000000",
+                    "UI_HoverTextColor.hoverHex": "#50ce94",
+                    "UI_OverlayFadeIn.triggerButton": "7308614066368872465"
                 },
                 "EntityReferenceFields": [
-                    "targetText"
+                    "targetText",
+                    "triggerButton",
+                    "blackOverlayCanvas"
                 ],
                 "luid": 7958821262570487826
             },
