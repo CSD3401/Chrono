@@ -79,6 +79,8 @@
 #include "Scripts/Misc_ObjectUI.hpp"
 #include "Scripts/Interactable_RotateLock.hpp"
 #include "Scripts/Puzzle_RotateLock.hpp"
+#include "Scripts/Tasks/TaskManager.hpp"
+#include "Scripts/Tasks/TaskCheckpoint.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -319,6 +321,12 @@ extern "C" {
             });
         registrar->RegisterScript("Puzzle_RotateLock", []() -> NE::Scripting::IScript* {
             return new Puzzle_RotateLock();
+            });
+        registrar->RegisterScript("TaskManager", []() -> NE::Scripting::IScript* {
+            return new TaskManager();
+            });
+        registrar->RegisterScript("TaskCheckpoint", []() -> NE::Scripting::IScript* {
+            return new TaskCheckpoint();
             });
     }
 }
