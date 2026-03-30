@@ -81,6 +81,8 @@
 #include "Scripts/Puzzle_RotateLock.hpp"
 #include "Scripts/Tasks/TaskManager.hpp"
 #include "Scripts/Tasks/TaskCheckpoint.hpp"
+#include "Scripts/UI_HoverTextColor.hpp"
+#include "Scripts/UI_OverlayFadeIn.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -322,6 +324,16 @@ extern "C" {
         registrar->RegisterScript("Puzzle_RotateLock", []() -> NE::Scripting::IScript* {
             return new Puzzle_RotateLock();
             });
+
+
+        registrar->RegisterScript("UI_HoverTextColor", []() -> NE::Scripting::IScript* {
+            return new UI_HoverTextColor();
+            });
+        registrar->RegisterScript("UI_OverlayFadeIn", []() -> NE::Scripting::IScript* {
+            return new UI_OverlayFadeIn();
+            });
+
+
         registrar->RegisterScript("TaskManager", []() -> NE::Scripting::IScript* {
             return new TaskManager();
             });
