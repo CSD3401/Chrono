@@ -148,9 +148,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 0.0,
+                    "x": 150.0,
                     "y": 1.230550765991211,
-                    "z": 0.0
+                    "z": -35.90629196166992
                 },
                 "Scale": {
                     "x": 0.800000011920929,
@@ -196,24 +196,22 @@
                 ],
                 "SerializedFields": {
                     "Player_Controller.jumpStrength": "5.000000",
-                    "Misc_TimeFogLighting.affectFog": "1",
-                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
-                    "Misc_TimeFogLighting.presentFogStart": "20.000000",
                     "Player_Controller.gravity": "10.000000",
-                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.050000",
                     "Player_Controller.lookSensitivity": "0.250000",
                     "Misc_TimeFogLighting.normalAmbientIntensity": "0.500000",
                     "Player_Controller.moveSpeed": "4.000000",
-                    "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.normalAmbientColor": "25 15 10",
                     "Misc_TimeFogLighting.normalFogMode": "1",
                     "Player_Controller.snappiness": "5.000000",
                     "Player_Controller.walkSoundInterval": "0.500000",
+                    "Misc_TimeFogLighting.affectFog": "1",
+                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
                     "Misc_TimeFogLighting.normalEnvSource": "2",
                     "Misc_TimeFogLighting.affectAmbient": "1",
                     "Misc_TimeFogLighting.startInPresent": "1",
                     "Misc_TimeFogLighting.normalFogEnabled": "1",
+                    "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.presentFogEnabled": "1",
                     "Misc_TimeFogLighting.normalFogColor": "15 10 8",
                     "Misc_TimeFogLighting.normalFogDensity": "0.015000",
@@ -221,8 +219,10 @@
                     "Misc_TimeFogLighting.normalFogEnd": "50.000000",
                     "Misc_TimeFogLighting.presentFogColor": "150 150 150",
                     "Misc_TimeFogLighting.presentFogDensity": "0.005000",
+                    "Misc_TimeFogLighting.presentFogStart": "20.000000",
                     "Misc_TimeFogLighting.presentFogEnd": "50.000000",
-                    "Misc_TimeFogLighting.presentAmbientColor": "25 15 10"
+                    "Misc_TimeFogLighting.presentAmbientColor": "25 15 10",
+                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.050000"
                 },
                 "EntityReferenceFields": [
                     "playerCameraRef"
@@ -281,10 +281,10 @@
                     "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.distance": "5.000000",
                     "Player_Raycast.targetLayer": "0",
-                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Camera_FOVPulse.baseFov": "90.000000",
                     "Camera_FOVPulse.enabledAtStart": "1",
                     "Camera_FOVPulse.pulseFov": "150.000000",
+                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Camera_FOVPulse.riseTimeSeconds": "0.100000",
                     "Misc_Grabber.grabStrength": "0.000000",
                     "Misc_Grabber.distance": "0.500000",
@@ -10211,306 +10211,6 @@
                 },
                 "shadowType": 0,
                 "shadowUpdateMode": 0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Platform",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613958638501888
-            },
-            "Hierarchy": {
-                "luid": 7526194115635838978,
-                "parentLuid": 7526194087960641641
-            },
-            "Transform": {
-                "Position": {
-                    "x": 59.40571594238281,
-                    "y": 7.951045513153076,
-                    "z": -3.269996166229248
-                },
-                "Scale": {
-                    "x": 2.5,
-                    "y": 1.0,
-                    "z": 5.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244090974209
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "51240a2a-f185-4318-b64a-06e1632f63be",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406341169155
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 1.25,
-                            "y": 0.5,
-                            "z": 2.5
-                        }
-                    }
-                },
-                "luid": 7165061720516067332
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Platform",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613958653575169
-            },
-            "Hierarchy": {
-                "luid": 7526194115650912256,
-                "parentLuid": 7526194087960641641
-            },
-            "Transform": {
-                "Position": {
-                    "x": 63.38158416748047,
-                    "y": 7.937047958374023,
-                    "z": -3.167509078979492
-                },
-                "Scale": {
-                    "x": 2.5,
-                    "y": 1.0,
-                    "z": 5.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244106047490
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "83123a67-09b7-479a-a9ad-6a3359fca484",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406356242435
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 1.25,
-                            "y": 0.5,
-                            "z": 2.5
-                        }
-                    }
-                },
-                "luid": 7165061720531140612
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Platform",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613958654885894
-            },
-            "Hierarchy": {
-                "luid": 7526194115652222981,
-                "parentLuid": 7526194087960641641
-            },
-            "Transform": {
-                "Position": {
-                    "x": 67.9105224609375,
-                    "y": 7.69872522354126,
-                    "z": -4.053977966308594
-                },
-                "Scale": {
-                    "x": 2.5,
-                    "y": 1.0,
-                    "z": 5.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244107358215
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "83123a67-09b7-479a-a9ad-6a3359fca484",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406357553160
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 1.25,
-                            "y": 0.5,
-                            "z": 2.5
-                        }
-                    }
-                },
-                "luid": 7165061720532451337
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Platform",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613958724616193
-            },
-            "Hierarchy": {
-                "luid": 7526194115721953280,
-                "parentLuid": 7526194087960641641
-            },
-            "Transform": {
-                "Position": {
-                    "x": 72.12915802001953,
-                    "y": 7.69872522354126,
-                    "z": -4.053977966308594
-                },
-                "Scale": {
-                    "x": 2.5,
-                    "y": 1.0,
-                    "z": 5.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244177088514
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "83123a67-09b7-479a-a9ad-6a3359fca484",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406427283459
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 1.25,
-                            "y": 0.5,
-                            "z": 2.5
-                        }
-                    }
-                },
-                "luid": 7165061720602181636
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Platform",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613958725206022
-            },
-            "Hierarchy": {
-                "luid": 7526194115722543109,
-                "parentLuid": 7526194087960641641
-            },
-            "Transform": {
-                "Position": {
-                    "x": 76.06160736083984,
-                    "y": 7.69872522354126,
-                    "z": -4.053977966308594
-                },
-                "Scale": {
-                    "x": 2.5,
-                    "y": 1.0,
-                    "z": 5.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244177678343
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "83123a67-09b7-479a-a9ad-6a3359fca484",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406427873288
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 1.25,
-                            "y": 0.5,
-                            "z": 2.5
-                        }
-                    }
-                },
-                "luid": 7165061720602771465
             }
         },
         {
@@ -28650,14 +28350,14 @@
                     "Interactable_Gate.playerRef": "7308613656064753675",
                     "Interactable_Gate.interactionDistance": "5.000000",
                     "Interactable_Gate.logInteractions": "1",
-                    "Misc_ObjectUI.objectDescription": "Interact [E]",
                     "Interactable_Gate.tweenDuration": "1.500000",
                     "Interactable_Gate.moveDistance": "1.265000",
                     "Misc_MaterialSwitcher.pastMaterial": "e2449c0b-af90-4019-84c4-290b42b3d40b",
-                    "Misc_ObjectUI.objectName": "Gate",
                     "Misc_MaterialSwitcher.presentMaterial": "42061895-451f-4247-92f7-0344cc10f796",
+                    "Misc_ObjectUI.objectDescription": "Interact [E]",
+                    "Misc_ObjectUI.objectNameTextUI": "7308614070618816513",
                     "Misc_ObjectUI.objectDescTextUI": "7308614070620979203",
-                    "Misc_ObjectUI.objectNameTextUI": "7308614070618816513"
+                    "Misc_ObjectUI.objectName": "Gate"
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -29893,14 +29593,14 @@
                 ],
                 "SerializedFields": {
                     "Misc_TransitionTeleporter.player": "7308613656064753675",
-                    "Misc_TransitionTeleporter.impactAudioName": "PLAYER_IMPACT",
                     "Misc_TransitionTeleporter.fadeInDuration": "0.500000",
                     "Misc_TransitionTeleporter.targetTransformRef": "8390885075794526209",
                     "Misc_TransitionTeleporter.holdBlackDuration": "1.000000",
                     "Misc_TransitionTeleporter.overlayCanvas": "7167032123494432771",
                     "Misc_TransitionTeleporter.fadeOutDuration": "0.500000",
                     "Misc_TransitionTeleporter.eventBased": "1",
-                    "Misc_TransitionTeleporter.eventName": "Section1Lift"
+                    "Misc_TransitionTeleporter.eventName": "Section1Lift",
+                    "Misc_TransitionTeleporter.impactAudioName": "PLAYER_IMPACT"
                 },
                 "EntityReferenceFields": [
                     "player",
@@ -31413,19 +31113,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -31626,19 +31326,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -31839,19 +31539,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -32052,19 +31752,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -32489,19 +32189,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -32702,19 +32402,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -32915,19 +32615,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -33128,19 +32828,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -33370,13 +33070,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -33435,13 +33135,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -33500,13 +33200,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -33565,13 +33265,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -33657,10 +33357,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "rightLaser7",
                     "leftLaser8",
-                    "leftLaser7",
+                    "rightLaser7",
                     "rightLaser8",
+                    "leftLaser7",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -33733,10 +33433,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "rightLaser8",
                     "leftLaser7",
-                    "rightLaser7",
+                    "rightLaser8",
                     "leftLaser8",
+                    "rightLaser7",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -48433,266 +48133,6 @@
         },
         {
             "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Big Platform",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613958659342347
-            },
-            "Hierarchy": {
-                "luid": 7526194115656679434,
-                "parentLuid": 0
-            },
-            "Transform": {
-                "Position": {
-                    "x": 67.1603775024414,
-                    "y": -7.054681777954102,
-                    "z": 1.652562141418457
-                },
-                "Scale": {
-                    "x": 50.0,
-                    "y": 1.0,
-                    "z": 25.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 9.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244111814668
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "477768ed-9101-4afd-a67e-17876e4eac21",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406362009613
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 25.0,
-                            "y": 0.5,
-                            "z": 12.5
-                        }
-                    }
-                },
-                "luid": 7165061720536907790
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Rest",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613958666616848
-            },
-            "Hierarchy": {
-                "luid": 7526194115663953935,
-                "parentLuid": 0
-            },
-            "Transform": {
-                "Position": {
-                    "x": 81.05260467529297,
-                    "y": 4.865593910217285,
-                    "z": -4.654376983642578
-                },
-                "Scale": {
-                    "x": 5.0,
-                    "y": 5.0,
-                    "z": 5.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244119089169
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "83123a67-09b7-479a-a9ad-6a3359fca484",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406369284114
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 2.5,
-                            "y": 2.5,
-                            "z": 2.5
-                        }
-                    }
-                },
-                "luid": 7165061720544182291
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 0,
-            "EntityMeta": {
-                "name": "Rest",
-                "isActive": 0,
-                "isStatic": 0,
-                "luid": 7308613958673104922
-            },
-            "Hierarchy": {
-                "luid": 7526194115670442009,
-                "parentLuid": 0
-            },
-            "Transform": {
-                "Position": {
-                    "x": 53.94367218017578,
-                    "y": 6.052825450897217,
-                    "z": -3.637078285217285
-                },
-                "Scale": {
-                    "x": 5.0,
-                    "y": 5.0,
-                    "z": 5.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244125577243
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "83123a67-09b7-479a-a9ad-6a3359fca484",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406375772188
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 2.5,
-                            "y": 2.5,
-                            "z": 2.5
-                        }
-                    }
-                },
-                "luid": 7165061720550670365
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Rest",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308613958738837515
-            },
-            "Hierarchy": {
-                "luid": 7526194115736174602,
-                "parentLuid": 0
-            },
-            "Transform": {
-                "Position": {
-                    "x": 53.94367218017578,
-                    "y": 0.9068660736083984,
-                    "z": -3.637078285217285
-                },
-                "Scale": {
-                    "x": 5.0,
-                    "y": 15.0,
-                    "z": 5.0
-                },
-                "Rotation": {
-                    "x": -0.0,
-                    "y": 0.0,
-                    "z": -0.0
-                },
-                "luid": 8390885244191309836
-            },
-            "Renderer": {
-                "modelUUID": "builtin:model/cube",
-                "materialUUID": "83123a67-09b7-479a-a9ad-6a3359fca484",
-                "shadowCastMode": 1,
-                "receiveShadows": 1,
-                "subMeshIndex": 0,
-                "luid": 8242829406441504781
-            },
-            "Collider": {
-                "type": 0,
-                "isTrigger": 0,
-                "center": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                "data": {
-                    "index": 0,
-                    "value": {
-                        "halfExtents": {
-                            "x": 2.5,
-                            "y": 7.5,
-                            "z": 2.5
-                        }
-                    }
-                },
-                "luid": 7165061720616402958
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "Interactable_TeleportToTop"
-                ],
-                "SerializedFields": {
-                    "Interactable_TeleportToTop.extraClearanceY": "9.000000",
-                    "Interactable_TeleportToTop.player": "7308613656064753675",
-                    "Interactable_TeleportToTop.useCharacterControllerMove": "1",
-                    "Interactable_TeleportToTop.assumePlayerPivotAtCenter": "1",
-                    "Interactable_TeleportToTop.spaceKeyMaxDistance": "3.000000",
-                    "Interactable_TeleportToTop.snapXZToObject": "1",
-                    "Interactable_TeleportToTop.liftSpeedY": "3.500000",
-                    "Interactable_TeleportToTop.climbAudioName": "CLIMB_METAL",
-                    "Interactable_TeleportToTop.useSpaceKeyInsteadOfMouse": "0"
-                },
-                "EntityReferenceFields": [
-                    "player"
-                ],
-                "luid": 7958821154942615567
-            }
-        },
-        {
-            "Layer": 0,
             "Active": 0,
             "EntityMeta": {
                 "name": "Lab_Section (old)",
@@ -56027,8 +55467,8 @@
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
                     "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.pushAudioName": "",
-                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -56122,8 +55562,8 @@
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
                     "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.pushAudioName": "",
-                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -56217,8 +55657,8 @@
                     "Misc_TrolleyPush.moveSpeed": "1.000000",
                     "Misc_TrolleyPush.useTransformFallback": "1",
                     "Misc_TrolleyPush.pushAudioName": "",
-                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.pushDistance": "1.600000",
+                    "Misc_TrolleyPush.useTriggerToo": "1",
                     "Misc_TrolleyPush.debugLogs": "0"
                 },
                 "EntityReferenceFields": [
@@ -69884,6 +69324,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 1,
                 "luid": 8242829434379371170
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.12892276048660278
+                        }
+                    }
+                },
+                "luid": 7165061849528991744
             }
         },
         {
@@ -69976,6 +69436,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 3,
                 "luid": 8242829434379371174
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315748691558838,
+                            "y": 1.0472264289855957,
+                            "z": 0.1289229393005371
+                        }
+                    }
+                },
+                "luid": 7165061849532465154
             }
         },
         {
@@ -70068,6 +69548,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 5,
                 "luid": 8242829434379371178
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.1289224624633789
+                        }
+                    }
+                },
+                "luid": 7165061849533317124
             }
         },
         {
@@ -70160,6 +69660,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 7,
                 "luid": 8242829434379371182
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.12892532348632813,
+                            "y": 1.0472264289855957,
+                            "z": 0.631575345993042
+                        }
+                    }
+                },
+                "luid": 7165061849531875329
             }
         },
         {
@@ -70252,6 +69772,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 9,
                 "luid": 8242829434379371186
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.12892282009124756
+                        }
+                    }
+                },
+                "luid": 7165061849532727299
             }
         },
         {
@@ -70344,6 +69884,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 11,
                 "luid": 8242829434379371190
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.12892282009124756
+                        }
+                    }
+                },
+                "luid": 7165061849533579269
             }
         },
         {
@@ -70436,6 +69996,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 13,
                 "luid": 8242829434379371194
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.128922700881958
+                        }
+                    }
+                },
+                "luid": 7165061849533775878
             }
         },
         {
@@ -70528,6 +70108,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 15,
                 "luid": 8242829434379371198
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.12892484664916992,
+                            "y": 1.0472264289855957,
+                            "z": 0.6315751075744629
+                        }
+                    }
+                },
+                "luid": 7165061849534038023
             }
         },
         {
@@ -70620,6 +70220,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 17,
                 "luid": 8242829434379371202
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.1289224624633789,
+                            "y": 1.0472264289855957,
+                            "z": 0.6315751075744629
+                        }
+                    }
+                },
+                "luid": 7165061849534234632
             }
         },
         {
@@ -70712,6 +70332,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 19,
                 "luid": 8242829434379371206
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.1289224624633789,
+                            "y": 1.0472264289855957,
+                            "z": 0.6315752267837524
+                        }
+                    }
+                },
+                "luid": 7165061849534496777
             }
         },
         {
@@ -70804,6 +70444,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 21,
                 "luid": 8242829434379371210
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.12892532348632813,
+                            "y": 1.0472264289855957,
+                            "z": 0.6315752863883972
+                        }
+                    }
+                },
+                "luid": 7165061849534758922
             }
         },
         {
@@ -70896,6 +70556,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 23,
                 "luid": 8242829434379371214
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.1289234161376953,
+                            "y": 1.0472264289855957,
+                            "z": 0.6315752863883972
+                        }
+                    }
+                },
+                "luid": 7165061849534889995
             }
         },
         {
@@ -70988,6 +70668,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 25,
                 "luid": 8242829434379371218
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.128922700881958
+                        }
+                    }
+                },
+                "luid": 7165061849535086604
             }
         },
         {
@@ -71080,6 +70780,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 27,
                 "luid": 8242829434379371222
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.128922700881958
+                        }
+                    }
+                },
+                "luid": 7165061849535283213
             }
         },
         {
@@ -71172,6 +70892,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 29,
                 "luid": 8242829434379371226
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.1289229393005371
+                        }
+                    }
+                },
+                "luid": 7165061849535479822
             }
         },
         {
@@ -71264,6 +71004,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 31,
                 "luid": 8242829434379371230
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.1289229393005371
+                        }
+                    }
+                },
+                "luid": 7165061849535676431
             }
         },
         {
@@ -71356,6 +71116,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 33,
                 "luid": 8242829434379371234
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.128922700881958
+                        }
+                    }
+                },
+                "luid": 7165061849535873040
             }
         },
         {
@@ -71448,6 +71228,26 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 35,
                 "luid": 8242829434379371238
+            },
+            "Collider": {
+                "type": 0,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 0,
+                    "value": {
+                        "halfExtents": {
+                            "x": 0.6315746307373047,
+                            "y": 1.0472264289855957,
+                            "z": 0.128922700881958
+                        }
+                    }
+                },
+                "luid": 7165061849536069649
             }
         },
         {
@@ -71722,6 +71522,20 @@
                 "receiveShadows": 1,
                 "subMeshIndex": 41,
                 "luid": 8242829434379371250
+            },
+            "Collider": {
+                "type": 4,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 4,
+                    "value": {}
+                },
+                "luid": 7165061849542295570
             }
         },
         {
@@ -82597,19 +82411,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -82799,19 +82613,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -83001,19 +82815,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -83203,19 +83017,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -83405,19 +83219,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "4",
-                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -83607,19 +83421,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "5",
-                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -83809,19 +83623,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "6",
-                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -84235,19 +84049,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -84437,19 +84251,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -84639,19 +84453,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -84841,19 +84655,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -85043,19 +84857,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "4",
-                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -85245,19 +85059,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "5",
-                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -85447,19 +85261,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "6",
-                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -85678,13 +85492,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -85743,13 +85557,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -85808,13 +85622,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -85873,13 +85687,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -85938,13 +85752,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -86003,13 +85817,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -86068,13 +85882,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -87835,15 +87649,15 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_RotateLock.rotationMargin": "10.000000",
-                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.inUse": "0",
                     "Puzzle_RotateLock.rotationSpeed": "500.000000",
                     "Puzzle_RotateLock.outerRingRef": "8390885275299414034",
+                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_01",
                     "Puzzle_RotateLock.correctAlphas": "3 0 1 6",
-                    "Puzzle_RotateLock.correctNums": "3 0 2 6",
                     "Puzzle_RotateLock.puzzleKey": "0",
+                    "Puzzle_RotateLock.correctNums": "3 0 2 6",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_01"
                 },
                 "EntityReferenceFields": [
@@ -88150,15 +87964,15 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_RotateLock.rotationMargin": "10.000000",
-                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.inUse": "0",
                     "Puzzle_RotateLock.rotationSpeed": "500.000000",
                     "Puzzle_RotateLock.outerRingRef": "8390885275408662554",
+                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_02",
                     "Puzzle_RotateLock.correctAlphas": "3 4 0 5",
-                    "Puzzle_RotateLock.correctNums": "3 3 5 1",
                     "Puzzle_RotateLock.puzzleKey": "0",
+                    "Puzzle_RotateLock.correctNums": "3 3 5 1",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_02"
                 },
                 "EntityReferenceFields": [
@@ -88464,15 +88278,15 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_RotateLock.rotationMargin": "10.000000",
-                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.inUse": "0",
                     "Puzzle_RotateLock.rotationSpeed": "500.000000",
                     "Puzzle_RotateLock.outerRingRef": "8390885275408924725",
+                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_03",
                     "Puzzle_RotateLock.correctAlphas": "3 2 5 3",
-                    "Puzzle_RotateLock.correctNums": "3 5 2 5",
                     "Puzzle_RotateLock.puzzleKey": "0",
+                    "Puzzle_RotateLock.correctNums": "3 5 2 5",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_03"
                 },
                 "EntityReferenceFields": [
@@ -88778,15 +88592,15 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_RotateLock.rotationMargin": "10.000000",
-                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.inUse": "0",
                     "Puzzle_RotateLock.rotationSpeed": "500.000000",
                     "Puzzle_RotateLock.outerRingRef": "8390885275409186896",
+                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_04",
                     "Puzzle_RotateLock.correctAlphas": "3 5 0 6",
-                    "Puzzle_RotateLock.correctNums": "3 0 5 2",
                     "Puzzle_RotateLock.puzzleKey": "0",
+                    "Puzzle_RotateLock.correctNums": "3 0 5 2",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_04"
                 },
                 "EntityReferenceFields": [
@@ -89092,15 +88906,15 @@
                 ],
                 "SerializedFields": {
                     "Puzzle_RotateLock.rotationMargin": "10.000000",
-                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.inUse": "0",
                     "Puzzle_RotateLock.rotationSpeed": "500.000000",
                     "Puzzle_RotateLock.outerRingRef": "8390885275409383531",
+                    "Puzzle_RotateLock.numCorrect": "0",
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_05",
                     "Puzzle_RotateLock.correctAlphas": "3 6 2 7",
-                    "Puzzle_RotateLock.correctNums": "3 2 4 1",
                     "Puzzle_RotateLock.puzzleKey": "0",
+                    "Puzzle_RotateLock.correctNums": "3 2 4 1",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_05"
                 },
                 "EntityReferenceFields": [
@@ -89550,19 +89364,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -89763,19 +89577,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -89976,19 +89790,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -90189,19 +90003,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -90402,19 +90216,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "4",
-                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -90615,19 +90429,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "5",
-                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -90828,19 +90642,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "6",
-                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -91265,19 +91079,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -91478,19 +91292,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -91691,19 +91505,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -91904,19 +91718,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -92117,19 +91931,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "4",
-                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -92330,19 +92144,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "5",
-                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -92543,19 +92357,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "6",
-                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -92785,13 +92599,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -92850,13 +92664,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -92915,13 +92729,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -92980,13 +92794,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -93045,13 +92859,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -93110,13 +92924,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -93175,13 +92989,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -94241,6 +94055,136 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "SecondCatwalkCatwalkALWAYSON",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614087620558849
+            },
+            "Hierarchy": {
+                "luid": 7526194244617895936,
+                "parentLuid": 7308614064060563558
+            },
+            "Transform": {
+                "Position": {
+                    "x": 29.526199340820313,
+                    "y": 7.400108337402344,
+                    "z": -2.03839111328125
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 180.0,
+                    "z": -0.0
+                },
+                "luid": 8390885373073031170
+            },
+            "Renderer": {
+                "modelUUID": "ee180de4-9043-4477-865a-b79bd4aba2ed",
+                "materialUUID": "98f689de-5347-4cb5-809d-ffc2d454cb06",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 7,
+                "luid": 8242829535323226115
+            },
+            "Collider": {
+                "type": 4,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 4,
+                    "value": {}
+                },
+                "luid": 7165061849498124292
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "1b03da9f-5ece-4dab-afcb-02d6703bf192",
+                    "Misc_MaterialSwitcher.presentMaterial": "98f689de-5347-4cb5-809d-ffc2d454cb06"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821283822174213
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
+                "name": "SecondCatwalkCatwalkALWAYSON",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614087629537281
+            },
+            "Hierarchy": {
+                "luid": 7526194244626874368,
+                "parentLuid": 7308614064060563558
+            },
+            "Transform": {
+                "Position": {
+                    "x": 38.93315124511719,
+                    "y": 7.400108337402344,
+                    "z": -5.072162628173828
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 180.0,
+                    "z": -0.0
+                },
+                "luid": 8390885373082009602
+            },
+            "Renderer": {
+                "modelUUID": "ee180de4-9043-4477-865a-b79bd4aba2ed",
+                "materialUUID": "98f689de-5347-4cb5-809d-ffc2d454cb06",
+                "shadowCastMode": 1,
+                "receiveShadows": 1,
+                "subMeshIndex": 7,
+                "luid": 8242829535332204547
+            },
+            "Collider": {
+                "type": 4,
+                "isTrigger": 0,
+                "center": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "data": {
+                    "index": 4,
+                    "value": {}
+                },
+                "luid": 7165061849507102724
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "1b03da9f-5ece-4dab-afcb-02d6703bf192",
+                    "Misc_MaterialSwitcher.presentMaterial": "98f689de-5347-4cb5-809d-ffc2d454cb06"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821283831152645
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Tasks Canvas",
                 "isActive": 1,
                 "isStatic": 0,
@@ -94267,8 +94211,8 @@
                 },
                 "EntityReferenceFields": [
                     "titleUIRef",
-                    "task1UIRef",
                     "task3ToggleRef",
+                    "task1UIRef",
                     "task2UIRef",
                     "task1ToggleRef",
                     "task3UIRef",
