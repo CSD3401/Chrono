@@ -16,6 +16,7 @@
             "keepQuads": 0,
             "swapUVs": 0,
             "generateLightmapUVs": 0,
+            "lightmapUvPaddingTexels": 8,
             "generateColliders": 1,
             "generateMeshLODs": 0,
             "smoothingAngle": 60.0,
@@ -267,7 +268,7 @@
             "pivotOffset": {
                 "x": 19.392921447753906,
                 "y": 1.120705485343933,
-                "z": 1.1037862300872803
+                "z": 0.4146896004676819
             }
         },
         {
@@ -276,7 +277,7 @@
             "pivotOffset": {
                 "x": 19.39292335510254,
                 "y": 1.0498461723327637,
-                "z": 1.0890618562698364
+                "z": 0.39996519684791565
             }
         },
         {
@@ -388,17 +389,8 @@
             }
         },
         {
-            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/walls_$AssimpFbx$_RotationPivot/walls_$AssimpFbx$_RotationPivotInverse/walls_$AssimpFbx$_ScalingPivot/walls_$AssimpFbx$_ScalingPivotInverse/walls/walls",
-            "index": 38,
-            "pivotOffset": {
-                "x": 19.72403907775879,
-                "y": 1.5,
-                "z": -5.396164894104004
-            }
-        },
-        {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/Phone_$AssimpFbx$_RotationPivot/Phone_$AssimpFbx$_RotationPivotInverse/Phone_$AssimpFbx$_ScalingPivot/Phone_$AssimpFbx$_ScalingPivotInverse/Phone/Phone",
-            "index": 39,
+            "index": 38,
             "pivotOffset": {
                 "x": 31.648387908935547,
                 "y": 1.5749582052230835,
@@ -407,7 +399,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/ServerRackCables92_$AssimpFbx$_RotationPivot/ServerRackCables92_$AssimpFbx$_RotationPivotInverse/ServerRackCables92_$AssimpFbx$_ScalingPivot/ServerRackCables92_$AssimpFbx$_ScalingPivotInverse/ServerRackCables92/ServerRackCables92",
-            "index": 40,
+            "index": 39,
             "pivotOffset": {
                 "x": 19.732086181640625,
                 "y": 0.9863775372505188,
@@ -416,7 +408,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/ServerRackShelf92_$AssimpFbx$_RotationPivot/ServerRackShelf92_$AssimpFbx$_RotationPivotInverse/ServerRackShelf92_$AssimpFbx$_ScalingPivot/ServerRackShelf92_$AssimpFbx$_ScalingPivotInverse/ServerRackShelf92/ServerRackShelf92",
-            "index": 41,
+            "index": 40,
             "pivotOffset": {
                 "x": 19.732086181640625,
                 "y": 1.0109472274780273,
@@ -425,16 +417,79 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_ceiling_$AssimpFbx$_RotationPivot/final_rm_ceiling_$AssimpFbx$_RotationPivotInverse/final_rm_ceiling_$AssimpFbx$_ScalingPivot/final_rm_ceiling_$AssimpFbx$_ScalingPivotInverse/final_rm_ceiling/final_rm_ceiling",
-            "index": 42,
+            "index": 41,
             "pivotOffset": {
                 "x": 19.389999389648438,
-                "y": 6.0,
+                "y": 3.0,
                 "z": -5.494370937347412
             }
         },
         {
-            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Keycard_Reader1_$AssimpFbx$_RotationPivot/Keycard_Reader1_$AssimpFbx$_RotationPivotInverse/Keycard_Reader1_$AssimpFbx$_ScalingPivot/Keycard_Reader1_$AssimpFbx$_ScalingPivotInverse/Keycard_Reader1/Keycard_Reader1",
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/window_frames_$AssimpFbx$_RotationPivot/window_frames_$AssimpFbx$_RotationPivotInverse/window_frames_$AssimpFbx$_ScalingPivot/window_frames_$AssimpFbx$_ScalingPivotInverse/window_frames/window_frames",
+            "index": 42,
+            "pivotOffset": {
+                "x": 17.590524673461914,
+                "y": 1.7465667724609375,
+                "z": -5.042733192443848
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/inner_walls_$AssimpFbx$_RotationPivot/inner_walls_$AssimpFbx$_RotationPivotInverse/inner_walls_$AssimpFbx$_ScalingPivot/inner_walls_$AssimpFbx$_ScalingPivotInverse/inner_walls/inner_walls",
             "index": 43,
+            "pivotOffset": {
+                "x": 19.724040985107422,
+                "y": 0.0,
+                "z": -5.396164417266846
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/perimeter_walls_$AssimpFbx$_RotationPivot/perimeter_walls_$AssimpFbx$_RotationPivotInverse/perimeter_walls_$AssimpFbx$_ScalingPivot/perimeter_walls_$AssimpFbx$_ScalingPivotInverse/perimeter_walls/perimeter_walls",
+            "index": 44,
+            "pivotOffset": {
+                "x": 19.72403907775879,
+                "y": 1.5,
+                "z": -5.396164894104004
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_bomb_area_elevated_floor_$AssimpFbx$_RotationPivot/final_bomb_area_elevated_floor_$AssimpFbx$_RotationPivotInverse/final_bomb_area_elevated_floor_$AssimpFbx$_ScalingPivot/final_bomb_area_elevated_floor_$AssimpFbx$_ScalingPivotInverse/final_bomb_area_elevated_floor/final_bomb_area_elevated_floor",
+            "index": 45,
+            "pivotOffset": {
+                "x": 20.489667892456055,
+                "y": -0.43983694911003113,
+                "z": -6.560412406921387
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/step/step",
+            "index": 46,
+            "pivotOffset": {
+                "x": 20.489667892456055,
+                "y": -0.2902734875679016,
+                "z": -2.52085542678833
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/LabChairs_$AssimpFbx$_RotationPivot/LabChairs_$AssimpFbx$_RotationPivotInverse/LabChairs_$AssimpFbx$_ScalingPivot/LabChairs_$AssimpFbx$_ScalingPivotInverse/LabChairs/LabChairs",
+            "index": 47,
+            "pivotOffset": {
+                "x": 20.17475700378418,
+                "y": -1.1580169200897217,
+                "z": -5.284021377563477
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/LabMachines_$AssimpFbx$_RotationPivot/LabMachines_$AssimpFbx$_RotationPivotInverse/LabMachines_$AssimpFbx$_ScalingPivot/LabMachines_$AssimpFbx$_ScalingPivotInverse/LabMachines/LabMachines",
+            "index": 48,
+            "pivotOffset": {
+                "x": 20.78911018371582,
+                "y": -0.8504243493080139,
+                "z": -5.39017915725708
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Keycard_Reader1_$AssimpFbx$_RotationPivot/Keycard_Reader1_$AssimpFbx$_RotationPivotInverse/Keycard_Reader1_$AssimpFbx$_ScalingPivot/Keycard_Reader1_$AssimpFbx$_ScalingPivotInverse/Keycard_Reader1/Keycard_Reader1",
+            "index": 49,
             "pivotOffset": {
                 "x": 7.143328666687012,
                 "y": 1.138126254081726,
@@ -443,7 +498,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/BatteryHolder3_$AssimpFbx$_RotationPivot/BatteryHolder3_$AssimpFbx$_RotationPivotInverse/BatteryHolder3_$AssimpFbx$_ScalingPivot/BatteryHolder3_$AssimpFbx$_ScalingPivotInverse/BatteryHolder3/BatteryHolder3",
-            "index": 44,
+            "index": 50,
             "pivotOffset": {
                 "x": 13.202486038208008,
                 "y": 1.1678671836853027,
@@ -452,7 +507,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/BatteryHolder2_$AssimpFbx$_RotationPivot/BatteryHolder2_$AssimpFbx$_RotationPivotInverse/BatteryHolder2_$AssimpFbx$_ScalingPivot/BatteryHolder2_$AssimpFbx$_ScalingPivotInverse/BatteryHolder2/BatteryHolder2",
-            "index": 45,
+            "index": 51,
             "pivotOffset": {
                 "x": 13.202486038208008,
                 "y": 1.1678671836853027,
@@ -461,7 +516,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/BatteryHolder1_$AssimpFbx$_RotationPivot/BatteryHolder1_$AssimpFbx$_RotationPivotInverse/BatteryHolder1_$AssimpFbx$_ScalingPivot/BatteryHolder1_$AssimpFbx$_ScalingPivotInverse/BatteryHolder1/BatteryHolder1",
-            "index": 46,
+            "index": 52,
             "pivotOffset": {
                 "x": 13.202486038208008,
                 "y": 1.1678671836853027,
@@ -470,7 +525,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Mirror_Puzzle_cover_2_$AssimpFbx$_RotationPivot/Mirror_Puzzle_cover_2_$AssimpFbx$_RotationPivotInverse/Mirror_Puzzle_cover_2_$AssimpFbx$_ScalingPivot/Mirror_Puzzle_cover_2_$AssimpFbx$_ScalingPivotInverse/Mirror_Puzzle_cover_2/Mirror_Puzzle_cover_2",
-            "index": 47,
+            "index": 53,
             "pivotOffset": {
                 "x": 12.016641616821289,
                 "y": 1.4366488456726074,
@@ -479,7 +534,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Mirror_Puzzle_cover_1_$AssimpFbx$_RotationPivot/Mirror_Puzzle_cover_1_$AssimpFbx$_RotationPivotInverse/Mirror_Puzzle_cover_1_$AssimpFbx$_ScalingPivot/Mirror_Puzzle_cover_1_$AssimpFbx$_ScalingPivotInverse/Mirror_Puzzle_cover_1/Mirror_Puzzle_cover_1",
-            "index": 48,
+            "index": 54,
             "pivotOffset": {
                 "x": 12.016641616821289,
                 "y": 1.8479787111282349,
@@ -488,7 +543,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle16_$AssimpFbx$_RotationPivot/MirrorPuzzle16_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle16_$AssimpFbx$_ScalingPivot/MirrorPuzzle16_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle16/MirrorPuzzle16",
-            "index": 49,
+            "index": 55,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.432314157485962,
@@ -497,7 +552,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle17_$AssimpFbx$_RotationPivot/MirrorPuzzle17_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle17_$AssimpFbx$_ScalingPivot/MirrorPuzzle17_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle17/MirrorPuzzle17",
-            "index": 50,
+            "index": 56,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.432314157485962,
@@ -506,7 +561,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle18_$AssimpFbx$_RotationPivot/MirrorPuzzle18_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle18_$AssimpFbx$_ScalingPivot/MirrorPuzzle18_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle18/MirrorPuzzle18",
-            "index": 51,
+            "index": 57,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.432314157485962,
@@ -515,7 +570,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle19_$AssimpFbx$_RotationPivot/MirrorPuzzle19_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle19_$AssimpFbx$_ScalingPivot/MirrorPuzzle19_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle19/MirrorPuzzle19",
-            "index": 52,
+            "index": 58,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.432314157485962,
@@ -524,7 +579,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle20_$AssimpFbx$_RotationPivot/MirrorPuzzle20_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle20_$AssimpFbx$_ScalingPivot/MirrorPuzzle20_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle20/MirrorPuzzle20",
-            "index": 53,
+            "index": 59,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.5323140621185303,
@@ -533,7 +588,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle21_$AssimpFbx$_RotationPivot/MirrorPuzzle21_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle21_$AssimpFbx$_ScalingPivot/MirrorPuzzle21_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle21/MirrorPuzzle21",
-            "index": 54,
+            "index": 60,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.5323140621185303,
@@ -542,7 +597,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle22_$AssimpFbx$_RotationPivot/MirrorPuzzle22_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle22_$AssimpFbx$_ScalingPivot/MirrorPuzzle22_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle22/MirrorPuzzle22",
-            "index": 55,
+            "index": 61,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.5323140621185303,
@@ -551,7 +606,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle23_$AssimpFbx$_RotationPivot/MirrorPuzzle23_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle23_$AssimpFbx$_ScalingPivot/MirrorPuzzle23_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle23/MirrorPuzzle23",
-            "index": 56,
+            "index": 62,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.5323140621185303,
@@ -560,7 +615,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle24_$AssimpFbx$_RotationPivot/MirrorPuzzle24_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle24_$AssimpFbx$_ScalingPivot/MirrorPuzzle24_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle24/MirrorPuzzle24",
-            "index": 57,
+            "index": 63,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.3323140144348145,
@@ -569,7 +624,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle25_$AssimpFbx$_RotationPivot/MirrorPuzzle25_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle25_$AssimpFbx$_ScalingPivot/MirrorPuzzle25_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle25/MirrorPuzzle25",
-            "index": 58,
+            "index": 64,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.3323140144348145,
@@ -578,7 +633,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle26_$AssimpFbx$_RotationPivot/MirrorPuzzle26_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle26_$AssimpFbx$_ScalingPivot/MirrorPuzzle26_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle26/MirrorPuzzle26",
-            "index": 59,
+            "index": 65,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.3323140144348145,
@@ -587,7 +642,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/left_side/MirrorPuzzle27_$AssimpFbx$_RotationPivot/MirrorPuzzle27_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle27_$AssimpFbx$_ScalingPivot/MirrorPuzzle27_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle27/MirrorPuzzle27",
-            "index": 60,
+            "index": 66,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.3323140144348145,
@@ -596,7 +651,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle8_$AssimpFbx$_RotationPivot/MirrorPuzzle8_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle8_$AssimpFbx$_ScalingPivot/MirrorPuzzle8_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle8/MirrorPuzzle8",
-            "index": 61,
+            "index": 67,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.432314157485962,
@@ -605,7 +660,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle9_$AssimpFbx$_RotationPivot/MirrorPuzzle9_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle9_$AssimpFbx$_ScalingPivot/MirrorPuzzle9_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle9/MirrorPuzzle9",
-            "index": 62,
+            "index": 68,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.432314157485962,
@@ -614,7 +669,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle10_$AssimpFbx$_RotationPivot/MirrorPuzzle10_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle10_$AssimpFbx$_ScalingPivot/MirrorPuzzle10_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle10/MirrorPuzzle10",
-            "index": 63,
+            "index": 69,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.432314157485962,
@@ -623,7 +678,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle11_$AssimpFbx$_RotationPivot/MirrorPuzzle11_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle11_$AssimpFbx$_ScalingPivot/MirrorPuzzle11_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle11/MirrorPuzzle11",
-            "index": 64,
+            "index": 70,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.432314157485962,
@@ -632,7 +687,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle12_$AssimpFbx$_RotationPivot/MirrorPuzzle12_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle12_$AssimpFbx$_ScalingPivot/MirrorPuzzle12_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle12/MirrorPuzzle12",
-            "index": 65,
+            "index": 71,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.5323140621185303,
@@ -641,7 +696,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle13_$AssimpFbx$_RotationPivot/MirrorPuzzle13_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle13_$AssimpFbx$_ScalingPivot/MirrorPuzzle13_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle13/MirrorPuzzle13",
-            "index": 66,
+            "index": 72,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.5323140621185303,
@@ -650,7 +705,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle14_$AssimpFbx$_RotationPivot/MirrorPuzzle14_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle14_$AssimpFbx$_ScalingPivot/MirrorPuzzle14_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle14/MirrorPuzzle14",
-            "index": 67,
+            "index": 73,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.5323140621185303,
@@ -659,7 +714,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle15_$AssimpFbx$_RotationPivot/MirrorPuzzle15_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle15_$AssimpFbx$_ScalingPivot/MirrorPuzzle15_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle15/MirrorPuzzle15",
-            "index": 68,
+            "index": 74,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.5323140621185303,
@@ -668,7 +723,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle4_$AssimpFbx$_RotationPivot/MirrorPuzzle4_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle4_$AssimpFbx$_ScalingPivot/MirrorPuzzle4_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle4/MirrorPuzzle4",
-            "index": 69,
+            "index": 75,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.3323140144348145,
@@ -677,7 +732,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle5_$AssimpFbx$_RotationPivot/MirrorPuzzle5_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle5_$AssimpFbx$_ScalingPivot/MirrorPuzzle5_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle5/MirrorPuzzle5",
-            "index": 70,
+            "index": 76,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.3323140144348145,
@@ -686,7 +741,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle6_$AssimpFbx$_RotationPivot/MirrorPuzzle6_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle6_$AssimpFbx$_ScalingPivot/MirrorPuzzle6_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle6/MirrorPuzzle6",
-            "index": 71,
+            "index": 77,
             "pivotOffset": {
                 "x": 12.003072738647461,
                 "y": 1.3323140144348145,
@@ -695,7 +750,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/mirror_puzzle_keys/right_side/MirrorPuzzle7_$AssimpFbx$_RotationPivot/MirrorPuzzle7_$AssimpFbx$_RotationPivotInverse/MirrorPuzzle7_$AssimpFbx$_ScalingPivot/MirrorPuzzle7_$AssimpFbx$_ScalingPivotInverse/MirrorPuzzle7/MirrorPuzzle7",
-            "index": 72,
+            "index": 78,
             "pivotOffset": {
                 "x": 12.003070831298828,
                 "y": 1.3323140144348145,
@@ -704,7 +759,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Inner_Ring1_$AssimpFbx$_RotationPivot/Inner_Ring1_$AssimpFbx$_RotationPivotInverse/Inner_Ring1_$AssimpFbx$_ScalingPivot/Inner_Ring1_$AssimpFbx$_ScalingPivotInverse/Inner_Ring1/Inner_Ring1",
-            "index": 73,
+            "index": 79,
             "pivotOffset": {
                 "x": 30.56511116027832,
                 "y": 1.3503127098083496,
@@ -713,7 +768,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Outer_Ring1_$AssimpFbx$_RotationPivot/Outer_Ring1_$AssimpFbx$_RotationPivotInverse/Outer_Ring1_$AssimpFbx$_ScalingPivot/Outer_Ring1_$AssimpFbx$_ScalingPivotInverse/Outer_Ring1/Outer_Ring1",
-            "index": 74,
+            "index": 80,
             "pivotOffset": {
                 "x": 30.56511116027832,
                 "y": 1.35031259059906,
@@ -722,7 +777,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Middle_Ring1_$AssimpFbx$_RotationPivot/Middle_Ring1_$AssimpFbx$_RotationPivotInverse/Middle_Ring1_$AssimpFbx$_ScalingPivot/Middle_Ring1_$AssimpFbx$_ScalingPivotInverse/Middle_Ring1/Middle_Ring1",
-            "index": 75,
+            "index": 81,
             "pivotOffset": {
                 "x": 30.56511116027832,
                 "y": 1.35031259059906,
@@ -731,7 +786,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/BatteryHolder4_$AssimpFbx$_RotationPivot/BatteryHolder4_$AssimpFbx$_RotationPivotInverse/BatteryHolder4_$AssimpFbx$_ScalingPivot/BatteryHolder4_$AssimpFbx$_ScalingPivotInverse/BatteryHolder4/BatteryHolder4",
-            "index": 76,
+            "index": 82,
             "pivotOffset": {
                 "x": 27.630287170410156,
                 "y": 1.1678671836853027,
@@ -740,7 +795,7 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/BatteryHolder5_$AssimpFbx$_RotationPivot/BatteryHolder5_$AssimpFbx$_RotationPivotInverse/BatteryHolder5_$AssimpFbx$_ScalingPivot/BatteryHolder5_$AssimpFbx$_ScalingPivotInverse/BatteryHolder5/BatteryHolder5",
-            "index": 77,
+            "index": 83,
             "pivotOffset": {
                 "x": 31.84012222290039,
                 "y": 1.1678671836853027,
@@ -749,56 +804,227 @@
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Battery2_$AssimpFbx$_RotationPivot/Battery2_$AssimpFbx$_RotationPivotInverse/Battery2_$AssimpFbx$_ScalingPivot/Battery2_$AssimpFbx$_ScalingPivotInverse/Battery2/Battery2",
-            "index": 78,
+            "index": 84,
             "pivotOffset": {
-                "x": 10.809122085571289,
-                "y": 1.0736533403396606,
-                "z": -5.035022735595703
-            }
-        },
-        {
-            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Battery3_$AssimpFbx$_RotationPivot/Battery3_$AssimpFbx$_RotationPivotInverse/Battery3_$AssimpFbx$_ScalingPivot/Battery3_$AssimpFbx$_ScalingPivotInverse/Battery3/Battery3",
-            "index": 79,
-            "pivotOffset": {
-                "x": 10.07606315612793,
-                "y": 1.0736533403396606,
-                "z": 2.376250743865967
+                "x": 9.914894104003906,
+                "y": 1.0052345991134644,
+                "z": -5.482131004333496
             }
         },
         {
             "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Battery1_$AssimpFbx$_RotationPivot/Battery1_$AssimpFbx$_RotationPivotInverse/Battery1_$AssimpFbx$_ScalingPivot/Battery1_$AssimpFbx$_ScalingPivotInverse/Battery1/Battery1",
-            "index": 80,
+            "index": 85,
             "pivotOffset": {
                 "x": 7.786001682281494,
-                "y": 1.0736533403396606,
+                "y": 1.0052345991134644,
                 "z": -13.961771011352539
             }
         },
         {
-            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/placeholder_tables/fake_table_1_$AssimpFbx$_RotationPivot/fake_table_1_$AssimpFbx$_RotationPivotInverse/fake_table_1_$AssimpFbx$_ScalingPivot/fake_table_1_$AssimpFbx$_ScalingPivotInverse/fake_table_1/fake_table_1",
-            "index": 81,
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Battery3_$AssimpFbx$_RotationPivot/Battery3_$AssimpFbx$_RotationPivotInverse/Battery3_$AssimpFbx$_ScalingPivot/Battery3_$AssimpFbx$_ScalingPivotInverse/Battery3/Battery3",
+            "index": 86,
             "pivotOffset": {
-                "x": 10.892107963562012,
-                "y": 0.5,
-                "z": -5.30148983001709
+                "x": 10.07606315612793,
+                "y": 1.0052345991134644,
+                "z": 2.376250743865967
             }
         },
         {
-            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/placeholder_tables/fake_table_2_$AssimpFbx$_RotationPivot/fake_table_2_$AssimpFbx$_RotationPivotInverse/fake_table_2_$AssimpFbx$_ScalingPivot/fake_table_2_$AssimpFbx$_ScalingPivotInverse/fake_table_2/fake_table_2",
-            "index": 82,
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/final_rm_puzzles/Battery4_$AssimpFbx$_RotationPivot/Battery4_$AssimpFbx$_RotationPivotInverse/Battery4_$AssimpFbx$_ScalingPivot/Battery4_$AssimpFbx$_ScalingPivotInverse/Battery4/Battery4",
+            "index": 87,
             "pivotOffset": {
-                "x": 7.792107582092285,
-                "y": 0.5,
-                "z": -13.919793128967285
+                "x": 31.392061233520508,
+                "y": 0.07365333288908005,
+                "z": -13.327201843261719
             }
         },
         {
-            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/placeholder_tables/fake_table_3_$AssimpFbx$_RotationPivot/fake_table_3_$AssimpFbx$_RotationPivotInverse/fake_table_3_$AssimpFbx$_ScalingPivot/fake_table_3_$AssimpFbx$_ScalingPivotInverse/fake_table_3/fake_table_3",
-            "index": 83,
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable_$AssimpFbx$_RotationPivot/LabTable_$AssimpFbx$_RotationPivotInverse/LabTable_$AssimpFbx$_ScalingPivot/LabTable_$AssimpFbx$_ScalingPivotInverse/LabTable/LabTable",
+            "index": 88,
             "pivotOffset": {
-                "x": 10.044658660888672,
-                "y": 0.5,
-                "z": 2.4225244522094727
+                "x": 10.112333297729492,
+                "y": 0.46579062938690186,
+                "z": 1.7056294679641724
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable1_$AssimpFbx$_RotationPivot/LabTable1_$AssimpFbx$_RotationPivotInverse/LabTable1_$AssimpFbx$_ScalingPivot/LabTable1_$AssimpFbx$_ScalingPivotInverse/LabTable1/LabTable1",
+            "index": 89,
+            "pivotOffset": {
+                "x": 12.172273635864258,
+                "y": 0.46579062938690186,
+                "z": 1.181572437286377
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable2_$AssimpFbx$_RotationPivot/LabTable2_$AssimpFbx$_RotationPivotInverse/LabTable2_$AssimpFbx$_ScalingPivot/LabTable2_$AssimpFbx$_ScalingPivotInverse/LabTable2/LabTable2",
+            "index": 90,
+            "pivotOffset": {
+                "x": 10.563518524169922,
+                "y": 0.46579062938690186,
+                "z": -5.2296552658081055
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable3_$AssimpFbx$_RotationPivot/LabTable3_$AssimpFbx$_RotationPivotInverse/LabTable3_$AssimpFbx$_ScalingPivot/LabTable3_$AssimpFbx$_ScalingPivotInverse/LabTable3/LabTable3",
+            "index": 91,
+            "pivotOffset": {
+                "x": 29.91716957092285,
+                "y": 0.46579062938690186,
+                "z": 3.2824883460998535
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable4_$AssimpFbx$_RotationPivot/LabTable4_$AssimpFbx$_RotationPivotInverse/LabTable4_$AssimpFbx$_ScalingPivot/LabTable4_$AssimpFbx$_ScalingPivotInverse/LabTable4/LabTable4",
+            "index": 92,
+            "pivotOffset": {
+                "x": 14.911625862121582,
+                "y": 0.46579062938690186,
+                "z": -3.2372539043426514
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable6_$AssimpFbx$_RotationPivot/LabTable6_$AssimpFbx$_RotationPivotInverse/LabTable6_$AssimpFbx$_ScalingPivot/LabTable6_$AssimpFbx$_ScalingPivotInverse/LabTable6/LabTable6",
+            "index": 93,
+            "pivotOffset": {
+                "x": 10.108081817626953,
+                "y": 0.46579062938690186,
+                "z": -3.2415032386779785
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable7_$AssimpFbx$_RotationPivot/LabTable7_$AssimpFbx$_RotationPivotInverse/LabTable7_$AssimpFbx$_ScalingPivot/LabTable7_$AssimpFbx$_ScalingPivotInverse/LabTable7/LabTable7",
+            "index": 94,
+            "pivotOffset": {
+                "x": 14.911625862121582,
+                "y": 0.46579062938690186,
+                "z": -7.579654693603516
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable8_$AssimpFbx$_RotationPivot/LabTable8_$AssimpFbx$_RotationPivotInverse/LabTable8_$AssimpFbx$_ScalingPivot/LabTable8_$AssimpFbx$_ScalingPivotInverse/LabTable8/LabTable8",
+            "index": 95,
+            "pivotOffset": {
+                "x": 7.463518142700195,
+                "y": 0.46579062938690186,
+                "z": -13.8479585647583
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable9_$AssimpFbx$_RotationPivot/LabTable9_$AssimpFbx$_RotationPivotInverse/LabTable9_$AssimpFbx$_ScalingPivot/LabTable9_$AssimpFbx$_ScalingPivotInverse/LabTable9/LabTable9",
+            "index": 96,
+            "pivotOffset": {
+                "x": 7.008081912994385,
+                "y": 0.46579062938690186,
+                "z": -11.939248085021973
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable10_$AssimpFbx$_RotationPivot/LabTable10_$AssimpFbx$_RotationPivotInverse/LabTable10_$AssimpFbx$_ScalingPivot/LabTable10_$AssimpFbx$_ScalingPivotInverse/LabTable10/LabTable10",
+            "index": 97,
+            "pivotOffset": {
+                "x": 27.4229679107666,
+                "y": 0.46579062938690186,
+                "z": -2.776557445526123
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable11_$AssimpFbx$_RotationPivot/LabTable11_$AssimpFbx$_RotationPivotInverse/LabTable11_$AssimpFbx$_ScalingPivot/LabTable11_$AssimpFbx$_ScalingPivotInverse/LabTable11/LabTable11",
+            "index": 98,
+            "pivotOffset": {
+                "x": 29.38888931274414,
+                "y": 0.46579062938690186,
+                "z": -5.2349138259887695
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable12_$AssimpFbx$_RotationPivot/LabTable12_$AssimpFbx$_RotationPivotInverse/LabTable12_$AssimpFbx$_ScalingPivot/LabTable12_$AssimpFbx$_ScalingPivotInverse/LabTable12/LabTable12",
+            "index": 99,
+            "pivotOffset": {
+                "x": 27.111732482910156,
+                "y": 0.46579062938690186,
+                "z": 1.5896579027175903
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable13_$AssimpFbx$_RotationPivot/LabTable13_$AssimpFbx$_RotationPivotInverse/LabTable13_$AssimpFbx$_ScalingPivot/LabTable13_$AssimpFbx$_ScalingPivotInverse/LabTable13/LabTable13",
+            "index": 100,
+            "pivotOffset": {
+                "x": 30.02678680419922,
+                "y": 0.46579062938690186,
+                "z": -7.574396133422852
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable14_$AssimpFbx$_RotationPivot/LabTable14_$AssimpFbx$_RotationPivotInverse/LabTable14_$AssimpFbx$_ScalingPivot/LabTable14_$AssimpFbx$_ScalingPivotInverse/LabTable14/LabTable14",
+            "index": 101,
+            "pivotOffset": {
+                "x": 31.98456382751465,
+                "y": 0.46579062938690186,
+                "z": 1.5896579027175903
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable15_$AssimpFbx$_RotationPivot/LabTable15_$AssimpFbx$_RotationPivotInverse/LabTable15_$AssimpFbx$_ScalingPivot/LabTable15_$AssimpFbx$_ScalingPivotInverse/LabTable15/LabTable15",
+            "index": 102,
+            "pivotOffset": {
+                "x": 31.280582427978516,
+                "y": 0.46579062938690186,
+                "z": -4.715734958648682
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable16_$AssimpFbx$_RotationPivot/LabTable16_$AssimpFbx$_RotationPivotInverse/LabTable16_$AssimpFbx$_ScalingPivot/LabTable16_$AssimpFbx$_ScalingPivotInverse/LabTable16/LabTable16",
+            "index": 103,
+            "pivotOffset": {
+                "x": 15.901107788085938,
+                "y": -2.5342092514038086,
+                "z": -9.089008331298828
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable17_$AssimpFbx$_RotationPivot/LabTable17_$AssimpFbx$_RotationPivotInverse/LabTable17_$AssimpFbx$_ScalingPivot/LabTable17_$AssimpFbx$_ScalingPivotInverse/LabTable17/LabTable17",
+            "index": 104,
+            "pivotOffset": {
+                "x": 15.906366348266602,
+                "y": -2.5342092514038086,
+                "z": -4.1318159103393555
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable18_$AssimpFbx$_RotationPivot/LabTable18_$AssimpFbx$_RotationPivotInverse/LabTable18_$AssimpFbx$_ScalingPivot/LabTable18_$AssimpFbx$_ScalingPivotInverse/LabTable18/LabTable18",
+            "index": 105,
+            "pivotOffset": {
+                "x": 25.006366729736328,
+                "y": -2.5342092514038086,
+                "z": -9.089008331298828
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable19_$AssimpFbx$_RotationPivot/LabTable19_$AssimpFbx$_RotationPivotInverse/LabTable19_$AssimpFbx$_ScalingPivot/LabTable19_$AssimpFbx$_ScalingPivotInverse/LabTable19/LabTable19",
+            "index": 106,
+            "pivotOffset": {
+                "x": 25.078227996826172,
+                "y": -2.5342092514038086,
+                "z": -4.1318159103393555
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable21_$AssimpFbx$_RotationPivot/LabTable21_$AssimpFbx$_RotationPivotInverse/LabTable21_$AssimpFbx$_ScalingPivot/LabTable21_$AssimpFbx$_ScalingPivotInverse/LabTable21/LabTable21",
+            "index": 107,
+            "pivotOffset": {
+                "x": 21.112449645996094,
+                "y": -2.5342092514038086,
+                "z": -10.669586181640625
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/lab_tables/LabTable23_$AssimpFbx$_RotationPivot/LabTable23_$AssimpFbx$_RotationPivotInverse/LabTable23_$AssimpFbx$_ScalingPivot/LabTable23_$AssimpFbx$_ScalingPivotInverse/LabTable23/LabTable23",
+            "index": 108,
+            "pivotOffset": {
+                "x": 20.842761993408203,
+                "y": -2.5342092514038086,
+                "z": -2.556497097015381
             }
         }
     ],
@@ -2321,7 +2547,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "walls",
+                    "name": "Phone",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2350,7 +2576,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "838640e3-3b0c-4ff2-af25-5e9b7bc42c1c",
+                    "materialUUID": "b222685f-861f-445f-a6fe-f6cd6354d85a",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 38,
@@ -2360,7 +2586,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Phone",
+                    "name": "ServerRackCables92",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2389,7 +2615,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "b222685f-861f-445f-a6fe-f6cd6354d85a",
+                    "materialUUID": "a0429513-afc0-4ba5-ab1f-f55eb021bb54",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 39,
@@ -2399,7 +2625,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "ServerRackCables92",
+                    "name": "ServerRackShelf92",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2428,7 +2654,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "a0429513-afc0-4ba5-ab1f-f55eb021bb54",
+                    "materialUUID": "9963d1b1-264d-4a26-ac43-e1a0023bb6d1",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 40,
@@ -2438,7 +2664,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "ServerRackShelf92",
+                    "name": "final_rm_ceiling",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2467,7 +2693,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "83d29289-ec08-401d-9ba4-6ea6abc5a3c1",
+                    "materialUUID": "8c980e22-dd65-4d5f-a61d-5ce06de8f1f5",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 41,
@@ -2477,7 +2703,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "final_rm_ceiling",
+                    "name": "window_frames",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2506,7 +2732,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "8c980e22-dd65-4d5f-a61d-5ce06de8f1f5",
+                    "materialUUID": "da2fe829-c23e-4093-96e5-948fdb28b7c3",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 42,
@@ -2516,7 +2742,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Keycard_Reader1",
+                    "name": "inner_walls",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2545,7 +2771,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "materialUUID": "da2fe829-c23e-4093-96e5-948fdb28b7c3",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 43,
@@ -2555,7 +2781,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "BatteryHolder3",
+                    "name": "perimeter_walls",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2584,7 +2810,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "materialUUID": "838640e3-3b0c-4ff2-af25-5e9b7bc42c1c",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 44,
@@ -2594,7 +2820,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "BatteryHolder2",
+                    "name": "final_bomb_area_elevated_floor",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2623,7 +2849,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "materialUUID": "da2fe829-c23e-4093-96e5-948fdb28b7c3",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 45,
@@ -2633,7 +2859,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "BatteryHolder1",
+                    "name": "step",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2662,7 +2888,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "materialUUID": "da2fe829-c23e-4093-96e5-948fdb28b7c3",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 46,
@@ -2672,7 +2898,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Mirror_Puzzle_cover_2",
+                    "name": "LabChairs",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2701,7 +2927,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "materialUUID": "5afaf24d-8702-4ae4-918b-1f432d3bc4b7",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 47,
@@ -2711,7 +2937,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Mirror_Puzzle_cover_1",
+                    "name": "LabMachines",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2740,7 +2966,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "materialUUID": "96c81ad4-64bc-452b-b13a-d0c444c4cdc3",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 48,
@@ -2750,7 +2976,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle16",
+                    "name": "Keycard_Reader1",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2789,7 +3015,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle17",
+                    "name": "BatteryHolder3",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2828,7 +3054,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle18",
+                    "name": "BatteryHolder2",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2867,7 +3093,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle19",
+                    "name": "BatteryHolder1",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2906,7 +3132,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle20",
+                    "name": "Mirror_Puzzle_cover_2",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2945,7 +3171,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle21",
+                    "name": "Mirror_Puzzle_cover_1",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -2984,7 +3210,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle22",
+                    "name": "MirrorPuzzle16",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3023,7 +3249,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle23",
+                    "name": "MirrorPuzzle17",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3062,7 +3288,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle24",
+                    "name": "MirrorPuzzle18",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3101,7 +3327,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle25",
+                    "name": "MirrorPuzzle19",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3140,7 +3366,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle26",
+                    "name": "MirrorPuzzle20",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3179,7 +3405,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle27",
+                    "name": "MirrorPuzzle21",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3218,7 +3444,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle8",
+                    "name": "MirrorPuzzle22",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3257,7 +3483,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle9",
+                    "name": "MirrorPuzzle23",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3296,7 +3522,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle10",
+                    "name": "MirrorPuzzle24",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3335,7 +3561,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle11",
+                    "name": "MirrorPuzzle25",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3374,7 +3600,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle12",
+                    "name": "MirrorPuzzle26",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3413,7 +3639,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle13",
+                    "name": "MirrorPuzzle27",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3452,7 +3678,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle14",
+                    "name": "MirrorPuzzle8",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3491,7 +3717,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle15",
+                    "name": "MirrorPuzzle9",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3530,7 +3756,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle4",
+                    "name": "MirrorPuzzle10",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3569,7 +3795,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle5",
+                    "name": "MirrorPuzzle11",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3608,7 +3834,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle6",
+                    "name": "MirrorPuzzle12",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3647,7 +3873,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "MirrorPuzzle7",
+                    "name": "MirrorPuzzle13",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3686,7 +3912,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Inner_Ring1",
+                    "name": "MirrorPuzzle14",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3725,7 +3951,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Outer_Ring1",
+                    "name": "MirrorPuzzle15",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3764,7 +3990,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Middle_Ring1",
+                    "name": "MirrorPuzzle4",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3803,7 +4029,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "BatteryHolder4",
+                    "name": "MirrorPuzzle5",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3842,7 +4068,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "BatteryHolder5",
+                    "name": "MirrorPuzzle6",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3881,7 +4107,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Battery2",
+                    "name": "MirrorPuzzle7",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3920,7 +4146,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Battery3",
+                    "name": "Inner_Ring1",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3959,7 +4185,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "Battery1",
+                    "name": "Outer_Ring1",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -3998,7 +4224,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "fake_table_1",
+                    "name": "Middle_Ring1",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -4027,7 +4253,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "838640e3-3b0c-4ff2-af25-5e9b7bc42c1c",
+                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 81,
@@ -4037,7 +4263,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "fake_table_2",
+                    "name": "BatteryHolder4",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -4066,7 +4292,7 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "838640e3-3b0c-4ff2-af25-5e9b7bc42c1c",
+                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 82,
@@ -4076,7 +4302,7 @@
             {
                 "Layer": 0,
                 "EntityMeta": {
-                    "name": "fake_table_3",
+                    "name": "BatteryHolder5",
                     "isActive": 1,
                     "isStatic": 0,
                     "luid": 0
@@ -4105,10 +4331,985 @@
                 },
                 "Renderer": {
                     "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
-                    "materialUUID": "838640e3-3b0c-4ff2-af25-5e9b7bc42c1c",
+                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
                     "shadowCastMode": 1,
                     "receiveShadows": 1,
                     "subMeshIndex": 83,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Battery2",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 86,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 86
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 84,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Battery1",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 87,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 87
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 85,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Battery3",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 88,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 88
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 86,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Battery4",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 89,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 89
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "589c2967-04e8-409d-96ac-7a6a0a3a69e2",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 87,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 90,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 90
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 88,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable1",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 91,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 91
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 89,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable2",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 92,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 92
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 90,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable3",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 93,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 93
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 91,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable4",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 94,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 94
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 92,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable6",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 95,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 95
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 93,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable7",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 96,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 96
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 94,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable8",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 97,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 97
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 95,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable9",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 98,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 98
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 96,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable10",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 99,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 99
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 97,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable11",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 100,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 100
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 98,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable12",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 101,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 101
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 99,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable13",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 102,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 102
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 100,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable14",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 103,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 103
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 101,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable15",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 104,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 104
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 102,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable16",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 105,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 105
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 103,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable17",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 106,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 106
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 104,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable18",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 107,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 107
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 105,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable19",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 108,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 108
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 106,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable21",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 109,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 109
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 107,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "LabTable23",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 110,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 110
+                },
+                "Renderer": {
+                    "modelUUID": "41aaee72-18e5-43bc-ae4d-5422556ce670",
+                    "materialUUID": "248ad21d-6b3a-4257-8c24-a561075d6a52",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 108,
                     "luid": 0
                 }
             }
