@@ -83,6 +83,7 @@
 #include "Scripts/Tasks/TaskCheckpoint.hpp"
 #include "Scripts/UI_HoverTextColor.hpp"
 #include "Scripts/UI_OverlayFadeIn.hpp"
+#include "Scripts/UI_Settings.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -262,6 +263,9 @@ extern "C" {
             return new Camera_ExplosionShake();
             });
         registrar->RegisterScript("UI_MainMenu", []() -> NE::Scripting::IScript* {
+            return new UI_MainMenu();
+            });
+        registrar->RegisterScript("UI_Settings", []() -> NE::Scripting::IScript* {
             return new UI_MainMenu();
             });
         registrar->RegisterScript("UI_BGMVolumeButtons", []() -> NE::Scripting::IScript* {
