@@ -108,10 +108,10 @@
                 "name": "Empty Entity",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613788367650839
+                "luid": 7308614089220227072
             },
             "Hierarchy": {
-                "luid": 7526193945364987929,
+                "luid": 7526194246217564162,
                 "parentLuid": 0
             },
             "Transform": {
@@ -130,31 +130,7 @@
                     "y": 0.0,
                     "z": -0.0
                 },
-                "luid": 8390885073820123160
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "UI_MainMenu"
-                ],
-                "SerializedFields": {
-                    "UI_MainMenu.blackOverlayCanvas": "7167032157330210816",
-                    "UI_MainMenu.enableFadeOut": "1",
-                    "UI_MainMenu.fadeOutDuration": "1.000000"
-                },
-                "EntityReferenceFields": [
-                    "blackOverlayCanvas"
-                ],
-                "luid": 7958821186145026062
-            },
-            "Camera": {
-                "projectionType": 0,
-                "fovAxis": 0,
-                "Field of View": 60.0,
-                "Near Plane": 0.10000000149011612,
-                "Far Plane": 1000.0,
-                "Is Main Camera": 1,
-                "Is Active Camera": 1,
-                "aspectRatio": 1.7777777910232544
+                "luid": 8390885374672699393
             }
         },
         {
@@ -164,10 +140,10 @@
                 "name": "Canvas",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7167031875092152320
+                "luid": 7167032175935946755
             },
             "Hierarchy": {
-                "luid": 7526193945374949377,
+                "luid": 7167032175935946756,
                 "parentLuid": 0
             },
             "UIRectTransform": {
@@ -199,7 +175,7 @@
                 "maskPaddingBottom": 0.0
             },
             "UICanvas": {
-                "luid": 7167031875092152322,
+                "luid": 7167032175935946757,
                 "renderMode": 0,
                 "scaleMode": 1,
                 "cameraEntity": 4294967295,
@@ -219,11 +195,11 @@
                 "name": "Image",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308613788378726404
+                "luid": 7308614089221537798
             },
             "Hierarchy": {
-                "luid": 7526193945376063493,
-                "parentLuid": 7526193945374949377
+                "luid": 7526194246218874887,
+                "parentLuid": 7167032175935946756
             },
             "UIRectTransform": {
                 "x": 0.0,
@@ -284,10 +260,10 @@
                 "name": "Canvas",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7167031875044900864
+                "luid": 7167032175989030912
             },
             "Hierarchy": {
-                "luid": 7526193945327697921,
+                "luid": 7167032175989030913,
                 "parentLuid": 0
             },
             "UIRectTransform": {
@@ -319,7 +295,7 @@
                 "maskPaddingBottom": 0.0
             },
             "UICanvas": {
-                "luid": 7167031875044900866,
+                "luid": 7167032175989030914,
                 "renderMode": 0,
                 "scaleMode": 1,
                 "cameraEntity": 4294967295,
@@ -336,18 +312,18 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Main Menu Text",
+                "name": "Text",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066285510661
+                "luid": 7308614089274687491
             },
             "Hierarchy": {
-                "luid": 7526194223282847750,
-                "parentLuid": 7526193945327697921
+                "luid": 7526194246272024580,
+                "parentLuid": 7167032175989030913
             },
             "UIRectTransform": {
-                "x": -689.8859252929688,
-                "y": 135.39358520507813,
+                "x": -738.55517578125,
+                "y": 133.29446411132813,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -374,14 +350,14 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 8392574201598246919,
-                "text": "Main Menu",
+                "luid": 8392574224587423749,
+                "text": "Pause",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 45.0,
+                "fontSize": 53.0,
                 "color": {
-                    "x": 0.7568627595901489,
-                    "y": 0.7568627595901489,
-                    "z": 0.7568627595901489,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -398,43 +374,35 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Start",
+                "name": "Button",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066332237832
+                "luid": 7308614089275932678
             },
             "Hierarchy": {
-                "luid": 7526194223329574921,
-                "parentLuid": 7526193945327697921
+                "luid": 7526194246273269767,
+                "parentLuid": 7167032175989030913
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "UIButton_SwitchScene",
-                    "UI_HoverTextColor",
-                    "UI_OverlayFadeIn"
+                    "UI_HoverTextColor"
                 ],
                 "SerializedFields": {
-                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
-                    "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
-                    "UI_HoverTextColor.targetText": "7308614066332237835",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94",
-                    "UI_OverlayFadeIn.triggerButton": "7308614066332237832",
-                    "UIButton_SwitchScene.switchDelaySeconds": "1.000000"
+                    "UI_HoverTextColor.targetText": "7308614089275932681",
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF"
                 },
                 "EntityReferenceFields": [
-                    "targetText",
-                    "triggerButton",
-                    "blackOverlayCanvas"
+                    "targetText"
                 ],
-                "luid": 7958821262568783887
+                "luid": 7958821285480497164
             },
             "UIRectTransform": {
-                "x": -677.4000244140625,
-                "y": 216.2099151611328,
+                "x": -674.0684814453125,
+                "y": 204.6647186279297,
                 "z": 0.0,
-                "width": 235.0,
-                "height": 30.0,
+                "width": 234.0,
+                "height": 38.0,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -462,9 +430,9 @@
                 "textureUUID": "",
                 "materialUUID": "",
                 "color": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 0.0
                 },
                 "imageType": 0,
@@ -481,18 +449,18 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411609055428618,
+                "luid": 7094411631999123464,
                 "normalColor": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 0.0
                 },
                 "hoverColor": {
                     "x": 0.19607843458652496,
                     "y": 0.6901960968971252,
                     "z": 0.8509804010391235,
-                    "w": 0.21568627655506134
+                    "w": 0.20000000298023224
                 },
                 "pressedColor": {
                     "x": 0.6000000238418579,
@@ -517,23 +485,15 @@
                 "name": "Text",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066332237835
+                "luid": 7308614089275932681
             },
             "Hierarchy": {
-                "luid": 7526194223329574924,
-                "parentLuid": 7526194223329574921
-            },
-            "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
-                "EntityReferenceFields": [
-                    "targetText"
-                ],
-                "luid": 7958821262559870990
+                "luid": 7526194246273269770,
+                "parentLuid": 7526194246273269767
             },
             "UIRectTransform": {
-                "x": -179.60000610351563,
-                "y": -16.399999618530273,
+                "x": -180.0760498046875,
+                "y": -20.200000762939453,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -560,14 +520,14 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 8392574201644974093,
-                "text": "Play Game",
+                "luid": 8392574224588668939,
+                "text": "Resume",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 32.0,
+                "fontSize": 40.0,
                 "color": {
-                    "x": 0.5411764979362488,
-                    "y": 0.5411764979362488,
-                    "z": 0.5411764979362488,
+                    "x": 0.7647058963775635,
+                    "y": 0.7647058963775635,
+                    "z": 0.7647058963775635,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -584,43 +544,35 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Settings",
+                "name": "Button",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066382307351
+                "luid": 7308614089291399182
             },
             "Hierarchy": {
-                "luid": 7526194223379644438,
-                "parentLuid": 7526193945327697921
+                "luid": 7526194246288736269,
+                "parentLuid": 7167032175989030913
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "UIButton_SwitchSceneTwo",
-                    "UI_HoverTextColor",
-                    "UI_OverlayFadeIn"
+                    "UI_HoverTextColor"
                 ],
                 "SerializedFields": {
-                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
-                    "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
-                    "UIButton_SwitchSceneTwo.switchDelaySeconds": "1.000000",
-                    "UI_HoverTextColor.targetText": "7308614066382307354",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94",
-                    "UI_OverlayFadeIn.triggerButton": "7308614066382307351"
+                    "UI_HoverTextColor.targetText": "7308614089291399185",
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF"
                 },
                 "EntityReferenceFields": [
-                    "targetText",
-                    "triggerButton",
-                    "blackOverlayCanvas"
+                    "targetText"
                 ],
-                "luid": 7958821262583922712
+                "luid": 7958821285493014543
             },
             "UIRectTransform": {
-                "x": -677.4000244140625,
-                "y": 256.1000061035156,
+                "x": -674.0684814453125,
+                "y": 254.10000610351563,
                 "z": 0.0,
-                "width": 235.0,
-                "height": 30.0,
+                "width": 234.0,
+                "height": 38.0,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -648,9 +600,9 @@
                 "textureUUID": "",
                 "materialUUID": "",
                 "color": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 0.0
                 },
                 "imageType": 0,
@@ -667,18 +619,18 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411609131647014,
+                "luid": 7094411632044933172,
                 "normalColor": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 0.0
                 },
                 "hoverColor": {
                     "x": 0.19607843458652496,
                     "y": 0.6901960968971252,
                     "z": 0.8509804010391235,
-                    "w": 0.21568627655506134
+                    "w": 0.20000000298023224
                 },
                 "pressedColor": {
                     "x": 0.6000000238418579,
@@ -703,23 +655,15 @@
                 "name": "Text",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066382307354
+                "luid": 7308614089291399185
             },
             "Hierarchy": {
-                "luid": 7526194223379644441,
-                "parentLuid": 7526194223379644438
-            },
-            "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
-                "EntityReferenceFields": [
-                    "targetText"
-                ],
-                "luid": 7958821262583922715
+                "luid": 7526194246288736272,
+                "parentLuid": 7526194246288736269
             },
             "UIRectTransform": {
-                "x": -189.0,
-                "y": -16.399999618530273,
+                "x": -180.0760498046875,
+                "y": -20.200000762939453,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -746,14 +690,14 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 8392574201721192487,
+                "luid": 8392574224634478645,
                 "text": "Settings",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 32.0,
+                "fontSize": 40.0,
                 "color": {
-                    "x": 0.5411764979362488,
-                    "y": 0.5411764979362488,
-                    "z": 0.5411764979362488,
+                    "x": 0.7647058963775635,
+                    "y": 0.7647058963775635,
+                    "z": 0.7647058963775635,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -770,43 +714,35 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Credits",
+                "name": "Button",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066368872465
+                "luid": 7308614089293234195
             },
             "Hierarchy": {
-                "luid": 7526194223366209552,
-                "parentLuid": 7526193945327697921
+                "luid": 7526194246290571282,
+                "parentLuid": 7167032175989030913
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "UIButton_SwitchToCredits",
-                    "UI_HoverTextColor",
-                    "UI_OverlayFadeIn"
+                    "UI_HoverTextColor"
                 ],
                 "SerializedFields": {
-                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
-                    "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
-                    "UI_HoverTextColor.targetText": "7308614066368872468",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UIButton_SwitchToCredits.switchDelaySeconds": "1.000000",
-                    "UI_HoverTextColor.hoverHex": "#50ce94",
-                    "UI_OverlayFadeIn.triggerButton": "7308614066368872465"
+                    "UI_HoverTextColor.targetText": "7308614089293234198",
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF"
                 },
                 "EntityReferenceFields": [
-                    "targetText",
-                    "triggerButton",
-                    "blackOverlayCanvas"
+                    "targetText"
                 ],
-                "luid": 7958821262570487826
+                "luid": 7958821285494849556
             },
             "UIRectTransform": {
-                "x": -677.4000244140625,
-                "y": 296.70001220703125,
+                "x": -674.0684814453125,
+                "y": 305.1000061035156,
                 "z": 0.0,
-                "width": 235.0,
-                "height": 30.0,
+                "width": 234.0,
+                "height": 38.0,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -834,9 +770,9 @@
                 "textureUUID": "",
                 "materialUUID": "",
                 "color": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 0.0
                 },
                 "imageType": 0,
@@ -853,18 +789,18 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411609131647016,
+                "luid": 7094411632044933174,
                 "normalColor": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 0.0
                 },
                 "hoverColor": {
                     "x": 0.19607843458652496,
                     "y": 0.6901960968971252,
                     "z": 0.8509804010391235,
-                    "w": 0.21568627655506134
+                    "w": 0.20000000298023224
                 },
                 "pressedColor": {
                     "x": 0.6000000238418579,
@@ -889,23 +825,15 @@
                 "name": "Text",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066368872468
+                "luid": 7308614089293234198
             },
             "Hierarchy": {
-                "luid": 7526194223366209555,
-                "parentLuid": 7526194223366209552
-            },
-            "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
-                "EntityReferenceFields": [
-                    "targetText"
-                ],
-                "luid": 7958821262570487829
+                "luid": 7526194246290571285,
+                "parentLuid": 7526194246290571282
             },
             "UIRectTransform": {
-                "x": -194.1999969482422,
-                "y": -16.399999618530273,
+                "x": -180.0760498046875,
+                "y": -20.200000762939453,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -932,14 +860,14 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 8392574201721192489,
-                "text": "Credits",
+                "luid": 8392574224634478647,
+                "text": "Controls",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 32.0,
+                "fontSize": 40.0,
                 "color": {
-                    "x": 0.5411764979362488,
-                    "y": 0.5411764979362488,
-                    "z": 0.5411764979362488,
+                    "x": 0.7647058963775635,
+                    "y": 0.7647058963775635,
+                    "z": 0.7647058963775635,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -956,36 +884,35 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
-                "name": "Exit",
+                "name": "Button",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066384470045
+                "luid": 7308614089294086168
             },
             "Hierarchy": {
-                "luid": 7526194223381807132,
-                "parentLuid": 7526193945327697921
+                "luid": 7526194246291423255,
+                "parentLuid": 7167032175989030913
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "UIButton_Quit",
                     "UI_HoverTextColor"
                 ],
                 "SerializedFields": {
-                    "UI_HoverTextColor.targetText": "7308614066384470048",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94"
+                    "UI_HoverTextColor.targetText": "7308614089294086171",
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF"
                 },
                 "EntityReferenceFields": [
                     "targetText"
                 ],
-                "luid": 7958821262586085406
+                "luid": 7958821285495701529
             },
             "UIRectTransform": {
-                "x": -677.4000244140625,
-                "y": 337.6000061035156,
+                "x": -674.0684814453125,
+                "y": 353.29998779296875,
                 "z": 0.0,
-                "width": 235.0,
-                "height": 30.0,
+                "width": 234.0,
+                "height": 38.0,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -1013,9 +940,9 @@
                 "textureUUID": "",
                 "materialUUID": "",
                 "color": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 0.0
                 },
                 "imageType": 0,
@@ -1032,18 +959,18 @@
                 "raycastTarget": 1
             },
             "UIButton": {
-                "luid": 7094411609131647018,
+                "luid": 7094411632044933176,
                 "normalColor": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 0.0
                 },
                 "hoverColor": {
                     "x": 0.19607843458652496,
                     "y": 0.6901960968971252,
                     "z": 0.8509804010391235,
-                    "w": 0.21568627655506134
+                    "w": 0.20000000298023224
                 },
                 "pressedColor": {
                     "x": 0.6000000238418579,
@@ -1068,29 +995,15 @@
                 "name": "Text",
                 "isActive": 1,
                 "isStatic": 0,
-                "luid": 7308614066384470048
+                "luid": 7308614089294086171
             },
             "Hierarchy": {
-                "luid": 7526194223381807135,
-                "parentLuid": 7526194223381807132
-            },
-            "NativeScript": {
-                "ScriptNames": [
-                    "UI_HoverTextColor"
-                ],
-                "SerializedFields": {
-                    "UI_HoverTextColor.targetText": "7308614066384470048",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94"
-                },
-                "EntityReferenceFields": [
-                    "targetText"
-                ],
-                "luid": 7958821262586085409
+                "luid": 7526194246291423258,
+                "parentLuid": 7526194246291423255
             },
             "UIRectTransform": {
-                "x": -207.60000610351563,
-                "y": -16.399999618530273,
+                "x": -198.10000610351563,
+                "y": -20.200000762939453,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -1117,14 +1030,14 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 8392574201721192491,
-                "text": "Exit",
+                "luid": 8392574224634478649,
+                "text": "Back",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 32.0,
+                "fontSize": 40.0,
                 "color": {
-                    "x": 0.5411764979362488,
-                    "y": 0.5411764979362488,
-                    "z": 0.5411764979362488,
+                    "x": 0.7647058963775635,
+                    "y": 0.7647058963775635,
+                    "z": 0.7647058963775635,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -1135,126 +1048,6 @@
                 "autoScale": 0,
                 "minFontSize": 10.0,
                 "maxFontSize": 100.0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Canvas",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7167032157330210816
-            },
-            "Hierarchy": {
-                "luid": 7167032157330210817,
-                "parentLuid": 0
-            },
-            "UIRectTransform": {
-                "x": 960.0,
-                "y": 540.0,
-                "z": 0.0,
-                "width": 1920.0,
-                "height": 1080.0,
-                "offsetMinX": 0.0,
-                "offsetMinY": 0.0,
-                "offsetMaxX": 0.0,
-                "offsetMaxY": 0.0,
-                "rotationX": 0.0,
-                "rotationY": 0.0,
-                "rotationZ": 0.0,
-                "scaleX": 1.0,
-                "scaleY": 1.0,
-                "scaleZ": 1.0,
-                "anchorMinX": 0.5,
-                "anchorMinY": 0.5,
-                "anchorMaxX": 0.5,
-                "anchorMaxY": 0.5,
-                "pivotX": 0.5,
-                "pivotY": 0.5,
-                "enableMask": 0,
-                "maskPaddingLeft": 0.0,
-                "maskPaddingRight": 0.0,
-                "maskPaddingTop": 0.0,
-                "maskPaddingBottom": 0.0
-            },
-            "UICanvas": {
-                "luid": 7167032157330210818,
-                "renderMode": 0,
-                "scaleMode": 1,
-                "cameraEntity": 4294967295,
-                "planeDistance": 100.0,
-                "referenceWidth": 1920.0,
-                "referenceHeight": 1080.0,
-                "pixelPerfect": 0,
-                "isActive": 1,
-                "sortingOrder": 1,
-                "alpha": 1.0
-            }
-        },
-        {
-            "Layer": 0,
-            "Active": 1,
-            "EntityMeta": {
-                "name": "Image",
-                "isActive": 1,
-                "isStatic": 0,
-                "luid": 7308614070616719363
-            },
-            "Hierarchy": {
-                "luid": 7526194227614056452,
-                "parentLuid": 7167032157330210817
-            },
-            "UIRectTransform": {
-                "x": 0.0,
-                "y": 0.0,
-                "z": 0.0,
-                "width": 1920.0,
-                "height": 1080.0,
-                "offsetMinX": 0.0,
-                "offsetMinY": 0.0,
-                "offsetMaxX": 0.0,
-                "offsetMaxY": 0.0,
-                "rotationX": 0.0,
-                "rotationY": 0.0,
-                "rotationZ": 0.0,
-                "scaleX": 1.0,
-                "scaleY": 1.0,
-                "scaleZ": 1.0,
-                "anchorMinX": 0.5,
-                "anchorMinY": 0.5,
-                "anchorMaxX": 0.5,
-                "anchorMaxY": 0.5,
-                "pivotX": 0.5,
-                "pivotY": 0.5,
-                "enableMask": 0,
-                "maskPaddingLeft": 0.0,
-                "maskPaddingRight": 0.0,
-                "maskPaddingTop": 0.0,
-                "maskPaddingBottom": 0.0
-            },
-            "UIImage": {
-                "luid": 0,
-                "textureUUID": "",
-                "materialUUID": "",
-                "color": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 1.0
-                },
-                "imageType": 0,
-                "fillMethod": 0,
-                "fillOrigin": 0,
-                "fillAmount": 1.0,
-                "fillClockwise": 1,
-                "preserveAspect": 0,
-                "borderLeft": 0.0,
-                "borderRight": 0.0,
-                "borderTop": 0.0,
-                "borderBottom": 0.0,
-                "pixelsPerUnitMultiplier": 1.0,
-                "raycastTarget": 1
             }
         }
     ]

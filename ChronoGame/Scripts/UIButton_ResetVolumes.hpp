@@ -1,5 +1,7 @@
 #pragma once
 #include "EngineAPI.hpp"
+#include <ScriptSDK/UI.h>
+#include <algorithm>
 
 /**
  * UIButton_ResetVolumes
@@ -9,6 +11,12 @@
  *
  * Defaults used (full volume = 1.0 for all buses):
  *   - Master / BGM / SFX / Ambience: 1.0
+ *
+ * Gamma:
+ *   - Assign optional `gammaSlider` (same UISlider you use for gamma in Settings).
+ *   - `defaultGammaNormalized` is written with SetSliderNormalizedValue (typically 1.0).
+ *   - The script SDK does not expose engine post-process gamma; if a driver script
+ *     reads the slider each frame, resetting the slider updates the effective gamma.
  *
  * If you use slider-based volume scripts, assign the four sliders below so the
  * slider thumbs move to full when you reset. If you use button-based volume
@@ -21,6 +29,8 @@ public:
         SCRIPT_GAMEOBJECT_REF(bgmSlider);
         SCRIPT_GAMEOBJECT_REF(sfxSlider);
         SCRIPT_GAMEOBJECT_REF(ambienceSlider);
+        SCRIPT_GAMEOBJECT_REF(gammaSlider);
+        SCRIPT_FIELD(defaultGammaNormalized, Float);
     }
 
     ~UIButton_ResetVolumes() override = default;
@@ -51,6 +61,11 @@ public:
             UI::SetSliderNormalizedValue(sfxSlider.GetEntity(), 1.0f);
         if (ambienceSlider.IsValid())
             UI::SetSliderNormalizedValue(ambienceSlider.GetEntity(), 1.0f);
+
+        if (gammaSlider.IsValid()) {
+            const float g = std::clamp(defaultGammaNormalized, 0.0f, 1.0f);
+            UI::SetSliderNormalizedValue(gammaSlider.GetEntity(), g);
+        }
     }
 
     void OnDestroy() override {}
@@ -73,4 +88,6 @@ private:
     GameObjectRef bgmSlider;
     GameObjectRef sfxSlider;
     GameObjectRef ambienceSlider;
+    GameObjectRef gammaSlider;
+    float defaultGammaNormalized = 1.0f;
 };
