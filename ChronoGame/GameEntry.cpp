@@ -84,6 +84,9 @@
 #include "Scripts/UI_HoverTextColor.hpp"
 #include "Scripts/UI_OverlayFadeIn.hpp"
 #include "Scripts/UI_Settings.hpp"
+#include "Scripts/Misc_PauseMenuHotkey.hpp"
+#include "Scripts/UIButton_PauseResume.hpp"
+#include "Scripts/UIButton_CanvasSwitcher.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -335,6 +338,15 @@ extern "C" {
             });
         registrar->RegisterScript("UI_OverlayFadeIn", []() -> NE::Scripting::IScript* {
             return new UI_OverlayFadeIn();
+            });
+        registrar->RegisterScript("Misc_PauseMenuHotkey", []() -> NE::Scripting::IScript* {
+            return new Misc_PauseMenuHotkey();
+            });
+        registrar->RegisterScript("UIButton_PauseResume", []() -> NE::Scripting::IScript* {
+            return new UIButton_PauseResume();
+            });
+        registrar->RegisterScript("UIButton_CanvasSwitcher", []() -> NE::Scripting::IScript* {
+            return new UIButton_CanvasSwitcher();
             });
 
 
