@@ -44,11 +44,15 @@ public:
         if (!targetText.IsValid() || !NE::ECS::Query::HasUIText(targetText.GetEntity())) return;
 
         RefreshParsedColors();
+
         const bool hovered = UI::IsButtonHovered(m_buttonEntity);
         if (hovered == m_wasHoveredLastFrame) return;
 
         m_wasHoveredLastFrame = hovered;
-        if (hovered) ApplyHover();
+        if (hovered) {
+            ApplyHover();
+            PlayAudio("Event:/MAIN_MENU/BUTTON_HOVER");
+        }
         else ApplyNormal();
     }
 
@@ -121,14 +125,16 @@ private:
         float r, g, b, a;
         if (TryParseHexColor(normalHex, r, g, b, a)) {
             m_normalR = r; m_normalG = g; m_normalB = b; m_normalA = a;
-        } else {
+        }
+        else {
             LOG_WARNING("UI_HoverTextColor: invalid normalHex '" << normalHex
                 << "'. Use #RRGGBB or #RRGGBBAA");
         }
 
         if (TryParseHexColor(hoverHex, r, g, b, a)) {
             m_hoverR = r; m_hoverG = g; m_hoverB = b; m_hoverA = a;
-        } else {
+        }
+        else {
             LOG_WARNING("UI_HoverTextColor: invalid hoverHex '" << hoverHex
                 << "'. Use #RRGGBB or #RRGGBBAA");
         }
@@ -142,4 +148,3 @@ private:
         NE::ECS::Command::SetUITextColor(targetText.GetEntity(), m_hoverR, m_hoverG, m_hoverB, m_hoverA);
     }
 };
-

@@ -37,7 +37,7 @@ public:
             Events::Listen(evt.c_str(), [this](void*) {
                 if (m_phase != Phase::Idle) return;
                 BeginFadeIn();
-            });
+                });
         }
     }
 
@@ -123,6 +123,8 @@ private:
     }
 
     void BeginFadeIn() {
+        PlayAudio("Event:/MAIN_MENU/BUTTON_CLICK");
+
         m_overlayEntity = ResolveOverlayCanvas();
         if (m_overlayEntity == 0) return;
 

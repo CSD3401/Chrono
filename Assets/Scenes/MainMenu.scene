@@ -134,12 +134,18 @@
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "UI_MainMenu"
+                    "UI_MainMenu",
+                    "BackgroundAudio"
                 ],
                 "SerializedFields": {
                     "UI_MainMenu.blackOverlayCanvas": "7167032157330210816",
+                    "BackgroundAudio.bgmVolume": "1.000000",
                     "UI_MainMenu.enableFadeOut": "1",
-                    "UI_MainMenu.fadeOutDuration": "1.000000"
+                    "BackgroundAudio.playOnStart": "1",
+                    "UI_MainMenu.fadeOutDuration": "1.000000",
+                    "BackgroundAudio.bgmEventPath": "event:/MAIN_MENU/BGM",
+                    "BackgroundAudio.ambienceEventPath": "event:/FOG_AMBIENCE",
+                    "BackgroundAudio.ambienceVolume": "1.000000"
                 },
                 "EntityReferenceFields": [
                     "blackOverlayCanvas"
@@ -346,7 +352,7 @@
                 "parentLuid": 7526193945327697921
             },
             "UIRectTransform": {
-                "x": -689.8859252929688,
+                "x": -707.5999755859375,
                 "y": 135.39358520507813,
                 "z": 0.0,
                 "width": 160.0,
@@ -377,11 +383,11 @@
                 "luid": 8392574201598246919,
                 "text": "Main Menu",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 45.0,
+                "fontSize": 53.0,
                 "color": {
-                    "x": 0.7568627595901489,
-                    "y": 0.7568627595901489,
-                    "z": 0.7568627595901489,
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -414,13 +420,15 @@
                     "UI_OverlayFadeIn"
                 ],
                 "SerializedFields": {
+                    "UIButton_SwitchScene.switchDelaySeconds": "1.000000",
+                    "UI_HoverTextColor.targetText": "7308614066332237835",
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF",
                     "UI_OverlayFadeIn.fadeInDuration": "1.000000",
                     "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
-                    "UI_HoverTextColor.targetText": "7308614066332237835",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94",
                     "UI_OverlayFadeIn.triggerButton": "7308614066332237832",
-                    "UIButton_SwitchScene.switchDelaySeconds": "1.000000"
+                    "UI_OverlayFadeIn.listenEventName": "",
+                    "UI_OverlayFadeIn.enableButtonTrigger": "1"
                 },
                 "EntityReferenceFields": [
                     "targetText",
@@ -434,7 +442,7 @@
                 "y": 216.2099151611328,
                 "z": 0.0,
                 "width": 235.0,
-                "height": 30.0,
+                "height": 38.0,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -532,8 +540,8 @@
                 "luid": 7958821262559870990
             },
             "UIRectTransform": {
-                "x": -179.60000610351563,
-                "y": -16.399999618530273,
+                "x": -168.39999389648438,
+                "y": -18.899999618530273,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -563,11 +571,11 @@
                 "luid": 8392574201644974093,
                 "text": "Play Game",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 32.0,
+                "fontSize": 40.0,
                 "color": {
-                    "x": 0.5411764979362488,
-                    "y": 0.5411764979362488,
-                    "z": 0.5411764979362488,
+                    "x": 0.7647058963775635,
+                    "y": 0.7647058963775635,
+                    "z": 0.7647058963775635,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -600,13 +608,15 @@
                     "UI_OverlayFadeIn"
                 ],
                 "SerializedFields": {
+                    "UI_HoverTextColor.targetText": "7308614066382307354",
+                    "UIButton_SwitchSceneTwo.switchDelaySeconds": "1.000000",
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF",
                     "UI_OverlayFadeIn.fadeInDuration": "1.000000",
                     "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
-                    "UIButton_SwitchSceneTwo.switchDelaySeconds": "1.000000",
-                    "UI_HoverTextColor.targetText": "7308614066382307354",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94",
-                    "UI_OverlayFadeIn.triggerButton": "7308614066382307351"
+                    "UI_OverlayFadeIn.triggerButton": "7308614066382307351",
+                    "UI_OverlayFadeIn.listenEventName": "",
+                    "UI_OverlayFadeIn.enableButtonTrigger": "1"
                 },
                 "EntityReferenceFields": [
                     "targetText",
@@ -617,10 +627,10 @@
             },
             "UIRectTransform": {
                 "x": -677.4000244140625,
-                "y": 256.1000061035156,
+                "y": 265.6000061035156,
                 "z": 0.0,
                 "width": 235.0,
-                "height": 30.0,
+                "height": 38.0,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -718,8 +728,8 @@
                 "luid": 7958821262583922715
             },
             "UIRectTransform": {
-                "x": -189.0,
-                "y": -16.399999618530273,
+                "x": -182.6999969482422,
+                "y": -20.299999237060547,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -749,11 +759,11 @@
                 "luid": 8392574201721192487,
                 "text": "Settings",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 32.0,
+                "fontSize": 40.0,
                 "color": {
-                    "x": 0.5411764979362488,
-                    "y": 0.5411764979362488,
-                    "z": 0.5411764979362488,
+                    "x": 0.7647058963775635,
+                    "y": 0.7647058963775635,
+                    "z": 0.7647058963775635,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -786,13 +796,14 @@
                     "UI_OverlayFadeIn"
                 ],
                 "SerializedFields": {
-                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
                     "UI_OverlayFadeIn.blackOverlayCanvas": "7167032157330210816",
+                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
                     "UI_HoverTextColor.targetText": "7308614066368872468",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UIButton_SwitchToCredits.switchDelaySeconds": "1.000000",
-                    "UI_HoverTextColor.hoverHex": "#50ce94",
-                    "UI_OverlayFadeIn.triggerButton": "7308614066368872465"
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF",
+                    "UI_OverlayFadeIn.triggerButton": "7308614066368872465",
+                    "UI_OverlayFadeIn.listenEventName": "",
+                    "UI_OverlayFadeIn.enableButtonTrigger": "1"
                 },
                 "EntityReferenceFields": [
                     "targetText",
@@ -802,11 +813,11 @@
                 "luid": 7958821262570487826
             },
             "UIRectTransform": {
-                "x": -677.4000244140625,
-                "y": 296.70001220703125,
+                "x": -676.5999755859375,
+                "y": 315.0,
                 "z": 0.0,
                 "width": 235.0,
-                "height": 30.0,
+                "height": 38.0,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -904,8 +915,8 @@
                 "luid": 7958821262570487829
             },
             "UIRectTransform": {
-                "x": -194.1999969482422,
-                "y": -16.399999618530273,
+                "x": -189.8000030517578,
+                "y": -18.5,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -935,11 +946,11 @@
                 "luid": 8392574201721192489,
                 "text": "Credits",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 32.0,
+                "fontSize": 40.0,
                 "color": {
-                    "x": 0.5411764979362488,
-                    "y": 0.5411764979362488,
-                    "z": 0.5411764979362488,
+                    "x": 0.7647058963775635,
+                    "y": 0.7647058963775635,
+                    "z": 0.7647058963775635,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -972,8 +983,8 @@
                 ],
                 "SerializedFields": {
                     "UI_HoverTextColor.targetText": "7308614066384470048",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94"
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF"
                 },
                 "EntityReferenceFields": [
                     "targetText"
@@ -981,11 +992,11 @@
                 "luid": 7958821262586085406
             },
             "UIRectTransform": {
-                "x": -677.4000244140625,
-                "y": 337.6000061035156,
+                "x": -676.4000244140625,
+                "y": 364.3999938964844,
                 "z": 0.0,
                 "width": 235.0,
-                "height": 30.0,
+                "height": 38.0,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -1075,22 +1086,16 @@
                 "parentLuid": 7526194223381807132
             },
             "NativeScript": {
-                "ScriptNames": [
-                    "UI_HoverTextColor"
-                ],
-                "SerializedFields": {
-                    "UI_HoverTextColor.targetText": "7308614066384470048",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94"
-                },
+                "ScriptNames": [],
+                "SerializedFields": {},
                 "EntityReferenceFields": [
                     "targetText"
                 ],
                 "luid": 7958821262586085409
             },
             "UIRectTransform": {
-                "x": -207.60000610351563,
-                "y": -16.399999618530273,
+                "x": -205.39999389648438,
+                "y": -18.799999237060547,
                 "z": 0.0,
                 "width": 160.0,
                 "height": 30.0,
@@ -1120,11 +1125,11 @@
                 "luid": 8392574201721192491,
                 "text": "Exit",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
-                "fontSize": 32.0,
+                "fontSize": 40.0,
                 "color": {
-                    "x": 0.5411764979362488,
-                    "y": 0.5411764979362488,
-                    "z": 0.5411764979362488,
+                    "x": 0.7647058963775635,
+                    "y": 0.7647058963775635,
+                    "z": 0.7647058963775635,
                     "w": 1.0
                 },
                 "horizontalAlign": 1,
@@ -1155,7 +1160,7 @@
                 "y": 540.0,
                 "z": 0.0,
                 "width": 1920.0,
-                "height": 1080.0,
+                "height": 1080.03125,
                 "offsetMinX": 0.0,
                 "offsetMinY": 0.0,
                 "offsetMaxX": 0.0,
@@ -1185,11 +1190,11 @@
                 "cameraEntity": 4294967295,
                 "planeDistance": 100.0,
                 "referenceWidth": 1920.0,
-                "referenceHeight": 1080.0,
+                "referenceHeight": 1080.03125,
                 "pixelPerfect": 0,
                 "isActive": 1,
                 "sortingOrder": 1,
-                "alpha": 1.0
+                "alpha": 0.0
             }
         },
         {
