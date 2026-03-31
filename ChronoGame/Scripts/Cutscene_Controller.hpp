@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "EngineAPI.hpp"
 #include <algorithm>
 #include <ScriptSDK/UI.h>
@@ -61,6 +61,7 @@
 class Cutscene_Controller : public IScript {
 public:
     Cutscene_Controller() {
+        SCRIPT_FIELD(enableCutscene, Bool);
         SCRIPT_FIELD(eventName, String);
         SCRIPT_FIELD(bgmAudioName, String);
         SCRIPT_FIELD(autoStartOnPlay, Bool);
@@ -82,12 +83,15 @@ public:
     void Awake()            override {}
     void Initialize(Entity) override {}
     void OnDestroy()        override {
-        if (isPlaying) {
-            StopCurrentPageAudio();
-            StopBGM();
-            HideAllPages();
-            SetCaptionVisible(false);
-        }
+        StopCurrentPageAudio();
+        StopBGM();
+        HideAllPages();
+        SetCaptionVisible(false);
+        ShowBlackBackground(false);
+        isPlaying = false;
+        blackFadeOutActive = false;
+        blackFadeOutTimer = 0.0f;
+        m_pendingStart = false;
     }
     void OnEnable()         override {}
     void OnDisable()        override {}
@@ -101,6 +105,15 @@ public:
     void OnTriggerStay(Entity o)    override { (void)o; }
 
     void Start() override {
+        if (!enableCutscene) {
+            HideAllPages();
+            SetCaptionVisible(false);
+            ShowBlackBackground(false);
+            isPlaying = false;
+            LOG_INFO("Cutscene_Controller: disabled via enableCutscene=false");
+            return;
+        }
+
         // ── Failsafe ──────────────────────────────────────────────────────
         if (eventName.empty() || eventName == "emptyEvent") {
             LOG_ERROR("Cutscene_Controller: eventName is not set! "
@@ -134,8 +147,8 @@ public:
 
         // ── Register event listener ───────────────────────────────────────
         Events::Listen(eventName.c_str(), [this](void*) {
-            TriggerCutscene();
-            });
+            m_pendingStart = true;
+        });
 
         HideAllPages();
         SetCaptionVisible(false);
@@ -153,16 +166,20 @@ public:
             << pageImages.size() << " page(s).");
 
         if (autoStartOnPlay) {
-            // Start next tick so all UI refs are fully initialized.
-            Coroutines::Handle h = Coroutines::Create();
-            Coroutines::AddWait(h, 0.0f);
-            Coroutines::AddAction(h, [this]() { TriggerCutscene(); });
-            Coroutines::Start(h);
+            // Start on next Update so all UI refs are fully initialized, without a deferred this-callback.
+            m_pendingStart = true;
         }
     }
 
     void Update(double deltaTime) override {
+        if (!enableCutscene) return;
+
         const float dt = static_cast<float>(deltaTime);
+
+        if (m_pendingStart && !isPlaying) {
+            m_pendingStart = false;
+            TriggerCutscene();
+        }
 
         if (blackFadeOutActive) {
             blackFadeOutTimer += dt;
@@ -194,6 +211,7 @@ public:
 
 private:
     // ── Inspector ─────────────────────────────────────────────────────────
+    bool                       enableCutscene = true;
     std::string                eventName = "emptyEvent";
     std::string                bgmAudioName = "";
     bool                       autoStartOnPlay = false;
@@ -211,6 +229,7 @@ private:
 
     // ── Runtime ───────────────────────────────────────────────────────────
     bool        isPlaying = false;
+    bool        m_pendingStart = false;
     int         currentPageIndex = 0;
     bool        ignoreNextClick = false;
     float       pageTimer = 0.0f;
@@ -243,6 +262,11 @@ private:
     }
 
     void TriggerCutscene() {
+        if (!enableCutscene) {
+            LOG_DEBUG("Cutscene_Controller [" << eventName << "]: start ignored (disabled).");
+            return;
+        }
+
         if (pageImages.empty()) {
             LOG_ERROR("Cutscene_Controller [" << eventName
                 << "]: Cannot start — pageImages is empty!");
