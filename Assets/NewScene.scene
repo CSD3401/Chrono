@@ -2,21 +2,21 @@
     "RenderSettings": {
         "envSource": 2,
         "ambientColour": {
-            "x": 0.09803921729326248,
-            "y": 0.05882352963089943,
-            "z": 0.03921568766236305
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
         },
-        "ambientIntensity": 0.05000000074505806,
-        "fogEnabled": 1,
+        "ambientIntensity": 1.0,
+        "fogEnabled": 0,
         "fogMode": 1,
         "fogColour": {
-            "x": 0.5882353186607361,
-            "y": 0.5882353186607361,
-            "z": 0.5882353186607361
+            "x": 0.501960813999176,
+            "y": 0.501960813999176,
+            "z": 0.501960813999176
         },
         "fogStart": 0.0,
         "fogEnd": 50.0,
-        "fogDensity": 0.004999999888241291
+        "fogDensity": 0.009999999776482582
     },
     "PostProcessingSettings": {
         "enabled": 1,
@@ -196,22 +196,24 @@
                 ],
                 "SerializedFields": {
                     "Player_Controller.jumpStrength": "5.000000",
+                    "Misc_TimeFogLighting.affectFog": "1",
+                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
                     "Player_Controller.playerCameraRef": "7308613686500261889",
+                    "Misc_TimeFogLighting.presentFogStart": "20.000000",
                     "Player_Controller.gravity": "10.000000",
+                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.050000",
                     "Player_Controller.lookSensitivity": "0.250000",
                     "Misc_TimeFogLighting.normalAmbientIntensity": "0.500000",
                     "Player_Controller.moveSpeed": "4.000000",
+                    "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.normalAmbientColor": "25 15 10",
                     "Misc_TimeFogLighting.normalFogMode": "1",
                     "Player_Controller.snappiness": "5.000000",
                     "Player_Controller.walkSoundInterval": "0.500000",
-                    "Misc_TimeFogLighting.affectFog": "1",
-                    "Misc_TimeFogLighting.captureCurrentAsNormalOnStart": "0",
                     "Misc_TimeFogLighting.normalEnvSource": "2",
                     "Misc_TimeFogLighting.affectAmbient": "1",
                     "Misc_TimeFogLighting.startInPresent": "1",
                     "Misc_TimeFogLighting.normalFogEnabled": "1",
-                    "Misc_TimeFogLighting.applyStateOnStart": "1",
                     "Misc_TimeFogLighting.presentFogEnabled": "1",
                     "Misc_TimeFogLighting.normalFogColor": "15 10 8",
                     "Misc_TimeFogLighting.normalFogDensity": "0.015000",
@@ -219,10 +221,8 @@
                     "Misc_TimeFogLighting.normalFogEnd": "50.000000",
                     "Misc_TimeFogLighting.presentFogColor": "150 150 150",
                     "Misc_TimeFogLighting.presentFogDensity": "0.005000",
-                    "Misc_TimeFogLighting.presentFogStart": "20.000000",
                     "Misc_TimeFogLighting.presentFogEnd": "50.000000",
-                    "Misc_TimeFogLighting.presentAmbientColor": "25 15 10",
-                    "Misc_TimeFogLighting.presentAmbientIntensity": "0.050000"
+                    "Misc_TimeFogLighting.presentAmbientColor": "25 15 10"
                 },
                 "EntityReferenceFields": [
                     "playerCameraRef"
@@ -281,10 +281,10 @@
                     "Misc_Grabber.isGrabbing": "0",
                     "Player_Raycast.distance": "5.000000",
                     "Player_Raycast.targetLayer": "0",
+                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Camera_FOVPulse.baseFov": "90.000000",
                     "Camera_FOVPulse.enabledAtStart": "1",
                     "Camera_FOVPulse.pulseFov": "150.000000",
-                    "Camera_FOVPulse.fallTimeSeconds": "0.300000",
                     "Camera_FOVPulse.riseTimeSeconds": "0.100000",
                     "Misc_Grabber.grabStrength": "0.000000",
                     "Misc_Grabber.distance": "0.500000",
@@ -7965,7 +7965,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Past Parent",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613930963304551
             },
@@ -7997,7 +7997,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "SinkHoleBefore",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613930824499264
             },
@@ -8057,7 +8057,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "SECTION 1 Lights",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936074850305
             },
@@ -8089,7 +8089,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974499524609
             },
@@ -8140,7 +8140,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 1.5",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936075636746
             },
@@ -8191,7 +8191,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 2",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936086319123
             },
@@ -8242,7 +8242,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 2.5",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974615588883
             },
@@ -8293,7 +8293,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 2",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974619914262
             },
@@ -8342,7 +8342,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 3",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936074850308
             },
@@ -8393,7 +8393,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 4",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974630268953
             },
@@ -8444,7 +8444,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 4",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974634594332
             },
@@ -8493,7 +8493,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 5",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936079503373
             },
@@ -8544,7 +8544,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 6",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936084156432
             },
@@ -8595,7 +8595,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 7",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613936074850311
             },
@@ -8646,7 +8646,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight Booth",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974532423684
             },
@@ -8697,7 +8697,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 8",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974562963463
             },
@@ -8748,7 +8748,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spotlight 8",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974593830925
             },
@@ -8799,7 +8799,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light Lift",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613974580723722
             },
@@ -8850,7 +8850,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "SECTION 2 Lights",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613953946517510
             },
@@ -8882,7 +8882,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614038841524228
             },
@@ -8933,7 +8933,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614038843162631
             },
@@ -8984,7 +8984,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614038851289089
             },
@@ -9035,7 +9035,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614038855155719
             },
@@ -9086,7 +9086,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614038855286794
             },
@@ -9137,7 +9137,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614038862888973
             },
@@ -9186,7 +9186,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 2",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613954078244877
             },
@@ -9235,7 +9235,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 3",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613954081194000
             },
@@ -9284,7 +9284,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 4",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613954090041363
             },
@@ -9333,7 +9333,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Point Light 5",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613954116845593
             },
@@ -9382,7 +9382,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "SECTION 3 Lights",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973950464000
             },
@@ -9414,7 +9414,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037460942854
             },
@@ -9446,7 +9446,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613973951381507
             },
@@ -9497,7 +9497,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037429813249
             },
@@ -9548,7 +9548,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037446393860
             },
@@ -9599,7 +9599,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037464285194
             },
@@ -9631,7 +9631,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037464285197
             },
@@ -9682,7 +9682,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037464285200
             },
@@ -9733,7 +9733,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037464285203
             },
@@ -9784,7 +9784,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037470642198
             },
@@ -9816,7 +9816,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037470642201
             },
@@ -9867,7 +9867,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037470642204
             },
@@ -9918,7 +9918,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037470642207
             },
@@ -9969,7 +9969,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037482111016
             },
@@ -10001,7 +10001,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037482111019
             },
@@ -10052,7 +10052,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037482111022
             },
@@ -10103,7 +10103,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037482111025
             },
@@ -10154,7 +10154,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037485715508
             },
@@ -10186,7 +10186,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037485715511
             },
@@ -10237,7 +10237,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037485715514
             },
@@ -10288,7 +10288,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037485715517
             },
@@ -10339,7 +10339,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037488271436
             },
@@ -10371,7 +10371,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037488271439
             },
@@ -10422,7 +10422,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037488271442
             },
@@ -10473,7 +10473,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037488271445
             },
@@ -10524,7 +10524,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037495021656
             },
@@ -10556,7 +10556,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037495021659
             },
@@ -10607,7 +10607,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037495021662
             },
@@ -10658,7 +10658,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037495021665
             },
@@ -10709,7 +10709,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037496791140
             },
@@ -10741,7 +10741,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037496791143
             },
@@ -10792,7 +10792,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037496791146
             },
@@ -10843,7 +10843,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037496791149
             },
@@ -10894,7 +10894,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037497446512
             },
@@ -10926,7 +10926,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037497446515
             },
@@ -10977,7 +10977,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037497446518
             },
@@ -11028,7 +11028,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614037497446521
             },
@@ -11079,7 +11079,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "SECTION 4 Lights",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613985469726864
             },
@@ -11111,7 +11111,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613985985036681
             },
@@ -11162,7 +11162,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053070962689
             },
@@ -11213,7 +11213,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053073125380
             },
@@ -11264,7 +11264,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053076992007
             },
@@ -11315,7 +11315,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053078499338
             },
@@ -11366,7 +11366,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053079154701
             },
@@ -11417,7 +11417,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053080399888
             },
@@ -11468,7 +11468,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053115134037
             },
@@ -11519,7 +11519,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053084069910
             },
@@ -11570,7 +11570,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053092851737
             },
@@ -11621,7 +11621,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053095538716
             },
@@ -11672,7 +11672,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053100060703
             },
@@ -11723,7 +11723,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614053106090018
             },
@@ -11774,7 +11774,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "R laser",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613744436641798
             },
@@ -11845,7 +11845,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "R laser",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613975356342276
             },
@@ -11921,7 +11921,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "R laser",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613975356342282
             },
@@ -11992,7 +11992,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "R laser",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613975356342288
             },
@@ -12068,7 +12068,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "L  laser",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613975386619909
             },
@@ -12144,7 +12144,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Respawn Point",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613975356342292
             },
@@ -12195,7 +12195,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "L  laser",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613975388389387
             },
@@ -12271,7 +12271,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "L  laser",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613975388717073
             },
@@ -12347,7 +12347,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "L  laser",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613975389044759
             },
@@ -12423,7 +12423,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Catwalk1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613987607117872
             },
@@ -12477,7 +12477,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Laser Final",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613987926147091
             },
@@ -12548,7 +12548,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Laser Final",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613987919396865
             },
@@ -12619,7 +12619,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Laser Final",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613987924180999
             },
@@ -12690,7 +12690,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Laser Final",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613987924967437
             },
@@ -12761,7 +12761,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "SecondCatwalkCatwalk_past",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614064060563553
             },
@@ -12815,7 +12815,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Ladder1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614064060563555
             },
@@ -12875,7 +12875,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Ladder2",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614064060563557
             },
@@ -12956,7 +12956,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "SECTION second catwalk lights",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069982265356
             },
@@ -12988,7 +12988,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069980889089
             },
@@ -13020,7 +13020,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069980889092
             },
@@ -13071,7 +13071,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069980889095
             },
@@ -13122,7 +13122,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069980889098
             },
@@ -13173,7 +13173,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069996814353
             },
@@ -13205,7 +13205,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069996814356
             },
@@ -13256,7 +13256,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069996814359
             },
@@ -13307,7 +13307,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069996814362
             },
@@ -13358,7 +13358,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069999239200
             },
@@ -13390,7 +13390,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069999239203
             },
@@ -13441,7 +13441,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069999239206
             },
@@ -13492,7 +13492,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614069999239209
             },
@@ -13543,7 +13543,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070000222252
             },
@@ -13575,7 +13575,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070000222255
             },
@@ -13626,7 +13626,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070000222258
             },
@@ -13677,7 +13677,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070000222261
             },
@@ -13728,7 +13728,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070001139768
             },
@@ -13760,7 +13760,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070001139771
             },
@@ -13811,7 +13811,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070001139774
             },
@@ -13862,7 +13862,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070001139777
             },
@@ -13913,7 +13913,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070002122820
             },
@@ -13945,7 +13945,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070002122823
             },
@@ -13996,7 +13996,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070002122826
             },
@@ -14047,7 +14047,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070002122829
             },
@@ -14098,7 +14098,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070003171408
             },
@@ -14130,7 +14130,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070003171411
             },
@@ -14181,7 +14181,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070003171414
             },
@@ -14232,7 +14232,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070003171417
             },
@@ -14283,7 +14283,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070008676444
             },
@@ -14315,7 +14315,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070008676447
             },
@@ -14366,7 +14366,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070008676450
             },
@@ -14417,7 +14417,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070008676453
             },
@@ -14468,7 +14468,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Set LIght",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070010445928
             },
@@ -14500,7 +14500,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070010445931
             },
@@ -14551,7 +14551,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070010445934
             },
@@ -14602,7 +14602,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Spot Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070010445937
             },
@@ -14653,7 +14653,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "SECTION section server room",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070069493772
             },
@@ -14685,7 +14685,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070068903937
             },
@@ -14717,7 +14717,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070068903940
             },
@@ -14768,7 +14768,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070068903943
             },
@@ -14819,7 +14819,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070068903946
             },
@@ -14870,7 +14870,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070075981840
             },
@@ -14902,7 +14902,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070075981843
             },
@@ -14953,7 +14953,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070075981846
             },
@@ -15004,7 +15004,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070075981849
             },
@@ -15055,7 +15055,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070079062044
             },
@@ -15087,7 +15087,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070079062047
             },
@@ -15138,7 +15138,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070079062050
             },
@@ -15189,7 +15189,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070079062053
             },
@@ -15240,7 +15240,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070084960296
             },
@@ -15272,7 +15272,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070084960299
             },
@@ -15323,7 +15323,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070084960302
             },
@@ -15374,7 +15374,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070084960305
             },
@@ -15425,7 +15425,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070086008884
             },
@@ -15457,7 +15457,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070086008887
             },
@@ -15508,7 +15508,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070086008890
             },
@@ -15559,7 +15559,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070086008893
             },
@@ -15610,7 +15610,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070086729792
             },
@@ -15642,7 +15642,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070086729795
             },
@@ -15693,7 +15693,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070086729798
             },
@@ -15744,7 +15744,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070086729801
             },
@@ -15795,7 +15795,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070097215564
             },
@@ -15827,7 +15827,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070097215567
             },
@@ -15878,7 +15878,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070097215570
             },
@@ -15929,7 +15929,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070097215573
             },
@@ -15980,7 +15980,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070099378264
             },
@@ -16012,7 +16012,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070099378267
             },
@@ -16063,7 +16063,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070099378270
             },
@@ -16114,7 +16114,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070099378273
             },
@@ -16165,7 +16165,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070122119169
             },
@@ -16197,7 +16197,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070122119172
             },
@@ -16248,7 +16248,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070122119175
             },
@@ -16299,7 +16299,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070122119178
             },
@@ -16350,7 +16350,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Light Set",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070123429901
             },
@@ -16382,7 +16382,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070123429904
             },
@@ -16433,7 +16433,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070123429907
             },
@@ -16484,7 +16484,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light 1",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614070123429910
             },
@@ -16535,7 +16535,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "FINAL LAB lights",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614092785975296
             },
@@ -16567,7 +16567,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614092843647091
             },
@@ -16618,7 +16618,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614092789645319
             },
@@ -16669,7 +16669,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093206585348
             },
@@ -16720,7 +16720,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093208748048
             },
@@ -16771,7 +16771,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093209731100
             },
@@ -16822,7 +16822,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093212942376
             },
@@ -16873,7 +16873,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093215039540
             },
@@ -16924,7 +16924,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093216546880
             },
@@ -16975,7 +16975,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093218119756
             },
@@ -17026,7 +17026,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093220282456
             },
@@ -17077,7 +17077,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093221068900
             },
@@ -17128,7 +17128,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093222117488
             },
@@ -17179,7 +17179,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093226705020
             },
@@ -17230,7 +17230,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093228015752
             },
@@ -17281,7 +17281,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093229850772
             },
@@ -17332,7 +17332,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093230440608
             },
@@ -17383,7 +17383,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093230964908
             },
@@ -17434,7 +17434,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093234045112
             },
@@ -17485,7 +17485,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093234962628
             },
@@ -17536,7 +17536,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093236207824
             },
@@ -17587,7 +17587,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093237715164
             },
@@ -17638,7 +17638,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093238960360
             },
@@ -17689,7 +17689,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093239943412
             },
@@ -17740,7 +17740,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093240664320
             },
@@ -17791,7 +17791,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093244006668
             },
@@ -17842,7 +17842,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093246890264
             },
@@ -17893,7 +17893,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093248069924
             },
@@ -17944,7 +17944,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093248528688
             },
@@ -17995,7 +17995,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093249577276
             },
@@ -18046,7 +18046,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093250953544
             },
@@ -18097,7 +18097,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093252264276
             },
@@ -18148,7 +18148,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093252854112
             },
@@ -18199,7 +18199,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093253509484
             },
@@ -18250,7 +18250,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093254361464
             },
@@ -18301,7 +18301,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093255147908
             },
@@ -18352,7 +18352,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093256262032
             },
@@ -18403,7 +18403,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Area Light",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093257114012
             },
@@ -22376,14 +22376,14 @@
                     "Interactable_Gate.playerRef": "7308613656064753675",
                     "Interactable_Gate.interactionDistance": "5.000000",
                     "Interactable_Gate.logInteractions": "1",
+                    "Misc_ObjectUI.objectDescription": "Interact [E]",
                     "Interactable_Gate.tweenDuration": "1.500000",
                     "Interactable_Gate.moveDistance": "1.265000",
                     "Misc_MaterialSwitcher.pastMaterial": "e2449c0b-af90-4019-84c4-290b42b3d40b",
+                    "Misc_ObjectUI.objectName": "Gate",
                     "Misc_MaterialSwitcher.presentMaterial": "42061895-451f-4247-92f7-0344cc10f796",
-                    "Misc_ObjectUI.objectDescription": "Interact [E]",
-                    "Misc_ObjectUI.objectNameTextUI": "7308614070618816513",
                     "Misc_ObjectUI.objectDescTextUI": "7308614070620979203",
-                    "Misc_ObjectUI.objectName": "Gate"
+                    "Misc_ObjectUI.objectNameTextUI": "7308614070618816513"
                 },
                 "EntityReferenceFields": [
                     "playerRef",
@@ -23624,14 +23624,14 @@
                 ],
                 "SerializedFields": {
                     "Misc_TransitionTeleporter.player": "7308613656064753675",
+                    "Misc_TransitionTeleporter.impactAudioName": "PLAYER_IMPACT",
                     "Misc_TransitionTeleporter.fadeInDuration": "0.500000",
                     "Misc_TransitionTeleporter.targetTransformRef": "8390885075794526209",
                     "Misc_TransitionTeleporter.holdBlackDuration": "1.000000",
                     "Misc_TransitionTeleporter.overlayCanvas": "7167032123494432771",
                     "Misc_TransitionTeleporter.fadeOutDuration": "0.500000",
                     "Misc_TransitionTeleporter.eventBased": "1",
-                    "Misc_TransitionTeleporter.eventName": "Section1Lift",
-                    "Misc_TransitionTeleporter.impactAudioName": "PLAYER_IMPACT"
+                    "Misc_TransitionTeleporter.eventName": "Section1Lift"
                 },
                 "EntityReferenceFields": [
                     "player",
@@ -25144,19 +25144,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -25357,19 +25357,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -25570,19 +25570,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -25783,19 +25783,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -26220,19 +26220,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -26433,19 +26433,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -26646,19 +26646,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -26859,19 +26859,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Interactable_WireTether.wirePuzzleIndex": "0",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -27101,13 +27101,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -27166,13 +27166,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -27231,13 +27231,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -27296,13 +27296,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "0",
                     "Misc_WireChild.pink": "7ac1af45-900a-4583-bd8e-6091770e2ea5",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -71136,19 +71136,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -71338,19 +71338,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -71540,19 +71540,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -71742,19 +71742,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -71944,19 +71944,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "4",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -72146,19 +72146,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "5",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -72348,19 +72348,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "6",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -72774,19 +72774,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -72976,19 +72976,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -73178,19 +73178,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -73380,19 +73380,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -73582,19 +73582,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "4",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -73784,19 +73784,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "5",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -73986,19 +73986,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "6",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -74217,13 +74217,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -74282,13 +74282,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -74347,13 +74347,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -74412,13 +74412,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -74477,13 +74477,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -74542,13 +74542,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -74607,13 +74607,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -76381,8 +76381,8 @@
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_01",
                     "Puzzle_RotateLock.correctAlphas": "3 0 1 6",
-                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Puzzle_RotateLock.correctNums": "3 0 2 6",
+                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_01"
                 },
                 "EntityReferenceFields": [
@@ -76696,8 +76696,8 @@
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_02",
                     "Puzzle_RotateLock.correctAlphas": "3 4 0 5",
-                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Puzzle_RotateLock.correctNums": "3 3 5 1",
+                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_02"
                 },
                 "EntityReferenceFields": [
@@ -77010,8 +77010,8 @@
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_03",
                     "Puzzle_RotateLock.correctAlphas": "3 2 5 3",
-                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Puzzle_RotateLock.correctNums": "3 5 2 5",
+                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_03"
                 },
                 "EntityReferenceFields": [
@@ -77324,8 +77324,8 @@
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_04",
                     "Puzzle_RotateLock.correctAlphas": "3 5 0 6",
-                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Puzzle_RotateLock.correctNums": "3 0 5 2",
+                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_04"
                 },
                 "EntityReferenceFields": [
@@ -77638,8 +77638,8 @@
                     "Puzzle_RotateLock.checkTimerAmount": "0.500000",
                     "Puzzle_RotateLock.rotateLockIndex": "rotate_05",
                     "Puzzle_RotateLock.correctAlphas": "3 6 2 7",
-                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Puzzle_RotateLock.correctNums": "3 2 4 1",
+                    "Puzzle_RotateLock.puzzleKey": "0",
                     "Interactable_RotateLock.rotateLockIndex": "rotate_05"
                 },
                 "EntityReferenceFields": [
@@ -78089,19 +78089,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -78302,19 +78302,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -78515,19 +78515,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -78728,19 +78728,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -78941,19 +78941,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "4",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -79154,19 +79154,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "5",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -79367,19 +79367,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "6",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "0"
                 },
                 "EntityReferenceFields": [],
@@ -79804,19 +79804,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "0",
+                    "Interactable_WireTether.wireIndex": "0",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "0",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -80017,19 +80017,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "1",
+                    "Interactable_WireTether.wireIndex": "1",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "1",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -80230,19 +80230,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "2",
+                    "Interactable_WireTether.wireIndex": "2",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "2",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -80443,19 +80443,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "3",
+                    "Interactable_WireTether.wireIndex": "3",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "3",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -80656,19 +80656,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "4",
+                    "Interactable_WireTether.wireIndex": "4",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "4",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -80869,19 +80869,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "5",
+                    "Interactable_WireTether.wireIndex": "5",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "5",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -81082,19 +81082,19 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireChild.wireChildIndex": "6",
+                    "Interactable_WireTether.wireIndex": "6",
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Interactable_WireTether.wirePuzzleIndex": "1",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "1",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc",
-                    "Interactable_WireTether.wireIndex": "6",
                     "Interactable_WireTether.correctSide": "1"
                 },
                 "EntityReferenceFields": [],
@@ -81324,13 +81324,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -81389,13 +81389,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -81454,13 +81454,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -81519,13 +81519,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -81584,13 +81584,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -81649,13 +81649,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -81714,13 +81714,13 @@
                     "Misc_WireChild.wirePuzzleIndex": "1",
                     "Misc_WireChild.pink": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
                     "Misc_WireChild.blue": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.red": "422f303b-a2fd-44d6-acbf-d930ef363e94",
                     "Misc_WireChild.green": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.orange": "",
-                    "Misc_WireChild.yellow": "19de8522-2788-42d6-8949-f3314f4d58a6",
                     "Misc_WireChild.purple": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
                     "Misc_WireChild.white": "13a8b2c4-1e99-4528-818d-737ae53f5348",
-                    "Misc_WireChild.correctWire": "0",
                     "Misc_WireChild.black": "73bb40cf-1d2a-4e89-b294-56a12894c2cc"
                 },
                 "EntityReferenceFields": [],
@@ -91534,7 +91534,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Cutscene4",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613958620020737
             },
@@ -91599,7 +91599,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Cutscene Caption Text",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308613928138309644
             },
@@ -91694,18 +91694,18 @@
                 "SerializedFields": {
                     "Cutscene_Controller.enableCutscene": "0",
                     "Cutscene_Controller.bgmAudioName": "",
+                    "Cutscene_Controller.fadeOutSeconds": "0.180000",
                     "Cutscene_Controller.pageDelays": "4 3 3 3 3",
                     "Cutscene_Controller.eventName": "StartCutscene",
                     "Cutscene_Controller.fadeInSeconds": "0.180000",
+                    "Cutscene_Controller.captionTextRef": "7308613928138309644",
                     "Cutscene_Controller.blackBackgroundRef": "7167032123494432771",
+                    "Cutscene_Controller.pageCaptions": "4 22:This is the first page 23:This is the second page 23:This is the third  page 22:This is the last  page",
                     "Cutscene_Controller.autoStartOnPlay": "1",
                     "Cutscene_Controller.autoAdvance": "1",
                     "Cutscene_Controller.autoAdvanceDelay": "2.000000",
-                    "Cutscene_Controller.fadeOutSeconds": "0.180000",
                     "Cutscene_Controller.blackFadeOutSeconds": "0.500000",
                     "Cutscene_Controller.pageAudioNames": "4 5:TEMP1 5:TEMP2 5:TEMP3 5:TEMP1",
-                    "Cutscene_Controller.pageCaptions": "4 22:This is the first page 23:This is the second page 23:This is the third  page 22:This is the last  page",
-                    "Cutscene_Controller.captionTextRef": "7308613928138309644",
                     "Cutscene_Controller.pageImages": "4 7308613928133656583 7308613928134770696 7308613928135753738 7308613958620020737"
                 },
                 "EntityReferenceFields": [
@@ -92591,11 +92591,11 @@
                 ],
                 "SerializedFields": {
                     "UI_HoverTextColor.targetText": "7308614093576536128",
+                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
                     "UI_HoverTextColor.normalHex": "#C3C3C3FF",
                     "UI_HoverTextColor.hoverHex": "#54E4A2FF",
                     "UI_OverlayFadeIn.enableButtonTrigger": "1",
                     "UIButton_SwitchSceneThree.switchDelaySeconds": "1.000000",
-                    "UI_OverlayFadeIn.fadeInDuration": "1.000000",
                     "UI_OverlayFadeIn.blackOverlayCanvas": "7167032123494432771",
                     "UI_OverlayFadeIn.triggerButton": "7308614093576536125",
                     "UI_OverlayFadeIn.listenEventName": ""
@@ -93283,10 +93283,10 @@
                     "UIButton_ResetVolumes.bgmSlider": "7308614093792804902",
                     "UIButton_ResetVolumes.sfxSlider": "7308614093792804909",
                     "UIButton_ResetVolumes.ambienceSlider": "0",
+                    "UI_HoverTextColor.hoverHex": "#50ce94",
                     "UIButton_ResetVolumes.gammaSlider": "7308614093792804916",
                     "UI_HoverTextColor.targetText": "7308614093792804886",
-                    "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94"
+                    "UI_HoverTextColor.normalHex": "#8a8a8a"
                 },
                 "EntityReferenceFields": [
                     "masterSlider",
@@ -93464,12 +93464,10 @@
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "UIButton_SwitchSceneThree",
                     "UI_HoverTextColor",
                     "UIButton_CanvasSwitcher"
                 ],
                 "SerializedFields": {
-                    "UIButton_SwitchSceneThree.switchDelaySeconds": "1.000000",
                     "UI_HoverTextColor.targetText": "7308614093792804891",
                     "UI_HoverTextColor.normalHex": "#8a8a8a",
                     "UI_HoverTextColor.hoverHex": "#50ce94",
