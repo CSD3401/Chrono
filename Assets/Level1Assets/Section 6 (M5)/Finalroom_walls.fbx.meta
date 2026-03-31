@@ -1,0 +1,182 @@
+{
+    "fileFormatVersion": 1,
+    "uuid": "dd006064-0765-4d8b-9aae-9647a2ca28f0",
+    "assetType": "Model",
+    "sourcePath": "Assets/Level1Assets\\Section 6 (M5)\\Finalroom_walls.fbx",
+    "modelImport": {
+        "scene": {
+            "scaleFactor": 0.009999999776482582,
+            "convertUnits": 1,
+            "importCameras": 0,
+            "importLights": 0,
+            "preserveHierarchy": 1
+        },
+        "mesh": {
+            "weldVertices": 0,
+            "keepQuads": 0,
+            "swapUVs": 0,
+            "generateLightmapUVs": 0,
+            "lightmapUvPaddingTexels": 8,
+            "generateColliders": 1,
+            "generateMeshLODs": 0,
+            "smoothingAngle": 60.0,
+            "normalMode": 0,
+            "tangentMode": 0,
+            "indexFormat": 0,
+            "meshOptimizationMode": 1
+        },
+        "rig": {
+            "stripBones": 0,
+            "animationType": 0
+        },
+        "animation": {
+            "importAnimations": 1,
+            "importConstraints": 0,
+            "importAnimatedCustomProperties": 0,
+            "autoSplitClips": 1,
+            "importRootMotion": 0,
+            "lockRootPositionXZ": 0,
+            "lockRootRotationY": 0,
+            "sampleRate": 0.0
+        },
+        "material": {
+            "importMaterials": 1,
+            "tryReuseExistingMaterials": 1,
+            "creationMode": 0
+        }
+    },
+    "submeshes": [
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/Walls_$AssimpFbx$_RotationPivot/Walls_$AssimpFbx$_RotationPivotInverse/Walls_$AssimpFbx$_ScalingPivot/Walls_$AssimpFbx$_ScalingPivotInverse/Walls/inner_walls_$AssimpFbx$_RotationPivot/inner_walls_$AssimpFbx$_RotationPivotInverse/inner_walls_$AssimpFbx$_ScalingPivot/inner_walls_$AssimpFbx$_ScalingPivotInverse/inner_walls/inner_walls",
+            "index": 0,
+            "pivotOffset": {
+                "x": 19.724040985107422,
+                "y": 0.0,
+                "z": -5.396164417266846
+            }
+        },
+        {
+            "name": "RootNode/final_room_$AssimpFbx$_RotationPivot/final_room_$AssimpFbx$_RotationPivotInverse/final_room_$AssimpFbx$_ScalingPivot/final_room_$AssimpFbx$_ScalingPivotInverse/final_room/Walls_$AssimpFbx$_RotationPivot/Walls_$AssimpFbx$_RotationPivotInverse/Walls_$AssimpFbx$_ScalingPivot/Walls_$AssimpFbx$_ScalingPivotInverse/Walls/perimeter_walls_$AssimpFbx$_RotationPivot/perimeter_walls_$AssimpFbx$_RotationPivotInverse/perimeter_walls_$AssimpFbx$_ScalingPivot/perimeter_walls_$AssimpFbx$_ScalingPivotInverse/perimeter_walls/perimeter_walls",
+            "index": 1,
+            "pivotOffset": {
+                "x": 19.72403907775879,
+                "y": 1.5,
+                "z": -5.396164894104004
+            }
+        }
+    ],
+    "generatedPrefab": {
+        "schemaVersion": 1,
+        "Entities": [
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "Finalroom_walls",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 1
+                },
+                "Hierarchy": {
+                    "luid": 1,
+                    "parentLuid": 0
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 1
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "inner_walls",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 2,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 2
+                },
+                "Renderer": {
+                    "modelUUID": "dd006064-0765-4d8b-9aae-9647a2ca28f0",
+                    "materialUUID": "2f4123fc-3568-4122-86aa-f73b84649784",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 0,
+                    "luid": 0
+                }
+            },
+            {
+                "Layer": 0,
+                "EntityMeta": {
+                    "name": "perimeter_walls",
+                    "isActive": 1,
+                    "isStatic": 0,
+                    "luid": 0
+                },
+                "Hierarchy": {
+                    "luid": 3,
+                    "parentLuid": 1
+                },
+                "Transform": {
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "Rotation": {
+                        "x": -0.0,
+                        "y": 0.0,
+                        "z": -0.0
+                    },
+                    "luid": 3
+                },
+                "Renderer": {
+                    "modelUUID": "dd006064-0765-4d8b-9aae-9647a2ca28f0",
+                    "materialUUID": "2f4123fc-3568-4122-86aa-f73b84649784",
+                    "shadowCastMode": 1,
+                    "receiveShadows": 1,
+                    "subMeshIndex": 1,
+                    "luid": 0
+                }
+            }
+        ]
+    }
+}

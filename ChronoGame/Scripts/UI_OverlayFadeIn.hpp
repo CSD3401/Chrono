@@ -30,10 +30,6 @@ public:
     void Initialize(Entity entity) override { m_hostEntity = entity; }
 
     void Start() override {
-
-        LOG_ERROR("HELLO HELLO HELLO");
-
-
         if (fadeInDuration <= 0.0f) fadeInDuration = 2.0f;
 
         const std::string evt = Trim(listenEventName);
