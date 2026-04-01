@@ -1,5 +1,6 @@
 #pragma once
 #include "EngineAPI.hpp"
+#include "UI_SaveSettings.hpp"
 #include <ScriptSDK/UI.h>
 #include <algorithm>
 
@@ -66,6 +67,8 @@ public:
             const float g = std::clamp(defaultGammaNormalized, 0.0f, 1.0f);
             UI::SetSliderNormalizedValue(gammaSlider.GetEntity(), g);
         }
+
+        SavedSettings::SaveAll(1.0f, 1.0f, 1.0f, 1.0f, defaultGammaNormalized);
     }
 
     void OnDestroy() override {}

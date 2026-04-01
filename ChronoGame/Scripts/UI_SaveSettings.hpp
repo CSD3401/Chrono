@@ -1,52 +1,65 @@
 #pragma once
 #include "EngineAPI.hpp"
+#include <ScriptSDK/UI.h>
+#include <algorithm>
 
 /**
  * SavedSettings
  * -------------
- * Static storage for settings that persist across scene loads.
- * Not saved to disk — resets on application quit.
+ * Runtime-only settings cache that persists across scene switches while the game
+ * is still running. It does NOT save to disk yet.
  */
 struct SavedSettings {
     static inline float masterVolume = 1.0f;
-    static inline bool  hasBeenSaved = false;
+    static inline float bgmVolume = 1.0f;
+    static inline float sfxVolume = 1.0f;
+    static inline float ambienceVolume = 1.0f;
+    static inline float gammaNormalized = 1.0f;
+    static inline bool hasBeenSaved = false;
+
+    static float Clamp01(float value) {
+        return std::clamp(value, 0.0f, 1.0f);
+    }
+
+    static void SaveAll(float master, float bgm, float sfx, float ambience, float gamma) {
+        masterVolume = Clamp01(master);
+        bgmVolume = Clamp01(bgm);
+        sfxVolume = Clamp01(sfx);
+        ambienceVolume = Clamp01(ambience);
+        gammaNormalized = Clamp01(gamma);
+        hasBeenSaved = true;
+    }
 };
 
 /**
  * UI_SaveSettings
  * ---------------
- * Attach to the Save button entity (must have UIButton).
- * Assign the volume slider so this script can read its value on click.
- *
- * On click: saves the current slider value to SavedSettings::masterVolume.
+ * Attach to the Save button entity and assign all relevant settings sliders.
+ * One button saves all current slider values into the runtime cache.
  */
 class UI_SaveSettings : public IScript {
 public:
     UI_SaveSettings() {
-        SCRIPT_GAMEOBJECT_REF(volumeSlider);
+        SCRIPT_GAMEOBJECT_REF(masterSlider);
+        SCRIPT_GAMEOBJECT_REF(bgmSlider);
+        SCRIPT_GAMEOBJECT_REF(sfxSlider);
+        SCRIPT_GAMEOBJECT_REF(ambienceSlider);
+        SCRIPT_GAMEOBJECT_REF(gammaSlider);
     }
 
     ~UI_SaveSettings() override = default;
 
     void Awake() override {}
     void Initialize(Entity entity) override { m_buttonEntity = entity; }
-
-    void Start() override {
-        m_slider = volumeSlider.IsValid() ? volumeSlider.GetEntity() : 0;
-
-        if (m_slider == 0)
-            LOG_WARNING("UI_SaveSettings: volumeSlider not set.");
-    }
+    void Start() override {}
 
     void Update(double /*dt*/) override {
         if (m_buttonEntity == 0) return;
-        //if (!NE::ECS::Query::HasUIButton(m_buttonEntity)) return;
+        if (!UI::WasButtonClicked(m_buttonEntity) || !UI::IsButtonInteractable(m_buttonEntity))
+            return;
 
-        if (NE::Scripting::WasButtonClicked(m_buttonEntity)) {
-            SaveCurrentSettings();
-            PlayAudio("Event:/MAIN_MENU/BUTTON_CLICK");
-            LOG_INFO("UI_SaveSettings: Settings saved.");
-        }
+        SaveCurrentSettings();
+        LOG_INFO("UI_SaveSettings: runtime settings saved.");
     }
 
     void OnDestroy() override {}
@@ -64,17 +77,24 @@ public:
     void OnTriggerStay(Entity other) override { (void)other; }
 
 private:
-    GameObjectRef volumeSlider;
+    GameObjectRef masterSlider;
+    GameObjectRef bgmSlider;
+    GameObjectRef sfxSlider;
+    GameObjectRef ambienceSlider;
+    GameObjectRef gammaSlider;
     Entity m_buttonEntity = 0;
-    Entity m_slider = 0;
+
+    static float ReadSlider(const GameObjectRef& ref, float fallback) {
+        if (!ref.IsValid()) return SavedSettings::Clamp01(fallback);
+        return SavedSettings::Clamp01(UI::GetSliderNormalizedValue(ref.GetEntity()));
+    }
 
     void SaveCurrentSettings() {
-        if (m_slider != 0) {
-            float norm = UI::GetSliderNormalizedValue(m_slider);
-            if (norm < 0.0f) norm = 0.0f;
-            if (norm > 1.0f) norm = 1.0f;
-            SavedSettings::masterVolume = norm;
-        }
-        SavedSettings::hasBeenSaved = true;
+        SavedSettings::SaveAll(
+            ReadSlider(masterSlider, SavedSettings::masterVolume),
+            ReadSlider(bgmSlider, SavedSettings::bgmVolume),
+            ReadSlider(sfxSlider, SavedSettings::sfxVolume),
+            ReadSlider(ambienceSlider, SavedSettings::ambienceVolume),
+            ReadSlider(gammaSlider, SavedSettings::gammaNormalized));
     }
 };
