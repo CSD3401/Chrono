@@ -1,5 +1,6 @@
 #pragma once
 #include "EngineAPI.hpp"
+#include "UI_SaveSettings.hpp"
 
 /**
  * UI_BGMVolumeButtons (slider version)
@@ -24,7 +25,10 @@ public:
 
     void Start() override {
         m_slider = volumeSlider.IsValid() ? volumeSlider.GetEntity() : 0;
-        // Don't write to the slider - only read. Writing can lock the value in some engines.
+        if (SavedSettings::hasBeenSaved && m_slider != 0) {
+            UI::SetSliderNormalizedValue(m_slider, SavedSettings::bgmVolume);
+            SetBGMVolume(SavedSettings::bgmVolume);
+        }
     }
 
     void Update(double /*dt*/) override {
@@ -34,6 +38,7 @@ public:
         if (norm < 0.0f) norm = 0.0f;
         if (norm > 1.0f) norm = 1.0f;
         SetBGMVolume(norm);
+        SavedSettings::bgmVolume = norm;
     }
 
     void OnDestroy() override {}
