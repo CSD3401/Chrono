@@ -38,7 +38,6 @@ public:
         if (norm < 0.0f) norm = 0.0f;
         if (norm > 1.0f) norm = 1.0f;
         SetSFXVolume(norm);
-        SavedSettings::sfxVolume = norm;
     }
 
     void OnDestroy() override {}

@@ -40,7 +40,6 @@ public:
         if (norm < 0.0f) norm = 0.0f;
         if (norm > 1.0f) norm = 1.0f;
         SetMasterVolume(norm);
-        SavedSettings::masterVolume = norm;
     }
 
     void OnDestroy() override {}
