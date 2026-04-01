@@ -72,7 +72,7 @@ public:
         if (inUse)
         {
             RotateLock(deltaTime);
-            
+
         }
     }
 
@@ -133,28 +133,38 @@ public:
             // switch them on
         }
     }
-    
+
     void RotateLock(double deltaTime)
     {
         auto [scrollX, scrollY] = Input::GetScrollDelta();
         Vec3 currRot = TF_GetLocalRotation(outerRingRef.GetEntity());
-        //LOG_DEBUG("Vec3[CurrentRotation]: (X: " + std::to_string(currRot.x) + ", Y: " + std::to_string(currRot.y) + ", Z: " + std::to_string(currRot.z));
+
+        bool hasInput = false;
+
         if (scrollY > 0.0f || Input::IsKeyDown(VK_RIGHT))
         {
-            //LOG_DEBUG("CHECKING SCROLL UP");
             checkTimer = checkTimerAmount;
             currRot.z += rotationSpeed * deltaTime;
             TF_SetRotation(currRot, outerRingRef.GetEntity());
             currentAngle = currRot.z;
-
+            hasInput = true;
         }
         else if (scrollY < 0.0f || Input::IsKeyDown(VK_LEFT))
         {
-            //LOG_DEBUG("CHECKING SCROLL DOWN");
             checkTimer = checkTimerAmount;
             currRot.z -= rotationSpeed * deltaTime;
             TF_SetRotation(currRot, outerRingRef.GetEntity());
             currentAngle = currRot.z;
+            hasInput = true;
+        }
+
+        if (m_rotateSfxCooldown > 0.0f)
+            m_rotateSfxCooldown -= static_cast<float>(deltaTime);
+
+        if (hasInput && m_rotateSfxCooldown <= 0.0f)
+        {
+            PlayAudio("event:/BOMB_ROTATE");
+            m_rotateSfxCooldown = ROTATE_SFX_INTERVAL;
         }
 
         CheckCurrentRotation(deltaTime);
@@ -190,6 +200,8 @@ public:
             checkTimer = checkTimerAmount;
             LOG_DEBUG("CORRECT ROTATION STEP");
 
+            PlayAudio("event:/SLOT_IN"); // change this audio RF
+
             // Send message here to turn like the lights on the bomb or smth
             // message should be the rotatelockindex string var + numcorrect
             // eg; rotate_011 for getting the first correct
@@ -197,11 +209,12 @@ public:
 
             if (numCorrect >= totalSteps)
             {
+                PlayAudio("event:/SMALL_BOMB_SOLVED");
                 LOG_DEBUG("SOLVED THE ROTATION PUZZLE");
                 Solve();
             }
         }
-        
+
     }
 
     float WrapAngle(float angle)
@@ -234,7 +247,10 @@ private:
     // ANSWERS HERE
     std::vector<ALPHA_CODE> correctAlphas;
     std::vector<NUM_CODE> correctNums;
-    
+
 
     float currentAngle;
+
+    static constexpr float ROTATE_SFX_INTERVAL = 0.3f; // seconds between one-shot triggers
+    float m_rotateSfxCooldown = 0.0f;
 };

@@ -61,6 +61,7 @@ public:
 
     void Interact() override {
         Events::Send(rotateLockIndex.c_str());
+        PlayAudio("event:/BOMB_INTERACT");
         LOG_DEBUG("INTERACTED W THE LOCK");
     }
 

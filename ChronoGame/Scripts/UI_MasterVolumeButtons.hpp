@@ -1,5 +1,6 @@
 #pragma once
 #include "EngineAPI.hpp"
+#include "UI_SaveSettings.hpp"
 
 /**
  * UI_MasterVolumeButtons (slider version)
@@ -24,7 +25,12 @@ public:
 
     void Start() override {
         m_slider = volumeSlider.IsValid() ? volumeSlider.GetEntity() : 0;
-        // Don't write to the slider - only read. Writing can lock the value at 1 in some engines.
+
+        // Restore saved volume if it was previously saved
+        if (SavedSettings::hasBeenSaved && m_slider != 0) {
+            UI::SetSliderNormalizedValue(m_slider, SavedSettings::masterVolume);
+            SetMasterVolume(SavedSettings::masterVolume);
+        }
     }
 
     void Update(double /*dt*/) override {

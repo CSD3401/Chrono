@@ -87,6 +87,7 @@
 #include "Scripts/Misc_PauseMenuHotkey.hpp"
 #include "Scripts/UIButton_PauseResume.hpp"
 #include "Scripts/UIButton_CanvasSwitcher.hpp"
+#include "Scripts/UI_SaveSettings.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -356,5 +357,11 @@ extern "C" {
         registrar->RegisterScript("TaskCheckpoint", []() -> NE::Scripting::IScript* {
             return new TaskCheckpoint();
             });
+        registrar->RegisterScript("UI_SaveSettings", []() -> NE::Scripting::IScript* {
+            return new UI_SaveSettings();
+            });
+
+        
+
     }
 }
