@@ -87342,12 +87342,15 @@
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "UI_HoverTextColor"
+                    "UI_HoverTextColor",
+                    "UIButton_CanvasSwitcher"
                 ],
                 "SerializedFields": {
                     "UI_HoverTextColor.targetText": "7308614093576536118",
                     "UI_HoverTextColor.normalHex": "#C3C3C3FF",
-                    "UI_HoverTextColor.hoverHex": "#54E4A2FF"
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF",
+                    "UIButton_CanvasSwitcher.showTargets": "1 7308614098096357376",
+                    "UIButton_CanvasSwitcher.hideTargets": "1 7308614093576536099"
                 },
                 "EntityReferenceFields": [
                     "targetText"
@@ -89922,6 +89925,3001 @@
                     }
                 },
                 "luid": 7165061856586760310
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Settings Menu",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098096357376
+            },
+            "Hierarchy": {
+                "luid": 7526194255093694466,
+                "parentLuid": 0
+            },
+            "Transform": {
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "Rotation": {
+                    "x": -0.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885383548829697
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "SettIngs Buttons",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078276
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415363,
+                "parentLuid": 7526194255093694466
+            },
+            "PrefabInstance": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96"
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 0
+            },
+            "NativeScript": {
+                "ScriptNames": [],
+                "SerializedFields": {},
+                "EntityReferenceFields": [
+                    "volumeSlider",
+                    "masterSlider",
+                    "bgmSlider",
+                    "sfxSlider",
+                    "ambienceSlider",
+                    "gammaSlider"
+                ],
+                "luid": 7958821294298693637
+            },
+            "UIRectTransform": {
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UICanvas": {
+                "luid": 0,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "cameraEntity": 4294967295,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 1,
+                "alpha": 1.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Reset",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078279
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415366,
+                "parentLuid": 7526194255094415363
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 1
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UIButton_ResetVolumes",
+                    "UI_HoverTextColor"
+                ],
+                "SerializedFields": {
+                    "UIButton_ResetVolumes.masterSlider": "7308614098097078291",
+                    "UIButton_ResetVolumes.bgmSlider": "7308614098097078298",
+                    "UIButton_ResetVolumes.sfxSlider": "7308614098097078319",
+                    "UIButton_ResetVolumes.ambienceSlider": "7308614098097078305",
+                    "UI_HoverTextColor.hoverHex": "#50ce94",
+                    "UIButton_ResetVolumes.gammaSlider": "7308614098097078312",
+                    "UIButton_ResetVolumes.defaultGammaNormalized": "1.000000",
+                    "UI_HoverTextColor.targetText": "7308614098097078282",
+                    "UI_HoverTextColor.normalHex": "#8a8a8a"
+                },
+                "EntityReferenceFields": [
+                    "masterSlider",
+                    "bgmSlider",
+                    "sfxSlider",
+                    "ambienceSlider",
+                    "targetText",
+                    "gammaSlider"
+                ],
+                "luid": 7958821294298693640
+            },
+            "UIRectTransform": {
+                "x": -750.5,
+                "y": 434.20001220703125,
+                "z": 0.0,
+                "width": 90.84249114990234,
+                "height": 48.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UIButton": {
+                "luid": 7094411640825511936,
+                "normalColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 0.0
+                },
+                "hoverColor": {
+                    "x": 0.19607843458652496,
+                    "y": 0.6901960968971252,
+                    "z": 0.8509804010391235,
+                    "w": 0.21568627655506134
+                },
+                "pressedColor": {
+                    "x": 0.6000000238418579,
+                    "y": 0.6000000238418579,
+                    "z": 0.6000000238418579,
+                    "w": 1.0
+                },
+                "disabledColor": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5,
+                    "w": 0.5
+                },
+                "onClickEventId": 0,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078282
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415369,
+                "parentLuid": 7526194255094415366
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 2
+            },
+            "UIRectTransform": {
+                "x": -52.79999923706055,
+                "y": -23.5,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 8392574233415057409,
+                "text": "Reset",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 40.0,
+                "color": {
+                    "x": 0.5411764979362488,
+                    "y": 0.5411764979362488,
+                    "z": 0.5411764979362488,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Close",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078284
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415371,
+                "parentLuid": 7526194255094415363
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 3
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_HoverTextColor",
+                    "UI_SaveSettings",
+                    "UIButton_CanvasSwitcher"
+                ],
+                "SerializedFields": {
+                    "UI_HoverTextColor.targetText": "7308614098097078287",
+                    "UI_HoverTextColor.normalHex": "#8a8a8a",
+                    "UI_SaveSettings.gammaSlider": "7308614098097078312",
+                    "UI_HoverTextColor.hoverHex": "#50ce94",
+                    "UI_SaveSettings.bgmSlider": "7308614098097078298",
+                    "UI_SaveSettings.ambienceSlider": "7308614098097078305",
+                    "UI_SaveSettings.masterSlider": "7308614098097078291",
+                    "UI_SaveSettings.sfxSlider": "7308614098097078319",
+                    "UIButton_CanvasSwitcher.showTargets": "1 7308614093576536099",
+                    "UIButton_CanvasSwitcher.hideTargets": "1 7308614098096357376"
+                },
+                "EntityReferenceFields": [
+                    "targetText",
+                    "gammaSlider",
+                    "triggerButton",
+                    "blackOverlayCanvas",
+                    "bgmSlider",
+                    "masterSlider",
+                    "ambienceSlider",
+                    "sfxSlider"
+                ],
+                "luid": 7958821294298693645
+            },
+            "UIRectTransform": {
+                "x": -455.8999938964844,
+                "y": 441.0,
+                "z": 0.0,
+                "width": 257.0,
+                "height": 67.02116394042969,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UIButton": {
+                "luid": 7094411640825511938,
+                "normalColor": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 0.0
+                },
+                "hoverColor": {
+                    "x": 0.19607843458652496,
+                    "y": 0.6901960968971252,
+                    "z": 0.8509804010391235,
+                    "w": 0.21568627655506134
+                },
+                "pressedColor": {
+                    "x": 0.6000000238418579,
+                    "y": 0.6000000238418579,
+                    "z": 0.6000000238418579,
+                    "w": 1.0
+                },
+                "disabledColor": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5,
+                    "w": 0.5
+                },
+                "onClickEventId": 0,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078287
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415374,
+                "parentLuid": 7526194255094415371
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 4
+            },
+            "UIRectTransform": {
+                "x": -44.79999923706055,
+                "y": -48.79999923706055,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 8392574233415057411,
+                "text": "Close",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 40.0,
+                "color": {
+                    "x": 0.5411764979362488,
+                    "y": 0.5411764979362488,
+                    "z": 0.5411764979362488,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078289
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415376,
+                "parentLuid": 7526194255094415371
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 5
+            },
+            "UIRectTransform": {
+                "x": -129.89999389648438,
+                "y": -22.799999237060547,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 8392574233415057412,
+                "text": "Your changes will be saved",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 32.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Master",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078291
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415378,
+                "parentLuid": 7526194255094415363
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 6
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_MasterVolumeButtons"
+                ],
+                "SerializedFields": {
+                    "UI_MasterVolumeButtons.volumeSlider": "7308613990197035008"
+                },
+                "EntityReferenceFields": [
+                    "volumeSlider"
+                ],
+                "luid": 7958821294298693652
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 214.6999969482422,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 8317138939656601605,
+                "value": 1.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078294
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415381,
+                "parentLuid": 7526194255094415378
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 7
+            },
+            "UIRectTransform": {
+                "x": -130.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.20000000298023224,
+                    "y": 0.6000000238418579,
+                    "z": 1.0,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Handle",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078296
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415383,
+                "parentLuid": 7526194255094415378
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 8
+            },
+            "UIRectTransform": {
+                "x": -3.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 6.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.29019609093666077,
+                    "y": 0.4274509847164154,
+                    "z": 0.4745098054409027,
+                    "w": 0.800000011920929
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Music",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078298
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415385,
+                "parentLuid": 7526194255094415363
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 9
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_BGMVolumeButtons"
+                ],
+                "SerializedFields": {
+                    "UI_BGMVolumeButtons.volumeSlider": "7308613990275481623"
+                },
+                "EntityReferenceFields": [
+                    "volumeSlider"
+                ],
+                "luid": 7958821294298693659
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 255.10000610351563,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 8317138939656601606,
+                "value": 1.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078301
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415388,
+                "parentLuid": 7526194255094415385
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 10
+            },
+            "UIRectTransform": {
+                "x": -130.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.20000000298023224,
+                    "y": 0.6000000238418579,
+                    "z": 1.0,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Handle",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078303
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415390,
+                "parentLuid": 7526194255094415385
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 11
+            },
+            "UIRectTransform": {
+                "x": -3.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 6.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.29019609093666077,
+                    "y": 0.4274509847164154,
+                    "z": 0.4745098054409027,
+                    "w": 0.800000011920929
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Ambience",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078305
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415392,
+                "parentLuid": 7526194255094415363
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 12
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_AmbienceVolumeButtons"
+                ],
+                "SerializedFields": {
+                    "UI_AmbienceVolumeButtons.volumeSlider": "7308613990208110615"
+                },
+                "EntityReferenceFields": [
+                    "volumeSlider"
+                ],
+                "luid": 7958821294298693666
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 295.79998779296875,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 8317138939656601607,
+                "value": 1.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078308
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415395,
+                "parentLuid": 7526194255094415392
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 13
+            },
+            "UIRectTransform": {
+                "x": -130.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.20000000298023224,
+                    "y": 0.6000000238418579,
+                    "z": 1.0,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Handle",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078310
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415397,
+                "parentLuid": 7526194255094415392
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 14
+            },
+            "UIRectTransform": {
+                "x": -3.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 6.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.29019609093666077,
+                    "y": 0.4274509847164154,
+                    "z": 0.4745098054409027,
+                    "w": 0.800000011920929
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Gamma",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078312
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415399,
+                "parentLuid": 7526194255094415363
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 15
+            },
+            "NativeScript": {
+                "ScriptNames": [],
+                "SerializedFields": {},
+                "EntityReferenceFields": [
+                    "volumeSlider"
+                ],
+                "luid": 7958821294298693673
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 334.70001220703125,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 8317138939656601608,
+                "value": 1.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078315
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415402,
+                "parentLuid": 7526194255094415399
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 16
+            },
+            "UIRectTransform": {
+                "x": -130.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.20000000298023224,
+                    "y": 0.6000000238418579,
+                    "z": 1.0,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Handle",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078317
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415404,
+                "parentLuid": 7526194255094415399
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 17
+            },
+            "UIRectTransform": {
+                "x": -3.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 6.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.29019609093666077,
+                    "y": 0.4274509847164154,
+                    "z": 0.4745098054409027,
+                    "w": 0.800000011920929
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "SFX",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078319
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415406,
+                "parentLuid": 7526194255094415363
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 18
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "UI_SFXVolumeButtons"
+                ],
+                "SerializedFields": {
+                    "UI_SFXVolumeButtons.volumeSlider": "7308613990207848464"
+                },
+                "EntityReferenceFields": [
+                    "volumeSlider"
+                ],
+                "luid": 7958821294298693680
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 375.3999938964844,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 8317138939656601609,
+                "value": 1.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078322
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415409,
+                "parentLuid": 7526194255094415406
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 19
+            },
+            "UIRectTransform": {
+                "x": -130.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 20.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.20000000298023224,
+                    "y": 0.6000000238418579,
+                    "z": 1.0,
+                    "w": 0.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Handle",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098097078324
+            },
+            "Hierarchy": {
+                "luid": 7526194255094415411,
+                "parentLuid": 7526194255094415406
+            },
+            "PrefabLink": {
+                "prefabUUID": "ea29fd65-a741-4cdc-b99c-5bf4a1385f96",
+                "localID": 20
+            },
+            "UIRectTransform": {
+                "x": -3.0,
+                "y": -10.0,
+                "z": 0.0,
+                "width": 6.0,
+                "height": 20.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.29019609093666077,
+                    "y": 0.4274509847164154,
+                    "z": 0.4745098054409027,
+                    "w": 0.800000011920929
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fake Sliders",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481547
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818634,
+                "parentLuid": 7526194255093694466
+            },
+            "PrefabInstance": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d"
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 0
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "BackgroundAudio"
+                ],
+                "SerializedFields": {
+                    "BackgroundAudio.bgmEventPath": "event:/MAIN_MENU/BGM"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821294310096908
+            },
+            "UIRectTransform": {
+                "x": 960.0,
+                "y": 540.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UICanvas": {
+                "luid": 0,
+                "renderMode": 0,
+                "scaleMode": 1,
+                "cameraEntity": 4294967295,
+                "planeDistance": 100.0,
+                "referenceWidth": 1920.0,
+                "referenceHeight": 1080.0,
+                "pixelPerfect": 0,
+                "isActive": 1,
+                "sortingOrder": 0,
+                "alpha": 1.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Image",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481550
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818637,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 1
+            },
+            "UIRectTransform": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 1920.0,
+                "height": 1080.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "5a06e1fa-3485-4ddd-8c6b-df3f47eba963",
+                "materialUUID": "3c577bb6-856c-471d-93af-06b869aec18a",
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "fake",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481552
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818639,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 2
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 214.6999969482422,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 2.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 0,
+                "value": 0.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481554
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818641,
+                "parentLuid": 7526194255105818639
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 3
+            },
+            "UIRectTransform": {
+                "x": -260.0,
+                "y": -1.0,
+                "z": 0.0,
+                "width": 0.0,
+                "height": 2.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.5372549295425415,
+                    "y": 0.5372549295425415,
+                    "z": 0.5372549295425415,
+                    "w": 0.3490196168422699
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "fake",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481556
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818643,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 4
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 255.10000610351563,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 2.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 0,
+                "value": 0.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481558
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818645,
+                "parentLuid": 7526194255105818643
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 5
+            },
+            "UIRectTransform": {
+                "x": -260.0,
+                "y": -1.0,
+                "z": 0.0,
+                "width": 0.0,
+                "height": 2.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.5372549295425415,
+                    "y": 0.5372549295425415,
+                    "z": 0.5372549295425415,
+                    "w": 0.3490196168422699
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "fake",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481560
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818647,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 6
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 295.79998779296875,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 2.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 0,
+                "value": 0.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481562
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818649,
+                "parentLuid": 7526194255105818647
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 7
+            },
+            "UIRectTransform": {
+                "x": -260.0,
+                "y": -1.0,
+                "z": 0.0,
+                "width": 0.0,
+                "height": 2.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.5372549295425415,
+                    "y": 0.5372549295425415,
+                    "z": 0.5372549295425415,
+                    "w": 0.3490196168422699
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "fake",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481564
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818651,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 8
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 334.70001220703125,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 2.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 0,
+                "value": 0.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481566
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818653,
+                "parentLuid": 7526194255105818651
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 9
+            },
+            "UIRectTransform": {
+                "x": -260.0,
+                "y": -1.0,
+                "z": 0.0,
+                "width": 0.0,
+                "height": 2.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.5372549295425415,
+                    "y": 0.5372549295425415,
+                    "z": 0.5372549295425415,
+                    "w": 0.3490196168422699
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "fake",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481568
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818655,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 10
+            },
+            "UIRectTransform": {
+                "x": -468.3999938964844,
+                "y": 375.3999938964844,
+                "z": 0.0,
+                "width": 260.0,
+                "height": 2.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.30000001192092896,
+                    "y": 0.30000001192092896,
+                    "z": 0.30000001192092896,
+                    "w": 1.0
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 1
+            },
+            "UISlider": {
+                "luid": 0,
+                "value": 0.0,
+                "minValue": 0.0,
+                "maxValue": 1.0,
+                "wholeNumbers": 0,
+                "direction": 0,
+                "fillRect": 4294967295,
+                "handleRect": 4294967295,
+                "backgroundRect": 4294967295,
+                "interactable": 1
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Fill",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481570
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818657,
+                "parentLuid": 7526194255105818655
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 11
+            },
+            "UIRectTransform": {
+                "x": -260.0,
+                "y": -1.0,
+                "z": 0.0,
+                "width": 0.0,
+                "height": 2.0,
+                "offsetMinX": 2.0,
+                "offsetMinY": 2.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": -2.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.0,
+                "anchorMinY": 0.0,
+                "anchorMaxX": 0.0,
+                "anchorMaxY": 1.0,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIImage": {
+                "luid": 0,
+                "textureUUID": "",
+                "materialUUID": "",
+                "color": {
+                    "x": 0.5372549295425415,
+                    "y": 0.5372549295425415,
+                    "z": 0.5372549295425415,
+                    "w": 0.3490196168422699
+                },
+                "imageType": 0,
+                "fillMethod": 0,
+                "fillOrigin": 0,
+                "fillAmount": 1.0,
+                "fillClockwise": 1,
+                "preserveAspect": 0,
+                "borderLeft": 0.0,
+                "borderRight": 0.0,
+                "borderTop": 0.0,
+                "borderBottom": 0.0,
+                "pixelsPerUnitMultiplier": 1.0,
+                "raycastTarget": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Setting Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481572
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818659,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 12
+            },
+            "UIRectTransform": {
+                "x": -730.2000122070313,
+                "y": 131.3000030517578,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 0,
+                "text": "Settings",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 53.0,
+                "color": {
+                    "x": 0.7568627595901489,
+                    "y": 0.7568627595901489,
+                    "z": 0.7568627595901489,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481574
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818661,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 13
+            },
+            "UIRectTransform": {
+                "x": -707.5999755859375,
+                "y": 209.6999969482422,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 0,
+                "text": "Master Volume",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 40.0,
+                "color": {
+                    "x": 0.7568627595901489,
+                    "y": 0.7568627595901489,
+                    "z": 0.7568627595901489,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481576
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818663,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 14
+            },
+            "UIRectTransform": {
+                "x": -755.5,
+                "y": 250.10000610351563,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 0,
+                "text": "Music",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 40.0,
+                "color": {
+                    "x": 0.7568627595901489,
+                    "y": 0.7568627595901489,
+                    "z": 0.7568627595901489,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481578
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818665,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 15
+            },
+            "UIRectTransform": {
+                "x": -734.9000244140625,
+                "y": 290.79998779296875,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 0,
+                "text": "Ambience",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 40.0,
+                "color": {
+                    "x": 0.7568627595901489,
+                    "y": 0.7568627595901489,
+                    "z": 0.7568627595901489,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481580
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818667,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 16
+            },
+            "UIRectTransform": {
+                "x": -747.7000122070313,
+                "y": 329.70001220703125,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 0,
+                "text": "Gamma",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 40.0,
+                "color": {
+                    "x": 0.7568627595901489,
+                    "y": 0.7568627595901489,
+                    "z": 0.7568627595901489,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614098108481582
+            },
+            "Hierarchy": {
+                "luid": 7526194255105818669,
+                "parentLuid": 7526194255105818634
+            },
+            "PrefabLink": {
+                "prefabUUID": "73a2b4ec-6268-4c0c-aab9-4e45db87c71d",
+                "localID": 17
+            },
+            "UIRectTransform": {
+                "x": -766.0,
+                "y": 370.3999938964844,
+                "z": 0.0,
+                "width": 160.0,
+                "height": 30.0,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 0,
+                "text": "SFX",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 40.0,
+                "color": {
+                    "x": 0.7568627595901489,
+                    "y": 0.7568627595901489,
+                    "z": 0.7568627595901489,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
             }
         }
     ]
