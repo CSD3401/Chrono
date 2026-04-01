@@ -86878,14 +86878,14 @@
                     "UI_RestorePauseSettings"
                 ],
                 "SerializedFields": {
-                    "Misc_PauseMenuHotkey.pauseMenuRoot": "7308614093576536099",
                     "UI_RestorePauseSettings.masterSlider": "7308614098097078291",
-                    "UI_RestorePauseSettings.sfxSlider": "7308614098097078319",
+                    "Misc_PauseMenuHotkey.pauseMenuRoot": "7308614093576536099",
                     "Misc_PauseMenuHotkey.playerRef": "7308613656064753675",
-                    "Misc_PauseMenuHotkey.enableHotkey": "1",
                     "UI_RestorePauseSettings.ambienceSlider": "7308614098097078305",
+                    "Misc_PauseMenuHotkey.enableHotkey": "1",
                     "Misc_PauseMenuHotkey.startPaused": "0",
                     "UI_RestorePauseSettings.bgmSlider": "7308614098097078298",
+                    "UI_RestorePauseSettings.sfxSlider": "7308614098097078319",
                     "UI_RestorePauseSettings.gammaSlider": "7308614098097078312"
                 },
                 "EntityReferenceFields": [
@@ -87800,7 +87800,7 @@
                     "x": 0.19607843458652496,
                     "y": 0.6901960968971252,
                     "z": 0.8509804010391235,
-                    "w": 0.20000000298023224
+                    "w": 0.21568627655506134
                 },
                 "pressedColor": {
                     "x": 0.6000000238418579,
@@ -88129,13 +88129,19 @@
             },
             "NativeScript": {
                 "ScriptNames": [
-                    "UIButton_CanvasSwitcher"
+                    "UIButton_CanvasSwitcher",
+                    "UI_HoverTextColor"
                 ],
                 "SerializedFields": {
                     "UIButton_CanvasSwitcher.showTargets": "1 7308614093576536099",
-                    "UIButton_CanvasSwitcher.hideTargets": "1 7167032180372930560"
+                    "UIButton_CanvasSwitcher.hideTargets": "1 7167032180372930560",
+                    "UI_HoverTextColor.targetText": "7308614093680214019",
+                    "UI_HoverTextColor.normalHex": "#C3C3C3FF",
+                    "UI_HoverTextColor.hoverHex": "#54E4A2FF"
                 },
-                "EntityReferenceFields": [],
+                "EntityReferenceFields": [
+                    "targetText"
+                ],
                 "luid": 7958821289886547974
             },
             "UIRectTransform": {
@@ -88192,16 +88198,16 @@
             "UIButton": {
                 "luid": 7094411636403404802,
                 "normalColor": {
-                    "x": 0.800000011920929,
-                    "y": 0.800000011920929,
-                    "z": 0.800000011920929,
-                    "w": 1.0
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 0.0
                 },
                 "hoverColor": {
-                    "x": 0.8999999761581421,
-                    "y": 0.8999999761581421,
-                    "z": 0.8999999761581421,
-                    "w": 1.0
+                    "x": 0.19607843458652496,
+                    "y": 0.6901960968971252,
+                    "z": 0.8509804010391235,
+                    "w": 0.21568627655506134
                 },
                 "pressedColor": {
                     "x": 0.6000000238418579,
@@ -90068,13 +90074,13 @@
                     "UI_HoverTextColor"
                 ],
                 "SerializedFields": {
+                    "UIButton_ResetVolumes.defaultGammaNormalized": "1.000000",
                     "UIButton_ResetVolumes.masterSlider": "7308614098097078291",
                     "UIButton_ResetVolumes.bgmSlider": "7308614098097078298",
                     "UIButton_ResetVolumes.sfxSlider": "7308614098097078319",
                     "UI_HoverTextColor.hoverHex": "#50ce94",
                     "UIButton_ResetVolumes.ambienceSlider": "7308614098097078305",
                     "UIButton_ResetVolumes.gammaSlider": "7308614098097078312",
-                    "UIButton_ResetVolumes.defaultGammaNormalized": "1.000000",
                     "UI_HoverTextColor.targetText": "7308614098097078282",
                     "UI_HoverTextColor.normalHex": "#8a8a8a"
                 },
@@ -90262,12 +90268,12 @@
                     "UI_HoverTextColor.targetText": "7308614098097078287",
                     "UI_SaveSettings.gammaSlider": "7308614098097078312",
                     "UI_HoverTextColor.normalHex": "#8a8a8a",
-                    "UI_HoverTextColor.hoverHex": "#50ce94",
                     "UI_SaveSettings.bgmSlider": "7308614098097078298",
-                    "UI_SaveSettings.ambienceSlider": "7308614098097078305",
+                    "UI_HoverTextColor.hoverHex": "#50ce94",
                     "UI_SaveSettings.masterSlider": "7308614098097078291",
                     "UIButton_CanvasSwitcher.showTargets": "1 7308614093576536099",
                     "UI_SaveSettings.sfxSlider": "7308614098097078319",
+                    "UI_SaveSettings.ambienceSlider": "7308614098097078305",
                     "UIButton_CanvasSwitcher.hideTargets": "1 7308614098096357376"
                 },
                 "EntityReferenceFields": [
@@ -91671,7 +91677,11 @@
                     "BackgroundAudio"
                 ],
                 "SerializedFields": {
-                    "BackgroundAudio.bgmEventPath": "event:/MAIN_MENU/BGM"
+                    "BackgroundAudio.bgmEventPath": "event:/MAIN_MENU/BGM",
+                    "BackgroundAudio.ambienceEventPath": "event:/FOG_AMBIENCE",
+                    "BackgroundAudio.playOnStart": "1",
+                    "BackgroundAudio.bgmVolume": "1.000000",
+                    "BackgroundAudio.ambienceVolume": "1.000000"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821294310096908
@@ -91856,7 +91866,7 @@
                 "raycastTarget": 1
             },
             "UISlider": {
-                "luid": 0,
+                "luid": 8317138940237185024,
                 "value": 0.0,
                 "minValue": 0.0,
                 "maxValue": 1.0,
@@ -92006,7 +92016,7 @@
                 "raycastTarget": 1
             },
             "UISlider": {
-                "luid": 0,
+                "luid": 8317138940237185025,
                 "value": 0.0,
                 "minValue": 0.0,
                 "maxValue": 1.0,
@@ -92156,7 +92166,7 @@
                 "raycastTarget": 1
             },
             "UISlider": {
-                "luid": 0,
+                "luid": 8317138940237185026,
                 "value": 0.0,
                 "minValue": 0.0,
                 "maxValue": 1.0,
@@ -92306,7 +92316,7 @@
                 "raycastTarget": 1
             },
             "UISlider": {
-                "luid": 0,
+                "luid": 8317138940237185027,
                 "value": 0.0,
                 "minValue": 0.0,
                 "maxValue": 1.0,
@@ -92456,7 +92466,7 @@
                 "raycastTarget": 1
             },
             "UISlider": {
-                "luid": 0,
+                "luid": 8317138940237185028,
                 "value": 0.0,
                 "minValue": 0.0,
                 "maxValue": 1.0,
@@ -92583,7 +92593,7 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 0,
+                "luid": 8392574233995640837,
                 "text": "Settings",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
                 "fontSize": 53.0,
@@ -92649,7 +92659,7 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 0,
+                "luid": 8392574233995640838,
                 "text": "Master Volume",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
                 "fontSize": 40.0,
@@ -92715,7 +92725,7 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 0,
+                "luid": 8392574233995640839,
                 "text": "Music",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
                 "fontSize": 40.0,
@@ -92781,7 +92791,7 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 0,
+                "luid": 8392574233995640840,
                 "text": "Ambience",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
                 "fontSize": 40.0,
@@ -92847,7 +92857,7 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 0,
+                "luid": 8392574233995640841,
                 "text": "Gamma",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
                 "fontSize": 40.0,
@@ -92913,7 +92923,7 @@
                 "maskPaddingBottom": 0.0
             },
             "UIText": {
-                "luid": 0,
+                "luid": 8392574233995640842,
                 "text": "SFX",
                 "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
                 "fontSize": 40.0,
