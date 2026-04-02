@@ -57,6 +57,10 @@
  *  - Left-click skips the timer, stops current page audio, advances early.
  *  - On the last page advancing: page audio stopped, BGM stopped, UI hidden,
  *    "CutsceneDone_<eventName>" fired.
+ *
+ *  Optional:
+ *  - If `switchToSceneOnEnd` is enabled, the controller will call SwitchScene()
+ *    after the cutscene finishes (useful for ending cutscene -> credits).
  */
 class Cutscene_Controller : public IScript {
 public:
@@ -67,6 +71,8 @@ public:
         SCRIPT_FIELD(autoStartOnPlay, Bool);
         SCRIPT_FIELD(autoAdvance, Bool);
         SCRIPT_FIELD(autoAdvanceDelay, Float);
+        SCRIPT_FIELD(switchToSceneOnEnd, Bool);
+        SCRIPT_FIELD(endScenePath, String);
         SCRIPT_FIELD(fadeInSeconds, Float);
         SCRIPT_FIELD(fadeOutSeconds, Float);
         SCRIPT_FIELD(blackFadeOutSeconds, Float);
@@ -217,6 +223,8 @@ private:
     bool                       autoStartOnPlay = false;
     bool                       autoAdvance = false;
     float                      autoAdvanceDelay = 2.0f;
+    bool                       switchToSceneOnEnd = false;
+    std::string                endScenePath = ""; // e.g. Credits scene UUID
     float                      fadeInSeconds = 0.18f;
     float                      fadeOutSeconds = 0.18f;
     float                      blackFadeOutSeconds = 0.5f;
@@ -507,5 +515,9 @@ private:
 
         LOG_INFO("Cutscene_Controller [" << eventName << "]: Finished. "
             "Fired event: " << doneEvent);
+
+        if (switchToSceneOnEnd && !endScenePath.empty()) {
+            NE::Scripting::SwitchScene(endScenePath);
+        }
     }
 };
