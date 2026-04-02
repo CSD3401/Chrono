@@ -38,7 +38,6 @@ public:
         if (norm < 0.0f) norm = 0.0f;
         if (norm > 1.0f) norm = 1.0f;
         SetBGMVolume(norm);
-        SavedSettings::bgmVolume = norm;
     }
 
     void OnDestroy() override {}

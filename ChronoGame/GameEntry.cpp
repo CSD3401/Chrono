@@ -83,6 +83,8 @@
 #include "Scripts/Tasks/TaskCheckpoint.hpp"
 #include "Scripts/UI_HoverTextColor.hpp"
 #include "Scripts/UI_OverlayFadeIn.hpp"
+#include "Scripts/UI_ApplySavedSettings.hpp"
+#include "Scripts/UI_RestorePauseSettings.hpp"
 #include "Scripts/UI_Settings.hpp"
 #include "Scripts/Misc_PauseMenuHotkey.hpp"
 #include "Scripts/UIButton_PauseResume.hpp"
@@ -271,6 +273,12 @@ extern "C" {
             });
         registrar->RegisterScript("UI_Settings", []() -> NE::Scripting::IScript* {
             return new UI_MainMenu();
+            });
+        registrar->RegisterScript("UI_ApplySavedSettings", []() -> NE::Scripting::IScript* {
+            return new UI_ApplySavedSettings();
+            });
+        registrar->RegisterScript("UI_RestorePauseSettings", []() -> NE::Scripting::IScript* {
+            return new UI_RestorePauseSettings();
             });
         registrar->RegisterScript("UI_BGMVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_BGMVolumeButtons();
