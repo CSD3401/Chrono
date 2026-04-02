@@ -88,6 +88,7 @@
 #include "Scripts/UI_Settings.hpp"
 #include "Scripts/Misc_PauseMenuHotkey.hpp"
 #include "Scripts/TriggerParentSwitcher.hpp"
+#include "Scripts/TriggerMaterialVectorSwitcher.hpp"
 #include "Scripts/UIButton_PauseResume.hpp"
 #include "Scripts/UIButton_CanvasSwitcher.hpp"
 #include "Scripts/UI_SaveSettings.hpp"
@@ -368,6 +369,9 @@ extern "C" {
             });
         registrar->RegisterScript("TriggerParentSwitcher", []() -> NE::Scripting::IScript* {
             return new TriggerParentSwitcher();
+            });
+        registrar->RegisterScript("TriggerMaterialVectorSwitcher", []() -> NE::Scripting::IScript* {
+            return new TriggerMaterialVectorSwitcher();
             });
         registrar->RegisterScript("UI_SaveSettings", []() -> NE::Scripting::IScript* {
             return new UI_SaveSettings();
