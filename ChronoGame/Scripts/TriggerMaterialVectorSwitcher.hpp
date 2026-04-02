@@ -26,6 +26,8 @@ public:
         SCRIPT_FIELD(oneShot, Bool);
         SCRIPT_FIELD(applyToChildren, Bool);
         SCRIPT_FIELD(revertOnExit, Bool);
+        SCRIPT_FIELD(deferApplyByOneFrame, Bool);
+        SCRIPT_FIELD(deferRevertByOneFrame, Bool);
         SCRIPT_COMPONENT_REF(newMaterial, MaterialRef);
         RegisterGameObjectRefVectorField("targetEntities", &targetEntities);
     }
@@ -92,7 +94,11 @@ public:
         // If playerRef is assigned, only react when that exact entity enters.
         if (playerRef.IsValid() && other != playerRef.GetEntity()) return;
 
-        ApplyNewMaterial();
+        if (deferApplyByOneFrame) {
+            ScheduleApplyNewMaterial();
+        } else {
+            ApplyNewMaterial();
+        }
         m_switched = true;
     }
 
@@ -102,8 +108,11 @@ public:
 
         // If playerRef is assigned, only revert when the player exits.
         if (playerRef.IsValid() && other != playerRef.GetEntity()) return;
-
-        RevertOriginalMaterials();
+        if (deferRevertByOneFrame) {
+            ScheduleRevertOriginalMaterials();
+        } else {
+            RevertOriginalMaterials();
+        }
         m_switched = false;
     }
 
@@ -118,6 +127,8 @@ private:
     bool oneShot = true;
     bool applyToChildren = true;
     bool revertOnExit = false;
+    bool deferApplyByOneFrame = true;
+    bool deferRevertByOneFrame = true;
 
     bool m_switched = false;
 
@@ -183,6 +194,28 @@ private:
             if (!original.IsValid()) continue;
             SetMaterialRef(GetRendererRef(e), original);
         }
+    }
+
+    void ScheduleApplyNewMaterial() {
+        // Defer by a frame so we apply after any `ChronoActivated` driven material overrides
+        // (e.g. `Misc_MaterialSwitcher`) that may fire in the same update step.
+        Coroutines::Handle h = Coroutines::Create();
+        Coroutines::AddWait(h, 0.0f);
+        Coroutines::AddAction(h, [this]() {
+            if (!IsActiveInHierarchy()) return;
+            ApplyNewMaterial();
+        });
+        Coroutines::Start(h);
+    }
+
+    void ScheduleRevertOriginalMaterials() {
+        Coroutines::Handle h = Coroutines::Create();
+        Coroutines::AddWait(h, 0.0f);
+        Coroutines::AddAction(h, [this]() {
+            if (!IsActiveInHierarchy()) return;
+            RevertOriginalMaterials();
+        });
+        Coroutines::Start(h);
     }
 };
 
