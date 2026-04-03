@@ -35,7 +35,6 @@ public:
         , useCharacterControllerMove(true)
         , isLifting(false)
         , targetY(0.0f)
-        , cachedPlayerController(nullptr)
         , cachedPlayerControllerWasEnabled(true)
     {
         SCRIPT_GAMEOBJECT_REF(player);
@@ -198,7 +197,15 @@ public:
         ResolvePlayerRef();
     }
 
-    void OnDisable() override {}
+    void OnDisable() override
+    {
+        if (!isLifting)
+            return;
+        isLifting = false;
+        if (!climbAudioName.empty())
+            StopAudio("event:/" + climbAudioName);
+        RestorePlayerController();
+    }
     void OnValidate() override {}
     const char* GetTypeName() const override { return "Interactable_TeleportToTop"; }
 
@@ -220,36 +227,38 @@ private:
     // === Runtime State ===
     bool isLifting;
     float targetY;
-    Player_Controller* cachedPlayerController;
     bool cachedPlayerControllerWasEnabled;
 
     void CacheAndDisablePlayerController()
     {
-        cachedPlayerController = nullptr;
         cachedPlayerControllerWasEnabled = true;
 
         GameObject playerGO(player.GetEntity());
         if (!playerGO.IsValid())
             return;
 
-        cachedPlayerController = playerGO.GetComponent<Player_Controller>();
-        if (!cachedPlayerController)
+        Player_Controller* pc = playerGO.GetComponent<Player_Controller>();
+        if (!pc)
             return;
 
-        cachedPlayerControllerWasEnabled = cachedPlayerController->IsEnabled();
-        cachedPlayerController->ResetMovementOnly();
-        cachedPlayerController->SetEnabled(false);
+        cachedPlayerControllerWasEnabled = pc->IsEnabled();
+        pc->ResetMovementOnly();
+        pc->SetEnabled(false);
     }
 
     void RestorePlayerController()
     {
-        if (cachedPlayerController)
+        if (!player.IsValid())
+            return;
+        GameObject playerGO(player.GetEntity());
+        if (!playerGO.IsValid())
+            return;
+        Player_Controller* pc = playerGO.GetComponent<Player_Controller>();
+        if (pc)
         {
-            cachedPlayerController->ResetMovementOnly();
-            cachedPlayerController->SetEnabled(cachedPlayerControllerWasEnabled);
+            pc->ResetMovementOnly();
+            pc->SetEnabled(cachedPlayerControllerWasEnabled);
         }
-
-        cachedPlayerController = nullptr;
     }
 
     // === Helpers ===

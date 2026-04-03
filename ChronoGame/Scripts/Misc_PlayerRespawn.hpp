@@ -94,19 +94,20 @@ public:
         }
     }
 
-    void OnDestroy() override {
-        if (phase != Phase::IDLE) {
-            RestorePlayerController();
-            if (overlayCanvas.IsValid()) {
-                NE::ECS::Command::SetUICanvasAlpha(overlayCanvas.GetEntity(), 0.0f);
-                SetActive(false, overlayCanvas.GetEntity());
-            }
-            phase = Phase::IDLE;
-        }
-    }
+    void OnDestroy() override {}
 
     void OnEnable() override {}
-    void OnDisable() override {}
+    void OnDisable() override {
+        if (phase == Phase::IDLE)
+            return;
+        RestorePlayerController();
+        if (overlayCanvas.IsValid()) {
+            NE::ECS::Command::SetUICanvasAlpha(overlayCanvas.GetEntity(), 0.0f);
+            SetActive(false, overlayCanvas.GetEntity());
+        }
+        m_playerFreedForFadeIn = false;
+        phase = Phase::IDLE;
+    }
     void OnValidate() override { ValidateReferences(); }
 
     const char* GetTypeName() const override {
@@ -136,7 +137,6 @@ private:
     Phase phase = Phase::IDLE;
     float fadeTimer = 0.0f;
 
-    Player_Controller* cachedPlayerController = nullptr;
     bool cachedPlayerControllerWasEnabled = true;
     bool m_playerFreedForFadeIn = false;
 
@@ -246,27 +246,31 @@ private:
     }
 
     void CacheAndDisablePlayerController() {
-        cachedPlayerController = nullptr;
         cachedPlayerControllerWasEnabled = true;
 
         GameObject playerGO(playerRef.GetEntity());
         if (!playerGO.IsValid())
             return;
 
-        cachedPlayerController = playerGO.GetComponent<Player_Controller>();
-        if (!cachedPlayerController)
+        Player_Controller* pc = playerGO.GetComponent<Player_Controller>();
+        if (!pc)
             return;
 
-        cachedPlayerControllerWasEnabled = cachedPlayerController->IsEnabled();
-        cachedPlayerController->ResetMovementOnly();
-        cachedPlayerController->SetEnabled(false);
+        cachedPlayerControllerWasEnabled = pc->IsEnabled();
+        pc->ResetMovementOnly();
+        pc->SetEnabled(false);
     }
 
     void RestorePlayerController() {
-        if (cachedPlayerController) {
-            cachedPlayerController->ResetMovementOnly();
-            cachedPlayerController->SetEnabled(cachedPlayerControllerWasEnabled);
+        if (!playerRef.IsValid())
+            return;
+        GameObject playerGO(playerRef.GetEntity());
+        if (!playerGO.IsValid())
+            return;
+        Player_Controller* pc = playerGO.GetComponent<Player_Controller>();
+        if (pc) {
+            pc->ResetMovementOnly();
+            pc->SetEnabled(cachedPlayerControllerWasEnabled);
         }
-        cachedPlayerController = nullptr;
     }
 };

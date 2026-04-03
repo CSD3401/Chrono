@@ -44,14 +44,25 @@ public:
     }
 
     void OnDestroy() override {
-        // Fail-safe: don't leave player controls disabled if script is destroyed while paused.
-        if (m_cachedPlayerController) {
-            m_cachedPlayerController->SetEnabled(m_playerControllerWasEnabledBeforePause);
-            m_cachedPlayerController = nullptr;
-        }
+        // Do not touch Player_Controller here — it may already be destroyed. Cursor/lock only.
+        Input::SetMouseLocked(true);
+        NE::Scripting::SetMouseVisible(false);
     }
-    void OnEnable() override {}
-    void OnDisable() override {}
+    void OnEnable() override {
+        CachePlayerController();
+    }
+    void OnDisable() override {
+        if (m_isPaused) {
+            if (pauseMenuRoot.IsValid())
+                SetActive(false, pauseMenuRoot.GetEntity());
+            if (m_cachedPlayerController)
+                m_cachedPlayerController->SetEnabled(m_playerControllerWasEnabledBeforePause);
+            Input::SetMouseLocked(true);
+            NE::Scripting::SetMouseVisible(false);
+            m_isPaused = false;
+        }
+        m_cachedPlayerController = nullptr;
+    }
     void OnValidate() override {}
 
     const char* GetTypeName() const override { return "Misc_PauseMenuHotkey"; }
