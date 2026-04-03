@@ -41,22 +41,28 @@ private:
     GameObjectRef gammaSlider;
 
     void Apply() {
-        if (!SavedSettings::hasBeenSaved) return;
+        if (SavedSettings::hasBeenSaved) {
+            if (masterSlider.IsValid())
+                UI::SetSliderNormalizedValue(masterSlider.GetEntity(), SavedSettings::masterVolume);
+            if (bgmSlider.IsValid())
+                UI::SetSliderNormalizedValue(bgmSlider.GetEntity(), SavedSettings::bgmVolume);
+            if (sfxSlider.IsValid())
+                UI::SetSliderNormalizedValue(sfxSlider.GetEntity(), SavedSettings::sfxVolume);
+            if (ambienceSlider.IsValid())
+                UI::SetSliderNormalizedValue(ambienceSlider.GetEntity(), SavedSettings::ambienceVolume);
 
-        if (masterSlider.IsValid())
-            UI::SetSliderNormalizedValue(masterSlider.GetEntity(), SavedSettings::masterVolume);
-        if (bgmSlider.IsValid())
-            UI::SetSliderNormalizedValue(bgmSlider.GetEntity(), SavedSettings::bgmVolume);
-        if (sfxSlider.IsValid())
-            UI::SetSliderNormalizedValue(sfxSlider.GetEntity(), SavedSettings::sfxVolume);
-        if (ambienceSlider.IsValid())
-            UI::SetSliderNormalizedValue(ambienceSlider.GetEntity(), SavedSettings::ambienceVolume);
+            SetMasterVolume(SavedSettings::masterVolume);
+            SetBGMVolume(SavedSettings::bgmVolume);
+            SetSFXVolume(SavedSettings::sfxVolume);
+            SetAmbienceVolume(SavedSettings::ambienceVolume);
+        }
+
+        if (!SavedSettings::ShouldApplySessionGamma())
+            return;
+
         if (gammaSlider.IsValid())
             UI::SetSliderNormalizedValue(gammaSlider.GetEntity(), SavedSettings::gammaNormalized);
-
-        SetMasterVolume(SavedSettings::masterVolume);
-        SetBGMVolume(SavedSettings::bgmVolume);
-        SetSFXVolume(SavedSettings::sfxVolume);
-        SetAmbienceVolume(SavedSettings::ambienceVolume);
+        NE::Scripting::SetGamma(
+            SavedSettings::SliderNormToDisplayGamma(SavedSettings::gammaNormalized));
     }
 };
