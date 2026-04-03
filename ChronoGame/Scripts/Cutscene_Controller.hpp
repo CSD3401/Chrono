@@ -51,12 +51,20 @@
  *
  * ── Behaviour ────────────────────────────────────────────────────────────────
  *  - Fire eventName to start.
- *  - BGM starts immediately and runs until EndCutscene().
+ *  - BGM starts when the cutscene content starts (after optional black fade-in)
+ *    and runs until EndCutscene().
  *  - Each page: image shown → caption set → page audio played → timer starts.
  *  - Timer uses pageDelays[index] if available, else autoAdvanceDelay.
  *  - Left-click skips the timer, stops current page audio, advances early.
  *  - On the last page advancing: page audio stopped, BGM stopped, UI hidden,
  *    "CutsceneDone_<eventName>" fired.
+ *
+ *  Optional:
+ *  - If `switchToSceneOnEnd` is enabled, the controller will call SwitchScene()
+ *    after the cutscene finishes (useful for ending cutscene -> credits).
+ *
+ *  - If `fadeBlackInOnStart` is enabled and `blackFadeInSeconds` > 0, the black
+ *    overlay fades from transparent to opaque before BGM and the first page start.
  */
 class Cutscene_Controller : public IScript {
 public:
@@ -67,6 +75,10 @@ public:
         SCRIPT_FIELD(autoStartOnPlay, Bool);
         SCRIPT_FIELD(autoAdvance, Bool);
         SCRIPT_FIELD(autoAdvanceDelay, Float);
+        SCRIPT_FIELD(switchToSceneOnEnd, Bool);
+        SCRIPT_FIELD(endScenePath, String);
+        SCRIPT_FIELD(fadeBlackInOnStart, Bool);
+        SCRIPT_FIELD(blackFadeInSeconds, Float);
         SCRIPT_FIELD(fadeInSeconds, Float);
         SCRIPT_FIELD(fadeOutSeconds, Float);
         SCRIPT_FIELD(blackFadeOutSeconds, Float);
@@ -91,6 +103,8 @@ public:
         isPlaying = false;
         blackFadeOutActive = false;
         blackFadeOutTimer = 0.0f;
+        blackFadeInActive = false;
+        blackFadeInTimer = 0.0f;
         m_pendingStart = false;
     }
     void OnEnable()         override {}
@@ -159,8 +173,12 @@ public:
         pageTimer = 0.0f;
         currentPageAudio = "";
 
-        // Keep black background on from Play start.
-        ShowBlackBackground(true);
+        // Initial overlay: full black (legacy) or transparent if we fade in when cutscene starts.
+        if (fadeBlackInOnStart && blackBackgroundRef.IsValid() && blackFadeInSeconds > 0.0f) {
+            ShowBlackBackgroundVisibleWithAlpha(0.0f);
+        } else {
+            ShowBlackBackground(true);
+        }
 
         LOG_DEBUG("Cutscene_Controller [" << eventName << "]: Ready with "
             << pageImages.size() << " page(s).");
@@ -176,9 +194,23 @@ public:
 
         const float dt = static_cast<float>(deltaTime);
 
-        if (m_pendingStart && !isPlaying) {
+        if (m_pendingStart && !isPlaying && !blackFadeInActive) {
             m_pendingStart = false;
             TriggerCutscene();
+        }
+
+        if (blackFadeInActive) {
+            blackFadeInTimer += dt;
+            const float dur = blackFadeInSeconds > 0.0f ? blackFadeInSeconds : 0.0f;
+            const float t = (dur <= 0.0f)
+                ? 1.0f
+                : std::min(1.0f, blackFadeInTimer / dur);
+            SetBlackBackgroundAlpha(t);
+            if (t >= 1.0f - 1e-4f) {
+                blackFadeInActive = false;
+                blackFadeInTimer = 0.0f;
+                StartCutsceneContent();
+            }
         }
 
         if (blackFadeOutActive) {
@@ -217,6 +249,10 @@ private:
     bool                       autoStartOnPlay = false;
     bool                       autoAdvance = false;
     float                      autoAdvanceDelay = 2.0f;
+    bool                       switchToSceneOnEnd = false;
+    std::string                endScenePath = ""; // e.g. Credits scene UUID
+    bool                       fadeBlackInOnStart = false;
+    float                      blackFadeInSeconds = 0.5f;
     float                      fadeInSeconds = 0.18f;
     float                      fadeOutSeconds = 0.18f;
     float                      blackFadeOutSeconds = 0.5f;
@@ -240,6 +276,8 @@ private:
     float phaseTimer = 0.0f;
     bool  blackFadeOutActive = false;
     float blackFadeOutTimer = 0.0f;
+    bool  blackFadeInActive = false;
+    float blackFadeInTimer = 0.0f;
 
 
     // ── Helpers ───────────────────────────────────────────────────────────
@@ -274,6 +312,21 @@ private:
         }
 
         LOG_INFO("Cutscene_Controller [" << eventName << "]: Starting.");
+
+        if (fadeBlackInOnStart && blackFadeInSeconds > 0.0f && blackBackgroundRef.IsValid()) {
+            blackFadeOutActive = false;
+            blackFadeOutTimer = 0.0f;
+            ShowBlackBackgroundVisibleWithAlpha(0.0f);
+            blackFadeInActive = true;
+            blackFadeInTimer = 0.0f;
+            return;
+        }
+
+        StartCutsceneContent();
+    }
+
+    /** BGM + first page; runs after optional black overlay fade-in. */
+    void StartCutsceneContent() {
         isPlaying = true;
         currentPageIndex = 0;
         ignoreNextClick = true;
@@ -367,6 +420,20 @@ private:
             LOG_WARNING("Cutscene_Controller [" << eventName
                 << "]: blackBackgroundRef has no UICanvas/UIImage.");
         }
+    }
+
+    /** Show overlay active at a specific alpha (for fade-in from transparent). */
+    void ShowBlackBackgroundVisibleWithAlpha(float a) {
+        if (!blackBackgroundRef.IsValid())
+            return;
+        const Entity e = blackBackgroundRef.GetEntity();
+        SetActive(true, e);
+        if (!NE::ECS::Query::HasUICanvas(e) && !NE::ECS::Query::HasUIImage(e)) {
+            LOG_WARNING("Cutscene_Controller [" << eventName
+                << "]: blackBackgroundRef has no UICanvas/UIImage.");
+            return;
+        }
+        SetBlackBackgroundAlpha(a);
     }
 
     void SetBlackBackgroundAlpha(float a) {
@@ -507,5 +574,9 @@ private:
 
         LOG_INFO("Cutscene_Controller [" << eventName << "]: Finished. "
             "Fired event: " << doneEvent);
+
+        if (switchToSceneOnEnd && !endScenePath.empty()) {
+            NE::Scripting::SwitchScene(endScenePath);
+        }
     }
 };
