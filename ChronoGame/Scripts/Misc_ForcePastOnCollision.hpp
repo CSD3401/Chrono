@@ -125,12 +125,21 @@ private:
     // ── Win condition ────────────────────────────────────────────
     void CheckAllSolved() {
         if (m_cutsceneFired) return;
-        //if (m_mirrorSolved && m_wireSolved && m_sequencerSolved /*&& m_bomb1Solved && m_bomb2Solved && m_bomb3Solved && m_bomb4Solved && m_bomb5Solved*/) {
-            if (m_mirrorSolved /*&& m_bomb1Solved && m_bomb2Solved && m_bomb3Solved && m_bomb4Solved && m_bomb5Solved*/) {
+        if (m_mirrorSolved && m_wireSolved && m_sequencerSolved) {
             m_cutsceneFired = true;
-            LOG_ERROR("Misc_ForcePastOnCollision: All puzzles solved - sending playFinalCutscene");
-            Events::Send("playFinalCutscene");
+            LOG_INFO("Misc_ForcePastOnCollision: All puzzles solved - sending playFinalCutscene");
+            DeferEvent("playFinalCutscene");
         }
+    }
+
+    void DeferEvent(const char* eventName) {
+        std::string name(eventName);
+        Coroutines::Handle h = Coroutines::Create();
+        Coroutines::AddWait(h, 0.0f);
+        Coroutines::AddAction(h, [name]() {
+            Events::Send(name.c_str());
+            });
+        Coroutines::Start(h);
     }
 
     // ── Objective text ────────────────────────────────────────────
