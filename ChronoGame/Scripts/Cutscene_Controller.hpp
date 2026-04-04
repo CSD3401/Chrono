@@ -160,8 +160,13 @@ public:
             autoAdvanceDelay = 2.0f;
 
         // ── Register event listener ───────────────────────────────────────
+        LOG_ERROR("listening to " << eventName.c_str());
+
+
         Events::Listen(eventName.c_str(), [this](void*) {
             m_pendingStart = true;
+            LOG_ERROR(eventName.c_str() << " has been heard!!!");
+
         });
 
         HideAllPages();

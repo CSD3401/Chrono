@@ -305,9 +305,9 @@ extern "C" {
         registrar->RegisterScript("Misc_SolvedMaterialOverride", []() -> NE::Scripting::IScript* {
             return new Misc_SolvedMaterialOverride();
             });
-        registrar->RegisterScript("Puzzle_FinalBomb", []() -> NE::Scripting::IScript* {
-            return new Puzzle_FinalBomb();
-            });
+        //registrar->RegisterScript("Puzzle_FinalBomb", []() -> NE::Scripting::IScript* {
+        //    return new Puzzle_FinalBomb();
+        //    });
         registrar->RegisterScript("Puzzle_Bomb", []() -> NE::Scripting::IScript* {
             return new Puzzle_Bomb();
             });

@@ -87,38 +87,50 @@ private:
     bool refillClockToFull = true;
     bool hasTriggered = false;
 
-    // Puzzle state
+    // Puzzle state — all 8 must be true to fire playFinalCutscene
     bool m_mirrorSolved = false;
     bool m_wireSolved = false;
     bool m_sequencerSolved = false;
-    int  m_bombsDefused = 0;
-    static constexpr int TOTAL_BOMBS = 5;
+    bool m_bomb1Solved = false;
+    bool m_bomb2Solved = false;
+    bool m_bomb3Solved = false;
+    bool m_bomb4Solved = false;
+    bool m_bomb5Solved = false;
+    bool m_cutsceneFired = false;
 
     // ── Event binding ─────────────────────────────────────────────
     void BindPuzzleEvents() {
         Events::Listen("FINALmirrorsolved", [this](void*) {
             m_mirrorSolved = true;
             UpdateObjectiveText();
+            CheckAllSolved();
             });
         Events::Listen("FINALwiresolved", [this](void*) {
             m_wireSolved = true;
             UpdateObjectiveText();
+            CheckAllSolved();
             });
         Events::Listen("FINALsequencersolved", [this](void*) {
             m_sequencerSolved = true;
             UpdateObjectiveText();
+            CheckAllSolved();
             });
-        Events::Listen("bomb1solved", [this](void*) { OnBombSolved(); });
-        Events::Listen("bomb2solved", [this](void*) { OnBombSolved(); });
-        Events::Listen("bomb3solved", [this](void*) { OnBombSolved(); });
-        Events::Listen("bomb4solved", [this](void*) { OnBombSolved(); });
-        Events::Listen("bomb5solved", [this](void*) { OnBombSolved(); });
+        //Events::Listen("bomb1solved", [this](void*) { m_bomb1Solved = true; UpdateObjectiveText(); CheckAllSolved(); });
+        //Events::Listen("bomb2solved", [this](void*) { m_bomb2Solved = true; UpdateObjectiveText(); CheckAllSolved(); });
+        //Events::Listen("bomb3solved", [this](void*) { m_bomb3Solved = true; UpdateObjectiveText(); CheckAllSolved(); });
+        //Events::Listen("bomb4solved", [this](void*) { m_bomb4Solved = true; UpdateObjectiveText(); CheckAllSolved(); });
+        //Events::Listen("bomb5solved", [this](void*) { m_bomb5Solved = true; UpdateObjectiveText(); CheckAllSolved(); });
     }
 
-    void OnBombSolved() {
-        if (m_bombsDefused < TOTAL_BOMBS)
-            ++m_bombsDefused;
-        UpdateObjectiveText();
+    // ── Win condition ────────────────────────────────────────────
+    void CheckAllSolved() {
+        if (m_cutsceneFired) return;
+        //if (m_mirrorSolved && m_wireSolved && m_sequencerSolved /*&& m_bomb1Solved && m_bomb2Solved && m_bomb3Solved && m_bomb4Solved && m_bomb5Solved*/) {
+            if (m_mirrorSolved /*&& m_bomb1Solved && m_bomb2Solved && m_bomb3Solved && m_bomb4Solved && m_bomb5Solved*/) {
+            m_cutsceneFired = true;
+            LOG_ERROR("Misc_ForcePastOnCollision: All puzzles solved - sending playFinalCutscene");
+            Events::Send("playFinalCutscene");
+        }
     }
 
     // ── Objective text ────────────────────────────────────────────
@@ -130,7 +142,8 @@ private:
         std::string mirror = std::string("Mirror Puzzle    ") + (m_mirrorSolved ? "(Solved)" : "(Unsolved)");
         std::string wire = std::string("Wire Puzzle      ") + (m_wireSolved ? "(Solved)" : "(Unsolved)");
         std::string sequencer = std::string("Sequencer Puzzle ") + (m_sequencerSolved ? "(Solved)" : "(Unsolved)");
-        std::string bombs = std::string("Bomb Defused     ") + std::to_string(m_bombsDefused) + "/" + std::to_string(TOTAL_BOMBS);
+        int bombCount = (int)m_bomb1Solved + (int)m_bomb2Solved + (int)m_bomb3Solved + (int)m_bomb4Solved + (int)m_bomb5Solved;
+        std::string bombs = std::string("Bomb Defused     ") + std::to_string(bombCount) + "/5";
 
         std::string display = mirror + "\n" + wire + "\n" + sequencer + "\n" + bombs;
 
