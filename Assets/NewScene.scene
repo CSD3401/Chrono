@@ -148,9 +148,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 120.19100189208984,
+                    "x": 43.66611099243164,
                     "y": 2.2642295360565186,
-                    "z": -34.14778518676758
+                    "z": -22.947858810424805
                 },
                 "Scale": {
                     "x": 0.800000011920929,
@@ -33714,10 +33714,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "rightLaser7",
                     "leftLaser8",
-                    "leftLaser7",
+                    "rightLaser7",
                     "rightLaser8",
+                    "leftLaser7",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -33790,10 +33790,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "rightLaser8",
                     "leftLaser7",
-                    "rightLaser7",
+                    "rightLaser8",
                     "leftLaser8",
+                    "rightLaser7",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -63635,11 +63635,22 @@
             },
             "Renderer": {
                 "modelUUID": "d754e57b-c156-4e89-9f9d-19bf7e8d99ef",
-                "materialUUID": "6098d1ac-0280-431a-b19b-c7278710f3f3",
+                "materialUUID": "301cb55f-a951-48a1-90cd-7b943a0a8718",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 2,
                 "luid": 8242829545727721481
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "fcb12331-81b6-4204-b14a-a178ca06c8a7",
+                    "Misc_MaterialSwitcher.presentMaterial": "301cb55f-a951-48a1-90cd-7b943a0a8718"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821308618113024
             }
         },
         {
@@ -63657,7 +63668,7 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 19.463729858398438,
+                    "x": 19.473730087280273,
                     "y": -0.7393301129341125,
                     "z": -3.1926918029785156
                 },
@@ -63842,9 +63853,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 32.96945571899414,
-                    "y": -25.82366943359375,
-                    "z": -36.434906005859375
+                    "x": 32.279457092285156,
+                    "y": -26.243669509887695,
+                    "z": -36.444908142089844
                 },
                 "Scale": {
                     "x": 1.000000238418579,
@@ -63854,7 +63865,7 @@
                 "Rotation": {
                     "x": 0.0,
                     "y": -90.0,
-                    "z": -55.0
+                    "z": -56.88999938964844
                 },
                 "luid": 8390885383477526558
             }
@@ -64674,9 +64685,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 30.66046905517578,
-                    "y": 1.4118614196777344,
-                    "z": 27.879154205322266
+                    "x": 30.660491943359375,
+                    "y": 1.3935956954956055,
+                    "z": 27.891324996948242
                 },
                 "Scale": {
                     "x": 1.0,
@@ -66161,11 +66172,22 @@
             },
             "Renderer": {
                 "modelUUID": "18d3624c-7e99-4e1c-a47d-bd4cef151897",
-                "materialUUID": "86e9f4e7-b33f-495a-9b63-e6ed2ad9b59e",
+                "materialUUID": "3b745018-608c-4cc0-9782-acf40240bbb3",
                 "shadowCastMode": 1,
                 "receiveShadows": 1,
                 "subMeshIndex": 0,
                 "luid": 8242829551634546697
+            },
+            "NativeScript": {
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "ac0e3ead-cc3a-4a30-8d98-735017e109dd",
+                    "Misc_MaterialSwitcher.presentMaterial": "3b745018-608c-4cc0-9782-acf40240bbb3"
+                },
+                "EntityReferenceFields": [],
+                "luid": 7958821308639936513
             }
         },
         {
@@ -75023,9 +75045,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireBlinking.wireIndex": "2",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
+                    "Misc_WireBlinking.wirePuzzleIndex": "0",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wireIndex": "2"
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "0",
+                    "Misc_WireBlinking.originalRef": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480472
@@ -75231,10 +75258,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.wireIndex": "1",
-                    "Misc_WireBlinking.originalRef": "422f303b-a2fd-44d6-acbf-d930ef363e94"
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
+                    "Misc_WireBlinking.wirePuzzleIndex": "2",
+                    "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "0",
+                    "Misc_WireBlinking.originalRef": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480490
@@ -75440,10 +75471,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireBlinking.wireIndex": "2",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wireIndex": "2"
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "0",
+                    "Misc_WireBlinking.originalRef": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480508
@@ -75649,10 +75684,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireBlinking.wireIndex": "3",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wireIndex": "3"
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "0",
+                    "Misc_WireBlinking.originalRef": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480526
@@ -75858,10 +75897,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
+                    "Misc_WireBlinking.wireIndex": "4",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wireIndex": "4"
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "0",
+                    "Misc_WireBlinking.originalRef": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480544
@@ -76067,10 +76110,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireBlinking.wireIndex": "5",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wireIndex": "5"
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "0",
+                    "Misc_WireBlinking.originalRef": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480562
@@ -76276,10 +76323,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
+                    "Misc_WireBlinking.wireIndex": "6",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wireIndex": "6"
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "0",
+                    "Misc_WireBlinking.originalRef": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480580
@@ -76709,10 +76760,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.correctSide": "1",
-                    "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
+                    "Misc_WireBlinking.wireIndex": "0",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
-                    "Misc_WireBlinking.originalRef": "dcf848f9-9c9d-4126-8d15-8246b9454b3c"
+                    "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "1",
+                    "Misc_WireBlinking.originalRef": "dcf848f9-9c9d-4126-8d15-8246b9454b3c",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480617
@@ -76918,11 +76973,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.correctSide": "1",
-                    "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.wireIndex": "1",
-                    "Misc_WireBlinking.originalRef": "13a8b2c4-1e99-4528-818d-737ae53f5348"
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
+                    "Misc_WireBlinking.wirePuzzleIndex": "2",
+                    "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "1",
+                    "Misc_WireBlinking.originalRef": "13a8b2c4-1e99-4528-818d-737ae53f5348",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480635
@@ -77129,10 +77187,13 @@
                 ],
                 "SerializedFields": {
                     "Misc_WireBlinking.wireIndex": "2",
-                    "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
+                    "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
+                    "Misc_WireBlinking.buttonSolved": "0",
                     "Misc_WireBlinking.correctSide": "1",
-                    "Misc_WireBlinking.originalRef": "422f303b-a2fd-44d6-acbf-d930ef363e94"
+                    "Misc_WireBlinking.originalRef": "422f303b-a2fd-44d6-acbf-d930ef363e94",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480653
@@ -77338,11 +77399,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireBlinking.wireIndex": "3",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
-                    "Misc_WireBlinking.wireIndex": "3",
-                    "Misc_WireBlinking.correctSide": "1"
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "1",
+                    "Misc_WireBlinking.originalRef": "339b1b1c-7b74-4181-b648-29bd1ab7184d",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480671
@@ -77548,11 +77612,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireBlinking.wireIndex": "4",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
+                    "Misc_WireBlinking.buttonSolved": "0",
                     "Misc_WireBlinking.correctSide": "1",
-                    "Misc_WireBlinking.wireIndex": "4"
+                    "Misc_WireBlinking.originalRef": "19de8522-2788-42d6-8949-f3314f4d58a6",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480689
@@ -77758,10 +77825,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.correctSide": "1",
-                    "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.wireIndex": "5",
-                    "Misc_WireBlinking.originalRef": "9f67fff8-01c1-46ee-bad7-20fb840511bf"
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
+                    "Misc_WireBlinking.wirePuzzleIndex": "2",
+                    "Misc_WireBlinking.highlightRef": "",
+                    "Misc_WireBlinking.buttonSolved": "0",
+                    "Misc_WireBlinking.correctSide": "1",
+                    "Misc_WireBlinking.originalRef": "9f67fff8-01c1-46ee-bad7-20fb840511bf",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480707
@@ -77967,11 +78038,14 @@
                     "Misc_WireBlinking"
                 ],
                 "SerializedFields": {
-                    "Misc_WireBlinking.originalRef": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
+                    "Misc_WireBlinking.wireIndex": "6",
+                    "Misc_WireBlinking.blinkInterval": "0.500000",
                     "Misc_WireBlinking.wirePuzzleIndex": "2",
                     "Misc_WireBlinking.highlightRef": "a4fccb71-c770-47c1-acfe-e250262c0a55",
+                    "Misc_WireBlinking.buttonSolved": "0",
                     "Misc_WireBlinking.correctSide": "1",
-                    "Misc_WireBlinking.wireIndex": "6"
+                    "Misc_WireBlinking.originalRef": "89d03a1f-8037-4a7e-b840-6dba85f7fd6f",
+                    "Misc_WireBlinking.isBlinking": "0"
                 },
                 "EntityReferenceFields": [],
                 "luid": 7958821251461480725
@@ -91459,8 +91533,8 @@
                 },
                 "EntityReferenceFields": [
                     "titleUIRef",
-                    "task1UIRef",
                     "task3ToggleRef",
+                    "task1UIRef",
                     "task2UIRef",
                     "task1ToggleRef",
                     "task3UIRef",
@@ -94326,10 +94400,15 @@
                 "localID": 15
             },
             "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
+                "ScriptNames": [
+                    "UI_GammaSlider"
+                ],
+                "SerializedFields": {
+                    "UI_GammaSlider.gammaSlider": "7308614098097078312"
+                },
                 "EntityReferenceFields": [
-                    "volumeSlider"
+                    "volumeSlider",
+                    "gammaSlider"
                 ],
                 "luid": 7958821294298693673
             },

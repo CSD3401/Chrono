@@ -60,6 +60,7 @@
 #include "Scripts/Camera_ExplosionShake.hpp"
 #include "Scripts/UI_MainMenu.hpp"
 #include "Scripts/UI_BGMVolumeButtons.hpp"
+#include "Scripts/UI_GammaSlider.hpp"
 #include "Scripts/UI_SFXVolumeButtons.hpp"
 #include "Scripts/UI_AmbienceVolumeButtons.hpp"
 #include "Scripts/Interactable_MirrorTile.hpp"
@@ -284,6 +285,9 @@ extern "C" {
             });
         registrar->RegisterScript("UI_BGMVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_BGMVolumeButtons();
+            });
+        registrar->RegisterScript("UI_GammaSlider", []() -> NE::Scripting::IScript* {
+            return new UI_GammaSlider();
             });
         registrar->RegisterScript("UI_SFXVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_SFXVolumeButtons();

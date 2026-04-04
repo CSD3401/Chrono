@@ -84,6 +84,7 @@ public:
     }
 
     void OnDestroy() override {
+        // Safe without cached Entity/Component pointers (they may be invalid during teardown).
         RestorePlayerInput();
     }
 
@@ -148,13 +149,23 @@ private:
     }
 
     void RestorePlayerInput() {
-        if (cachedPlayerController) {
-            cachedPlayerController->ResetMovementOnly();
-            cachedPlayerController->SetEnabled(cachedPlayerControllerWasEnabled);
+        Player_Controller* pc = nullptr;
+        auto players = GameObject::FindObjectsOfType<Player_Controller>();
+        if (!players.empty())
+            pc = players.begin()->GetComponent<Player_Controller>();
+        if (pc) {
+            pc->ResetMovementOnly();
+            pc->SetEnabled(cachedPlayerControllerWasEnabled);
         }
 
-        if (cachedPlayerRaycast) {
-            cachedPlayerRaycast->SetEnabled(cachedPlayerRaycastWasEnabled);
-        }
+        Player_Raycast* pr = nullptr;
+        auto raycasts = GameObject::FindObjectsOfType<Player_Raycast>();
+        if (!raycasts.empty())
+            pr = raycasts.begin()->GetComponent<Player_Raycast>();
+        if (pr)
+            pr->SetEnabled(cachedPlayerRaycastWasEnabled);
+
+        cachedPlayerController = nullptr;
+        cachedPlayerRaycast = nullptr;
     }
 };
