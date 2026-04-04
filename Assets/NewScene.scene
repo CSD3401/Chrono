@@ -26840,6 +26840,68 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Final Objective Text",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614116386013184
+            },
+            "Hierarchy": {
+                "luid": 7526194273383350273,
+                "parentLuid": 7526193959890845697
+            },
+            "UIRectTransform": {
+                "x": -700.0,
+                "y": 0.0,
+                "z": 0.0,
+                "width": 419.52294921875,
+                "height": 259.1246032714844,
+                "offsetMinX": 0.0,
+                "offsetMinY": 0.0,
+                "offsetMaxX": 0.0,
+                "offsetMaxY": 0.0,
+                "rotationX": 0.0,
+                "rotationY": 0.0,
+                "rotationZ": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0,
+                "anchorMinX": 0.5,
+                "anchorMinY": 0.5,
+                "anchorMaxX": 0.5,
+                "anchorMaxY": 0.5,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "enableMask": 0,
+                "maskPaddingLeft": 0.0,
+                "maskPaddingRight": 0.0,
+                "maskPaddingTop": 0.0,
+                "maskPaddingBottom": 0.0
+            },
+            "UIText": {
+                "luid": 8392574251698749442,
+                "text": "Objective",
+                "fontUUID": "be474625-2c47-4430-b78a-468cee201eaa",
+                "fontSize": 48.0,
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "horizontalAlign": 1,
+                "verticalAlign": 1,
+                "wordWrap": 0,
+                "lineSpacing": 1.0,
+                "richText": 0,
+                "autoScale": 0,
+                "minFontSize": 10.0,
+                "maxFontSize": 100.0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "Notes",
                 "isActive": 1,
                 "isStatic": 0,
@@ -65293,13 +65355,14 @@
                     "TriggerMaterialVectorSwitcher.deferRevertByOneFrame": "1",
                     "Misc_ForcePastOnCollision.watchRef": "7308613743798386688",
                     "Misc_ForcePastOnCollision.playerRef": "7308613656064753675",
+                    "TriggerParentSwitcher.toggleSelectionOnTrigger": "0",
+                    "TriggerMaterialVectorSwitcher.newMaterial": "77d09cd7-6cdd-440a-9492-c821f1b3a06c",
+                    "Misc_ForcePastOnCollision.objectiveTextRef": "7308614116386013184",
                     "TriggerMaterialVectorSwitcher.deferApplyByOneFrame": "1",
                     "TriggerMaterialVectorSwitcher.playerRef": "7308613656064753675",
                     "TriggerMaterialVectorSwitcher.oneShot": "1",
                     "TriggerMaterialVectorSwitcher.applyToChildren": "1",
                     "TriggerMaterialVectorSwitcher.revertOnExit": "0",
-                    "TriggerParentSwitcher.toggleSelectionOnTrigger": "0",
-                    "TriggerMaterialVectorSwitcher.newMaterial": "77d09cd7-6cdd-440a-9492-c821f1b3a06c",
                     "TriggerMaterialVectorSwitcher.targetEntities": "2 7308614092676530303 7308614092676530301",
                     "TriggerParentSwitcher.inactiveParent": "7308614103955144716",
                     "TriggerParentSwitcher.oneShot": "1",
@@ -65310,6 +65373,7 @@
                 "EntityReferenceFields": [
                     "watchRef",
                     "playerRef",
+                    "objectiveTextRef",
                     "inactiveParent",
                     "activeParent"
                 ],
@@ -91545,8 +91609,8 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1865,
-                "handleRect": 1866,
+                "fillRect": 1864,
+                "handleRect": 1865,
                 "backgroundRect": 4294967295,
                 "interactable": 1
             }
@@ -91776,8 +91840,8 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1868,
-                "handleRect": 1869,
+                "fillRect": 1867,
+                "handleRect": 1868,
                 "backgroundRect": 4294967295,
                 "interactable": 1
             }
@@ -92007,8 +92071,8 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1871,
-                "handleRect": 1872,
+                "fillRect": 1870,
+                "handleRect": 1871,
                 "backgroundRect": 4294967295,
                 "interactable": 1
             }
@@ -92240,8 +92304,8 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1874,
-                "handleRect": 1875,
+                "fillRect": 1873,
+                "handleRect": 1874,
                 "backgroundRect": 4294967295,
                 "interactable": 1
             }
@@ -92471,8 +92535,8 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1877,
-                "handleRect": 1878,
+                "fillRect": 1876,
+                "handleRect": 1877,
                 "backgroundRect": 4294967295,
                 "interactable": 1
             }
@@ -92835,7 +92899,7 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1882,
+                "fillRect": 1881,
                 "handleRect": 4294967295,
                 "backgroundRect": 4294967295,
                 "interactable": 1
@@ -92985,7 +93049,7 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1884,
+                "fillRect": 1883,
                 "handleRect": 4294967295,
                 "backgroundRect": 4294967295,
                 "interactable": 1
@@ -93135,7 +93199,7 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1886,
+                "fillRect": 1885,
                 "handleRect": 4294967295,
                 "backgroundRect": 4294967295,
                 "interactable": 1
@@ -93285,7 +93349,7 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1888,
+                "fillRect": 1887,
                 "handleRect": 4294967295,
                 "backgroundRect": 4294967295,
                 "interactable": 1
@@ -93435,7 +93499,7 @@
                 "maxValue": 1.0,
                 "wholeNumbers": 0,
                 "direction": 0,
-                "fillRect": 1890,
+                "fillRect": 1889,
                 "handleRect": 4294967295,
                 "backgroundRect": 4294967295,
                 "interactable": 1
