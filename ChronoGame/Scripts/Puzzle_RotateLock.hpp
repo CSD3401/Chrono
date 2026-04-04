@@ -144,7 +144,7 @@ public:
         if (scrollY > 0.0f || Input::IsKeyDown(VK_RIGHT))
         {
             checkTimer = checkTimerAmount;
-            currRot.z += rotationSpeed * deltaTime;
+            currRot.z += rotationSpeed * (float)deltaTime;
             TF_SetRotation(currRot, outerRingRef.GetEntity());
             currentAngle = currRot.z;
             hasInput = true;
@@ -152,7 +152,7 @@ public:
         else if (scrollY < 0.0f || Input::IsKeyDown(VK_LEFT))
         {
             checkTimer = checkTimerAmount;
-            currRot.z -= rotationSpeed * deltaTime;
+            currRot.z -= rotationSpeed * (float)deltaTime;
             TF_SetRotation(currRot, outerRingRef.GetEntity());
             currentAngle = currRot.z;
             hasInput = true;

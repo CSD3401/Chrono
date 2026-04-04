@@ -93,6 +93,7 @@
 #include "Scripts/UIButton_PauseResume.hpp"
 #include "Scripts/UIButton_CanvasSwitcher.hpp"
 #include "Scripts/UI_SaveSettings.hpp"
+#include "Scripts/FinalAreaManager.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -380,7 +381,9 @@ extern "C" {
         registrar->RegisterScript("UI_SaveSettings", []() -> NE::Scripting::IScript* {
             return new UI_SaveSettings();
             });
-
+        registrar->RegisterScript("FinalAreaManager", []() -> NE::Scripting::IScript* {
+            return new FinalAreaManager();
+            });
         
 
     }

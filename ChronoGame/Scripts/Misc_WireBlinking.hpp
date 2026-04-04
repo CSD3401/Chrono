@@ -29,7 +29,7 @@ public:
     {
         if (isBlinking)
         {
-            blinkTimer += deltaTime;
+            blinkTimer += (float)deltaTime;
             if (blinkTimer > blinkInterval)
             {
                 isHighlighted = !isHighlighted;
