@@ -2076,6 +2076,57 @@
             "Layer": 0,
             "Active": 1,
             "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614123123703809
+            },
+            "Hierarchy": {
+                "luid": 7526194280121040896,
+                "parentLuid": 7526194195769327616
+            },
+            "Transform": {
+                "Position": {
+                    "x": 15.033875465393066,
+                    "y": 2.0767369270324707,
+                    "z": -29.677978515625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.0000001192092896,
+                    "z": 1.0000001192092896
+                },
+                "Rotation": {
+                    "x": -90.0,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885408576176130
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 5.0
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 1,
+            "EntityMeta": {
                 "name": "SECTION 4 Lights",
                 "isActive": 1,
                 "isStatic": 0,
@@ -11231,6 +11282,57 @@
                         "Source Width": 1.0,
                         "Source Height": 0.30000001192092896,
                         "Range": 0.5
+                    }
+                },
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "shadowType": 0,
+                "shadowUpdateMode": 0
+            }
+        },
+        {
+            "Layer": 0,
+            "Active": 0,
+            "EntityMeta": {
+                "name": "Area Light 1",
+                "isActive": 1,
+                "isStatic": 0,
+                "luid": 7308614123125276676
+            },
+            "Hierarchy": {
+                "luid": 7526194280122613763,
+                "parentLuid": 7526194130947801090
+            },
+            "Transform": {
+                "Position": {
+                    "x": 15.033875465393066,
+                    "y": 2.0767369270324707,
+                    "z": -29.677978515625
+                },
+                "Scale": {
+                    "x": 1.0,
+                    "y": 1.000000238418579,
+                    "z": 1.000000238418579
+                },
+                "Rotation": {
+                    "x": 1.5707964897155762,
+                    "y": 0.0,
+                    "z": -0.0
+                },
+                "luid": 8390885408577748997
+            },
+            "Light": {
+                "type": 3,
+                "data": {
+                    "index": 3,
+                    "value": {
+                        "Intensity": 5.0,
+                        "Source Width": 1.0,
+                        "Source Height": 0.30000001192092896,
+                        "Range": 5.0
                     }
                 },
                 "color": {
@@ -32187,10 +32289,10 @@
                     "leftLaser5",
                     "rightLaser4",
                     "leftLaser6",
-                    "rightLaser7",
                     "leftLaser8",
-                    "leftLaser7",
+                    "rightLaser7",
                     "rightLaser8",
+                    "leftLaser7",
                     "rightLaser6",
                     "rightLaser",
                     "rightLaser1"
@@ -32263,10 +32365,10 @@
                     "leftLaser4",
                     "leftLaser5",
                     "leftLaser6",
-                    "rightLaser8",
                     "leftLaser7",
-                    "rightLaser7",
+                    "rightLaser8",
                     "leftLaser8",
+                    "rightLaser7",
                     "rightLaser1",
                     "rightLaser2",
                     "rightLaser3",
@@ -63743,9 +63845,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 13.069305419921875,
-                    "y": 1.613089680671692,
-                    "z": -11.644119262695313
+                    "x": 13.069211959838867,
+                    "y": 1.9022172689437866,
+                    "z": -11.408599853515625
                 },
                 "Scale": {
                     "x": 0.9999997019767761,
@@ -64060,9 +64162,9 @@
             },
             "Transform": {
                 "Position": {
-                    "x": 164.705322265625,
-                    "y": 0.704797625541687,
-                    "z": -58.33376693725586
+                    "x": 165.09532165527344,
+                    "y": 1.6547977924346924,
+                    "z": -61.14376449584961
                 },
                 "Scale": {
                     "x": 1.0,
@@ -69524,7 +69626,7 @@
                 "SerializedFields": {
                     "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
                     "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Interactable_Battery.body": "8242266487558373384",
@@ -69586,8 +69688,13 @@
                 "luid": 8242829437511794701
             },
             "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef"
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958821186010742798
             }
@@ -69700,17 +69807,21 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Puzzle_BatteryPanel",
-                    "Misc_MaterialSwitcher"
+                    "Misc_MaterialSwitcher",
+                    "Misc_SolvedMaterialOverride"
                 ],
                 "SerializedFields": {
-                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
                     "Puzzle_BatteryPanel.panelRef": "8390885275261599756",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308613989809127440",
-                    "Puzzle_BatteryPanel.message": "UnlockDoorA",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "UnlockDoorA",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308613989809127440",
                     "Puzzle_BatteryPanel.batteryRef": "7308613989809127428",
+                    "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Puzzle_BatteryPanel.slotAudioName": "SLOT_IN",
-                    "Misc_MaterialSwitcher.pastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2"
+                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65"
                 },
                 "EntityReferenceFields": [
                     "alignedBattery",
@@ -69833,9 +69944,9 @@
                     "Misc_ObjectUI"
                 ],
                 "SerializedFields": {
-                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.pastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
-                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
                     "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Interactable_Battery.body": "8242266620652290056",
@@ -69897,8 +70008,13 @@
                 "luid": 8242829570605711373
             },
             "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef"
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958821319104659470
             }
@@ -70011,17 +70127,21 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Puzzle_BatteryPanel",
-                    "Misc_MaterialSwitcher"
+                    "Misc_MaterialSwitcher",
+                    "Misc_SolvedMaterialOverride"
                 ],
                 "SerializedFields": {
-                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
                     "Puzzle_BatteryPanel.panelRef": "8390885408355516428",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308614122903044112",
-                    "Puzzle_BatteryPanel.message": "nil",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "nil",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308614122903044112",
                     "Puzzle_BatteryPanel.batteryRef": "7308614122903044100",
+                    "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Puzzle_BatteryPanel.slotAudioName": "SLOT_IN",
-                    "Misc_MaterialSwitcher.pastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2"
+                    "Misc_MaterialSwitcher.pastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "20f3b95d-68ca-466c-9003-415002f9e861",
+                    "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65"
                 },
                 "EntityReferenceFields": [
                     "alignedBattery",
@@ -70144,7 +70264,7 @@
                     "Misc_ObjectUI"
                 ],
                 "SerializedFields": {
-                    "Misc_MaterialSwitcher.pastMaterial": "3a3e750e-514f-4a6c-814c-a5524f30ca80",
+                    "Misc_MaterialSwitcher.pastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
                     "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
                     "Misc_SolvedMaterialOverride.solvedPastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
                     "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65",
@@ -70208,8 +70328,13 @@
                 "luid": 8242829570609446951
             },
             "NativeScript": {
-                "ScriptNames": [],
-                "SerializedFields": {},
+                "ScriptNames": [
+                    "Misc_MaterialSwitcher"
+                ],
+                "SerializedFields": {
+                    "Misc_MaterialSwitcher.pastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef"
+                },
                 "EntityReferenceFields": [],
                 "luid": 7958821319108395048
             }
@@ -70322,17 +70447,21 @@
             "NativeScript": {
                 "ScriptNames": [
                     "Puzzle_BatteryPanel",
-                    "Misc_MaterialSwitcher"
+                    "Misc_MaterialSwitcher",
+                    "Misc_SolvedMaterialOverride"
                 ],
                 "SerializedFields": {
-                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
                     "Puzzle_BatteryPanel.panelRef": "8390885408359252006",
-                    "Puzzle_BatteryPanel.alignedBattery": "7308614122906779690",
-                    "Puzzle_BatteryPanel.message": "nil",
                     "Puzzle_BatteryPanel.puzzleKey": "0",
+                    "Puzzle_BatteryPanel.message": "nil",
+                    "Puzzle_BatteryPanel.alignedBattery": "7308614122906779690",
                     "Puzzle_BatteryPanel.batteryRef": "7308614122906779678",
+                    "Misc_SolvedMaterialOverride.solvedEventName": "BatteryStarSolved",
                     "Puzzle_BatteryPanel.slotAudioName": "SLOT_IN",
-                    "Misc_MaterialSwitcher.pastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2"
+                    "Misc_MaterialSwitcher.pastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
+                    "Misc_MaterialSwitcher.presentMaterial": "632a78b5-d886-48b8-9825-d39dc5e443ef",
+                    "Misc_SolvedMaterialOverride.solvedPastMaterial": "cf3dacfe-80a6-4997-97c3-2aecfa5ba9a2",
+                    "Misc_SolvedMaterialOverride.solvedPresentMaterial": "99f5b2d7-91dc-43ed-84a4-829448c19e65"
                 },
                 "EntityReferenceFields": [
                     "alignedBattery",
@@ -87591,8 +87720,8 @@
                 },
                 "EntityReferenceFields": [
                     "titleUIRef",
-                    "task1UIRef",
                     "task3ToggleRef",
+                    "task1UIRef",
                     "task2UIRef",
                     "task1ToggleRef",
                     "task3UIRef",
@@ -92665,7 +92794,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Pause Menu",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536099
             },
@@ -92731,7 +92860,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Canvas",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536102
             },
@@ -92790,7 +92919,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Image",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536104
             },
@@ -92859,7 +92988,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Canvas",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536106
             },
@@ -92918,7 +93047,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Text",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536108
             },
@@ -92984,7 +93113,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Button",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536110
             },
@@ -93099,7 +93228,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Text",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536113
             },
@@ -93165,7 +93294,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Button",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536115
             },
@@ -93280,7 +93409,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Text",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536118
             },
@@ -93346,7 +93475,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Button",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536120
             },
@@ -93461,7 +93590,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Text",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536123
             },
@@ -93527,7 +93656,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Button",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536125
             },
@@ -93649,7 +93778,7 @@
             "Active": 0,
             "EntityMeta": {
                 "name": "Text",
-                "isActive": 1,
+                "isActive": 0,
                 "isStatic": 0,
                 "luid": 7308614093576536128
             },
