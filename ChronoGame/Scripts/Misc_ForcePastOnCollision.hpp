@@ -206,6 +206,10 @@ private:
         watch->ForcePastForever(refillClockToFull);
         hasTriggered = true;
 
+        // Show objective text UI
+        if (objectiveTextRef.IsValid())
+            SetActive(true, objectiveTextRef.GetEntity());
+
         LOG_INFO("Misc_ForcePastOnCollision: Player entered trigger - forcing permanent past state");
 
         if (disableAfterTrigger) {
