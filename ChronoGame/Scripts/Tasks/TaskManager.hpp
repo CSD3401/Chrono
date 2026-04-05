@@ -80,7 +80,7 @@ private:
                 { 
                     "Unlock Security Gate", 
                     "Traverse Sinkhole",
-                    "Enter Basement Access"
+                    "Restore Power to Elevator"
                 } 
             }
         );
@@ -97,7 +97,7 @@ private:
             "Control Room Alpha",
                 {
                     "Restore Power",
-                    "Unlock Exit Door"
+                    "Find the Exit"
                 }
             }
         );
@@ -107,7 +107,6 @@ private:
                 {
                     "Disable Laser Control Panel A",
                     "Disable Laser Control Panel B",
-                    "Bypass Laser Grid",
                     "Override Central Laser Gate"
                 }
             }
@@ -215,18 +214,20 @@ private:
     }
 
     void RefreshUI() {
+        SetRefActive(titleUIRef, false);
+        ResetTaskUIState();
+
         if (!HasActiveCheckpoint()) {
-            SetAllUITexts("", "", "", "", "");
             return;
         }
 
         const Checkpoint& checkpoint = checkpoints[currentCheckpointIndex];
 
-        SetUITextIfValid(titleUIRef, checkpoint.title);
-        SetUITextIfValid(task1UIRef, BuildTaskLine(checkpoint, 0));
-        SetUITextIfValid(task2UIRef, BuildTaskLine(checkpoint, 1));
-        SetUITextIfValid(task3UIRef, BuildTaskLine(checkpoint, 2));
-        SetUITextIfValid(task4UIRef, BuildTaskLine(checkpoint, 3));
+        ShowTextRef(titleUIRef, checkpoint.title);
+        UpdateTaskSlot(task1UIRef, task1ToggleRef, checkpoint, 0);
+        UpdateTaskSlot(task2UIRef, task2ToggleRef, checkpoint, 1);
+        UpdateTaskSlot(task3UIRef, task3ToggleRef, checkpoint, 2);
+        UpdateTaskSlot(task4UIRef, task4ToggleRef, checkpoint, 3);
     }
 
     std::string BuildTaskLine(const Checkpoint& checkpoint, std::size_t taskIndex) const {
@@ -234,57 +235,58 @@ private:
             return "";
         }
 
-        const bool isCompleted = taskIndex < completedTaskCount;
-        if (isCompleted) {
-            switch (taskIndex) {
-            case 0:
-                NE::Scripting::SetToggleOn(task1ToggleRef.GetEntity(), true);
-                break;
-            case 1:
-                NE::Scripting::SetToggleOn(task2ToggleRef.GetEntity(), true);
-                break;
-            case 2:
-                NE::Scripting::SetToggleOn(task3ToggleRef.GetEntity(), true);
-                break;
-            case 3:
-                NE::Scripting::SetToggleOn(task4ToggleRef.GetEntity(), true);
-                break;
-            }
-        }
         return checkpoint.tasks[taskIndex];
     }
 
-    void SetAllUITexts(const std::string& title,
-        const std::string& task1,
-        const std::string& task2,
-        const std::string& task3,
-        const std::string& task4) {
-        SetUITextIfValid(titleUIRef, title);
-        SetUITextIfValid(task1UIRef, task1);
-		NE::Scripting::SetToggleOn(task1ToggleRef.GetEntity(), false);
-        SetUITextIfValid(task2UIRef, task2);
-		NE::Scripting::SetToggleOn(task2ToggleRef.GetEntity(), false);
-        SetUITextIfValid(task3UIRef, task3);
-		NE::Scripting::SetToggleOn(task3ToggleRef.GetEntity(), false);
-        SetUITextIfValid(task4UIRef, task4);
-		NE::Scripting::SetToggleOn(task4ToggleRef.GetEntity(), false);
+    void ResetTaskUIState() {
+        HideTextRef(task1UIRef);
+        HideTextRef(task2UIRef);
+        HideTextRef(task3UIRef);
+        HideTextRef(task4UIRef);
+
+        SetRefActive(task1ToggleRef, false);
+        SetRefActive(task2ToggleRef, false);
+        SetRefActive(task3ToggleRef, false);
+        SetRefActive(task4ToggleRef, false);
     }
 
-    void SetUITextIfValid(const GameObjectRef& ref, const std::string& text) {
+    void UpdateTaskSlot(const GameObjectRef& taskRef,
+        const GameObjectRef& toggleRef,
+        const Checkpoint& checkpoint,
+        std::size_t taskIndex) {
+        if (taskIndex >= GetTrackedTaskCount(checkpoint)) {
+            return;
+        }
+
+        ShowTextRef(taskRef, BuildTaskLine(checkpoint, taskIndex));
+        SetRefActive(toggleRef, taskIndex < completedTaskCount);
+    }
+
+    void ShowTextRef(const GameObjectRef& ref, const std::string& text) {
         if (!ref.IsValid()) {
             return;
         }
 
         NE::Scripting::SetUIText(ref.GetEntity(), text.c_str());
+        SetActive(true, ref.GetEntity());
     }
 
-    //void SetUITextIfValid(const GameObjectRef& ref, const std::string& text) {
-    //    if (!ref.IsValid()) {
-    //        return;
-    //    }
+    void HideTextRef(const GameObjectRef& ref) {
+        if (!ref.IsValid()) {
+            return;
+        }
 
-    //    NE::Scripting::SetUIText(ref.GetEntity(), text.c_str());
-    //}
+        NE::Scripting::SetUIText(ref.GetEntity(), "");
+        SetActive(false, ref.GetEntity());
+    }
+
+    void SetRefActive(const GameObjectRef& ref, bool isActive) {
+        if (!ref.IsValid()) {
+            return;
+        }
+
+        SetActive(isActive, ref.GetEntity());
+    }
 
     std::size_t GetTrackedTaskCount(const Checkpoint& checkpoint) const {
         return checkpoint.tasks.size() < kMaxVisibleTasks ? checkpoint.tasks.size() : kMaxVisibleTasks;

@@ -47,6 +47,7 @@ public:
         if (name.find("Battery") != std::string::npos)
         {
             isSolved = true;
+            Events::Send("TaskCheckpointCompleted");
             Solve();
 
             // Play slot-in sound
