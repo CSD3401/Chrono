@@ -267,6 +267,7 @@ private:
         //Events::Send(evt, payload); // this crashes - RF
         Events::Send(evt, &puzzleKeyId);
         Events::Send("RaziPuzzle");
+        Events::Send("TaskCheckpointCompleted");
         PlayAudio("event:/DOOR_OPEN"); // REPLACE THIS - RF
     }
 

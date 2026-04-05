@@ -97,7 +97,7 @@ private:
             "Control Room Alpha",
                 {
                     "Restore Power",
-                    "Find the Exit"
+                    "Exit The Server Room"
                 }
             }
         );
@@ -121,19 +121,10 @@ private:
         );
 
         checkpoints.push_back({
-            "Control Room Beta",
-                {
-                    "Restore Power",
-                    "Disable Laser Gantry"
-                }
-            }
-        );
-
-        checkpoints.push_back({
             "Catwalk Beta",
                 {
-                    "Bypass Laser Grid",
-                    "Cross Maintenance Catwalk"
+                    "Get onto the Maintenance Catwalk",
+					"Cross Maintenance Catwalk"
                 }
             }
         );
@@ -141,8 +132,6 @@ private:
         checkpoints.push_back({
             "Aether Core",
                 {
-                    "Restore Power to Door System",
-                    "Bypass Laser Grid",
                     "Locate Lynn's Experimental Lab"
                 }
             }
@@ -151,9 +140,6 @@ private:
         checkpoints.push_back({
             "Zero Point Reactor",
                 {
-                    "Disable Stabilizer Module",
-                    "Override Coolant System",
-                    "Decouple Power Core",
                     "Initiate Final Shutdown Sequence"
                 }
             }
