@@ -128,6 +128,9 @@ private:
         if (m_mirrorSolved && m_wireSolved && m_sequencerSolved) {
             m_cutsceneFired = true;
             LOG_INFO("Misc_ForcePastOnCollision: All puzzles solved - sending playFinalCutscene");
+            PlayAudio("event:/RF_VOICE/DIALOUGE_16");
+
+
             DeferEvent("playFinalCutscene");
         }
     }
