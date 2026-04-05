@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "EngineAPI.hpp"
 #include "ScriptSDK//UI.h"
 #include <cstdio>
@@ -212,6 +212,7 @@ private:
             SetActive(!isPast, m_presentOverlay);
         if (m_pastOverlay != 0)
             SetActive(isPast, m_pastOverlay);
+        NE::Scripting::ToggleChromaticAberration(isPast);
     }
 
     void ApplyClockFill() {
@@ -244,7 +245,7 @@ private:
                 SetActive(m_blinkVisible, m_redOutline);
         }
         else {
-            // Not in red zone — red off, default on
+            // Not in red zone ï¿½ red off, default on
             if (m_redOutline != 0)
                 SetActive(false, m_redOutline);
         }
