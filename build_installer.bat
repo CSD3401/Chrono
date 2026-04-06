@@ -38,30 +38,41 @@ if not defined ISCC (
 
 echo [1/4] Found Inno Setup: !ISCC!
 
-REM --- Step 1: Build the project with MSBuild ---
+REM --- Step 1: Setup MSBuild environment and build ---
 echo [2/4] Building ChronoGame in Release configuration...
 
-set "MSBUILD="
-where msbuild >nul 2>&1
-if !errorlevel! equ 0 (
-    for /f "usebackq delims=" %%i in (`where msbuild`) do (
-        set "MSBUILD=%%i"
+REM Use vcvarsall.bat to put MSBuild on PATH
+set "VCVARS="
+if exist "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" (
+    set "VCVARS=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat"
+)
+if not defined VCVARS (
+    if exist "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" (
+        set "VCVARS=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat"
     )
 )
-if not defined MSBUILD (
-    for /d %%v in ("C:\Program Files\Microsoft Visual Studio\2022\*") do (
-        if exist "%%v\MSBuild\Current\Bin\MSBuild.exe" (
-            set "MSBUILD=%%v\MSBuild\Current\Bin\MSBuild.exe"
-        )
+if not defined VCVARS (
+    if exist "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvarsall.bat" (
+        set "VCVARS=C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvarsall.bat"
     )
 )
-if not defined MSBUILD (
-    echo ERROR: MSBuild not found. Please run from a Developer Command Prompt.
+if not defined VCVARS (
+    if exist "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" (
+        set "VCVARS=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat"
+    )
+)
+if not defined VCVARS (
+    echo ERROR: vcvarsall.bat not found. Visual Studio 2022 not installed.
     exit /b 1
 )
 
-echo       Using MSBuild: !MSBUILD!
-"!MSBUILD!" "%PROJECT_ROOT%ChronoGame\ChronoGame.sln" /p:Configuration=Release /p:Platform=x64 /m /v:minimal
+call "!VCVARS!" x64
+if !errorlevel! neq 0 (
+    echo ERROR: Failed to initialize MSVC environment.
+    exit /b !errorlevel!
+)
+
+msbuild "%PROJECT_ROOT%ChronoGame\ChronoGame.sln" /p:Configuration=Release /p:Platform=x64 /m /v:minimal /nologo
 if !errorlevel! neq 0 (
     echo ERROR: Build failed with error code !errorlevel!.
     exit /b !errorlevel!
