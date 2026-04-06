@@ -2,7 +2,9 @@
 #include "EngineAPI.hpp"
 #include "Player_Controller.hpp"
 #include <algorithm>
+#include <atomic>
 #include <cmath>
+#include <memory>
 
 /**
  * Misc_TransitionTeleporter
@@ -51,7 +53,12 @@ public:
         msgReceived = false;
 
         if (eventBased && !eventName.empty()) {
-            Events::Listen(eventName.c_str(), [this](void*) {
+            if (!m_eventCallbackAlive)
+                m_eventCallbackAlive = std::make_shared<std::atomic<bool>>(true);
+            std::shared_ptr<std::atomic<bool>> alive = m_eventCallbackAlive;
+            Events::Listen(eventName.c_str(), [alive, this](void*) {
+                if (!alive->load(std::memory_order_acquire))
+                    return;
                 msgReceived = true;
                 LOG_DEBUG("[Misc_TransitionTeleporter] Event received: " + eventName);
                 TryStartTransition();
@@ -119,10 +126,29 @@ public:
         }
     }
 
-    void OnDestroy() override {}
+    void OnDestroy() override {
+        if (m_eventCallbackAlive)
+            m_eventCallbackAlive->store(false, std::memory_order_release);
+    }
 
-    void OnEnable() override {}
-    void OnDisable() override {}
+    void OnEnable() override {
+        if (m_eventCallbackAlive)
+            m_eventCallbackAlive->store(true, std::memory_order_release);
+    }
+    void OnDisable() override {
+        if (m_eventCallbackAlive)
+            m_eventCallbackAlive->store(false, std::memory_order_release);
+        if (phase == Phase::IDLE)
+            return;
+        if (overlayCanvas.IsValid()) {
+            NE::ECS::Command::SetUICanvasAlpha(overlayCanvas.GetEntity(), 0.0f);
+            SetActive(false, overlayCanvas.GetEntity());
+        }
+        if (!m_playerFreedForFadeIn)
+            RestorePlayerController();
+        m_playerFreedForFadeIn = false;
+        phase = Phase::IDLE;
+    }
     void OnValidate() override {}
 
     const char* GetTypeName() const override {
@@ -174,7 +200,7 @@ private:
     Phase phase = Phase::IDLE;
     float fadeTimer = 0.0f;
 
-    Player_Controller* cachedPlayerController = nullptr;
+    std::shared_ptr<std::atomic<bool>> m_eventCallbackAlive;
     bool cachedPlayerControllerWasEnabled = true;
     bool m_playerFreedForFadeIn = false;
 
@@ -270,30 +296,34 @@ private:
     }
 
     void CacheAndDisablePlayerController() {
-        cachedPlayerController = nullptr;
         cachedPlayerControllerWasEnabled = true;
 
         GameObject playerGO(player.GetEntity());
         if (!playerGO.IsValid())
             return;
 
-        cachedPlayerController = playerGO.GetComponent<Player_Controller>();
-        if (!cachedPlayerController)
+        Player_Controller* pc = playerGO.GetComponent<Player_Controller>();
+        if (!pc)
             return;
 
-        cachedPlayerControllerWasEnabled = cachedPlayerController->IsEnabled();
+        cachedPlayerControllerWasEnabled = pc->IsEnabled();
         // Do NOT call Reset() — it zeros lookRotation while the camera still shows the old view → snap on unfreeze.
-        cachedPlayerController->ResetMovementOnly();
-        cachedPlayerController->SetEnabled(false);
+        pc->ResetMovementOnly();
+        pc->SetEnabled(false);
     }
 
     void RestorePlayerController() {
-        if (cachedPlayerController) {
+        if (!player.IsValid())
+            return;
+        GameObject playerGO(player.GetEntity());
+        if (!playerGO.IsValid())
+            return;
+        Player_Controller* pc = playerGO.GetComponent<Player_Controller>();
+        if (pc) {
             // Do NOT call Reset() — preserves lookRotation / camera aim through the fade.
-            cachedPlayerController->ResetMovementOnly();
-            cachedPlayerController->SetEnabled(cachedPlayerControllerWasEnabled);
+            pc->ResetMovementOnly();
+            pc->SetEnabled(cachedPlayerControllerWasEnabled);
         }
-        cachedPlayerController = nullptr;
     }
 
     void ResolvePlayerRef() {

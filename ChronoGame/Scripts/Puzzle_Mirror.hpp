@@ -746,7 +746,7 @@ private:
 
         puzzleSolved = true;
         LOG_DEBUG("=== PUZZLE SOLVED! ===");
-
+        Events::Send("TaskCheckpointCompleted");
         if (!eventName.empty()) {
             Events::Send(eventName.c_str(), nullptr);
             PlayAudio("event:/DOOR_OPEN");

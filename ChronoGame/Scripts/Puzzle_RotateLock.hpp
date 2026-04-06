@@ -45,6 +45,8 @@ public:
 
         SCRIPT_ENUM_VECTOR_FIELD(correctAlphas, "A", "B", "C", "D", "E", "F", "G", "H");
         SCRIPT_ENUM_VECTOR_FIELD(correctNums, "_1", "_2", "_3", "_4", "_5", "_6", "_7", "_8");
+
+        SCRIPT_FIELD(solvedEvent, String);
     }
 
     ~Puzzle_RotateLock() override = default;
@@ -144,7 +146,7 @@ public:
         if (scrollY > 0.0f || Input::IsKeyDown(VK_RIGHT))
         {
             checkTimer = checkTimerAmount;
-            currRot.z += rotationSpeed * deltaTime;
+            currRot.z += rotationSpeed * (float)deltaTime;
             TF_SetRotation(currRot, outerRingRef.GetEntity());
             currentAngle = currRot.z;
             hasInput = true;
@@ -152,7 +154,7 @@ public:
         else if (scrollY < 0.0f || Input::IsKeyDown(VK_LEFT))
         {
             checkTimer = checkTimerAmount;
-            currRot.z -= rotationSpeed * deltaTime;
+            currRot.z -= rotationSpeed * (float)deltaTime;
             TF_SetRotation(currRot, outerRingRef.GetEntity());
             currentAngle = currRot.z;
             hasInput = true;
@@ -212,6 +214,11 @@ public:
                 PlayAudio("event:/SMALL_BOMB_SOLVED");
                 LOG_DEBUG("SOLVED THE ROTATION PUZZLE");
                 Solve();
+                if (!solvedEvent.empty())
+                {
+                    Events::Send(solvedEvent.c_str());
+                    LOG_DEBUG("[Puzzle_RotateLock] Sent solved event: " + solvedEvent);
+                }
             }
         }
 
@@ -243,6 +250,7 @@ private:
     TransformRef outerRingRef;
 
     std::string rotateLockIndex = "rotate_01";
+    std::string solvedEvent = "";
 
     // ANSWERS HERE
     std::vector<ALPHA_CODE> correctAlphas;

@@ -1573,6 +1573,15 @@ namespace Scripting {
     SCRIPT_API float GetAmbientIntensity();
     SCRIPT_API void SetAmbientIntensity(float intensity);
 
+    // Chromatic Aberration Settings
+	SCRIPT_API void ToggleChromaticAberration(bool _enabled);
+    // Default Value (1.0f)
+	SCRIPT_API void SetChromaticAberrationStrength(float _strength);
+    // Default Value (0.6f)
+	SCRIPT_API void SetChromaticAberrationRadius(float _radius);
+    // Default Value (2.0f)
+	SCRIPT_API void SetChromaticAberrationFalloff(float _falloff);
+
     // Fog Settings
     SCRIPT_API bool IsFogEnabled();
     SCRIPT_API void SetFogEnabled(bool enabled);
@@ -1587,6 +1596,9 @@ namespace Scripting {
     SCRIPT_API void SetFogEnd(float end);
     SCRIPT_API float GetFogDensity();
     SCRIPT_API void SetFogDensity(float density);
+
+    // Display Settings
+    SCRIPT_API void SetGamma(float gamma);
 
     //=========================================================================
     // UI TEXT API
@@ -2106,6 +2118,14 @@ namespace RenderSettings {
      */
     inline void SetFogDensity(float density) {
         NE::Scripting::SetFogDensity(density);
+    }
+
+    /**
+     * @brief Set the display gamma correction value
+     * @param gamma Gamma value (1.0 = default, higher = brighter, lower = darker)
+     */
+    inline void SetGamma(float gamma) {
+        NE::Scripting::SetGamma(gamma);
     }
 }
 

@@ -8,7 +8,7 @@
  * Attach to an always-active entity in a scene to re-apply cached runtime
  * settings after scene load.
  *
- * This only reapplies audio values. The cache is written by UI_SaveSettings.
+ * Reapplies audio buses and `NE::Scripting::SetGamma` from the cache (see UI_SaveSettings).
  */
 class UI_ApplySavedSettings : public IScript {
 public:
@@ -39,11 +39,15 @@ public:
 
 private:
     void ApplySavedValues() {
-        if (!SavedSettings::hasBeenSaved) return;
-
-        SetMasterVolume(SavedSettings::masterVolume);
-        SetBGMVolume(SavedSettings::bgmVolume);
-        SetSFXVolume(SavedSettings::sfxVolume);
-        SetAmbienceVolume(SavedSettings::ambienceVolume);
+        if (SavedSettings::hasBeenSaved) {
+            SetMasterVolume(SavedSettings::masterVolume);
+            SetBGMVolume(SavedSettings::bgmVolume);
+            SetSFXVolume(SavedSettings::sfxVolume);
+            SetAmbienceVolume(SavedSettings::ambienceVolume);
+        }
+        if (SavedSettings::ShouldApplySessionGamma()) {
+            NE::Scripting::SetGamma(
+                SavedSettings::SliderNormToDisplayGamma(SavedSettings::gammaNormalized));
+        }
     }
 };

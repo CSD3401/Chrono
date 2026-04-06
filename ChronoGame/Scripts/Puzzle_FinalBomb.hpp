@@ -2,7 +2,10 @@
 #include "EngineAPI.hpp"
 
 /*
- * Puzzle_FinalBomb
+ * Puzzle_FinalBomb 
+ * 
+ * M5 LEGACY CODE DONT USE : RF
+ * 
  *
  * Listens to all 8 required events. Once all are received,
  * triggers end game / cutscene.

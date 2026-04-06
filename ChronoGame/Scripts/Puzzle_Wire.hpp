@@ -133,9 +133,6 @@ public:
                 SetActive(false, connectedWires[i]);
             }
         }
-
-
-
     }
 
     void RecieveIndexData(void* indexData)
@@ -219,6 +216,7 @@ public:
             if (CheckWirePair()) // if all 4 are correct
             {
                 LOG_DEBUG("PUZZLE SOLVED!");
+                Events::Send("TaskCheckpointCompleted");
                 std::string message = wirePuzzleIndex == 0 ? "PuzzleSolved1" : "PuzzleSolved2";
                 Events::Send(eventName.c_str());
                 PlayAudio("event:/SOLVE_WIRE_PUZZLE");

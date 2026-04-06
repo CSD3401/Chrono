@@ -60,6 +60,7 @@
 #include "Scripts/Camera_ExplosionShake.hpp"
 #include "Scripts/UI_MainMenu.hpp"
 #include "Scripts/UI_BGMVolumeButtons.hpp"
+#include "Scripts/UI_GammaSlider.hpp"
 #include "Scripts/UI_SFXVolumeButtons.hpp"
 #include "Scripts/UI_AmbienceVolumeButtons.hpp"
 #include "Scripts/Interactable_MirrorTile.hpp"
@@ -87,9 +88,12 @@
 #include "Scripts/UI_RestorePauseSettings.hpp"
 #include "Scripts/UI_Settings.hpp"
 #include "Scripts/Misc_PauseMenuHotkey.hpp"
+#include "Scripts/TriggerParentSwitcher.hpp"
+#include "Scripts/TriggerMaterialVectorSwitcher.hpp"
 #include "Scripts/UIButton_PauseResume.hpp"
 #include "Scripts/UIButton_CanvasSwitcher.hpp"
 #include "Scripts/UI_SaveSettings.hpp"
+#include "Scripts/FinalAreaManager.hpp"
 
 // extern "C" ensures C linkage so the Engine DLL can find this function
 extern "C" {
@@ -283,6 +287,9 @@ extern "C" {
         registrar->RegisterScript("UI_BGMVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_BGMVolumeButtons();
             });
+        registrar->RegisterScript("UI_GammaSlider", []() -> NE::Scripting::IScript* {
+            return new UI_GammaSlider();
+            });
         registrar->RegisterScript("UI_SFXVolumeButtons", []() -> NE::Scripting::IScript* {
             return new UI_SFXVolumeButtons();
             });
@@ -298,9 +305,9 @@ extern "C" {
         registrar->RegisterScript("Misc_SolvedMaterialOverride", []() -> NE::Scripting::IScript* {
             return new Misc_SolvedMaterialOverride();
             });
-        registrar->RegisterScript("Puzzle_FinalBomb", []() -> NE::Scripting::IScript* {
-            return new Puzzle_FinalBomb();
-            });
+        //registrar->RegisterScript("Puzzle_FinalBomb", []() -> NE::Scripting::IScript* {
+        //    return new Puzzle_FinalBomb();
+        //    });
         registrar->RegisterScript("Puzzle_Bomb", []() -> NE::Scripting::IScript* {
             return new Puzzle_Bomb();
             });
@@ -365,10 +372,18 @@ extern "C" {
         registrar->RegisterScript("TaskCheckpoint", []() -> NE::Scripting::IScript* {
             return new TaskCheckpoint();
             });
+        registrar->RegisterScript("TriggerParentSwitcher", []() -> NE::Scripting::IScript* {
+            return new TriggerParentSwitcher();
+            });
+        registrar->RegisterScript("TriggerMaterialVectorSwitcher", []() -> NE::Scripting::IScript* {
+            return new TriggerMaterialVectorSwitcher();
+            });
         registrar->RegisterScript("UI_SaveSettings", []() -> NE::Scripting::IScript* {
             return new UI_SaveSettings();
             });
-
+        registrar->RegisterScript("FinalAreaManager", []() -> NE::Scripting::IScript* {
+            return new FinalAreaManager();
+            });
         
 
     }

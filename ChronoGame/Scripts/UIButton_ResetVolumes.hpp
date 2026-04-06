@@ -15,9 +15,8 @@
  *
  * Gamma:
  *   - Assign optional `gammaSlider` (same UISlider you use for gamma in Settings).
- *   - `defaultGammaNormalized` is written with SetSliderNormalizedValue (typically 1.0).
- *   - The script SDK does not expose engine post-process gamma; if a driver script
- *     reads the slider each frame, resetting the slider updates the effective gamma.
+ *   - `defaultGammaNormalized` is written with SetSliderNormalizedValue (typically 1.0 = SDK default gamma).
+ *   - Calls `NE::Scripting::SetGamma` immediately so gamma updates even before the next slider tick.
  *
  * If you use slider-based volume scripts, assign the four sliders below so the
  * slider thumbs move to full when you reset. If you use button-based volume
@@ -63,12 +62,12 @@ public:
         if (ambienceSlider.IsValid())
             UI::SetSliderNormalizedValue(ambienceSlider.GetEntity(), 1.0f);
 
-        if (gammaSlider.IsValid()) {
-            const float g = std::clamp(defaultGammaNormalized, 0.0f, 1.0f);
-            UI::SetSliderNormalizedValue(gammaSlider.GetEntity(), g);
-        }
+        const float gammaNorm = std::clamp(defaultGammaNormalized, 0.0f, 1.0f);
+        if (gammaSlider.IsValid())
+            UI::SetSliderNormalizedValue(gammaSlider.GetEntity(), gammaNorm);
 
-        SavedSettings::SaveAll(1.0f, 1.0f, 1.0f, 1.0f, defaultGammaNormalized);
+        SavedSettings::SaveAll(1.0f, 1.0f, 1.0f, 1.0f, gammaNorm);
+        NE::Scripting::SetGamma(SavedSettings::SliderNormToDisplayGamma(gammaNorm));
     }
 
     void OnDestroy() override {}
